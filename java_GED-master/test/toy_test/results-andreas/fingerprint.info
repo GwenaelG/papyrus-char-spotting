@@ -1,0 +1,28 @@
+66
+(milliseconds runtime)
+timestamp:2014_06_30_10_22_20
+
+*** The properties of the matching ***
+
+Source graph set:	data/Fingerprint/train.cxl (5 graphs)
+Target graph set:	data/Fingerprint/train.cxl (5 graphs)
+
+Graph edit distance procedure:	Hungarian
+Edge mode:		undirected
+
+Cost for node deletion/insertion:	1.0
+Cost for edge deletion/insertion:	1.0
+
+Alpha weighting factor between node and edge costs:	0.2
+
+No attributes for nodes defined
+
+Edge Attribute 0:	angle;	Cost Function:	absolute;	Soft Factor:	1.0
+
+Individual node costs are added
+Individual edge costs are added
+(Combined node cost)^(1/1.0)
+(Combined edge cost)^(1/1.0)
+
+*** The similarity matrix exp(-d) ***
+

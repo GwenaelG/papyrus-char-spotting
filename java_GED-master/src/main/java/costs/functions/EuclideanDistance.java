@@ -1,0 +1,64 @@
+package costs.functions;
+
+import graph.Edge;
+import graph.Node;
+
+/**
+ * User: Michael Stauffer
+ * Org.: University of Applied Sciences and Arts Northwestern Switzerland
+ * Date: 24.05.17
+ * Time: 10:52
+ */
+public class EuclideanDistance implements CostFunction {
+
+    @Override
+    public double getCost(Node u, Node v, String[] nodeAttributes, double[] nodeAttrImportance) {
+
+        double cost = 0;
+
+        for (int i = 0; i < nodeAttributes.length; i++) {
+
+            String nodeAttribute = nodeAttributes[i];
+
+            double n1 = u.getDouble(nodeAttribute);
+            double n2 = v.getDouble(nodeAttribute);
+
+            cost += Math.pow((n1 - n2), 2) * nodeAttrImportance[i];
+        }
+
+        return Math.sqrt(cost);
+    }
+
+    @Override
+    public double getCost(Edge u, Edge v, String[] edgeAttributes, double[] edgeAttrImportance) {
+
+        double cost = 0;
+
+        for (int i = 0; i < edgeAttributes.length; i++) {
+
+            String edgeAttribute = edgeAttributes[i];
+
+            double n1 = u.getDouble(edgeAttribute);
+            double n2 = v.getDouble(edgeAttribute);
+
+            cost += Math.pow((n1 - n2), 2) * edgeAttrImportance[i];
+        }
+
+        return Math.sqrt(cost);
+    }
+
+    @Override
+    public CostFunction getBaseCostFunction() {
+        return null;
+    }
+
+    @Override
+    public String getName() {
+        return "Euclidean Distance";
+    }
+
+    @Override
+    public String getParameter() {
+        return "";
+    }
+}

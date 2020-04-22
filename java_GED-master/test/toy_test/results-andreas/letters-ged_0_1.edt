@@ -1,0 +1,15 @@
+source: A|0|AP1_0000.gxl
+target: A|1|AP1_0001.gxl
+
+*** Edit Path ***
+Substitutions:
+_0 <=> _0: 0.035
+_1 <=> _1: 0.087
+_2 <=> _2: 0.068
+_3 <=> _3: 0.091
+_4 <=> _4: 0.029
+Deletions:
+_5 => epsilon: 0.225
+Insertions:
+Cost: 0.53528
+

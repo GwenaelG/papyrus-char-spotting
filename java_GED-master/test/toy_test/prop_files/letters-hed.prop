@@ -1,0 +1,47 @@
+# graph edit distance method
+matching=HED
+
+# paths
+source=test/toy_test/graph_data/Letters/train.cxl
+target=test/toy_test/graph_data/Letters/train.cxl
+path=test/toy_test/graph_data/Letters/
+result=test/toy_test/results_gw
+groundtruth=test/kws_experiment/gw/words.txt
+
+treceval=treceval/trec_eval
+
+# oneMatch
+oneMatch=false
+oneMatchIdx1=0
+oneMatchIdx2=1
+
+# parameters
+node=0.4
+edge=0.1
+alpha=0.5
+
+# debug output
+outputGraphs=0
+outputEditpath=0
+outputCostMatrix=0
+outputMatching=0
+
+# node cost function
+numOfNodeAttr=2
+nodeAttr0=x
+nodeAttr1=y
+nodeCostType0=squared
+nodeCostType1=squared
+nodeAttr0Importance=1.0
+nodeAttr1Importance=1.0
+multiplyNodeCosts=0
+pNode=2
+
+# edge cost function
+undirected=1
+numOfEdgeAttr=0
+multiplyEdgeCosts=0
+pEdge=1
+
+# kernel
+simKernel=0
