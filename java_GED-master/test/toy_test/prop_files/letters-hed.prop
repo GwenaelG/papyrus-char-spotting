@@ -5,13 +5,12 @@ matching=HED
 source=test/toy_test/graph_data/Letters/train.cxl
 target=test/toy_test/graph_data/Letters/train.cxl
 path=test/toy_test/graph_data/Letters/
-result=test/toy_test/results_gw
-groundtruth=test/kws_experiment/gw/words.txt
-
+result=test/toy_test/results_gw/
+groundtruth=test/toy_test/graph_data/Letters/groundtruth.txt
 treceval=treceval/trec_eval
 
 # oneMatch
-oneMatch=false
+oneMatch=true
 oneMatchIdx1=0
 oneMatchIdx2=1
 

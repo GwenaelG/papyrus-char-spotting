@@ -8,10 +8,7 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
-import java.util.TreeMap;
+import java.util.*;
 
 import andreas.*;
 import costs.CostFunctionManager;
@@ -300,15 +297,15 @@ public class GraphMatching {
 					d = distances[0];
 					d_norm = distances[1];
 
-//					if (this.oneMatch) {
-//						HEDViz hedviz = new HEDViz();
-//						d = hedviz.getHausdorffEditDistance(sourceGraph, targetGraph, costFunctionManager);
-//						editPath = hedviz.getEditPath(sourceGraph, targetGraph);
-//					} else {
-//						HED hed = new HED();
-//						d = hed.getHausdorffEditDistance(sourceGraph, targetGraph, costFunctionManager);
-//						editPath = null;
-//					}
+					if (this.oneMatch) {
+						HEDViz hedviz = new HEDViz();
+						d = hedviz.getHausdorffEditDistance(sourceGraph, targetGraph, costFunctionManager);
+						editPath = hedviz.getEditPath(sourceGraph, targetGraph);
+					} else {
+						HED hed2 = new HED();
+						d = hed2.getHausdorffEditDistance(sourceGraph, targetGraph, costFunctionManager);
+						editPath = null;
+					}
 				}
 
 //				/**
@@ -579,26 +576,26 @@ public class GraphMatching {
 			}
 		}
 		long time = System.currentTimeMillis() - start;
-		
+
 //		System.out.println("time: " + AStarGED.timeNano);
 //		System.out.println("open: " + AStarGED.numOpen);
 //		System.out.println("matchings: " + AStarGED.numMatchings);
 //		System.out.println("failures: " + AStarGED.numFailures);
 //
-//		// printing the distances or similarities
-//		System.out.println("Printing the results...");
-//		if (this.oneMatch) {
-//			if (editPath != null) {
-//				this.resultPrinter.printEditPath(prop, this.sourceGraph, this.targetGraph, editPath, 600, 600, this.oneMatchDisplay, this.oneMatchSize);
-//			}
-//			System.out.println("=> distance: " + this.distanceMatrix[this.oneMatchIdx1][this.oneMatchIdx2]);
-//		} else {
-//			this.resultPrinter.printResult(this.distanceMatrix, this.source, this.target, prop, time);
-//		}
+		// printing the distances or similarities
+		System.out.println("Printing the results...");
+		if (this.oneMatch) {
+			if (editPath != null) {
+
+				this.resultPrinter.printEditPath(prop, this.sourceGraph, this.targetGraph, editPath, 600, 600, this.oneMatchDisplay, this.oneMatchSize);
+			}
+			System.out.println("=> distance: " + this.distanceMatrix[this.oneMatchIdx1][this.oneMatchIdx2]);
+		} else {
+			this.resultPrinter.printResult(this.distanceMatrix, this.source, this.target, prop, time);
+		}
 
 		// Create KWS results
 		ArrayList<SpottingResult> spottingResults = new ArrayList<>();
-
 		for (int i = 0; i < source.size(); i++) {
 
 			Graph sourceGraph = source.get(i);
@@ -701,7 +698,6 @@ public class GraphMatching {
 //			}
 		}
 		
-		
 //		// whether or not the costs are "p-rooted"
 //		double squareRootNodeCosts = Double.parseDouble(properties
 //				.getProperty("pNode"));
@@ -713,16 +709,17 @@ public class GraphMatching {
 //				.getProperty("multiplyNodeCosts"));
 //		int multiplyEdgeCosts = Integer.parseInt(properties
 //				.getProperty("multiplyEdgeCosts"));
-//
+
+//		//changed Gw
 //		// what is logged on the console (graphs, cost-matrix, matching, edit path)
-//		this.outputGraphs = Integer.parseInt(properties
-//				.getProperty("outputGraphs"));
-//		this.outputCostMatrix = Integer.parseInt(properties
-//				.getProperty("outputCostMatrix"));
-//		this.outputMatching = Integer.parseInt(properties
-//				.getProperty("outputMatching"));
-//		this.outputEditpath = Integer.parseInt(properties
-//				.getProperty("outputEditpath"));
+		this.outputGraphs = Integer.parseInt(properties
+				.getProperty("outputGraphs"));
+		this.outputCostMatrix = Integer.parseInt(properties
+				.getProperty("outputCostMatrix"));
+		this.outputMatching = Integer.parseInt(properties
+				.getProperty("outputMatching"));
+		this.outputEditpath = Integer.parseInt(properties
+				.getProperty("outputEditpath"));
 		
 		// whether the edges of the graphs are directed or undirected
 		this.undirected = Integer
@@ -747,7 +744,7 @@ public class GraphMatching {
 
 		// Create and initialise new cost functions
 		CostFunction costFunction;
-		String costType = "Euclidean";
+		String costType = "Euclidean"; // Gw added
 		//String costType = properties.getProperty("costType");
 
 		if (costType.equals("Euclidean")) {
@@ -794,7 +791,7 @@ public class GraphMatching {
 		
 		// bipartite matching procedure (Hungarian or VolgenantJonker)
 		this.bipartiteMatching = new BipartiteMatching(this.matching, this.outputMatching);
-		
+
 		this.greedyMatching = new GreedyMatching();
 		
 		// editDistance computes either the approximated edit-distance according to the bipartite  
@@ -827,16 +824,16 @@ public class GraphMatching {
 		//this.assignmentCostMatrix       = new double[this.r][this.c];
 				
 //		// check if only one match is required
-//		this.oneMatch = Boolean.parseBoolean(properties.getProperty("oneMatch"));
-//		if (this.oneMatch) {
-//			this.oneMatchIdx1 = Integer.parseInt(properties.getProperty("oneMatchIdx1"));
-//			this.oneMatchIdx2 = Integer.parseInt(properties.getProperty("oneMatchIdx2"));
-//			this.oneMatchDisplay = Boolean.parseBoolean(properties.getProperty("oneMatchDisplay"));
-//			this.oneMatchSize = 8;
-//			if (properties.getProperty("oneMatchSize") != null) {
-//				this.oneMatchSize = Double.parseDouble(properties.getProperty("oneMatchSize"));
-//			}
-//		}
+		this.oneMatch = Boolean.parseBoolean(properties.getProperty("oneMatch"));
+		if (this.oneMatch) {
+			this.oneMatchIdx1 = Integer.parseInt(properties.getProperty("oneMatchIdx1"));
+			this.oneMatchIdx2 = Integer.parseInt(properties.getProperty("oneMatchIdx2"));
+			this.oneMatchDisplay = Boolean.parseBoolean(properties.getProperty("oneMatchDisplay"));
+			this.oneMatchSize = 8;
+			if (properties.getProperty("oneMatchSize") != null) {
+				this.oneMatchSize = Double.parseDouble(properties.getProperty("oneMatchSize"));
+			}
+		}
 //
 //		// astar
 //		this.futureCostFunction = properties.getProperty("futureCostFunction");
@@ -862,10 +859,10 @@ public class GraphMatching {
 		// Create trecEval export possibility
 		Path trecEvalFile = Paths.get(properties.getProperty("treceval"));
 		Path resultPath = Paths.get(properties.getProperty("result"));
-
 		resultPath.toFile().mkdirs();
 
 		if(Files.isRegularFile(trecEvalFile) && Files.isDirectory(resultPath)){
+
 			this.trecEval = new TrecEval(resultPath,trecEvalFile,-1);
 		} else {
 			this.trecEval = null;

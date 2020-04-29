@@ -1,0 +1,27 @@
+digraph G {
+node [shape=circle,style=filled,fontcolor=white,label=""];
+edge [arrowsize=1.4];
+0 [pos = "0.10160837322473526,0.07880662381649017!",color=gray80];
+1 [pos = "0.200702503323555,0.31099000573158264!",color=gray80];
+2 [pos = "0.2874999940395355,0.08874999731779099!",color=gray80];
+3 [pos = "0.11877375096082687,0.2019750028848648!",color=gray80];
+4 [pos = "0.2557312548160553,0.19495375454425812!",color=gray80];
+5 [pos = "0.3698662519454956,0.2984125018119812!",fillcolor=gray80,color=black,penwidth=5];
+"0'" [pos = "0.10129862278699875,0.08760625123977661!",color=gray40];
+"1'" [pos = "0.17998750507831573,0.30467626452445984!",color=gray40];
+"2'" [pos = "0.29468750953674316,0.08059687167406082!",color=gray40];
+"3'" [pos = "0.09828037768602371,0.19185499846935272!",color=gray40];
+"4'" [pos = "0.26166126132011414,0.19892124831676483!",color=gray40];
+0 -> 1 [color=gray80,dir=none];
+1 -> 2 [color=gray80,dir=none];
+2 -> 5 [color=gray80,dir=none];
+3 -> 4 [color=gray80,dir=none];
+"0'" -> "1'" [color=gray40,dir=none];
+"1'" -> "2'" [color=gray40,dir=none];
+"3'" -> "4'" [color=gray40,dir=none];
+0 -> "0'" [color=black,penwidth=5,dir=both];
+1 -> "1'" [color=black,penwidth=5,dir=both];
+2 -> "2'" [color=black,penwidth=5,dir=both];
+3 -> "3'" [color=black,penwidth=5,dir=both];
+4 -> "4'" [color=black,penwidth=5,dir=both];
+}

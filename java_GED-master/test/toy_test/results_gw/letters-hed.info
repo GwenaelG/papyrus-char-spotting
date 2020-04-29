@@ -1,0 +1,29 @@
+19
+(milliseconds runtime)
+timestamp:2020_04_29_19_47_38
+
+*** The properties of the matching ***
+
+Source graph set:	test/toy_test/graph_data/Letters/train.cxl (10 graphs)
+Target graph set:	test/toy_test/graph_data/Letters/train.cxl (10 graphs)
+
+Graph edit distance procedure:	HED
+Edge mode:		undirected
+
+Cost for node deletion/insertion:	0.4
+Cost for edge deletion/insertion:	0.1
+
+Alpha weighting factor between node and edge costs:	0.5
+
+Node attribute 0:	x;	Cost function:	squared;	Soft factor:	1.0
+Node attribute 1:	y;	Cost function:	squared;	Soft factor:	1.0
+
+No attributes for edges defined
+
+Individual node costs are added
+Individual edge costs are added
+(Combined node cost)^(1/2.0)
+(Combined edge cost)^(1/1.0)
+
+*** The distance matrix ***
+

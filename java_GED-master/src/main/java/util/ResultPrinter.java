@@ -84,7 +84,7 @@ public class ResultPrinter {
 		// ged file
 		String resultName = this.resultFolder+name+".ged";
 		System.out.println("name: "+ name);
-		System.out.println("foldeer: "+ this.resultFolder);
+		System.out.println("folder: "+ this.resultFolder);
 //		resultName = resultName.replace("/", sep);
 		GEDFile.writeGED(d, sourceIds, targetIds, resultName);
 		
@@ -95,11 +95,11 @@ public class ResultPrinter {
 			out = new PrintWriter(new FileOutputStream(resultName));
 			
 			// andreas
-			out.println("__time " + AStarGED.timeNano);
-			out.println("__open " + AStarGED.numOpen);
-			out.println("__matchings " + AStarGED.numMatchings);
-			out.println("__failures " + AStarGED.numFailures);
-			out.println("__failureIDs" + AStarGED.failures);
+//			out.println("__time " + AStarGED.timeNano);
+//			out.println("__open " + AStarGED.numOpen);
+//			out.println("__matchings " + AStarGED.numMatchings);
+//			out.println("__failures " + AStarGED.numFailures);
+//			out.println("__failureIDs" + AStarGED.failures);
 			
 			out.println(time);
 			out.println("(milliseconds runtime)");
@@ -203,7 +203,7 @@ public class ResultPrinter {
 		String r3 = r2[r2.length-1];
 		int split = r3.lastIndexOf(".");
 		String name = r3.substring(0,split);
-		
+
 		String s1 = source.getGraphID();
 		String[] s2 = s1.split("\\|");
 		String sIdx = s2[1];
