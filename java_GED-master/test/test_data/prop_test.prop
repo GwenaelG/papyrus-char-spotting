@@ -3,10 +3,12 @@ matching=HED
 s=
 
 # paths
-source=test_data//source_cxl_test.txt
-target=test_data//target_cxl_test.txt
-path=test_data//graph_0002_node_label_edge_label_adj_node/
-result=test_data//result/
+source=test/test_data/source_cxl_test.cxl
+target=test/test_data/target_cxl_test.cxl
+path=test/test_data/graph_0002_node_label_edge_label_adj_node/
+result=test/test_data/result_gw/
+groundtruth=test/kws_experiment/gw/words.txt
+treceval=treceval/trec_eval
 
 # parameters
 node=32
