@@ -61,7 +61,7 @@ def test_one_by_one(p_dir_path, p_working_dir):
     :return:
     '''
 
-    gxl_list = [file_name for file_name in os.listdir(p_dir_path) if '.gxl' in file_name]
+     
     time_in = time.clock()
     for file1 in gxl_list:
         make_cxl([file1], source_cxl, p_working_dir)

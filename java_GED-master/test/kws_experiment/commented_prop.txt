@@ -1,14 +1,24 @@
-#Wed May 24 13:28:31 CEST 2017
-target=test/kws_experiment/gw/reduced/target.cxl
+### Commented Properties ###
+
+# graphs and words
+target=test/kws_experiment/ak/reduced/words1000.cxl
+
+# should be "best" or "worst" (GreedyMatrixGenerator)
 adj=bestWithGreedy
+
+# not used?
 dtwWindowOverlapping=
+dtwEmbeddingSubgraphPath=
 input=
 threshold=0
-matching=HED
 polarThreshold=
-dtwEmbeddingSubgraphPath=
+lowerThreshold=0
+upperThreshold=0
+
+#HED only possible, others commented (not tested)
+matching=HED
+
 numOfNodeAttr=0
-#numOfNodeAttr=2
 qBPLevel=
 postNormLowerBound=
 edge=4
@@ -19,21 +29,21 @@ mcsNrOfClasses=
 dtwInput=
 dtwEmbeddingNrOfSubgraphs=
 postNormType=
-result=test/kws_experiment/gw/results_gwenael/1/
-upperThreshold=0
+result=test/kws_experiment/ak/results/
+
 treceval=treceval/trec_eval
 mcsBeta=
-source=test/kws_experiment/gw/reduced/source.cxl
+source=test/kws_experiment/ak/reduced/queries10.cxl
 costType=Euclidean Scaling
 nodeAttr0Importance=0.1
 hedContextRadius=1
 simKernel=0
 steepness=0
-groundtruth=test/kws_experiment/gw/words.txt
+groundtruth=test/kws_experiment/ak/GT.txt
 postNormSize=-1
 qBPBorderOverlapping=
 outputCostMatrix=0
-node=8
+node=1
 dtwSakoeChibaBand=
 nodeAttr1=y
 maxLevel=
@@ -46,15 +56,15 @@ mcsAlpha=
 level1_U=
 mcsType=
 s=
-path=C:/Users/Gwenael/Desktop/MT/histograph-master/01_GW/01_Keypoint/
+path=C:/Users/Gwenael/Desktop/MT/histograph-master/03_AK/02_Projection/02_Test/
 level0_V=
 level0_U=
-alpha=0.5
-dtwResult=test/kws_experiment/gw/results_gwenael/1/
+alpha=0.1
+dtwResult=test/kws_experiment/ak/results_gwenael/
 normalisationFunction=N1
-lowerThreshold=0
+
 fast=
-nodeAttr1Importance=0.9
+nodeAttr1Importance=0.1
 numOfEdgeAttr=0
 dtwWindowSize=
 outputEditpath=0
