@@ -9,6 +9,7 @@ import numpy as np
 import cv2 as cv
 import matplotlib.pyplot as plt
 import os
+import glob
 import skimage.morphology 
 import itertools
 import copy
@@ -51,7 +52,7 @@ def skeletonize(img):
     t, img = cv.threshold(img, 200, 1, cv.THRESH_BINARY_INV)
     skel_img = skimage.morphology.skeletonize(img)
     # coordinates of the skeleton pixels
-    # transposition for clearer coordinates (shape is (n,2)
+    # transposition for clearer coordinates (shape is (n,2))
     skel_coord = np.array(np.where(skel_img)).T
     return skel_coord
 
@@ -192,10 +193,11 @@ def find_keypoints(neigh_CC):
     finds endpoints and junction points in a connected component
     conditions
     - keypoints have only one neighbour
-        TODO: recognize endpoint with two neighbours
     - junction points have three or more neighbours
     - circular structures appear when no endpoints are found 
         -> take first node as arbitrary junction point
+    TODO: evtl. recognize endpoint with two neighbours
+    TODO: evtl. dont allow neighbouring endpoint and junction point
 
     Parameters
     ----------
@@ -249,13 +251,230 @@ def find_keypoints(neigh_CC):
     return endpoints, junctionpoints
 
 
-def find_equidpoints(neigh_CSC, D):
-    #merge with junction point if in 8-nbhd
+def add_equidpoints(neigh_CSC, D):
+    """
+    adds new points every D pixels, begins at one end of the CSC
+    CSC is a segment (length may be 1)
+    
+    TODO: evtl slide first point such that both ends have approx the same number
+        of empty pixels 
+    TODO: evtl change CSC generation / junction point recognition to stop CSC
+        from being circular and thus having no endpoint 
+        problem occurs in such structures:
+        x x x
+        x   x x
+        x x x 
+
+    Parameters
+    ----------
+    neigh_CSC : dictionary 
+        neighbours in the CSC
+    D : int
+        distance between equidistant pixels
+
+    Returns
+    -------
+    equidpoints : list
+        list on indices of intermediate points
+
+    """
     equidpoints = []
+    node = None
+    for i in neigh_CSC:
+        # if CSC only has one pixel
+        if len(neigh_CSC[i]) == 0:
+            return []
+        # if we found an end of segment
+        if len(neigh_CSC[i]) == 1:
+            node = i
+            break
+    # still possible that a CSC has no endpoint
+    if node is None:
+        node = list(neigh_CSC.keys())[0]
+    count = 0
+    visited = set()
+    while True:
+        count += 1
+        visited.add(node)
+        if count % D == 0:
+        # if count 
+            equidpoints.append(node)
+        for n in neigh_CSC[node]:
+            if n not in visited:
+                next_node = n
+        node = next_node
+        if count == len(neigh_CSC.keys()):
+            break
     return equidpoints
+   
+    
+# =============================================================================
+# def fill_edges_v1(V, neigh_img):
+#     """
+#     older algo
+#     problem when two junction points are neighbours:
+#     the second one does not disappear
+#     
+#     
+#     creates edges between between directly connected keypoints
+# 
+#     Parameters
+#     ----------
+#     V : list
+#         indices of the keypoints
+#     neigh_img : dict
+#         neighbours of the whole skeletonized image
+# 
+#     Returns
+#     -------
+#     E : set
+#         set with tuples representing the edges of the graph
+# 
+#     """
+#     E = set()
+#     for node in V:
+#         visited = set([node])
+#         queue = set(neigh_img[node])
+#         while queue:
+#             next_node = queue.pop()
+#             visited.add(next_node)
+#             # we found another vertex of V
+#             if next_node in V:
+#                 # tuples are sorted s. th. edges are not added twice in E
+#                 E.add(tuple(sorted((node, next_node))))
+#             else:
+#                 #add unvisited neighbour nodes to queue
+#                 for i in neigh_img[next_node]:
+#                     if i not in visited:
+#                         queue.add(i)     
+#     return E
+# =============================================================================
     
 
-def keypoint(img, D):
+def fill_edges(V, neigh):
+    """
+    adds edge for adjacent keypoints in the skeleton
+    the algorithm "colors" the skeleton starting from each keypoint(/color):
+    it colors the unvisited neighbours of one color, then those of the next
+    color and so on until all nodes are visited ,and then one last run for all
+    colors. Trying to color a node of another color means the respective
+    keypoints are adjacent    
+        
+    Parameters
+    ----------
+    V : list
+        indices of the keypoints
+    neigh : dict
+        neighbours of the whole skeleton
+
+    Returns
+    -------
+    E : set
+        set with tuples representing the edges of the graph
+
+    """
+    E = set()
+    visited = {}
+    # stores the frontmost pixels of each keypoint spreading
+    current = {}
+    for n in V:
+        # each keypoint is a start point for coloring
+        current[n] = set({n})
+        # keep track of all visited nodes with origin keypoint 
+        visited[n] = n
+    full = False
+    while len(visited.keys()) <= len(neigh.keys()):
+        # spread each keypoint once
+        for orig in V:
+            # get front most nodes
+            nodes = current[orig]
+            temp = set()
+            for node in nodes:
+                for nb in neigh[node]:
+                    # if new node, add to next frontmost pixels
+                    if nb not in visited:
+                        temp.add(nb)
+                        visited[nb] = orig
+                    # if visited node of other origin, add edge in E
+                    elif visited[nb] != orig:
+                        # sort tuple to avoid duplicate edges
+                        E.add((tuple(sorted((visited[nb], orig)))))                                    
+                current[orig] = temp
+        # algo needs one more run afterwards
+        # to allow for last connections to be made
+        if full:
+            break
+        full = len(visited.keys()) == len(neigh.keys())            
+    return E
+
+
+def display_img_graph(img, V, E, coord, name):
+    """
+    display the skeleton with red endpoints, blue junction points and gray 
+    equidistant points in a first subplot, and the final graph on top of the 
+    word image in the second subplot
+
+    Parameters
+    ----------
+    img : array
+        preprocessed image
+    V : list
+        V[0] contains indices of all keypoints
+        V[1] contains indices of endpoints
+        V[2] contains indices of junction points
+        V[3] contains indices of equidistant points
+    E : set
+        edges stored as tuples
+    coord : list
+        list of coordinates of the skeleton's nodes
+    
+    Returns
+    -------
+    None.
+
+    """
+    # one subplot with skeleton and keypoints
+    img_skel = np.full((img.shape[0], img.shape[1],3), 0)
+    for node in coord:
+        img_skel[node[0],node[1],:] = (255,255,255)
+    for ep in V[1]:
+        pos = coord[ep]
+        img_skel[pos[0],pos[1],:] = (255,0,0)
+    for jp in V[2]:
+        pos = coord[jp]
+        img_skel[pos[0],pos[1],:] = (0,0,255)
+    for eqdp in V[3]:
+        pos = coord[eqdp]
+        img_skel[pos[0],pos[1],:] = (150,150,150)
+    # plt.subplot(2,1,1)
+    # plt.imshow(img_skel)
+    # one subplot with word image and graph
+    img_rgba = cv.cvtColor(img, cv.COLOR_GRAY2RGBA)
+    alpha = np.full((img.shape[0], img.shape[1]), 50)
+    img_rgba[:,:,3] = alpha
+    for edge in E:
+        # inverted x and y!
+        # 1st index (rows) corresponds to y-coord
+        # 2nd index (columns) corresponds to x-coord
+        n1 = edge[0]
+        x1 = coord[n1][1]
+        y1 = coord[n1][0]
+        n2 = edge[1]
+        x2 = coord[n2][1]
+        y2 = coord[n2][0]
+        cv.line(img_rgba, (x1, y1), (x2, y2), (0, 0, 0, 100), 1)   
+    for node in V[0]:
+        pos = coord[node]
+        img_rgba[pos[0],pos[1]] = (0,0,0,255)
+    # plt.subplot(2,1,2)
+    # plt.imshow(img_rgba)
+    location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/keypoint/'
+    plt.imsave(location+name+'.jpg', img_rgba)
+    # plt.tight_layout()
+    # plt.show()
+
+    
+def keypoint(img, D, name):
     """
     main function, calls all the others
 
@@ -267,6 +486,8 @@ def keypoint(img, D):
         Distance between two equidistant points.
         See Graph-Based KWS book, Table 9.1 to 9.4 for parameters for the
         different graph sizes and the different databases
+    name : string
+        name of the file    
 
     Returns
     -------
@@ -283,17 +504,18 @@ def keypoint(img, D):
     # separate into connected components
     list_CC = find_CC(neigh_img)
     # vertices and edges of final graph
-    V = []
-    E = []
+    V = [[],[],[],[]]
     for CC in list_CC:
         # dictionary of neighbours in CC
         neigh_CC = update_neighbours(CC, neigh_img)
         # find endpoints and junction points
         endpoints, junctionpoints = find_keypoints(neigh_CC)
-        V.append(endpoints)
-        V.append(junctionpoints)
-        # no need for updated CC index (?)
-        # updated_CC = [node for node in CC if node not in junctionpoints] 
+        for ep in endpoints:
+            V[0].append(ep)
+            V[1].append(ep)
+        for jp in junctionpoints:
+            V[0].append(jp)
+            V[2].append(jp)
         # update neighbours dict by removing junction points
         updated_neigh = copy.deepcopy(neigh_CC)
         for i in neigh_CC:
@@ -312,30 +534,34 @@ def keypoint(img, D):
         for CSC in list_CSC:
             # dictionary of neighbours in CSC
             neigh_CSC = update_neighbours(CSC, updated_neigh)
-            # equidpoints = find_equidpoints(CSC, D)
-    #         V.append(equidpoints)
-    # for u in V:
-    #     # V_t = V[w for w in V if w != u]
-    #     for v in V:
-    #         if are_neighbours(u,v):
-    #             E.append([u,v])
-    # print(neigh_img)
-    return V,E
+            # find equidistant points
+            equid_points = add_equidpoints(neigh_CSC, D)
+            # dont add a point if it already has a neighbour in V
+            for node in equid_points:
+                isolated = True
+                for nb in V[0]:
+                    if are_neighbours(skel_coord[node], skel_coord[nb]):
+                        isolated = False
+                        break
+                if isolated:
+                    V[0].append(node)
+                    V[3].append(node)
+    # fill edges list
+    E = fill_edges(V[0], neigh_img)
+    # show img
+    display_img_graph(img, V, E, skel_coord, name)
     
 
-paths = ['C:/Users/Gwenael/Desktop/MT/histograph-master/01_GW/00_WordImages/270-01-02.png',
-        'C:/Users/Gwenael/Desktop/MT/histograph-master/01_GW/00_WordImages/270-01-03.png',
-        'C:/Users/Gwenael/Desktop/MT/histograph-master/01_GW/00_WordImages/270-01-04.png',
-        'C:/Users/Gwenael/Desktop/MT/histograph-master/01_GW/00_WordImages/270-01-05.png' ]
+location = 'C:/Users/Gwenael/Desktop/MT/histograph-master/01_GW/00_WordImages/'
+fileset = glob.glob(location+'*.png')
+for n, f in enumerate(fileset):
+    img1 = cv.imread(f, 0)
+    name = f[-13:-4]
+    keypoint(img1, 8, name)
 
-# test_i = np.array([[0, 0, 0, 0, 0],
-                   # [0, 255, 255, 255, 0],
-                   # [0, 255, 255, 255, 0],
-                   # [0, 255, 255, 255, 0],
-                   # [0, 0, 0, 0, 0]],dtype='uint8')
-
-# test_c = [[0,4],[1,1],[2,0],[2,2],[3,4],[4,4]]
-# a,b = keypoint(test_i,0)
-
-img = cv.imread(paths[2], 2)
-a,b = keypoint(img, 0)
+# n = 5    
+# img = cv.imread(fileset[n], 0)
+# name = fileset[n][-13:-4]
+keypoint(img, 8, name)
+    
+    
