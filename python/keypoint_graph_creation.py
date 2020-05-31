@@ -231,6 +231,7 @@ def find_keypoints(neigh_CC):
                 endpoints.append(node)
         # check for junction point
         if degrees[node] > 2:
+            # junctionpoints
             best = True
             for nb in neighbours:
                 #look for neighbouring junction point
@@ -253,8 +254,7 @@ def find_keypoints(neigh_CC):
 
 def add_equidpoints(neigh_CSC, D):
     """
-    adds new points every D pixels, begins at one end of the CSC
-    CSC is a segment (length may be 1)
+    adds new points every D pixels
     
     TODO: evtl slide first point such that both ends have approx the same number
         of empty pixels 
@@ -262,7 +262,7 @@ def add_equidpoints(neigh_CSC, D):
         from being circular and thus having no endpoint 
         problem occurs in such structures:
         x x x
-        x   x x
+        x   x x x x 
         x x x 
 
     Parameters
@@ -278,78 +278,61 @@ def add_equidpoints(neigh_CSC, D):
         list on indices of intermediate points
 
     """
+# =============================================================================
+#     equidpoints = []
+#     node = None
+#     for i in neigh_CSC:
+#         # if CSC only has one pixel
+#         if len(neigh_CSC[i]) == 0:
+#             return []
+#         # if we found an end of segment
+#         if len(neigh_CSC[i]) == 1:
+#             node = i
+#             break
+#     # still possible that a CSC has no endpoint
+#     if node is None:
+#         node = list(neigh_CSC.keys())[0]
+#     count = 0
+#     visited = set()
+#     while True:
+#         count += 1
+#         visited.add(node)
+#         if count % D == 0:
+#         # if count 
+#             equidpoints.append(node)
+#         for n in neigh_CSC[node]:
+#             if n not in visited:
+#                 next_node = n
+#         node = next_node
+#         if count == len(neigh_CSC.keys()):
+#             break
+#     return equidpoints
+# =============================================================================
     equidpoints = []
     node = None
     for i in neigh_CSC:
-        # if CSC only has one pixel
         if len(neigh_CSC[i]) == 0:
             return []
-        # if we found an end of segment
         if len(neigh_CSC[i]) == 1:
             node = i
             break
-    # still possible that a CSC has no endpoint
     if node is None:
         node = list(neigh_CSC.keys())[0]
+    visited = {node}
+    current = {node}
     count = 0
-    visited = set()
-    while True:
+    while len(visited) < len(neigh_CSC.keys()):
         count += 1
-        visited.add(node)
-        if count % D == 0:
-        # if count 
-            equidpoints.append(node)
-        for n in neigh_CSC[node]:
-            if n not in visited:
-                next_node = n
-        node = next_node
-        if count == len(neigh_CSC.keys()):
-            break
+        temp = set()
+        for node in current:
+            for nb in neigh_CSC[node]:
+                if nb not in visited:
+                    temp.add(nb)
+                    visited.add(nb)
+                    if count % D == 0:
+                        equidpoints.append(nb)
+        current = temp      
     return equidpoints
-   
-    
-# =============================================================================
-# def fill_edges_v1(V, neigh_img):
-#     """
-#     older algo
-#     problem when two junction points are neighbours:
-#     the second one does not disappear
-#     
-#     
-#     creates edges between between directly connected keypoints
-# 
-#     Parameters
-#     ----------
-#     V : list
-#         indices of the keypoints
-#     neigh_img : dict
-#         neighbours of the whole skeletonized image
-# 
-#     Returns
-#     -------
-#     E : set
-#         set with tuples representing the edges of the graph
-# 
-#     """
-#     E = set()
-#     for node in V:
-#         visited = set([node])
-#         queue = set(neigh_img[node])
-#         while queue:
-#             next_node = queue.pop()
-#             visited.add(next_node)
-#             # we found another vertex of V
-#             if next_node in V:
-#                 # tuples are sorted s. th. edges are not added twice in E
-#                 E.add(tuple(sorted((node, next_node))))
-#             else:
-#                 #add unvisited neighbour nodes to queue
-#                 for i in neigh_img[next_node]:
-#                     if i not in visited:
-#                         queue.add(i)     
-#     return E
-# =============================================================================
-    
 
 def fill_edges(V, neigh):
     """
@@ -434,7 +417,7 @@ def display_img_graph(img, V, E, coord, name):
 
     """
     # one subplot with skeleton and keypoints
-    img_skel = np.full((img.shape[0], img.shape[1],3), 0)
+    img_skel = np.full((img.shape[0], img.shape[1],3), 0, dtype='uint8')
     for node in coord:
         img_skel[node[0],node[1],:] = (255,255,255)
     for ep in V[1]:
@@ -449,9 +432,10 @@ def display_img_graph(img, V, E, coord, name):
     # plt.subplot(2,1,1)
     # plt.imshow(img_skel)
     # one subplot with word image and graph
-    img_rgba = cv.cvtColor(img, cv.COLOR_GRAY2RGBA)
-    alpha = np.full((img.shape[0], img.shape[1]), 50)
-    img_rgba[:,:,3] = alpha
+    img_rgb = cv.cvtColor(img, cv.COLOR_GRAY2RGB)
+    black = np.where(img == 0)
+    for n in range(len(black[0])):
+        img_rgb[black[0][n],black[1][n],:] = (200, 200, 200)
     for edge in E:
         # inverted x and y!
         # 1st index (rows) corresponds to y-coord
@@ -462,19 +446,51 @@ def display_img_graph(img, V, E, coord, name):
         n2 = edge[1]
         x2 = coord[n2][1]
         y2 = coord[n2][0]
-        cv.line(img_rgba, (x1, y1), (x2, y2), (0, 0, 0, 100), 1)   
+        cv.line(img_rgb, (x1, y1), (x2, y2), (150, 150, 150), 1)   
     for node in V[0]:
         pos = coord[node]
-        img_rgba[pos[0],pos[1]] = (0,0,0,255)
+        img_rgb[pos[0],pos[1]] = (0,0,0)
     # plt.subplot(2,1,2)
-    # plt.imshow(img_rgba)
-    location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/keypoint/'
-    plt.imsave(location+name+'.jpg', img_rgba)
+    # plt.imshow(img_rgb)
+    location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/keypoint/images/'
+    plt.imsave(location+name+'_a.png', img_rgb)
+    plt.imsave(location+name+'_b.png', img_skel)
     # plt.tight_layout()
     # plt.show()
 
+
+def create_gxl(V, E, coord, name):
+    location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/keypoint/gxl/'
+    filename = location+name+'.gxl'
+    header_lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>\n',
+        '<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">\n',
+        '<gxl>\n',
+        '<graph edgeids="false" edgemode="undirected" id="'+name+'">\n']
+    footer_lines = [
+        '</graph>\n',
+        '</gxl>']
+    means = np.mean(coord[V[0]], axis = 0)
+    stdev = np.std(coord[V[0]], axis = 0)
+    norm_coord = [[(coord[node][0] - means[0]) / stdev[0], (coord[node][1] - means[1]) / stdev[1]] for node in V[0]]
+    file = open(filename, 'w')
+    file.writelines(header_lines)
+    string = f'\t<attr name="x_std">\n\t\t<float>{stdev[0]}</float>\n\t</attr>\n' \
+        f'\t<attr name="y_std">\n\t\t<float>{stdev[1]}</float>\n\t</attr>\n'
+    file.write(string)
+    for i, node in enumerate(norm_coord):
+        string = f'\t<node id="{name}_{i}">\n' \
+            f'\t\t<attr name="x">\n\t\t\t<float>{node[0]}</float>\n\t\t</attr>\n' \
+            f'\t\t<attr name="y">\n\t\t\t<float>{node[1]}</float>\n\t\t</attr>\n' \
+            f'\t</node>\n'
+        file.write(string)
+    for edge in E:
+        string = f'\t<edge from="{name}_{edge[0]}" to="{name}_{edge[1]}"/>\n'
+        file.write(string)
+    file.writelines(footer_lines)
+    file.close()
     
-def keypoint(img, D, name):
+def keypoint_graph(img, D, name):
     """
     main function, calls all the others
 
@@ -549,19 +565,18 @@ def keypoint(img, D, name):
     # fill edges list
     E = fill_edges(V[0], neigh_img)
     # show img
-    display_img_graph(img, V, E, skel_coord, name)
+    # display_img_graph(img, V, E, skel_coord, name)
+    # create gxl file
+    create_gxl(V, E, skel_coord, name)
     
+
 
 location = 'C:/Users/Gwenael/Desktop/MT/histograph-master/01_GW/00_WordImages/'
 fileset = glob.glob(location+'*.png')
 for n, f in enumerate(fileset):
     img1 = cv.imread(f, 0)
     name = f[-13:-4]
-    keypoint(img1, 8, name)
+    keypoint_graph(img1, 4, name)
 
-# n = 5    
-# img = cv.imread(fileset[n], 0)
-# name = fileset[n][-13:-4]
-keypoint(img, 8, name)
-    
+
     
