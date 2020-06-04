@@ -112,7 +112,7 @@ def fill_neighbours(coords):
 
 def are_neighbours(p1, p2):
     """
-    
+    finds whether two pixels are neighbours (in the conncted 8-nbhd)
 
     Parameters
     ----------
@@ -256,6 +256,8 @@ def add_equidpoints(neigh_CSC, D):
     """
     adds new points every D pixels
     
+    TODO: evtl change algo for eqdpt recognition (dont generate neighboring pts)
+        maybe dependent on skeleton generation...
     TODO: evtl slide first point such that both ends have approx the same number
         of empty pixels 
     TODO: evtl change CSC generation / junction point recognition to stop CSC
@@ -264,6 +266,7 @@ def add_equidpoints(neigh_CSC, D):
         x x x
         x   x x x x 
         x x x 
+        
 
     Parameters
     ----------
@@ -278,49 +281,26 @@ def add_equidpoints(neigh_CSC, D):
         list on indices of intermediate points
 
     """
-# =============================================================================
-#     equidpoints = []
-#     node = None
-#     for i in neigh_CSC:
-#         # if CSC only has one pixel
-#         if len(neigh_CSC[i]) == 0:
-#             return []
-#         # if we found an end of segment
-#         if len(neigh_CSC[i]) == 1:
-#             node = i
-#             break
-#     # still possible that a CSC has no endpoint
-#     if node is None:
-#         node = list(neigh_CSC.keys())[0]
-#     count = 0
-#     visited = set()
-#     while True:
-#         count += 1
-#         visited.add(node)
-#         if count % D == 0:
-#         # if count 
-#             equidpoints.append(node)
-#         for n in neigh_CSC[node]:
-#             if n not in visited:
-#                 next_node = n
-#         node = next_node
-#         if count == len(neigh_CSC.keys()):
-#             break
-#     return equidpoints
-# =============================================================================
+    
     equidpoints = []
     node = None
     for i in neigh_CSC:
+        # if only one point in CSC
         if len(neigh_CSC[i]) == 0:
             return []
+        # if the node has one nb, we found an endpoint of csc
         if len(neigh_CSC[i]) == 1:
             node = i
             break
+    # if no node has one nb, take the first one
+    # ie for circular structures
     if node is None:
         node = list(neigh_CSC.keys())[0]
     visited = {node}
     current = {node}
     count = 0
+    # visit nodes wave after wave
+    # all points with distance n*d are equid points
     while len(visited) < len(neigh_CSC.keys()):
         count += 1
         temp = set()
@@ -470,20 +450,24 @@ def create_gxl(V, E, coord, name):
     footer_lines = [
         '</graph>\n',
         '</gxl>']
+    # normalize coordinates: x_norm = (x - mean_x) / std_x, y_norm = (y - mean_y) / std_y
     means = np.mean(coord[V[0]], axis = 0)
     stdev = np.std(coord[V[0]], axis = 0)
     norm_coord = [[(coord[node][0] - means[0]) / stdev[0], (coord[node][1] - means[1]) / stdev[1]] for node in V[0]]
     file = open(filename, 'w')
+    # keep standard deviation
     file.writelines(header_lines)
     string = f'\t<attr name="x_std">\n\t\t<float>{stdev[0]}</float>\n\t</attr>\n' \
         f'\t<attr name="y_std">\n\t\t<float>{stdev[1]}</float>\n\t</attr>\n'
     file.write(string)
+    # write all nodes
     for i, node in enumerate(norm_coord):
         string = f'\t<node id="{name}_{i}">\n' \
             f'\t\t<attr name="x">\n\t\t\t<float>{node[0]}</float>\n\t\t</attr>\n' \
             f'\t\t<attr name="y">\n\t\t\t<float>{node[1]}</float>\n\t\t</attr>\n' \
             f'\t</node>\n'
         file.write(string)
+    # write all edges
     for edge in E:
         string = f'\t<edge from="{name}_{edge[0]}" to="{name}_{edge[1]}"/>\n'
         file.write(string)
