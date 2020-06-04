@@ -41,9 +41,10 @@ def fill_nodes_edges(cont,d):
     """
     fills the nodes and edges of a contour, nodes have distance d following 
     the contour.
-    simple algorithm: contour points seem to be given in order, so node indices are
-    easy to determine, so are edges (each node to its successor, with one more
-    edge for linking start and finish).
+    The contour points seem to be given in order for each contour part by the
+    OpenCV function.
+    Node indices are easy to determine, so are edges 
+    (each node to its successor, with one more edge for linking start and finish).
 
     Parameters
     ----------
@@ -75,7 +76,9 @@ def fill_nodes_edges(cont,d):
 
 def flatten(contours, Vc, Ec):
     """
-    
+    creates a unique array with all coordinates (no more separation between different
+    contour parts) and a unique set of edges 
+    since we have unique indices, so the node set V is not needed anymore
 
     Parameters
     ----------
@@ -89,20 +92,23 @@ def flatten(contours, Vc, Ec):
     Returns
     -------
     coords : array
-        
-    E : TYPE
-        DESCRIPTION.
+        coordinates in one array, no more contour separation
+    E : set
+        set of edges, using indices of coords
 
     """
     coords = []
+    # used for storing temporary references for edges indexing
     index = [{} for i in contours]
     E = set()
     ind = 0
+    # remember that nodes are ordered when produced 
     for n, cc in enumerate(Vc):
         for node in Vc[cc]:
             coords.append(contours[n][node]) 
             index[n][node] = ind
             ind += 1
+    # use the correct node index
     for n, cc in enumerate(Ec):
         for edge in Ec[cc]:
             n1 = edge[0]
@@ -114,6 +120,29 @@ def flatten(contours, Vc, Ec):
 
 
 def display_img_graph(img, contours, coords, E, name):
+    """
+    can display the graph on top of the image in a subplot and the contours in
+    a second subplot
+    can save the subplots as images
+
+    Parameters
+    ----------
+    img : array
+        binarized preprocessed image
+    contours : array
+        coordinates of all the contours points
+    coords : array
+        coordinates of the nodes
+    E : set
+        edges (indexed for coords)
+    name : string
+        name of the image
+
+    Returns
+    -------
+    None.
+
+    """
     img_blank = np.full((img.shape[0],img.shape[1]), 0, dtype='uint8')
     img_cont = cv.drawContours(img_blank, contours, -1, 255, 1)
     img_rgb = cv.cvtColor(img, cv.COLOR_GRAY2RGB)
@@ -140,6 +169,24 @@ def display_img_graph(img, contours, coords, E, name):
     
     
 def create_gxl(coords, E, name):
+    """
+    create a .gxl file containing the name, infos, standard deviations, 
+    normalized coordinates of nodes and edges of the graph
+
+    Parameters
+    ----------
+    coords : array
+        coordinates of the nodes
+    E : set
+        edges 
+    name : string
+        name of the graph
+
+    Returns
+    -------
+    None.
+
+    """
     location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/test/'
     filename = location+name+'.gxl'
     header_lines = [
@@ -152,18 +199,22 @@ def create_gxl(coords, E, name):
         '</gxl>']
     means = np.mean(coords, axis = 0)
     stdev = np.std(coords, axis = 0)
+    # normalize coordinates: x_norm = (x - mean_x) / std_x, y_norm = (y - mean_y) / std_y
     norm_coords = [[(node[0] - means[0]) / stdev[0], (node[1] - means[1]) / stdev[1]] for node in coords]
     file = open(filename, 'w')
     file.writelines(header_lines)
+    # keep standard deviation
     string = f'\t<attr name="x_std">\n\t\t<float>{stdev[0]}</float>\n\t</attr>\n' \
         f'\t<attr name="y_std">\n\t\t<float>{stdev[1]}</float>\n\t</attr>\n'
     file.write(string)
+    # write all nodes
     for i, node in enumerate(norm_coords):
         string = f'\t<node id="{name}_{i}">\n' \
             f'\t\t<attr name="x">\n\t\t\t<float>{node[0]}</float>\n\t\t</attr>\n' \
             f'\t\t<attr name="y">\n\t\t\t<float>{node[1]}</float>\n\t\t</attr>\n' \
             f'\t</node>\n'
         file.write(string)
+    # write all edges
     for edge in E:
         string = f'\t<edge from="{name}_{edge[0]}" to="{name}_{edge[1]}"/>\n'
         file.write(string)
@@ -173,6 +224,23 @@ def create_gxl(coords, E, name):
 
     
 def contour_graph(img, d, name):
+    """
+    main function, calls the other ones
+
+    Parameters
+    ----------
+    img : array
+        preprocessed binarized image
+    d : int
+        distance between pixels   
+    name : String
+        name of the graph
+
+    Returns
+    -------
+    None.
+
+    """
     contours = get_contours(img)
     c = []
     # strip unnecessary layer of array
@@ -191,16 +259,37 @@ def contour_graph(img, d, name):
     
 
 def eps_comp(img, eps_val, name):
+    """
+    compares the different epsilon values for the Douglas-Peucker algo
+
+    Parameters
+    ----------
+    img : array
+        binarized preprocessed image
+    eps_val : list
+        four values to test
+    name : String
+        name of the graph
+
+    Returns
+    -------
+    None.
+
+    """
+    # usual functions
     contours = get_contours(img)
     img_cont = np.full((img.shape[0],img.shape[1]), 0, dtype='uint8')
     cv.drawContours(img_cont, contours, -1, 255, 1)
     plt.subplot(2,2,1),plt.imshow(img_cont, cmap='gray')
     plt.title('Original Contours'), plt.xticks([]), plt.yticks([])
+    # one image for each value of epsilon
     for i, v in enumerate(eps_val):
         img_appr = np.full((img.shape[0], img.shape[1]), 0, dtype='uint8')
         appr_contours = []
         for c in contours:
+            # threshold uses length of the arc 
             eps = v * cv.arcLength(c, True)
+            # OpenCV's function
             appr_contours.append(cv.approxPolyDP(c, eps, True))
         cv.drawContours(img_appr, appr_contours, -1, 255, 1)
         plt.subplot(2,2,i+2),plt.imshow(img_appr, cmap='gray')
@@ -212,12 +301,30 @@ def eps_comp(img, eps_val, name):
     
 
 def d_comp(img, d_val, name):
+    """
+    compares the different distances between two nodes
+
+    Parameters
+    ----------
+    img : array
+        binarized preprocessed image
+    d_val : list
+        four values to test
+    name : String
+        name of the graph
+
+    Returns
+    -------
+    None.
+
+    """
     contours = get_contours(img)
     c = []
     # strip unnecessary layer of array
     for cont in contours:
         c.append(cont[:,0])
     contours = c
+    # one image for each distance
     for k, d in enumerate(d_val):
         Vc = {}
         Ec = {}

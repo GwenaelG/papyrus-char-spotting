@@ -373,9 +373,10 @@ def fill_edges(V, neigh):
 
 def display_img_graph(img, V, E, coord, name):
     """
-    display the skeleton with red endpoints, blue junction points and gray 
+    can display the skeleton with red endpoints, blue junction points and gray 
     equidistant points in a first subplot, and the final graph on top of the 
-    word image in the second subplot
+    word image in the second subplot 
+    can save the subplots as images
 
     Parameters
     ----------
@@ -440,6 +441,26 @@ def display_img_graph(img, V, E, coord, name):
 
 
 def create_gxl(V, E, coord, name):
+    """
+    create a .gxl file containing the name, infos, standard deviations, 
+    normalized coordinates of nodes and edges of the graph
+
+    Parameters
+    ----------
+    V : list
+        contains indices of keypoints
+    E : set
+        edges stored as tuples
+    coord : list
+        list of coordinates of the skeleton's nodes
+    name : string
+        name of the graph
+
+    Returns
+    -------
+    None.
+
+    """
     location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/keypoint/gxl/'
     filename = location+name+'.gxl'
     header_lines = [
