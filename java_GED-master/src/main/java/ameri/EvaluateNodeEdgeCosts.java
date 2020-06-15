@@ -61,8 +61,8 @@ public class EvaluateNodeEdgeCosts
 
     private double estimateEdgeCost()
     {
-        Edge [][] g1Edges  = g1.getAdjacenyMatrix();
-        Edge [][] g2Edges  = g2.getAdjacenyMatrix();
+        Edge [][] g1Edges  = g1.getAdjacencyMatrix();
+        Edge [][] g2Edges  = g2.getAdjacencyMatrix();
 
         Vector<Edge> g1EdgeList = new Vector<>(g1.size());
         Vector<Edge> g2EdgeList = new Vector<>(g2.size());

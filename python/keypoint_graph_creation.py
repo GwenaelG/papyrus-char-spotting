@@ -440,7 +440,7 @@ def display_img_graph(img, V, E, coord, name):
     # plt.show()
 
 
-def create_gxl(V, E, coord, name):
+def create_gxl(V, E, coord, name, D):
     """
     create a .gxl file containing the name, infos, standard deviations, 
     normalized coordinates of nodes and edges of the graph
@@ -461,7 +461,9 @@ def create_gxl(V, E, coord, name):
     None.
 
     """
-    location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/keypoint/gxl/'
+    location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/keypoint/gxl/D_'+str(D)+'/'
+    if not os.path.exists(location):
+        os.makedirs(location)
     filename = location+name+'.gxl'
     header_lines = [
         '<?xml version="1.0" encoding="UTF-8"?>\n',
@@ -472,32 +474,34 @@ def create_gxl(V, E, coord, name):
         '</graph>\n',
         '</gxl>']
     # normalize coordinates: x_norm = (x - mean_x) / std_x, y_norm = (y - mean_y) / std_y
-    means = np.mean(coord[V[0]], axis = 0)
-    stdev = np.std(coord[V[0]], axis = 0)
-    norm_coord = [[(coord[node][0] - means[0]) / stdev[0], (coord[node][1] - means[1]) / stdev[1]] for node in V[0]]
+    # invert x and y! 
+    # probably comes from transposition in skeletonize()
+    means = np.mean(coord[V], axis = 0)
+    stdev = np.std(coord[V], axis = 0)
+    norm_coord = [[(coord[node][0] - means[0]) / stdev[0], (coord[node][1] - means[1]) / stdev[1]] for node in V]
     file = open(filename, 'w')
     # keep standard deviation
     file.writelines(header_lines)
-    string = f'\t<attr name="x_std">\n\t\t<float>{stdev[0]}</float>\n\t</attr>\n' \
-        f'\t<attr name="y_std">\n\t\t<float>{stdev[1]}</float>\n\t</attr>\n'
+    string = f'\t<attr name="x_std">\n\t\t<float>{stdev[1]}</float>\n\t</attr>\n' \
+        f'\t<attr name="y_std">\n\t\t<float>{stdev[0]}</float>\n\t</attr>\n'
     file.write(string)
     # write all nodes
     for i, node in enumerate(norm_coord):
         string = f'\t<node id="{name}_{i}">\n' \
-            f'\t\t<attr name="x">\n\t\t\t<float>{node[0]}</float>\n\t\t</attr>\n' \
-            f'\t\t<attr name="y">\n\t\t\t<float>{node[1]}</float>\n\t\t</attr>\n' \
+            f'\t\t<attr name="x">\n\t\t\t<float>{node[1]}</float>\n\t\t</attr>\n' \
+            f'\t\t<attr name="y">\n\t\t\t<float>{node[0]}</float>\n\t\t</attr>\n' \
             f'\t</node>\n'
         file.write(string)
     # write all edges
     for edge in E:
-        string = f'\t<edge from="{name}_{edge[0]}" to="{name}_{edge[1]}"/>\n'
+        string = f'\t<edge from="{name}_{V.index(edge[0])}" to="{name}_{V.index(edge[1])}"/>\n'
         file.write(string)
     file.writelines(footer_lines)
     file.close()
     
 def keypoint_graph(img, D, name):
     """
-    main function, calls all the others
+    transformation from image to graph / image / file
 
     Parameters
     ----------
@@ -512,10 +516,7 @@ def keypoint_graph(img, D, name):
 
     Returns
     -------
-    V : TYPE
-        DESCRIPTION.
-    E : TYPE
-        DESCRIPTION.
+    None.
 
     """
     # transform image into skeleton
@@ -572,16 +573,40 @@ def keypoint_graph(img, D, name):
     # show img
     # display_img_graph(img, V, E, skel_coord, name)
     # create gxl file
-    create_gxl(V, E, skel_coord, name)
+    create_gxl(V[0], E, skel_coord, name, D)
     
 
+def keypoint_start(location, D, slc = None):
+    """
+    main function to call, opens the images 
 
-location = 'C:/Users/Gwenael/Desktop/MT/histograph-master/01_GW/00_WordImages/'
-fileset = glob.glob(location+'*.png')
-for n, f in enumerate(fileset):
-    img1 = cv.imread(f, 0)
-    name = f[-13:-4]
-    keypoint_graph(img1, 4, name)
+    Parameters
+    ----------
+    location : String
+        folder with images (.png format)
+    D : int
+        distance between equidistant points
+    slc : tuple, optional
+        specifies the slice of images to keep. The default is None.
+
+    Returns
+    -------
+    None.
+
+    """
+    fileset = glob.glob(location+'*.png')
+    if slc is not None:
+        fileset = fileset[slc[0]:slc[1]]
+    for n, f in enumerate(fileset):
+        img = cv.imread(f,0)
+        name = f[-13:-4]
+        keypoint_graph(img, D, name)
 
 
+
+def main():
+    keypoint_start('C:/Users/Gwenael/Desktop/MT/histograph-master/01_GW/00_WordImages/', 5, (0,1))
+
+if __name__ == '__main__':
+    main()
     

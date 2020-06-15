@@ -22,7 +22,7 @@ public class AStarGraph {
 			nodes[i] = iter.next();
 			i++;
 		}
-		edges = graph.getAdjacenyMatrix();
+		edges = graph.getAdjacencyMatrix();
 		adjacentNodes = new AdjacentNodes[nodes.length];
 		for (int k=0; k < nodes.length; k++) {
 			adjacentNodes[k] = new AdjacentNodes(graph, k);

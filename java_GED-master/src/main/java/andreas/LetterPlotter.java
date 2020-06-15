@@ -70,7 +70,7 @@ public class LetterPlotter {
 			draw.fillOval(coord.getX(n)-coord.getR()/2, coord.getY(n)-coord.getR()/2, coord.getR(), coord.getR());
 		}
 		LinkedList<Edge> edges = new LinkedList<Edge>();
-		Edge[][] adjacencyMatrix = graph.getAdjacenyMatrix();
+		Edge[][] adjacencyMatrix = graph.getAdjacencyMatrix();
 		for (int i = 0; i < adjacencyMatrix.length; i++){
 			for (int j = 0; j < adjacencyMatrix.length; j++){
 				if (adjacencyMatrix[i][j] != null){

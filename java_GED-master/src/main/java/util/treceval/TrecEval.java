@@ -29,7 +29,6 @@ public class TrecEval {
     public void exportSpottingResults(AbstractList<SpottingResult> spottingResults){
 
         try {
-
             // Create relevance file
             Path localRelevanceFile = resultPath.resolve("local_relevance");
             List<String> localRelevanceOutput = new ArrayList<>();

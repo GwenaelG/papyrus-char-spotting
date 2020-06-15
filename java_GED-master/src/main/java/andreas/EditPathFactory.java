@@ -77,8 +77,8 @@ public class EditPathFactory {
 		if (!g1.isDirected()) {
 			factor = 0.5;
 		}
-		a1 = g1.getAdjacenyMatrix();
-		a2 = g2.getAdjacenyMatrix();
+		a1 = g1.getAdjacencyMatrix();
+		a2 = g2.getAdjacencyMatrix();
 		for (int i=0; i < map12.length; i++) {
 			if (map12[i] >= 0) { // substitutions
 				int j = map12[i];
@@ -115,8 +115,8 @@ public class EditPathFactory {
 		if (!g1.isDirected()) {
 			factor = 0.5;
 		}
-		a1 = g1.getAdjacenyMatrix();
-		a2 = g2.getAdjacenyMatrix();
+		a1 = g1.getAdjacencyMatrix();
+		a2 = g2.getAdjacencyMatrix();
 		for (int i=0; i < map12.length; i++) {
 			if (map12[i] >= 0) { // substitutions 1 => 2
 				int j = map12[i];

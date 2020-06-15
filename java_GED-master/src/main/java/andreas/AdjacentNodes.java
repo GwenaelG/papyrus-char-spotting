@@ -11,7 +11,7 @@ public class AdjacentNodes {
 	private boolean[] isOutgoing;
 	
 	public AdjacentNodes(Graph g, int i) {
-		Edge[][] a = g.getAdjacenyMatrix();
+		Edge[][] a = g.getAdjacencyMatrix();
 		ArrayList<Integer> nodes = new ArrayList<Integer>();
 		ArrayList<Boolean> outgoing = new ArrayList<Boolean>();
 		for (int j=0; j < a.length; j++) {

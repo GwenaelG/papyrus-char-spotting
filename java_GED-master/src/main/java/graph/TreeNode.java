@@ -56,8 +56,8 @@ public class TreeNode implements Comparable<TreeNode> {
 		this.unusedNodes2 = g2;
 		this.originalGraph1 = g1;
 		this.originalGraph2 = g2;
-		this.a1 = g1.getAdjacenyMatrix();
-		this.a2 = g2.getAdjacenyMatrix();
+		this.a1 = g1.getAdjacencyMatrix();
+		this.a2 = g2.getAdjacencyMatrix();
 		this.cost = 0;
 		this.cf = cf;
 		this.matching = new int[g1.size()];

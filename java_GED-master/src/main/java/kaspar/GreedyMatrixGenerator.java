@@ -559,8 +559,8 @@ public class GreedyMatrixGenerator {
 	public double[][] getSimpleMatrix(Graph sourceGraph, Graph targetGraph) {
 		this.source = sourceGraph;
 		this.target = targetGraph;
-		this.sourceEdges = this.source.getAdjacenyMatrix();
-		this.targetEdges = this.target.getAdjacenyMatrix();
+		this.sourceEdges = this.source.getAdjacencyMatrix();
+		this.targetEdges = this.target.getAdjacencyMatrix();
 		
 		
 		int sSize = sourceGraph.size();
@@ -637,8 +637,8 @@ public class GreedyMatrixGenerator {
 	public double[][] getSimpleMatrix2(Graph sourceGraph, Graph targetGraph) {
 		this.source = sourceGraph;
 		this.target = targetGraph;
-		this.sourceEdges = this.source.getAdjacenyMatrix();
-		this.targetEdges = this.target.getAdjacenyMatrix();
+		this.sourceEdges = this.source.getAdjacencyMatrix();
+		this.targetEdges = this.target.getAdjacencyMatrix();
 		int sSize = sourceGraph.size();
 		int tSize = targetGraph.size();
 		int dim = sSize + tSize;
@@ -690,8 +690,8 @@ public class GreedyMatrixGenerator {
 
 
 	public double[][] getMoreAdjacencyMatrix(Graph g1, Graph g2) {
-		Edge[][] a1 = g1.getAdjacenyMatrix();
-		Edge[][] a2 = g2.getAdjacenyMatrix();
+		Edge[][] a1 = g1.getAdjacencyMatrix();
+		Edge[][] a2 = g2.getAdjacencyMatrix();
 		this.edges1 = new LinkedList<Edge>();
 		this.edges2 = new LinkedList<Edge>();
 		for (int i = 0; i < a1.length-1; i++){

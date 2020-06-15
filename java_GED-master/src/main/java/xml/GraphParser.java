@@ -130,7 +130,7 @@ public class GraphParser {
 
         // Create edges
         Edge[][] edges = new Edge[nrOfNodes][nrOfNodes];
-        graph.setAdjacenyMatrix(edges);
+        graph.setAdjacencyMatrix(edges);
 
         for(int i=0; i<gxlGraph.getChildCount(); i++){
             if(gxlGraph.getChildAt(i) instanceof GXLEdge){

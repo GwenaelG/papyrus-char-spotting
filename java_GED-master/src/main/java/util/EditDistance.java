@@ -67,8 +67,8 @@ public class EditDistance {
 		}
 		double ed = 0.;
 		// the edges of graph g1 and graph g2
-		Edge[][] edgesOfG1 = g1.getAdjacenyMatrix();
-		Edge[][] edgesOfG2 = g2.getAdjacenyMatrix();
+		Edge[][] edgesOfG1 = g1.getAdjacencyMatrix();
+		Edge[][] edgesOfG2 = g2.getAdjacencyMatrix();
 		
 		for (int i = 0; i < matching.length; i++){
 			if (matching[i][0] < g1.size()){

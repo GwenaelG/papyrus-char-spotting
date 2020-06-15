@@ -156,14 +156,14 @@ public class CED {
 			for (int i=0; i < closed.size(); i++) {
 				contextGraph.add(g.get(closed.get(i)));
 			}
-			Edge[][] adj = g.getAdjacenyMatrix();
+			Edge[][] adj = g.getAdjacencyMatrix();
 			Edge[][] contextAdj = new Edge[contextGraph.size()][contextGraph.size()];
 			for (int i=0; i < contextGraph.size(); i++) {
 				for (int j=0; j < contextGraph.size(); j++) {
 					contextAdj[i][j] = adj[closed.get(i)][closed.get(j)];
 				}
 			}
-			contextGraph.setAdjacenyMatrix(contextAdj);
+			contextGraph.setAdjacencyMatrix(contextAdj);
 			context[i_g] = contextGraph;
 		}
 		return context;

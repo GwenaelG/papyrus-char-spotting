@@ -278,35 +278,38 @@ public class GraphMatching {
 //					}
 //				}
 				
-				/**
-				 * HED
-				 */				
+					/**
+					 * HED
+					 */
 				
-				if (this.matching.equals("HED")) {
-					if (this.sourceGraph.size()<this.targetGraph.size()){
-						this.swapGraphs();
-						swapped= true;
-					}
+					if (this.matching.equals("HED")) {
+						if (this.sourceGraph.size()<this.targetGraph.size()){
+							this.swapGraphs();
+							swapped= true;
+						}
 
-					HED hed = new HED();
-					d = hed.getHausdorffEditDistance(sourceGraph, targetGraph, costFunctionManager);
-					editPath = null;
-
-					double[] distances = this.editDistance.getNormalisedEditDistance(sourceGraph,targetGraph,d,normalisationFunction);
-
-					d = distances[0];
-					d_norm = distances[1];
-
-					if (this.oneMatch) {
-						HEDViz hedviz = new HEDViz();
-						d = hedviz.getHausdorffEditDistance(sourceGraph, targetGraph, costFunctionManager);
-						editPath = hedviz.getEditPath(sourceGraph, targetGraph);
-					} else {
-						HED hed2 = new HED();
-						d = hed2.getHausdorffEditDistance(sourceGraph, targetGraph, costFunctionManager);
+						HED hed = new HED();
+						d = hed.getHausdorffEditDistance(sourceGraph, targetGraph, costFunctionManager);
 						editPath = null;
+
+						double[] distances = this.editDistance.getNormalisedEditDistance(sourceGraph,targetGraph,d,normalisationFunction);
+
+						d = distances[0];
+						d_norm = distances[1];
+
+//						if (this.oneMatch) {
+//							System.out.println("oM");
+//							HEDViz hedviz = new HEDViz();
+//							d = hedviz.getHausdorffEditDistance(sourceGraph, targetGraph, costFunctionManager);
+//							editPath = hedviz.getEditPath(sourceGraph, targetGraph);
+//						} else {
+//							System.out.println("not oM");
+//							HED hed2 = new HED();
+//							d = hed2.getHausdorffEditDistance(sourceGraph, targetGraph, costFunctionManager);
+//							System.out.println("d2 : "+d);
+//							editPath = null;
+//						}
 					}
-				}
 
 //				/**
 //				 * HEDOneMatch
@@ -582,6 +585,7 @@ public class GraphMatching {
 //		System.out.println("matchings: " + AStarGED.numMatchings);
 //		System.out.println("failures: " + AStarGED.numFailures);
 //
+
 		// printing the distances or similarities
 		System.out.println("Printing the results...");
 		if (this.oneMatch) {
@@ -744,8 +748,8 @@ public class GraphMatching {
 
 		// Create and initialise new cost functions
 		CostFunction costFunction;
-		String costType = "Euclidean"; // Gw added
-		//String costType = properties.getProperty("costType");
+
+		String costType = properties.getProperty("costType");
 
 		if (costType.equals("Euclidean")) {
 			costFunction = new EuclideanDistance();
@@ -862,7 +866,6 @@ public class GraphMatching {
 		resultPath.toFile().mkdirs();
 
 		if(Files.isRegularFile(trecEvalFile) && Files.isDirectory(resultPath)){
-
 			this.trecEval = new TrecEval(resultPath,trecEvalFile,-1);
 		} else {
 			this.trecEval = null;

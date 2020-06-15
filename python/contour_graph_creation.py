@@ -37,7 +37,7 @@ def get_contours(img):
     img, cont, h = cv.findContours(img, cv.RETR_TREE, cv.CHAIN_APPROX_NONE)
     return cont
 
-def fill_nodes_edges(cont,d):
+def fill_nodes_edges(cont,D):
     """
     fills the nodes and edges of a contour, nodes have distance d following 
     the contour.
@@ -64,7 +64,7 @@ def fill_nodes_edges(cont,d):
     V_i = set()
     E_i = set()
     L = len(cont)
-    pts =  np.arange(0, L, d)
+    pts =  np.arange(0, L, D)
     for node in pts:
         V_i.add(node)
     # supplementary edge
@@ -119,7 +119,7 @@ def flatten(contours, Vc, Ec):
     return coords, E
 
 
-def display_img_graph(img, contours, coords, E, name):
+def display_img_graph(img, contours, coords, E, name, D, v=0, mode='n'):
     """
     can display the graph on top of the image in a subplot and the contours in
     a second subplot
@@ -159,16 +159,21 @@ def display_img_graph(img, contours, coords, E, name):
         cv.line(img_rgb, (x1, y1), (x2, y2), (150, 150, 150), 1)
     for node in coords:
         img_rgb[node[1],node[0]] =(0,0,0)
-    plt.subplot(2,1,1),plt.imshow(img_cont, cmap='gray')     
-    plt.subplot(2,1,2), plt.imshow(img_rgb)
-    plt.tight_layout()
-    plt.show()
-    # location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/contour/images/'
-    # plt.imsave(location+name+'_a.png', img_rgb)
-    # plt.imsave(location+name+'_b.png', img_cont, cmap='gray')
+    if mode == 'd':
+        plt.subplot(2,1,1),plt.imshow(img_cont, cmap='gray')     
+        plt.subplot(2,1,2), plt.imshow(img_rgb)
+        plt.tight_layout()
+        plt.show()
+    if mode == 's':
+        location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/contour/images/'
+        if v != 0:
+            plt.imsave(location+name+'_DP_'+str(v)+'.png', img_rgb)
+        else:
+            plt.imsave(location+name+'_D_'+str(D)+'.png', img_rgb)
+        # plt.imsave(location+name+'_DP_b.png', img_cont, cmap='gray')
     
     
-def create_gxl(coords, E, name):
+def create_gxl(coords, E, name, D, v=None):
     """
     create a .gxl file containing the name, infos, standard deviations, 
     normalized coordinates of nodes and edges of the graph
@@ -187,7 +192,12 @@ def create_gxl(coords, E, name):
     None.
 
     """
-    location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/test/'
+    location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/contour/gxl/D_'+str(D)+'/'
+    # location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/test/'
+    if v is not None: 
+        location = location + 'v_'+str(v)+'/'
+    if not os.path.exists(location):
+        os.makedirs(location)
     filename = location+name+'.gxl'
     header_lines = [
         '<?xml version="1.0" encoding="UTF-8"?>\n',
@@ -199,13 +209,18 @@ def create_gxl(coords, E, name):
         '</gxl>']
     means = np.mean(coords, axis = 0)
     stdev = np.std(coords, axis = 0)
+    max_val = np.amax(coords, axis = 0)
     # normalize coordinates: x_norm = (x - mean_x) / std_x, y_norm = (y - mean_y) / std_y
     norm_coords = [[(node[0] - means[0]) / stdev[0], (node[1] - means[1]) / stdev[1]] for node in coords]
     file = open(filename, 'w')
     file.writelines(header_lines)
-    # keep standard deviation
-    string = f'\t<attr name="x_std">\n\t\t<float>{stdev[0]}</float>\n\t</attr>\n' \
-        f'\t<attr name="y_std">\n\t\t<float>{stdev[1]}</float>\n\t</attr>\n'
+    # keep mean, standard deviation, max values 
+    string = f'\t<attr name="x_mean">\n\t\t<float>{means[0]}</float>\n\t</attr>\n' \
+        f'\t<attr name="y_mean">\n\t\t<float>{means[1]}</float>\n\t</attr>\n' \
+        f'\t<attr name="x_std">\n\t\t<float>{stdev[0]}</float>\n\t</attr>\n' \
+        f'\t<attr name="y_std">\n\t\t<float>{stdev[1]}</float>\n\t</attr>\n' \
+        f'\t<attr name="x_max">\n\t\t<float>{max_val[0]}</float>\n\t</attr>\n' \
+        f'\t<attr name="y_max">\n\t\t<float>{max_val[1]}</float>\n\t</attr>\n'
     file.write(string)
     # write all nodes
     for i, node in enumerate(norm_coords):
@@ -223,7 +238,7 @@ def create_gxl(coords, E, name):
     
 
     
-def contour_graph(img, d, name):
+def contour_graph(img, D, name, v=0):
     """
     main function, calls the other ones
 
@@ -242,23 +257,27 @@ def contour_graph(img, d, name):
 
     """
     contours = get_contours(img)
-    c = []
-    # strip unnecessary layer of array
+    temp_c = []
     for cont in contours:
-        c.append(cont[:,0])
-    contours = c
+        appr_cont = cont
+        if v != 0:
+            # eps = v * cv.arcLength(cont, True)
+            eps = v
+            appr_cont = cv.approxPolyDP(cont, eps, True)
+        temp_c.append(appr_cont[:,0])
+    contours = temp_c
     Vc = {}
     Ec = {}
     for i, cont in enumerate(contours):
-        Vc_i, Ec_i = fill_nodes_edges(cont,d)
+        Vc_i, Ec_i = fill_nodes_edges(cont,D)
         Vc[i] = Vc_i
         Ec[i] = Ec_i
     coords, E = flatten(contours, Vc, Ec)
-    # display_img_graph(img, contours, coords, E, name)
-    create_gxl(coords, E, name)
+    # display_img_graph(img, contours, coords, E, name, D, v, 's')
+    create_gxl(coords, E, name, D, v)    
     
 
-def eps_comp(img, eps_val, name):
+def eps_img_comp(img, D, eps_val, name):
     """
     compares the different epsilon values for the Douglas-Peucker algo
 
@@ -280,27 +299,46 @@ def eps_comp(img, eps_val, name):
     contours = get_contours(img)
     img_cont = np.full((img.shape[0],img.shape[1]), 0, dtype='uint8')
     cv.drawContours(img_cont, contours, -1, 255, 1)
-    plt.subplot(2,2,1),plt.imshow(img_cont, cmap='gray')
-    plt.title('Original Contours'), plt.xticks([]), plt.yticks([])
+    # plt.subplot(2,2,1),plt.imshow(img_cont, cmap='gray')
+    # plt.title('Original Contours'), plt.xticks([]), plt.yticks([])
     # one image for each value of epsilon
-    for i, v in enumerate(eps_val):
-        img_appr = np.full((img.shape[0], img.shape[1]), 0, dtype='uint8')
+    for j, v in enumerate(eps_val):
         appr_contours = []
-        for c in contours:
-            # threshold uses length of the arc 
-            eps = v * cv.arcLength(c, True)
+        for c in contours: 
             # OpenCV's function
-            appr_contours.append(cv.approxPolyDP(c, eps, True))
-        cv.drawContours(img_appr, appr_contours, -1, 255, 1)
-        plt.subplot(2,2,i+2),plt.imshow(img_appr, cmap='gray')
-        plt.title(f'Contours with DP, eps = {v}*len'), plt.xticks([]), plt.yticks([])
-    location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/contour/comparison/'
+            appr_contours.append(cv.approxPolyDP(c, v, True)[:,0])
+        Vc = {}
+        Ec = {}
+        for i, cont in enumerate(appr_contours):
+            Vc_i, Ec_i = fill_nodes_edges(cont,D)
+            Vc[i] = Vc_i
+            Ec[i] = Ec_i
+        coords, E = flatten(appr_contours, Vc, Ec)
+        img_rgb = cv.cvtColor(img, cv.COLOR_GRAY2RGB)
+        black = np.where(img == 0)
+        for n in range(len(black[0])):
+            img_rgb[black[0][n],black[1][n],:] = (200, 200, 200)
+        for edge in E:
+            n1 = edge[0]
+            x1 = coords[n1][0]
+            y1 = coords[n1][1]
+            n2 = edge[1]
+            x2 = coords[n2][0]
+            y2 = coords[n2][1]
+            cv.line(img_rgb, (x1, y1), (x2, y2), (150, 150, 150), 1)
+        for node in coords:
+            img_rgb[node[1],node[0]] =(0,0,0)
+            
+        plt.subplot(2,2,j+1),plt.imshow(img_rgb, cmap='gray')
+        plt.title(f'Contours with DP, eps = {v}'), plt.xticks([]), plt.yticks([])
+    location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/contour/comparison/eps_comp/'
     plt.tight_layout()
+    # plt.show()
     plt.savefig(location+'comp_DP_'+name+'.png')
     plt.close()
     
 
-def d_comp(img, d_val, name):
+def d_img_comp(img, d_val, name):
     """
     compares the different distances between two nodes
 
@@ -349,18 +387,32 @@ def d_comp(img, d_val, name):
             img_rgb[node[1],node[0]] =(0,0,0)
         plt.subplot(2,2,k+1), plt.imshow(img_rgb)
         plt.title(f'Graph, d = {d}, {len(coords)} nodes'), plt.xticks([]),plt.yticks([])
-    location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/contour/comparison/'
+    location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/contour/comparison/d_comp/'
     plt.tight_layout()
     plt.savefig(location+'comp_d_'+name+'.png')
     plt.close()
 
-
-location = 'C:/Users/Gwenael/Desktop/MT/histograph-master/01_GW/00_WordImages/'
-fileset = glob.glob(location+'*.png')
-d = 4
-eps_val = [0.01, 0.005, 0.001]
-d_val = [4, 6, 8, 10]
-for n, f in enumerate(fileset[0:10]):
-    img = cv.imread(f, 0)
-    name = f[-13:-4]
-    eps_comp(img, eps_val, name)
+def contour_start(location, D, slc = None, v=0):
+    fileset = glob.glob(location+'*.png')
+    if slc is not None:
+        fileset = fileset[slc[0]:slc[1]]
+    for f in fileset:
+        img = cv.imread(f, 0)
+        name = f[-13:-4]
+        contour_graph(img, D, name, v)
+        
+        
+def main():
+    location = 'C:/Users/Gwenael/Desktop/MT/histograph-master/01_GW/00_WordImages/'
+    fileset = glob.glob(location+'*.png')
+    val = [2]
+    D = 1
+    for v in val:
+        for n, f in enumerate(fileset[0:10]):
+            img = cv.imread(f, 0)
+            name = f[-13:-4]
+            contour_graph(img, D, name,v)
+    
+    
+if __name__=='__main__':
+    main()
