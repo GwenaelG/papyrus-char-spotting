@@ -196,7 +196,10 @@ public class GraphMatchingSegFree {
 		// iterate through all pairs of graphs g_i x g_j from (source, target)
 		System.out.println("Starting the matching...");
 		System.out.println("Progress...");
-		int numOfMatchings = this.source.size() * this.target.size();
+		int numOfMatchings = this.source.size() * windowSizes.length;
+		for (Graph graph : target){
+			numOfMatchings *= graph.size();
+		}
 		// distance value d
 		double d = -1;
 		double d_norm = -1;
@@ -245,97 +248,75 @@ public class GraphMatchingSegFree {
 
 				// center windows on each node of the page graph
 				for (Node centerNode : targetPage){
-//					double centerNodeX = centerNode.getDouble("x");
-//					double centerNodeY = centerNode.getDouble("y");
-//
-//					// each window is a new graph
-//					ArrayList<Graph> windows = new ArrayList<>();
-//					for (int k = 0; k < windowMaxDistances.length; k++){
-//						Graph window = new Graph();
-//						window.setGraphID(new String(centerNode.getNodeID()+"_w"+k));
-//						windows.add(window);
-//					}
-//
-//					// fill windows
-//					for (Node pageNode : targetPage) {
-//						double pageNodeX = pageNode.getDouble("x");
-//						double pageNodeY = pageNode.getDouble("y");
-//						double distX = Math.abs(centerNodeX - pageNodeX);
-//						double distY = Math.abs(centerNodeY - pageNodeY);
-//						// copy node into windows if close enough
-//						for (int k = 0; k < windowMaxDistances.length; k++){
-//							if (distX <= windowMaxDistances[k][0] && distY <= windowMaxDistances[k][1] ) {
-//								Node node = new Node(pageNode.getNodeID());
-//								node.setAttributes(pageNode.getAttributes());
-//								node.setGraph(windows.get(k));
-//								windows.get(k).add(node);
-//							}
-//						}
-//					}
-					targetPage.extractWindows(centerNode, windowMaxDistances);
-					targetGraph = targetPage;
 
-					this.counter++;
-					if (counter % 10 == 0) {
-						System.out.println("Matching " + counter + " of " + numOfMatchings);
-					}
+					ArrayList<Graph> windows = targetPage.extractWindows(centerNode, windowMaxDistances);
 
-					// log the current graphs on the console
-					if (this.outputGraphs == 1) {
-						System.out.println("The Source Graph:");
-						System.out.println(sourceGraph);
-						System.out.println("\n\nThe Target Graph:");
-						System.out.println(targetGraph);
-					}
-					// if both graphs are empty the distance is zero and no computations have to be carried out!
-					if (this.sourceGraph.size() < 1 && this.targetGraph.size() < 1) {
-						d = 0;
-					} else {
+					for (int k = 0; k < windowSizes.length; k++) {
 
-						/**
-						 * HED
-						 */
+						targetGraph = windows.get(k);
 
-						if (this.matching.equals("HED")) {
-							if (this.sourceGraph.size() < this.targetGraph.size()) {
-								this.swapGraphs();
-								swapped = true;
+						this.counter++;
+						if (counter % 100 == 0) {
+							System.out.println("Matching " + counter + " of " + numOfMatchings);
+						}
+
+						// log the current graphs on the console
+						if (this.outputGraphs == 1) {
+							System.out.println("The Source Graph:");
+							System.out.println(sourceGraph);
+							System.out.println("\n\nThe Target Graph:");
+							System.out.println(targetGraph);
+						}
+						// if both graphs are empty the distance is zero and no computations have to be carried out!
+						if (this.sourceGraph.size() < 1 && this.targetGraph.size() < 1) {
+							d = 0;
+						} else {
+
+							/**
+							 * HED
+							 */
+
+							if (this.matching.equals("HED")) {
+								if (this.sourceGraph.size() < this.targetGraph.size()) {
+									this.swapGraphs();
+									swapped = true;
+								}
+
+								HED hed = new HED();
+								d = hed.getHausdorffEditDistance(sourceGraph, targetGraph, costFunctionManager);
+								editPath = null;
+
+								double[] distances = this.editDistance.getNormalisedEditDistance(sourceGraph, targetGraph, d, normalisationFunction);
+
+								d = distances[0];
+								d_norm = distances[1];
 							}
-
-							HED hed = new HED();
-							d = hed.getHausdorffEditDistance(sourceGraph, targetGraph, costFunctionManager);
-							editPath = null;
-
-							double[] distances = this.editDistance.getNormalisedEditDistance(sourceGraph, targetGraph, d, normalisationFunction);
-
-							d = distances[0];
-							d_norm = distances[1];
 						}
-					}
 
-					// whether distances or similarities are computed
-					if (this.simKernel < 1) {
-						this.distanceMatrix[i][j] = d;
-						this.normalisedDistanceMatrix[i][j] = d_norm;
+						// whether distances or similarities are computed
+						if (this.simKernel < 1) {
+							this.distanceMatrix[i][j] = d;
+							this.normalisedDistanceMatrix[i][j] = d_norm;
 
-					} else {
-						switch (this.simKernel) {
-							case 1:
-								this.distanceMatrix[i][j] = -Math.pow(d, 2.0);
-								break;
-							case 2:
-								this.distanceMatrix[i][j] = -d;
-								break;
-							case 3:
-								this.distanceMatrix[i][j] = Math.tanh(-d);
-								break;
-							case 4:
-								this.distanceMatrix[i][j] = Math.exp(-d);
-								break;
+						} else {
+							switch (this.simKernel) {
+								case 1:
+									this.distanceMatrix[i][j] = -Math.pow(d, 2.0);
+									break;
+								case 2:
+									this.distanceMatrix[i][j] = -d;
+									break;
+								case 3:
+									this.distanceMatrix[i][j] = Math.tanh(-d);
+									break;
+								case 4:
+									this.distanceMatrix[i][j] = Math.exp(-d);
+									break;
+							}
 						}
-					}
-					if (swapped) {
-						this.swapGraphs();
+						if (swapped) {
+							this.swapGraphs();
+						}
 					}
 				}
 			}

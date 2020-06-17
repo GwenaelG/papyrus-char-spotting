@@ -409,8 +409,12 @@ public class Graph extends LinkedList<Node> {
 		double centerNodeX = centerNode.getDouble("x");
 		double centerNodeY = centerNode.getDouble("y");
 
-		// copy nodes
+		// accessing windows
 		ArrayList<Graph> windows = new ArrayList<>();
+
+		// copy nodes
+
+		// correspondences of nodes in page graph & in window
 		ArrayList<HashMap<Node, Node>> nodeMaps = new ArrayList<>();
 
 		// create windows and maps
@@ -423,7 +427,7 @@ public class Graph extends LinkedList<Node> {
 			nodeMaps.add(nodeMap);
 		}
 
-		// fill all windows at same time, iterate through nodes only once
+		// iterate through nodes only once to fill all windows
 		for (Node pageNode : this) {
 			for (int k = 0; k < windowMaxDistances.length; k++) {
 				Graph window = windows.get(k);
@@ -451,8 +455,13 @@ public class Graph extends LinkedList<Node> {
 			}
 		}
 
+
+
 		//copy edges
+
+		// access to edges via id
 		ArrayList<HashMap<String, Edge>> edgesList = new ArrayList<>();
+		// adjacency matrix reference
 		ArrayList<Edge[][]> copyEdgesList = new ArrayList<>();
 
 		for (int k = 0; k < windowMaxDistances.length; k++) {
@@ -471,6 +480,7 @@ public class Graph extends LinkedList<Node> {
 				Node pageNode = entry.getKey();
 				Node windowNode = entry.getValue();
 
+				// all edges from node
 				for (Edge edge : pageNode.getEdges()) {
 					Node startPageNode = edge.getStartNode();
 					Node endPageNode = edge.getEndNode();
@@ -490,45 +500,78 @@ public class Graph extends LinkedList<Node> {
 							startWindowNode.getEdges().add(copyEdge);
 							endWindowNode.getEdges().add(copyEdge);
 
-							// Add attributes
-							for (Map.Entry<String, GXLValue> entry : edge.getAttributes().entrySet()) {
-								copyEdge.put(entry.getKey(), copyValue(entry.getValue()));
-							}
+//							// Add edge attributes
+//							for (Map.Entry<String, GXLValue> entry2 : edge.getAttributes().entrySet()) {
+//								copyEdge.put(entry2.getKey(), copyValue(entry2.getValue()));
+//							}
 
 							edges.put(edgeID, copyEdge);
 						}
-
 					}
 				}
-
 			}
+
+			// fill adjacency matrix
+			for (int s = 0; s < window.size(); s++) {
+				Node startNode = window.get(s);
+
+				for (int t = 0; t < window.size(); t++) {
+					Node endNode = window.get(t);
+
+					if (this.adjacencyMatrix[s][t] != null) {
+						String edgeID = startNode.getNodeID()+"_"+endNode.getNodeID();
+
+						if (!this.isDirected() && !edges.containsKey(edgeID)){
+							edgeID = endNode.getNodeID()+"_"+startNode.getNodeID();
+						}
+
+						Edge edge = edges.get(edgeID);
+
+						copyEdges[s][t] = edge;
+					}
+				}
+			}
+
+			//compute means and standard deviation
+			double xMean = 0;
+			double yMean = 0;
+			for (int i = 0; i < window.size(); i++) {
+				double xNode = window.get(i).getDouble("x");
+				xMean += xNode;
+				double yNode = window.get(i).getDouble("y");
+				yMean += yNode;
+			}
+			xMean /= window.size();
+			yMean /= window.size();
+
+			// standard dev: square root of mean of squared distances to mean val
+			double xSumSqDist = 0;
+			double ySumSqDist = 0;
+			for (int i = 0; i < window.size(); i++) {
+				double xNode = window.get(i).getDouble("x");
+				xSumSqDist += Math.pow(xNode - xMean, 2);
+				double yNode = window.get(i).getDouble("y");
+				ySumSqDist += Math.pow(yNode - yMean, 2);
+			}
+			double xStDev = Math.sqrt(xSumSqDist / window.size());
+			double yStDev = Math.sqrt(ySumSqDist / window.size());
+
+			// normalize coords
+			for (int i = 0; i < window.size(); i++) {
+				double xNode = window.get(i).getDouble("x");
+				window.get(i).setDouble("x", (xNode - xMean) / xStDev);
+				double yNode = window.get(i).getDouble("y");
+				window.get(i).setDouble("y", (yNode - yMean) / yStDev);
+			}
+
+//			//set graph attributes
+//			window.setDouble("x_mean", xMean);
+//			window.setDouble("y_mean", yMean);
+//			window.setDouble("x_std", xStDev);
+//			window.setDouble("y_std", yStDev);
+
+
 		}
-
-
-
-//		for (int s = 0; s < copy.size(); s++) {
-//
-//			Node startNode = copy.get(s);
-//
-//			for (int t = 0; t < copy.size(); t++) {
-//
-//				Node endNode = copy.get(t);
-//
-//				if (this.adjacencyMatrix[s][t] != null) {
-//
-//					String edgeID = startNode.getNodeID() + "_" + endNode.getNodeID();
-//
-//					if (!this.isDirected() && !edges.containsKey(edgeID)) {
-//						edgeID = endNode.getNodeID() + "_" + startNode.getNodeID();
-//					}
-//
-//					Edge edge = edges.get(edgeID);
-//
-//					copyEdges[s][t] = edge;
-//				}
-//			}
-//		}
-
 
 		return windows;
 	}
