@@ -165,7 +165,7 @@ def display_img_graph(img, contours, coords, E, name, D, v=0, mode='n'):
         plt.tight_layout()
         plt.show()
     if mode == 's':
-        location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/contour/images/'
+        location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/contour/images/chars/'
         if v != 0:
             plt.imsave(location+name+'_DP_'+str(v)+'.png', img_rgb)
         else:
@@ -192,10 +192,10 @@ def create_gxl(coords, E, name, D, v=None):
     None.
 
     """
-    location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/contour/gxl/D_'+str(D)+'/'
-    # location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/test/'
+    location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/contour/gxl/small_pages/D_'+str(D)+'/'
     if v is not None: 
         location = location + 'v_'+str(v)+'/'
+    # location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/test/'
     if not os.path.exists(location):
         os.makedirs(location)
     filename = location+name+'.gxl'
@@ -398,19 +398,19 @@ def contour_start(location, D, slc = None, v=0):
         fileset = fileset[slc[0]:slc[1]]
     for f in fileset:
         img = cv.imread(f, 0)
-        name = f[-13:-4]
+        name = f.split(sep = "\\")[-1][:-4]
         contour_graph(img, D, name, v)
         
         
 def main():
-    location = 'C:/Users/Gwenael/Desktop/MT/histograph-master/01_GW/00_WordImages/'
+    location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/original_bin/chars/'
     fileset = glob.glob(location+'*.png')
-    val = [2]
+    val = [0.5, 1, 2, 3, 4]
     D = 1
     for v in val:
-        for n, f in enumerate(fileset[0:10]):
+        for n, f in enumerate(fileset):
             img = cv.imread(f, 0)
-            name = f[-13:-4]
+            name = f.split(sep = "\\")[-1][:-4]
             contour_graph(img, D, name,v)
     
     

@@ -335,35 +335,35 @@ public class GraphMatchingSegFree {
 			this.resultPrinter.printResult(this.distanceMatrix, this.source, this.target, prop, time);
 		}
 
-		// Create KWS results
-		ArrayList<SpottingResult> spottingResults = new ArrayList<>();
-		for (int i = 0; i < source.size(); i++) {
-
-			Graph sourceGraph = source.get(i);
-
-			String keywordID = sourceGraph.getGraphID();
-			String keywordClass = this.wordList.get(sourceGraph.getGraphID());
-
-			for (int j = 0; j < target.size(); j++) {
-
-				Graph targetGraph = target.get(j);
-
-				String wordID = targetGraph.getGraphID();
-				String wordClass = this.wordList.get(targetGraph.getGraphID());
-
-				double normGED = this.normalisedDistanceMatrix[i][j];
-
-				SpottingResult spottingResult = new SpottingResult(keywordID, keywordClass, wordID, wordClass, normGED);
-				spottingResults.add(spottingResult);
-			}
-		}
-
-		// Reduce number of spotting results (i.e. find minimal distance per query)
-		SpottingPostProcessing spottingPostProcessing = new SpottingPostProcessing();
-		ArrayList<SpottingResult> reducedSpottingResults = spottingPostProcessing.postProcess(spottingResults);
-
-		// Evaluate and export spotting results
-		trecEval.exportSpottingResults(reducedSpottingResults);
+//		// Create KWS results
+//		ArrayList<SpottingResult> spottingResults = new ArrayList<>();
+//		for (int i = 0; i < source.size(); i++) {
+//
+//			Graph sourceGraph = source.get(i);
+//
+//			String keywordID = sourceGraph.getGraphID();
+//			String keywordClass = this.wordList.get(sourceGraph.getGraphID());
+//
+//			for (int j = 0; j < target.size(); j++) {
+//
+//				Graph targetGraph = target.get(j);
+//
+//				String wordID = targetGraph.getGraphID();
+//				String wordClass = this.wordList.get(targetGraph.getGraphID());
+//
+//				double normGED = this.normalisedDistanceMatrix[i][j];
+//
+//				SpottingResult spottingResult = new SpottingResult(keywordID, keywordClass, wordID, wordClass, normGED);
+//				spottingResults.add(spottingResult);
+//			}
+//		}
+//
+//		// Reduce number of spotting results (i.e. find minimal distance per query)
+//		SpottingPostProcessing spottingPostProcessing = new SpottingPostProcessing();
+//		ArrayList<SpottingResult> reducedSpottingResults = spottingPostProcessing.postProcess(spottingResults);
+//
+//		// Evaluate and export spotting results
+//		trecEval.exportSpottingResults(reducedSpottingResults);
 	}
 
 	/**
@@ -542,13 +542,14 @@ public class GraphMatchingSegFree {
 		System.out.println("Load the source and target graph sets...");
 
 		GraphParser graphParser = new GraphParser();
-		Path gxlPath = Paths.get(properties.getProperty("path"));
+		Path gxlSourcePath = Paths.get(properties.getProperty("sourcePath"));
+		Path gxlTargetPath = Paths.get(properties.getProperty("targetPath"));
 
 		Path cxlSourcePath = Paths.get(properties.getProperty("source"));
-		this.source = graphParser.parseCXL(cxlSourcePath, gxlPath);
+		this.source = graphParser.parseCXL(cxlSourcePath, gxlSourcePath);
 
 		Path cxlTargetPath = Paths.get(properties.getProperty("target"));
-		this.target = graphParser.parseCXL(cxlTargetPath, gxlPath);
+		this.target = graphParser.parseCXL(cxlTargetPath, gxlTargetPath);
 
 		// create a distance matrix to store the resulting dissimilarities
 		this.r = this.source.size();
