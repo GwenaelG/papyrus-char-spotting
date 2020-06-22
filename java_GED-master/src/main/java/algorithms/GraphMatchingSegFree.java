@@ -6,7 +6,6 @@ package algorithms;
 import andreas.EditPath;
 import andreas.HED;
 import andreas.HEDMatrixGenerator;
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import costs.CostFunctionManager;
 import costs.functions.CostFunction;
 import costs.functions.EuclideanDistance;
@@ -20,23 +19,28 @@ import graph.GraphSet;
 import graph.Node;
 import kaspar.GreedyMatching;
 import kaspar.GreedyMatrixGenerator;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
 import util.EditDistance;
 import util.MatrixGenerator;
 import util.ResultPrinter;
-import util.treceval.SpottingPostProcessing;
-import util.treceval.SpottingResult;
 import util.treceval.TrecEval;
+import xml.BoundingBox;
 import xml.GraphParser;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import java.io.File;
 import java.io.FileInputStream;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.*;
-
-import static java.lang.Math.abs;
-import static java.lang.Math.max;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Properties;
+import java.util.TreeMap;
 
 /**
  * @author riesen
@@ -164,6 +168,8 @@ public class GraphMatchingSegFree {
 
 	private double[] windowSizes;
 
+	private ArrayList<BoundingBox> boundingBoxesGT;
+
 
 	/**
 	 * @param args
@@ -188,11 +194,12 @@ public class GraphMatchingSegFree {
 		// initialize the matching
 		System.out.println("Initializing the matching according to the properties...");
 		this.init(prop);
+
 		// the cost matrix used for bipartite matchings
 		double[][] costMatrix;
 		// counts the progress
 		this.counter = 0;
-		
+
 		// iterate through all pairs of graphs g_i x g_j from (source, target)
 		System.out.println("Starting the matching...");
 		System.out.println("Progress...");
@@ -217,7 +224,7 @@ public class GraphMatchingSegFree {
 		
 		// init editPath (for one matching)
 		EditPath editPath = null;
-		
+
 		// main matching loop
 		long start = System.currentTimeMillis();
 		for (int i0 = 0; i0 < idxs1.length; i0++) {
@@ -272,9 +279,6 @@ public class GraphMatchingSegFree {
 							d = 0;
 						} else {
 
-							/**
-							 * HED
-							 */
 
 							if (this.matching.equals("HED")) {
 								if (this.sourceGraph.size() < this.targetGraph.size()) {
@@ -334,6 +338,8 @@ public class GraphMatchingSegFree {
 		} else {
 			this.resultPrinter.printResult(this.distanceMatrix, this.source, this.target, prop, time);
 		}
+
+
 
 //		// Create KWS results
 //		ArrayList<SpottingResult> spottingResults = new ArrayList<>();
@@ -601,6 +607,31 @@ public class GraphMatchingSegFree {
 		for (int i = 0; i < numOfWindowSizes; i++){
 			windowSizes[i] = Double.parseDouble(properties.getProperty("windowSize" + i));
 		}
+
+		// extract groundtruth bounding boxes from XML file
+		this.boundingBoxesGT = new ArrayList<>();
+		Path boundingBoxesGTPath = Paths.get(properties.getProperty("boundingBoxesGT"));
+		if (Files.isRegularFile(boundingBoxesGTPath)) {
+			File boundingBoxesFile = new File(String.valueOf(boundingBoxesGTPath));
+			DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+			Document boundingBoxesDoc = dBuilder.parse(boundingBoxesFile);
+			boundingBoxesDoc.getDocumentElement().normalize();
+			NodeList boundingBoxes = boundingBoxesDoc.getElementsByTagName("box");
+			for (int i = 0; i < boundingBoxes.getLength(); i++){
+				Element boundingBox = (Element) boundingBoxes.item(i);
+				String boundingBoxId = boundingBox.getAttribute("id");
+				String boundingBoxChar = boundingBox.getAttribute("char");
+				Integer boundingBoxX1 = Integer.valueOf(boundingBox.getElementsByTagName("x1").item(0).getTextContent());
+				Integer boundingBoxY1 = Integer.valueOf(boundingBox.getElementsByTagName("y1").item(0).getTextContent());
+				Integer boundingBoxX2 = Integer.valueOf(boundingBox.getElementsByTagName("x2").item(0).getTextContent());
+				Integer boundingBoxY2 = Integer.valueOf(boundingBox.getElementsByTagName("y2").item(0).getTextContent());
+				int[] coords = new int[] {boundingBoxX1, boundingBoxY1, boundingBoxX2, boundingBoxY2};
+				BoundingBox tempBB = new BoundingBox(boundingBoxId, boundingBoxChar, coords);
+				boundingBoxesGT.add(tempBB);
+			}
+
+		}
+
 
 		
 	}

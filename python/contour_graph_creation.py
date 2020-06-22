@@ -165,7 +165,7 @@ def display_img_graph(img, contours, coords, E, name, D, v=0, mode='n'):
         plt.tight_layout()
         plt.show()
     if mode == 's':
-        location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/contour/images/chars/'
+        location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/contour/images/pages/'
         if v != 0:
             plt.imsave(location+name+'_DP_'+str(v)+'.png', img_rgb)
         else:
@@ -273,8 +273,8 @@ def contour_graph(img, D, name, v=0):
         Vc[i] = Vc_i
         Ec[i] = Ec_i
     coords, E = flatten(contours, Vc, Ec)
-    # display_img_graph(img, contours, coords, E, name, D, v, 's')
-    create_gxl(coords, E, name, D, v)    
+    display_img_graph(img, contours, coords, E, name, D, v, 's')
+    # create_gxl(coords, E, name, D, v)    
     
 
 def eps_img_comp(img, D, eps_val, name):

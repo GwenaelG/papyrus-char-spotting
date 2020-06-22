@@ -10,7 +10,7 @@ from contour_graph_creation import contour_start
 
 
 print('Contour Graphs')
-location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/original_bin/small_pages/'
+location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/original_bin/pages/'
 D_list = [2,3,4,5,6,8,10,12]
 D = 1
 v_list = [0.5, 1, 2, 3, 4]
