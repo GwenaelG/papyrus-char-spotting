@@ -17,8 +17,10 @@ import costs.normalisation.NormalisationFunction;
 import graph.Graph;
 import graph.GraphSet;
 import graph.Node;
+import gwenael.FourDimArrayList;
 import kaspar.GreedyMatching;
 import kaspar.GreedyMatrixGenerator;
+//import org.opencv.core.Core;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -26,7 +28,7 @@ import util.EditDistance;
 import util.MatrixGenerator;
 import util.ResultPrinter;
 import util.treceval.TrecEval;
-import xml.BoundingBox;
+import gwenael.BoundingBox;
 import xml.GraphParser;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -37,10 +39,7 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
-import java.util.TreeMap;
+import java.util.*;
 
 /**
  * @author riesen
@@ -49,17 +48,21 @@ import java.util.TreeMap;
  */
 public class GraphMatchingSegFree {
 
+//	static { System.loadLibrary(Core.NATIVE_LIBRARY_NAME); }
+
+
 	/**
 	 * the sets of graphs to be matched
 	 */
 	private GraphSet source, target;
 
 	/**
-	 * the resulting distance matrix D = (d_i,j), where d_i,j = d(g_i,g_j)
-	 * (distances between all graphs g_i from source and all graphs g_j from target)
+	 * the resulting distance matrix D = (d_i,j,k,l), where d_i,j,k,l = d(g_i,g_j,k,l)
+	 * (distances between all graphs g_i from source and all window graphs from target graph g_j, centered on node k
+	 * with window size l)
 	 */
-	private double[][] distanceMatrix;
-	private double[][] normalisedDistanceMatrix;
+	private FourDimArrayList<Double> distanceMatrix;
+	private FourDimArrayList<Double> normalisedDistanceMatrix;
 
 	/**
 	 * the source and target graph actually to be matched (temp ist for temporarily swappings)
@@ -254,13 +257,15 @@ public class GraphMatchingSegFree {
 
 
 				// center windows on each node of the page graph
-				for (Node centerNode : targetPage){
+				for (int k = 0; k < targetPage.size(); k++){
+//				for (Node centerNode : targetPage){
+					Node centerNode = targetPage.get(k);
 
 					ArrayList<Graph> windows = targetPage.extractWindows(centerNode, windowMaxDistances);
 
-					for (int k = 0; k < windowSizes.length; k++) {
+					for (int l = 0; l < windowSizes.length; l++) {
 
-						targetGraph = windows.get(k);
+						targetGraph = windows.get(l);
 
 						this.counter++;
 						if (counter % 100 == 0) {
@@ -299,22 +304,22 @@ public class GraphMatchingSegFree {
 
 						// whether distances or similarities are computed
 						if (this.simKernel < 1) {
-							this.distanceMatrix[i][j] = d;
-							this.normalisedDistanceMatrix[i][j] = d_norm;
+							this.distanceMatrix.set(i, j, k, l, d);
+							this.normalisedDistanceMatrix.set(i, j, k, l, d_norm);
 
 						} else {
 							switch (this.simKernel) {
 								case 1:
-									this.distanceMatrix[i][j] = -Math.pow(d, 2.0);
+									this.distanceMatrix.set(i, j, k, l, -Math.pow(d, 2.0));
 									break;
 								case 2:
-									this.distanceMatrix[i][j] = -d;
+									this.distanceMatrix.set(i, j, k, l, -d);
 									break;
 								case 3:
-									this.distanceMatrix[i][j] = Math.tanh(-d);
+									this.distanceMatrix.set(i, j, k, l, Math.tanh(-d));
 									break;
 								case 4:
-									this.distanceMatrix[i][j] = Math.exp(-d);
+									this.distanceMatrix.set(i, j, k, l, Math.exp(-d));
 									break;
 							}
 						}
@@ -327,17 +332,28 @@ public class GraphMatchingSegFree {
 		}
 		long time = System.currentTimeMillis() - start;
 
-		// printing the distances or similarities
-		System.out.println("Printing the results...");
-		if (this.oneMatch) {
-			if (editPath != null) {
-
-				this.resultPrinter.printEditPath(prop, this.sourceGraph, this.targetGraph, editPath, 600, 600, this.oneMatchDisplay, this.oneMatchSize);
+		System.out.println(distanceMatrix.size()+" source graphs");
+		for (int i = 0; i < distanceMatrix.size(); i++){
+			System.out.println("\t"+distanceMatrix.get(i).size()+" target graphs");
+			for (int j = 0; j < distanceMatrix.get(i).size(); j++){
+				System.out.println("\t\t"+distanceMatrix.get(i).get(j).size()+" target nodes");
+				for (int k = 0; k < distanceMatrix.get(i).get(j).size(); k++) {
+					System.out.println("\t\t\t"+distanceMatrix.get(i).get(j).get(k).size()+" window sizes");
+				}
 			}
-			System.out.println("=> distance: " + this.distanceMatrix[this.oneMatchIdx1][this.oneMatchIdx2]);
-		} else {
-			this.resultPrinter.printResult(this.distanceMatrix, this.source, this.target, prop, time);
 		}
+//		// printing the distances or similarities
+//		System.out.println("Printing the results...");
+//		if (this.oneMatch) {
+//			if (editPath != null) {
+//
+//				this.resultPrinter.printEditPath(prop, this.sourceGraph, this.targetGraph, editPath, 600, 600, this.oneMatchDisplay, this.oneMatchSize);
+//			}
+//			System.out.println("=> distance: " + this.distanceMatrix.get(this.oneMatchIdx1,this.oneMatchIdx2,0,0;
+//		} else {
+//		TODO: update resultPrinter
+//			this.resultPrinter.printResult(this.distanceMatrix, this.source, this.target, prop, time);
+//		}
 
 
 
@@ -370,6 +386,10 @@ public class GraphMatchingSegFree {
 //
 //		// Evaluate and export spotting results
 //		trecEval.exportSpottingResults(reducedSpottingResults);
+
+
+
+
 	}
 
 	/**
@@ -560,8 +580,9 @@ public class GraphMatchingSegFree {
 		// create a distance matrix to store the resulting dissimilarities
 		this.r = this.source.size();
 		this.c = this.target.size();
-		this.distanceMatrix             = new double[this.r][this.c];
-		this.normalisedDistanceMatrix   = new double[this.r][this.c];
+		this.distanceMatrix             = new FourDimArrayList<>();
+		this.normalisedDistanceMatrix   = new FourDimArrayList<>();
+
 		//this.assignmentCostMatrix       = new double[this.r][this.c];
 				
 //		// check if only one match is required

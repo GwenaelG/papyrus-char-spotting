@@ -1,4 +1,4 @@
-package xml;
+package gwenael;
 
 import java.util.ArrayList;
 import java.util.HashMap;
