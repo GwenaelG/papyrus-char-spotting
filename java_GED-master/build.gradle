@@ -9,6 +9,7 @@ repositories {
 
 dependencies {
     compile files('libs/gxl/gxl.jar')
+    compile files('libs/opencv/opencv-3410.jar')
     compile group: 'net.sf.jung', name: 'jung-3d', version: '2.0.1'
     compile group: 'net.sf.jung', name: 'jung-jai', version: '2.0.1'
     compile group: 'net.sf.jung', name: 'jung-visualization', version: '2.0.1'

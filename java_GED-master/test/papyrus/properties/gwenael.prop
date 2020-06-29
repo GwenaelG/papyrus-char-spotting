@@ -4,7 +4,7 @@ source=test/papyrus/reduced/source.cxl
 
 # graphs folder
 sourcePath=C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/contour/gxl/chars/D_1/v_2/
-targetPath=C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/contour/gxl/chars/D_1/v_2/
+targetPath=C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/contour/gxl/small_pages/D_1/v_2/
 
 # results folder
 result=test/papyrus/results/
@@ -66,9 +66,9 @@ pEdge=1
 
 # window sizes
 numOfWindowSizes=3
-windowSize0=1.2
+windowSize0=2
 windowSize1=1
-windowSize2=0.8
+windowSize2=0.5
 
 # bounding boxes groundtruth
 boundingBoxesGT=C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/groundtruth/groundtruth_03.xml

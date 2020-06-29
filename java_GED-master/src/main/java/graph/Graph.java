@@ -439,7 +439,8 @@ public class Graph extends LinkedList<Node> {
 
 				// check if node in window
 				if (distX <= windowMaxDistances[k][0] && distY <= windowMaxDistances[k][1]) {
-					Node copyNode = new Node(new String(pageNode.getNodeID()));
+
+					Node copyNode = new Node(new String(pageNode.getNodeID()+"_w"+k));
 					nodeMaps.get(k).put(pageNode, copyNode);
 
 					copyNode.setGraph(window);
@@ -451,6 +452,7 @@ public class Graph extends LinkedList<Node> {
 					for (Map.Entry<String, GXLValue> entry : pageNode.getAttributes().entrySet()) {
 						copyNode.put(entry.getKey(), copyValue(entry.getValue()));
 					}
+
 				}
 			}
 		}
@@ -553,22 +555,27 @@ public class Graph extends LinkedList<Node> {
 				double yNode = window.get(i).getDouble("y");
 				ySumSqDist += Math.pow(yNode - yMean, 2);
 			}
+
 			double xStDev = Math.sqrt(xSumSqDist / window.size());
 			double yStDev = Math.sqrt(ySumSqDist / window.size());
 
 			// normalize coords
 			for (int i = 0; i < window.size(); i++) {
 				double xNode = window.get(i).getDouble("x");
-				window.get(i).setDouble("x", (xNode - xMean) / xStDev);
+				if (xStDev != 0) {
+					window.get(i).setDouble("x", (xNode - xMean) / xStDev);
+				}
 				double yNode = window.get(i).getDouble("y");
-				window.get(i).setDouble("y", (yNode - yMean) / yStDev);
+				if (yStDev != 0) {
+					window.get(i).setDouble("y", (yNode - yMean) / yStDev);
+				}
 			}
 
-//			//set graph attributes
-//			window.setDouble("x_mean", xMean);
-//			window.setDouble("y_mean", yMean);
-//			window.setDouble("x_std", xStDev);
-//			window.setDouble("y_std", yStDev);
+			//set graph attributes
+			window.setDouble("x_mean", xMean);
+			window.setDouble("y_mean", yMean);
+			window.setDouble("x_std", xStDev);
+			window.setDouble("y_std", yStDev);
 
 
 		}
