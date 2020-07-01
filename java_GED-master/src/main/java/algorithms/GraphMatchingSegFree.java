@@ -17,10 +17,12 @@ import costs.normalisation.NormalisationFunction;
 import graph.Graph;
 import graph.GraphSet;
 import graph.Node;
-import gwenael.FourDimArrayList;
+import gwenael.FourDimAL;
+import gwenael.ThreeDimAL;
 import kaspar.GreedyMatching;
 import kaspar.GreedyMatrixGenerator;
-//import org.opencv.core.Core;
+import org.opencv.core.Core;
+import org.opencv.imgcodecs.Imgcodecs;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -31,8 +33,11 @@ import util.treceval.TrecEval;
 import gwenael.BoundingBox;
 import xml.GraphParser;
 
+import javax.imageio.ImageIO;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.nio.charset.Charset;
@@ -40,6 +45,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.List;
 
 /**
  * @author riesen
@@ -61,8 +67,8 @@ public class GraphMatchingSegFree {
 	 * (distances between all graphs g_i from source and all window graphs from target graph g_j, centered on node k
 	 * with window size l)
 	 */
-	private FourDimArrayList<Double> distanceMatrix;
-	private FourDimArrayList<Double> normalisedDistanceMatrix;
+	private FourDimAL<Double> distanceMatrix;
+	private FourDimAL<Double> normalisedDistanceMatrix;
 
 	/**
 	 * the source and target graph actually to be matched (temp ist for temporarily swappings)
@@ -173,6 +179,11 @@ public class GraphMatchingSegFree {
 
 	private ArrayList<BoundingBox> boundingBoxesGT;
 
+	private ThreeDimAL<BufferedImage> targetImages;
+
+	static{ System.loadLibrary(Core.NATIVE_LIBRARY_NAME); }
+
+	private static final int RADIUS = 5;
 
 	/**
 	 * @param args
@@ -194,6 +205,7 @@ public class GraphMatchingSegFree {
 	 * @throws Exception
 	 */
 	public GraphMatchingSegFree(String prop) throws Exception {
+
 		// initialize the matching
 		System.out.println("Initializing the matching according to the properties...");
 		this.init(prop);
@@ -213,6 +225,8 @@ public class GraphMatchingSegFree {
 		// distance value d
 		double d = -1;
 		double d_norm = -1;
+		ArrayList<Double> dMax = new ArrayList<>();
+
 		// swapped the graphs?
 		boolean swapped = false;
 		
@@ -234,13 +248,14 @@ public class GraphMatchingSegFree {
 			int i = idxs1[i0];
 			sourceGraph = this.source.get(i);
 
-			//get size of source graph
+			// get size of source graph
+			// max taken before normalization
 			double xMaxSource = sourceGraph.getDouble("x_max");
 			double yMaxSource = sourceGraph.getDouble("y_max");
 
 			for (int j0 = 0; j0 < idxs2.length; j0++) {
 				int j = idxs2[j0];
-				swapped = false;
+
 				targetPage = this.target.get(j);
 
 				double xMean = targetPage.getDouble("x_mean");
@@ -251,19 +266,21 @@ public class GraphMatchingSegFree {
 				// window dimensions
 				double[][] windowMaxDistances = new double[windowSizes.length][2];
 				for (int k = 0; k < windowSizes.length; k++){
-					windowMaxDistances[k] = new double[] {windowSizes[k] * (xMaxSource - xMean) / (2 * xStDev),
-							windowSizes[k] * (yMaxSource - yMean) / (2 * yStDev)};
+					windowMaxDistances[k] = new double[] {windowSizes[k] * (xMaxSource) / xStDev,
+							windowSizes[k] * (yMaxSource) / yStDev};
+					dMax.add((double) 0);
 				}
-
 
 				// center windows on each node of the page graph
 				for (int k = 0; k < targetPage.size(); k++){
-//				for (Node centerNode : targetPage){
+
 					Node centerNode = targetPage.get(k);
 
 					ArrayList<Graph> windows = targetPage.extractWindows(centerNode, windowMaxDistances);
 
 					for (int l = 0; l < windowSizes.length; l++) {
+
+						swapped = false;
 
 						targetGraph = windows.get(l);
 
@@ -284,7 +301,6 @@ public class GraphMatchingSegFree {
 							d = 0;
 						} else {
 
-
 							if (this.matching.equals("HED")) {
 								if (this.sourceGraph.size() < this.targetGraph.size()) {
 									this.swapGraphs();
@@ -293,6 +309,7 @@ public class GraphMatchingSegFree {
 
 								HED hed = new HED();
 								d = hed.getHausdorffEditDistance(sourceGraph, targetGraph, costFunctionManager);
+//								System.out.println(sourceGraph.getGraphID()+" "+targetGraph.getGraphID()+" "+d);
 								editPath = null;
 
 								double[] distances = this.editDistance.getNormalisedEditDistance(sourceGraph, targetGraph, d, normalisationFunction);
@@ -301,6 +318,8 @@ public class GraphMatchingSegFree {
 								d_norm = distances[1];
 							}
 						}
+
+						dMax.set(l, Math.max(dMax.get(l), d));
 
 						// whether distances or similarities are computed
 						if (this.simKernel < 1) {
@@ -330,66 +349,60 @@ public class GraphMatchingSegFree {
 				}
 			}
 		}
-		long time = System.currentTimeMillis() - start;
 
-		System.out.println(distanceMatrix.size()+" source graphs");
-		for (int i = 0; i < distanceMatrix.size(); i++){
-			System.out.println("\t"+distanceMatrix.get(i).size()+" target graphs");
-			for (int j = 0; j < distanceMatrix.get(i).size(); j++){
-				System.out.println("\t\t"+distanceMatrix.get(i).get(j).size()+" target nodes");
-				for (int k = 0; k < distanceMatrix.get(i).get(j).size(); k++) {
-					System.out.println("\t\t\t"+distanceMatrix.get(i).get(j).get(k).size()+" window sizes");
+
+
+//		TODO: update resultPrinter
+//		long time = System.currentTimeMillis() - start;
+//		this.resultPrinter.printResult(this.distanceMatrix, this.source, this.target, prop, time);
+
+		System.out.println(dMax.toString());
+
+		// display edit distance btwn target node window and source char
+		for (int i = 0; i < source.size(); i++) {
+
+			for (int j = 0; j < target.size(); j++) {
+
+				targetPage = target.get(j);
+				double xMean = targetPage.getDouble("x_mean");
+				double yMean = targetPage.getDouble("y_mean");
+				double xStDev = targetPage.getDouble("x_std");
+				double yStDev = targetPage.getDouble("y_std");
+
+				for (int k = 0; k < windowSizes.length; k++) {
+					BufferedImage img = targetImages.get(i,j,k);
+					Graphics2D g = (Graphics2D) img.getGraphics();
+
+					for (int l = 0; l < targetPage.size(); l++) {
+
+						//un-normalize to get image coords
+						Node node = targetPage.get(l);
+						double nodeX = (node.getDouble("x") * xStDev) + xMean;
+						double nodeY = (node.getDouble("y") * yStDev) + yMean;
+						double dist = distanceMatrix.get(i,j,l,k);
+
+						// convert edit distance to color
+						float distLin = (float) (1 - (dist / dMax.get(k)));
+						Color colorLin = new Color(distLin, distLin, distLin, (float) 1);
+						float distSig = (float) (1/(1+Math.exp(-dist/20)) - 0.5);
+						Color colorSig = new Color(distSig, distSig, distSig, (float) 1);
+						g.setColor(colorSig);
+						g.fillOval((int) Math.floor(nodeX) - RADIUS, (int) Math.floor(nodeY) - RADIUS, 2 * RADIUS, 2 * RADIUS);
+					}
+					//TODO only put BB corr to source char i
+
+					// display bounding boxes
+					g.setColor(Color.red);
+					g.setStroke(new BasicStroke(2));
+					for (int l = 0; l < boundingBoxesGT.size(); l++) {
+						int[] coords = boundingBoxesGT.get(l).getCoords();
+						g.drawRect(coords[0], coords[1], coords[2]-coords[0], coords[3]-coords[1]);
+					}
+
+					ImageIO.write(img, "png", new File("C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/test/hotmap_full_sig_"+k+".jpg"));
 				}
 			}
 		}
-//		// printing the distances or similarities
-//		System.out.println("Printing the results...");
-//		if (this.oneMatch) {
-//			if (editPath != null) {
-//
-//				this.resultPrinter.printEditPath(prop, this.sourceGraph, this.targetGraph, editPath, 600, 600, this.oneMatchDisplay, this.oneMatchSize);
-//			}
-//			System.out.println("=> distance: " + this.distanceMatrix.get(this.oneMatchIdx1,this.oneMatchIdx2,0,0;
-//		} else {
-//		TODO: update resultPrinter
-//			this.resultPrinter.printResult(this.distanceMatrix, this.source, this.target, prop, time);
-//		}
-
-
-
-//		// Create KWS results
-//		ArrayList<SpottingResult> spottingResults = new ArrayList<>();
-//		for (int i = 0; i < source.size(); i++) {
-//
-//			Graph sourceGraph = source.get(i);
-//
-//			String keywordID = sourceGraph.getGraphID();
-//			String keywordClass = this.wordList.get(sourceGraph.getGraphID());
-//
-//			for (int j = 0; j < target.size(); j++) {
-//
-//				Graph targetGraph = target.get(j);
-//
-//				String wordID = targetGraph.getGraphID();
-//				String wordClass = this.wordList.get(targetGraph.getGraphID());
-//
-//				double normGED = this.normalisedDistanceMatrix[i][j];
-//
-//				SpottingResult spottingResult = new SpottingResult(keywordID, keywordClass, wordID, wordClass, normGED);
-//				spottingResults.add(spottingResult);
-//			}
-//		}
-//
-//		// Reduce number of spotting results (i.e. find minimal distance per query)
-//		SpottingPostProcessing spottingPostProcessing = new SpottingPostProcessing();
-//		ArrayList<SpottingResult> reducedSpottingResults = spottingPostProcessing.postProcess(spottingResults);
-//
-//		// Evaluate and export spotting results
-//		trecEval.exportSpottingResults(reducedSpottingResults);
-
-
-
-
 	}
 
 	/**
@@ -580,10 +593,8 @@ public class GraphMatchingSegFree {
 		// create a distance matrix to store the resulting dissimilarities
 		this.r = this.source.size();
 		this.c = this.target.size();
-		this.distanceMatrix             = new FourDimArrayList<>();
-		this.normalisedDistanceMatrix   = new FourDimArrayList<>();
-
-		//this.assignmentCostMatrix       = new double[this.r][this.c];
+		this.distanceMatrix             = new FourDimAL<>();
+		this.normalisedDistanceMatrix   = new FourDimAL<>();
 				
 //		// check if only one match is required
 		this.oneMatch = Boolean.parseBoolean(properties.getProperty("oneMatch"));
@@ -653,8 +664,23 @@ public class GraphMatchingSegFree {
 
 		}
 
-
-		
+		// open original binarized images as matrices
+		Imgcodecs imgcodecs = new Imgcodecs();
+		this.targetImages = new ThreeDimAL<>();
+		Path originalImagesPath = Paths.get(properties.getProperty("imagesPath"));
+		for (int i = 0; i < source.size(); i++) {
+			for (int j = 0; j < target.size(); j++) {
+				String imagePath = originalImagesPath + "\\" + target.get(j).getFileName().substring(0, target.get(j).getFileName().length() - 4) + ".png";
+				for (int k = 0; k < windowSizes.length; k++) {
+					BufferedImage img = ImageIO.read(new File(imagePath));
+					Graphics2D g = (Graphics2D) img.getGraphics();
+					// start with blank images
+					g.setColor(Color.white);
+					g.fillRect(0,0,img.getWidth(), img.getHeight());
+					targetImages.set(i, j, k, img);
+				}
+			}
+		}
 	}
 
 	private TreeMap<String, String> createWordList(List<String> wordIDList){

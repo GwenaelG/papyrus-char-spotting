@@ -6,7 +6,7 @@ import java.util.ArrayList;
 //inspiration: https://stackoverflow.com/questions/4401850/how-to-create-a-multidimensional-arraylist-in-java
 // https://stackoverflow.com/a/4401871
 
-public class FourDimArrayList<T> extends ArrayList<ArrayList<ArrayList<ArrayList<T>>>> {
+public class FourDimAL<T> extends ArrayList<ArrayList<ArrayList<ArrayList<T>>>> {
 	public T get(int i, int j, int k, int l) {
 		return this.get(i).get(j).get(k).get(l);
 	}
