@@ -40,6 +40,8 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
+import java.net.PortUnreachableException;
+import java.nio.Buffer;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -175,15 +177,31 @@ public class GraphMatchingSegFree {
 	private TreeMap<String, String> wordList;
 	private TrecEval trecEval;
 
+	// size of windows relative to source char
 	private double[] windowSizes;
 
+	// groundtruth
 	private ArrayList<BoundingBox> boundingBoxesGT;
 
-	private ThreeDimAL<BufferedImage> targetImages;
+	// images for dist display
+	private ArrayList<BufferedImage> targetImages;
 
-	static{ System.loadLibrary(Core.NATIVE_LIBRARY_NAME); }
-
+	// size of circles
 	private static final int RADIUS = 5;
+
+	// folder for saving images
+	private Path visualizationFolder;
+
+	//use global maximum distance (or compute max for each window size)
+	private boolean globalMaxDist;
+
+	// use sigmoid (or linear distance-to-color conversion )
+	private boolean sigmoid;
+
+	// steepness values for sigmoid function
+	private int[] flatness;
+
+
 
 	/**
 	 * @param args
@@ -226,6 +244,7 @@ public class GraphMatchingSegFree {
 		double d = -1;
 		double d_norm = -1;
 		ArrayList<Double> dMax = new ArrayList<>();
+		Double dMaxGlobal = 0.;
 
 		// swapped the graphs?
 		boolean swapped = false;
@@ -319,7 +338,11 @@ public class GraphMatchingSegFree {
 							}
 						}
 
-						dMax.set(l, Math.max(dMax.get(l), d));
+						if (globalMaxDist) {
+							dMaxGlobal = Math.max(dMaxGlobal, d);
+						} else {
+							dMax.set(l, Math.max(dMax.get(l), d));
+						}
 
 						// whether distances or similarities are computed
 						if (this.simKernel < 1) {
@@ -356,7 +379,7 @@ public class GraphMatchingSegFree {
 //		long time = System.currentTimeMillis() - start;
 //		this.resultPrinter.printResult(this.distanceMatrix, this.source, this.target, prop, time);
 
-		System.out.println(dMax.toString());
+		String convMethod = new String();
 
 		// display edit distance btwn target node window and source char
 		for (int i = 0; i < source.size(); i++) {
@@ -370,36 +393,74 @@ public class GraphMatchingSegFree {
 				double yStDev = targetPage.getDouble("y_std");
 
 				for (int k = 0; k < windowSizes.length; k++) {
-					BufferedImage img = targetImages.get(i,j,k);
-					Graphics2D g = (Graphics2D) img.getGraphics();
 
-					for (int l = 0; l < targetPage.size(); l++) {
-
-						//un-normalize to get image coords
-						Node node = targetPage.get(l);
-						double nodeX = (node.getDouble("x") * xStDev) + xMean;
-						double nodeY = (node.getDouble("y") * yStDev) + yMean;
-						double dist = distanceMatrix.get(i,j,l,k);
-
-						// convert edit distance to color
-						float distLin = (float) (1 - (dist / dMax.get(k)));
-						Color colorLin = new Color(distLin, distLin, distLin, (float) 1);
-						float distSig = (float) (1/(1+Math.exp(-dist/20)) - 0.5);
-						Color colorSig = new Color(distSig, distSig, distSig, (float) 1);
-						g.setColor(colorSig);
-						g.fillOval((int) Math.floor(nodeX) - RADIUS, (int) Math.floor(nodeY) - RADIUS, 2 * RADIUS, 2 * RADIUS);
-					}
-					//TODO only put BB corr to source char i
-
-					// display bounding boxes
-					g.setColor(Color.red);
-					g.setStroke(new BasicStroke(2));
-					for (int l = 0; l < boundingBoxesGT.size(); l++) {
-						int[] coords = boundingBoxesGT.get(l).getCoords();
-						g.drawRect(coords[0], coords[1], coords[2]-coords[0], coords[3]-coords[1]);
+					int flatnessLen = 1;
+					if (sigmoid) {
+						flatnessLen = flatness.length;
 					}
 
-					ImageIO.write(img, "png", new File("C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/test/hotmap_full_sig_"+k+".jpg"));
+					for( int l = 0; l < flatnessLen; l++) {
+
+						BufferedImage oldImg = targetImages.get(j);
+						BufferedImage img = new BufferedImage(oldImg.getWidth(), oldImg.getHeight(), BufferedImage.TYPE_INT_RGB);
+						Graphics2D g = (Graphics2D) img.getGraphics();
+						g.drawImage(oldImg, 0,0, null);
+						g.setColor(Color.white);
+						g.fillRect(0, 0, img.getWidth(), img.getHeight());
+
+						for (int m = 0; m < targetPage.size(); m++) {
+
+							//un-normalize to get image coords
+							Node node = targetPage.get(m);
+							double nodeX = (node.getDouble("x") * xStDev) + xMean;
+							double nodeY = (node.getDouble("y") * yStDev) + yMean;
+							// careful with access order
+							double dist = distanceMatrix.get(i, j, m, k);
+
+							// convert edit distance to color
+							//dist 0 goes to white
+							// dMax goes to black
+							float distLin;
+							if (globalMaxDist) {
+								distLin = (float) (1 - (dist / dMaxGlobal));
+							} else {
+								distLin = (float) (1 - (dist / dMax.get(k)));
+							}
+							Color colorLin = new Color(distLin, distLin, distLin);
+							float distSig = (float) (1 / (1 + Math.exp(-dist / flatness[l])));
+							Color colorSig = new Color(distSig, distSig, distSig);
+
+							if (sigmoid) {
+								g.setColor(colorSig);
+								convMethod = "sig" + flatness[l];
+							} else {
+								g.setColor(colorLin);
+								convMethod = "lin";
+							}
+							g.fillOval((int) Math.floor(nodeX) - RADIUS, (int) Math.floor(nodeY) - RADIUS, 2 * RADIUS, 2 * RADIUS);
+						}
+
+						// display bounding boxes
+						g.setColor(Color.red);
+						g.setStroke(new BasicStroke(2));
+						for (int m = 0; m < boundingBoxesGT.size(); m++) {
+							// only keep char
+							if (boundingBoxesGT.get(m).getCharacter().equals(source.get(i).getClassName())) {
+								int[] coords = boundingBoxesGT.get(m).getCoords();
+								g.drawRect(coords[0], coords[1], coords[2] - coords[0], coords[3] - coords[1]);
+							}
+						}
+
+						String targetName = targetPage.getFileName().substring(0, targetPage.getFileName().length() - 4);
+						String targetFile = visualizationFolder.toString() + "/" + targetName;
+						String maxD = "";
+						if (globalMaxDist){
+							maxD = "_globD";
+						}
+						Files.createDirectories(Paths.get(targetFile));
+						String imgName = "hm_" + targetName + "_" + convMethod + maxD + "_" + windowSizes[k] + "_" + source.get(i).getClassName() + ".png";
+						ImageIO.write(img, "png", new File(targetFile +  "/" + imgName));
+					}
 				}
 			}
 		}
@@ -664,22 +725,26 @@ public class GraphMatchingSegFree {
 
 		}
 
+		this.visualizationFolder = Paths.get(properties.getProperty("editDistVis"));
+
+		this.globalMaxDist = Boolean.parseBoolean(properties.getProperty("globalMaxDist"));
+
+		this.sigmoid = Boolean.parseBoolean(properties.getProperty("useSigmoid"));
+
+		int numOfFlatnessVal = Integer.parseInt(properties.getProperty("numOfFlatnessVal"));
+		flatness = new int[numOfFlatnessVal];
+		for (int i = 0; i < numOfFlatnessVal; i++) {
+			flatness[i] = Integer.parseInt(properties.getProperty("flatnessVal"+i));
+		}
+
 		// open original binarized images as matrices
 		Imgcodecs imgcodecs = new Imgcodecs();
-		this.targetImages = new ThreeDimAL<>();
 		Path originalImagesPath = Paths.get(properties.getProperty("imagesPath"));
-		for (int i = 0; i < source.size(); i++) {
-			for (int j = 0; j < target.size(); j++) {
-				String imagePath = originalImagesPath + "\\" + target.get(j).getFileName().substring(0, target.get(j).getFileName().length() - 4) + ".png";
-				for (int k = 0; k < windowSizes.length; k++) {
-					BufferedImage img = ImageIO.read(new File(imagePath));
-					Graphics2D g = (Graphics2D) img.getGraphics();
-					// start with blank images
-					g.setColor(Color.white);
-					g.fillRect(0,0,img.getWidth(), img.getHeight());
-					targetImages.set(i, j, k, img);
-				}
-			}
+		this.targetImages = new ArrayList<>();
+		for (int j = 0; j < target.size(); j++) {
+			String imagePath = originalImagesPath + "\\" + target.get(j).getFileName().substring(0, target.get(j).getFileName().length() - 4) + ".png";
+			BufferedImage oldImg = ImageIO.read(new File(imagePath));
+			targetImages.add(oldImg);
 		}
 	}
 

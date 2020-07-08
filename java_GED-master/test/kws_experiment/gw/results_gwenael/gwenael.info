@@ -1,11 +1,11 @@
-48748
+400
 (milliseconds runtime)
-timestamp:2020_05_06_16_14_18
+timestamp:2020_06_18_10_53_28
 
 *** The properties of the matching ***
 
-Source graph set:	test/kws_experiment/gw/reduced/source.cxl (10 graphs)
-Target graph set:	test/kws_experiment/gw/reduced/target.cxl (1000 graphs)
+Source graph set:	test/kws_experiment/gw/reduced/unique_source.cxl (1 graphs)
+Target graph set:	test/kws_experiment/gw/reduced/unique_target.cxl (1 graphs)
 
 Graph edit distance procedure:	HED
 Edge mode:		undirected
@@ -15,7 +15,8 @@ Cost for edge deletion/insertion:	4
 
 Alpha weighting factor between node and edge costs:	0.5
 
-No attributes for nodes defined
+Node attribute 0:	x;	Cost function:	;	Soft factor:	0.1
+Node attribute 1:	y;	Cost function:	;	Soft factor:	0.9
 
 No attributes for edges defined
 
