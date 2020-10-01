@@ -42,6 +42,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.net.PortUnreachableException;
 import java.nio.Buffer;
+import java.nio.DoubleBuffer;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -70,7 +71,12 @@ public class GraphMatchingSegFree {
 	 * with window size l)
 	 */
 	private FourDimAL<Double> distanceMatrix;
-	private FourDimAL<Double> normalisedDistanceMatrix;
+
+	// used for resultPrinter only (?)
+	// private FourDimAL<Double> normalisedDistanceMatrix;
+
+	// used for distance-to-color conversion
+	private FourDimAL<Double> normColorDistMatrix;
 
 	/**
 	 * the source and target graph actually to be matched (temp ist for temporarily swappings)
@@ -192,14 +198,11 @@ public class GraphMatchingSegFree {
 	// folder for saving images
 	private Path visualizationFolder;
 
-	//use global maximum distance (or compute max for each window size)
-	private boolean globalMaxDist;
-
 	// use sigmoid (or linear distance-to-color conversion )
 	private boolean sigmoid;
 
 	// steepness values for sigmoid function
-	private int[] flatness;
+	private double[] steepness;
 
 
 
@@ -338,16 +341,13 @@ public class GraphMatchingSegFree {
 							}
 						}
 
-						if (globalMaxDist) {
-							dMaxGlobal = Math.max(dMaxGlobal, d);
-						} else {
-							dMax.set(l, Math.max(dMax.get(l), d));
-						}
+						dMaxGlobal = Math.max(dMaxGlobal, d);
+
 
 						// whether distances or similarities are computed
 						if (this.simKernel < 1) {
 							this.distanceMatrix.set(i, j, k, l, d);
-							this.normalisedDistanceMatrix.set(i, j, k, l, d_norm);
+							this.normColorDistMatrix.set(i, j, k, l, d_norm);
 
 						} else {
 							switch (this.simKernel) {
@@ -381,7 +381,7 @@ public class GraphMatchingSegFree {
 
 		String convMethod = new String();
 
-		// display edit distance btwn target node window and source char
+		// display edit distance between target node window and source char
 		for (int i = 0; i < source.size(); i++) {
 
 			for (int j = 0; j < target.size(); j++) {
@@ -392,14 +392,43 @@ public class GraphMatchingSegFree {
 				double xStDev = targetPage.getDouble("x_std");
 				double yStDev = targetPage.getDouble("y_std");
 
+				// normalize distances for color conversion
+				double distMean = 0;
+				double distSumSqDiff = 0;
+
+				for (int k = 0; k < targetPage.size(); k++) {
+					for (int l = 0; l < windowSizes.length; l++) {
+						double dist = distanceMatrix.get(i, j, k, l);
+						distMean += dist;
+					}
+				}
+				distMean /= targetPage.size();
+
+				for (int k = 0; k < targetPage.size(); k++) {
+					for (int l = 0; l < windowSizes.length; l++) {
+						double dist = distanceMatrix.get(i, j, k, l);
+						distSumSqDiff += Math.pow(dist - distMean,2);
+					}
+				}
+
+				double distStDev = Math.sqrt(distSumSqDiff / (targetPage.size()*windowSizes.length));
+				if (distStDev == 0) {
+					System.out.println(" ------- /!\\ StDevDist = 0, no good!! -------");
+				}
+
+				for (int k = 0; k < targetPage.size(); k++) {
+					for (int l = 0; l < windowSizes.length; l++) {
+						double dist = distanceMatrix.get(i, j, k, l);
+						double normDist = (dist - distMean) / distStDev ;
+						normColorDistMatrix.set(i,j,k,l, normDist);
+					}
+				}
+
 				for (int k = 0; k < windowSizes.length; k++) {
 
-					int flatnessLen = 1;
-					if (sigmoid) {
-						flatnessLen = flatness.length;
-					}
+					int steepnessLen = steepness.length;
 
-					for( int l = 0; l < flatnessLen; l++) {
+					for (int l = 0; l < steepnessLen; l++) {
 
 						BufferedImage oldImg = targetImages.get(j);
 						BufferedImage img = new BufferedImage(oldImg.getWidth(), oldImg.getHeight(), BufferedImage.TYPE_INT_RGB);
@@ -415,28 +444,18 @@ public class GraphMatchingSegFree {
 							double nodeX = (node.getDouble("x") * xStDev) + xMean;
 							double nodeY = (node.getDouble("y") * yStDev) + yMean;
 							// careful with access order
-							double dist = distanceMatrix.get(i, j, m, k);
+//							double dist = distanceMatrix.get(i, j, m, k);
+							double dist = normColorDistMatrix.get(i,j,m,k);
 
 							// convert edit distance to color
-							//dist 0 goes to white
-							// dMax goes to black
-							float distLin;
-							if (globalMaxDist) {
-								distLin = (float) (1 - (dist / dMaxGlobal));
-							} else {
-								distLin = (float) (1 - (dist / dMax.get(k)));
-							}
-							Color colorLin = new Color(distLin, distLin, distLin);
-							float distSig = (float) (1 / (1 + Math.exp(-dist / flatness[l])));
-							Color colorSig = new Color(distSig, distSig, distSig);
+							// dist 0 goes to black
+							// dist max goes to white
 
-							if (sigmoid) {
-								g.setColor(colorSig);
-								convMethod = "sig" + flatness[l];
-							} else {
-								g.setColor(colorLin);
-								convMethod = "lin";
-							}
+							float distSig = (float) (1 - (1 / (1 + Math.exp(-dist * steepness[l]))));
+							Color colorSig = new Color(distSig, distSig, distSig);
+							g.setColor(colorSig);
+							convMethod = "sig" + steepness[l];
+
 							g.fillOval((int) Math.floor(nodeX) - RADIUS, (int) Math.floor(nodeY) - RADIUS, 2 * RADIUS, 2 * RADIUS);
 						}
 
@@ -452,13 +471,13 @@ public class GraphMatchingSegFree {
 						}
 
 						String targetName = targetPage.getFileName().substring(0, targetPage.getFileName().length() - 4);
-						String targetFile = visualizationFolder.toString() + "/" + targetName;
+						String targetFile = visualizationFolder.toString() + "/" ;
+						String propFile = prop.split("/")[(prop.split("/").length)-1];
 						String maxD = "";
-						if (globalMaxDist){
-							maxD = "_globD";
-						}
+						maxD = "_globD";
+						targetFile = targetFile + targetName + "/globmax/" + propFile + "/" + convMethod;
 						Files.createDirectories(Paths.get(targetFile));
-						String imgName = "hm_" + targetName + "_" + convMethod + maxD + "_" + windowSizes[k] + "_" + source.get(i).getClassName() + ".png";
+						String imgName = "hm_" + targetName + "_" + convMethod + maxD + "_w" + windowSizes[k] + "_" + source.get(i).getClassName() + ".png";
 						ImageIO.write(img, "png", new File(targetFile +  "/" + imgName));
 					}
 				}
@@ -520,11 +539,11 @@ public class GraphMatchingSegFree {
 		double[] nodeCostNu = new double[numOfNodeAttr];
 		for (int i = 0; i < numOfNodeAttr; i++) {
 			nodeAttributes[i] = properties.getProperty("nodeAttr" + i);
-			nodeCostTypes[i] = properties.getProperty("nodeCostType" + i);
-			if (nodeCostTypes[i].equals("discrete")){
-				nodeCostMu[i]=Double.parseDouble(properties.getProperty("nodeCostMu" + i));
-				nodeCostNu[i]=Double.parseDouble(properties.getProperty("nodeCostNu" + i));
-			}
+//			nodeCostTypes[i] = properties.getProperty("nodeCostType" + i);
+//			if (nodeCostTypes[i].equals("discrete")){
+//				nodeCostMu[i]=Double.parseDouble(properties.getProperty("nodeCostMu" + i));
+//				nodeCostNu[i]=Double.parseDouble(properties.getProperty("nodeCostNu" + i));
+//			}
 			nodeAttrImportance[i] = Double.parseDouble(properties
 					.getProperty("nodeAttr" + i + "Importance"));
 		}
@@ -560,7 +579,7 @@ public class GraphMatchingSegFree {
 		this.outputMatching = Integer.parseInt(properties
 				.getProperty("outputMatching"));
 		this.outputEditpath = Integer.parseInt(properties
-				.getProperty("outputEditpath"));
+				.getProperty("outputEditPath"));
 		
 		// whether the edges of the graphs are directed or undirected
 		this.undirected = Integer
@@ -645,17 +664,18 @@ public class GraphMatchingSegFree {
 		Path gxlSourcePath = Paths.get(properties.getProperty("sourcePath"));
 		Path gxlTargetPath = Paths.get(properties.getProperty("targetPath"));
 
-		Path cxlSourcePath = Paths.get(properties.getProperty("source"));
+		Path cxlSourcePath = Paths.get(properties.getProperty("sourceFile"));
 		this.source = graphParser.parseCXL(cxlSourcePath, gxlSourcePath);
 
-		Path cxlTargetPath = Paths.get(properties.getProperty("target"));
+		Path cxlTargetPath = Paths.get(properties.getProperty("targetFile"));
 		this.target = graphParser.parseCXL(cxlTargetPath, gxlTargetPath);
 
 		// create a distance matrix to store the resulting dissimilarities
 		this.r = this.source.size();
 		this.c = this.target.size();
 		this.distanceMatrix             = new FourDimAL<>();
-		this.normalisedDistanceMatrix   = new FourDimAL<>();
+// 		this.normalisedDistanceMatrix   = new FourDimAL<>();
+		this.normColorDistMatrix = new FourDimAL<>();
 				
 //		// check if only one match is required
 		this.oneMatch = Boolean.parseBoolean(properties.getProperty("oneMatch"));
@@ -727,14 +747,10 @@ public class GraphMatchingSegFree {
 
 		this.visualizationFolder = Paths.get(properties.getProperty("editDistVis"));
 
-		this.globalMaxDist = Boolean.parseBoolean(properties.getProperty("globalMaxDist"));
-
-		this.sigmoid = Boolean.parseBoolean(properties.getProperty("useSigmoid"));
-
-		int numOfFlatnessVal = Integer.parseInt(properties.getProperty("numOfFlatnessVal"));
-		flatness = new int[numOfFlatnessVal];
-		for (int i = 0; i < numOfFlatnessVal; i++) {
-			flatness[i] = Integer.parseInt(properties.getProperty("flatnessVal"+i));
+		int numOfSteepnessVal = Integer.parseInt(properties.getProperty("numOfSteepnessVal"));
+		steepness = new double[numOfSteepnessVal];
+		for (int i = 0; i < numOfSteepnessVal; i++) {
+			steepness[i] = Double.parseDouble(properties.getProperty("steepnessVal"+i));
 		}
 
 		// open original binarized images as matrices

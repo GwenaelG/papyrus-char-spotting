@@ -85,12 +85,13 @@ editDistVis=C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/hotmap/
 globalMaxDist=true
 
 # method for distance-to-color conversion
-useSigmoid=false
+useSigmoid=true
 
-numOfFlatnessVal=6
-flatnessVal0=10
-flatnessVal1=25
-flatnessVal2=50
-flatnessVal3=100
-flatnessVal4=250
-flatnessVal5=500
+numOfSteepnessVal=7
+steepnessVal0=0.1
+steepnessVal1=0.25
+steepnessVal2=0.5
+steepnessVal3=1
+steepnessVal4=2
+steepnessVal5=5
+steepnessVal6=10

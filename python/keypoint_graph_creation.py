@@ -246,6 +246,7 @@ def find_keypoints(neigh_CC):
                 junctionpoints.append(node)
     # check for circular structure
     # condition: no endpoint (?)
+    # could be no endpoints AND no junction points (??)
     if len(endpoints) == 0:
         #arbitrary junction point at first node
         junctionpoints.append(list(neigh_CC.keys())[0])
