@@ -133,7 +133,11 @@ public class TrecEval {
     }
 
     private void executeCommand(String cmd) throws IOException {
+        // Windows version
         String[] commandAndArgs = new String[]{ "powershell", "-command", cmd };
+
+        //original version
+//      String[] commandAndArgs = new String[]{ "/bin/sh", "-c", cmd };
         Runtime.getRuntime().exec(commandAndArgs);
     }
 }

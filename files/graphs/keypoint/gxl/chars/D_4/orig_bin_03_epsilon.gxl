@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="3_epsilon">
+	<attr name="x_std">
+		<float>5.559990540431573</float>
+	</attr>
+	<attr name="y_std">
+		<float>6.858934516305134</float>
+	</attr>
+	<node id="3_epsilon_0">
+		<attr name="x">
+			<float>1.7456652637016528</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0034142948610554</float>
+		</attr>
+	</node>
+	<node id="3_epsilon_1">
+		<attr name="x">
+			<float>-0.952181052928174</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8576190554367996</float>
+		</attr>
+	</node>
+	<node id="3_epsilon_2">
+		<attr name="x">
+			<float>1.9255216848103078</float>
+		</attr>
+		<attr name="y">
+			<float>0.017152381108735928</float>
+		</attr>
+	</node>
+	<node id="3_epsilon_3">
+		<attr name="x">
+			<float>0.6665267370497221</float>
+		</attr>
+		<attr name="y">
+			<float>1.3293095359270393</float>
+		</attr>
+	</node>
+	<node id="3_epsilon_4">
+		<attr name="x">
+			<float>-0.7723246318195188</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8576190554367996</float>
+		</attr>
+	</node>
+	<node id="3_epsilon_5">
+		<attr name="x">
+			<float>-0.4126117896022086</float>
+		</attr>
+		<attr name="y">
+			<float>-0.12864285831552</float>
+		</attr>
+	</node>
+	<node id="3_epsilon_6">
+		<attr name="x">
+			<float>1.0262395792670322</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1492095342853115</float>
+		</attr>
+	</node>
+	<node id="3_epsilon_7">
+		<attr name="x">
+			<float>0.30681389483241184</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2950047737095673</float>
+		</attr>
+	</node>
+	<node id="3_epsilon_8">
+		<attr name="x">
+			<float>-0.4126117896022086</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1492095342853115</float>
+		</attr>
+	</node>
+	<node id="3_epsilon_9">
+		<attr name="x">
+			<float>-0.4126117896022086</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5660285765882878</float>
+		</attr>
+	</node>
+	<node id="3_epsilon_10">
+		<attr name="x">
+			<float>1.2060960003756875</float>
+		</attr>
+		<attr name="y">
+			<float>0.017152381108735928</float>
+		</attr>
+	</node>
+	<node id="3_epsilon_11">
+		<attr name="x">
+			<float>0.48667031594106697</float>
+		</attr>
+		<attr name="y">
+			<float>0.017152381108735928</float>
+		</attr>
+	</node>
+	<node id="3_epsilon_12">
+		<attr name="x">
+			<float>-0.952181052928174</float>
+		</attr>
+		<attr name="y">
+			<float>0.16294762053299183</float>
+		</attr>
+	</node>
+	<node id="3_epsilon_13">
+		<attr name="x">
+			<float>-1.3118938951454842</float>
+		</attr>
+		<attr name="y">
+			<float>0.7461285782300155</float>
+		</attr>
+	</node>
+	<node id="3_epsilon_14">
+		<attr name="x">
+			<float>-1.3118938951454842</float>
+		</attr>
+		<attr name="y">
+			<float>1.3293095359270393</float>
+		</attr>
+	</node>
+	<node id="3_epsilon_15">
+		<attr name="x">
+			<float>-0.7723246318195188</float>
+		</attr>
+		<attr name="y">
+			<float>1.7666952541998069</float>
+		</attr>
+	</node>
+	<node id="3_epsilon_16">
+		<attr name="x">
+			<float>-0.05289894738489838</float>
+		</attr>
+		<attr name="y">
+			<float>1.620900014775551</float>
+		</attr>
+	</node>
+	<edge from="3_epsilon_6" to="3_epsilon_0"/>
+	<edge from="3_epsilon_3" to="3_epsilon_16"/>
+	<edge from="3_epsilon_7" to="3_epsilon_6"/>
+	<edge from="3_epsilon_8" to="3_epsilon_4"/>
+	<edge from="3_epsilon_12" to="3_epsilon_13"/>
+	<edge from="3_epsilon_5" to="3_epsilon_11"/>
+	<edge from="3_epsilon_10" to="3_epsilon_2"/>
+	<edge from="3_epsilon_11" to="3_epsilon_10"/>
+	<edge from="3_epsilon_13" to="3_epsilon_14"/>
+	<edge from="3_epsilon_1" to="3_epsilon_4"/>
+	<edge from="3_epsilon_14" to="3_epsilon_15"/>
+	<edge from="3_epsilon_4" to="3_epsilon_9"/>
+	<edge from="3_epsilon_16" to="3_epsilon_15"/>
+	<edge from="3_epsilon_5" to="3_epsilon_12"/>
+	<edge from="3_epsilon_9" to="3_epsilon_5"/>
+	<edge from="3_epsilon_7" to="3_epsilon_8"/>
+</graph>
+</gxl>
