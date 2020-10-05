@@ -1,6 +1,6 @@
 # cxl files
-target=test/papyrus/reduced/target_small.cxl
-source=test/papyrus/reduced/source.cxl
+targetFile=test/papyrus/reduced/target_small.cxl
+sourceFile=test/papyrus/reduced/source.cxl
 
 # graphs folder
 sourcePath=C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/contour/gxl/chars/D_1/v_2/
@@ -95,3 +95,10 @@ steepnessVal3=1
 steepnessVal4=2
 steepnessVal5=5
 steepnessVal6=10
+
+numOfThresholdVal=5
+threshold0=-5
+threshold1=-4
+threshold2=-3
+threshold3=-2
+threshold4=-1

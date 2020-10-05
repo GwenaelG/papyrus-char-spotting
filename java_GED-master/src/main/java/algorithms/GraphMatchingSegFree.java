@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package algorithms;
 
 import andreas.EditPath;
@@ -17,11 +15,11 @@ import costs.normalisation.NormalisationFunction;
 import graph.Graph;
 import graph.GraphSet;
 import graph.Node;
+import gwenael.FiveDimAL;
 import gwenael.FourDimAL;
 import gwenael.ThreeDimAL;
 import kaspar.GreedyMatching;
 import kaspar.GreedyMatrixGenerator;
-import org.opencv.core.Core;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -40,9 +38,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
-import java.net.PortUnreachableException;
-import java.nio.Buffer;
-import java.nio.DoubleBuffer;
+import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -89,7 +85,7 @@ public class GraphMatchingSegFree {
 	private int undirected;
 
 	/**
-	 * progess-counter
+	 * progress-counter
 	 */
 	private int counter;
 
@@ -203,6 +199,16 @@ public class GraphMatchingSegFree {
 
 	// steepness values for sigmoid function
 	private double[] steepness;
+
+	// normalized threshold (for normalized distances)
+	private double[] thresholds;
+
+	private FiveDimAL<Boolean> underThresholdMat;
+
+	private FourDimAL<Integer> truePositives;
+	private FourDimAL<Integer> trueNegatives;
+	private FourDimAL<Integer> falsePositives;
+	private FourDimAL<Integer> falseNegatives;
 
 
 
@@ -341,7 +347,7 @@ public class GraphMatchingSegFree {
 							}
 						}
 
-						dMaxGlobal = Math.max(dMaxGlobal, d);
+						dMaxGlobal = Math.max(dMaxGlobal, d); //not used anymore
 
 
 						// whether distances or similarities are computed
@@ -372,12 +378,6 @@ public class GraphMatchingSegFree {
 				}
 			}
 		}
-
-
-
-//		TODO: update resultPrinter
-//		long time = System.currentTimeMillis() - start;
-//		this.resultPrinter.printResult(this.distanceMatrix, this.source, this.target, prop, time);
 
 		String convMethod = new String();
 
@@ -447,16 +447,57 @@ public class GraphMatchingSegFree {
 //							double dist = distanceMatrix.get(i, j, m, k);
 							double dist = normColorDistMatrix.get(i,j,m,k);
 
-							// convert edit distance to color
-							// dist 0 goes to black
-							// dist max goes to white
+							for(int t = 0; t < thresholds.length; t++){
+								boolean underThresh = false;
+								double thresh = thresholds[t];
+								if (dist <= thresh){
+									underThresh = true;
+								}
+								underThresholdMat.set(i,j,m,k,t,underThresh);
+							}
 
-							float distSig = (float) (1 - (1 / (1 + Math.exp(-dist * steepness[l]))));
+
+							// convert edit distance to color
+							// dis=0 goes to black
+							// max dist goes to white
+							// mean dist will be gray (0.5)
+							float distSig = (float)  (1 / (1 + Math.exp(-dist * steepness[l])));
+							// invert black-white
+							// float distSig = (float)  (1 - (1 / (1 + Math.exp(-dist * steepness[l]))));
+
 							Color colorSig = new Color(distSig, distSig, distSig);
 							g.setColor(colorSig);
 							convMethod = "sig" + steepness[l];
 
 							g.fillOval((int) Math.floor(nodeX) - RADIUS, (int) Math.floor(nodeY) - RADIUS, 2 * RADIUS, 2 * RADIUS);
+
+							boolean inBB = false;
+							for (int n = 0; n < boundingBoxesGT.size(); n++) {
+								int[] coords = boundingBoxesGT.get(n).getCoords();
+								if (nodeX >= coords[0] && nodeX <= coords[2]) {
+									if (nodeY >= coords[1] && nodeY <= coords[3]) {
+										inBB = true;
+										for(int t = 0; t < thresholds.length; t++) {
+											if (underThresholdMat.get(i,j,m,k,t)) {
+												System.out.println("tp");
+												this.truePositives.set(i, j, k, t, this.truePositives.get(i, j, k, t) + 1);
+											} else {
+												this.falseNegatives.set(i, j, k, t, this.falseNegatives.get(i, j, k, t) + 1);
+											}
+										}
+										break;
+									}
+								}
+							}
+							if (!inBB) {
+								for(int t = 0; t < thresholds.length; t++) {
+									if (underThresholdMat.get(i,j,m,k,t)) {
+										this.falsePositives.set(i, j, k, t, this.falsePositives.get(i, j, k,t) + 1);
+									} else {
+										this.trueNegatives.set(i, j, k, t,this.trueNegatives.get(i, j, k, t) + 1);
+									}
+								}
+							}
 						}
 
 						// display bounding boxes
@@ -472,10 +513,11 @@ public class GraphMatchingSegFree {
 
 						String targetName = targetPage.getFileName().substring(0, targetPage.getFileName().length() - 4);
 						String targetFile = visualizationFolder.toString() + "/" ;
+						String sourceChar = this.source.get(i).getClassName();
 						String propFile = prop.split("/")[(prop.split("/").length)-1];
 						String maxD = "";
 						maxD = "_globD";
-						targetFile = targetFile + targetName + "/globmax/" + propFile + "/" + convMethod;
+						targetFile = targetFile + targetName + "/" + sourceChar + "/globmax/" + propFile + "/" + convMethod;
 						Files.createDirectories(Paths.get(targetFile));
 						String imgName = "hm_" + targetName + "_" + convMethod + maxD + "_w" + windowSizes[k] + "_" + source.get(i).getClassName() + ".png";
 						ImageIO.write(img, "png", new File(targetFile +  "/" + imgName));
@@ -483,6 +525,16 @@ public class GraphMatchingSegFree {
 				}
 			}
 		}
+
+		String propName = prop.split("/")[(prop.split("/").length)-1].split("\\.")[0];
+		this.resultPrinter.printResultGw(propName, source, target, windowSizes, thresholds, truePositives, falseNegatives,
+				falsePositives, trueNegatives);
+
+//		TODO: update resultPrinter
+// 		long time = System.currentTimeMillis() - start;
+//		this.resultPrinter.printResult(this.distanceMatrix, this.source, this.target, prop, time);
+
+
 	}
 
 	/**
@@ -762,6 +814,32 @@ public class GraphMatchingSegFree {
 			BufferedImage oldImg = ImageIO.read(new File(imagePath));
 			targetImages.add(oldImg);
 		}
+
+		int numOfThresholdVal = Integer.parseInt(properties.getProperty("numOfThresholdVal"));
+		thresholds = new double[numOfThresholdVal];
+		for (int i = 0; i < numOfThresholdVal; i++) {
+			thresholds[i] = Double.parseDouble(properties.getProperty("threshold"+i));
+		}
+		this.underThresholdMat = new FiveDimAL<>();
+		this.truePositives = new FourDimAL<>();
+		this.trueNegatives = new FourDimAL<>();
+		this.falsePositives = new FourDimAL<>();
+		this.falseNegatives = new FourDimAL<>();
+
+		for (int i = 0; i < r; i++) {
+			for (int j = 0; j < c; j++) {
+				for (int k = 0; k < target.get(j).size(); k++){
+					for (int l = 0; l < thresholds.length; l++) {
+						truePositives.set(i, j, k, l,0);
+						falseNegatives.set(i, j, k, l, 0);
+						falsePositives.set(i, j, k, l, 0);
+						trueNegatives.set(i, j, k, l,0);
+					}
+				}
+			}
+		}
+
+
 	}
 
 	private TreeMap<String, String> createWordList(List<String> wordIDList){

@@ -1,9 +1,6 @@
 package util;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.PrintWriter;
+import java.io.*;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -18,6 +15,10 @@ import andreas.GEDFile;
 import andreas.LetterPlotter;
 import graph.Graph;
 import graph.GraphSet;
+import gwenael.FourDimAL;
+import gwenael.ThreeDimAL;
+
+import javax.management.ObjectName;
 
 
 public class ResultPrinter {
@@ -25,7 +26,7 @@ public class ResultPrinter {
 	/**
 	 * where the results are printed
 	 */
-	private String resultFolder;
+	private final String resultFolder;
 
 	/**
 	 * the decimalformat for the editdistances found
@@ -35,7 +36,7 @@ public class ResultPrinter {
 	/**
 	 * the properties defined via GUI or properties file
 	 */
-	private Properties properties;
+	private final Properties properties;
 
 	
 	/**
@@ -53,8 +54,8 @@ public class ResultPrinter {
 	/**prints out the properties and the distance-matrix @param d 
 	 * in the resultFolder
 	 * @param prop 
-	 * @param graphSet2 
-	 * @param graphSet 
+	 * @param target
+	 * @param source
 	 */
 	public void printResult(double[][] d, GraphSet source, GraphSet target, String prop, long time) {
 		
@@ -259,6 +260,59 @@ public class ResultPrinter {
 			}
 			
 		}
+	}
+
+	public void printResultGw(String name, GraphSet source, GraphSet target, double[] windowSizes, double[] thresholds,
+							  FourDimAL<Integer> TP, FourDimAL<Integer> FN, FourDimAL<Integer> FP,
+							  FourDimAL<Integer> TN){
+		String resultName = this.resultFolder + "/" + name + ".res";
+		try {
+			PrintWriter wr = new PrintWriter(new FileOutputStream(resultName));
+
+			int r = source.size();
+			int c = target.size();
+			String[] sourceIds = new String[r];
+			String[] targetIds = new String[c];
+			for (int i = 0; i < r; i++) {
+				sourceIds[i] = source.get(i).getGraphID();
+			}
+			for (int j = 0; j < c; j++) {
+				targetIds[j] = target.get(j).getGraphID();
+			}
+
+			for (int i = 0; i < r; i++) {
+				for (int j = 0; j < c; j++) {
+					wr.println(sourceIds[i]+" "+targetIds[j]);
+					for (int k = 0; k < windowSizes.length; k++){
+						wr.println("-----------------");
+						wr.println("winsize: x"+windowSizes[k]);
+						for( int l = 0; l < thresholds.length; l++) {
+							double thresh = thresholds[l];
+							wr.println("\nthreshold: "+thresh);
+							int nbTP = TP.get(i, j, k,l);
+							wr.print("TP: " + nbTP + "; ");
+							int nbFN = FN.get(i, j, k, l);
+							wr.print("FN: " + nbFN + "; ");
+							int nbFP = FP.get(i, j, k, l);
+							wr.print("FP: " + nbFP + "; ");
+							int nbTN = TN.get(i, j, k, l);
+							wr.print("TN: " + nbTN + "\n");
+							int sum = nbTP + nbTN + nbFP + nbFN;
+							wr.println("total: " + sum);
+							double precision = (double) nbTP / (nbTP + nbFP);
+							double recall = (double) nbTP / (nbTP + nbFN);
+							wr.println("precision: " + String.format("%.3f", precision) + "; recall: " + String.format("%.3f", recall));
+						}
+					}
+				}
+			}
+
+
+			wr.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 	}
 
 }

@@ -36,12 +36,14 @@ public class GMPropertyCSVSimple {
         String distVisPath      = "/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/hotmap/";
         String[] windowSizes    = new String[]{"0.5", "0.75", "1", "1.5", "2"};
         String[] steepnessValues = new String[]{"0.1","0.25","0.5","1","2","5","10"};
+        String[] thresholdValues = new String[]{"-4", "-3", "-2", "-1", "0"};
 
-        readCSVFiles(parameterFile, graphFile, resultPath, propertyPath, imagesPath, distVisPath, windowSizes, steepnessValues);
+        readCSVFiles(parameterFile, graphFile, resultPath, propertyPath, imagesPath, distVisPath, windowSizes, steepnessValues, thresholdValues);
     }
 
     private static void readCSVFiles(String parameterFile, String graphFile, String resultPath, String propertyPath,
-                                     String imagesPath, String distVisPath, String[] windowSizes, String[] steepnessValues){
+                                     String imagesPath, String distVisPath, String[] windowSizes, String[] steepnessValues,
+                                     String[] thresholdValues){
 
         try {
 
@@ -214,6 +216,11 @@ public class GMPropertyCSVSimple {
                GMPropertyFile.addValue(propertyValues, "numOfSteepnessVal", Integer.toString(steepnessValues.length), "");
                 for (int i = 0; i < steepnessValues.length; i++) {
                     GMPropertyFile.addValue(propertyValues, "steepnessVal"+i, steepnessValues[i], "");
+                }
+
+                GMPropertyFile.addValue(propertyValues, "numOfThresholdVal", Integer.toString(thresholdValues.length),"");
+                for (int i = 0; i < thresholdValues.length; i++) {
+                    GMPropertyFile.addValue(propertyValues, "threshold"+i, thresholdValues[i],"");
                 }
 
                 // Export values
