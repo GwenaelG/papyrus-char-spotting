@@ -479,7 +479,6 @@ public class GraphMatchingSegFree {
 										inBB = true;
 										for(int t = 0; t < thresholds.length; t++) {
 											if (underThresholdMat.get(i,j,m,k,t)) {
-												System.out.println("tp");
 												this.truePositives.set(i, j, k, t, this.truePositives.get(i, j, k, t) + 1);
 											} else {
 												this.falseNegatives.set(i, j, k, t, this.falseNegatives.get(i, j, k, t) + 1);
@@ -526,7 +525,8 @@ public class GraphMatchingSegFree {
 			}
 		}
 
-		String propName = prop.split("/")[(prop.split("/").length)-1].split("\\.")[0];
+		String propName = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
+		System.out.println(propName);
 		this.resultPrinter.printResultGw(propName, source, target, windowSizes, thresholds, truePositives, falseNegatives,
 				falsePositives, trueNegatives);
 
