@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="bb_other_25">
+	<attr name="x_mean">
+		<float>28.25</float>
+	</attr>
+	<attr name="y_mean">
+		<float>1.25</float>
+	</attr>
+	<attr name="x_std">
+		<float>2.8613807855648994</float>
+	</attr>
+	<attr name="y_std">
+		<float>1.299038105676658</float>
+	</attr>
+	<attr name="x_max">
+		<float>32</float>
+	</attr>
+	<attr name="y_max">
+		<float>3</float>
+	</attr>
+	<node id="bb_other_25_0">
+		<attr name="x">
+			<float>-1.4852968963237645</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9622504486493763</float>
+		</attr>
+	</node>
+	<node id="bb_other_25_1">
+		<attr name="x">
+			<float>1.310556084991557</float>
+		</attr>
+		<attr name="y">
+			<float>0.5773502691896257</float>
+		</attr>
+	</node>
+	<node id="bb_other_25_2">
+		<attr name="x">
+			<float>-0.0873704056661038</float>
+		</attr>
+		<attr name="y">
+			<float>1.3471506281091268</float>
+		</attr>
+	</node>
+	<node id="bb_other_25_3">
+		<attr name="x">
+			<float>0.26211121699831136</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9622504486493763</float>
+		</attr>
+	</node>
+	<edge from="bb_other_25_0" to="bb_other_25_3"/>
+	<edge from="bb_other_25_1" to="bb_other_25_3"/>
+	<edge from="bb_other_25_0" to="bb_other_25_2"/>
+	<edge from="bb_other_25_2" to="bb_other_25_1"/>
+</graph>
+</gxl>

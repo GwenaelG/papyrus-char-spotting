@@ -8,6 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 import java.util.Properties;
+import java.util.zip.GZIPOutputStream;
 
 import andreas.AStarGED;
 import andreas.EditPath;
@@ -17,6 +18,7 @@ import graph.Graph;
 import graph.GraphSet;
 import gwenael.FourDimAL;
 import gwenael.ThreeDimAL;
+import gwenael.TwoDimAL;
 
 import javax.management.ObjectName;
 
@@ -88,20 +90,20 @@ public class ResultPrinter {
 		System.out.println("folder: "+ this.resultFolder);
 //		resultName = resultName.replace("/", sep);
 		GEDFile.writeGED(d, sourceIds, targetIds, resultName);
-		
+
 		// info file
 		resultName = this.resultFolder+name+".info";
 		PrintWriter out;
 		try {
 			out = new PrintWriter(new FileOutputStream(resultName));
-			
+
 			// andreas
 //			out.println("__time " + AStarGED.timeNano);
 //			out.println("__open " + AStarGED.numOpen);
 //			out.println("__matchings " + AStarGED.numMatchings);
 //			out.println("__failures " + AStarGED.numFailures);
 //			out.println("__failureIDs" + AStarGED.failures);
-			
+
 			out.println(time);
 			out.println("(milliseconds runtime)");
 			out.println("timestamp:" + dateFormat.format(cal.getTime()) + "\n");
@@ -127,7 +129,7 @@ public class ResultPrinter {
 					.getProperty("numOfNodeAttr"));
 			int numOfEdgeAttr = Integer.parseInt(properties
 					.getProperty("numOfEdgeAttr"));
-			
+
 			for (int i = 0; i < numOfNodeAttr; i++) {
 				out.print("Node attribute "+i+":\t"+ properties.getProperty("nodeAttr" + i)+";\t");
 				out.print("Cost function:\t"+properties.getProperty("nodeCostType" + i)+";\t");
@@ -157,7 +159,7 @@ public class ResultPrinter {
 					.getProperty("pEdge"));
 			int multiplyEdgeCosts = Integer.parseInt(properties
 					.getProperty("multiplyEdgeCosts"));
-			
+
 			if (multiplyNodeCosts==1){
 				out.println("Individual node costs are multiplied");
 			} else {
@@ -167,14 +169,14 @@ public class ResultPrinter {
 				out.println("Individual edge costs are multiplied");
 			} else {
 				out.println("Individual edge costs are added");
-			}	
+			}
 			System.out.println();
 			out.println("(Combined node cost)^(1/"+squareRootNodeCosts+")");
-		
+
 			out.println("(Combined edge cost)^(1/"+squareRootEdgeCosts+")");
-			
+
 			int simKernel=Integer.parseInt(properties.getProperty("simKernel"));
-			
+
 			switch (simKernel){
 				case 0:
 					out.println("\n*** The distance matrix ***\n");
@@ -189,15 +191,15 @@ public class ResultPrinter {
 					out.println("\n*** The similarity matrix exp(-d) ***\n");break;
 			}
 			out.close();
-			
+
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
-	
+
 	public void printEditPath(String prop, Graph source, Graph target, EditPath editPath, int width, int height, boolean display, double size) {
-		
+
 		// name of the result file
 		String r1 = prop;
 		String[] r2 = r1.split("/");
@@ -208,11 +210,11 @@ public class ResultPrinter {
 		String s1 = source.getGraphID();
 		String[] s2 = s1.split("\\|");
 		String sIdx = s2[1];
-		
+
 		String t1 = target.getGraphID();
 		String[] t2 = t1.split("\\|");
 		String tIdx = t2[1];
-		
+
 		// display editPath
 		if (display) {
 			LetterPlotter plotter;
@@ -238,7 +240,7 @@ public class ResultPrinter {
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
-			
+
 			// edit path image
 //			resultName = this.resultFolder + name + "_" + sIdx + "_" + tIdx + ".gif";
 //			LetterPlotter plotter;
@@ -248,7 +250,7 @@ public class ResultPrinter {
 //			} catch (Exception e) {
 //				e.printStackTrace();
 //			}
-			
+
 			// edit path graphviz
 			resultName = this.resultFolder + name + "_" + sIdx + "_" + tIdx + ".dot";
 			try {
@@ -258,16 +260,21 @@ public class ResultPrinter {
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
 			}
-			
+
 		}
 	}
 
 	public void printResultGw(String name, GraphSet source, GraphSet target, double[] windowSizes, double[] thresholds,
 							  FourDimAL<Integer> TP, FourDimAL<Integer> FN, FourDimAL<Integer> FP,
 							  FourDimAL<Integer> TN){
-		String resultName = this.resultFolder + "/" + name + ".res";
+		String resultNameComplete = this.resultFolder + "/" + name + "_complete.res";
+		String resultNamePrecRec = this.resultFolder + "/" + name + "_precision_recall.res";
+//		String resultNameRecall = this.resultFolder + "/" + name + "_recall.res";
+
 		try {
-			PrintWriter wr = new PrintWriter(new FileOutputStream(resultName));
+			PrintWriter wrComp = new PrintWriter(new FileOutputStream(resultNameComplete));
+			PrintWriter wrPrecRec = new PrintWriter(new FileOutputStream(resultNamePrecRec));
+//			PrintWriter wrRec = new PrintWriter(new FileOutputStream(resultNameRecall));
 
 			int r = source.size();
 			int c = target.size();
@@ -280,35 +287,66 @@ public class ResultPrinter {
 				targetIds[j] = target.get(j).getGraphID();
 			}
 
+			ThreeDimAL<Double> bestPrecision = new ThreeDimAL<>();
+			ThreeDimAL<Double> bestRecall = new ThreeDimAL<>();
+
 			for (int i = 0; i < r; i++) {
 				for (int j = 0; j < c; j++) {
-					wr.println(sourceIds[i]+" "+targetIds[j]);
+					wrComp.println(sourceIds[i]+" "+targetIds[j]);
+					bestPrecision.set(i,j,0,0.);
+					bestPrecision.set(i,j,1,0.);
+					bestPrecision.set(i,j,2,0.);
+					bestRecall.set(i,j,0,0.);
+					bestRecall.set(i,j,1,0.);
+					bestRecall.set(i,j,2,0.);
+
 					for (int k = 0; k < windowSizes.length; k++){
-						wr.println("-----------------");
-						wr.println("winsize: x"+windowSizes[k]);
+						wrComp.println("-----------------");
+						wrComp.println("winsize: x"+windowSizes[k]);
 						for( int l = 0; l < thresholds.length; l++) {
 							double thresh = thresholds[l];
-							wr.println("\nthreshold: "+thresh);
+							wrComp.println("\nthreshold: "+thresh);
 							int nbTP = TP.get(i, j, k,l);
-							wr.print("TP: " + nbTP + "; ");
+							wrComp.print("TP: " + nbTP + "; ");
 							int nbFN = FN.get(i, j, k, l);
-							wr.print("FN: " + nbFN + "; ");
+							wrComp.print("FN: " + nbFN + "; ");
 							int nbFP = FP.get(i, j, k, l);
-							wr.print("FP: " + nbFP + "; ");
+							wrComp.print("FP: " + nbFP + "; ");
 							int nbTN = TN.get(i, j, k, l);
-							wr.print("TN: " + nbTN + "\n");
+							wrComp.print("TN: " + nbTN + "\n");
 							int sum = nbTP + nbTN + nbFP + nbFN;
-							wr.println("total: " + sum);
+							wrComp.println("total: " + sum);
 							double precision = (double) nbTP / (nbTP + nbFP);
+							if (precision > bestPrecision.get(i,j,0)) {
+								bestPrecision.set(i,j,0,precision);
+								bestPrecision.set(i,j,1,(double) k);
+								bestPrecision.set(i,j,2,(double) l);
+							}
 							double recall = (double) nbTP / (nbTP + nbFN);
-							wr.println("precision: " + String.format("%.3f", precision) + "; recall: " + String.format("%.3f", recall));
+							if (recall > bestRecall.get(i,j,0)) {
+								bestRecall.set(i,j,0,recall);
+								bestRecall.set(i,j,1, (double) k);
+								bestRecall.set(i,k,2, (double) l);
+							}
+							wrComp.println("precision: " + String.format("%.3f", precision) + "; recall: " + String.format("%.3f\n", recall));
 						}
 					}
+					wrPrecRec.println(sourceIds[i]+" "+targetIds[j]);
+
+					String nextLine = "best precision: "+ String.format("%.3f", bestPrecision.get(i,j,0));
+					nextLine += ", win: " + String.format("%.3f", windowSizes[bestPrecision.get(i,j,1).intValue()]);
+					nextLine += ", thresh: "+ String.format("%.3f", thresholds[bestPrecision.get(i,j,2).intValue()]);
+					wrPrecRec.println(nextLine);
+					nextLine = "best recall: "+ String.format("%.3f", bestRecall.get(i,j,0));
+					nextLine += ", win: " + String.format("%.3f", windowSizes[bestRecall.get(i,j,1).intValue()]);
+					nextLine += ", thresh: "+ String.format("%.3f", thresholds[bestRecall.get(i,j,2).intValue()])+"\n";
+					wrPrecRec.println(nextLine);
 				}
 			}
 
 
-			wr.close();
+			wrComp.close();
+			wrPrecRec.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

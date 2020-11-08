@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="bb_char_6">
+	<attr name="x_mean">
+		<float>9.857142857142858</float>
+	</attr>
+	<attr name="y_mean">
+		<float>12.857142857142858</float>
+	</attr>
+	<attr name="x_std">
+		<float>6.010195419417895</float>
+	</attr>
+	<attr name="y_std">
+		<float>8.441878115825233</float>
+	</attr>
+	<attr name="x_max">
+		<float>20</float>
+	</attr>
+	<attr name="y_max">
+		<float>25</float>
+	</attr>
+	<node id="bb_char_6_0">
+		<attr name="x">
+			<float>1.6876085443224254</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2861051425025842</float>
+		</attr>
+	</node>
+	<node id="bb_char_6_1">
+		<attr name="x">
+			<float>-0.4753826885415284</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0491910373047397</float>
+		</attr>
+	</node>
+	<node id="bb_char_6_2">
+		<attr name="x">
+			<float>-1.4736863344787379</float>
+		</attr>
+		<attr name="y">
+			<float>1.4384070672726268</float>
+		</attr>
+	</node>
+	<node id="bb_char_6_3">
+		<attr name="x">
+			<float>-0.1426148065624586</float>
+		</attr>
+		<attr name="y">
+			<float>1.2014929620747825</float>
+		</attr>
+	</node>
+	<node id="bb_char_6_4">
+		<attr name="x">
+			<float>-0.8081505705205982</float>
+		</attr>
+		<attr name="y">
+			<float>0.4907506464812491</float>
+		</attr>
+	</node>
+	<node id="bb_char_6_5">
+		<attr name="x">
+			<float>1.0220727803642857</float>
+		</attr>
+		<attr name="y">
+			<float>-0.10153461651336196</float>
+		</attr>
+	</node>
+	<node id="bb_char_6_6">
+		<attr name="x">
+			<float>0.19015307541661125</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6938198795079731</float>
+		</attr>
+	</node>
+	<edge from="bb_char_6_0" to="bb_char_6_1"/>
+	<edge from="bb_char_6_1" to="bb_char_6_2"/>
+	<edge from="bb_char_6_4" to="bb_char_6_5"/>
+	<edge from="bb_char_6_5" to="bb_char_6_6"/>
+	<edge from="bb_char_6_0" to="bb_char_6_6"/>
+	<edge from="bb_char_6_2" to="bb_char_6_3"/>
+	<edge from="bb_char_6_3" to="bb_char_6_4"/>
+</graph>
+</gxl>

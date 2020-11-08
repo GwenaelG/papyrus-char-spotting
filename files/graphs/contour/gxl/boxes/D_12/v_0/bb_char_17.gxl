@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="bb_char_17">
+	<attr name="x_mean">
+		<float>9.0</float>
+	</attr>
+	<attr name="y_mean">
+		<float>9.428571428571429</float>
+	</attr>
+	<attr name="x_std">
+		<float>4.535573676110727</float>
+	</attr>
+	<attr name="y_std">
+		<float>7.631834508110332</float>
+	</attr>
+	<attr name="x_max">
+		<float>16</float>
+	</attr>
+	<attr name="y_max">
+		<float>22</float>
+	</attr>
+	<node id="bb_char_17_0">
+		<attr name="x">
+			<float>0.0</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2354266092315955</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_1">
+		<attr name="x">
+			<float>-0.6614378277661477</float>
+		</attr>
+		<attr name="y">
+			<float>0.8610549094644453</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_2">
+		<attr name="x">
+			<float>0.8819171036881969</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2354266092315955</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_3">
+		<attr name="x">
+			<float>-1.102396379610246</float>
+		</attr>
+		<attr name="y">
+			<float>0.3369345297904351</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_4">
+		<attr name="x">
+			<float>1.5433549314543444</float>
+		</attr>
+		<attr name="y">
+			<float>0.20590443487193255</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_5">
+		<attr name="x">
+			<float>-1.3228756555322954</float>
+		</attr>
+		<attr name="y">
+			<float>1.6472354789754606</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_6">
+		<attr name="x">
+			<float>0.6614378277661477</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5802761346390828</float>
+		</attr>
+	</node>
+	<edge from="bb_char_17_4" to="bb_char_17_6"/>
+	<edge from="bb_char_17_1" to="bb_char_17_4"/>
+	<edge from="bb_char_17_6" to="bb_char_17_2"/>
+	<edge from="bb_char_17_5" to="bb_char_17_1"/>
+	<edge from="bb_char_17_0" to="bb_char_17_3"/>
+	<edge from="bb_char_17_0" to="bb_char_17_2"/>
+	<edge from="bb_char_17_3" to="bb_char_17_5"/>
+</graph>
+</gxl>

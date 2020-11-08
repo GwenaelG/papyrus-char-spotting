@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="bb_char_17">
+	<attr name="x_mean">
+		<float>9.1875</float>
+	</attr>
+	<attr name="y_mean">
+		<float>11.5625</float>
+	</attr>
+	<attr name="x_std">
+		<float>5.456862079070718</float>
+	</attr>
+	<attr name="y_std">
+		<float>7.777923485738337</float>
+	</attr>
+	<attr name="x_max">
+		<float>18</float>
+	</attr>
+	<attr name="y_max">
+		<float>23</float>
+	</attr>
+	<node id="bb_char_17_0">
+		<attr name="x">
+			<float>1.4316836098834365</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3580102734833384</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_1">
+		<attr name="x">
+			<float>-0.034360406637202474</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4865792934580924</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_2">
+		<attr name="x">
+			<float>-0.4008714107673622</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2294412535085846</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_3">
+		<attr name="x">
+			<float>-1.3171489210927616</float>
+		</attr>
+		<attr name="y">
+			<float>0.8276630660874784</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_4">
+		<attr name="x">
+			<float>-1.6836599252229212</float>
+		</attr>
+		<attr name="y">
+			<float>1.0848011060369864</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_5">
+		<attr name="x">
+			<float>-1.5004044231578415</float>
+		</attr>
+		<attr name="y">
+			<float>1.3419391459864942</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_6">
+		<attr name="x">
+			<float>-0.4008714107673622</float>
+		</attr>
+		<attr name="y">
+			<float>1.4705081659612482</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_7">
+		<attr name="x">
+			<float>-0.034360406637202474</float>
+		</attr>
+		<attr name="y">
+			<float>1.2133701260117402</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_8">
+		<attr name="x">
+			<float>-0.5841269128324421</float>
+		</attr>
+		<attr name="y">
+			<float>0.8276630660874784</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_9">
+		<attr name="x">
+			<float>-0.4008714107673622</float>
+		</attr>
+		<attr name="y">
+			<float>0.18481796621370877</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_10">
+		<attr name="x">
+			<float>-0.034360406637202474</float>
+		</attr>
+		<attr name="y">
+			<float>-0.07232007373579909</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_11">
+		<attr name="x">
+			<float>1.6149391119485164</float>
+		</attr>
+		<attr name="y">
+			<float>-0.07232007373579909</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_12">
+		<attr name="x">
+			<float>0.698661601623117</float>
+		</attr>
+		<attr name="y">
+			<float>-0.20088909371055302</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_13">
+		<attr name="x">
+			<float>0.3321505974929573</float>
+		</attr>
+		<attr name="y">
+			<float>-0.45802713366006087</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_14">
+		<attr name="x">
+			<float>0.698661601623117</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9723032135590767</float>
+		</attr>
+	</node>
+	<node id="bb_char_17_15">
+		<attr name="x">
+			<float>1.6149391119485164</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1008722335338306</float>
+		</attr>
+	</node>
+	<edge from="bb_char_17_0" to="bb_char_17_1"/>
+	<edge from="bb_char_17_1" to="bb_char_17_2"/>
+	<edge from="bb_char_17_10" to="bb_char_17_11"/>
+	<edge from="bb_char_17_6" to="bb_char_17_7"/>
+	<edge from="bb_char_17_0" to="bb_char_17_15"/>
+	<edge from="bb_char_17_4" to="bb_char_17_5"/>
+	<edge from="bb_char_17_5" to="bb_char_17_6"/>
+	<edge from="bb_char_17_12" to="bb_char_17_13"/>
+	<edge from="bb_char_17_11" to="bb_char_17_12"/>
+	<edge from="bb_char_17_13" to="bb_char_17_14"/>
+	<edge from="bb_char_17_8" to="bb_char_17_9"/>
+	<edge from="bb_char_17_9" to="bb_char_17_10"/>
+	<edge from="bb_char_17_2" to="bb_char_17_3"/>
+	<edge from="bb_char_17_14" to="bb_char_17_15"/>
+	<edge from="bb_char_17_3" to="bb_char_17_4"/>
+	<edge from="bb_char_17_7" to="bb_char_17_8"/>
+</graph>
+</gxl>

@@ -165,14 +165,14 @@ def display_img_graph(img, contours, coords, E, name, D, v=0, mode='n'):
         plt.tight_layout()
         plt.show()
     if mode == 's':
-        location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/contour/images/small_pages/'
+        location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graph_images/'
         if not os.path.exists(location):
             os.makedirs(location)
         if v != 0:
             plt.imsave(location+name+'_DP_'+str(v)+'.png', img_rgb)
         else:
             plt.imsave(location+name+'_D_'+str(D)+'.png', img_rgb)
-        # plt.imsave(location+name+'_DP_b.png', img_cont, cmap='gray')
+        plt.imsave(location+name+'_DP_b.png', img_cont, cmap='gray')
     
     
 def create_gxl(coords, E, name, D, v=None):
@@ -194,7 +194,7 @@ def create_gxl(coords, E, name, D, v=None):
     None.
 
     """
-    location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/contour/gxl/chars/D_'+str(D)+'/'
+    location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/chars/D_'+str(D)+'/'
     if v is not None: 
         location = location + 'v_'+str(v)+'/'
     # location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/test/'
@@ -209,34 +209,36 @@ def create_gxl(coords, E, name, D, v=None):
     footer_lines = [
         '</graph>\n',
         '</gxl>']
-    means = np.mean(coords, axis = 0)
-    stdev = np.std(coords, axis = 0)
-    max_val = np.amax(coords, axis = 0)
-    # normalize coordinates: x_norm = (x - mean_x) / std_x, y_norm = (y - mean_y) / std_y
-    norm_coords = [[(node[0] - means[0]) / stdev[0], (node[1] - means[1]) / stdev[1]] for node in coords]
-    file = open(filename, 'w')
-    file.writelines(header_lines)
-    # keep mean, standard deviation, max values 
-    string = f'\t<attr name="x_mean">\n\t\t<float>{means[0]}</float>\n\t</attr>\n' \
-        f'\t<attr name="y_mean">\n\t\t<float>{means[1]}</float>\n\t</attr>\n' \
-        f'\t<attr name="x_std">\n\t\t<float>{stdev[0]}</float>\n\t</attr>\n' \
-        f'\t<attr name="y_std">\n\t\t<float>{stdev[1]}</float>\n\t</attr>\n' \
-        f'\t<attr name="x_max">\n\t\t<float>{max_val[0]}</float>\n\t</attr>\n' \
-        f'\t<attr name="y_max">\n\t\t<float>{max_val[1]}</float>\n\t</attr>\n'
-    file.write(string)
-    # write all nodes
-    for i, node in enumerate(norm_coords):
-        string = f'\t<node id="{name}_{i}">\n' \
-            f'\t\t<attr name="x">\n\t\t\t<float>{node[0]}</float>\n\t\t</attr>\n' \
-            f'\t\t<attr name="y">\n\t\t\t<float>{node[1]}</float>\n\t\t</attr>\n' \
-            f'\t</node>\n'
-        file.write(string)
-    # write all edges
-    for edge in E:
-        string = f'\t<edge from="{name}_{edge[0]}" to="{name}_{edge[1]}"/>\n'
-        file.write(string)
-    file.writelines(footer_lines)
-    file.close()
+    if len(coords) > 1:
+        means = np.mean(coords, axis = 0)
+        stdev = np.std(coords, axis = 0)
+        max_val = np.amax(coords, axis = 0)
+        # normalize coordinates: x_norm = (x - mean_x) / std_x, y_norm = (y - mean_y) / std_y
+        if (stdev[0] != 0) and (stdev[1] != 0):
+            file = open(filename, 'w')
+            file.writelines(header_lines)
+            norm_coords = [[(node[0] - means[0]) / stdev[0], (node[1] - means[1]) / stdev[1]] for node in coords]
+            # keep mean, standard deviation, max values 
+            string = f'\t<attr name="x_mean">\n\t\t<float>{means[0]}</float>\n\t</attr>\n' \
+                f'\t<attr name="y_mean">\n\t\t<float>{means[1]}</float>\n\t</attr>\n' \
+                f'\t<attr name="x_std">\n\t\t<float>{stdev[0]}</float>\n\t</attr>\n' \
+                f'\t<attr name="y_std">\n\t\t<float>{stdev[1]}</float>\n\t</attr>\n' \
+                f'\t<attr name="x_max">\n\t\t<float>{max_val[0]}</float>\n\t</attr>\n' \
+                f'\t<attr name="y_max">\n\t\t<float>{max_val[1]}</float>\n\t</attr>\n'
+            file.write(string)
+            # write all nodes
+            for i, node in enumerate(norm_coords):
+                string = f'\t<node id="{name}_{i}">\n' \
+                    f'\t\t<attr name="x">\n\t\t\t<float>{node[0]}</float>\n\t\t</attr>\n' \
+                    f'\t\t<attr name="y">\n\t\t\t<float>{node[1]}</float>\n\t\t</attr>\n' \
+                    f'\t</node>\n'
+                file.write(string)
+            # write all edges
+            for edge in E:
+                string = f'\t<edge from="{name}_{edge[0]}" to="{name}_{edge[1]}"/>\n'
+                file.write(string)
+            file.writelines(footer_lines)
+            file.close()
     
 
     
@@ -276,125 +278,8 @@ def contour_graph(img, D, name, v=0):
         Ec[i] = Ec_i
     coords, E = flatten(contours, Vc, Ec)
     display_img_graph(img, contours, coords, E, name, D, v, 's')
-    # create_gxl(coords, E, name, D, v)    
+    create_gxl(coords, E, name, D, v)    
     
-
-# =============================================================================
-# def eps_img_comp(img, D, eps_val, name):
-#     """
-#     compares the different epsilon values for the Douglas-Peucker algo
-# 
-#     Parameters
-#     ----------
-#     img : array
-#         binarized preprocessed image
-#     eps_val : list
-#         four values to test
-#     name : String
-#         name of the graph
-# 
-#     Returns
-#     -------
-#     None.
-# 
-#     """
-#     # usual functions
-#     contours = get_contours(img)
-#     img_cont = np.full((img.shape[0],img.shape[1]), 0, dtype='uint8')
-#     cv.drawContours(img_cont, contours, -1, 255, 1)
-#     # plt.subplot(2,2,1),plt.imshow(img_cont, cmap='gray')
-#     # plt.title('Original Contours'), plt.xticks([]), plt.yticks([])
-#     # one image for each value of epsilon
-#     for j, v in enumerate(eps_val):
-#         appr_contours = []
-#         for c in contours: 
-#             # OpenCV's function
-#             appr_contours.append(cv.approxPolyDP(c, v, True)[:,0])
-#         Vc = {}
-#         Ec = {}
-#         for i, cont in enumerate(appr_contours):
-#             Vc_i, Ec_i = fill_nodes_edges(cont,D)
-#             Vc[i] = Vc_i
-#             Ec[i] = Ec_i
-#         coords, E = flatten(appr_contours, Vc, Ec)
-#         img_rgb = cv.cvtColor(img, cv.COLOR_GRAY2RGB)
-#         black = np.where(img == 0)
-#         for n in range(len(black[0])):
-#             img_rgb[black[0][n],black[1][n],:] = (200, 200, 200)
-#         for edge in E:
-#             n1 = edge[0]
-#             x1 = coords[n1][0]
-#             y1 = coords[n1][1]
-#             n2 = edge[1]
-#             x2 = coords[n2][0]
-#             y2 = coords[n2][1]
-#             cv.line(img_rgb, (x1, y1), (x2, y2), (150, 150, 150), 1)
-#         for node in coords:
-#             img_rgb[node[1],node[0]] =(0,0,0)
-#             
-#         plt.subplot(2,2,j+1),plt.imshow(img_rgb, cmap='gray')
-#         plt.title(f'Contours with DP, eps = {v}'), plt.xticks([]), plt.yticks([])
-#     location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/contour/comparison/eps_comp/'
-#     plt.tight_layout()
-#     # plt.show()
-#     plt.savefig(location+'comp_DP_'+name+'.png')
-#     plt.close()
-#     
-# 
-# def d_img_comp(img, d_val, name):
-#     """
-#     compares the different distances between two nodes
-# 
-#     Parameters
-#     ----------
-#     img : array
-#         binarized preprocessed image
-#     d_val : list
-#         four values to test
-#     name : String
-#         name of the graph
-# 
-#     Returns
-#     -------
-#     None.
-# 
-#     """
-#     contours = get_contours(img)
-#     c = []
-#     # strip unnecessary layer of array
-#     for cont in contours:
-#         c.append(cont[:,0])
-#     contours = c
-#     # one image for each distance
-#     for k, d in enumerate(d_val):
-#         Vc = {}
-#         Ec = {}
-#         for i, cont in enumerate(contours):
-#             Vc_i, Ec_i = fill_nodes_edges(cont,d)
-#             Vc[i] = Vc_i
-#             Ec[i] = Ec_i
-#         coords, E = flatten(contours, Vc, Ec)
-#         img_rgb = cv.cvtColor(img, cv.COLOR_GRAY2RGB)
-#         black = np.where(img == 0)
-#         for n in range(len(black[0])):
-#             img_rgb[black[0][n],black[1][n],:] = (200, 200, 200)
-#         for edge in E:
-#             n1 = edge[0]
-#             x1 = coords[n1][0]
-#             y1 = coords[n1][1]
-#             n2 = edge[1]
-#             x2 = coords[n2][0]
-#             y2 = coords[n2][1]
-#             cv.line(img_rgb, (x1, y1), (x2, y2), (150, 150, 150), 1)
-#         for node in coords:
-#             img_rgb[node[1],node[0]] =(0,0,0)
-#         plt.subplot(2,2,k+1), plt.imshow(img_rgb)
-#         plt.title(f'Graph, d = {d}, {len(coords)} nodes'), plt.xticks([]),plt.yticks([])
-#     location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/contour/comparison/d_comp/'
-#     plt.tight_layout()
-#     plt.savefig(location+'comp_d_'+name+'.png')
-#     plt.close()
-# =============================================================================
 
 def contour_start(location, D, slc = None, v=0):
     fileset = glob.glob(location+'*.png')
@@ -408,16 +293,6 @@ def contour_start(location, D, slc = None, v=0):
         
 def main():
     print("Run from graph_creator.py")
-    # location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/original_bin/chars/'
-    # fileset = glob.glob(location+'*.png')
-    # val = [0.5, 1, 2, 3, 4]
-    # D = 1
-    # for v in val:
-    #     for n, f in enumerate(fileset):
-    #         img = cv.imread(f, 0)
-    #         name = f.split(sep = "\\")[-1][:-4]
-    #         contour_graph(img, D, name,v)
-    
-    
+     
 if __name__=='__main__':
     main()

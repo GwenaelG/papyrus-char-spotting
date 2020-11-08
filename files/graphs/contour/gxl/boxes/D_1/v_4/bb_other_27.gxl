@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="bb_other_27">
+	<attr name="x_mean">
+		<float>19.375</float>
+	</attr>
+	<attr name="y_mean">
+		<float>23.375</float>
+	</attr>
+	<attr name="x_std">
+		<float>11.757311554943163</float>
+	</attr>
+	<attr name="y_std">
+		<float>9.758810122140916</float>
+	</attr>
+	<attr name="x_max">
+		<float>32</float>
+	</attr>
+	<attr name="y_max">
+		<float>39</float>
+	</attr>
+	<node id="bb_other_27_0">
+		<attr name="x">
+			<float>0.9036929871551204</float>
+		</attr>
+		<attr name="y">
+			<float>-0.03842681590342608</float>
+		</attr>
+	</node>
+	<node id="bb_other_27_1">
+		<attr name="x">
+			<float>0.22326532623832385</float>
+		</attr>
+		<attr name="y">
+			<float>-0.03842681590342608</float>
+		</attr>
+	</node>
+	<node id="bb_other_27_2">
+		<attr name="x">
+			<float>0.053158411009124724</float>
+		</attr>
+		<attr name="y">
+			<float>1.60111732930942</float>
+		</attr>
+	</node>
+	<node id="bb_other_27_3">
+		<attr name="x">
+			<float>0.5634791566967221</float>
+		</attr>
+		<attr name="y">
+			<float>1.60111732930942</float>
+		</attr>
+	</node>
+	<node id="bb_other_27_4">
+		<attr name="x">
+			<float>-1.6479107412828666</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2680849248130608</float>
+		</attr>
+	</node>
+	<node id="bb_other_27_5">
+		<attr name="x">
+			<float>-1.6479107412828666</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7557273794340463</float>
+		</attr>
+	</node>
+	<node id="bb_other_27_6">
+		<attr name="x">
+			<float>0.47842569908212257</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34584134313083476</float>
+		</attr>
+	</node>
+	<node id="bb_other_27_7">
+		<attr name="x">
+			<float>1.0737999023843194</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7557273794340463</float>
+		</attr>
+	</node>
+	<edge from="bb_other_27_0" to="bb_other_27_1"/>
+	<edge from="bb_other_27_1" to="bb_other_27_2"/>
+	<edge from="bb_other_27_4" to="bb_other_27_7"/>
+	<edge from="bb_other_27_6" to="bb_other_27_7"/>
+	<edge from="bb_other_27_4" to="bb_other_27_5"/>
+	<edge from="bb_other_27_5" to="bb_other_27_6"/>
+	<edge from="bb_other_27_2" to="bb_other_27_3"/>
+	<edge from="bb_other_27_0" to="bb_other_27_3"/>
+</graph>
+</gxl>

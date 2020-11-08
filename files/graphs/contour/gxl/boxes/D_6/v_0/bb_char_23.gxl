@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="bb_char_23">
+	<attr name="x_mean">
+		<float>10.0</float>
+	</attr>
+	<attr name="y_mean">
+		<float>11.8125</float>
+	</attr>
+	<attr name="x_std">
+		<float>5.44288526426931</float>
+	</attr>
+	<attr name="y_std">
+		<float>8.278124410154755</float>
+	</attr>
+	<attr name="x_max">
+		<float>19</float>
+	</attr>
+	<attr name="y_max">
+		<float>26</float>
+	</attr>
+	<node id="bb_char_23_0">
+		<attr name="x">
+			<float>-0.18372608486985015</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4269536690593385</float>
+		</attr>
+	</node>
+	<node id="bb_char_23_1">
+		<attr name="x">
+			<float>1.102356509219101</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4605511841937548</float>
+		</attr>
+	</node>
+	<node id="bb_char_23_2">
+		<attr name="x">
+			<float>0.18372608486985015</float>
+		</attr>
+		<attr name="y">
+			<float>1.4722537855374127</float>
+		</attr>
+	</node>
+	<node id="bb_char_23_3">
+		<attr name="x">
+			<float>-0.5511782546095505</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7021518054101508</float>
+		</attr>
+	</node>
+	<node id="bb_char_23_4">
+		<attr name="x">
+			<float>1.286082594088951</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8229521160183487</float>
+		</attr>
+	</node>
+	<node id="bb_char_23_5">
+		<attr name="x">
+			<float>0.5511782546095505</float>
+		</attr>
+		<attr name="y">
+			<float>0.747451921888225</float>
+		</attr>
+	</node>
+	<node id="bb_char_23_6">
+		<attr name="x">
+			<float>-1.102356509219101</float>
+		</attr>
+		<attr name="y">
+			<float>0.02265005823903712</float>
+		</attr>
+	</node>
+	<node id="bb_char_23_7">
+		<attr name="x">
+			<float>1.102356509219101</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1853530478429426</float>
+		</attr>
+	</node>
+	<node id="bb_char_23_8">
+		<attr name="x">
+			<float>-0.18372608486985015</float>
+		</attr>
+		<attr name="y">
+			<float>0.505851300671829</float>
+		</attr>
+	</node>
+	<node id="bb_char_23_9">
+		<attr name="x">
+			<float>-1.6535347638286513</float>
+		</attr>
+		<attr name="y">
+			<float>0.747451921888225</float>
+		</attr>
+	</node>
+	<node id="bb_char_23_10">
+		<attr name="x">
+			<float>0.0</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4269536690593385</float>
+		</attr>
+	</node>
+	<node id="bb_char_23_11">
+		<attr name="x">
+			<float>0.5511782546095505</float>
+		</attr>
+		<attr name="y">
+			<float>0.02265005823903712</float>
+		</attr>
+	</node>
+	<node id="bb_char_23_12">
+		<attr name="x">
+			<float>-1.8372608486985016</float>
+		</attr>
+		<attr name="y">
+			<float>1.4722537855374127</float>
+		</attr>
+	</node>
+	<node id="bb_char_23_13">
+		<attr name="x">
+			<float>1.6535347638286513</float>
+		</attr>
+		<attr name="y">
+			<float>0.02265005823903712</float>
+		</attr>
+	</node>
+	<node id="bb_char_23_14">
+		<attr name="x">
+			<float>-0.9186304243492508</float>
+		</attr>
+		<attr name="y">
+			<float>1.7138544067538088</float>
+		</attr>
+	</node>
+	<node id="bb_char_23_15">
+		<attr name="x">
+			<float>0.0</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7021518054101508</float>
+		</attr>
+	</node>
+	<edge from="bb_char_23_13" to="bb_char_23_1"/>
+	<edge from="bb_char_23_4" to="bb_char_23_7"/>
+	<edge from="bb_char_23_6" to="bb_char_23_9"/>
+	<edge from="bb_char_23_12" to="bb_char_23_14"/>
+	<edge from="bb_char_23_5" to="bb_char_23_8"/>
+	<edge from="bb_char_23_8" to="bb_char_23_11"/>
+	<edge from="bb_char_23_1" to="bb_char_23_4"/>
+	<edge from="bb_char_23_0" to="bb_char_23_10"/>
+	<edge from="bb_char_23_7" to="bb_char_23_10"/>
+	<edge from="bb_char_23_3" to="bb_char_23_6"/>
+	<edge from="bb_char_23_11" to="bb_char_23_13"/>
+	<edge from="bb_char_23_2" to="bb_char_23_5"/>
+	<edge from="bb_char_23_14" to="bb_char_23_2"/>
+	<edge from="bb_char_23_15" to="bb_char_23_15"/>
+	<edge from="bb_char_23_9" to="bb_char_23_12"/>
+	<edge from="bb_char_23_0" to="bb_char_23_3"/>
+</graph>
+</gxl>

@@ -462,7 +462,7 @@ def create_gxl(V, E, coord, name, D):
     None.
 
     """
-    location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/keypoint/gxl/pages/D_'+str(D)+'/'
+    location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/keypoint/gxl/pages/D_'+str(D)+'/'
     if not os.path.exists(location):
         os.makedirs(location)
     filename = location+name+'.gxl'
@@ -474,31 +474,37 @@ def create_gxl(V, E, coord, name, D):
     footer_lines = [
         '</graph>\n',
         '</gxl>']
-    # normalize coordinates: x_norm = (x - mean_x) / std_x, y_norm = (y - mean_y) / std_y
-    # invert x and y! 
-    # probably comes from transposition in skeletonize()
-    means = np.mean(coord[V], axis = 0)
-    stdev = np.std(coord[V], axis = 0)
-    norm_coord = [[(coord[node][0] - means[0]) / stdev[0], (coord[node][1] - means[1]) / stdev[1]] for node in V]
-    file = open(filename, 'w')
-    # keep standard deviation
-    file.writelines(header_lines)
-    string = f'\t<attr name="x_std">\n\t\t<float>{stdev[1]}</float>\n\t</attr>\n' \
-        f'\t<attr name="y_std">\n\t\t<float>{stdev[0]}</float>\n\t</attr>\n'
-    file.write(string)
-    # write all nodes
-    for i, node in enumerate(norm_coord):
-        string = f'\t<node id="{name}_{i}">\n' \
-            f'\t\t<attr name="x">\n\t\t\t<float>{node[1]}</float>\n\t\t</attr>\n' \
-            f'\t\t<attr name="y">\n\t\t\t<float>{node[0]}</float>\n\t\t</attr>\n' \
-            f'\t</node>\n'
-        file.write(string)
-    # write all edges
-    for edge in E:
-        string = f'\t<edge from="{name}_{V.index(edge[0])}" to="{name}_{V.index(edge[1])}"/>\n'
-        file.write(string)
-    file.writelines(footer_lines)
-    file.close()
+    if len(coord[V]) > 1:
+        # normalize coordinates: x_norm = (x - mean_x) / std_x, y_norm = (y - mean_y) / std_y
+        # invert x and y! 
+        # probably comes from transposition in skeletonize()
+        means = np.mean(coord[V], axis = 0)
+        stdev = np.std(coord[V], axis = 0)
+        max_val = np.amax(coord[V], axis = 0)
+        if (stdev[0] != 0) and (stdev[1] != 0):
+            file = open(filename, 'w')
+            file.writelines(header_lines)
+            norm_coord = [[(coord[node][0] - means[0]) / stdev[0], (coord[node][1] - means[1]) / stdev[1]] for node in V]
+            string = f'\t<attr name="x_mean">\n\t\t<float>{means[0]}</float>\n\t</attr>\n' \
+                f'\t<attr name="y_mean">\n\t\t<float>{means[1]}</float>\n\t</attr>\n' \
+                f'\t<attr name="x_std">\n\t\t<float>{stdev[1]}</float>\n\t</attr>\n' \
+                f'\t<attr name="y_std">\n\t\t<float>{stdev[0]}</float>\n\t</attr>\n' \
+                f'\t<attr name="x_max">\n\t\t<float>{max_val[0]}</float>\n\t</attr>\n' \
+                f'\t<attr name="y_max">\n\t\t<float>{max_val[1]}</float>\n\t</attr>\n'
+            file.write(string)
+            # write all nodes
+            for i, node in enumerate(norm_coord):
+                string = f'\t<node id="{name}_{i}">\n' \
+                    f'\t\t<attr name="x">\n\t\t\t<float>{node[1]}</float>\n\t\t</attr>\n' \
+                    f'\t\t<attr name="y">\n\t\t\t<float>{node[0]}</float>\n\t\t</attr>\n' \
+                    f'\t</node>\n'
+                file.write(string)
+            # write all edges
+            for edge in E:
+                string = f'\t<edge from="{name}_{V.index(edge[0])}" to="{name}_{V.index(edge[1])}"/>\n'
+                file.write(string)
+            file.writelines(footer_lines)
+            file.close()
     
 def keypoint_graph(img, D, name):
     """
@@ -600,14 +606,15 @@ def keypoint_start(location, D, slc = None):
         fileset = fileset[slc[0]:slc[1]]
     for n, f in enumerate(fileset):
         img = cv.imread(f,0)
-        name = f[-13:-4]
+        name = f.split(sep = "\\")[-1][:-4]
         keypoint_graph(img, D, name)
 
 
 
 def main():
-    keypoint_start('C:/Users/Gwenael/Desktop/MT/histograph-master/01_GW/00_WordImages/', 5, (0,1))
-
+    print("Run from graph_creator.py")
+    
+    
 if __name__ == '__main__':
     main()
     

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="bb_char_26">
+	<attr name="x_mean">
+		<float>8.25</float>
+	</attr>
+	<attr name="y_mean">
+		<float>12.25</float>
+	</attr>
+	<attr name="x_std">
+		<float>4.866980583482946</float>
+	</attr>
+	<attr name="y_std">
+		<float>7.451230323465604</float>
+	</attr>
+	<attr name="x_max">
+		<float>14</float>
+	</attr>
+	<attr name="y_max">
+		<float>23</float>
+	</attr>
+	<node id="bb_char_26_0">
+		<attr name="x">
+			<float>-1.489629941118791</float>
+		</attr>
+		<attr name="y">
+			<float>1.4427147643182934</float>
+		</attr>
+	</node>
+	<node id="bb_char_26_1">
+		<attr name="x">
+			<float>0.3595658478562599</float>
+		</attr>
+		<attr name="y">
+			<float>0.6374786167918041</float>
+		</attr>
+	</node>
+	<node id="bb_char_26_2">
+		<attr name="x">
+			<float>1.1814306429562824</float>
+		</attr>
+		<attr name="y">
+			<float>1.0400966905550486</float>
+		</attr>
+	</node>
+	<node id="bb_char_26_3">
+		<attr name="x">
+			<float>-1.2841637423437853</float>
+		</attr>
+		<attr name="y">
+			<float>-0.16775753073468527</float>
+		</attr>
+	</node>
+	<node id="bb_char_26_4">
+		<attr name="x">
+			<float>-1.489629941118791</float>
+		</attr>
+		<attr name="y">
+			<float>1.0400966905550486</float>
+		</attr>
+	</node>
+	<node id="bb_char_26_5">
+		<attr name="x">
+			<float>-0.25683274846875703</float>
+		</attr>
+		<attr name="y">
+			<float>1.0400966905550486</float>
+		</attr>
+	</node>
+	<node id="bb_char_26_6">
+		<attr name="x">
+			<float>-0.873231344793774</float>
+		</attr>
+		<attr name="y">
+			<float>-0.16775753073468527</float>
+		</attr>
+	</node>
+	<node id="bb_char_26_7">
+		<attr name="x">
+			<float>0.3595658478562599</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4361695799101817</float>
+		</attr>
+	</node>
+	<node id="bb_char_26_8">
+		<attr name="x">
+			<float>0.9759644441812768</float>
+		</attr>
+		<attr name="y">
+			<float>-0.30196355532243346</float>
+		</attr>
+	</node>
+	<node id="bb_char_26_9">
+		<attr name="x">
+			<float>0.3595658478562599</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6440238011999158</float>
+		</attr>
+	</node>
+	<node id="bb_char_26_10">
+		<attr name="x">
+			<float>1.1814306429562824</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9729936782611746</float>
+		</attr>
+	</node>
+	<node id="bb_char_26_11">
+		<attr name="x">
+			<float>0.9759644441812768</float>
+		</attr>
+		<attr name="y">
+			<float>-1.5098177766121674</float>
+		</attr>
+	</node>
+	<edge from="bb_char_26_1" to="bb_char_26_2"/>
+	<edge from="bb_char_26_7" to="bb_char_26_8"/>
+	<edge from="bb_char_26_0" to="bb_char_26_0"/>
+	<edge from="bb_char_26_10" to="bb_char_26_11"/>
+	<edge from="bb_char_26_5" to="bb_char_26_6"/>
+	<edge from="bb_char_26_4" to="bb_char_26_5"/>
+	<edge from="bb_char_26_9" to="bb_char_26_10"/>
+	<edge from="bb_char_26_9" to="bb_char_26_11"/>
+	<edge from="bb_char_26_3" to="bb_char_26_6"/>
+	<edge from="bb_char_26_3" to="bb_char_26_4"/>
+</graph>
+</gxl>

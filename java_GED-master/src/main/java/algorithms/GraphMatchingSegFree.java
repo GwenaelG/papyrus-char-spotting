@@ -15,9 +15,7 @@ import costs.normalisation.NormalisationFunction;
 import graph.Graph;
 import graph.GraphSet;
 import graph.Node;
-import gwenael.FiveDimAL;
-import gwenael.FourDimAL;
-import gwenael.ThreeDimAL;
+import gwenael.*;
 import kaspar.GreedyMatching;
 import kaspar.GreedyMatrixGenerator;
 import org.opencv.imgcodecs.Imgcodecs;
@@ -28,16 +26,17 @@ import util.EditDistance;
 import util.MatrixGenerator;
 import util.ResultPrinter;
 import util.treceval.TrecEval;
-import gwenael.BoundingBox;
 import xml.GraphParser;
 
 import javax.imageio.ImageIO;
+import javax.swing.plaf.nimbus.AbstractRegionPainter;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -183,7 +182,7 @@ public class GraphMatchingSegFree {
 	private double[] windowSizes;
 
 	// groundtruth
-	private ArrayList<BoundingBox> boundingBoxesGT;
+	private TwoDimAL<BoundingBox> boundingBoxesGT;
 
 	// images for dist display
 	private ArrayList<BufferedImage> targetImages;
@@ -236,6 +235,7 @@ public class GraphMatchingSegFree {
 		// initialize the matching
 		System.out.println("Initializing the matching according to the properties...");
 		this.init(prop);
+
 
 		// the cost matrix used for bipartite matchings
 		double[][] costMatrix;
@@ -382,7 +382,7 @@ public class GraphMatchingSegFree {
 		String convMethod = new String();
 
 		// display edit distance between target node window and source char
-		for (int i = 0; i < source.size(); i++) {
+		 for (int i = 0; i < source.size(); i++) {
 
 			for (int j = 0; j < target.size(); j++) {
 
@@ -472,8 +472,8 @@ public class GraphMatchingSegFree {
 							g.fillOval((int) Math.floor(nodeX) - RADIUS, (int) Math.floor(nodeY) - RADIUS, 2 * RADIUS, 2 * RADIUS);
 
 							boolean inBB = false;
-							for (int n = 0; n < boundingBoxesGT.size(); n++) {
-								int[] coords = boundingBoxesGT.get(n).getCoords();
+							for (int n = 0; n < boundingBoxesGT.get(j).size(); n++) {
+								int[] coords = boundingBoxesGT.get(j, n).getCoords();
 								if (nodeX >= coords[0] && nodeX <= coords[2]) {
 									if (nodeY >= coords[1] && nodeY <= coords[3]) {
 										inBB = true;
@@ -502,10 +502,10 @@ public class GraphMatchingSegFree {
 						// display bounding boxes
 						g.setColor(Color.red);
 						g.setStroke(new BasicStroke(2));
-						for (int m = 0; m < boundingBoxesGT.size(); m++) {
+						for (int m = 0; m < boundingBoxesGT.get(j).size(); m++) {
 							// only keep char
-							if (boundingBoxesGT.get(m).getCharacter().equals(source.get(i).getClassName())) {
-								int[] coords = boundingBoxesGT.get(m).getCoords();
+							if (boundingBoxesGT.get(j, m).getCharacter().equals(source.get(i).getClassName())) {
+								int[] coords = boundingBoxesGT.get(j, m).getCoords();
 								g.drawRect(coords[0], coords[1], coords[2] - coords[0], coords[3] - coords[1]);
 							}
 						}
@@ -526,9 +526,10 @@ public class GraphMatchingSegFree {
 		}
 
 		String propName = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
-		System.out.println(propName);
 		this.resultPrinter.printResultGw(propName, source, target, windowSizes, thresholds, truePositives, falseNegatives,
 				falsePositives, trueNegatives);
+
+
 
 //		TODO: update resultPrinter
 // 		long time = System.currentTimeMillis() - start;
@@ -774,27 +775,30 @@ public class GraphMatchingSegFree {
 		}
 
 		// extract groundtruth bounding boxes from XML file
-		this.boundingBoxesGT = new ArrayList<>();
-		Path boundingBoxesGTPath = Paths.get(properties.getProperty("boundingBoxesGT"));
-		if (Files.isRegularFile(boundingBoxesGTPath)) {
-			File boundingBoxesFile = new File(String.valueOf(boundingBoxesGTPath));
-			DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-			Document boundingBoxesDoc = dBuilder.parse(boundingBoxesFile);
-			boundingBoxesDoc.getDocumentElement().normalize();
-			NodeList boundingBoxes = boundingBoxesDoc.getElementsByTagName("box");
-			for (int i = 0; i < boundingBoxes.getLength(); i++){
-				Element boundingBox = (Element) boundingBoxes.item(i);
-				String boundingBoxId = boundingBox.getAttribute("id");
-				String boundingBoxChar = boundingBox.getAttribute("char");
-				Integer boundingBoxX1 = Integer.valueOf(boundingBox.getElementsByTagName("x1").item(0).getTextContent());
-				Integer boundingBoxY1 = Integer.valueOf(boundingBox.getElementsByTagName("y1").item(0).getTextContent());
-				Integer boundingBoxX2 = Integer.valueOf(boundingBox.getElementsByTagName("x2").item(0).getTextContent());
-				Integer boundingBoxY2 = Integer.valueOf(boundingBox.getElementsByTagName("y2").item(0).getTextContent());
-				int[] coords = new int[] {boundingBoxX1, boundingBoxY1, boundingBoxX2, boundingBoxY2};
-				BoundingBox tempBB = new BoundingBox(boundingBoxId, boundingBoxChar, coords);
-				boundingBoxesGT.add(tempBB);
+		this.boundingBoxesGT = new TwoDimAL<BoundingBox>();
+		String boundingBoxesFolder = properties.getProperty("boundingBoxesFolder");
+		for (int i = 0; i < c; i ++) {
+			Path boundingBoxesFilePath = Paths.get(boundingBoxesFolder, target.get(i).getFileName().split("\\.")[0]+".xml");
+			boundingBoxesGT.add(new ArrayList<>());
+			if (Files.isRegularFile(boundingBoxesFilePath)) {
+				File boundingBoxesFile = new File(String.valueOf(boundingBoxesFilePath));
+				DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+				Document boundingBoxesDoc = dBuilder.parse(boundingBoxesFile);
+				boundingBoxesDoc.getDocumentElement().normalize();
+				NodeList boundingBoxes = boundingBoxesDoc.getElementsByTagName("box");
+				for (int j = 0; j < boundingBoxes.getLength(); j++){
+					Element boundingBox = (Element) boundingBoxes.item(j);
+					String boundingBoxId = boundingBox.getAttribute("id");
+					String boundingBoxChar = boundingBox.getAttribute("char");
+					Integer boundingBoxX1 = Integer.valueOf(boundingBox.getElementsByTagName("x1").item(0).getTextContent());
+					Integer boundingBoxY1 = Integer.valueOf(boundingBox.getElementsByTagName("y1").item(0).getTextContent());
+					Integer boundingBoxX2 = Integer.valueOf(boundingBox.getElementsByTagName("x2").item(0).getTextContent());
+					Integer boundingBoxY2 = Integer.valueOf(boundingBox.getElementsByTagName("y2").item(0).getTextContent());
+					int[] coords = new int[] {boundingBoxX1, boundingBoxY1, boundingBoxX2, boundingBoxY2};
+					BoundingBox tempBB = new BoundingBox(boundingBoxId, boundingBoxChar, coords);
+					boundingBoxesGT.set(i,j,tempBB);
+				}
 			}
-
 		}
 
 		this.visualizationFolder = Paths.get(properties.getProperty("editDistVis"));
@@ -811,6 +815,7 @@ public class GraphMatchingSegFree {
 		this.targetImages = new ArrayList<>();
 		for (int j = 0; j < target.size(); j++) {
 			String imagePath = originalImagesPath + "\\" + target.get(j).getFileName().substring(0, target.get(j).getFileName().length() - 4) + ".png";
+			System.out.println(imagePath);
 			BufferedImage oldImg = ImageIO.read(new File(imagePath));
 			targetImages.add(oldImg);
 		}
@@ -828,7 +833,8 @@ public class GraphMatchingSegFree {
 
 		for (int i = 0; i < r; i++) {
 			for (int j = 0; j < c; j++) {
-				for (int k = 0; k < target.get(j).size(); k++){
+				//for (int k = 0; k < target.get(j).size(); k++){
+				for (int k = 0; k < numOfWindowSizes; k++) {
 					for (int l = 0; l < thresholds.length; l++) {
 						truePositives.set(i, j, k, l,0);
 						falseNegatives.set(i, j, k, l, 0);

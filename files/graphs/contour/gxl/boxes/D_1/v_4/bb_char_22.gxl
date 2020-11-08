@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="bb_char_22">
+	<attr name="x_mean">
+		<float>10.285714285714286</float>
+	</attr>
+	<attr name="y_mean">
+		<float>12.571428571428571</float>
+	</attr>
+	<attr name="x_std">
+		<float>5.774680837545068</float>
+	</attr>
+	<attr name="y_std">
+		<float>9.514757603055266</float>
+	</attr>
+	<attr name="x_max">
+		<float>18</float>
+	</attr>
+	<attr name="y_max">
+		<float>29</float>
+	</attr>
+	<node id="bb_char_22_0">
+		<attr name="x">
+			<float>1.335880879187292</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3212557897840491</float>
+		</attr>
+	</node>
+	<node id="bb_char_22_1">
+		<attr name="x">
+			<float>-1.0884955311896456</float>
+		</attr>
+		<attr name="y">
+			<float>-1.005956112676492</float>
+		</attr>
+	</node>
+	<node id="bb_char_22_2">
+		<attr name="x">
+			<float>-1.434835018386351</float>
+		</attr>
+		<attr name="y">
+			<float>1.7266410889223371</float>
+		</attr>
+	</node>
+	<node id="bb_char_22_3">
+		<attr name="x">
+			<float>0.816371648392234</float>
+		</attr>
+		<attr name="y">
+			<float>0.8858419499688511</float>
+		</attr>
+	</node>
+	<node id="bb_char_22_4">
+		<attr name="x">
+			<float>-0.5689863003945875</float>
+		</attr>
+		<attr name="y">
+			<float>0.3603424881229225</float>
+		</attr>
+	</node>
+	<node id="bb_char_22_5">
+		<attr name="x">
+			<float>0.9895413919905867</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06005708135382039</float>
+		</attr>
+	</node>
+	<node id="bb_char_22_6">
+		<attr name="x">
+			<float>-0.04947706959952947</float>
+		</attr>
+		<attr name="y">
+			<float>-0.585556543199749</float>
+		</attr>
+	</node>
+	<edge from="bb_char_22_0" to="bb_char_22_1"/>
+	<edge from="bb_char_22_1" to="bb_char_22_2"/>
+	<edge from="bb_char_22_4" to="bb_char_22_5"/>
+	<edge from="bb_char_22_5" to="bb_char_22_6"/>
+	<edge from="bb_char_22_0" to="bb_char_22_6"/>
+	<edge from="bb_char_22_2" to="bb_char_22_3"/>
+	<edge from="bb_char_22_3" to="bb_char_22_4"/>
+</graph>
+</gxl>

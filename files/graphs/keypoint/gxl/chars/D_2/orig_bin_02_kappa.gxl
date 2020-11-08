@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
 <gxl>
-<graph edgeids="false" edgemode="undirected" id="_02_kappa">
+<graph edgeids="false" edgemode="undirected" id="orig_bin_02_kappa">
+	<attr name="x_mean">
+		<float>43.659685863874344</float>
+	</attr>
+	<attr name="y_mean">
+		<float>42.8586387434555</float>
+	</attr>
 	<attr name="x_std">
 		<float>25.945692703698036</float>
 	</attr>
 	<attr name="y_std">
 		<float>18.793571305486548</float>
 	</attr>
-	<node id="_02_kappa_0">
+	<attr name="x_max">
+		<float>80</float>
+	</attr>
+	<attr name="y_max">
+		<float>98</float>
+	</attr>
+	<node id="orig_bin_02_kappa_0">
 		<attr name="x">
 			<float>-0.8039345482760043</float>
 		</attr>
@@ -16,7 +28,7 @@
 			<float>-1.844230950067265</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_1">
+	<node id="orig_bin_02_kappa_1">
 		<attr name="x">
 			<float>-0.6883084197212477</float>
 		</attr>
@@ -24,7 +36,7 @@
 			<float>-1.52497284300124</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_2">
+	<node id="orig_bin_02_kappa_2">
 		<attr name="x">
 			<float>-1.2278970196434453</float>
 		</attr>
@@ -32,7 +44,7 @@
 			<float>-1.578182527512244</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_3">
+	<node id="orig_bin_02_kappa_3">
 		<attr name="x">
 			<float>-1.2278970196434453</float>
 		</attr>
@@ -40,7 +52,7 @@
 			<float>-0.7800372598471815</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_4">
+	<node id="orig_bin_02_kappa_4">
 		<attr name="x">
 			<float>-0.9195606768307609</float>
 		</attr>
@@ -48,7 +60,7 @@
 			<float>-0.3543597837591481</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_5">
+	<node id="orig_bin_02_kappa_5">
 		<attr name="x">
 			<float>-0.3799720769085633</float>
 		</attr>
@@ -56,7 +68,7 @@
 			<float>-0.8332469443581857</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_6">
+	<node id="orig_bin_02_kappa_6">
 		<attr name="x">
 			<float>-1.1893549767918596</float>
 		</attr>
@@ -64,7 +76,7 @@
 			<float>0.6034145374389269</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_7">
+	<node id="orig_bin_02_kappa_7">
 		<attr name="x">
 			<float>-0.6497663768696621</float>
 		</attr>
@@ -72,7 +84,7 @@
 			<float>1.241930751570977</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_8">
+	<node id="orig_bin_02_kappa_8">
 		<attr name="x">
 			<float>-0.8039345482760043</float>
 		</attr>
@@ -80,7 +92,7 @@
 			<float>1.6143985431480061</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_9">
+	<node id="orig_bin_02_kappa_9">
 		<attr name="x">
 			<float>0.8533732943421739</float>
 		</attr>
@@ -88,7 +100,7 @@
 			<float>0.7098339064609352</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_10">
+	<node id="orig_bin_02_kappa_10">
 		<attr name="x">
 			<float>1.1617096371548583</float>
 		</attr>
@@ -96,7 +108,7 @@
 			<float>0.4969951684169186</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_11">
+	<node id="orig_bin_02_kappa_11">
 		<attr name="x">
 			<float>1.3158778085612004</float>
 		</attr>
@@ -104,7 +116,7 @@
 			<float>0.922672644504952</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_12">
+	<node id="orig_bin_02_kappa_12">
 		<attr name="x">
 			<float>-0.7653925054244187</float>
 		</attr>
@@ -112,7 +124,7 @@
 			<float>1.7208179121700145</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_13">
+	<node id="orig_bin_02_kappa_13">
 		<attr name="x">
 			<float>1.5085880228191282</float>
 		</attr>
@@ -120,7 +132,7 @@
 			<float>1.0823016980379645</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_14">
+	<node id="orig_bin_02_kappa_14">
 		<attr name="x">
 			<float>1.8169243656318124</float>
 		</attr>
@@ -128,7 +140,7 @@
 			<float>1.1887210670599728</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_15">
+	<node id="orig_bin_02_kappa_15">
 		<attr name="x">
 			<float>-0.8810186339791753</float>
 		</attr>
@@ -136,7 +148,7 @@
 			<float>-1.6846018965342524</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_16">
+	<node id="orig_bin_02_kappa_16">
 		<attr name="x">
 			<float>-0.8039345482760043</float>
 		</attr>
@@ -144,7 +156,7 @@
 			<float>-1.6313922120232482</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_17">
+	<node id="orig_bin_02_kappa_17">
 		<attr name="x">
 			<float>-0.8810186339791753</float>
 		</attr>
@@ -152,7 +164,7 @@
 			<float>-1.258924420446219</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_18">
+	<node id="orig_bin_02_kappa_18">
 		<attr name="x">
 			<float>-1.073728848237103</float>
 		</attr>
@@ -160,7 +172,7 @@
 			<float>-0.8332469443581857</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_19">
+	<node id="orig_bin_02_kappa_19">
 		<attr name="x">
 			<float>-0.6883084197212477</float>
 		</attr>
@@ -168,7 +180,7 @@
 			<float>-0.8332469443581857</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_20">
+	<node id="orig_bin_02_kappa_20">
 		<attr name="x">
 			<float>-1.1508129339402742</float>
 		</attr>
@@ -176,7 +188,7 @@
 			<float>-0.7800372598471815</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_21">
+	<node id="orig_bin_02_kappa_21">
 		<attr name="x">
 			<float>-0.8810186339791753</float>
 		</attr>
@@ -184,7 +196,7 @@
 			<float>-0.6736178908251731</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_22">
+	<node id="orig_bin_02_kappa_22">
 		<attr name="x">
 			<float>-1.0351868053855175</float>
 		</attr>
@@ -192,7 +204,7 @@
 			<float>-0.5139888372921606</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_23">
+	<node id="orig_bin_02_kappa_23">
 		<attr name="x">
 			<float>-1.1122708910886887</float>
 		</attr>
@@ -200,7 +212,7 @@
 			<float>-0.4075694682701523</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_24">
+	<node id="orig_bin_02_kappa_24">
 		<attr name="x">
 			<float>-1.0351868053855175</float>
 		</attr>
@@ -208,7 +220,7 @@
 			<float>-0.4075694682701523</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_25">
+	<node id="orig_bin_02_kappa_25">
 		<attr name="x">
 			<float>-0.7653925054244187</float>
 		</attr>
@@ -216,7 +228,7 @@
 			<float>-0.4075694682701523</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_26">
+	<node id="orig_bin_02_kappa_26">
 		<attr name="x">
 			<float>-0.3799720769085633</float>
 		</attr>
@@ -224,7 +236,7 @@
 			<float>-0.4075694682701523</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_27">
+	<node id="orig_bin_02_kappa_27">
 		<attr name="x">
 			<float>-0.3028879912053923</float>
 		</attr>
@@ -232,7 +244,7 @@
 			<float>-0.4075694682701523</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_28">
+	<node id="orig_bin_02_kappa_28">
 		<attr name="x">
 			<float>-0.8424765911275898</float>
 		</attr>
@@ -240,7 +252,7 @@
 			<float>0.12452737683988942</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_29">
+	<node id="orig_bin_02_kappa_29">
 		<attr name="x">
 			<float>-0.9195606768307609</float>
 		</attr>
@@ -248,7 +260,7 @@
 			<float>0.23094674586189776</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_30">
+	<node id="orig_bin_02_kappa_30">
 		<attr name="x">
 			<float>-0.2643459483538067</float>
 		</attr>
@@ -256,7 +268,7 @@
 			<float>0.018108007817881074</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_31">
+	<node id="orig_bin_02_kappa_31">
 		<attr name="x">
 			<float>-0.9581027196823464</float>
 		</attr>
@@ -264,7 +276,7 @@
 			<float>0.3373661148839061</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_32">
+	<node id="orig_bin_02_kappa_32">
 		<attr name="x">
 			<float>-0.18726186265063563</float>
 		</attr>
@@ -272,7 +284,7 @@
 			<float>0.07131769232888524</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_33">
+	<node id="orig_bin_02_kappa_33">
 		<attr name="x">
 			<float>-0.18726186265063563</float>
 		</attr>
@@ -280,7 +292,7 @@
 			<float>0.1777370613508936</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_34">
+	<node id="orig_bin_02_kappa_34">
 		<attr name="x">
 			<float>-0.18726186265063563</float>
 		</attr>
@@ -288,7 +300,7 @@
 			<float>0.28415643037290195</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_35">
+	<node id="orig_bin_02_kappa_35">
 		<attr name="x">
 			<float>-0.9195606768307609</float>
 		</attr>
@@ -296,7 +308,7 @@
 			<float>1.0290920135269603</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_36">
+	<node id="orig_bin_02_kappa_36">
 		<attr name="x">
 			<float>0.35232673727156194</float>
 		</attr>
@@ -304,7 +316,7 @@
 			<float>0.44378548390591444</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_37">
+	<node id="orig_bin_02_kappa_37">
 		<attr name="x">
 			<float>-0.7653925054244187</float>
 		</attr>
@@ -312,7 +324,7 @@
 			<float>1.241930751570977</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_38">
+	<node id="orig_bin_02_kappa_38">
 		<attr name="x">
 			<float>-0.6883084197212477</float>
 		</attr>
@@ -320,7 +332,7 @@
 			<float>1.241930751570977</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_39">
+	<node id="orig_bin_02_kappa_39">
 		<attr name="x">
 			<float>-0.8039345482760043</float>
 		</attr>
@@ -328,7 +340,7 @@
 			<float>1.3483501205929853</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_40">
+	<node id="orig_bin_02_kappa_40">
 		<attr name="x">
 			<float>0.7762892086390029</float>
 		</attr>
@@ -336,7 +348,7 @@
 			<float>0.4969951684169186</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_41">
+	<node id="orig_bin_02_kappa_41">
 		<attr name="x">
 			<float>0.8919153371937595</float>
 		</attr>
@@ -344,7 +356,7 @@
 			<float>0.4969951684169186</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_42">
+	<node id="orig_bin_02_kappa_42">
 		<attr name="x">
 			<float>0.7762892086390029</float>
 		</attr>
@@ -352,7 +364,7 @@
 			<float>0.6566242219499311</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_43">
+	<node id="orig_bin_02_kappa_43">
 		<attr name="x">
 			<float>0.9689994228969305</float>
 		</attr>
@@ -360,7 +372,7 @@
 			<float>0.4969951684169186</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_44">
+	<node id="orig_bin_02_kappa_44">
 		<attr name="x">
 			<float>0.9689994228969305</float>
 		</attr>
@@ -368,7 +380,7 @@
 			<float>0.6034145374389269</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_45">
+	<node id="orig_bin_02_kappa_45">
 		<attr name="x">
 			<float>-0.8810186339791753</float>
 		</attr>
@@ -376,7 +388,7 @@
 			<float>1.5079791741259978</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_46">
+	<node id="orig_bin_02_kappa_46">
 		<attr name="x">
 			<float>0.6606630800842462</float>
 		</attr>
@@ -384,7 +396,7 @@
 			<float>0.8694629599939478</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_47">
+	<node id="orig_bin_02_kappa_47">
 		<attr name="x">
 			<float>1.0460835086001017</float>
 		</attr>
@@ -392,7 +404,7 @@
 			<float>0.6566242219499311</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_48">
+	<node id="orig_bin_02_kappa_48">
 		<attr name="x">
 			<float>-1.1893549767918596</float>
 		</attr>
@@ -400,7 +412,7 @@
 			<float>1.5079791741259978</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_49">
+	<node id="orig_bin_02_kappa_49">
 		<attr name="x">
 			<float>1.1231675943032728</float>
 		</attr>
@@ -408,7 +420,7 @@
 			<float>0.6034145374389269</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_50">
+	<node id="orig_bin_02_kappa_50">
 		<attr name="x">
 			<float>-1.1122708910886887</float>
 		</attr>
@@ -416,7 +428,7 @@
 			<float>1.561188858637002</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_51">
+	<node id="orig_bin_02_kappa_51">
 		<attr name="x">
 			<float>0.8148312514905884</float>
 		</attr>
@@ -424,7 +436,7 @@
 			<float>1.0823016980379645</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_52">
+	<node id="orig_bin_02_kappa_52">
 		<attr name="x">
 			<float>1.0075414657485162</float>
 		</attr>
@@ -432,7 +444,7 @@
 			<float>0.9758823290159562</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_53">
+	<node id="orig_bin_02_kappa_53">
 		<attr name="x">
 			<float>-1.3049811053466163</float>
 		</attr>
@@ -440,7 +452,7 @@
 			<float>1.8272372811920228</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_54">
+	<node id="orig_bin_02_kappa_54">
 		<attr name="x">
 			<float>-1.1508129339402742</float>
 		</attr>
@@ -448,7 +460,7 @@
 			<float>1.8272372811920228</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_55">
+	<node id="orig_bin_02_kappa_55">
 		<attr name="x">
 			<float>1.2387937228580295</float>
 		</attr>
@@ -456,7 +468,7 @@
 			<float>0.8694629599939478</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_56">
+	<node id="orig_bin_02_kappa_56">
 		<attr name="x">
 			<float>1.1617096371548583</float>
 		</attr>
@@ -464,7 +476,7 @@
 			<float>1.0290920135269603</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_57">
+	<node id="orig_bin_02_kappa_57">
 		<attr name="x">
 			<float>-1.073728848237103</float>
 		</attr>
@@ -472,7 +484,7 @@
 			<float>1.880446965703027</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_58">
+	<node id="orig_bin_02_kappa_58">
 		<attr name="x">
 			<float>1.5085880228191282</float>
 		</attr>
@@ -480,7 +492,7 @@
 			<float>1.2951404360819812</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_59">
+	<node id="orig_bin_02_kappa_59">
 		<attr name="x">
 			<float>1.5856721085222991</float>
 		</attr>
@@ -488,7 +500,7 @@
 			<float>1.241930751570977</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_60">
+	<node id="orig_bin_02_kappa_60">
 		<attr name="x">
 			<float>1.6627561942254703</float>
 		</attr>
@@ -496,7 +508,7 @@
 			<float>1.1887210670599728</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_61">
+	<node id="orig_bin_02_kappa_61">
 		<attr name="x">
 			<float>1.778382322780227</float>
 		</attr>
@@ -504,7 +516,7 @@
 			<float>1.1887210670599728</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_62">
+	<node id="orig_bin_02_kappa_62">
 		<attr name="x">
 			<float>-0.8424765911275898</float>
 		</attr>
@@ -512,7 +524,7 @@
 			<float>-1.52497284300124</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_63">
+	<node id="orig_bin_02_kappa_63">
 		<attr name="x">
 			<float>-0.8810186339791753</float>
 		</attr>
@@ -520,7 +532,7 @@
 			<float>-1.4185534739792316</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_64">
+	<node id="orig_bin_02_kappa_64">
 		<attr name="x">
 			<float>-0.996644762533932</float>
 		</attr>
@@ -528,7 +540,7 @@
 			<float>-1.6846018965342524</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_65">
+	<node id="orig_bin_02_kappa_65">
 		<attr name="x">
 			<float>-1.073728848237103</float>
 		</attr>
@@ -536,7 +548,7 @@
 			<float>-1.6313922120232482</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_66">
+	<node id="orig_bin_02_kappa_66">
 		<attr name="x">
 			<float>-1.1508129339402742</float>
 		</attr>
@@ -544,7 +556,7 @@
 			<float>-1.6313922120232482</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_67">
+	<node id="orig_bin_02_kappa_67">
 		<attr name="x">
 			<float>-1.0351868053855175</float>
 		</attr>
@@ -552,7 +564,7 @@
 			<float>-0.939666313380194</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_68">
+	<node id="orig_bin_02_kappa_68">
 		<attr name="x">
 			<float>-0.9581027196823464</float>
 		</attr>
@@ -560,7 +572,7 @@
 			<float>-0.7800372598471815</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_69">
+	<node id="orig_bin_02_kappa_69">
 		<attr name="x">
 			<float>-1.0351868053855175</float>
 		</attr>
@@ -568,7 +580,7 @@
 			<float>-1.0460856824022022</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_70">
+	<node id="orig_bin_02_kappa_70">
 		<attr name="x">
 			<float>-0.9581027196823464</float>
 		</attr>
@@ -576,7 +588,7 @@
 			<float>-1.1525050514242106</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_71">
+	<node id="orig_bin_02_kappa_71">
 		<attr name="x">
 			<float>-0.8039345482760043</float>
 		</attr>
@@ -584,7 +596,7 @@
 			<float>-0.7268275753361773</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_72">
+	<node id="orig_bin_02_kappa_72">
 		<attr name="x">
 			<float>-0.6497663768696621</float>
 		</attr>
@@ -592,7 +604,7 @@
 			<float>-0.7268275753361773</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_73">
+	<node id="orig_bin_02_kappa_73">
 		<attr name="x">
 			<float>-0.8039345482760043</float>
 		</attr>
@@ -600,7 +612,7 @@
 			<float>-1.1525050514242106</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_74">
+	<node id="orig_bin_02_kappa_74">
 		<attr name="x">
 			<float>-0.572682291166491</float>
 		</attr>
@@ -608,7 +620,7 @@
 			<float>-0.6204082063141689</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_75">
+	<node id="orig_bin_02_kappa_75">
 		<attr name="x">
 			<float>-0.7653925054244187</float>
 		</attr>
@@ -616,7 +628,7 @@
 			<float>-1.0460856824022022</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_76">
+	<node id="orig_bin_02_kappa_76">
 		<attr name="x">
 			<float>-0.49559820546331995</float>
 		</attr>
@@ -624,7 +636,7 @@
 			<float>-0.5671985218031648</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_77">
+	<node id="orig_bin_02_kappa_77">
 		<attr name="x">
 			<float>-0.7653925054244187</float>
 		</attr>
@@ -632,7 +644,7 @@
 			<float>-0.939666313380194</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_78">
+	<node id="orig_bin_02_kappa_78">
 		<attr name="x">
 			<float>-0.49559820546331995</float>
 		</attr>
@@ -640,7 +652,7 @@
 			<float>-0.4075694682701523</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_79">
+	<node id="orig_bin_02_kappa_79">
 		<attr name="x">
 			<float>-0.6112243340180766</float>
 		</attr>
@@ -648,7 +660,7 @@
 			<float>-0.8864566288691899</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_80">
+	<node id="orig_bin_02_kappa_80">
 		<attr name="x">
 			<float>-0.572682291166491</float>
 		</attr>
@@ -656,7 +668,7 @@
 			<float>-0.4075694682701523</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_81">
+	<node id="orig_bin_02_kappa_81">
 		<attr name="x">
 			<float>-0.5341402483149055</float>
 		</attr>
@@ -664,7 +676,7 @@
 			<float>-0.8864566288691899</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_82">
+	<node id="orig_bin_02_kappa_82">
 		<attr name="x">
 			<float>-0.45705616261173443</float>
 		</attr>
@@ -672,7 +684,7 @@
 			<float>-0.8864566288691899</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_83">
+	<node id="orig_bin_02_kappa_83">
 		<attr name="x">
 			<float>-0.6497663768696621</float>
 		</attr>
@@ -680,7 +692,7 @@
 			<float>-0.4075694682701523</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_84">
+	<node id="orig_bin_02_kappa_84">
 		<attr name="x">
 			<float>-0.7653925054244187</float>
 		</attr>
@@ -688,7 +700,7 @@
 			<float>-0.30115009924814395</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_85">
+	<node id="orig_bin_02_kappa_85">
 		<attr name="x">
 			<float>-0.7653925054244187</float>
 		</attr>
@@ -696,7 +708,7 @@
 			<float>-0.1947307302261356</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_86">
+	<node id="orig_bin_02_kappa_86">
 		<attr name="x">
 			<float>-0.8039345482760043</float>
 		</attr>
@@ -704,7 +716,7 @@
 			<float>-0.08831136120412726</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_87">
+	<node id="orig_bin_02_kappa_87">
 		<attr name="x">
 			<float>-0.8424765911275898</float>
 		</attr>
@@ -712,7 +724,7 @@
 			<float>0.018108007817881074</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_88">
+	<node id="orig_bin_02_kappa_88">
 		<attr name="x">
 			<float>-0.8424765911275898</float>
 		</attr>
@@ -720,7 +732,7 @@
 			<float>-0.5139888372921606</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_89">
+	<node id="orig_bin_02_kappa_89">
 		<attr name="x">
 			<float>-1.1508129339402742</float>
 		</attr>
@@ -728,7 +740,7 @@
 			<float>-0.24794041473713976</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_90">
+	<node id="orig_bin_02_kappa_90">
 		<attr name="x">
 			<float>-1.1508129339402742</float>
 		</attr>
@@ -736,7 +748,7 @@
 			<float>-0.14152104571513144</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_91">
+	<node id="orig_bin_02_kappa_91">
 		<attr name="x">
 			<float>-1.1122708910886887</float>
 		</attr>
@@ -744,7 +756,7 @@
 			<float>-0.03510167669312309</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_92">
+	<node id="orig_bin_02_kappa_92">
 		<attr name="x">
 			<float>-1.0351868053855175</float>
 		</attr>
@@ -752,7 +764,7 @@
 			<float>0.07131769232888524</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_93">
+	<node id="orig_bin_02_kappa_93">
 		<attr name="x">
 			<float>-0.7268504625728331</float>
 		</attr>
@@ -760,7 +772,7 @@
 			<float>0.12452737683988942</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_94">
+	<node id="orig_bin_02_kappa_94">
 		<attr name="x">
 			<float>-0.6497663768696621</float>
 		</attr>
@@ -768,7 +780,7 @@
 			<float>0.018108007817881074</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_95">
+	<node id="orig_bin_02_kappa_95">
 		<attr name="x">
 			<float>-0.572682291166491</float>
 		</attr>
@@ -776,7 +788,7 @@
 			<float>0.018108007817881074</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_96">
+	<node id="orig_bin_02_kappa_96">
 		<attr name="x">
 			<float>-0.49559820546331995</float>
 		</attr>
@@ -784,7 +796,7 @@
 			<float>-0.03510167669312309</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_97">
+	<node id="orig_bin_02_kappa_97">
 		<attr name="x">
 			<float>-0.41851411976014885</float>
 		</attr>
@@ -792,7 +804,7 @@
 			<float>-0.03510167669312309</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_98">
+	<node id="orig_bin_02_kappa_98">
 		<attr name="x">
 			<float>-0.3414300340569778</float>
 		</attr>
@@ -800,7 +812,7 @@
 			<float>-0.03510167669312309</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_99">
+	<node id="orig_bin_02_kappa_99">
 		<attr name="x">
 			<float>-0.2643459483538067</float>
 		</attr>
@@ -808,7 +820,7 @@
 			<float>-0.30115009924814395</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_100">
+	<node id="orig_bin_02_kappa_100">
 		<attr name="x">
 			<float>-0.22580390550222118</float>
 		</attr>
@@ -816,7 +828,7 @@
 			<float>-0.1947307302261356</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_101">
+	<node id="orig_bin_02_kappa_101">
 		<attr name="x">
 			<float>-0.22580390550222118</float>
 		</attr>
@@ -824,7 +836,7 @@
 			<float>-0.08831136120412726</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_102">
+	<node id="orig_bin_02_kappa_102">
 		<attr name="x">
 			<float>-0.11017777694746456</float>
 		</attr>
@@ -832,7 +844,7 @@
 			<float>0.12452737683988942</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_103">
+	<node id="orig_bin_02_kappa_103">
 		<attr name="x">
 			<float>-0.033093691244293476</float>
 		</attr>
@@ -840,7 +852,7 @@
 			<float>0.1777370613508936</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_104">
+	<node id="orig_bin_02_kappa_104">
 		<attr name="x">
 			<float>0.043990394458877605</float>
 		</attr>
@@ -848,7 +860,7 @@
 			<float>0.23094674586189776</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_105">
+	<node id="orig_bin_02_kappa_105">
 		<attr name="x">
 			<float>0.12107448016204869</float>
 		</attr>
@@ -856,7 +868,7 @@
 			<float>0.28415643037290195</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_106">
+	<node id="orig_bin_02_kappa_106">
 		<attr name="x">
 			<float>0.19815856586521977</float>
 		</attr>
@@ -864,7 +876,7 @@
 			<float>0.28415643037290195</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_107">
+	<node id="orig_bin_02_kappa_107">
 		<attr name="x">
 			<float>0.27524265156839084</float>
 		</attr>
@@ -872,7 +884,7 @@
 			<float>0.3373661148839061</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_108">
+	<node id="orig_bin_02_kappa_108">
 		<attr name="x">
 			<float>0.429410822974733</float>
 		</attr>
@@ -880,7 +892,7 @@
 			<float>0.3905757993949103</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_109">
+	<node id="orig_bin_02_kappa_109">
 		<attr name="x">
 			<float>0.5064949086779041</float>
 		</attr>
@@ -888,7 +900,7 @@
 			<float>0.44378548390591444</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_110">
+	<node id="orig_bin_02_kappa_110">
 		<attr name="x">
 			<float>0.5835789943810752</float>
 		</attr>
@@ -896,7 +908,7 @@
 			<float>0.44378548390591444</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_111">
+	<node id="orig_bin_02_kappa_111">
 		<attr name="x">
 			<float>0.6606630800842462</float>
 		</attr>
@@ -904,7 +916,7 @@
 			<float>0.44378548390591444</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_112">
+	<node id="orig_bin_02_kappa_112">
 		<attr name="x">
 			<float>0.8919153371937595</float>
 		</attr>
@@ -912,7 +924,7 @@
 			<float>0.3905757993949103</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_113">
+	<node id="orig_bin_02_kappa_113">
 		<attr name="x">
 			<float>-0.8810186339791753</float>
 		</attr>
@@ -920,7 +932,7 @@
 			<float>0.3905757993949103</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_114">
+	<node id="orig_bin_02_kappa_114">
 		<attr name="x">
 			<float>-0.8810186339791753</float>
 		</attr>
@@ -928,7 +940,7 @@
 			<float>0.4969951684169186</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_115">
+	<node id="orig_bin_02_kappa_115">
 		<attr name="x">
 			<float>-0.8810186339791753</float>
 		</attr>
@@ -936,7 +948,7 @@
 			<float>0.6034145374389269</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_116">
+	<node id="orig_bin_02_kappa_116">
 		<attr name="x">
 			<float>-0.8810186339791753</float>
 		</attr>
@@ -944,7 +956,7 @@
 			<float>0.7098339064609352</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_117">
+	<node id="orig_bin_02_kappa_117">
 		<attr name="x">
 			<float>-0.8810186339791753</float>
 		</attr>
@@ -952,7 +964,7 @@
 			<float>0.8162532754829436</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_118">
+	<node id="orig_bin_02_kappa_118">
 		<attr name="x">
 			<float>-0.9195606768307609</float>
 		</attr>
@@ -960,7 +972,7 @@
 			<float>0.922672644504952</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_119">
+	<node id="orig_bin_02_kappa_119">
 		<attr name="x">
 			<float>-1.073728848237103</float>
 		</attr>
@@ -968,7 +980,7 @@
 			<float>0.44378548390591444</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_120">
+	<node id="orig_bin_02_kappa_120">
 		<attr name="x">
 			<float>-0.2643459483538067</float>
 		</attr>
@@ -976,7 +988,7 @@
 			<float>0.28415643037290195</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_121">
+	<node id="orig_bin_02_kappa_121">
 		<attr name="x">
 			<float>-0.8810186339791753</float>
 		</attr>
@@ -984,7 +996,7 @@
 			<float>1.1355113825489687</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_122">
+	<node id="orig_bin_02_kappa_122">
 		<attr name="x">
 			<float>-1.0351868053855175</float>
 		</attr>
@@ -992,7 +1004,7 @@
 			<float>1.0823016980379645</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_123">
+	<node id="orig_bin_02_kappa_123">
 		<attr name="x">
 			<float>-1.1122708910886887</float>
 		</attr>
@@ -1000,7 +1012,7 @@
 			<float>1.1355113825489687</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_124">
+	<node id="orig_bin_02_kappa_124">
 		<attr name="x">
 			<float>-1.1893549767918596</float>
 		</attr>
@@ -1008,7 +1020,7 @@
 			<float>1.1887210670599728</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_125">
+	<node id="orig_bin_02_kappa_125">
 		<attr name="x">
 			<float>-1.1893549767918596</float>
 		</attr>
@@ -1016,7 +1028,7 @@
 			<float>1.2951404360819812</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_126">
+	<node id="orig_bin_02_kappa_126">
 		<attr name="x">
 			<float>-1.1893549767918596</float>
 		</attr>
@@ -1024,7 +1036,7 @@
 			<float>1.4015598051039895</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_127">
+	<node id="orig_bin_02_kappa_127">
 		<attr name="x">
 			<float>0.35232673727156194</float>
 		</attr>
@@ -1032,7 +1044,7 @@
 			<float>0.6034145374389269</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_128">
+	<node id="orig_bin_02_kappa_128">
 		<attr name="x">
 			<float>0.39086878012314746</float>
 		</attr>
@@ -1040,7 +1052,7 @@
 			<float>0.7098339064609352</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_129">
+	<node id="orig_bin_02_kappa_129">
 		<attr name="x">
 			<float>0.46795286582631856</float>
 		</attr>
@@ -1048,7 +1060,7 @@
 			<float>0.8162532754829436</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_130">
+	<node id="orig_bin_02_kappa_130">
 		<attr name="x">
 			<float>0.5450369515294896</float>
 		</attr>
@@ -1056,7 +1068,7 @@
 			<float>0.8694629599939478</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_131">
+	<node id="orig_bin_02_kappa_131">
 		<attr name="x">
 			<float>0.7762892086390029</float>
 		</attr>
@@ -1064,7 +1076,7 @@
 			<float>0.9758823290159562</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_132">
+	<node id="orig_bin_02_kappa_132">
 		<attr name="x">
 			<float>0.8148312514905884</float>
 		</attr>
@@ -1072,7 +1084,7 @@
 			<float>1.1887210670599728</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_133">
+	<node id="orig_bin_02_kappa_133">
 		<attr name="x">
 			<float>0.9304573800453451</float>
 		</attr>
@@ -1080,7 +1092,7 @@
 			<float>1.0290920135269603</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_134">
+	<node id="orig_bin_02_kappa_134">
 		<attr name="x">
 			<float>1.0846255514516872</float>
 		</attr>
@@ -1088,7 +1100,7 @@
 			<float>1.0290920135269603</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_135">
+	<node id="orig_bin_02_kappa_135">
 		<attr name="x">
 			<float>-0.996644762533932</float>
 		</attr>
@@ -1096,7 +1108,7 @@
 			<float>1.5079791741259978</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_136">
+	<node id="orig_bin_02_kappa_136">
 		<attr name="x">
 			<float>1.1617096371548583</float>
 		</attr>
@@ -1104,7 +1116,7 @@
 			<float>0.7098339064609352</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_137">
+	<node id="orig_bin_02_kappa_137">
 		<attr name="x">
 			<float>1.2387937228580295</float>
 		</attr>
@@ -1112,7 +1124,7 @@
 			<float>0.7630435909719394</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_138">
+	<node id="orig_bin_02_kappa_138">
 		<attr name="x">
 			<float>-1.3049811053466163</float>
 		</attr>
@@ -1120,7 +1132,7 @@
 			<float>1.6676082276590103</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_139">
+	<node id="orig_bin_02_kappa_139">
 		<attr name="x">
 			<float>-1.1122708910886887</float>
 		</attr>
@@ -1128,7 +1140,7 @@
 			<float>1.6676082276590103</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_140">
+	<node id="orig_bin_02_kappa_140">
 		<attr name="x">
 			<float>-1.2278970196434453</float>
 		</attr>
@@ -1136,7 +1148,7 @@
 			<float>1.880446965703027</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_141">
+	<node id="orig_bin_02_kappa_141">
 		<attr name="x">
 			<float>-1.1508129339402742</float>
 		</attr>
@@ -1144,7 +1156,7 @@
 			<float>1.933656650214031</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_142">
+	<node id="orig_bin_02_kappa_142">
 		<attr name="x">
 			<float>1.0075414657485162</float>
 		</attr>
@@ -1152,7 +1164,7 @@
 			<float>0.8162532754829436</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_143">
+	<node id="orig_bin_02_kappa_143">
 		<attr name="x">
 			<float>-0.9581027196823464</float>
 		</attr>
@@ -1160,7 +1172,7 @@
 			<float>1.880446965703027</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_144">
+	<node id="orig_bin_02_kappa_144">
 		<attr name="x">
 			<float>-0.8810186339791753</float>
 		</attr>
@@ -1168,7 +1180,7 @@
 			<float>1.880446965703027</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_145">
+	<node id="orig_bin_02_kappa_145">
 		<attr name="x">
 			<float>-0.8039345482760043</float>
 		</attr>
@@ -1176,7 +1188,7 @@
 			<float>1.880446965703027</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_146">
+	<node id="orig_bin_02_kappa_146">
 		<attr name="x">
 			<float>1.277335765709615</float>
 		</attr>
@@ -1184,7 +1196,7 @@
 			<float>1.1887210670599728</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_147">
+	<node id="orig_bin_02_kappa_147">
 		<attr name="x">
 			<float>1.3158778085612004</float>
 		</attr>
@@ -1192,7 +1204,7 @@
 			<float>1.2951404360819812</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_148">
+	<node id="orig_bin_02_kappa_148">
 		<attr name="x">
 			<float>1.3929618942643716</float>
 		</attr>
@@ -1200,7 +1212,7 @@
 			<float>1.3483501205929853</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_149">
+	<node id="orig_bin_02_kappa_149">
 		<attr name="x">
 			<float>2.1252607084444968</float>
 		</attr>
@@ -1208,7 +1220,7 @@
 			<float>-1.0992953669132064</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_150">
+	<node id="orig_bin_02_kappa_150">
 		<attr name="x">
 			<float>1.277335765709615</float>
 		</attr>
@@ -1216,7 +1228,7 @@
 			<float>-1.258924420446219</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_151">
+	<node id="orig_bin_02_kappa_151">
 		<attr name="x">
 			<float>1.9710925370381547</float>
 		</attr>
@@ -1224,7 +1236,7 @@
 			<float>-1.205714735935215</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_152">
+	<node id="orig_bin_02_kappa_152">
 		<attr name="x">
 			<float>1.7398402799286414</float>
 		</attr>
@@ -1232,7 +1244,7 @@
 			<float>-1.258924420446219</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_153">
+	<node id="orig_bin_02_kappa_153">
 		<attr name="x">
 			<float>1.8169243656318124</float>
 		</attr>
@@ -1240,7 +1252,7 @@
 			<float>-1.0460856824022022</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_154">
+	<node id="orig_bin_02_kappa_154">
 		<attr name="x">
 			<float>1.5471300656707137</float>
 		</attr>
@@ -1248,7 +1260,7 @@
 			<float>-1.258924420446219</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_155">
+	<node id="orig_bin_02_kappa_155">
 		<attr name="x">
 			<float>1.431503937115957</float>
 		</attr>
@@ -1256,7 +1268,7 @@
 			<float>-1.0460856824022022</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_156">
+	<node id="orig_bin_02_kappa_156">
 		<attr name="x">
 			<float>1.3158778085612004</float>
 		</attr>
@@ -1264,7 +1276,7 @@
 			<float>-1.0460856824022022</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_157">
+	<node id="orig_bin_02_kappa_157">
 		<attr name="x">
 			<float>1.2002516800064438</float>
 		</attr>
@@ -1272,7 +1284,7 @@
 			<float>-1.0460856824022022</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_158">
+	<node id="orig_bin_02_kappa_158">
 		<attr name="x">
 			<float>1.0846255514516872</float>
 		</attr>
@@ -1280,7 +1292,7 @@
 			<float>-1.1525050514242106</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_159">
+	<node id="orig_bin_02_kappa_159">
 		<attr name="x">
 			<float>0.12107448016204869</float>
 		</attr>
@@ -1288,7 +1300,7 @@
 			<float>-0.8332469443581857</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_160">
+	<node id="orig_bin_02_kappa_160">
 		<attr name="x">
 			<float>-0.18726186265063563</float>
 		</attr>
@@ -1296,7 +1308,7 @@
 			<float>-0.7800372598471815</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_161">
+	<node id="orig_bin_02_kappa_161">
 		<attr name="x">
 			<float>1.855466408483398</float>
 		</attr>
@@ -1304,7 +1316,7 @@
 			<float>-1.3653437894682274</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_162">
+	<node id="orig_bin_02_kappa_162">
 		<attr name="x">
 			<float>1.932550494186569</float>
 		</attr>
@@ -1312,7 +1324,7 @@
 			<float>-1.3121341049572233</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_163">
+	<node id="orig_bin_02_kappa_163">
 		<attr name="x">
 			<float>1.8940084513349835</float>
 		</attr>
@@ -1320,7 +1332,7 @@
 			<float>-1.0992953669132064</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_164">
+	<node id="orig_bin_02_kappa_164">
 		<attr name="x">
 			<float>2.0867186655929113</float>
 		</attr>
@@ -1328,7 +1340,7 @@
 			<float>-1.205714735935215</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_165">
+	<node id="orig_bin_02_kappa_165">
 		<attr name="x">
 			<float>1.6627561942254703</float>
 		</attr>
@@ -1336,7 +1348,7 @@
 			<float>-1.258924420446219</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_166">
+	<node id="orig_bin_02_kappa_166">
 		<attr name="x">
 			<float>1.7398402799286414</float>
 		</attr>
@@ -1344,7 +1356,7 @@
 			<float>-0.9928759978911982</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_167">
+	<node id="orig_bin_02_kappa_167">
 		<attr name="x">
 			<float>1.6627561942254703</float>
 		</attr>
@@ -1352,7 +1364,7 @@
 			<float>-0.939666313380194</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_168">
+	<node id="orig_bin_02_kappa_168">
 		<attr name="x">
 			<float>1.5856721085222991</float>
 		</attr>
@@ -1360,7 +1372,7 @@
 			<float>-0.939666313380194</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_169">
+	<node id="orig_bin_02_kappa_169">
 		<attr name="x">
 			<float>1.5085880228191282</float>
 		</attr>
@@ -1368,7 +1380,7 @@
 			<float>-0.9928759978911982</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_170">
+	<node id="orig_bin_02_kappa_170">
 		<attr name="x">
 			<float>1.2002516800064438</float>
 		</attr>
@@ -1376,7 +1388,7 @@
 			<float>-0.939666313380194</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_171">
+	<node id="orig_bin_02_kappa_171">
 		<attr name="x">
 			<float>1.1617096371548583</float>
 		</attr>
@@ -1384,7 +1396,7 @@
 			<float>-1.258924420446219</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_172">
+	<node id="orig_bin_02_kappa_172">
 		<attr name="x">
 			<float>1.4700459799675425</float>
 		</attr>
@@ -1392,7 +1404,7 @@
 			<float>-1.205714735935215</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_173">
+	<node id="orig_bin_02_kappa_173">
 		<attr name="x">
 			<float>0.9689994228969305</float>
 		</attr>
@@ -1400,7 +1412,7 @@
 			<float>-1.0992953669132064</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_174">
+	<node id="orig_bin_02_kappa_174">
 		<attr name="x">
 			<float>0.8919153371937595</float>
 		</attr>
@@ -1408,7 +1420,7 @@
 			<float>-1.0992953669132064</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_175">
+	<node id="orig_bin_02_kappa_175">
 		<attr name="x">
 			<float>0.8148312514905884</float>
 		</attr>
@@ -1416,7 +1428,7 @@
 			<float>-1.0992953669132064</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_176">
+	<node id="orig_bin_02_kappa_176">
 		<attr name="x">
 			<float>0.7377471657874173</float>
 		</attr>
@@ -1424,7 +1436,7 @@
 			<float>-1.0992953669132064</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_177">
+	<node id="orig_bin_02_kappa_177">
 		<attr name="x">
 			<float>0.6606630800842462</float>
 		</attr>
@@ -1432,7 +1444,7 @@
 			<float>-1.0460856824022022</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_178">
+	<node id="orig_bin_02_kappa_178">
 		<attr name="x">
 			<float>0.5835789943810752</float>
 		</attr>
@@ -1440,7 +1452,7 @@
 			<float>-1.0460856824022022</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_179">
+	<node id="orig_bin_02_kappa_179">
 		<attr name="x">
 			<float>0.5064949086779041</float>
 		</attr>
@@ -1448,7 +1460,7 @@
 			<float>-1.0460856824022022</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_180">
+	<node id="orig_bin_02_kappa_180">
 		<attr name="x">
 			<float>0.429410822974733</float>
 		</attr>
@@ -1456,7 +1468,7 @@
 			<float>-0.939666313380194</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_181">
+	<node id="orig_bin_02_kappa_181">
 		<attr name="x">
 			<float>0.35232673727156194</float>
 		</attr>
@@ -1464,7 +1476,7 @@
 			<float>-0.8864566288691899</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_182">
+	<node id="orig_bin_02_kappa_182">
 		<attr name="x">
 			<float>0.27524265156839084</float>
 		</attr>
@@ -1472,7 +1484,7 @@
 			<float>-0.8864566288691899</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_183">
+	<node id="orig_bin_02_kappa_183">
 		<attr name="x">
 			<float>0.19815856586521977</float>
 		</attr>
@@ -1480,7 +1492,7 @@
 			<float>-0.8864566288691899</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_184">
+	<node id="orig_bin_02_kappa_184">
 		<attr name="x">
 			<float>0.043990394458877605</float>
 		</attr>
@@ -1488,7 +1500,7 @@
 			<float>-0.8864566288691899</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_185">
+	<node id="orig_bin_02_kappa_185">
 		<attr name="x">
 			<float>-0.033093691244293476</float>
 		</attr>
@@ -1496,7 +1508,7 @@
 			<float>-0.8864566288691899</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_186">
+	<node id="orig_bin_02_kappa_186">
 		<attr name="x">
 			<float>-0.11017777694746456</float>
 		</attr>
@@ -1504,7 +1516,7 @@
 			<float>-0.8332469443581857</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_187">
+	<node id="orig_bin_02_kappa_187">
 		<attr name="x">
 			<float>0.005448351607292068</float>
 		</attr>
@@ -1512,7 +1524,7 @@
 			<float>-0.7268275753361773</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_188">
+	<node id="orig_bin_02_kappa_188">
 		<attr name="x">
 			<float>-0.07163573409587902</float>
 		</attr>
@@ -1520,7 +1532,7 @@
 			<float>-0.7268275753361773</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_189">
+	<node id="orig_bin_02_kappa_189">
 		<attr name="x">
 			<float>-0.22580390550222118</float>
 		</attr>
@@ -1528,7 +1540,7 @@
 			<float>-0.6736178908251731</float>
 		</attr>
 	</node>
-	<node id="_02_kappa_190">
+	<node id="orig_bin_02_kappa_190">
 		<attr name="x">
 			<float>1.7398402799286414</float>
 		</attr>
@@ -1536,209 +1548,209 @@
 			<float>-0.08831136120412726</float>
 		</attr>
 	</node>
-	<edge from="_02_kappa_45" to="_02_kappa_8"/>
-	<edge from="_02_kappa_161" to="_02_kappa_162"/>
-	<edge from="_02_kappa_108" to="_02_kappa_109"/>
-	<edge from="_02_kappa_119" to="_02_kappa_6"/>
-	<edge from="_02_kappa_56" to="_02_kappa_146"/>
-	<edge from="_02_kappa_180" to="_02_kappa_181"/>
-	<edge from="_02_kappa_61" to="_02_kappa_14"/>
-	<edge from="_02_kappa_37" to="_02_kappa_39"/>
-	<edge from="_02_kappa_10" to="_02_kappa_49"/>
-	<edge from="_02_kappa_75" to="_02_kappa_77"/>
-	<edge from="_02_kappa_105" to="_02_kappa_106"/>
-	<edge from="_02_kappa_166" to="_02_kappa_167"/>
-	<edge from="_02_kappa_0" to="_02_kappa_15"/>
-	<edge from="_02_kappa_38" to="_02_kappa_7"/>
-	<edge from="_02_kappa_43" to="_02_kappa_44"/>
-	<edge from="_02_kappa_41" to="_02_kappa_44"/>
-	<edge from="_02_kappa_156" to="_02_kappa_155"/>
-	<edge from="_02_kappa_184" to="_02_kappa_159"/>
-	<edge from="_02_kappa_111" to="_02_kappa_40"/>
-	<edge from="_02_kappa_152" to="_02_kappa_153"/>
-	<edge from="_02_kappa_162" to="_02_kappa_151"/>
-	<edge from="_02_kappa_126" to="_02_kappa_48"/>
-	<edge from="_02_kappa_113" to="_02_kappa_114"/>
-	<edge from="_02_kappa_29" to="_02_kappa_31"/>
-	<edge from="_02_kappa_60" to="_02_kappa_59"/>
-	<edge from="_02_kappa_161" to="_02_kappa_152"/>
-	<edge from="_02_kappa_87" to="_02_kappa_28"/>
-	<edge from="_02_kappa_30" to="_02_kappa_32"/>
-	<edge from="_02_kappa_136" to="_02_kappa_137"/>
-	<edge from="_02_kappa_109" to="_02_kappa_110"/>
-	<edge from="_02_kappa_154" to="_02_kappa_172"/>
-	<edge from="_02_kappa_26" to="_02_kappa_27"/>
-	<edge from="_02_kappa_108" to="_02_kappa_36"/>
-	<edge from="_02_kappa_35" to="_02_kappa_121"/>
-	<edge from="_02_kappa_183" to="_02_kappa_182"/>
-	<edge from="_02_kappa_39" to="_02_kappa_45"/>
-	<edge from="_02_kappa_31" to="_02_kappa_119"/>
-	<edge from="_02_kappa_47" to="_02_kappa_142"/>
-	<edge from="_02_kappa_67" to="_02_kappa_18"/>
-	<edge from="_02_kappa_16" to="_02_kappa_1"/>
-	<edge from="_02_kappa_60" to="_02_kappa_61"/>
-	<edge from="_02_kappa_66" to="_02_kappa_2"/>
-	<edge from="_02_kappa_40" to="_02_kappa_42"/>
-	<edge from="_02_kappa_83" to="_02_kappa_80"/>
-	<edge from="_02_kappa_33" to="_02_kappa_120"/>
-	<edge from="_02_kappa_163" to="_02_kappa_153"/>
-	<edge from="_02_kappa_44" to="_02_kappa_47"/>
-	<edge from="_02_kappa_171" to="_02_kappa_150"/>
-	<edge from="_02_kappa_77" to="_02_kappa_19"/>
-	<edge from="_02_kappa_123" to="_02_kappa_124"/>
-	<edge from="_02_kappa_41" to="_02_kappa_43"/>
-	<edge from="_02_kappa_28" to="_02_kappa_29"/>
-	<edge from="_02_kappa_51" to="_02_kappa_132"/>
-	<edge from="_02_kappa_110" to="_02_kappa_111"/>
-	<edge from="_02_kappa_107" to="_02_kappa_36"/>
-	<edge from="_02_kappa_133" to="_02_kappa_51"/>
-	<edge from="_02_kappa_112" to="_02_kappa_41"/>
-	<edge from="_02_kappa_85" to="_02_kappa_86"/>
-	<edge from="_02_kappa_151" to="_02_kappa_164"/>
-	<edge from="_02_kappa_22" to="_02_kappa_23"/>
-	<edge from="_02_kappa_54" to="_02_kappa_140"/>
-	<edge from="_02_kappa_96" to="_02_kappa_95"/>
-	<edge from="_02_kappa_165" to="_02_kappa_152"/>
-	<edge from="_02_kappa_135" to="_02_kappa_50"/>
-	<edge from="_02_kappa_88" to="_02_kappa_25"/>
-	<edge from="_02_kappa_17" to="_02_kappa_73"/>
-	<edge from="_02_kappa_101" to="_02_kappa_30"/>
-	<edge from="_02_kappa_52" to="_02_kappa_134"/>
-	<edge from="_02_kappa_146" to="_02_kappa_147"/>
-	<edge from="_02_kappa_36" to="_02_kappa_127"/>
-	<edge from="_02_kappa_79" to="_02_kappa_19"/>
-	<edge from="_02_kappa_94" to="_02_kappa_95"/>
-	<edge from="_02_kappa_18" to="_02_kappa_68"/>
-	<edge from="_02_kappa_94" to="_02_kappa_93"/>
-	<edge from="_02_kappa_168" to="_02_kappa_167"/>
-	<edge from="_02_kappa_179" to="_02_kappa_178"/>
-	<edge from="_02_kappa_188" to="_02_kappa_187"/>
-	<edge from="_02_kappa_158" to="_02_kappa_157"/>
-	<edge from="_02_kappa_50" to="_02_kappa_139"/>
-	<edge from="_02_kappa_25" to="_02_kappa_83"/>
-	<edge from="_02_kappa_19" to="_02_kappa_72"/>
-	<edge from="_02_kappa_143" to="_02_kappa_144"/>
-	<edge from="_02_kappa_135" to="_02_kappa_45"/>
-	<edge from="_02_kappa_48" to="_02_kappa_50"/>
-	<edge from="_02_kappa_137" to="_02_kappa_55"/>
-	<edge from="_02_kappa_53" to="_02_kappa_140"/>
-	<edge from="_02_kappa_35" to="_02_kappa_122"/>
-	<edge from="_02_kappa_159" to="_02_kappa_187"/>
-	<edge from="_02_kappa_42" to="_02_kappa_46"/>
-	<edge from="_02_kappa_131" to="_02_kappa_51"/>
-	<edge from="_02_kappa_91" to="_02_kappa_92"/>
-	<edge from="_02_kappa_179" to="_02_kappa_180"/>
-	<edge from="_02_kappa_64" to="_02_kappa_65"/>
-	<edge from="_02_kappa_174" to="_02_kappa_173"/>
-	<edge from="_02_kappa_28" to="_02_kappa_93"/>
-	<edge from="_02_kappa_154" to="_02_kappa_165"/>
-	<edge from="_02_kappa_54" to="_02_kappa_141"/>
-	<edge from="_02_kappa_21" to="_02_kappa_22"/>
-	<edge from="_02_kappa_18" to="_02_kappa_20"/>
-	<edge from="_02_kappa_33" to="_02_kappa_34"/>
-	<edge from="_02_kappa_22" to="_02_kappa_24"/>
-	<edge from="_02_kappa_120" to="_02_kappa_34"/>
-	<edge from="_02_kappa_125" to="_02_kappa_126"/>
-	<edge from="_02_kappa_106" to="_02_kappa_107"/>
-	<edge from="_02_kappa_12" to="_02_kappa_145"/>
-	<edge from="_02_kappa_157" to="_02_kappa_156"/>
-	<edge from="_02_kappa_74" to="_02_kappa_76"/>
-	<edge from="_02_kappa_25" to="_02_kappa_84"/>
-	<edge from="_02_kappa_97" to="_02_kappa_98"/>
-	<edge from="_02_kappa_100" to="_02_kappa_101"/>
-	<edge from="_02_kappa_62" to="_02_kappa_63"/>
-	<edge from="_02_kappa_72" to="_02_kappa_74"/>
-	<edge from="_02_kappa_89" to="_02_kappa_90"/>
-	<edge from="_02_kappa_86" to="_02_kappa_87"/>
-	<edge from="_02_kappa_160" to="_02_kappa_188"/>
-	<edge from="_02_kappa_84" to="_02_kappa_85"/>
-	<edge from="_02_kappa_156" to="_02_kappa_170"/>
-	<edge from="_02_kappa_144" to="_02_kappa_145"/>
-	<edge from="_02_kappa_176" to="_02_kappa_177"/>
-	<edge from="_02_kappa_73" to="_02_kappa_75"/>
-	<edge from="_02_kappa_96" to="_02_kappa_97"/>
-	<edge from="_02_kappa_115" to="_02_kappa_116"/>
-	<edge from="_02_kappa_164" to="_02_kappa_149"/>
-	<edge from="_02_kappa_160" to="_02_kappa_189"/>
-	<edge from="_02_kappa_32" to="_02_kappa_33"/>
-	<edge from="_02_kappa_116" to="_02_kappa_117"/>
-	<edge from="_02_kappa_114" to="_02_kappa_115"/>
-	<edge from="_02_kappa_157" to="_02_kappa_170"/>
-	<edge from="_02_kappa_49" to="_02_kappa_136"/>
-	<edge from="_02_kappa_66" to="_02_kappa_65"/>
-	<edge from="_02_kappa_139" to="_02_kappa_54"/>
-	<edge from="_02_kappa_102" to="_02_kappa_103"/>
-	<edge from="_02_kappa_37" to="_02_kappa_38"/>
-	<edge from="_02_kappa_127" to="_02_kappa_128"/>
-	<edge from="_02_kappa_3" to="_02_kappa_20"/>
-	<edge from="_02_kappa_171" to="_02_kappa_158"/>
-	<edge from="_02_kappa_104" to="_02_kappa_105"/>
-	<edge from="_02_kappa_124" to="_02_kappa_125"/>
-	<edge from="_02_kappa_178" to="_02_kappa_177"/>
-	<edge from="_02_kappa_121" to="_02_kappa_37"/>
-	<edge from="_02_kappa_57" to="_02_kappa_143"/>
-	<edge from="_02_kappa_58" to="_02_kappa_148"/>
-	<edge from="_02_kappa_185" to="_02_kappa_186"/>
-	<edge from="_02_kappa_186" to="_02_kappa_160"/>
-	<edge from="_02_kappa_169" to="_02_kappa_168"/>
-	<edge from="_02_kappa_70" to="_02_kappa_69"/>
-	<edge from="_02_kappa_128" to="_02_kappa_129"/>
-	<edge from="_02_kappa_19" to="_02_kappa_71"/>
-	<edge from="_02_kappa_15" to="_02_kappa_16"/>
-	<edge from="_02_kappa_79" to="_02_kappa_81"/>
-	<edge from="_02_kappa_98" to="_02_kappa_30"/>
-	<edge from="_02_kappa_153" to="_02_kappa_166"/>
-	<edge from="_02_kappa_82" to="_02_kappa_5"/>
-	<edge from="_02_kappa_16" to="_02_kappa_62"/>
-	<edge from="_02_kappa_55" to="_02_kappa_56"/>
-	<edge from="_02_kappa_185" to="_02_kappa_184"/>
-	<edge from="_02_kappa_81" to="_02_kappa_82"/>
-	<edge from="_02_kappa_117" to="_02_kappa_118"/>
-	<edge from="_02_kappa_64" to="_02_kappa_15"/>
-	<edge from="_02_kappa_76" to="_02_kappa_26"/>
-	<edge from="_02_kappa_92" to="_02_kappa_29"/>
-	<edge from="_02_kappa_78" to="_02_kappa_26"/>
-	<edge from="_02_kappa_54" to="_02_kappa_57"/>
-	<edge from="_02_kappa_155" to="_02_kappa_169"/>
-	<edge from="_02_kappa_129" to="_02_kappa_130"/>
-	<edge from="_02_kappa_103" to="_02_kappa_104"/>
-	<edge from="_02_kappa_42" to="_02_kappa_9"/>
-	<edge from="_02_kappa_138" to="_02_kappa_53"/>
-	<edge from="_02_kappa_63" to="_02_kappa_17"/>
-	<edge from="_02_kappa_24" to="_02_kappa_4"/>
-	<edge from="_02_kappa_49" to="_02_kappa_47"/>
-	<edge from="_02_kappa_55" to="_02_kappa_11"/>
-	<edge from="_02_kappa_182" to="_02_kappa_181"/>
-	<edge from="_02_kappa_21" to="_02_kappa_88"/>
-	<edge from="_02_kappa_46" to="_02_kappa_131"/>
-	<edge from="_02_kappa_118" to="_02_kappa_35"/>
-	<edge from="_02_kappa_13" to="_02_kappa_59"/>
-	<edge from="_02_kappa_158" to="_02_kappa_173"/>
-	<edge from="_02_kappa_48" to="_02_kappa_138"/>
-	<edge from="_02_kappa_68" to="_02_kappa_21"/>
-	<edge from="_02_kappa_172" to="_02_kappa_155"/>
-	<edge from="_02_kappa_52" to="_02_kappa_133"/>
-	<edge from="_02_kappa_151" to="_02_kappa_163"/>
-	<edge from="_02_kappa_40" to="_02_kappa_41"/>
-	<edge from="_02_kappa_122" to="_02_kappa_123"/>
-	<edge from="_02_kappa_27" to="_02_kappa_99"/>
-	<edge from="_02_kappa_71" to="_02_kappa_21"/>
-	<edge from="_02_kappa_80" to="_02_kappa_78"/>
-	<edge from="_02_kappa_134" to="_02_kappa_56"/>
-	<edge from="_02_kappa_176" to="_02_kappa_175"/>
-	<edge from="_02_kappa_23" to="_02_kappa_24"/>
-	<edge from="_02_kappa_69" to="_02_kappa_67"/>
-	<edge from="_02_kappa_31" to="_02_kappa_113"/>
-	<edge from="_02_kappa_90" to="_02_kappa_91"/>
-	<edge from="_02_kappa_175" to="_02_kappa_174"/>
-	<edge from="_02_kappa_183" to="_02_kappa_159"/>
-	<edge from="_02_kappa_147" to="_02_kappa_148"/>
-	<edge from="_02_kappa_23" to="_02_kappa_89"/>
-	<edge from="_02_kappa_32" to="_02_kappa_102"/>
-	<edge from="_02_kappa_142" to="_02_kappa_52"/>
-	<edge from="_02_kappa_17" to="_02_kappa_70"/>
-	<edge from="_02_kappa_99" to="_02_kappa_100"/>
-	<edge from="_02_kappa_59" to="_02_kappa_58"/>
-	<edge from="_02_kappa_130" to="_02_kappa_46"/>
+	<edge from="orig_bin_02_kappa_45" to="orig_bin_02_kappa_8"/>
+	<edge from="orig_bin_02_kappa_161" to="orig_bin_02_kappa_162"/>
+	<edge from="orig_bin_02_kappa_108" to="orig_bin_02_kappa_109"/>
+	<edge from="orig_bin_02_kappa_119" to="orig_bin_02_kappa_6"/>
+	<edge from="orig_bin_02_kappa_56" to="orig_bin_02_kappa_146"/>
+	<edge from="orig_bin_02_kappa_180" to="orig_bin_02_kappa_181"/>
+	<edge from="orig_bin_02_kappa_61" to="orig_bin_02_kappa_14"/>
+	<edge from="orig_bin_02_kappa_37" to="orig_bin_02_kappa_39"/>
+	<edge from="orig_bin_02_kappa_10" to="orig_bin_02_kappa_49"/>
+	<edge from="orig_bin_02_kappa_75" to="orig_bin_02_kappa_77"/>
+	<edge from="orig_bin_02_kappa_105" to="orig_bin_02_kappa_106"/>
+	<edge from="orig_bin_02_kappa_166" to="orig_bin_02_kappa_167"/>
+	<edge from="orig_bin_02_kappa_0" to="orig_bin_02_kappa_15"/>
+	<edge from="orig_bin_02_kappa_38" to="orig_bin_02_kappa_7"/>
+	<edge from="orig_bin_02_kappa_43" to="orig_bin_02_kappa_44"/>
+	<edge from="orig_bin_02_kappa_41" to="orig_bin_02_kappa_44"/>
+	<edge from="orig_bin_02_kappa_156" to="orig_bin_02_kappa_155"/>
+	<edge from="orig_bin_02_kappa_184" to="orig_bin_02_kappa_159"/>
+	<edge from="orig_bin_02_kappa_111" to="orig_bin_02_kappa_40"/>
+	<edge from="orig_bin_02_kappa_152" to="orig_bin_02_kappa_153"/>
+	<edge from="orig_bin_02_kappa_162" to="orig_bin_02_kappa_151"/>
+	<edge from="orig_bin_02_kappa_126" to="orig_bin_02_kappa_48"/>
+	<edge from="orig_bin_02_kappa_113" to="orig_bin_02_kappa_114"/>
+	<edge from="orig_bin_02_kappa_29" to="orig_bin_02_kappa_31"/>
+	<edge from="orig_bin_02_kappa_60" to="orig_bin_02_kappa_59"/>
+	<edge from="orig_bin_02_kappa_161" to="orig_bin_02_kappa_152"/>
+	<edge from="orig_bin_02_kappa_87" to="orig_bin_02_kappa_28"/>
+	<edge from="orig_bin_02_kappa_30" to="orig_bin_02_kappa_32"/>
+	<edge from="orig_bin_02_kappa_136" to="orig_bin_02_kappa_137"/>
+	<edge from="orig_bin_02_kappa_109" to="orig_bin_02_kappa_110"/>
+	<edge from="orig_bin_02_kappa_154" to="orig_bin_02_kappa_172"/>
+	<edge from="orig_bin_02_kappa_26" to="orig_bin_02_kappa_27"/>
+	<edge from="orig_bin_02_kappa_108" to="orig_bin_02_kappa_36"/>
+	<edge from="orig_bin_02_kappa_35" to="orig_bin_02_kappa_121"/>
+	<edge from="orig_bin_02_kappa_183" to="orig_bin_02_kappa_182"/>
+	<edge from="orig_bin_02_kappa_39" to="orig_bin_02_kappa_45"/>
+	<edge from="orig_bin_02_kappa_31" to="orig_bin_02_kappa_119"/>
+	<edge from="orig_bin_02_kappa_47" to="orig_bin_02_kappa_142"/>
+	<edge from="orig_bin_02_kappa_67" to="orig_bin_02_kappa_18"/>
+	<edge from="orig_bin_02_kappa_16" to="orig_bin_02_kappa_1"/>
+	<edge from="orig_bin_02_kappa_60" to="orig_bin_02_kappa_61"/>
+	<edge from="orig_bin_02_kappa_66" to="orig_bin_02_kappa_2"/>
+	<edge from="orig_bin_02_kappa_40" to="orig_bin_02_kappa_42"/>
+	<edge from="orig_bin_02_kappa_83" to="orig_bin_02_kappa_80"/>
+	<edge from="orig_bin_02_kappa_33" to="orig_bin_02_kappa_120"/>
+	<edge from="orig_bin_02_kappa_163" to="orig_bin_02_kappa_153"/>
+	<edge from="orig_bin_02_kappa_44" to="orig_bin_02_kappa_47"/>
+	<edge from="orig_bin_02_kappa_171" to="orig_bin_02_kappa_150"/>
+	<edge from="orig_bin_02_kappa_77" to="orig_bin_02_kappa_19"/>
+	<edge from="orig_bin_02_kappa_123" to="orig_bin_02_kappa_124"/>
+	<edge from="orig_bin_02_kappa_41" to="orig_bin_02_kappa_43"/>
+	<edge from="orig_bin_02_kappa_28" to="orig_bin_02_kappa_29"/>
+	<edge from="orig_bin_02_kappa_51" to="orig_bin_02_kappa_132"/>
+	<edge from="orig_bin_02_kappa_110" to="orig_bin_02_kappa_111"/>
+	<edge from="orig_bin_02_kappa_107" to="orig_bin_02_kappa_36"/>
+	<edge from="orig_bin_02_kappa_133" to="orig_bin_02_kappa_51"/>
+	<edge from="orig_bin_02_kappa_112" to="orig_bin_02_kappa_41"/>
+	<edge from="orig_bin_02_kappa_85" to="orig_bin_02_kappa_86"/>
+	<edge from="orig_bin_02_kappa_151" to="orig_bin_02_kappa_164"/>
+	<edge from="orig_bin_02_kappa_22" to="orig_bin_02_kappa_23"/>
+	<edge from="orig_bin_02_kappa_54" to="orig_bin_02_kappa_140"/>
+	<edge from="orig_bin_02_kappa_96" to="orig_bin_02_kappa_95"/>
+	<edge from="orig_bin_02_kappa_165" to="orig_bin_02_kappa_152"/>
+	<edge from="orig_bin_02_kappa_135" to="orig_bin_02_kappa_50"/>
+	<edge from="orig_bin_02_kappa_88" to="orig_bin_02_kappa_25"/>
+	<edge from="orig_bin_02_kappa_17" to="orig_bin_02_kappa_73"/>
+	<edge from="orig_bin_02_kappa_101" to="orig_bin_02_kappa_30"/>
+	<edge from="orig_bin_02_kappa_52" to="orig_bin_02_kappa_134"/>
+	<edge from="orig_bin_02_kappa_146" to="orig_bin_02_kappa_147"/>
+	<edge from="orig_bin_02_kappa_36" to="orig_bin_02_kappa_127"/>
+	<edge from="orig_bin_02_kappa_79" to="orig_bin_02_kappa_19"/>
+	<edge from="orig_bin_02_kappa_94" to="orig_bin_02_kappa_95"/>
+	<edge from="orig_bin_02_kappa_18" to="orig_bin_02_kappa_68"/>
+	<edge from="orig_bin_02_kappa_94" to="orig_bin_02_kappa_93"/>
+	<edge from="orig_bin_02_kappa_168" to="orig_bin_02_kappa_167"/>
+	<edge from="orig_bin_02_kappa_179" to="orig_bin_02_kappa_178"/>
+	<edge from="orig_bin_02_kappa_188" to="orig_bin_02_kappa_187"/>
+	<edge from="orig_bin_02_kappa_158" to="orig_bin_02_kappa_157"/>
+	<edge from="orig_bin_02_kappa_50" to="orig_bin_02_kappa_139"/>
+	<edge from="orig_bin_02_kappa_25" to="orig_bin_02_kappa_83"/>
+	<edge from="orig_bin_02_kappa_19" to="orig_bin_02_kappa_72"/>
+	<edge from="orig_bin_02_kappa_143" to="orig_bin_02_kappa_144"/>
+	<edge from="orig_bin_02_kappa_135" to="orig_bin_02_kappa_45"/>
+	<edge from="orig_bin_02_kappa_48" to="orig_bin_02_kappa_50"/>
+	<edge from="orig_bin_02_kappa_137" to="orig_bin_02_kappa_55"/>
+	<edge from="orig_bin_02_kappa_53" to="orig_bin_02_kappa_140"/>
+	<edge from="orig_bin_02_kappa_35" to="orig_bin_02_kappa_122"/>
+	<edge from="orig_bin_02_kappa_159" to="orig_bin_02_kappa_187"/>
+	<edge from="orig_bin_02_kappa_42" to="orig_bin_02_kappa_46"/>
+	<edge from="orig_bin_02_kappa_131" to="orig_bin_02_kappa_51"/>
+	<edge from="orig_bin_02_kappa_91" to="orig_bin_02_kappa_92"/>
+	<edge from="orig_bin_02_kappa_179" to="orig_bin_02_kappa_180"/>
+	<edge from="orig_bin_02_kappa_64" to="orig_bin_02_kappa_65"/>
+	<edge from="orig_bin_02_kappa_174" to="orig_bin_02_kappa_173"/>
+	<edge from="orig_bin_02_kappa_28" to="orig_bin_02_kappa_93"/>
+	<edge from="orig_bin_02_kappa_154" to="orig_bin_02_kappa_165"/>
+	<edge from="orig_bin_02_kappa_54" to="orig_bin_02_kappa_141"/>
+	<edge from="orig_bin_02_kappa_21" to="orig_bin_02_kappa_22"/>
+	<edge from="orig_bin_02_kappa_18" to="orig_bin_02_kappa_20"/>
+	<edge from="orig_bin_02_kappa_33" to="orig_bin_02_kappa_34"/>
+	<edge from="orig_bin_02_kappa_22" to="orig_bin_02_kappa_24"/>
+	<edge from="orig_bin_02_kappa_120" to="orig_bin_02_kappa_34"/>
+	<edge from="orig_bin_02_kappa_125" to="orig_bin_02_kappa_126"/>
+	<edge from="orig_bin_02_kappa_106" to="orig_bin_02_kappa_107"/>
+	<edge from="orig_bin_02_kappa_12" to="orig_bin_02_kappa_145"/>
+	<edge from="orig_bin_02_kappa_157" to="orig_bin_02_kappa_156"/>
+	<edge from="orig_bin_02_kappa_74" to="orig_bin_02_kappa_76"/>
+	<edge from="orig_bin_02_kappa_25" to="orig_bin_02_kappa_84"/>
+	<edge from="orig_bin_02_kappa_97" to="orig_bin_02_kappa_98"/>
+	<edge from="orig_bin_02_kappa_100" to="orig_bin_02_kappa_101"/>
+	<edge from="orig_bin_02_kappa_62" to="orig_bin_02_kappa_63"/>
+	<edge from="orig_bin_02_kappa_72" to="orig_bin_02_kappa_74"/>
+	<edge from="orig_bin_02_kappa_89" to="orig_bin_02_kappa_90"/>
+	<edge from="orig_bin_02_kappa_86" to="orig_bin_02_kappa_87"/>
+	<edge from="orig_bin_02_kappa_160" to="orig_bin_02_kappa_188"/>
+	<edge from="orig_bin_02_kappa_84" to="orig_bin_02_kappa_85"/>
+	<edge from="orig_bin_02_kappa_156" to="orig_bin_02_kappa_170"/>
+	<edge from="orig_bin_02_kappa_144" to="orig_bin_02_kappa_145"/>
+	<edge from="orig_bin_02_kappa_176" to="orig_bin_02_kappa_177"/>
+	<edge from="orig_bin_02_kappa_73" to="orig_bin_02_kappa_75"/>
+	<edge from="orig_bin_02_kappa_96" to="orig_bin_02_kappa_97"/>
+	<edge from="orig_bin_02_kappa_115" to="orig_bin_02_kappa_116"/>
+	<edge from="orig_bin_02_kappa_164" to="orig_bin_02_kappa_149"/>
+	<edge from="orig_bin_02_kappa_160" to="orig_bin_02_kappa_189"/>
+	<edge from="orig_bin_02_kappa_32" to="orig_bin_02_kappa_33"/>
+	<edge from="orig_bin_02_kappa_116" to="orig_bin_02_kappa_117"/>
+	<edge from="orig_bin_02_kappa_114" to="orig_bin_02_kappa_115"/>
+	<edge from="orig_bin_02_kappa_157" to="orig_bin_02_kappa_170"/>
+	<edge from="orig_bin_02_kappa_49" to="orig_bin_02_kappa_136"/>
+	<edge from="orig_bin_02_kappa_66" to="orig_bin_02_kappa_65"/>
+	<edge from="orig_bin_02_kappa_139" to="orig_bin_02_kappa_54"/>
+	<edge from="orig_bin_02_kappa_102" to="orig_bin_02_kappa_103"/>
+	<edge from="orig_bin_02_kappa_37" to="orig_bin_02_kappa_38"/>
+	<edge from="orig_bin_02_kappa_127" to="orig_bin_02_kappa_128"/>
+	<edge from="orig_bin_02_kappa_3" to="orig_bin_02_kappa_20"/>
+	<edge from="orig_bin_02_kappa_171" to="orig_bin_02_kappa_158"/>
+	<edge from="orig_bin_02_kappa_104" to="orig_bin_02_kappa_105"/>
+	<edge from="orig_bin_02_kappa_124" to="orig_bin_02_kappa_125"/>
+	<edge from="orig_bin_02_kappa_178" to="orig_bin_02_kappa_177"/>
+	<edge from="orig_bin_02_kappa_121" to="orig_bin_02_kappa_37"/>
+	<edge from="orig_bin_02_kappa_57" to="orig_bin_02_kappa_143"/>
+	<edge from="orig_bin_02_kappa_58" to="orig_bin_02_kappa_148"/>
+	<edge from="orig_bin_02_kappa_185" to="orig_bin_02_kappa_186"/>
+	<edge from="orig_bin_02_kappa_186" to="orig_bin_02_kappa_160"/>
+	<edge from="orig_bin_02_kappa_169" to="orig_bin_02_kappa_168"/>
+	<edge from="orig_bin_02_kappa_70" to="orig_bin_02_kappa_69"/>
+	<edge from="orig_bin_02_kappa_128" to="orig_bin_02_kappa_129"/>
+	<edge from="orig_bin_02_kappa_19" to="orig_bin_02_kappa_71"/>
+	<edge from="orig_bin_02_kappa_15" to="orig_bin_02_kappa_16"/>
+	<edge from="orig_bin_02_kappa_79" to="orig_bin_02_kappa_81"/>
+	<edge from="orig_bin_02_kappa_98" to="orig_bin_02_kappa_30"/>
+	<edge from="orig_bin_02_kappa_153" to="orig_bin_02_kappa_166"/>
+	<edge from="orig_bin_02_kappa_82" to="orig_bin_02_kappa_5"/>
+	<edge from="orig_bin_02_kappa_16" to="orig_bin_02_kappa_62"/>
+	<edge from="orig_bin_02_kappa_55" to="orig_bin_02_kappa_56"/>
+	<edge from="orig_bin_02_kappa_185" to="orig_bin_02_kappa_184"/>
+	<edge from="orig_bin_02_kappa_81" to="orig_bin_02_kappa_82"/>
+	<edge from="orig_bin_02_kappa_117" to="orig_bin_02_kappa_118"/>
+	<edge from="orig_bin_02_kappa_64" to="orig_bin_02_kappa_15"/>
+	<edge from="orig_bin_02_kappa_76" to="orig_bin_02_kappa_26"/>
+	<edge from="orig_bin_02_kappa_92" to="orig_bin_02_kappa_29"/>
+	<edge from="orig_bin_02_kappa_78" to="orig_bin_02_kappa_26"/>
+	<edge from="orig_bin_02_kappa_54" to="orig_bin_02_kappa_57"/>
+	<edge from="orig_bin_02_kappa_155" to="orig_bin_02_kappa_169"/>
+	<edge from="orig_bin_02_kappa_129" to="orig_bin_02_kappa_130"/>
+	<edge from="orig_bin_02_kappa_103" to="orig_bin_02_kappa_104"/>
+	<edge from="orig_bin_02_kappa_42" to="orig_bin_02_kappa_9"/>
+	<edge from="orig_bin_02_kappa_138" to="orig_bin_02_kappa_53"/>
+	<edge from="orig_bin_02_kappa_63" to="orig_bin_02_kappa_17"/>
+	<edge from="orig_bin_02_kappa_24" to="orig_bin_02_kappa_4"/>
+	<edge from="orig_bin_02_kappa_49" to="orig_bin_02_kappa_47"/>
+	<edge from="orig_bin_02_kappa_55" to="orig_bin_02_kappa_11"/>
+	<edge from="orig_bin_02_kappa_182" to="orig_bin_02_kappa_181"/>
+	<edge from="orig_bin_02_kappa_21" to="orig_bin_02_kappa_88"/>
+	<edge from="orig_bin_02_kappa_46" to="orig_bin_02_kappa_131"/>
+	<edge from="orig_bin_02_kappa_118" to="orig_bin_02_kappa_35"/>
+	<edge from="orig_bin_02_kappa_13" to="orig_bin_02_kappa_59"/>
+	<edge from="orig_bin_02_kappa_158" to="orig_bin_02_kappa_173"/>
+	<edge from="orig_bin_02_kappa_48" to="orig_bin_02_kappa_138"/>
+	<edge from="orig_bin_02_kappa_68" to="orig_bin_02_kappa_21"/>
+	<edge from="orig_bin_02_kappa_172" to="orig_bin_02_kappa_155"/>
+	<edge from="orig_bin_02_kappa_52" to="orig_bin_02_kappa_133"/>
+	<edge from="orig_bin_02_kappa_151" to="orig_bin_02_kappa_163"/>
+	<edge from="orig_bin_02_kappa_40" to="orig_bin_02_kappa_41"/>
+	<edge from="orig_bin_02_kappa_122" to="orig_bin_02_kappa_123"/>
+	<edge from="orig_bin_02_kappa_27" to="orig_bin_02_kappa_99"/>
+	<edge from="orig_bin_02_kappa_71" to="orig_bin_02_kappa_21"/>
+	<edge from="orig_bin_02_kappa_80" to="orig_bin_02_kappa_78"/>
+	<edge from="orig_bin_02_kappa_134" to="orig_bin_02_kappa_56"/>
+	<edge from="orig_bin_02_kappa_176" to="orig_bin_02_kappa_175"/>
+	<edge from="orig_bin_02_kappa_23" to="orig_bin_02_kappa_24"/>
+	<edge from="orig_bin_02_kappa_69" to="orig_bin_02_kappa_67"/>
+	<edge from="orig_bin_02_kappa_31" to="orig_bin_02_kappa_113"/>
+	<edge from="orig_bin_02_kappa_90" to="orig_bin_02_kappa_91"/>
+	<edge from="orig_bin_02_kappa_175" to="orig_bin_02_kappa_174"/>
+	<edge from="orig_bin_02_kappa_183" to="orig_bin_02_kappa_159"/>
+	<edge from="orig_bin_02_kappa_147" to="orig_bin_02_kappa_148"/>
+	<edge from="orig_bin_02_kappa_23" to="orig_bin_02_kappa_89"/>
+	<edge from="orig_bin_02_kappa_32" to="orig_bin_02_kappa_102"/>
+	<edge from="orig_bin_02_kappa_142" to="orig_bin_02_kappa_52"/>
+	<edge from="orig_bin_02_kappa_17" to="orig_bin_02_kappa_70"/>
+	<edge from="orig_bin_02_kappa_99" to="orig_bin_02_kappa_100"/>
+	<edge from="orig_bin_02_kappa_59" to="orig_bin_02_kappa_58"/>
+	<edge from="orig_bin_02_kappa_130" to="orig_bin_02_kappa_46"/>
 </graph>
 </gxl>

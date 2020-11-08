@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="bb_other_49">
+	<attr name="x_mean">
+		<float>6.0</float>
+	</attr>
+	<attr name="y_mean">
+		<float>3.5</float>
+	</attr>
+	<attr name="x_std">
+		<float>5.0</float>
+	</attr>
+	<attr name="y_std">
+		<float>3.5</float>
+	</attr>
+	<attr name="x_max">
+		<float>11</float>
+	</attr>
+	<attr name="y_max">
+		<float>7</float>
+	</attr>
+	<node id="bb_other_49_0">
+		<attr name="x">
+			<float>1.0</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0</float>
+		</attr>
+	</node>
+	<node id="bb_other_49_1">
+		<attr name="x">
+			<float>-1.0</float>
+		</attr>
+		<attr name="y">
+			<float>1.0</float>
+		</attr>
+	</node>
+	<edge from="bb_other_49_0" to="bb_other_49_1"/>
+</graph>
+</gxl>

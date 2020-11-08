@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
 <gxl>
-<graph edgeids="false" edgemode="undirected" id="3_epsilon">
+<graph edgeids="false" edgemode="undirected" id="orig_bin_03_epsilon">
+	<attr name="x_mean">
+		<float>16.75</float>
+	</attr>
+	<attr name="y_mean">
+		<float>17.416666666666668</float>
+	</attr>
 	<attr name="x_std">
 		<float>5.559651268040309</float>
 	</attr>
 	<attr name="y_std">
 		<float>6.469479628738826</float>
 	</attr>
-	<node id="3_epsilon_0">
+	<attr name="x_max">
+		<float>28</float>
+	</attr>
+	<attr name="y_max">
+		<float>28</float>
+	</attr>
+	<node id="orig_bin_03_epsilon_0">
 		<attr name="x">
 			<float>1.7237292181297748</float>
 		</attr>
@@ -16,7 +28,7 @@
 			<float>-1.0433605772580288</float>
 		</attr>
 	</node>
-	<node id="3_epsilon_1">
+	<node id="orig_bin_03_epsilon_1">
 		<attr name="x">
 			<float>-0.9742817319863948</float>
 		</attr>
@@ -24,7 +36,7 @@
 			<float>-0.8887886398864691</float>
 		</attr>
 	</node>
-	<node id="3_epsilon_2">
+	<node id="orig_bin_03_epsilon_2">
 		<attr name="x">
 			<float>1.903596614804186</float>
 		</attr>
@@ -32,7 +44,7 @@
 			<float>0.03864298434288996</float>
 		</attr>
 	</node>
-	<node id="3_epsilon_3">
+	<node id="orig_bin_03_epsilon_3">
 		<attr name="x">
 			<float>0.644524838083307</float>
 		</attr>
@@ -40,7 +52,7 @@
 			<float>1.4297904206869285</float>
 		</attr>
 	</node>
-	<node id="3_epsilon_4">
+	<node id="orig_bin_03_epsilon_4">
 		<attr name="x">
 			<float>-0.7944143353119835</float>
 		</attr>
@@ -48,7 +60,7 @@
 			<float>-0.8887886398864691</float>
 		</attr>
 	</node>
-	<node id="3_epsilon_5">
+	<node id="orig_bin_03_epsilon_5">
 		<attr name="x">
 			<float>-0.43467954196316083</float>
 		</attr>
@@ -56,7 +68,7 @@
 			<float>-0.11592895302866987</float>
 		</attr>
 	</node>
-	<node id="3_epsilon_6">
+	<node id="orig_bin_03_epsilon_6">
 		<attr name="x">
 			<float>0.2847900447344843</float>
 		</attr>
@@ -64,7 +76,7 @@
 			<float>-1.3525044520011487</float>
 		</attr>
 	</node>
-	<node id="3_epsilon_7">
+	<node id="orig_bin_03_epsilon_7">
 		<attr name="x">
 			<float>-0.43467954196316083</float>
 		</attr>
@@ -72,7 +84,7 @@
 			<float>-0.5796447651433494</float>
 		</attr>
 	</node>
-	<node id="3_epsilon_8">
+	<node id="orig_bin_03_epsilon_8">
 		<attr name="x">
 			<float>0.46465744140889564</float>
 		</attr>
@@ -80,7 +92,7 @@
 			<float>0.03864298434288996</float>
 		</attr>
 	</node>
-	<node id="3_epsilon_9">
+	<node id="orig_bin_03_epsilon_9">
 		<attr name="x">
 			<float>-0.9742817319863948</float>
 		</attr>
@@ -88,7 +100,7 @@
 			<float>0.1932149217144498</float>
 		</attr>
 	</node>
-	<node id="3_epsilon_10">
+	<node id="orig_bin_03_epsilon_10">
 		<attr name="x">
 			<float>-1.3340165253352174</float>
 		</attr>
@@ -96,7 +108,7 @@
 			<float>1.4297904206869285</float>
 		</attr>
 	</node>
-	<node id="3_epsilon_11">
+	<node id="orig_bin_03_epsilon_11">
 		<attr name="x">
 			<float>-0.07494474861433825</float>
 		</attr>
@@ -104,16 +116,16 @@
 			<float>1.7389342954300482</float>
 		</attr>
 	</node>
-	<edge from="3_epsilon_3" to="3_epsilon_11"/>
-	<edge from="3_epsilon_5" to="3_epsilon_8"/>
-	<edge from="3_epsilon_6" to="3_epsilon_0"/>
-	<edge from="3_epsilon_6" to="3_epsilon_4"/>
-	<edge from="3_epsilon_1" to="3_epsilon_4"/>
-	<edge from="3_epsilon_4" to="3_epsilon_7"/>
-	<edge from="3_epsilon_5" to="3_epsilon_9"/>
-	<edge from="3_epsilon_7" to="3_epsilon_5"/>
-	<edge from="3_epsilon_10" to="3_epsilon_11"/>
-	<edge from="3_epsilon_8" to="3_epsilon_2"/>
-	<edge from="3_epsilon_9" to="3_epsilon_10"/>
+	<edge from="orig_bin_03_epsilon_3" to="orig_bin_03_epsilon_11"/>
+	<edge from="orig_bin_03_epsilon_5" to="orig_bin_03_epsilon_8"/>
+	<edge from="orig_bin_03_epsilon_6" to="orig_bin_03_epsilon_0"/>
+	<edge from="orig_bin_03_epsilon_6" to="orig_bin_03_epsilon_4"/>
+	<edge from="orig_bin_03_epsilon_1" to="orig_bin_03_epsilon_4"/>
+	<edge from="orig_bin_03_epsilon_4" to="orig_bin_03_epsilon_7"/>
+	<edge from="orig_bin_03_epsilon_5" to="orig_bin_03_epsilon_9"/>
+	<edge from="orig_bin_03_epsilon_7" to="orig_bin_03_epsilon_5"/>
+	<edge from="orig_bin_03_epsilon_10" to="orig_bin_03_epsilon_11"/>
+	<edge from="orig_bin_03_epsilon_8" to="orig_bin_03_epsilon_2"/>
+	<edge from="orig_bin_03_epsilon_9" to="orig_bin_03_epsilon_10"/>
 </graph>
 </gxl>

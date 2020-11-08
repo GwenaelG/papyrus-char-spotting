@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="bb_other_94">
+	<attr name="x_mean">
+		<float>15.0</float>
+	</attr>
+	<attr name="y_mean">
+		<float>2.5714285714285716</float>
+	</attr>
+	<attr name="x_std">
+		<float>8.831760866327848</float>
+	</attr>
+	<attr name="y_std">
+		<float>2.6649654437396615</float>
+	</attr>
+	<attr name="x_max">
+		<float>30</float>
+	</attr>
+	<attr name="y_max">
+		<float>7</float>
+	</attr>
+	<node id="bb_other_94_0">
+		<attr name="x">
+			<float>-0.3396831102433787</float>
+		</attr>
+		<attr name="y">
+			<float>0.16081688022566915</float>
+		</attr>
+	</node>
+	<node id="bb_other_94_1">
+		<attr name="x">
+			<float>-1.1322770341445956</float>
+		</attr>
+		<attr name="y">
+			<float>1.2865350418053536</float>
+		</attr>
+	</node>
+	<node id="bb_other_94_2">
+		<attr name="x">
+			<float>-0.45291081365783825</float>
+		</attr>
+		<attr name="y">
+			<float>1.661774428998582</float>
+		</attr>
+	</node>
+	<node id="bb_other_94_3">
+		<attr name="x">
+			<float>1.3587324409735149</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9649012813540154</float>
+		</attr>
+	</node>
+	<node id="bb_other_94_4">
+		<attr name="x">
+			<float>1.6984155512168935</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5896618941607872</float>
+		</attr>
+	</node>
+	<node id="bb_other_94_5">
+		<attr name="x">
+			<float>-0.6793662204867574</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9649012813540154</float>
+		</attr>
+	</node>
+	<node id="bb_other_94_6">
+		<attr name="x">
+			<float>-0.45291081365783825</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5896618941607872</float>
+		</attr>
+	</node>
+	<edge from="bb_other_94_0" to="bb_other_94_1"/>
+	<edge from="bb_other_94_1" to="bb_other_94_2"/>
+	<edge from="bb_other_94_5" to="bb_other_94_6"/>
+	<edge from="bb_other_94_3" to="bb_other_94_4"/>
+	<edge from="bb_other_94_0" to="bb_other_94_2"/>
+</graph>
+</gxl>

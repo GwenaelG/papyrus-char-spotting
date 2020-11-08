@@ -153,7 +153,7 @@ public class GMPropertyCSVSimple {
                 GMPropertyFile.addValue(propertyValues, "result", resultSubpath, "");
                 GMPropertyFile.addValue(propertyValues, "imagesPath", imagesPath, "");
                 GMPropertyFile.addValue(propertyValues, "editDistVis", distVisPath, "");
-                GMPropertyFile.addValue(propertyValues, "boundingBoxesGT", boundingBoxes, "");
+                GMPropertyFile.addValue(propertyValues, "boundingBoxesFolder", boundingBoxes, "");
 
 
                 GMPropertyFile.addValue(propertyValues, "matching", MATCHING, "HED");

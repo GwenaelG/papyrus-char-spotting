@@ -1,0 +1,98 @@
+# cxl files
+targetFile=test/papyrus/reduced/target_reconstructed_bold.cxl
+sourceFile=test/papyrus/reduced/source_reconstructed_bold.cxl
+
+# graphs folder
+sourcePath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/chars/D_1/v_2/
+targetPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/better_pages/D_1/v_2/
+
+# original images
+imagesPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/better_pages/
+
+# results folder
+result=test/papyrus/results/
+
+# groundtruth file
+groundtruth=test/papyrus/groundtruth.txt
+
+# trec eval file
+treceval=treceval/trec_eval.exe
+
+# should be "best" or "worst" (GreedyMatrixGenerator)
+adj=bestWithGreedy
+
+# HED only possible, others commented (not tested)
+matching=HED
+
+# all node attributes
+numOfNodeAttr=2
+nodeAttr0=x
+nodeCostType0=
+nodeAttr0Importance=0.1
+nodeAttr1=y
+nodeCostType1=
+nodeAttr1Importance=0.9
+multiplyNodeCosts=0
+
+# all edge attributes
+numOfEdgeAttr=0
+multiplyEdgeCosts=0
+
+# node/edge cost balance
+alpha=0.5
+
+# costs
+node=8
+edge=4
+
+# print options
+outputGraphs=0
+outputCostMatrix=0
+outputMatching=0
+outputEditPath=0
+
+# cost function, "Euclidean" or "Euclidean Scaling"
+costType=Euclidean Scaling
+
+# whether similarities or distances are computed
+simKernel=0
+
+# undirected edges?
+undirected=1
+
+# normalisation function (N1, N2, N3)
+normalisationFunction=N1
+
+# p-rooted
+pNode=1
+pEdge=1
+
+# window sizes
+numOfWindowSizes=5
+windowSize0=0.5
+windowSize1=0.75
+windowSize2=1
+windowSize3=1.5
+windowSize4=2
+
+# bounding boxes groundtruth folder
+boundingBoxesFolder=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/groundtruth/
+
+# edit distance visualization folder
+editDistVis=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/hotmap/
+
+numOfSteepnessVal=7
+steepnessVal0=0.1
+steepnessVal1=0.25
+steepnessVal2=0.5
+steepnessVal3=1
+steepnessVal4=2
+steepnessVal5=5
+steepnessVal6=10
+
+numOfThresholdVal=5
+threshold0=-2
+threshold1=-1.5
+threshold2=-1
+threshold3=-0.5
+threshold4=-0.25
