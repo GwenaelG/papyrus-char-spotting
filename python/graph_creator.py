@@ -9,7 +9,7 @@ from keypoint_graph_creation import keypoint_start
 from contour_graph_creation import contour_start
 
 
-location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/pages/'
+location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/chars/'
 
 def contour():
     print('Contour Graphs')
@@ -36,5 +36,6 @@ def keypoint():
         end = time.time()
         print(f'D = {Di}, time =  {(end-start):.5} s')
     
-    
+
+contour()
 keypoint()

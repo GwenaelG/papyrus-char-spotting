@@ -269,12 +269,10 @@ public class ResultPrinter {
 							  FourDimAL<Integer> TN){
 		String resultNameComplete = this.resultFolder + "/" + name + "_complete.res";
 		String resultNamePrecRec = this.resultFolder + "/" + name + "_precision_recall.res";
-//		String resultNameRecall = this.resultFolder + "/" + name + "_recall.res";
 
 		try {
 			PrintWriter wrComp = new PrintWriter(new FileOutputStream(resultNameComplete));
 			PrintWriter wrPrecRec = new PrintWriter(new FileOutputStream(resultNamePrecRec));
-//			PrintWriter wrRec = new PrintWriter(new FileOutputStream(resultNameRecall));
 
 			int r = source.size();
 			int c = target.size();
@@ -296,9 +294,11 @@ public class ResultPrinter {
 					bestPrecision.set(i,j,0,0.);
 					bestPrecision.set(i,j,1,0.);
 					bestPrecision.set(i,j,2,0.);
+					bestPrecision.set(i,j,3,0.);
 					bestRecall.set(i,j,0,0.);
 					bestRecall.set(i,j,1,0.);
 					bestRecall.set(i,j,2,0.);
+					bestRecall.set(i,j,3,0.);
 
 					for (int k = 0; k < windowSizes.length; k++){
 						wrComp.println("-----------------");
@@ -317,16 +317,19 @@ public class ResultPrinter {
 							int sum = nbTP + nbTN + nbFP + nbFN;
 							wrComp.println("total: " + sum);
 							double precision = (double) nbTP / (nbTP + nbFP);
+							double recall = (double) nbTP / (nbTP + nbFN);
 							if (precision > bestPrecision.get(i,j,0)) {
 								bestPrecision.set(i,j,0,precision);
 								bestPrecision.set(i,j,1,(double) k);
 								bestPrecision.set(i,j,2,(double) l);
+								bestPrecision.set(i,j,3,recall);
 							}
-							double recall = (double) nbTP / (nbTP + nbFN);
+
 							if (recall > bestRecall.get(i,j,0)) {
 								bestRecall.set(i,j,0,recall);
 								bestRecall.set(i,j,1, (double) k);
-								bestRecall.set(i,k,2, (double) l);
+								bestRecall.set(i,j,2, (double) l);
+								bestRecall.set(i,j,3, precision);
 							}
 							wrComp.println("precision: " + String.format("%.3f", precision) + "; recall: " + String.format("%.3f\n", recall));
 						}
@@ -334,12 +337,14 @@ public class ResultPrinter {
 					wrPrecRec.println(sourceIds[i]+" "+targetIds[j]);
 
 					String nextLine = "best precision: "+ String.format("%.3f", bestPrecision.get(i,j,0));
-					nextLine += ", win: " + String.format("%.3f", windowSizes[bestPrecision.get(i,j,1).intValue()]);
-					nextLine += ", thresh: "+ String.format("%.3f", thresholds[bestPrecision.get(i,j,2).intValue()]);
+					nextLine += ", recall: " + String.format("%.3f", bestPrecision.get(i,j,3));
+					nextLine += ", win: " + String.format("%.2f", windowSizes[bestPrecision.get(i,j,1).intValue()]);
+					nextLine += ", thresh: "+ String.format("%.2f", thresholds[bestPrecision.get(i,j,2).intValue()]);
 					wrPrecRec.println(nextLine);
 					nextLine = "best recall: "+ String.format("%.3f", bestRecall.get(i,j,0));
-					nextLine += ", win: " + String.format("%.3f", windowSizes[bestRecall.get(i,j,1).intValue()]);
-					nextLine += ", thresh: "+ String.format("%.3f", thresholds[bestRecall.get(i,j,2).intValue()])+"\n";
+					nextLine += ", precision: "+ String.format("%.3f", bestRecall.get(i,j,3));
+					nextLine += ", win: " + String.format("%.2f", windowSizes[bestRecall.get(i,j,1).intValue()]);
+					nextLine += ", thresh: "+ String.format("%.2f", thresholds[bestRecall.get(i,j,2).intValue()])+"\n";
 					wrPrecRec.println(nextLine);
 				}
 			}

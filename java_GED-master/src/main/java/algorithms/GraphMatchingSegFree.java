@@ -29,15 +29,12 @@ import util.treceval.TrecEval;
 import xml.GraphParser;
 
 import javax.imageio.ImageIO;
-import javax.swing.plaf.nimbus.AbstractRegionPainter;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -245,10 +242,11 @@ public class GraphMatchingSegFree {
 		// iterate through all pairs of graphs g_i x g_j from (source, target)
 		System.out.println("Starting the matching...");
 		System.out.println("Progress...");
-		int numOfMatchings = this.source.size() * windowSizes.length;
+		int numOfMatchings = 0;
 		for (Graph graph : target){
-			numOfMatchings *= graph.size();
+			numOfMatchings += graph.size();
 		}
+		numOfMatchings *= this.source.size() * windowSizes.length;
 		// distance value d
 		double d = -1;
 		double d_norm = -1;
@@ -304,7 +302,10 @@ public class GraphMatchingSegFree {
 
 					Node centerNode = targetPage.get(k);
 
-					ArrayList<Graph> windows = targetPage.extractWindows(centerNode, windowMaxDistances);
+//					ArrayList<Graph> windows = targetPage.extractWindowsNodeCenter(centerNode, windowMaxDistances);
+					double[] centerNodeCoords = {centerNode.getDouble("x"), centerNode.getDouble("y")};
+					ArrayList<Graph> windows = targetPage.extractWindowsCoords(centerNodeCoords, windowMaxDistances);
+
 
 					for (int l = 0; l < windowSizes.length; l++) {
 
