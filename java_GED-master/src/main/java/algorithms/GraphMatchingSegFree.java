@@ -304,7 +304,7 @@ public class GraphMatchingSegFree {
 
 //					ArrayList<Graph> windows = targetPage.extractWindowsNodeCenter(centerNode, windowMaxDistances);
 					double[] centerNodeCoords = {centerNode.getDouble("x"), centerNode.getDouble("y")};
-					ArrayList<Graph> windows = targetPage.extractWindowsCoords(centerNodeCoords, windowMaxDistances);
+					ArrayList<Graph> windows = targetPage.extractWindowsCenterCoords(centerNodeCoords, windowMaxDistances);
 
 
 					for (int l = 0; l < windowSizes.length; l++) {

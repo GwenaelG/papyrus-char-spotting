@@ -32,6 +32,5 @@ def create_xml(csv_folder, gt_folder):
 
         
 gt_folder = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/groundtruth/"
-csv_folder = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/groundtruth/orig_bin_"
-for t in ["01/", "04/", "05/", "06/", "07/", "08/", "10/"]:
-    create_xml(csv_folder+t, gt_folder)
+csv_folder = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/groundtruth/csv/orig_bin_02_patch/"
+create_xml(csv_folder, gt_folder)

@@ -1,16 +1,13 @@
 package properties;
 
-import jdk.nashorn.internal.ir.SwitchNode;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
-import properties.GMPropertyFile;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * User: Michael Stauffer
@@ -24,25 +21,26 @@ public class GMPropertyCSVSimple {
 
     private static final String GROUND_TRUTH    = "test/papyrus/groundtruth.txt";
     private static final String MATCHING        = "HED";
-    private static final String TREC_EVAL       = "treceval/trec_eval";
+    private static final String TREC_EVAL       = "treceval/trec_eval.exe";
 
     public static void main(String[] args) {
 
-        String parameterFile    = "test/papyrus/settings/Parameters.csv";
-        String graphFile        = "test/papyrus/settings/Graphs.csv";
-        String resultPath       = "test/papyrus/results/";
-        String propertyPath     = "test/papyrus/properties/";
-        String imagesPath       = "/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/original_bin/pages/";
-        String distVisPath      = "/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/hotmap/";
-        String[] windowSizes    = new String[]{"0.5", "0.75", "1", "1.5", "2"};
-        String[] steepnessValues = new String[]{"0.1","0.25","0.5","1","2","5","10"};
-        String[] thresholdValues = new String[]{"-4", "-3", "-2", "-1", "0"};
+        String parameterFile    = "test/papyrus/settings/ParametersL_kp.csv";
+        String graphFile        = "test/papyrus/settings/Graphs_kp.csv";
+        String resultPath       = "test/papyrus/results/recons/core1_kp/";
+        String propertyPath     = "test/papyrus/properties/recons/kp/";
+        String sourceImagesPath = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/chars/";
+        String targetImagesPath = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/patches/";
+        String distVisFolder      = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/hotmap/";
+        String charVisFolder    = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/char/recons/kp/";
+        String[] windowSizes    = new String[]{"0.5", "0.6", "0.7", "0.8", "0.9", "1", "1.2", "1.4", "1.6", "1.8", "2"};
+        String[] thresholdValues = new String[]{"-2", "-1.8", "-1.6", "-1.4", "-1.2", "-1", "-0.8", "-0.6", "-0.4", "-0.2"};
 
-        readCSVFiles(parameterFile, graphFile, resultPath, propertyPath, imagesPath, distVisPath, windowSizes, steepnessValues, thresholdValues);
+        readCSVFiles(parameterFile, graphFile, resultPath, propertyPath, sourceImagesPath, targetImagesPath, distVisFolder, charVisFolder, windowSizes, thresholdValues);
     }
 
     private static void readCSVFiles(String parameterFile, String graphFile, String resultPath, String propertyPath,
-                                     String imagesPath, String distVisPath, String[] windowSizes, String[] steepnessValues,
+                                     String sourceImagesPath, String targetImagesPath, String distVisFolder, String charVisFolder, String[] windowSizes,
                                      String[] thresholdValues){
 
         try {
@@ -129,6 +127,9 @@ public class GMPropertyCSVSimple {
                 String alphaImportance  = getValue(parameterRecord, "Alpha");
                 String betaImportance   = getValue(parameterRecord, "Beta");
 
+                String stepX            = getValue(parameterRecord, "Step X");
+                String stepY            = getValue(parameterRecord, "Step Y");
+
                 // Convert beta to x- and y-importance
                 if(betaImportance != null){
 
@@ -151,8 +152,11 @@ public class GMPropertyCSVSimple {
                 GMPropertyFile.addValue(propertyValues, "sourcePath", graphSourcePath, "");
                 GMPropertyFile.addValue(propertyValues, "targetPath", graphTargetPath, "");
                 GMPropertyFile.addValue(propertyValues, "result", resultSubpath, "");
-                GMPropertyFile.addValue(propertyValues, "imagesPath", imagesPath, "");
-                GMPropertyFile.addValue(propertyValues, "editDistVis", distVisPath, "");
+                GMPropertyFile.addValue(propertyValues, "sourceImagesPath", sourceImagesPath, "");
+                GMPropertyFile.addValue(propertyValues, "targetImagesPath", targetImagesPath, "");
+                GMPropertyFile.addValue(propertyValues, "editDistVis", distVisFolder, "");
+                GMPropertyFile.addValue(propertyValues, "charVisFolder", charVisFolder, "");
+
                 GMPropertyFile.addValue(propertyValues, "boundingBoxesFolder", boundingBoxes, "");
 
 
@@ -185,7 +189,6 @@ public class GMPropertyCSVSimple {
                     GMPropertyFile.addValue(propertyValues, "nodeAttr1Importance", "1.0", "");
                 }
 
-
                 GMPropertyFile.addValue(propertyValues, "multiplyNodeCosts", "0","");
 
                 GMPropertyFile.addValue(propertyValues, "undirected", "1", "");
@@ -213,15 +216,13 @@ public class GMPropertyCSVSimple {
                     GMPropertyFile.addValue(propertyValues, "windowSize"+i, windowSizes[i],"");
                 }
 
-               GMPropertyFile.addValue(propertyValues, "numOfSteepnessVal", Integer.toString(steepnessValues.length), "");
-                for (int i = 0; i < steepnessValues.length; i++) {
-                    GMPropertyFile.addValue(propertyValues, "steepnessVal"+i, steepnessValues[i], "");
-                }
-
                 GMPropertyFile.addValue(propertyValues, "numOfThresholdVal", Integer.toString(thresholdValues.length),"");
                 for (int i = 0; i < thresholdValues.length; i++) {
                     GMPropertyFile.addValue(propertyValues, "threshold"+i, thresholdValues[i],"");
                 }
+
+                GMPropertyFile.addValue(propertyValues, "stepX", stepX, "5");
+                GMPropertyFile.addValue(propertyValues, "stepY", stepY, "5");
 
                 // Export values
                 GMPropertyFile.export(propertyFile, propertyValues);

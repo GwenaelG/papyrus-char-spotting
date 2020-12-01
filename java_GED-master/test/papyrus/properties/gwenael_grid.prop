@@ -3,8 +3,8 @@ targetFile=test/papyrus/reduced/target.cxl
 sourceFile=test/papyrus/reduced/source.cxl
 
 # graphs folder
-sourcePath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/chars/D_1/v_1/
-targetPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/pages/D_1/v_1/
+sourcePath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/chars/D_1/v_4/
+targetPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/pages/D_1/v_4/
 
 # original images
 imagesPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/pages/
@@ -28,10 +28,10 @@ matching=HED
 numOfNodeAttr=2
 nodeAttr0=x
 nodeCostType0=
-nodeAttr0Importance=0.1
+nodeAttr0Importance=0.5
 nodeAttr1=y
 nodeCostType1=
-nodeAttr1Importance=0.9
+nodeAttr1Importance=0.5
 multiplyNodeCosts=0
 
 # all edge attributes
@@ -68,12 +68,18 @@ pNode=1
 pEdge=1
 
 # window sizes
-numOfWindowSizes=5
+numOfWindowSizes=11
 windowSize0=0.5
-windowSize1=0.75
-windowSize2=1
-windowSize3=1.5
-windowSize4=2
+windowSize1=0.6
+windowSize2=0.7
+windowSize3=0.8
+windowSize4=0.9
+windowSize5=1
+windowSize6=1.2
+windowSize7=1.4
+windowSize8=1.6
+windowSize9=1.8
+windowSize10=2
 
 
 # bounding boxes groundtruth folder
@@ -90,12 +96,17 @@ steepnessVal4=2
 steepnessVal5=5
 steepnessVal6=10
 
-numOfThresholdVal=5
+numOfThresholdVal=10
 threshold0=-2
-threshold1=-1.5
-threshold2=-1
-threshold3=-0.5
-threshold4=-0.25
+threshold1=-1.8
+threshold2=-1.6
+threshold3=-1.4
+threshold4=-1.2
+threshold5=-1.0
+threshold6=-0.8
+threshold7=-0.6
+threshold8=-0.4
+threshold9=-0.2
 
 stepX=10
 stepY=10

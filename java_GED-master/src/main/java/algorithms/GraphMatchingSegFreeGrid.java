@@ -27,12 +27,15 @@ import org.w3c.dom.NodeList;
 import util.EditDistance;
 import util.MatrixGenerator;
 import util.ResultPrinter;
+import util.treceval.SpottingPostProcessing;
+import util.treceval.SpottingResult;
 import util.treceval.TrecEval;
 import xml.GraphParser;
 
 import javax.imageio.ImageIO;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
@@ -186,18 +189,18 @@ public class GraphMatchingSegFreeGrid {
 
 	// images for dist display
 	private ArrayList<BufferedImage> targetImages;
+	private ArrayList<BufferedImage> sourceImages;
+
 
 	// size of circles
 	private static final int RADIUS = 5;
 
 	// folder for saving images
-	private Path visualizationFolder;
+	private Path hotmapVisFolder;
+	private Path charVisFolder;
 
 	// use sigmoid (or linear distance-to-color conversion )
 	private boolean sigmoid;
-
-	// steepness values for sigmoid function
-	private double[] steepness;
 
 	// normalized threshold (for normalized distances)
 	private double[] thresholds;
@@ -251,16 +254,14 @@ public class GraphMatchingSegFreeGrid {
 		System.out.println("Progress...");
 
 		int numOfMatchings = 0;
-		for (Graph graph : target){
-			numOfMatchings +=  (int)(graph.getDouble("x_max") / stepX) * (int)(graph.getDouble("y_max") / stepY);
+		for (BufferedImage img : targetImages){
+			numOfMatchings +=  (img.getWidth() / stepX + 1) * (img.getHeight() / stepY + 1);
 		}
 		numOfMatchings *= this.source.size() * windowSizes.length;
 
 		// distance value d
 		double d = -1;
 		double d_norm = -1;
-		ArrayList<Double> dMax = new ArrayList<>();
-		Double dMaxGlobal = 0.;
 
 		// swapped the graphs?
 		boolean swapped = false;
@@ -285,36 +286,35 @@ public class GraphMatchingSegFreeGrid {
 
 			// get size of source graph
 			// max taken before normalization
-			double xMaxSource = sourceGraph.getDouble("x_max");
-			double yMaxSource = sourceGraph.getDouble("y_max");
+			double sourceWidth = sourceImages.get(i).getWidth();
+			double sourceHeight = sourceImages.get(i).getHeight();
 
 			for (int j0 = 0; j0 < idxs2.length; j0++) {
 				int j = idxs2[j0];
 
 				targetPage = this.target.get(j);
 
-				double xMax = targetPage.getDouble("x_max");
-				double yMax = targetPage.getDouble("y_max");
+				double targetWidth = targetImages.get(j).getWidth();
+				double targetHeight = targetImages.get(j).getHeight();
 				double xMean = targetPage.getDouble("x_mean");
 				double yMean = targetPage.getDouble("y_mean");
 				double xStDev = targetPage.getDouble("x_std");
 				double yStDev = targetPage.getDouble("y_std");
 
-				int numOfStepsX = (int) (xMax / stepX);
-				int numOfStepsY = (int)(yMax / stepY);
+				int numOfStepsX = (int) Math.ceil(targetWidth / stepX);
+				int numOfStepsY = (int) Math.ceil(targetHeight / stepY);
 				int numOfGridPoints = numOfStepsX * numOfStepsY;
 				gridSizes.set(j, 0, numOfGridPoints);
 				gridSizes.set(j, 1, numOfStepsX);
 				gridSizes.set(j, 2, numOfStepsY);
 
-
 				// window dimensions
 				double[][] windowMaxDistances = new double[windowSizes.length][2];
 				for (int k = 0; k < windowSizes.length; k++){
-					windowMaxDistances[k] = new double[] {windowSizes[k] * (xMaxSource) / xStDev,
-							windowSizes[k] * (yMaxSource) / yStDev};
-					dMax.add((double) 0);
+					windowMaxDistances[k] = new double[] {windowSizes[k] * (sourceWidth) / (xStDev * 2)  ,
+							windowSizes[k] * (sourceHeight) / (yStDev * 2)};
 				}
+				System.out.println("win: "+windowMaxDistances[0][0]+" "+windowMaxDistances[0][1]);
 
 				// center windows on each node of the page graph
 				for (int k = 0; k < numOfGridPoints; k++){
@@ -326,7 +326,7 @@ public class GraphMatchingSegFreeGrid {
 
 					double[] windowCenterCoords = {(columnCoord - xMean) / xStDev, (rowCoord - yMean) / yStDev};
 
-					ArrayList<Graph> windows = targetPage.extractWindowsCoords(windowCenterCoords, windowMaxDistances);
+					ArrayList<Graph> windows = targetPage.extractWindowsCenterCoords(windowCenterCoords, windowMaxDistances);
 
 					for (int l = 0; l < windowSizes.length; l++) {
 
@@ -359,7 +359,6 @@ public class GraphMatchingSegFreeGrid {
 
 								HED hed = new HED();
 								d = hed.getHausdorffEditDistance(sourceGraph, targetGraph, costFunctionManager);
-//								System.out.println(sourceGraph.getGraphID()+" "+targetGraph.getGraphID()+" "+d);
 								editPath = null;
 
 								double[] distances = this.editDistance.getNormalisedEditDistance(sourceGraph, targetGraph, d, normalisationFunction);
@@ -368,8 +367,6 @@ public class GraphMatchingSegFreeGrid {
 								d_norm = distances[1];
 							}
 						}
-
-						dMaxGlobal = Math.max(dMaxGlobal, d); //not used anymore
 
 
 						// whether distances or similarities are computed
@@ -401,33 +398,48 @@ public class GraphMatchingSegFreeGrid {
 			}
 		}
 
-		String convMethod = new String();
+		ArrayList<SpottingResult> spottingResults = new ArrayList<>();
 
 		// display edit distance between target node window and source char
 		 for (int i = 0; i < source.size(); i++) {
 
+		 	Graph sourceGraph = source.get(i);
+		 	String charID = sourceGraph.getGraphID();
+		 	String charClass = this.wordList.get(sourceGraph.getGraphID());
+
 			for (int j = 0; j < target.size(); j++) {
 
 				int numOfGridPoints = gridSizes.get(j,0);
+				int numOfStepsX = gridSizes.get(j,1);
 
 				targetPage = target.get(j);
+				String targetPageID = targetPage.getGraphID();
+
 				double xMean = targetPage.getDouble("x_mean");
 				double yMean = targetPage.getDouble("y_mean");
 				double xStDev = targetPage.getDouble("x_std");
 				double yStDev = targetPage.getDouble("y_std");
 
-				// normalize distances for color conversion
+				double minDist = Double.POSITIVE_INFINITY;
+				int[] bestIDs = new int[2];
+
+				// normalize distances for threshold
 				double distMean = 0;
 				double distSumSqDiff = 0;
 
 				for (int k = 0; k < numOfGridPoints; k++) {
 					for (int l = 0; l < windowSizes.length; l++) {
 						double dist = distanceMatrix.get(i, j, k, l);
+						// keep min dist with corresponding grid point and window size
+						if (dist < minDist) {
+							minDist = dist;
+							bestIDs[0] = k;
+							bestIDs[1] = l;
+						}
 						distMean += dist;
 					}
 				}
 				distMean /= targetPage.size();
-
 
 				for (int k = 0; k < numOfGridPoints; k++) {
 					for (int l = 0; l < windowSizes.length; l++) {
@@ -451,113 +463,101 @@ public class GraphMatchingSegFreeGrid {
 
 				for (int k = 0; k < windowSizes.length; k++) {
 
-//					int steepnessLen = steepness.length;
-//
-//					for (int l = 0; l < steepnessLen; l++) {
-//
-//						BufferedImage oldImg = targetImages.get(j);
-//						BufferedImage img = new BufferedImage(oldImg.getWidth(), oldImg.getHeight(), BufferedImage.TYPE_INT_RGB);
-//						Graphics2D g = (Graphics2D) img.getGraphics();
-//						g.drawImage(oldImg, 0,0, null);
-//						g.setColor(Color.white);
-//						g.fillRect(0, 0, img.getWidth(), img.getHeight());
+					for (int m = 0; m < numOfGridPoints; m++) {
 
-						for (int m = 0; m < numOfGridPoints; m++) {
+						String targetWindowID = targetPageID+"_pt"+m+"_w"+windowSizes[k];
 
-							//un-normalize to get image coords
-							int numOfStepsX = gridSizes.get(j,1);
-							double nodeX = m / numOfStepsX * stepX;
-							double nodeY = m % numOfStepsX * stepY;
-							// careful with access order
-							double dist = normColorDistMatrix.get(i,j,m,k);
+						//un-normalize to get image coords
+						double nodeX = (m / numOfStepsX) * stepX;
+						double nodeY = (m % numOfStepsX) * stepY;
+						// careful with access order
+						double dist = normColorDistMatrix.get(i,j,m,k);
 
-							for(int t = 0; t < thresholds.length; t++){
-								boolean underThresh = false;
-								double thresh = thresholds[t];
-								if (dist <= thresh){
-									underThresh = true;
-								}
-								underThresholdMat.set(i,j,m,k,t,underThresh);
+						for(int t = 0; t < thresholds.length; t++){
+							boolean underThresh = false;
+							double thresh = thresholds[t];
+							if (dist <= thresh){
+								underThresh = true;
 							}
+							underThresholdMat.set(i,j,m,k,t,underThresh);
+						}
 
+						String targetWindowClass = "";
 
-//							// convert edit distance to color
-//							// dis=0 goes to black
-//							// max dist goes to white
-//							// mean dist will be gray (0.5)
-//							float distSig = (float)  (1 / (1 + Math.exp(-dist * steepness[l])));
-//							// invert black-white
-//							// float distSig = (float)  (1 - (1 / (1 + Math.exp(-dist * steepness[l]))));
-//
-//							Color colorSig = new Color(distSig, distSig, distSig);
-//							g.setColor(colorSig);
-//							convMethod = "sig" + steepness[l];
-//
-//							g.fillOval((int) Math.floor(nodeX) - RADIUS, (int) Math.floor(nodeY) - RADIUS, 2 * RADIUS, 2 * RADIUS);
-
-							boolean inBB = false;
-							for (int n = 0; n < boundingBoxesGT.get(j).size(); n++) {
-								int[] coords = boundingBoxesGT.get(j, n).getCoords();
-								if (nodeX >= coords[0] && nodeX <= coords[2]) {
-									if (nodeY >= coords[1] && nodeY <= coords[3]) {
-										inBB = true;
-										for(int t = 0; t < thresholds.length; t++) {
-											if (underThresholdMat.get(i,j,m,k,t)) {
-												this.truePositives.set(i, j, k, t, this.truePositives.get(i, j, k, t) + 1);
-											} else {
-												this.falseNegatives.set(i, j, k, t, this.falseNegatives.get(i, j, k, t) + 1);
-											}
+						boolean inBB = false;
+						for (int n = 0; n < boundingBoxesGT.get(j).size(); n++) {
+							int[] coords = boundingBoxesGT.get(j, n).getCoords();
+							if (nodeX >= coords[0] && nodeX <= coords[2]) {
+								if (nodeY >= coords[1] && nodeY <= coords[3]) {
+									inBB = true;
+									for(int t = 0; t < thresholds.length; t++) {
+										if (underThresholdMat.get(i,j,m,k,t)) {
+											this.truePositives.set(i, j, k, t, this.truePositives.get(i, j, k, t) + 1);
+										} else {
+											this.falseNegatives.set(i, j, k, t, this.falseNegatives.get(i, j, k, t) + 1);
 										}
-										break;
 									}
-								}
-							}
-							if (!inBB) {
-								for(int t = 0; t < thresholds.length; t++) {
-									if (underThresholdMat.get(i,j,m,k,t)) {
-										this.falsePositives.set(i, j, k, t, this.falsePositives.get(i, j, k,t) + 1);
-									} else {
-										this.trueNegatives.set(i, j, k, t,this.trueNegatives.get(i, j, k, t) + 1);
-									}
+									targetWindowClass = charClass;
+									break;
 								}
 							}
 						}
-
-						// display bounding boxes
-//						g.setColor(Color.red);
-//						g.setStroke(new BasicStroke(2));
-//						for (int m = 0; m < boundingBoxesGT.get(j).size(); m++) {
-//							// only keep char
-//							if (boundingBoxesGT.get(j, m).getCharacter().equals(source.get(i).getClassName())) {
-//								int[] coords = boundingBoxesGT.get(j, m).getCoords();
-//								g.drawRect(coords[0], coords[1], coords[2] - coords[0], coords[3] - coords[1]);
-//							}
-//						}
-
-//						String targetName = targetPage.getFileName().substring(0, targetPage.getFileName().length() - 4);
-//						String targetFile = visualizationFolder.toString() + "/" ;
-//						String sourceChar = this.source.get(i).getClassName();
-//						String propFile = prop.split("/")[(prop.split("/").length)-1];
-//						targetFile = targetFile + targetName + "/" + sourceChar + "/" + propFile + "/" + convMethod;
-//						Files.createDirectories(Paths.get(targetFile));
-//						String imgName = "hm_" + targetName + "_" + convMethod + "_w" + windowSizes[k] + "_" + source.get(i).getClassName() + ".png";
-//						ImageIO.write(img, "png", new File(targetFile +  "/" + imgName));
-//					}
+						if (!inBB) {
+							for(int t = 0; t < thresholds.length; t++) {
+								if (underThresholdMat.get(i,j,m,k,t)) {
+									this.falsePositives.set(i, j, k, t, this.falsePositives.get(i, j, k,t) + 1);
+								} else {
+									this.trueNegatives.set(i, j, k, t,this.trueNegatives.get(i, j, k, t) + 1);
+								}
+							}
+							targetWindowClass = "notChar";
+						}
+						SpottingResult spottingResult = new SpottingResult(charID, charClass, targetWindowID, targetWindowClass, dist);
+						spottingResults.add(spottingResult);
+					}
 				}
+
+				SpottingPostProcessing spottingPostProcessing = new SpottingPostProcessing();
+				ArrayList<SpottingResult> reducedSpottingResults = spottingPostProcessing.postProcess(spottingResults);
+
+				trecEval.exportSpottingResults(reducedSpottingResults);
+
+				//  display best match
+				BufferedImage greyImg = targetImages.get(j);
+				int width = greyImg.getWidth();
+				int height = greyImg.getHeight();
+				BufferedImage img = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
+				Graphics g = (Graphics2D) img.getGraphics();
+				g.drawImage(greyImg, 0, 0, null);
+//				g.setColor(Color.GREEN);
+//				for (int k = 0; k < numOfGridPoints; k++) {
+//					g.fillRect((k / numOfStepsX) * stepX -1,(k % numOfStepsX) * stepY - 1, 2,2);
+//				}
+				g.setColor(Color.RED);
+				int centerX = (bestIDs[0] / numOfStepsX) * stepX;
+				int centerY = (bestIDs[0] % numOfStepsX) * stepY;
+				g.fillOval(centerX-2,centerY-2, 4,4);
+				int rectX = (int) (windowSizes[bestIDs[1]] * source.get(i).getDouble("x_max"));
+				int rectY = (int) (windowSizes[bestIDs[1]] * source.get(i).getDouble("y_max"));
+				BufferedImage charImg = sourceImages.get(i);
+				System.out.println("source "+charImg.getHeight()+" "+charImg.getWidth());
+				System.out.println("rect "+rectX+" "+rectY);
+				g.fillRect(centerX - (rectX/2) - 1, centerY - (rectY/2) -1 , rectX + 2, rectY + 2);
+				g.drawImage(charImg, centerX - (rectX/2), centerY - (rectY/2), centerX + (rectX/2), centerY + (rectY/2),
+						0, 0, charImg.getWidth(), charImg.getHeight(), null);
+
+				String imgFolder = charVisFolder.toString() + "/";
+				Files.createDirectories(Paths.get(imgFolder));
+				String propFile = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
+				String imgName = imgFolder+propFile+"_"+(int)costFunctionManager.getNodeCost()+"_"+(int)costFunctionManager.getEdgeCost()
+						+"_"+costFunctionManager.getAlpha()+"_"+costFunctionManager.getNodeAttrImportance()[0]+".png";
+				ImageIO.write(img, "png", new File(imgName));
 			}
 		}
 
 		String propName = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
 		this.resultPrinter.printResultGw(propName, source, target, windowSizes, thresholds, truePositives, falseNegatives,
 				falsePositives, trueNegatives);
-
-
-
-//		TODO: update resultPrinter
-		
-// 		long time = System.currentTimeMillis() - start;
-//		this.resultPrinter.printResult(this.distanceMatrix, this.source, this.target, prop, time);
-
 
 	}
 
@@ -824,23 +824,24 @@ public class GraphMatchingSegFreeGrid {
 			}
 		}
 
-		this.visualizationFolder = Paths.get(properties.getProperty("editDistVis"));
-
-		int numOfSteepnessVal = Integer.parseInt(properties.getProperty("numOfSteepnessVal"));
-		steepness = new double[numOfSteepnessVal];
-		for (int i = 0; i < numOfSteepnessVal; i++) {
-			steepness[i] = Double.parseDouble(properties.getProperty("steepnessVal"+i));
-		}
+		this.hotmapVisFolder = Paths.get(properties.getProperty("editDistVis"));
+		this.charVisFolder = Paths.get(properties.getProperty("charVisFolder"));
 
 		// open original binarized images as matrices
 		Imgcodecs imgcodecs = new Imgcodecs();
-		Path originalImagesPath = Paths.get(properties.getProperty("imagesPath"));
+		Path targetImagesPath = Paths.get(properties.getProperty("targetImagesPath"));
 		this.targetImages = new ArrayList<>();
 		for (int j = 0; j < target.size(); j++) {
-			String imagePath = originalImagesPath + "\\" + target.get(j).getFileName().substring(0, target.get(j).getFileName().length() - 4) + ".png";
-			System.out.println(imagePath);
+			String imagePath = targetImagesPath + "\\" + target.get(j).getFileName().substring(0, target.get(j).getFileName().length() - 4) + ".png";
 			BufferedImage oldImg = ImageIO.read(new File(imagePath));
 			targetImages.add(oldImg);
+		}
+		Path sourceImagesPath = Paths.get(properties.getProperty("sourceImagesPath"));
+		this.sourceImages = new ArrayList<>();
+		for (int j = 0; j < source.size(); j++) {
+			String imagePath = sourceImagesPath + "\\" + source.get(j).getFileName().substring(0, source.get(j).getFileName().length() - 4) + ".png";
+			BufferedImage oldImg = ImageIO.read(new File(imagePath));
+			sourceImages.add(oldImg);
 		}
 
 		int numOfThresholdVal = Integer.parseInt(properties.getProperty("numOfThresholdVal"));

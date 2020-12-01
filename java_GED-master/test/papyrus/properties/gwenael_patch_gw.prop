@@ -1,0 +1,108 @@
+# cxl files
+targetFile=test/papyrus/reduced/target_gw.cxl
+sourceFile=test/papyrus/reduced/source_gw.cxl
+
+# graphs folder
+sourcePath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/gw/chars/D_1/v_4/
+targetPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/gw/patches/D_1/v_4/
+
+# original images
+sourceImagesPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/chars/
+targetImagesPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/patches/
+
+# results folder
+result=test/papyrus/results/test_treceval/
+
+# groundtruth file
+groundtruth=test/papyrus/groundtruth_gw.txt
+
+# trec eval file
+treceval=treceval/trec_eval.exe
+
+# should be "best" or "worst" (GreedyMatrixGenerator)
+adj=bestWithGreedy
+
+# HED only possible, others commented (not tested)
+matching=HED
+
+# all node attributes
+numOfNodeAttr=2
+nodeAttr0=x
+nodeCostType0=
+nodeAttr0Importance=0.1
+nodeAttr1=y
+nodeCostType1=
+nodeAttr1Importance=0.9
+multiplyNodeCosts=0
+
+# all edge attributes
+numOfEdgeAttr=0
+multiplyEdgeCosts=0
+
+# node/edge cost balance
+alpha=0.5
+
+# costs
+node=8
+edge=4
+
+# print options
+outputGraphs=0
+outputCostMatrix=0
+outputMatching=0
+outputEditPath=0
+
+# cost function, "Euclidean" or "Euclidean Scaling"
+costType=Euclidean Scaling
+
+# whether similarities or distances are computed
+simKernel=0
+
+# undirected edges?
+undirected=1
+
+# normalisation function (N1, N2, N3)
+normalisationFunction=N1
+
+# p-rooted
+pNode=1
+pEdge=1
+
+# window sizes
+numOfWindowSizes=11
+windowSize0=0.5
+windowSize1=0.6
+windowSize2=0.7
+windowSize3=0.8
+windowSize4=0.9
+windowSize5=1
+windowSize6=1.2
+windowSize7=1.4
+windowSize8=1.6
+windowSize9=1.8
+windowSize10=2
+
+
+# bounding boxes groundtruth folder
+boundingBoxesFolder=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/groundtruth/
+
+# edit distance visualization folder
+editDistVis=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/hotmap/
+
+# char visualization folder
+charVisFolder=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/char/gw/
+
+numOfThresholdVal=10
+threshold0=-2
+threshold1=-1.8
+threshold2=-1.6
+threshold3=-1.4
+threshold4=-1.2
+threshold5=-1.0
+threshold6=-0.8
+threshold7=-0.6
+threshold8=-0.4
+threshold9=-0.2
+
+stepX=5
+stepY=5

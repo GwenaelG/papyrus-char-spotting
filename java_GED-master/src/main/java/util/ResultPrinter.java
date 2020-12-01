@@ -305,17 +305,13 @@ public class ResultPrinter {
 						wrComp.println("winsize: x"+windowSizes[k]);
 						for( int l = 0; l < thresholds.length; l++) {
 							double thresh = thresholds[l];
-							wrComp.println("\nthreshold: "+thresh);
+							wrComp.println("threshold: "+thresh);
 							int nbTP = TP.get(i, j, k,l);
-							wrComp.print("TP: " + nbTP + "; ");
 							int nbFN = FN.get(i, j, k, l);
-							wrComp.print("FN: " + nbFN + "; ");
 							int nbFP = FP.get(i, j, k, l);
-							wrComp.print("FP: " + nbFP + "; ");
 							int nbTN = TN.get(i, j, k, l);
-							wrComp.print("TN: " + nbTN + "\n");
-							int sum = nbTP + nbTN + nbFP + nbFN;
-							wrComp.println("total: " + sum);
+//							int sum = nbTP + nbTN + nbFP + nbFN;
+//							wrComp.println("total: " + sum);
 							double precision = (double) nbTP / (nbTP + nbFP);
 							double recall = (double) nbTP / (nbTP + nbFN);
 							if (precision > bestPrecision.get(i,j,0)) {
@@ -331,7 +327,11 @@ public class ResultPrinter {
 								bestRecall.set(i,j,2, (double) l);
 								bestRecall.set(i,j,3, precision);
 							}
-							wrComp.println("precision: " + String.format("%.3f", precision) + "; recall: " + String.format("%.3f\n", recall));
+							wrComp.print("\tP: " + String.format("%.3f", precision) + "; R: " + String.format("%.3f\n", recall));
+							wrComp.print("\tTP: " + nbTP + "; ");
+							wrComp.print("FN: " + nbFN + "; ");
+							wrComp.print("FP: " + nbFP + "; ");
+							wrComp.print("TN: " + nbTN + "\n");
 						}
 					}
 					wrPrecRec.println(sourceIds[i]+" "+targetIds[j]);
