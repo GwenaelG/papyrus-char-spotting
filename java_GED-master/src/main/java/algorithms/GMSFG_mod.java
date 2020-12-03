@@ -216,8 +216,10 @@ public class GMSFG_mod {
 	private int stepY;
 	private TwoDimAL<Integer> gridSizes;
 
-	private static final double IoU_RATIO = 0.9;
+	private static final double IoU_RATIO = 0.1;
 
+	private FourDimAL<Boolean> nodeRatioOK;
+	private double nodeRatio;
 
 	/**
 	 * @param args
@@ -284,6 +286,7 @@ public class GMSFG_mod {
 		for (int i0 = 0; i0 < idxs1.length; i0++) {
 			int i = idxs1[i0];
 			sourceGraph = this.source.get(i);
+			int sourceNodeCount = sourceGraph.size();
 
 			// get size of source graph
 			// max taken before normalization
@@ -333,6 +336,17 @@ public class GMSFG_mod {
 						swapped = false;
 
 						targetGraph = windows.get(l);
+
+						int targetNodeCount = targetGraph.size();
+						boolean ratioOK = false;
+						if (targetNodeCount != 0) {
+							ratioOK = true;
+//							double matchingNodeRatio = (double) sourceNodeCount / (double) targetNodeCount;
+//							if ((matchingNodeRatio > (1 / nodeRatio)) && (matchingNodeRatio < nodeRatio)) {
+//								ratioOK = true;
+//							}
+						}
+						nodeRatioOK.set(i,j,k,l,ratioOK);
 
 						this.counter++;
 						if (counter % 100 == 0) {
@@ -404,7 +418,7 @@ public class GMSFG_mod {
 		 for (int i = 0; i < source.size(); i++) {
 
 		 	Graph sourceGraph = source.get(i);
-		 	String charID = sourceGraph.getGraphID();
+			String charID = sourceGraph.getGraphID();
 		 	String charClass = this.wordList.get(sourceGraph.getGraphID());
 
 			for (int j = 0; j < target.size(); j++) {
@@ -420,8 +434,13 @@ public class GMSFG_mod {
 				double xStDev = targetPage.getDouble("x_std");
 				double yStDev = targetPage.getDouble("y_std");
 
-				double minDist = Double.POSITIVE_INFINITY;
-				int[] bestIDs = new int[2];
+				TwoDimAL<Double> minDists = new TwoDimAL<>();
+				//store overall min dist, min dist in a BB, min dist with no BB overlap
+				for (int z = 0; z < 3; z++) {
+					minDists.set(z,0, Double.POSITIVE_INFINITY);
+					minDists.set(z,1,(double) 0);
+					minDists.set(z,2,(double) 0);
+				}
 
 				// normalize distances for threshold
 				double distMean = 0;
@@ -430,11 +449,11 @@ public class GMSFG_mod {
 				for (int k = 0; k < numOfGridPoints; k++) {
 					for (int l = 0; l < windowSizes.length; l++) {
 						double dist = distanceMatrix.get(i, j, k, l);
-						// keep min dist with corresponding grid point and window size
-						if (dist < minDist) {
-							minDist = dist;
-							bestIDs[0] = k;
-							bestIDs[1] = l;
+						//overall min distance, even if no nodes
+						if (!nodeRatioOK.get(i,j,k,l) && dist < minDists.get(0, 0)) {
+								minDists.set(0, 0, dist);
+								minDists.set(0, 1, (double) k);
+								minDists.set(0, 2, (double) l);
 						}
 						distMean += dist;
 					}
@@ -463,23 +482,25 @@ public class GMSFG_mod {
 
 				for (int k = 0; k < windowSizes.length; k++) {
 
+					int windowWidth = (int) (windowSizes[k] * sourceImages.get(i).getWidth());
+					int windowHeight = (int) (windowSizes[k] * sourceImages.get(i).getHeight());
+
 					for (int m = 0; m < numOfGridPoints; m++) {
 
 						String targetWindowID = targetPageID+"_pt"+m+"_w"+windowSizes[k];
 
+
 						//un-normalize to get image coords
 						int nodeX = (m / numOfStepsX) * stepX;
 						int nodeY = (m % numOfStepsX) * stepY;
-						int windowWidth = (int) (windowSizes[bestIDs[1]] * sourceImages.get(i).getWidth());
-						int windowHeight = (int) (windowSizes[bestIDs[1]] * sourceImages.get(i).getHeight());
 
 						// careful with access order
-						double dist = normColorDistMatrix.get(i,j,m,k);
+						double normDist = normColorDistMatrix.get(i,j,m,k);
 
 						for(int t = 0; t < thresholds.length; t++){
 							boolean underThresh = false;
 							double thresh = thresholds[t];
-							if (dist <= thresh){
+							if (normDist <= thresh) {
 								underThresh = true;
 							}
 							underThresholdMat.set(i,j,m,k,t,underThresh);
@@ -488,6 +509,7 @@ public class GMSFG_mod {
 						String targetWindowClass = "";
 
 						boolean inBB = false;
+						boolean touchBB = false;
 						for (int n = 0; n < boundingBoxesGT.get(j).size(); n++) {
 							int[] coords = boundingBoxesGT.get(j, n).getCoords();
 							int bbX1 = coords[0];
@@ -502,10 +524,12 @@ public class GMSFG_mod {
 							int bottomRightCornerY = Math.min(nodeY + windowHeight, bbY2);
 							// compare them to be sure there is actually an intersection
 							if ((topLeftCornerX < bottomRightCornerX) && (topLeftCornerY < bottomRightCornerY)){
+								touchBB = true;
 								int bbArea = (bbX2 - bbX1) * (bbY2 - bbY1);
 								int windowArea = windowWidth * windowHeight;
 								int intersectionArea = (bottomRightCornerX - topLeftCornerX) * (bottomRightCornerY - topLeftCornerY);
 								double IoU = intersectionArea / (bbArea + windowArea - intersectionArea);
+								//check if rectangles overlap enough
 								if (IoU >= IoU_RATIO ) {
 									inBB = true;
 									for(int t = 0; t < thresholds.length; t++) {
@@ -514,6 +538,12 @@ public class GMSFG_mod {
 										} else {
 											this.falseNegatives.set(i, j, k, t, this.falseNegatives.get(i, j, k, t) + 1);
 										}
+									}
+									double dist = distanceMatrix.get(i,j,m,k);
+									if (!nodeRatioOK.get(i,j,m,k) && dist < minDists.get(1, 0)) {
+										minDists.set(1, 0, dist);
+										minDists.set(1, 1, (double) m);
+										minDists.set(1, 2, (double) k);
 									}
 									targetWindowClass = charClass;
 									break;
@@ -528,9 +558,18 @@ public class GMSFG_mod {
 									this.trueNegatives.set(i, j, k, t,this.trueNegatives.get(i, j, k, t) + 1);
 								}
 							}
+							if (!touchBB) {
+								double dist = distanceMatrix.get(i,j,m,k);
+								if (dist < minDists.get(2, 0)) {
+									minDists.set(2, 0, dist);
+									minDists.set(2, 1, (double) m);
+									minDists.set(2, 2, (double) k);
+								}
+							}
+
 							targetWindowClass = "notChar";
 						}
-						SpottingResult spottingResult = new SpottingResult(charID, charClass, targetWindowID, targetWindowClass, dist);
+						SpottingResult spottingResult = new SpottingResult(charID, charClass, targetWindowID, targetWindowClass, normDist);
 						spottingResults.add(spottingResult);
 					}
 				}
@@ -547,18 +586,19 @@ public class GMSFG_mod {
 				BufferedImage img = new BufferedImage(targetWidth, targetHeight, BufferedImage.TYPE_INT_ARGB);
 				Graphics g = (Graphics2D) img.getGraphics();
 				g.drawImage(greyImg, 0, 0, null);
-//				g.setColor(Color.GREEN);
-//				for (int k = 0; k < numOfGridPoints; k++) {
-//					g.fillRect((k / numOfStepsX) * stepX -1,(k % numOfStepsX) * stepY - 1, 2,2);
-//				}
-				int cornerX = (bestIDs[0] / numOfStepsX) * stepX;
-				int cornerY = (bestIDs[0] % numOfStepsX) * stepY;
-				BufferedImage charImg = sourceImages.get(i);
-				int windowWidth = (int) (windowSizes[bestIDs[1]] * charImg.getWidth());
-				int windowHeight = (int) (windowSizes[bestIDs[1]] * charImg.getHeight());
-				g.drawImage(charImg, cornerX, cornerY, cornerX + windowWidth, cornerY + windowHeight,
-						0, 0, charImg.getWidth(), charImg.getHeight(), null);
-
+				//blue overall, green BB, red no touch
+				Color[] c = {Color.BLUE, Color.GREEN, Color.GRAY};
+				for (int n = 0; n < minDists.size(); n++) {
+					int cornerX = (minDists.get(n,1).intValue() / numOfStepsX) * stepX;
+					int cornerY = (minDists.get(n,1).intValue() % numOfStepsX) * stepY;
+					BufferedImage charImg = sourceImages.get(i);
+					int windowWidth = (int) (windowSizes[minDists.get(n, 2).intValue()] * charImg.getWidth());
+					int windowHeight = (int) (windowSizes[minDists.get(n, 2).intValue()] * charImg.getHeight());
+					g.setColor(c[n]);
+					g.drawRect(cornerX, cornerY, windowWidth, windowHeight);
+					g.drawImage(charImg, cornerX, cornerY, cornerX + windowWidth, cornerY + windowHeight,
+							0, 0, charImg.getWidth(), charImg.getHeight(), null);
+				}
 				String imgFolder = charVisFolder.toString() + "/";
 				Files.createDirectories(Paths.get(imgFolder));
 				String propFile = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
@@ -887,7 +927,8 @@ public class GMSFG_mod {
 		this.stepY = Integer.parseInt(properties.getProperty("stepY"));
 		this.gridSizes = new TwoDimAL<>();
 
-
+		this.nodeRatio = Double.parseDouble(properties.getProperty("nodeRatio"));
+		this.nodeRatioOK = new FourDimAL<>();
 
 	}
 
