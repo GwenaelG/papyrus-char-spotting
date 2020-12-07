@@ -90,7 +90,7 @@ boundingBoxesFolder=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/grou
 editDistVis=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/hotmap/
 
 # char visualization folder
-charVisFolder=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/char/gw/
+charVisFolder=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/char/
 
 numOfThresholdVal=10
 threshold0=-2
@@ -104,5 +104,9 @@ threshold7=-0.6
 threshold8=-0.4
 threshold9=-0.2
 
-stepX=5
-stepY=5
+stepX=1
+stepY=1
+
+nodeRatio=100
+
+iouRatio=0.9

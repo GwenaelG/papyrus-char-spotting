@@ -15,10 +15,7 @@ import costs.normalisation.GEDNormalisation3;
 import costs.normalisation.NormalisationFunction;
 import graph.Graph;
 import graph.GraphSet;
-import gwenael.BoundingBox;
-import gwenael.FiveDimAL;
-import gwenael.FourDimAL;
-import gwenael.TwoDimAL;
+import gwenael.*;
 import kaspar.GreedyMatching;
 import kaspar.GreedyMatrixGenerator;
 import org.opencv.imgcodecs.Imgcodecs;
@@ -216,9 +213,10 @@ public class GMSFG_mod {
 	private int stepY;
 	private TwoDimAL<Integer> gridSizes;
 
-	private static final double IoU_RATIO = 0.1;
+	private double IoU_Ratio;
 
 	private FourDimAL<Boolean> nodeRatioOK;
+	private FourDimAL<Integer> windowNodeCount;
 	private double nodeRatio;
 
 	/**
@@ -319,6 +317,7 @@ public class GMSFG_mod {
 							windowSizes[k] * (sourceHeight) / (yStDev)};
 				}
 
+
 				// create windows, starting with top-left corner
 				for (int k = 0; k < numOfGridPoints; k++){
 					int gridRow = k / numOfStepsX;
@@ -338,18 +337,18 @@ public class GMSFG_mod {
 						targetGraph = windows.get(l);
 
 						int targetNodeCount = targetGraph.size();
+
+						windowNodeCount.set(i,j,k,l,targetNodeCount);
 						boolean ratioOK = false;
-						if (targetNodeCount != 0) {
+						ratioOK = false;
+						double matchingNodeRatio = (double) sourceNodeCount / (double) targetNodeCount;
+						if ((matchingNodeRatio > (1 / nodeRatio)) && (matchingNodeRatio < nodeRatio)) {
 							ratioOK = true;
-//							double matchingNodeRatio = (double) sourceNodeCount / (double) targetNodeCount;
-//							if ((matchingNodeRatio > (1 / nodeRatio)) && (matchingNodeRatio < nodeRatio)) {
-//								ratioOK = true;
-//							}
 						}
 						nodeRatioOK.set(i,j,k,l,ratioOK);
 
 						this.counter++;
-						if (counter % 100 == 0) {
+						if (counter % 1000 == 0) {
 							System.out.println("Matching " + counter + " of " + numOfMatchings);
 						}
 
@@ -415,7 +414,7 @@ public class GMSFG_mod {
 		ArrayList<SpottingResult> spottingResults = new ArrayList<>();
 
 		// display edit distance between target node window and source char
-		 for (int i = 0; i < source.size(); i++) {
+		for (int i = 0; i < source.size(); i++) {
 
 		 	Graph sourceGraph = source.get(i);
 			String charID = sourceGraph.getGraphID();
@@ -436,7 +435,7 @@ public class GMSFG_mod {
 
 				TwoDimAL<Double> minDists = new TwoDimAL<>();
 				//store overall min dist, min dist in a BB, min dist with no BB overlap
-				for (int z = 0; z < 3; z++) {
+				for (int z = 0; z < 2; z++) {
 					minDists.set(z,0, Double.POSITIVE_INFINITY);
 					minDists.set(z,1,(double) 0);
 					minDists.set(z,2,(double) 0);
@@ -450,7 +449,7 @@ public class GMSFG_mod {
 					for (int l = 0; l < windowSizes.length; l++) {
 						double dist = distanceMatrix.get(i, j, k, l);
 						//overall min distance, even if no nodes
-						if (!nodeRatioOK.get(i,j,k,l) && dist < minDists.get(0, 0)) {
+						if (dist < minDists.get(0, 0)) {
 								minDists.set(0, 0, dist);
 								minDists.set(0, 1, (double) k);
 								minDists.set(0, 2, (double) l);
@@ -480,22 +479,20 @@ public class GMSFG_mod {
 					}
 				}
 
-				for (int k = 0; k < windowSizes.length; k++) {
+				for (int l = 0; l < windowSizes.length; l++) {
 
-					int windowWidth = (int) (windowSizes[k] * sourceImages.get(i).getWidth());
-					int windowHeight = (int) (windowSizes[k] * sourceImages.get(i).getHeight());
+					int windowWidth = (int) (windowSizes[l] * sourceImages.get(i).getWidth());
+					int windowHeight = (int) (windowSizes[l] * sourceImages.get(i).getHeight());
 
-					for (int m = 0; m < numOfGridPoints; m++) {
+					for (int k = 0; k < numOfGridPoints; k++) {
 
-						String targetWindowID = targetPageID+"_pt"+m+"_w"+windowSizes[k];
+						String targetWindowID = targetPageID+"_pt"+k+"_w"+windowSizes[l];
 
-
-						//un-normalize to get image coords
-						int nodeX = (m / numOfStepsX) * stepX;
-						int nodeY = (m % numOfStepsX) * stepY;
+						int nodeX = (k % numOfStepsX) * stepX;
+						int nodeY = (k / numOfStepsX) * stepY;
 
 						// careful with access order
-						double normDist = normColorDistMatrix.get(i,j,m,k);
+						double normDist = normColorDistMatrix.get(i,j,k,l);
 
 						for(int t = 0; t < thresholds.length; t++){
 							boolean underThresh = false;
@@ -503,7 +500,7 @@ public class GMSFG_mod {
 							if (normDist <= thresh) {
 								underThresh = true;
 							}
-							underThresholdMat.set(i,j,m,k,t,underThresh);
+							underThresholdMat.set(i,j,k,l,t,underThresh);
 						}
 
 						String targetWindowClass = "";
@@ -528,23 +525,27 @@ public class GMSFG_mod {
 								int bbArea = (bbX2 - bbX1) * (bbY2 - bbY1);
 								int windowArea = windowWidth * windowHeight;
 								int intersectionArea = (bottomRightCornerX - topLeftCornerX) * (bottomRightCornerY - topLeftCornerY);
-								double IoU = intersectionArea / (bbArea + windowArea - intersectionArea);
+								double IoU = intersectionArea / (double)(bbArea + windowArea - intersectionArea);
 								//check if rectangles overlap enough
-								if (IoU >= IoU_RATIO ) {
+								if (IoU >= IoU_Ratio) {
 									inBB = true;
 									for(int t = 0; t < thresholds.length; t++) {
-										if (underThresholdMat.get(i,j,m,k,t)) {
-											this.truePositives.set(i, j, k, t, this.truePositives.get(i, j, k, t) + 1);
+										if (underThresholdMat.get(i,j,k,l,t)) {
+											this.truePositives.set(i, j, l, t, this.truePositives.get(i, j, l, t) + 1);
 										} else {
-											this.falseNegatives.set(i, j, k, t, this.falseNegatives.get(i, j, k, t) + 1);
+											this.falseNegatives.set(i, j, l, t, this.falseNegatives.get(i, j, l, t) + 1);
 										}
 									}
-									double dist = distanceMatrix.get(i,j,m,k);
-									if (!nodeRatioOK.get(i,j,m,k) && dist < minDists.get(1, 0)) {
-										minDists.set(1, 0, dist);
-										minDists.set(1, 1, (double) m);
-										minDists.set(1, 2, (double) k);
-									}
+//									double dist = distanceMatrix.get(i,j,k,l);
+//									System.out.println(k+": "+topLeftCornerX+" "+topLeftCornerY+" "+bottomRightCornerX+" "+bottomRightCornerY+", "
+//											+String.format("%.3f",IoU)+" "+String.format("%.3f",dist)
+//											+" "+windowNodeCount.get(i,j,k,l)+" "+nodeRatioOK.get(i,j,k,l));
+//									if (dist < minDists.get(1, 0)) {
+//										minDists.set(1, 0, dist);
+//										minDists.set(1, 1, (double) k);
+//										minDists.set(1, 2, (double) l);
+//									}
+
 									targetWindowClass = charClass;
 									break;
 								}
@@ -552,18 +553,18 @@ public class GMSFG_mod {
 						}
 						if (!inBB) {
 							for(int t = 0; t < thresholds.length; t++) {
-								if (underThresholdMat.get(i,j,m,k,t)) {
-									this.falsePositives.set(i, j, k, t, this.falsePositives.get(i, j, k,t) + 1);
+								if (underThresholdMat.get(i,j,k,l,t)) {
+									this.falsePositives.set(i, j, l, t, this.falsePositives.get(i, j, l,t) + 1);
 								} else {
-									this.trueNegatives.set(i, j, k, t,this.trueNegatives.get(i, j, k, t) + 1);
+									this.trueNegatives.set(i, j, l, t,this.trueNegatives.get(i, j, l, t) + 1);
 								}
 							}
 							if (!touchBB) {
-								double dist = distanceMatrix.get(i,j,m,k);
-								if (dist < minDists.get(2, 0)) {
-									minDists.set(2, 0, dist);
-									minDists.set(2, 1, (double) m);
-									minDists.set(2, 2, (double) k);
+								double dist = distanceMatrix.get(i,j,k,l);
+								if (dist < minDists.get(1, 0)) {
+									minDists.set(1, 0, dist);
+									minDists.set(1, 1, (double) k);
+									minDists.set(1, 2, (double) l);
 								}
 							}
 
@@ -583,14 +584,14 @@ public class GMSFG_mod {
 				BufferedImage greyImg = targetImages.get(j);
 				int targetWidth = greyImg.getWidth();
 				int targetHeight = greyImg.getHeight();
-				BufferedImage img = new BufferedImage(targetWidth, targetHeight, BufferedImage.TYPE_INT_ARGB);
+				BufferedImage img = new BufferedImage(targetWidth, targetHeight, BufferedImage.TYPE_INT_RGB);
 				Graphics g = (Graphics2D) img.getGraphics();
 				g.drawImage(greyImg, 0, 0, null);
 				//blue overall, green BB, red no touch
-				Color[] c = {Color.BLUE, Color.GREEN, Color.GRAY};
-				for (int n = 0; n < minDists.size(); n++) {
-					int cornerX = (minDists.get(n,1).intValue() / numOfStepsX) * stepX;
-					int cornerY = (minDists.get(n,1).intValue() % numOfStepsX) * stepY;
+				Color[] c = {Color.GREEN, Color.GRAY};
+				for (int n = 0; n < c.length; n++) {
+					int cornerX = (minDists.get(n,1).intValue() % numOfStepsX) * stepX;
+					int cornerY = (minDists.get(n,1).intValue() / numOfStepsX) * stepY;
 					BufferedImage charImg = sourceImages.get(i);
 					int windowWidth = (int) (windowSizes[minDists.get(n, 2).intValue()] * charImg.getWidth());
 					int windowHeight = (int) (windowSizes[minDists.get(n, 2).intValue()] * charImg.getHeight());
@@ -599,12 +600,21 @@ public class GMSFG_mod {
 					g.drawImage(charImg, cornerX, cornerY, cornerX + windowWidth, cornerY + windowHeight,
 							0, 0, charImg.getWidth(), charImg.getHeight(), null);
 				}
+
+//				for (int k = 0; k < numOfGridPoints; k++) {
+//					int l = 0;
+//					int nodeX = (k % numOfStepsX) * stepX;
+//					int nodeY = (k / numOfStepsX) * stepY;
+//					int nc = windowNodeCount.get(i,j,k,l);
+//					g.setColor(new Color(nc, nc, nc));
+//					g.fillRect(nodeX, nodeY, 1, 1);
+//
+//				}
 				String imgFolder = charVisFolder.toString() + "/";
 				Files.createDirectories(Paths.get(imgFolder));
 				String propFile = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
 				String imgName = imgFolder+propFile+"_"+(int)costFunctionManager.getNodeCost()+"_"+(int)costFunctionManager.getEdgeCost()
 						+"_"+costFunctionManager.getAlpha()+"_"+costFunctionManager.getNodeAttrImportance()[0]+".png";
-				System.out.println(imgName);
 				ImageIO.write(img, "png", new File(imgName));
 			}
 		}
@@ -612,6 +622,7 @@ public class GMSFG_mod {
 		String propName = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
 		this.resultPrinter.printResultGw(propName, source, target, windowSizes, thresholds, truePositives, falseNegatives,
 				falsePositives, trueNegatives);
+
 
 	}
 
@@ -929,6 +940,9 @@ public class GMSFG_mod {
 
 		this.nodeRatio = Double.parseDouble(properties.getProperty("nodeRatio"));
 		this.nodeRatioOK = new FourDimAL<>();
+		this.windowNodeCount = new FourDimAL<>();
+
+		this.IoU_Ratio = Double.parseDouble(properties.getProperty("iouRatio"));
 
 	}
 
@@ -952,4 +966,5 @@ public class GMSFG_mod {
 
 		return wordList;
 	}
+
 }

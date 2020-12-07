@@ -4,8 +4,14 @@
 package graph;
 
 import com.sun.security.auth.NTDomainPrincipal;
+import gwenael.ImageDisp;
 import net.sourceforge.gxl.*;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.*;
 
 /**
@@ -773,8 +779,14 @@ public class Graph extends LinkedList<Node> {
 
 	public ArrayList<Graph> extractWindowsCornerCoords(double[] coords, double[][] windowMaxSides) {
 
-		double corner0X = coords[0];
-		double corner0Y = coords[1];
+		double corner0X = Math.round(coords[0] * 1000.0) / 1000.0;
+		double corner0Y = Math.round(coords[1] * 1000.0) / 1000.0;
+
+		double xMeanTarget = this.getDouble("x_mean");
+		double yMeanTarget = this.getDouble("y_mean");
+		double xStdTarget = this.getDouble("x_std");
+		double yStdTarget = this.getDouble("y_std");
+
 
 		// accessing windows
 		ArrayList<Graph> windows = new ArrayList<>();
@@ -796,19 +808,18 @@ public class Graph extends LinkedList<Node> {
 
 		// iterate through nodes only once to fill all windows
 		for (Node pageNode : this) {
+			double pageNodeX = Math.round(pageNode.getDouble("x") * 1000.0) / 1000.0;
+			double pageNodeY = Math.round(pageNode.getDouble("y") * 1000.0) / 1000.0;
+
 			for (int k = 0; k < windowMaxSides.length; k++) {
 				Graph window = windows.get(k);
 
-				double pageNodeX = pageNode.getDouble("x");
-				double pageNodeY = pageNode.getDouble("y");
-				double sideX = windowMaxSides[k][0];
-				double sideY = windowMaxSides[k][1];
+				double sideX = Math.round(windowMaxSides[k][0] * 1000.0) / 1000.0;
+				double sideY = Math.round(windowMaxSides[k][1] * 1000.0) / 1000.0;
 				double corner1X = corner0X + sideX;
-				double corner1Y = corner1X + sideY;
-
+				double corner1Y = corner0Y + sideY;
 				// check if node in window
 				if (pageNodeX >= corner0X && pageNodeX <= corner1X && pageNodeY >= corner0Y && pageNodeY <= corner1Y) {
-
 					Node copyNode = new Node(new String(pageNode.getNodeID()+"_w"+k));
 					nodeMaps.get(k).put(pageNode, copyNode);
 
@@ -816,17 +827,15 @@ public class Graph extends LinkedList<Node> {
 
 					window.add(copyNode);
 
-
 					// Add attributes
 					for (Map.Entry<String, GXLValue> entry : pageNode.getAttributes().entrySet()) {
 						copyNode.put(entry.getKey(), copyValue(entry.getValue()));
 					}
 
 				}
+
 			}
 		}
-
-
 
 		//copy edges
 
@@ -903,13 +912,15 @@ public class Graph extends LinkedList<Node> {
 				}
 			}
 
-			//compute means and standard deviation
+			// compute means and standard deviation
+			// un-normalize coords to get "true" mean/std, so we can go back to 1:1 image
+			// else we'd go back to targetGraph values
 			double xMean = 0;
 			double yMean = 0;
 			for (int i = 0; i < window.size(); i++) {
-				double xNode = window.get(i).getDouble("x");
+				double xNode = window.get(i).getDouble("x") * xStdTarget + xMeanTarget ;
 				xMean += xNode;
-				double yNode = window.get(i).getDouble("y");
+				double yNode = window.get(i).getDouble("y") * yStdTarget + yMeanTarget;
 				yMean += yNode;
 			}
 			xMean /= window.size();
@@ -919,35 +930,26 @@ public class Graph extends LinkedList<Node> {
 			double xSumSqDist = 0;
 			double ySumSqDist = 0;
 			for (int i = 0; i < window.size(); i++) {
-				double xNode = window.get(i).getDouble("x");
+				double xNode = window.get(i).getDouble("x") * xStdTarget + xMeanTarget;
 				xSumSqDist += Math.pow(xNode - xMean, 2);
-				double yNode = window.get(i).getDouble("y");
+				double yNode = window.get(i).getDouble("y") * yStdTarget + yMeanTarget;
 				ySumSqDist += Math.pow(yNode - yMean, 2);
 			}
 
 			double xStDev = Math.sqrt(xSumSqDist / window.size());
 			double yStDev = Math.sqrt(ySumSqDist / window.size());
 
-			// normalize coords
+			// normalize coords to get mean/std (0,1)
 			for (int i = 0; i < window.size(); i++) {
-				double xNode = window.get(i).getDouble("x");
+				double xNode = window.get(i).getDouble("x") * xStdTarget + xMeanTarget;
 				if (xStDev != 0) {
 					window.get(i).setDouble("x", (xNode - xMean) / xStDev);
 				}
-				double yNode = window.get(i).getDouble("y");
+				double yNode = window.get(i).getDouble("y") * yStdTarget + yMeanTarget;
 				if (yStDev != 0) {
 					window.get(i).setDouble("y", (yNode - yMean) / yStDev);
 				}
 			}
-			double xMeanNorm = 0;
-			double yMeanNorm = 0;
-			for (int i = 0; i < window.size(); i++) {
-				double xNode = window.get(i).getDouble("x");
-				xMeanNorm += xNode;
-				double yNode = window.get(i).getDouble("y");
-				yMeanNorm += yNode;
-			}
-
 
 			//set graph attributes
 			window.setDouble("x_mean", xMean);
@@ -981,5 +983,33 @@ public class Graph extends LinkedList<Node> {
 		} else {
 			return null;
 		}
+	}
+
+	public BufferedImage displayGraph(int W, int H) {
+		double xMean = this.getDouble("x_mean");
+		double yMean = this.getDouble("y_mean");
+		double xStd = this.getDouble("x_std");
+		double yStd = this.getDouble("y_std");
+		int xMax = 0;
+		int yMax = 0;
+		for (Node node: this){
+			int nodeX = (int) Math.round(node.getDouble("x") * xStd + xMean);
+			xMax = Math.max(xMax, nodeX);
+			int nodeY = (int) Math.round(node.getDouble("y") * yStd + yMean);
+			yMax = Math.max(yMax, nodeY);
+		}
+		BufferedImage img = new BufferedImage(W, H, BufferedImage.TYPE_INT_RGB);
+		Graphics g = (Graphics2D) img.getGraphics();
+		g.setColor(Color.CYAN);
+		g.fillRect(0,0,img.getWidth(), img.getHeight());
+		g.setColor(Color.BLACK);
+		for (Node node : this) {
+			int nodeX = (int) Math.round(node.getDouble("x") * xStd + xMean);
+			int nodeY = (int) Math.round(node.getDouble("y") * yStd + yMean);
+			g.fillRect(nodeX + 1, nodeY + 1, 1, 1);
+		}
+
+		return img;
+
 	}
 }
