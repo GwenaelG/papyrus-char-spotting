@@ -15,7 +15,10 @@ import costs.normalisation.GEDNormalisation3;
 import costs.normalisation.NormalisationFunction;
 import graph.Graph;
 import graph.GraphSet;
-import gwenael.*;
+import gwenael.BoundingBox;
+import gwenael.FiveDimAL;
+import gwenael.FourDimAL;
+import gwenael.TwoDimAL;
 import kaspar.GreedyMatching;
 import kaspar.GreedyMatrixGenerator;
 import org.opencv.imgcodecs.Imgcodecs;
@@ -51,7 +54,7 @@ import java.util.TreeMap;
  * modified Gwenael
  * 
  */
-public class GMSFG_mod {
+public class GraphMatchingSegFreeGW {
 
 //	static { System.loadLibrary(Core.NATIVE_LIBRARY_NAME); }
 
@@ -226,7 +229,7 @@ public class GMSFG_mod {
 	 */
 	public static void main(String[] args) {
 		try {
-			new GMSFG_mod(args[0]);
+			new GraphMatchingSegFreeGW(args[0]);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -238,7 +241,7 @@ public class GMSFG_mod {
 	 * the matching procedure: set of graphs, print distance matrix
 	 * @throws Exception
 	 */
-	public GMSFG_mod(String prop) throws Exception {
+	public GraphMatchingSegFreeGW(String prop) throws Exception {
 
 		// initialize the matching
 		System.out.println("Initializing the matching according to the properties...");
@@ -872,6 +875,7 @@ public class GMSFG_mod {
 			windowSizes[i] = Double.parseDouble(properties.getProperty("windowSize" + i));
 		}
 
+		
 		// extract groundtruth bounding boxes from XML file
 		this.boundingBoxesGT = new TwoDimAL<BoundingBox>();
 		String boundingBoxesFolder = properties.getProperty("boundingBoxesFolder");

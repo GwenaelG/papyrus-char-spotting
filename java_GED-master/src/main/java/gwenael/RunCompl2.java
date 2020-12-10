@@ -1,8 +1,7 @@
 
 package gwenael;
 
-import algorithms.GMSFG_mod;
-import algorithms.GraphMatchingSegFreeGrid;
+import algorithms.GraphMatchingSegFree;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,7 +15,7 @@ public class RunCompl2 {
 			if(props[i].isFile()) {
 				try {
 					System.out.println("Property file: "+props[i].getPath());
-					new GMSFG_mod(props[i].getPath());
+					new GraphMatchingSegFree(props[i].getPath());
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
