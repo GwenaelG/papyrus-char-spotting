@@ -2,352 +2,352 @@ gw_270_patch_for gw_270_patch
 -----------------
 winsize: x0.5
 threshold: -2.0
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.8
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.6
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.4
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.2
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.0
-	P: 0.086; R: 0.348
-	TP: 128; FN: 240; FP: 1363; TN: 1990
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 1287; TN: 2313
 threshold: -0.8
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.6
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.4
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.2
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 -----------------
 winsize: x0.6
 threshold: -2.0
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.8
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.6
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.4
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.2
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.0
-	P: 0.080; R: 0.413
-	TP: 152; FN: 216; FP: 1756; TN: 1597
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 1702; TN: 1898
 threshold: -0.8
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.6
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.4
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.2
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 -----------------
 winsize: x0.7
 threshold: -2.0
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.8
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.6
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.4
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.2
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.0
-	P: 0.089; R: 0.543
-	TP: 200; FN: 168; FP: 2046; TN: 1307
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 1984; TN: 1616
 threshold: -0.8
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.6
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.4
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.2
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 -----------------
 winsize: x0.8
 threshold: -2.0
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.8
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.6
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.4
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.2
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.0
-	P: 0.103; R: 0.728
-	TP: 268; FN: 100; FP: 2328; TN: 1025
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 2257; TN: 1343
 threshold: -0.8
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.6
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.4
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.2
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 -----------------
 winsize: x0.9
 threshold: -2.0
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.8
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.6
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.4
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.2
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.0
-	P: 0.097; R: 0.755
-	TP: 278; FN: 90; FP: 2598; TN: 755
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 2527; TN: 1073
 threshold: -0.8
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.6
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.4
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.2
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 -----------------
 winsize: x1.0
 threshold: -2.0
 	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	TP: 0; FN: 2; FP: 0; TN: 3598
 threshold: -1.8
 	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	TP: 0; FN: 2; FP: 0; TN: 3598
 threshold: -1.6
 	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	TP: 0; FN: 2; FP: 0; TN: 3598
 threshold: -1.4
 	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	TP: 0; FN: 2; FP: 0; TN: 3598
 threshold: -1.2
 	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	TP: 0; FN: 2; FP: 0; TN: 3598
 threshold: -1.0
-	P: 0.101; R: 0.851
-	TP: 313; FN: 55; FP: 2794; TN: 559
+	P: 0.001; R: 1.000
+	TP: 2; FN: 0; FP: 2681; TN: 917
 threshold: -0.8
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.001; R: 1.000
+	TP: 2; FN: 0; FP: 3598; TN: 0
 threshold: -0.6
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.001; R: 1.000
+	TP: 2; FN: 0; FP: 3598; TN: 0
 threshold: -0.4
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.001; R: 1.000
+	TP: 2; FN: 0; FP: 3598; TN: 0
 threshold: -0.2
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.001; R: 1.000
+	TP: 2; FN: 0; FP: 3598; TN: 0
 -----------------
 winsize: x1.2
 threshold: -2.0
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.8
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.6
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.4
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.2
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.0
-	P: 0.100; R: 0.951
-	TP: 350; FN: 18; FP: 3145; TN: 208
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 2896; TN: 704
 threshold: -0.8
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.6
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.4
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.2
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 -----------------
 winsize: x1.4
 threshold: -2.0
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.8
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.6
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.4
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.2
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.0
-	P: 0.101; R: 0.997
-	TP: 367; FN: 1; FP: 3249; TN: 104
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 2836; TN: 764
 threshold: -0.8
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.6
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.4
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.2
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 -----------------
 winsize: x1.6
 threshold: -2.0
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.8
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.6
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.4
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.2
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.0
-	P: 0.100; R: 0.992
-	TP: 365; FN: 3; FP: 3286; TN: 67
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 2404; TN: 1196
 threshold: -0.8
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.6
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.4
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.2
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 -----------------
 winsize: x1.8
 threshold: -2.0
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.8
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.6
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.4
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.2
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.0
-	P: 0.093; R: 0.859
-	TP: 316; FN: 52; FP: 3088; TN: 265
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 1871; TN: 1729
 threshold: -0.8
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.6
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.4
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.2
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 -----------------
 winsize: x2.0
 threshold: -2.0
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.8
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.6
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.4
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.2
-	P: NaN; R: 0.000
-	TP: 0; FN: 368; FP: 0; TN: 3353
+	P: NaN; R: NaN
+	TP: 0; FN: 0; FP: 0; TN: 3600
 threshold: -1.0
-	P: 0.087; R: 0.696
-	TP: 256; FN: 112; FP: 2692; TN: 661
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 1644; TN: 1956
 threshold: -0.8
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.6
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.4
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0
 threshold: -0.2
-	P: 0.099; R: 1.000
-	TP: 368; FN: 0; FP: 3353; TN: 0
+	P: 0.000; R: NaN
+	TP: 0; FN: 0; FP: 3600; TN: 0

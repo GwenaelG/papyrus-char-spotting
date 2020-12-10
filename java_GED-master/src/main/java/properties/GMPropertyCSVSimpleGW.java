@@ -25,23 +25,26 @@ public class GMPropertyCSVSimpleGW {
 
     public static void main(String[] args) {
 
-        String parameterFile    = "test/papyrus/settings/ParametersL_kp.csv";
-        String graphFile        = "test/papyrus/settings/Graphs_kp_gw.csv";
-        String resultPath       = "test/papyrus/results/gw/kp/";
-        String propertyPath     = "test/papyrus/properties/gw/kp/";
+        String parameterFile    = "test/papyrus/settings/ParametersL_cont.csv";
+        String graphFile        = "test/papyrus/settings/Graphs_cont_gw.csv";
+        String resultPath       = "test/papyrus/results/gw/cont/";
+        String propertyPath     = "test/papyrus/properties/gw/cont/";
         String sourceImagesPath = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/chars/";
         String targetImagesPath = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/patches/";
         String distVisFolder      = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/hotmap/";
-        String charVisFolder    = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/char/gw/kp/";
+        String charVisFolder    = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/char/gw/cont/";
         String[] windowSizes    = new String[]{"0.5", "0.6", "0.7", "0.8", "0.9", "1", "1.2", "1.4", "1.6", "1.8", "2"};
         String[] thresholdValues = new String[]{"-2", "-1.8", "-1.6", "-1.4", "-1.2", "-1", "-0.8", "-0.6", "-0.4", "-0.2"};
+        String nodeRatio            = "10";
+        String iouRatio             = "0.9";
 
-        readCSVFiles(parameterFile, graphFile, resultPath, propertyPath, sourceImagesPath, targetImagesPath, distVisFolder, charVisFolder, windowSizes, thresholdValues);
+        readCSVFiles(parameterFile, graphFile, resultPath, propertyPath, sourceImagesPath, targetImagesPath, distVisFolder,
+                charVisFolder, windowSizes, thresholdValues, nodeRatio, iouRatio);
     }
 
     private static void readCSVFiles(String parameterFile, String graphFile, String resultPath, String propertyPath,
-                                     String sourceImagesPath, String targetImagesPath, String distVisFolder, String charVisFolder, String[] windowSizes,
-                                     String[] thresholdValues){
+                                     String sourceImagesPath, String targetImagesPath, String distVisFolder, String charVisFolder,
+                                     String[] windowSizes, String[] thresholdValues, String nodeRatio, String iouRatio){
 
         try {
 
@@ -223,6 +226,10 @@ public class GMPropertyCSVSimpleGW {
 
                 GMPropertyFile.addValue(propertyValues, "stepX", stepX, "5");
                 GMPropertyFile.addValue(propertyValues, "stepY", stepY, "5");
+
+                GMPropertyFile.addValue(propertyValues, "nodeRatio", nodeRatio,"10");
+
+                GMPropertyFile.addValue(propertyValues, "iouRatio", iouRatio, "0.9");
 
                 // Export values
                 GMPropertyFile.export(propertyFile, propertyValues);

@@ -1,4 +1,4 @@
 gw_270_patch_for gw_270_patch
-best precision: 0.127, recall: 0.454, win: 0.50, thresh: -1.00
-best recall: 1.000, precision: 0.099, win: 0.50, thresh: -0.80
+best precision: 0.001, recall: 1.000, win: 1.00, thresh: -1.00
+best recall: 1.000, precision: 0.001, win: 1.00, thresh: -1.00
 

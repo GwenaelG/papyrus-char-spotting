@@ -347,8 +347,16 @@ public class GMSFG_mod {
 						}
 						nodeRatioOK.set(i,j,k,l,ratioOK);
 
+						if(k % 61 == 0) {
+							BufferedImage img = targetGraph.displayGraph((int) targetWidth, (int) targetHeight);
+							Graphics g = (Graphics2D) img.getGraphics();
+							g.setColor(Color.GRAY);
+							g.drawRect((int) columnCoord,(int) rowCoord,(int) sourceWidth,(int) sourceHeight);
+							ImageIO.write(img, "png", new File("C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/test/"+String.format("%05d", k)+".png"));
+						}
+
 						this.counter++;
-						if (counter % 1000 == 0) {
+						if (counter % 100 == 0) {
 							System.out.println("Matching " + counter + " of " + numOfMatchings);
 						}
 
@@ -536,10 +544,10 @@ public class GMSFG_mod {
 											this.falseNegatives.set(i, j, l, t, this.falseNegatives.get(i, j, l, t) + 1);
 										}
 									}
-//									double dist = distanceMatrix.get(i,j,k,l);
-//									System.out.println(k+": "+topLeftCornerX+" "+topLeftCornerY+" "+bottomRightCornerX+" "+bottomRightCornerY+", "
-//											+String.format("%.3f",IoU)+" "+String.format("%.3f",dist)
-//											+" "+windowNodeCount.get(i,j,k,l)+" "+nodeRatioOK.get(i,j,k,l));
+									double dist = distanceMatrix.get(i,j,k,l);
+									System.out.println(k+": "+topLeftCornerX+" "+topLeftCornerY+" "+bottomRightCornerX+" "+bottomRightCornerY+", "
+											+String.format("%.3f",IoU)+" "+String.format("%.3f",dist)
+											+" "+windowNodeCount.get(i,j,k,l)+" "+nodeRatioOK.get(i,j,k,l));
 //									if (dist < minDists.get(1, 0)) {
 //										minDists.set(1, 0, dist);
 //										minDists.set(1, 1, (double) k);
@@ -589,6 +597,7 @@ public class GMSFG_mod {
 				g.drawImage(greyImg, 0, 0, null);
 				//blue overall, green BB, red no touch
 				Color[] c = {Color.GREEN, Color.GRAY};
+				String[] msg = {"overall", "no BB"};
 				for (int n = 0; n < c.length; n++) {
 					int cornerX = (minDists.get(n,1).intValue() % numOfStepsX) * stepX;
 					int cornerY = (minDists.get(n,1).intValue() / numOfStepsX) * stepY;
@@ -599,6 +608,7 @@ public class GMSFG_mod {
 					g.drawRect(cornerX, cornerY, windowWidth, windowHeight);
 					g.drawImage(charImg, cornerX, cornerY, cornerX + windowWidth, cornerY + windowHeight,
 							0, 0, charImg.getWidth(), charImg.getHeight(), null);
+					System.out.println(msg[n]+" "+minDists.get(n,0)+" "+windowNodeCount.get(i,j,minDists.get(n,1).intValue(),minDists.get(n,2).intValue()));
 				}
 
 //				for (int k = 0; k < numOfGridPoints; k++) {
@@ -904,7 +914,7 @@ public class GMSFG_mod {
 		Path sourceImagesPath = Paths.get(properties.getProperty("sourceImagesPath"));
 		this.sourceImages = new ArrayList<>();
 		for (int j = 0; j < source.size(); j++) {
-			String imagePath = sourceImagesPath + "\\" + source.get(j).getFileName().substring(0, source.get(j).getFileName().length() - 4) + "_t.png";
+			String imagePath = sourceImagesPath + "\\" + source.get(j).getFileName().substring(0, source.get(j).getFileName().length() - 4) + "_tt.png";
 			BufferedImage oldImg = ImageIO.read(new File(imagePath));
 			sourceImages.add(oldImg);
 		}

@@ -3,15 +3,15 @@ targetFile=test/papyrus/reduced/target_gw.cxl
 sourceFile=test/papyrus/reduced/source_gw.cxl
 
 # graphs folder
-sourcePath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/gw/chars/D_1/v_4/
-targetPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/gw/patches/D_1/v_4/
+sourcePath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/keypoint/gxl/gw/chars/D_5/
+targetPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/keypoint/gxl/gw/patches/D_5/
 
 # original images
 sourceImagesPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/chars/
 targetImagesPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/patches/
 
 # results folder
-result=test/papyrus/results/test_treceval/
+result=test/papyrus/results/
 
 # groundtruth file
 groundtruth=test/papyrus/groundtruth_gw.txt
@@ -40,11 +40,11 @@ numOfEdgeAttr=0
 multiplyEdgeCosts=0
 
 # node/edge cost balance
-alpha=0.5
+alpha=0.1
 
 # costs
 node=8
-edge=4
+edge=1
 
 # print options
 outputGraphs=0
@@ -104,8 +104,8 @@ threshold7=-0.6
 threshold8=-0.4
 threshold9=-0.2
 
-stepX=1
-stepY=1
+stepX=5
+stepY=5
 
 nodeRatio=100
 

@@ -1,4 +1,4 @@
-#Tue Nov 24 13:42:51 CET 2020
+#Mon Dec 07 22:25:05 CET 2020
 adj=bestWithGreedy
 matching=HED
 numOfNodeAttr=2
@@ -19,9 +19,11 @@ threshold0=-2
 numOfWindowSizes=11
 result=test/papyrus/results/recons/core1_kp/281/
 windowSize10=2
+iouRatio=0.9
 multiplyNodeCosts=0
 treceval=treceval/trec_eval.exe
 pEdge=1
+nodeRatio=10
 costType=Euclidean Scaling
 nodeAttr0Importance=0.5
 simKernel=0
@@ -48,8 +50,8 @@ windowSize7=1.4
 windowSize6=1.2
 windowSize5=1
 windowSize4=0.9
-windowSize3=0.8
 nodeAttr1Importance=0.5
+windowSize3=0.8
 windowSize2=0.7
 windowSize1=0.6
 windowSize0=0.5
