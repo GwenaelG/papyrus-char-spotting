@@ -15,10 +15,7 @@ import costs.normalisation.GEDNormalisation3;
 import costs.normalisation.NormalisationFunction;
 import graph.Graph;
 import graph.GraphSet;
-import gwenael.BoundingBox;
-import gwenael.FiveDimAL;
-import gwenael.FourDimAL;
-import gwenael.TwoDimAL;
+import gwenael.*;
 import kaspar.GreedyMatching;
 import kaspar.GreedyMatrixGenerator;
 import org.opencv.imgcodecs.Imgcodecs;
@@ -186,7 +183,7 @@ public class GraphMatchingSegFreeGW {
 	private double[] windowSizes;
 
 	// groundtruth
-	private TwoDimAL<BoundingBox> boundingBoxesGT;
+	private ArrayList<GroundtruthPage> groundtruthPages;
 
 	// images for dist display
 	private ArrayList<BufferedImage> targetImages;
@@ -244,9 +241,13 @@ public class GraphMatchingSegFreeGW {
 	public GraphMatchingSegFreeGW(String prop) throws Exception {
 
 		// initialize the matching
+		long initTimeStart = System.currentTimeMillis();
 		System.out.println("Initializing the matching according to the properties...");
 		this.init(prop);
-
+		long initTime = System.currentTimeMillis() - initTimeStart;
+		long initTimeMin = initTime / 60000;
+		long initTimeSec = (initTime / 1000) % 60;
+		System.out.println("Time for init(): "+ initTimeMin+" m "+initTimeSec+" s.");
 
 		// the cost matrix used for bipartite matchings
 		double[][] costMatrix;
@@ -350,13 +351,13 @@ public class GraphMatchingSegFreeGW {
 						}
 						nodeRatioOK.set(i,j,k,l,ratioOK);
 
-						if(k % 61 == 0) {
-							BufferedImage img = targetGraph.displayGraph((int) targetWidth, (int) targetHeight);
-							Graphics g = (Graphics2D) img.getGraphics();
-							g.setColor(Color.GRAY);
-							g.drawRect((int) columnCoord,(int) rowCoord,(int) sourceWidth,(int) sourceHeight);
-							ImageIO.write(img, "png", new File("C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/test/"+String.format("%05d", k)+".png"));
-						}
+//						if(k % 61 == 0) {
+//							BufferedImage img = targetGraph.displayGraph((int) targetWidth, (int) targetHeight);
+//							Graphics g = (Graphics2D) img.getGraphics();
+//							g.setColor(Color.GRAY);
+//							g.drawRect((int) columnCoord,(int) rowCoord,(int) sourceWidth,(int) sourceHeight);
+//							ImageIO.write(img, "png", new File("C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/test/"+String.format("%05d", k)+".png"));
+//						}
 
 						this.counter++;
 						if (counter % 100 == 0) {
@@ -428,8 +429,8 @@ public class GraphMatchingSegFreeGW {
 		for (int i = 0; i < source.size(); i++) {
 
 		 	Graph sourceGraph = source.get(i);
-			String charID = sourceGraph.getGraphID();
-		 	String charClass = this.wordList.get(sourceGraph.getGraphID());
+			String sourceID = sourceGraph.getGraphID();
+		 	String sourceClass = this.wordList.get(sourceGraph.getGraphID());
 
 			for (int j = 0; j < target.size(); j++) {
 
@@ -443,6 +444,8 @@ public class GraphMatchingSegFreeGW {
 				double yMean = targetPage.getDouble("y_mean");
 				double xStDev = targetPage.getDouble("x_std");
 				double yStDev = targetPage.getDouble("y_std");
+
+				GroundtruthPage targetPageGroundtruth = groundtruthPages.get(j);
 
 				TwoDimAL<Double> minDists = new TwoDimAL<>();
 				//store overall min dist, min dist in a BB, min dist with no BB overlap
@@ -468,7 +471,7 @@ public class GraphMatchingSegFreeGW {
 						distMean += dist;
 					}
 				}
-				distMean /= targetPage.size();
+				distMean /= (numOfGridPoints*windowSizes.length);
 
 				for (int k = 0; k < numOfGridPoints; k++) {
 					for (int l = 0; l < windowSizes.length; l++) {
@@ -497,12 +500,13 @@ public class GraphMatchingSegFreeGW {
 
 					for (int k = 0; k < numOfGridPoints; k++) {
 
-						String targetWindowID = targetPageID+"_pt"+k+"_w"+windowSizes[l];
+						String targetID = targetPageID+"_pt"+k+"_w"+windowSizes[l];
 
 						int nodeX = (k % numOfStepsX) * stepX;
 						int nodeY = (k / numOfStepsX) * stepY;
 
-						// careful with access order
+						Rectangle sourceRect = new Rectangle(nodeX, nodeY, windowWidth, windowHeight);
+
 						double normDist = normColorDistMatrix.get(i,j,k,l);
 
 						for(int t = 0; t < thresholds.length; t++){
@@ -514,55 +518,34 @@ public class GraphMatchingSegFreeGW {
 							underThresholdMat.set(i,j,k,l,t,underThresh);
 						}
 
-						String targetWindowClass = "";
+						boolean inCorrectLine = false;
+						String targetClass = "";
 
-						boolean inBB = false;
-						boolean touchBB = false;
-						for (int n = 0; n < boundingBoxesGT.get(j).size(); n++) {
-							int[] coords = boundingBoxesGT.get(j, n).getCoords();
-							int bbX1 = coords[0];
-							int bbY1 = coords[1];
-							int bbX2 = coords[2];
-							int bbY2 = coords[3];
-							// max(...) get coords of topleft corner of intersection rectangle
-							// min(...) get coords of bottomright corner
-							int topLeftCornerX = Math.max(nodeX, bbX1);
-							int topLeftCornerY = Math.max(nodeY, bbY1);
-							int bottomRightCornerX = Math.min(nodeX + windowWidth, bbX2);
-							int bottomRightCornerY = Math.min(nodeY + windowHeight, bbY2);
-							// compare them to be sure there is actually an intersection
-							if ((topLeftCornerX < bottomRightCornerX) && (topLeftCornerY < bottomRightCornerY)){
-								touchBB = true;
-								int bbArea = (bbX2 - bbX1) * (bbY2 - bbY1);
-								int windowArea = windowWidth * windowHeight;
-								int intersectionArea = (bottomRightCornerX - topLeftCornerX) * (bottomRightCornerY - topLeftCornerY);
-								double IoU = intersectionArea / (double)(bbArea + windowArea - intersectionArea);
-								//check if rectangles overlap enough
-								if (IoU >= IoU_Ratio) {
-									inBB = true;
-									for(int t = 0; t < thresholds.length; t++) {
-										if (underThresholdMat.get(i,j,k,l,t)) {
-											this.truePositives.set(i, j, l, t, this.truePositives.get(i, j, l, t) + 1);
-										} else {
-											this.falseNegatives.set(i, j, l, t, this.falseNegatives.get(i, j, l, t) + 1);
+						for (int m = 0; m < targetPageGroundtruth.getLines().size(); m++) {
+							GroundtruthLine groundtruthLine = targetPageGroundtruth.getLines().get(m);
+							//replace line Polygon with bounding box Rectangle for easy area computation
+							Rectangle lineBoundingBox = groundtruthLine.getPolygon().getBounds();
+							if (lineBoundingBox.intersects(sourceRect)) {
+								double intersectArea = getArea(lineBoundingBox.intersection(sourceRect));
+								double unionArea = getArea(lineBoundingBox.union(sourceRect));
+								double IoU = intersectArea / unionArea;
+								if (IoU >= IoU_Ratio){
+									if (groundtruthLine.getGroundtruth().contains(sourceClass)) {
+										inCorrectLine = true;
+										for (int t = 0; t < thresholds.length; t++) {
+											if (underThresholdMat.get(i, j, k, l, t)) {
+												this.truePositives.set(i, j, l, t, this.truePositives.get(i, j, l, t) + 1);
+											} else {
+												this.falseNegatives.set(i, j, l, t, this.falseNegatives.get(i, j, l, t) + 1);
+											}
 										}
+										targetClass = sourceClass;
+										break;
 									}
-									double dist = distanceMatrix.get(i,j,k,l);
-									System.out.println(k+": "+topLeftCornerX+" "+topLeftCornerY+" "+bottomRightCornerX+" "+bottomRightCornerY+", "
-											+String.format("%.3f",IoU)+" "+String.format("%.3f",dist)
-											+" "+windowNodeCount.get(i,j,k,l)+" "+nodeRatioOK.get(i,j,k,l));
-//									if (dist < minDists.get(1, 0)) {
-//										minDists.set(1, 0, dist);
-//										minDists.set(1, 1, (double) k);
-//										minDists.set(1, 2, (double) l);
-//									}
-
-									targetWindowClass = charClass;
-									break;
 								}
 							}
 						}
-						if (!inBB) {
+						if (!inCorrectLine){
 							for(int t = 0; t < thresholds.length; t++) {
 								if (underThresholdMat.get(i,j,k,l,t)) {
 									this.falsePositives.set(i, j, l, t, this.falsePositives.get(i, j, l,t) + 1);
@@ -570,18 +553,10 @@ public class GraphMatchingSegFreeGW {
 									this.trueNegatives.set(i, j, l, t,this.trueNegatives.get(i, j, l, t) + 1);
 								}
 							}
-							if (!touchBB) {
-								double dist = distanceMatrix.get(i,j,k,l);
-								if (dist < minDists.get(1, 0)) {
-									minDists.set(1, 0, dist);
-									minDists.set(1, 1, (double) k);
-									minDists.set(1, 2, (double) l);
-								}
-							}
-
-							targetWindowClass = "notChar";
+							targetClass = "notInLine";
 						}
-						SpottingResult spottingResult = new SpottingResult(charID, charClass, targetWindowID, targetWindowClass, normDist);
+
+						SpottingResult spottingResult = new SpottingResult(sourceID, sourceClass, targetID, targetClass, normDist);
 						spottingResults.add(spottingResult);
 					}
 				}
@@ -591,44 +566,44 @@ public class GraphMatchingSegFreeGW {
 
 				trecEval.exportSpottingResults(reducedSpottingResults);
 
-				//  display best match
-				BufferedImage greyImg = targetImages.get(j);
-				int targetWidth = greyImg.getWidth();
-				int targetHeight = greyImg.getHeight();
-				BufferedImage img = new BufferedImage(targetWidth, targetHeight, BufferedImage.TYPE_INT_RGB);
-				Graphics g = (Graphics2D) img.getGraphics();
-				g.drawImage(greyImg, 0, 0, null);
-				//blue overall, green BB, red no touch
-				Color[] c = {Color.GREEN, Color.GRAY};
-				String[] msg = {"overall", "no BB"};
-				for (int n = 0; n < c.length; n++) {
-					int cornerX = (minDists.get(n,1).intValue() % numOfStepsX) * stepX;
-					int cornerY = (minDists.get(n,1).intValue() / numOfStepsX) * stepY;
-					BufferedImage charImg = sourceImages.get(i);
-					int windowWidth = (int) (windowSizes[minDists.get(n, 2).intValue()] * charImg.getWidth());
-					int windowHeight = (int) (windowSizes[minDists.get(n, 2).intValue()] * charImg.getHeight());
-					g.setColor(c[n]);
-					g.drawRect(cornerX, cornerY, windowWidth, windowHeight);
-					g.drawImage(charImg, cornerX, cornerY, cornerX + windowWidth, cornerY + windowHeight,
-							0, 0, charImg.getWidth(), charImg.getHeight(), null);
-					System.out.println(msg[n]+" "+minDists.get(n,0)+" "+windowNodeCount.get(i,j,minDists.get(n,1).intValue(),minDists.get(n,2).intValue()));
-				}
-
-//				for (int k = 0; k < numOfGridPoints; k++) {
-//					int l = 0;
-//					int nodeX = (k % numOfStepsX) * stepX;
-//					int nodeY = (k / numOfStepsX) * stepY;
-//					int nc = windowNodeCount.get(i,j,k,l);
-//					g.setColor(new Color(nc, nc, nc));
-//					g.fillRect(nodeX, nodeY, 1, 1);
-//
+//				//  display best match
+//				BufferedImage greyImg = targetImages.get(j);
+//				int targetWidth = greyImg.getWidth();
+//				int targetHeight = greyImg.getHeight();
+//				BufferedImage img = new BufferedImage(targetWidth, targetHeight, BufferedImage.TYPE_INT_RGB);
+//				Graphics g = (Graphics2D) img.getGraphics();
+//				g.drawImage(greyImg, 0, 0, null);
+//				//blue overall, green BB, red no touch
+//				Color[] c = {Color.GREEN, Color.GRAY};
+//				String[] msg = {"overall", "no BB"};
+//				for (int n = 0; n < c.length; n++) {
+//					int cornerX = (minDists.get(n,1).intValue() % numOfStepsX) * stepX;
+//					int cornerY = (minDists.get(n,1).intValue() / numOfStepsX) * stepY;
+//					BufferedImage charImg = sourceImages.get(i);
+//					int windowWidth = (int) (windowSizes[minDists.get(n, 2).intValue()] * charImg.getWidth());
+//					int windowHeight = (int) (windowSizes[minDists.get(n, 2).intValue()] * charImg.getHeight());
+//					g.setColor(c[n]);
+//					g.drawRect(cornerX, cornerY, windowWidth, windowHeight);
+//					g.drawImage(charImg, cornerX, cornerY, cornerX + windowWidth, cornerY + windowHeight,
+//							0, 0, charImg.getWidth(), charImg.getHeight(), null);
+//					System.out.println(msg[n]+" "+minDists.get(n,0)+" "+windowNodeCount.get(i,j,minDists.get(n,1).intValue(),minDists.get(n,2).intValue()));
 //				}
-				String imgFolder = charVisFolder.toString() + "/";
-				Files.createDirectories(Paths.get(imgFolder));
-				String propFile = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
-				String imgName = imgFolder+propFile+"_"+(int)costFunctionManager.getNodeCost()+"_"+(int)costFunctionManager.getEdgeCost()
-						+"_"+costFunctionManager.getAlpha()+"_"+costFunctionManager.getNodeAttrImportance()[0]+".png";
-				ImageIO.write(img, "png", new File(imgName));
+//
+////				for (int k = 0; k < numOfGridPoints; k++) {
+////					int l = 0;
+////					int nodeX = (k % numOfStepsX) * stepX;
+////					int nodeY = (k / numOfStepsX) * stepY;
+////					int nc = windowNodeCount.get(i,j,k,l);
+////					g.setColor(new Color(nc, nc, nc));
+////					g.fillRect(nodeX, nodeY, 1, 1);
+////
+////				}
+//				String imgFolder = charVisFolder.toString() + "/";
+//				Files.createDirectories(Paths.get(imgFolder));
+//				String propFile = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
+//				String imgName = imgFolder+propFile+"_"+(int)costFunctionManager.getNodeCost()+"_"+(int)costFunctionManager.getEdgeCost()
+//						+"_"+costFunctionManager.getAlpha()+"_"+costFunctionManager.getNodeAttrImportance()[0]+".png";
+//				ImageIO.write(img, "png", new File(imgName));
 			}
 		}
 
@@ -653,6 +628,10 @@ public class GraphMatchingSegFreeGW {
 	 */
 	public int getCounter() {
 		return counter;
+	}
+
+	private double getArea(Rectangle rect) {
+		return rect.getWidth()*rect.getHeight();
 	}
 
 	/**
@@ -875,33 +854,17 @@ public class GraphMatchingSegFreeGW {
 			windowSizes[i] = Double.parseDouble(properties.getProperty("windowSize" + i));
 		}
 
-		
-		// extract groundtruth bounding boxes from XML file
-		this.boundingBoxesGT = new TwoDimAL<BoundingBox>();
-		String boundingBoxesFolder = properties.getProperty("boundingBoxesFolder");
+		//extract line groundtruth from files
+		this.groundtruthPages = new ArrayList<>();
+		String groundtruthFilesFolder = properties.getProperty("groundtruthPagesFolder");
 		for (int i = 0; i < c; i ++) {
-			Path boundingBoxesFilePath = Paths.get(boundingBoxesFolder, target.get(i).getFileName().split("\\.")[0]+".xml");
-			boundingBoxesGT.add(new ArrayList<>());
-			if (Files.isRegularFile(boundingBoxesFilePath)) {
-				File boundingBoxesFile = new File(String.valueOf(boundingBoxesFilePath));
-				DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
-				Document boundingBoxesDoc = dBuilder.parse(boundingBoxesFile);
-				boundingBoxesDoc.getDocumentElement().normalize();
-				NodeList boundingBoxes = boundingBoxesDoc.getElementsByTagName("box");
-				for (int j = 0; j < boundingBoxes.getLength(); j++){
-					Element boundingBox = (Element) boundingBoxes.item(j);
-					String boundingBoxId = boundingBox.getAttribute("id");
-					String boundingBoxChar = boundingBox.getAttribute("char");
-					Integer boundingBoxX1 = Integer.valueOf(boundingBox.getElementsByTagName("x1").item(0).getTextContent());
-					Integer boundingBoxY1 = Integer.valueOf(boundingBox.getElementsByTagName("y1").item(0).getTextContent());
-					Integer boundingBoxX2 = Integer.valueOf(boundingBox.getElementsByTagName("x2").item(0).getTextContent());
-					Integer boundingBoxY2 = Integer.valueOf(boundingBox.getElementsByTagName("y2").item(0).getTextContent());
-					int[] coords = new int[] {boundingBoxX1, boundingBoxY1, boundingBoxX2, boundingBoxY2};
-					BoundingBox tempBB = new BoundingBox(boundingBoxId, boundingBoxChar, coords);
-					boundingBoxesGT.set(i,j,tempBB);
-				}
-			}
+			String pageName = target.get(i).getGraphID();
+			Path groundtruthFilePath = Paths.get(groundtruthFilesFolder, pageName, ".txt");
+			GroundtruthPage GTPage = new GroundtruthPage(pageName);
+			GTPage.extractGroundtruthLines(groundtruthFilePath);
+			groundtruthPages.add(GTPage);
 		}
+
 
 		this.hotmapVisFolder = Paths.get(properties.getProperty("editDistVis"));
 		this.charVisFolder = Paths.get(properties.getProperty("charVisFolder"));

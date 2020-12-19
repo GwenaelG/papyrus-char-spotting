@@ -462,7 +462,7 @@ def create_gxl(V, E, coord, name, D):
     None.
 
     """
-    location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/keypoint/gxl/gw/patches/D_'+str(D)+'/'
+    location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/keypoint/gxl/gw/chars/D_'+str(D)+'/'
     if not os.path.exists(location):
         os.makedirs(location)
     filename = location+name+'.gxl'

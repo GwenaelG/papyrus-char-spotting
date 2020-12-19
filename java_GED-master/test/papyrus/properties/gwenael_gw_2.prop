@@ -1,0 +1,102 @@
+# cxl files
+targetFile=test/papyrus/cxl/target_gw_270.cxl
+sourceFile=test/papyrus/cxl/source_gw.cxl
+
+# graphs folder
+sourcePath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/gw/chars/D_1/v_4/
+targetPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/gw/pages/D_1/v_4/
+
+# original images
+sourceImagesPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/chars/
+targetImagesPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/pages/
+
+# results folder
+result=test/papyrus/results/curr/
+
+# groundtruth file
+groundtruth=test/papyrus/groundtruth_gw.txt
+
+# trec eval file
+treceval=treceval/trec_eval.exe
+
+# should be "best" or "worst" (GreedyMatrixGenerator)
+adj=bestWithGreedy
+
+# HED only possible, others commented (not tested)
+matching=HED
+
+# all node attributes
+numOfNodeAttr=2
+nodeAttr0=x
+nodeCostType0=
+nodeAttr0Importance=0.1
+nodeAttr1=y
+nodeCostType1=
+nodeAttr1Importance=0.9
+multiplyNodeCosts=0
+
+# all edge attributes
+numOfEdgeAttr=0
+multiplyEdgeCosts=0
+
+# node/edge cost balance
+alpha=0.1
+
+# costs
+node=8
+edge=1
+
+# print options
+outputGraphs=0
+outputCostMatrix=0
+outputMatching=0
+outputEditPath=0
+
+# cost function, "Euclidean" or "Euclidean Scaling"
+costType=Euclidean Scaling
+
+# whether similarities or distances are computed
+simKernel=0
+
+# undirected edges?
+undirected=1
+
+# normalisation function (N1, N2, N3)
+normalisationFunction=N1
+
+# p-rooted
+pNode=1
+pEdge=1
+
+# window sizes
+numOfWindowSizes=1
+windowSize0=1
+
+
+# pages groundtruth folder
+groundtruthPagesFolder=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/groundtruth/
+
+# edit distance visualization folder
+editDistVis=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/hotmap/
+
+# char visualization folder
+charVisFolder=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/char/
+
+numOfThresholdVal=10
+threshold0=-2
+threshold1=-1.8
+threshold2=-1.6
+threshold3=-1.4
+threshold4=-1.2
+threshold5=-1.0
+threshold6=-0.8
+threshold7=-0.6
+threshold8=-0.4
+threshold9=-0.2
+
+stepX=1
+stepY=1
+
+nodeRatio=100
+
+iouRatio=0.9

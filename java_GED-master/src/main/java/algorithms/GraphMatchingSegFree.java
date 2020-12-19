@@ -465,7 +465,7 @@ public class GraphMatchingSegFree {
 						distMean += dist;
 					}
 				}
-				distMean /= targetPage.size();
+				distMean /= (numOfGridPoints*windowSizes.length);
 
 				for (int k = 0; k < numOfGridPoints; k++) {
 					for (int l = 0; l < windowSizes.length; l++) {
@@ -545,9 +545,9 @@ public class GraphMatchingSegFree {
 										}
 									}
 									double dist = distanceMatrix.get(i,j,k,l);
-									System.out.println(k+": "+topLeftCornerX+" "+topLeftCornerY+" "+bottomRightCornerX+" "+bottomRightCornerY+", "
-											+String.format("%.3f",IoU)+" "+String.format("%.3f",dist)
-											+" "+windowNodeCount.get(i,j,k,l)+" "+nodeRatioOK.get(i,j,k,l));
+//									System.out.println(k+": "+topLeftCornerX+" "+topLeftCornerY+" "+bottomRightCornerX+" "+bottomRightCornerY+", "
+//											+String.format("%.3f",IoU)+" "+String.format("%.3f",dist)
+//											+" "+windowNodeCount.get(i,j,k,l)+" "+nodeRatioOK.get(i,j,k,l));
 //									if (dist < minDists.get(1, 0)) {
 //										minDists.set(1, 0, dist);
 //										minDists.set(1, 1, (double) k);
@@ -608,7 +608,7 @@ public class GraphMatchingSegFree {
 					g.drawRect(cornerX, cornerY, windowWidth, windowHeight);
 					g.drawImage(charImg, cornerX, cornerY, cornerX + windowWidth, cornerY + windowHeight,
 							0, 0, charImg.getWidth(), charImg.getHeight(), null);
-					System.out.println(msg[n]+" "+minDists.get(n,0)+" "+windowNodeCount.get(i,j,minDists.get(n,1).intValue(),minDists.get(n,2).intValue()));
+//					System.out.println(msg[n]+" "+minDists.get(n,0)+" "+windowNodeCount.get(i,j,minDists.get(n,1).intValue(),minDists.get(n,2).intValue()));
 				}
 
 //				for (int k = 0; k < numOfGridPoints; k++) {
