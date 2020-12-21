@@ -41,10 +41,8 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
+import java.util.*;
 import java.util.List;
-import java.util.Properties;
-import java.util.TreeMap;
 
 /**
  * @author riesen
@@ -248,6 +246,14 @@ public class GraphMatchingSegFreeGW {
 		long initTimeMin = initTime / 60000;
 		long initTimeSec = (initTime / 1000) % 60;
 		System.out.println("Time for init(): "+ initTimeMin+" m "+initTimeSec+" s.");
+		int totalNodeCount = 0;
+		for (int i = 0; i < source.size(); i++){
+			totalNodeCount += source.get(i).size();
+		}
+		for (int i = 0; i < target.size(); i++) {
+			totalNodeCount += target.get(i).size();
+		}
+		System.out.println("Total number of nodes: "+totalNodeCount);
 
 		// the cost matrix used for bipartite matchings
 		double[][] costMatrix;
@@ -299,6 +305,7 @@ public class GraphMatchingSegFreeGW {
 				int j = idxs2[j0];
 
 				targetPage = this.target.get(j);
+
 
 				double targetWidth = targetImages.get(j).getWidth();
 				double targetHeight = targetImages.get(j).getHeight();
@@ -464,9 +471,16 @@ public class GraphMatchingSegFreeGW {
 						double dist = distanceMatrix.get(i, j, k, l);
 						//overall min distance, even if no nodes
 						if (dist < minDists.get(0, 0)) {
-								minDists.set(0, 0, dist);
-								minDists.set(0, 1, (double) k);
-								minDists.set(0, 2, (double) l);
+							minDists.set(1,0, minDists.get(0,0));
+							minDists.set(1,1, minDists.get(0,1));
+							minDists.set(1,2, minDists.get(0,2));
+							minDists.set(0, 0, dist);
+							minDists.set(0, 1, (double) k);
+							minDists.set(0, 2, (double) l);
+						} else if(dist < minDists.get(1,0)) {
+							minDists.set(1,0, dist);
+							minDists.set(1,1, (double) k);
+							minDists.set(1,2, (double) l);
 						}
 						distMean += dist;
 					}
@@ -566,44 +580,44 @@ public class GraphMatchingSegFreeGW {
 
 				trecEval.exportSpottingResults(reducedSpottingResults);
 
-//				//  display best match
-//				BufferedImage greyImg = targetImages.get(j);
-//				int targetWidth = greyImg.getWidth();
-//				int targetHeight = greyImg.getHeight();
-//				BufferedImage img = new BufferedImage(targetWidth, targetHeight, BufferedImage.TYPE_INT_RGB);
-//				Graphics g = (Graphics2D) img.getGraphics();
-//				g.drawImage(greyImg, 0, 0, null);
-//				//blue overall, green BB, red no touch
-//				Color[] c = {Color.GREEN, Color.GRAY};
-//				String[] msg = {"overall", "no BB"};
-//				for (int n = 0; n < c.length; n++) {
-//					int cornerX = (minDists.get(n,1).intValue() % numOfStepsX) * stepX;
-//					int cornerY = (minDists.get(n,1).intValue() / numOfStepsX) * stepY;
-//					BufferedImage charImg = sourceImages.get(i);
-//					int windowWidth = (int) (windowSizes[minDists.get(n, 2).intValue()] * charImg.getWidth());
-//					int windowHeight = (int) (windowSizes[minDists.get(n, 2).intValue()] * charImg.getHeight());
-//					g.setColor(c[n]);
-//					g.drawRect(cornerX, cornerY, windowWidth, windowHeight);
-//					g.drawImage(charImg, cornerX, cornerY, cornerX + windowWidth, cornerY + windowHeight,
-//							0, 0, charImg.getWidth(), charImg.getHeight(), null);
-//					System.out.println(msg[n]+" "+minDists.get(n,0)+" "+windowNodeCount.get(i,j,minDists.get(n,1).intValue(),minDists.get(n,2).intValue()));
-//				}
+				//  display best match
+				BufferedImage greyImg = targetImages.get(j);
+				int targetWidth = greyImg.getWidth();
+				int targetHeight = greyImg.getHeight();
+				BufferedImage img = new BufferedImage(targetWidth, targetHeight, BufferedImage.TYPE_INT_RGB);
+				Graphics g = (Graphics2D) img.getGraphics();
+				g.drawImage(greyImg, 0, 0, null);
+				//blue overall, green BB, red no touch
+				Color[] c = {Color.GREEN, Color.BLUE};
+				String[] msg = {"overall", "2nd best"};
+				for (int n = 0; n < c.length; n++) {
+					int cornerX = (minDists.get(n,1).intValue() % numOfStepsX) * stepX;
+					int cornerY = (minDists.get(n,1).intValue() / numOfStepsX) * stepY;
+					BufferedImage charImg = sourceImages.get(i);
+					int windowWidth = (int) (windowSizes[minDists.get(n, 2).intValue()] * charImg.getWidth());
+					int windowHeight = (int) (windowSizes[minDists.get(n, 2).intValue()] * charImg.getHeight());
+					g.setColor(c[n]);
+					g.drawRect(cornerX, cornerY, windowWidth, windowHeight);
+					g.drawImage(charImg, cornerX, cornerY, cornerX + windowWidth, cornerY + windowHeight,
+							0, 0, charImg.getWidth(), charImg.getHeight(), null);
+					System.out.println(msg[n]+" "+minDists.get(n,0)+" "+windowNodeCount.get(i,j,minDists.get(n,1).intValue(),minDists.get(n,2).intValue()));
+				}
+
+//				for (int k = 0; k < numOfGridPoints; k++) {
+//					int l = 0;
+//					int nodeX = (k % numOfStepsX) * stepX;
+//					int nodeY = (k / numOfStepsX) * stepY;
+//					int nc = windowNodeCount.get(i,j,k,l);
+//					g.setColor(new Color(nc, nc, nc));
+//					g.fillRect(nodeX, nodeY, 1, 1);
 //
-////				for (int k = 0; k < numOfGridPoints; k++) {
-////					int l = 0;
-////					int nodeX = (k % numOfStepsX) * stepX;
-////					int nodeY = (k / numOfStepsX) * stepY;
-////					int nc = windowNodeCount.get(i,j,k,l);
-////					g.setColor(new Color(nc, nc, nc));
-////					g.fillRect(nodeX, nodeY, 1, 1);
-////
-////				}
-//				String imgFolder = charVisFolder.toString() + "/";
-//				Files.createDirectories(Paths.get(imgFolder));
-//				String propFile = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
-//				String imgName = imgFolder+propFile+"_"+(int)costFunctionManager.getNodeCost()+"_"+(int)costFunctionManager.getEdgeCost()
-//						+"_"+costFunctionManager.getAlpha()+"_"+costFunctionManager.getNodeAttrImportance()[0]+".png";
-//				ImageIO.write(img, "png", new File(imgName));
+//				}
+				String imgFolder = charVisFolder.toString() + "/";
+				Files.createDirectories(Paths.get(imgFolder));
+				String propFile = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
+				String imgName = imgFolder+propFile+"_"+(int)costFunctionManager.getNodeCost()+"_"+(int)costFunctionManager.getEdgeCost()
+						+"_"+costFunctionManager.getAlpha()+"_"+costFunctionManager.getNodeAttrImportance()[0]+".png";
+				ImageIO.write(img, "png", new File(imgName));
 			}
 		}
 

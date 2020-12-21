@@ -1,5 +1,5 @@
 # cxl files
-targetFile=test/papyrus/cxl/target_gw_270.cxl
+targetFile=test/papyrus/cxl/target_gw_270_half.cxl
 sourceFile=test/papyrus/cxl/source_gw.cxl
 
 # graphs folder
@@ -69,8 +69,11 @@ pNode=1
 pEdge=1
 
 # window sizes
-numOfWindowSizes=1
+numOfWindowSizes=3
 windowSize0=1
+windowSize1=1.1
+windowSize2=1.2
+
 
 
 # pages groundtruth folder
