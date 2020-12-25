@@ -77,7 +77,7 @@ windowSize2=1.2
 
 
 # pages groundtruth folder
-groundtruthPagesFolder=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/groundtruth/
+groundtruthPagesFolder=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/groundtruth/gw_lines/
 
 # edit distance visualization folder
 editDistVis=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/hotmap/
@@ -97,9 +97,10 @@ threshold7=-0.6
 threshold8=-0.4
 threshold9=-0.2
 
-stepX=1
-stepY=1
+stepX=5
+stepY=5
 
-nodeRatio=100
+nodeRatio=1.5
 
 iouRatio=0.9
+

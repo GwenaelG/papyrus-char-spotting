@@ -1,10 +1,12 @@
 package gwenael;
 
+
 import java.awt.*;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
+
 
 public class GroundtruthPage {
 
@@ -34,6 +36,7 @@ public class GroundtruthPage {
 	}
 
 	public void extractGroundtruthLines(Path textFilePath) throws IOException {
+		// System.out.println("extract "+textFilePath.toString());
 		if (Files.isRegularFile(textFilePath)) {
 			File textFile = new File(String.valueOf(textFilePath));
 			FileReader fr = new FileReader(textFile);
