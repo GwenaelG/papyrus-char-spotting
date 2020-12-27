@@ -36,15 +36,15 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.List;
 import java.util.*;
+import java.util.List;
 
 /**
  * @author riesen
  * modified Gwenael
- * 
+ *
  */
-public class GMSFGW_save {
+public class GMSFGW_save{
 
 //	static { System.loadLibrary(Core.NATIVE_LIBRARY_NAME); }
 
@@ -55,17 +55,11 @@ public class GMSFGW_save {
 	private GraphSet source, target;
 
 	/**
-	 * the resulting distance matrix D = (d_i,j,k,l), where d_i,j,k,l = d(g_i,g_j,k,l)
-	 * (distances between all graphs g_i from source and all window graphs from target graph g_j, centered on node k
-	 * with window size l)
+	 * the resulting distances, corresponding to the windows AL
 	 */
-	private FourDimAL<Double> distanceMatrix;
+	private ArrayList<Double> distanceList;
 
-	// used for resultPrinter only (?)
-	// private FourDimAL<Double> normalisedDistanceMatrix;
-
-	// used for distance-to-color conversion
-	private FourDimAL<Double> normColorDistMatrix;
+	private ArrayList<Double> normDistanceList;
 
 	/**
 	 * the source and target graph actually to be matched (temp ist for temporarily swappings)
@@ -103,13 +97,6 @@ public class GMSFGW_save {
 	 * the normalisation function to be applied
 	 */
 	private NormalisationFunction normalisationFunction;
-
-	/**
-	 * number of rows and columns in the distance matrix
-	 * (i.e. number of source and target graphs)
-	 */
-	private int r;
-	private int c;
 
 	/**
 	 * computes an optimal bipartite matching of local graph structures
@@ -175,6 +162,14 @@ public class GMSFGW_save {
 	// size of windows relative to source char
 	private double[] windowSizes;
 
+	//
+	private TwoDimAL<Integer> candWindows;
+
+	private	TwoDimAL<Integer> windowsCount;
+
+	//
+	private ThreeDimAL<Double> windowsDistMeanStd;
+
 	// groundtruth
 	private ArrayList<GroundtruthPage> groundtruthPages;
 
@@ -189,13 +184,10 @@ public class GMSFGW_save {
 	private Path hotmapVisFolder;
 	private Path charVisFolder;
 
-	// use sigmoid (or linear distance-to-color conversion )
-	private boolean sigmoid;
-
 	// normalized threshold (for normalized distances)
 	private double[] thresholds;
 
-	private FiveDimAL<Boolean> underThresholdMat;
+	private TwoDimAL<Boolean> underThresholdMat;
 
 	private FourDimAL<Integer> truePositives;
 	private FourDimAL<Integer> trueNegatives;
@@ -206,11 +198,13 @@ public class GMSFGW_save {
 	private int stepY;
 	private TwoDimAL<Integer> gridSizes;
 
+	private ThreeDimAL<Double> minDists;
+
 	private double IoU_Ratio;
 
-	private FourDimAL<Boolean> nodeRatioOK;
 	private FourDimAL<Integer> windowNodeCount;
 	private double nodeRatio;
+
 
 	/**
 	 * @param args
@@ -264,6 +258,7 @@ public class GMSFGW_save {
 			numOfMatchings +=  (img.getWidth() / stepX + 1) * (img.getHeight() / stepY + 1);
 		}
 		numOfMatchings *= this.source.size() * windowSizes.length;
+		System.out.println("Maximum number of matchings: "+numOfMatchings);
 
 		// distance value d
 		double d = -1;
@@ -272,7 +267,6 @@ public class GMSFGW_save {
 		// swapped the graphs?
 		boolean swapped = false;
 
-		
 		// init editPath (for one matching)
 		EditPath editPath = null;
 
@@ -324,276 +318,224 @@ public class GMSFGW_save {
 
 					double[] windowCornerCoords = {(columnCoord - xMean) / xStDev, (rowCoord - yMean) / yStDev};
 
-					ArrayList<Graph> windows = targetPage.extractWindowsCornerCoords(windowCornerCoords, windowMaxSides);
+					ArrayList<Graph> targetWindows = targetPage.extractWindowsCornerCoords(windowCornerCoords, windowMaxSides);
 
 					for (int l = 0; l < windowSizes.length; l++) {
 
 						swapped = false;
 
-						targetGraph = windows.get(l);
+						targetGraph = targetWindows.get(l);
 
 						int targetNodeCount = targetGraph.size();
 
 						windowNodeCount.set(i,j,k,l,targetNodeCount);
-						boolean ratioOK = false;
-						ratioOK = false;
 						double matchingNodeRatio = (double) sourceNodeCount / (double) targetNodeCount;
 						if ((matchingNodeRatio > (1 / nodeRatio)) && (matchingNodeRatio < nodeRatio)) {
-							ratioOK = true;
-						}
-						nodeRatioOK.set(i,j,k,l,ratioOK);
+							candWindows.add(new ArrayList<Integer>(Arrays.asList(i,j,k,l)));
+							windowsCount.set(i,j, windowsCount.get(i,j)+1);
 
-						this.counter++;
-						if (counter % 100 == 0) {
-							System.out.println("Matching " + counter + " of " + numOfMatchings);
-						}
+							if (counter % 1000 == 0) {
+								System.out.println("Matching " + counter + " of possibly " + numOfMatchings);
+							}
 
-						// log the current graphs on the console
-						if (this.outputGraphs == 1) {
-							System.out.println("The Source Graph:");
-							System.out.println(sourceGraph);
-							System.out.println("\n\nThe Target Graph:");
-							System.out.println(targetGraph);
-						}
-						// if both graphs are empty the distance is zero and no computations have to be carried out!
-						if (this.sourceGraph.size() < 1 && this.targetGraph.size() < 1) {
-							d = 0;
-						} else {
+							// log the current graphs on the console
+							if (this.outputGraphs == 1) {
+								System.out.println("The Source Graph:");
+								System.out.println(sourceGraph);
+								System.out.println("\n\nThe Target Graph:");
+								System.out.println(targetGraph);
+							}
 
-							if (this.matching.equals("HED")) {
-								if (this.sourceGraph.size() < this.targetGraph.size()) {
-									this.swapGraphs();
-									swapped = true;
+							// if both graphs are empty the distance is zero and no computations have to be carried out!
+							if (this.sourceGraph.size() < 1 && this.targetGraph.size() < 1) {
+								d = 0;
+
+							} else {
+								if (this.matching.equals("HED")) {
+									if (this.sourceGraph.size() < this.targetGraph.size()) {
+										this.swapGraphs();
+										swapped = true;
+									}
+
+									HED hed = new HED();
+									d = hed.getHausdorffEditDistance(sourceGraph, targetGraph, costFunctionManager);
+									editPath = null;
+
+									double[] distances = this.editDistance.getNormalisedEditDistance(sourceGraph, targetGraph, d, normalisationFunction);
+
+									d = distances[0];
+									// normalization is NOT to N(0,1) !
+									// d_norm = distances[1];
 								}
-
-								HED hed = new HED();
-								d = hed.getHausdorffEditDistance(sourceGraph, targetGraph, costFunctionManager);
-								editPath = null;
-
-								double[] distances = this.editDistance.getNormalisedEditDistance(sourceGraph, targetGraph, d, normalisationFunction);
-
-								d = distances[0];
-								d_norm = distances[1];
 							}
-						}
 
-						
-						// whether distances or similarities are computed
-						if (this.simKernel < 1) {
-							this.distanceMatrix.set(i, j, k, l, d);
-							this.normColorDistMatrix.set(i, j, k, l, d_norm);
+							// whether distances or similarities are computed
+							if (this.simKernel < 1) {
+								this.distanceList.add(d);
 
-						} else {
-							switch (this.simKernel) {
-								case 1:
-									this.distanceMatrix.set(i, j, k, l, -Math.pow(d, 2.0));
-									break;
-								case 2:
-									this.distanceMatrix.set(i, j, k, l, -d);
-									break;
-								case 3:
-									this.distanceMatrix.set(i, j, k, l, Math.tanh(-d));
-									break;
-								case 4:
-									this.distanceMatrix.set(i, j, k, l, Math.exp(-d));
-									break;
+							} else {
+								switch (this.simKernel) {
+									case 1:
+										this.distanceList.add(-Math.pow(d, 2.0));
+										break;
+									case 2:
+										this.distanceList.add(-d);
+										break;
+									case 3:
+										this.distanceList.add( Math.tanh(-d));
+										break;
+									case 4:
+										this.distanceList.add( Math.exp(-d));
+										break;
+								}
 							}
-						}
-						if (swapped) {
-							this.swapGraphs();
+							if (swapped) {
+								this.swapGraphs();
+							}
+
+							//at the end
+							this.counter++;
 						}
 					}
+				}
+			}
+		}
+
+		System.out.println("Final number of matchings: "+candWindows.size());
+
+		for (int n = 0; n < candWindows.size(); n++) {
+			ArrayList<Integer> windowRefs = candWindows.get(n);
+			int i = windowRefs.get(0);
+			int j = windowRefs.get(1);
+			int k = windowRefs.get(2);
+			int l = windowRefs.get(3);
+
+			double dist = distanceList.get(n);
+
+			windowsDistMeanStd.set(i, j, 0, windowsDistMeanStd.get(i, j, 0) + dist);
+		}
+
+		for (int i = 0; i < source.size(); i++) {
+			for (int j = 0; j < target.size(); j++) {
+				windowsDistMeanStd.set(i,j,0,windowsDistMeanStd.get(i,j,0)/windowsCount.get(i,j));
+			}
+		}
+
+		for (int n = 0; n < candWindows.size(); n++) {
+			ArrayList<Integer> windowRefs = candWindows.get(n);
+			int i = windowRefs.get(0);
+			int j = windowRefs.get(1);
+			int k = windowRefs.get(2);
+			int l = windowRefs.get(3);
+
+			double dist = distanceList.get(n);
+
+			double distMean = windowsDistMeanStd.get(i,j,0);
+
+			windowsDistMeanStd.set(i, j, 1, windowsDistMeanStd.get(i, j, 1) + Math.pow(dist - distMean, 2));
+		}
+
+		for (int i = 0; i < source.size(); i++) {
+			for (int j = 0; j < target.size(); j++) {
+				double distStDev = Math.sqrt(windowsDistMeanStd.get(i,j,1) / windowsCount.get(i,j));
+				windowsDistMeanStd.set(i,j,1, distStDev);
+				if (distStDev == 0) {
+					System.out.println(" ------- /!\\ StDevDist = 0, no good!! -------");
 				}
 			}
 		}
 
 		ArrayList<SpottingResult> spottingResults = new ArrayList<>();
 
-		// display edit distance between target node window and source char
-		for (int i = 0; i < source.size(); i++) {
+		for (int n = 0; n < candWindows.size(); n++) {
+			ArrayList<Integer> windowRefs = candWindows.get(n);
+			int i = windowRefs.get(0);
+			int j = windowRefs.get(1);
+			int k = windowRefs.get(2);
+			int l = windowRefs.get(3);
 
-		 	Graph sourceGraph = source.get(i);
+			double dist = distanceList.get(n);
+			double distMean = windowsDistMeanStd.get(i,j,0);
+			double distStDev = windowsDistMeanStd.get(i,j,1);
+			double normDist = (dist - distMean) / distStDev;
+			normDistanceList.add(n,normDist);
+
+			Graph sourceGraph = source.get(i);
 			String sourceID = sourceGraph.getGraphID();
-		 	String sourceClass = this.wordList.get(sourceGraph.getGraphID());
+			String sourceClass = this.wordList.get(sourceGraph.getGraphID());
 
-			for (int j = 0; j < target.size(); j++) {
+			int numOfGridPoints = gridSizes.get(j,0);
+			int numOfStepsX = gridSizes.get(j,1);
 
-				int numOfGridPoints = gridSizes.get(j,0);
-				int numOfStepsX = gridSizes.get(j,1);
+			targetPage = target.get(j);
+			String targetPageID = targetPage.getGraphID();
 
-				targetPage = target.get(j);
-				String targetPageID = targetPage.getGraphID();
+			GroundtruthPage targetPageGroundtruth = groundtruthPages.get(j);
 
-				double xMean = targetPage.getDouble("x_mean");
-				double yMean = targetPage.getDouble("y_mean");
-				double xStDev = targetPage.getDouble("x_std");
-				double yStDev = targetPage.getDouble("y_std");
+			int windowWidth = (int) (windowSizes[l] * sourceImages.get(i).getWidth());
+			int windowHeight = (int) (windowSizes[l] * sourceImages.get(i).getHeight());
 
-				GroundtruthPage targetPageGroundtruth = groundtruthPages.get(j);
+			String targetID = targetPageID+"_pt"+k+"_w"+windowSizes[l];
 
-				TwoDimAL<Double> minDists = new TwoDimAL<>();
-				//store overall min dist, min dist in a BB, min dist with no BB overlap
-				for (int z = 0; z < 2; z++) {
-					minDists.set(z,0, Double.POSITIVE_INFINITY);
-					minDists.set(z,1,(double) 0);
-					minDists.set(z,2,(double) 0);
+			int nodeX = (k % numOfStepsX) * stepX;
+			int nodeY = (k / numOfStepsX) * stepY;
+
+			Rectangle sourceRect = new Rectangle(nodeX, nodeY, windowWidth, windowHeight);
+
+			for(int t = 0; t < thresholds.length; t++){
+				boolean underThresh = false;
+				double thresh = thresholds[t];
+				if (normDist <= thresh) {
+					underThresh = true;
 				}
-
-				TwoDimAL<Double> pos = new TwoDimAL<>();
-
-
-				// normalize distances for threshold
-				double distMean = 0;
-				double distSumSqDiff = 0;
-
-				for (int k = 0; k < numOfGridPoints; k++) {
-					for (int l = 0; l < windowSizes.length; l++) {
-						double dist = distanceMatrix.get(i, j, k, l);
-						//overall min distance, even if no nodes
-						if (dist < minDists.get(0, 0)) {
-							minDists.set(1, 0, minDists.get(0,0));
-							minDists.set(1, 1, minDists.get(0,1));
-							minDists.set(1, 2, minDists.get(0,2));
-							minDists.set(0, 0, dist);
-							minDists.set(0, 1, (double) k);
-							minDists.set(0, 2, (double) l);
-						} else if(dist < minDists.get(1,0)) {
-							minDists.set(1,0, dist);
-							minDists.set(1,1, (double) k);
-							minDists.set(1,2, (double) l);
-						}
-						distMean += dist;
-					}
-				}
-				distMean /= (numOfGridPoints*windowSizes.length);
-
-				for (int k = 0; k < numOfGridPoints; k++) {
-					for (int l = 0; l < windowSizes.length; l++) {
-						double dist = distanceMatrix.get(i, j, k, l);
-						distSumSqDiff += Math.pow(dist - distMean,2);
-					}
-				}
-
-				double distStDev = Math.sqrt(distSumSqDiff / (numOfGridPoints*windowSizes.length));
-				if (distStDev == 0) {
-					System.out.println(" ------- /!\\ StDevDist = 0, no good!! -------");
-				}
-
-				for (int k = 0; k < numOfGridPoints; k++) {
-					for (int l = 0; l < windowSizes.length; l++) {
-						double dist = distanceMatrix.get(i, j, k, l);
-						double normDist = (dist - distMean) / distStDev ;
-						normColorDistMatrix.set(i,j,k,l, normDist);
-					}
-				}
-
-				for (int l = 0; l < windowSizes.length; l++) {
-
-					int windowWidth = (int) (windowSizes[l] * sourceImages.get(i).getWidth());
-					int windowHeight = (int) (windowSizes[l] * sourceImages.get(i).getHeight());
-
-					int countDoubleInters = 0;
-
-					for (int k = 0; k < numOfGridPoints; k++) {
-
-						String targetID = targetPageID+"_pt"+k+"_w"+windowSizes[l];
-
-						int nodeX = (k % numOfStepsX) * stepX;
-						int nodeY = (k / numOfStepsX) * stepY;
-
-						Rectangle sourceRect = new Rectangle(nodeX, nodeY, windowWidth, windowHeight);
-
-						double normDist = normColorDistMatrix.get(i,j,k,l);
-
-						for(int t = 0; t < thresholds.length; t++){
-							boolean underThresh = false;
-							double thresh = thresholds[t];
-							if (normDist <= thresh) {
-								underThresh = true;
-							}
-							underThresholdMat.set(i,j,k,l,t,underThresh);
-						}
-
-						boolean inCorrectLine = false;
-						String targetClass = "";
-						for (int m = 0; m < targetPageGroundtruth.getLines().size(); m++) {
-							GroundtruthLine groundtruthLine = targetPageGroundtruth.getLines().get(m);
-							//replace line Polygon with bounding box Rectangle for easy area computation
-							Rectangle lineBoundingBox = groundtruthLine.getPolygon().getBounds();
-							if (lineBoundingBox.intersects(sourceRect)) {
-								double intersectArea = getArea(lineBoundingBox.intersection(sourceRect));
-								// cant use IoU here, since line area is huge
-								// --> use intersection/Area
-								double IoA = intersectArea / getArea(sourceRect);
-								if (IoA >= IoU_Ratio){
-									if (groundtruthLine.getGroundtruth().contains(sourceClass)) {
-										inCorrectLine = true;
-										pos.add(new ArrayList<Double>(Arrays.asList((double) k, (double) l)));
-										for (int t = 0; t < thresholds.length; t++) {
-											if (underThresholdMat.get(i, j, k, l, t)) {
-												this.truePositives.set(i, j, l, t, this.truePositives.get(i, j, l, t) + 1);
-											} else {
-												this.falseNegatives.set(i, j, l, t, this.falseNegatives.get(i, j, l, t) + 1);
-											}
-										}
-										targetClass = sourceClass;
-										break;
-									}
-								}
-							}
-						}
-
-
-						if (!inCorrectLine){
-							for(int t = 0; t < thresholds.length; t++) {
-								if (underThresholdMat.get(i,j,k,l,t)) {
-									this.falsePositives.set(i, j, l, t, this.falsePositives.get(i, j, l,t) + 1);
-								} else {
-									this.trueNegatives.set(i, j, l, t,this.trueNegatives.get(i, j, l, t) + 1);
-								}
-							}
-							targetClass = "notInLine";
-						}
-
-						SpottingResult spottingResult = new SpottingResult(sourceID, sourceClass, targetID, targetClass, normDist);
-						spottingResults.add(spottingResult);
-					}
-				}
-
-				SpottingPostProcessing spottingPostProcessing = new SpottingPostProcessing();
-				ArrayList<SpottingResult> reducedSpottingResults = spottingPostProcessing.postProcess(spottingResults);
-
-				trecEval.exportSpottingResults(reducedSpottingResults);
-
-				//  display best match
-				BufferedImage greyImg = targetImages.get(j);
-				int targetWidth = greyImg.getWidth();
-				int targetHeight = greyImg.getHeight();
-				BufferedImage img = new BufferedImage(targetWidth, targetHeight, BufferedImage.TYPE_INT_RGB);
-				BufferedImage charImg = sourceImages.get(i);
-				Graphics g = (Graphics2D) img.getGraphics();
-				g.drawImage(greyImg, 0, 0, null);
-				String[] msg = {"overall", "2nd best"};
-				for (int n = 0; n < minDists.size(); n++) {
-					int cornerX = (minDists.get(n,1).intValue() % numOfStepsX) * stepX;
-					int cornerY = (minDists.get(n,1).intValue() / numOfStepsX) * stepY;
-					int windowWidth = (int) (windowSizes[minDists.get(n, 2).intValue()] * charImg.getWidth());
-					int windowHeight = (int) (windowSizes[minDists.get(n, 2).intValue()] * charImg.getHeight());
-					g.setColor(Color.BLUE);
-					g.drawRect(cornerX, cornerY, windowWidth, windowHeight);
-					g.drawImage(charImg, cornerX, cornerY, cornerX + windowWidth, cornerY + windowHeight,
-							0, 0, charImg.getWidth(), charImg.getHeight(), null);
-					System.out.println(msg[n]+" "+minDists.get(n,0)+" "+windowNodeCount.get(i,j,minDists.get(n,1).intValue(),minDists.get(n,2).intValue()));
-				}
-
-				String imgFolder = charVisFolder.toString() + "/";
-				Files.createDirectories(Paths.get(imgFolder));
-				String propFile = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
-				String imgName = imgFolder+propFile+"_"+(int)costFunctionManager.getNodeCost()+"_"+(int)costFunctionManager.getEdgeCost()
-						+"_"+costFunctionManager.getAlpha()+"_"+costFunctionManager.getNodeAttrImportance()[0]+".png";
-				ImageIO.write(img, "png", new File(imgName));
+				underThresholdMat.set(n,t,underThresh);
 			}
+
+			boolean inCorrectLine = false;
+			String targetClass = "";
+			for (int m = 0; m < targetPageGroundtruth.getLines().size(); m++) {
+				GroundtruthLine groundtruthLine = targetPageGroundtruth.getLines().get(m);
+				//replace line Polygon with bounding box Rectangle for easy area computation
+				Rectangle lineBoundingBox = groundtruthLine.getPolygon().getBounds();
+				if (lineBoundingBox.intersects(sourceRect)) {
+					double intersectArea = getArea(lineBoundingBox.intersection(sourceRect));
+					// cant use IoU here, since line area is huge
+					// --> use intersection/Area
+					double IoA = intersectArea / getArea(sourceRect);
+					if (IoA >= IoU_Ratio){
+						if (groundtruthLine.getGroundtruth().contains(sourceClass)) {
+							inCorrectLine = true;
+							for (int t = 0; t < thresholds.length; t++) {
+								if (underThresholdMat.get(n, t)) {
+									this.truePositives.set(i, j, l, t, this.truePositives.get(i, j, l, t) + 1);
+								} else {
+									this.falseNegatives.set(i, j, l, t, this.falseNegatives.get(i, j, l, t) + 1);
+								}
+							}
+							targetClass = sourceClass;
+							break;
+						}
+					}
+				}
+			}
+
+			if (!inCorrectLine){
+				for(int t = 0; t < thresholds.length; t++) {
+					if (underThresholdMat.get(n,t)) {
+						this.falsePositives.set(i, j, l, t, this.falsePositives.get(i, j, l,t) + 1);
+					} else {
+						this.trueNegatives.set(i, j, l, t,this.trueNegatives.get(i, j, l, t) + 1);
+					}
+				}
+				targetClass = "notInLine";
+			}
+
+			SpottingResult spottingResult = new SpottingResult(sourceID, sourceClass, targetID, targetClass, normDist);
+			spottingResults.add(spottingResult);
+
 		}
+
+
 
 		SpottingPostProcessing spottingPostProcessing = new SpottingPostProcessing();
 		ArrayList<SpottingResult> reducedSpottingResults = spottingPostProcessing.postProcess(spottingResults);
@@ -604,7 +546,9 @@ public class GMSFGW_save {
 		this.resultPrinter.printResultGw(propName, source, target, windowSizes, thresholds, truePositives, falseNegatives,
 				falsePositives, trueNegatives);
 
-		//TODO result printer:  node loading
+		//TODO result printer:  node loading time
+		//TODO compare own normDist
+		//TODO really use FP TP TN FN?
 
 
 	}
@@ -630,7 +574,7 @@ public class GMSFGW_save {
 	}
 
 	/**
-	 * initializes the whole graph edit distance framework according to the properties files 
+	 * initializes the whole graph edit distance framework according to the properties files
 	 * @param prop
 	 * @throws Exception
 	 */
@@ -640,16 +584,16 @@ public class GMSFGW_save {
 		FileInputStream fis = new FileInputStream(prop);
 		properties.load(fis);
 		fis.close();
-		
+
 		// define result folder
 		String resultFolder = properties.getProperty("result");
 		System.out.println("result dir:" + resultFolder);
-		
+
 		// the node and edge costs, the relative weighting factor alpha
 		double nodeCost = Double.parseDouble(properties.getProperty("node"));
 		double edgeCost = Double.parseDouble(properties.getProperty("edge"));
 		double alpha = Double.parseDouble(properties.getProperty("alpha"));
-		
+
 		// the node and edge attributes (the names, the individual cost functions, the weighting factors)
 		int numOfNodeAttr = Integer.parseInt(properties
 				.getProperty("numOfNodeAttr"));
@@ -685,7 +629,7 @@ public class GMSFGW_save {
 				edgeCostNu[i]=Double.parseDouble(properties.getProperty("edgeCostNu" + i));
 			}
 		}
-		
+
 		// whether or not the costs are "p-rooted"
 		double squareRootNodeCosts = Double.parseDouble(properties
 				.getProperty("pNode"));
@@ -708,11 +652,11 @@ public class GMSFGW_save {
 				.getProperty("outputMatching"));
 		this.outputEditpath = Integer.parseInt(properties
 				.getProperty("outputEditPath"));
-		
+
 		// whether the edges of the graphs are directed or undirected
 		this.undirected = Integer
 				.parseInt(properties.getProperty("undirected"));
-		
+
 		// the graph matching paradigm actually employed
 		this.matching =  properties.getProperty("matching");
 
@@ -722,7 +666,7 @@ public class GMSFGW_save {
 		} else {
 			this.s = Integer.MAX_VALUE; // AStar
 		}
-		
+
 		// Create and initialise new cost functions
 		CostFunction costFunction;
 
@@ -761,30 +705,30 @@ public class GMSFGW_save {
 		} else {
 			this.normalisationFunction = new GEDNormalisation1(nodeCost, edgeCost);
 		}
-		
+
 		// the matrixGenerator generates the cost-matrices according to the costfunction
 		this.matrixGenerator = new MatrixGenerator(this.costFunctionManager, this.outputCostMatrix);
-		
+
 		this.greedyMatrixGenerator = new GreedyMatrixGenerator(this.costFunctionManager, this.outputCostMatrix, 0);
 		this.greedyMatrixGenerator.setAdj("best");
-		
+
 		this.hedMatrixGenerator = new HEDMatrixGenerator();
-		
+
 		// bipartite matching procedure (Hungarian or VolgenantJonker)
 		this.bipartiteMatching = new BipartiteMatching(this.matching, this.outputMatching);
 
 		this.greedyMatching = new GreedyMatching();
-		
-		// editDistance computes either the approximated edit-distance according to the bipartite  
+
+		// editDistance computes either the approximated edit-distance according to the bipartite
 		// or computes the exact edit distance
 		this.editDistance = new EditDistance(this.undirected, this.outputEditpath);
-		
-		// the resultPrinter prints the properties and the distances found		
+
+		// the resultPrinter prints the properties and the distances found
 		this.resultPrinter = new ResultPrinter(resultFolder, properties);
-		
-		// whether or not a similarity is derived from the distances 
+
+		// whether or not a similarity is derived from the distances
 		this.simKernel=Integer.parseInt(properties.getProperty("simKernel"));
-		
+
 		// load the source and target set of graphs
 		System.out.println("Load the source and target graph sets...");
 
@@ -798,13 +742,9 @@ public class GMSFGW_save {
 		Path cxlTargetPath = Paths.get(properties.getProperty("targetFile"));
 		this.target = graphParser.parseCXL(cxlTargetPath, gxlTargetPath);
 
-		// create a distance matrix to store the resulting dissimilarities
-		this.r = this.source.size();
-		this.c = this.target.size();
-		this.distanceMatrix             = new FourDimAL<>();
-// 		this.normalisedDistanceMatrix   = new FourDimAL<>();
-		this.normColorDistMatrix = new FourDimAL<>();
-				
+		this.distanceList = new ArrayList<>();
+		this.normDistanceList = new ArrayList<>();
+
 //		// check if only one match is required
 		this.oneMatch = Boolean.parseBoolean(properties.getProperty("oneMatch"));
 		if (this.oneMatch) {
@@ -841,7 +781,6 @@ public class GMSFGW_save {
 			this.trecEval = null;
 		}
 
-
 		// window sizes for subgraph matching
 		int numOfWindowSizes = Integer.parseInt(properties.getProperty("numOfWindowSizes"));
 		this.windowSizes = new double[numOfWindowSizes];
@@ -849,10 +788,27 @@ public class GMSFGW_save {
 			windowSizes[i] = Double.parseDouble(properties.getProperty("windowSize" + i));
 		}
 
+		this.candWindows = new TwoDimAL<>();
+
+		this.windowsDistMeanStd = new ThreeDimAL<>();
+		for (int i = 0; i < source.size(); i++) {
+			for (int j = 0; j < target.size(); j++) {
+				windowsDistMeanStd.set(i,j,0, 0.);
+				windowsDistMeanStd.set(i,j,1, 0.);
+			}
+		}
+
+		this.windowsCount = new TwoDimAL<>();
+		for (int i = 0; i < source.size(); i++) {
+			for (int j = 0; j < target.size(); j++) {
+				windowsCount.set(i,j,0);
+			}
+		}
+
 		//extract line groundtruth from files
 		this.groundtruthPages = new ArrayList<>();
 		String groundtruthFilesFolder = properties.getProperty("groundtruthPagesFolder");
-		for (int i = 0; i < c; i ++) {
+		for (int i = 0; i < target.size(); i ++) {
 			String pageName = target.get(i).getGraphID();
 			Path groundtruthFilePath = Paths.get(groundtruthFilesFolder, pageName+".txt");
 			GroundtruthPage GTPage = new GroundtruthPage(pageName);
@@ -886,14 +842,14 @@ public class GMSFGW_save {
 		for (int i = 0; i < numOfThresholdVal; i++) {
 			thresholds[i] = Double.parseDouble(properties.getProperty("threshold"+i));
 		}
-		this.underThresholdMat = new FiveDimAL<>();
+		this.underThresholdMat = new TwoDimAL<>();
 		this.truePositives = new FourDimAL<>();
 		this.trueNegatives = new FourDimAL<>();
 		this.falsePositives = new FourDimAL<>();
 		this.falseNegatives = new FourDimAL<>();
 
-		for (int i = 0; i < r; i++) {
-			for (int j = 0; j < c; j++) {
+		for (int i = 0; i < source.size(); i++) {
+			for (int j = 0; j < target.size(); j++) {
 				//for (int k = 0; k < target.get(j).size(); k++){
 				for (int k = 0; k < numOfWindowSizes; k++) {
 					for (int l = 0; l < thresholds.length; l++) {
@@ -910,8 +866,9 @@ public class GMSFGW_save {
 		this.stepY = Integer.parseInt(properties.getProperty("stepY"));
 		this.gridSizes = new TwoDimAL<>();
 
+		this.minDists = new ThreeDimAL<>();
+
 		this.nodeRatio = Double.parseDouble(properties.getProperty("nodeRatio"));
-		this.nodeRatioOK = new FourDimAL<>();
 		this.windowNodeCount = new FourDimAL<>();
 
 		this.IoU_Ratio = Double.parseDouble(properties.getProperty("iouRatio"));

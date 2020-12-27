@@ -32,6 +32,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileInputStream;
+import java.lang.reflect.Array;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -58,8 +59,11 @@ public class GraphMatchingSegFreeGW {
 	 * the resulting distances, corresponding to the windows AL
 	 */
 	private ArrayList<Double> distanceList;
-
 	private ArrayList<Double> normDistanceList;
+
+	private ThreeDimAL<Double> minLineDistances;
+	private ThreeDimAL<Double> normMinLineDistances;
+
 
 	/**
 	 * the source and target graph actually to be matched (temp ist for temporarily swappings)
@@ -285,7 +289,6 @@ public class GraphMatchingSegFreeGW {
 
 				targetPage = this.target.get(j);
 
-
 				double targetWidth = targetImages.get(j).getWidth();
 				double targetHeight = targetImages.get(j).getHeight();
 				double xMean = targetPage.getDouble("x_mean");
@@ -307,6 +310,7 @@ public class GraphMatchingSegFreeGW {
 							windowSizes[k] * (sourceHeight) / (yStDev)};
 				}
 
+				GroundtruthPage targetPageGroundtruth = groundtruthPages.get(j);
 
 				// create windows, starting with top-left corner
 				for (int k = 0; k < numOfGridPoints; k++){
@@ -335,7 +339,7 @@ public class GraphMatchingSegFreeGW {
 							windowsCount.set(i,j, windowsCount.get(i,j)+1);
 
 							if (counter % 1000 == 0) {
-								System.out.println("Matching " + counter + "of possibly " + numOfMatchings);
+								System.out.println("Matching " + counter + " of possibly " + numOfMatchings);
 							}
 
 							// log the current graphs on the console
@@ -370,27 +374,51 @@ public class GraphMatchingSegFreeGW {
 							}
 
 							// whether distances or similarities are computed
-							if (this.simKernel < 1) {
-								this.distanceList.add(d);
+							// keep d for simKernel = 0
 
-							} else {
-								switch (this.simKernel) {
-									case 1:
-										this.distanceList.add(-Math.pow(d, 2.0));
-										break;
-									case 2:
-										this.distanceList.add(-d);
-										break;
-									case 3:
-										this.distanceList.add( Math.tanh(-d));
-										break;
-									case 4:
-										this.distanceList.add( Math.exp(-d));
-										break;
-								}
+							switch (this.simKernel) {
+								case 1:
+									d = -Math.pow(d, 2.0);
+									break;
+								case 2:
+									d = -d;
+									break;
+								case 3:
+									d = Math.tanh(-d);
+									break;
+								case 4:
+									d = Math.exp(-d);
+									break;
 							}
+
 							if (swapped) {
 								this.swapGraphs();
+							}
+
+							int nodeX = (k % numOfStepsX) * stepX;
+							int nodeY = (k / numOfStepsX) * stepY;
+
+							int windowWidth = (int) (windowSizes[l] * sourceImages.get(i).getWidth());
+							int windowHeight = (int) (windowSizes[l] * sourceImages.get(i).getHeight());
+
+							Rectangle sourceRect = new Rectangle(nodeX, nodeY, windowWidth, windowHeight);
+
+							for (int m = 0; m < targetPageGroundtruth.getLines().size(); m++) {
+								GroundtruthLine groundtruthLine = targetPageGroundtruth.getLines().get(m);
+								//replace line Polygon with bounding box Rectangle for easy area computation
+								Rectangle lineBoundingBox = groundtruthLine.getPolygon().getBounds();
+								if (lineBoundingBox.intersects(sourceRect)) {
+									double intersectArea = getArea(lineBoundingBox.intersection(sourceRect));
+									// cant use IoU here, since line area is huge
+									// --> use intersection/Area
+									double IoA = intersectArea / getArea(sourceRect);
+									if (IoA >= IoU_Ratio){
+										if (d < minLineDistances.get(i,j,m)) {
+											minLineDistances.set(i,j,m,d);
+										}
+										break; // no double intersection
+									}
+								}
 							}
 
 							//at the end
@@ -403,141 +431,37 @@ public class GraphMatchingSegFreeGW {
 
 		System.out.println("Final number of matchings: "+candWindows.size());
 
-		for (int n = 0; n < candWindows.size(); n++) {
-			ArrayList<Integer> windowRefs = candWindows.get(n);
-			int i = windowRefs.get(0);
-			int j = windowRefs.get(1);
-			int k = windowRefs.get(2);
-			int l = windowRefs.get(3);
-
-			double dist = distanceList.get(n);
-
-			windowsDistMeanStd.set(i, j, 0, windowsDistMeanStd.get(i, j, 0) + dist);
-		}
-
-		for (int i = 0; i < source.size(); i++) {
-			for (int j = 0; j < target.size(); j++) {
-				windowsDistMeanStd.set(i,j,0,windowsDistMeanStd.get(i,j,0)/windowsCount.get(i,j));
-			}
-		}
-
-		for (int n = 0; n < candWindows.size(); n++) {
-			ArrayList<Integer> windowRefs = candWindows.get(n);
-			int i = windowRefs.get(0);
-			int j = windowRefs.get(1);
-			int k = windowRefs.get(2);
-			int l = windowRefs.get(3);
-
-			double dist = distanceList.get(n);
-
-			double distMean = windowsDistMeanStd.get(i,j,0);
-
-			windowsDistMeanStd.set(i, j, 1, windowsDistMeanStd.get(i, j, 1) + Math.pow(dist - distMean, 2));
-		}
-
-		for (int i = 0; i < source.size(); i++) {
-			for (int j = 0; j < target.size(); j++) {
-				double distStDev = Math.sqrt(windowsDistMeanStd.get(i,j,1) / windowsCount.get(i,j));
-				windowsDistMeanStd.set(i,j,1, distStDev);
-				if (distStDev == 0) {
-					System.out.println(" ------- /!\\ StDevDist = 0, no good!! -------");
-				}
-			}
-		}
 
 		ArrayList<SpottingResult> spottingResults = new ArrayList<>();
 
-		for (int n = 0; n < candWindows.size(); n++) {
-			ArrayList<Integer> windowRefs = candWindows.get(n);
-			int i = windowRefs.get(0);
-			int j = windowRefs.get(1);
-			int k = windowRefs.get(2);
-			int l = windowRefs.get(3);
-
-			double dist = distanceList.get(n);
-			double distMean = windowsDistMeanStd.get(i,j,0);
-			double distStDev = windowsDistMeanStd.get(i,j,1);
-			double normDist = (dist - distMean) / distStDev;
-			normDistanceList.add(n,normDist);
+		for (int i = 0; i < source.size(); i++) {
 
 			Graph sourceGraph = source.get(i);
 			String sourceID = sourceGraph.getGraphID();
-			String sourceClass = this.wordList.get(sourceGraph.getGraphID());
+			String sourceClass = this.wordList.get(sourceID);
 
-			int numOfGridPoints = gridSizes.get(j,0);
-			int numOfStepsX = gridSizes.get(j,1);
-
-			targetPage = target.get(j);
-			String targetPageID = targetPage.getGraphID();
-
-			GroundtruthPage targetPageGroundtruth = groundtruthPages.get(j);
-
-			int windowWidth = (int) (windowSizes[l] * sourceImages.get(i).getWidth());
-			int windowHeight = (int) (windowSizes[l] * sourceImages.get(i).getHeight());
-
-			String targetID = targetPageID+"_pt"+k+"_w"+windowSizes[l];
-
-			int nodeX = (k % numOfStepsX) * stepX;
-			int nodeY = (k / numOfStepsX) * stepY;
-
-			Rectangle sourceRect = new Rectangle(nodeX, nodeY, windowWidth, windowHeight);
-
-			for(int t = 0; t < thresholds.length; t++){
-				boolean underThresh = false;
-				double thresh = thresholds[t];
-				if (normDist <= thresh) {
-					underThresh = true;
-				}
-				underThresholdMat.set(n,t,underThresh);
-			}
-
-			boolean inCorrectLine = false;
-			String targetClass = "";
-			for (int m = 0; m < targetPageGroundtruth.getLines().size(); m++) {
-				GroundtruthLine groundtruthLine = targetPageGroundtruth.getLines().get(m);
-				//replace line Polygon with bounding box Rectangle for easy area computation
-				Rectangle lineBoundingBox = groundtruthLine.getPolygon().getBounds();
-				if (lineBoundingBox.intersects(sourceRect)) {
-					double intersectArea = getArea(lineBoundingBox.intersection(sourceRect));
-					// cant use IoU here, since line area is huge
-					// --> use intersection/Area
-					double IoA = intersectArea / getArea(sourceRect);
-					if (IoA >= IoU_Ratio){
-						if (groundtruthLine.getGroundtruth().contains(sourceClass)) {
-							inCorrectLine = true;
-							for (int t = 0; t < thresholds.length; t++) {
-								if (underThresholdMat.get(n, t)) {
-									this.truePositives.set(i, j, l, t, this.truePositives.get(i, j, l, t) + 1);
-								} else {
-									this.falseNegatives.set(i, j, l, t, this.falseNegatives.get(i, j, l, t) + 1);
-								}
-							}
-							targetClass = sourceClass;
-							break;
-						}
-					}
-				}
-			}
-
-			if (!inCorrectLine){
-				for(int t = 0; t < thresholds.length; t++) {
-					if (underThresholdMat.get(n,t)) {
-						this.falsePositives.set(i, j, l, t, this.falsePositives.get(i, j, l,t) + 1);
-					} else {
-						this.trueNegatives.set(i, j, l, t,this.trueNegatives.get(i, j, l, t) + 1);
-					}
-				}
-				targetClass = "notInLine";
-			}
-
-			SpottingResult spottingResult = new SpottingResult(sourceID, sourceClass, targetID, targetClass, normDist);
-			spottingResults.add(spottingResult);
-
-		}
-
-		for (int i = 0; i < source.size(); i++) {
 			for (int j = 0; j < target.size(); j++) {
 
+				targetPage = target.get(j);
+
+				GroundtruthPage targetPageGroundtruth = groundtruthPages.get(j);
+
+				for (int m = 0; m < targetPageGroundtruth.getLines().size(); m++) {
+
+					String targetClass;
+					String targetID = targetPage.getGraphID()+"_l"+m;
+
+					GroundtruthLine groundtruthLine = targetPageGroundtruth.getLines().get(m);
+					if (groundtruthLine.getGroundtruth().contains(sourceClass)) {
+						targetClass = sourceClass;
+					} else {
+						targetClass = "noCharLine";
+					}
+
+					SpottingResult spottingResult = new SpottingResult(sourceID, sourceClass, targetID, targetClass, minLineDistances.get(i,j,m));
+					spottingResults.add(spottingResult);
+
+				}
 			}
 		}
 
@@ -546,9 +470,12 @@ public class GraphMatchingSegFreeGW {
 
 		trecEval.exportSpottingResults(reducedSpottingResults);
 
-		String propName = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
-		this.resultPrinter.printResultGw(propName, source, target, windowSizes, thresholds, truePositives, falseNegatives,
-				falsePositives, trueNegatives);
+
+
+
+//		String propName = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
+//		this.resultPrinter.printResultGw(propName, source, target, windowSizes, thresholds, truePositives, falseNegatives,
+//				falsePositives, trueNegatives);
 
 		//TODO result printer:  node loading time
 		//TODO compare own normDist
@@ -812,14 +739,23 @@ public class GraphMatchingSegFreeGW {
 		//extract line groundtruth from files
 		this.groundtruthPages = new ArrayList<>();
 		String groundtruthFilesFolder = properties.getProperty("groundtruthPagesFolder");
-		for (int i = 0; i < source.size(); i ++) {
-			String pageName = target.get(i).getGraphID();
+		for (int j = 0; j < target.size(); j ++) {
+			String pageName = target.get(j).getGraphID();
 			Path groundtruthFilePath = Paths.get(groundtruthFilesFolder, pageName+".txt");
 			GroundtruthPage GTPage = new GroundtruthPage(pageName);
 			GTPage.extractGroundtruthLines(groundtruthFilePath);
 			groundtruthPages.add(GTPage);
 		}
 
+		this.minLineDistances = new ThreeDimAL<>();
+		for (int j = 0; j < target.size(); j++) {
+			GroundtruthPage gtPage = groundtruthPages.get(j);
+			for (int m = 0; m < gtPage.getLines().size(); m++) {
+				for (int i = 0; i < source.size(); i++) {
+					minLineDistances.set(i,j,m,Double.POSITIVE_INFINITY);
+				}
+			}
+		}
 
 		this.hotmapVisFolder = Paths.get(properties.getProperty("editDistVis"));
 		this.charVisFolder = Paths.get(properties.getProperty("charVisFolder"));
