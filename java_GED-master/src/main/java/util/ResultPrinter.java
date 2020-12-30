@@ -264,95 +264,90 @@ public class ResultPrinter {
 		}
 	}
 
-	public void printResultGw(String name, GraphSet source, GraphSet target, double[] windowSizes, double[] thresholds,
-							  FourDimAL<Integer> TP, FourDimAL<Integer> FN, FourDimAL<Integer> FP,
-							  FourDimAL<Integer> TN){
-		String resultNameComplete = this.resultFolder + "/" + name + "_complete.res";
-		String resultNamePrecRec = this.resultFolder + "/" + name + "_precision_recall.res";
+	public void printResultGW(GraphSet source, GraphSet target, String prop, long initTime, long matchingTime) {
+
+		// graph ids
+		int r = source.size();
+		int c = target.size();
+
+		// name of the result file
+		String r1 = (new File(prop)).getName();
+		int split = r1.lastIndexOf(".");
+		String name = r1.substring(0,split);
+
+		// formats
+		this.decFormat = (DecimalFormat) NumberFormat.getInstance(Locale.ENGLISH);
+		this.decFormat.applyPattern("0.00000");
+		DateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");
+		Calendar cal = Calendar.getInstance();
+
+		String resultName = this.resultFolder+name+".res";
+		PrintWriter out;
 
 		try {
-			PrintWriter wrComp = new PrintWriter(new FileOutputStream(resultNameComplete));
-			PrintWriter wrPrecRec = new PrintWriter(new FileOutputStream(resultNamePrecRec));
+			out = new PrintWriter(new FileOutputStream(resultName));
 
-			int r = source.size();
-			int c = target.size();
-			String[] sourceIds = new String[r];
-			String[] targetIds = new String[c];
-			for (int i = 0; i < r; i++) {
-				sourceIds[i] = source.get(i).getGraphID();
+			out.println("timestamp:" + dateFormat.format(cal.getTime()) + "\n");
+
+			out.println("Init Time:");
+			out.print(initTime+" milliseconds = ~ ");
+			long initTimeMin = initTime / 60000;
+			long initTimeSec = (initTime / 1000) % 60;
+			out.println(initTimeMin+"'"+initTimeSec+"\"");
+
+			out.println("Matching Time: ");
+			out.print(matchingTime+" milliseconds = ~ ");
+			long matchingTimeMin = matchingTime / 60000;
+			long matchingTimeSec = (matchingTime / 1000) % 60;
+			out.println(matchingTimeMin+"'"+matchingTimeSec+"\"\n");
+
+			out.println("*** The properties of the matching ***\n");
+			out.println("Source graph set:\t"+this.properties.getProperty("sourceFile")+" ("+r+" graphs)");
+			out.println("Target graph set:\t"+this.properties.getProperty("targetFile")+" ("+c+" graphs)");int totalNodeCount = 0;
+
+			for (int i = 0; i < source.size(); i++){
+				totalNodeCount += source.get(i).size();
 			}
-			for (int j = 0; j < c; j++) {
-				targetIds[j] = target.get(j).getGraphID();
+			for (int i = 0; i < target.size(); i++) {
+				totalNodeCount += target.get(i).size();
 			}
+			out.println("Total number of nodes: "+totalNodeCount);
 
-			ThreeDimAL<Double> bestPrecision = new ThreeDimAL<>();
-			ThreeDimAL<Double> bestRecall = new ThreeDimAL<>();
+			out.println("Graph edit distance procedure:\t"+this.properties.getProperty("matching")+"\n");
 
-			for (int i = 0; i < r; i++) {
-				for (int j = 0; j < c; j++) {
-					wrComp.println(sourceIds[i]+" "+targetIds[j]);
-					bestPrecision.set(i,j,0,0.);
-					bestPrecision.set(i,j,1,0.);
-					bestPrecision.set(i,j,2,0.);
-					bestPrecision.set(i,j,3,0.);
-					bestRecall.set(i,j,0,0.);
-					bestRecall.set(i,j,1,0.);
-					bestRecall.set(i,j,2,0.);
-					bestRecall.set(i,j,3,0.);
+			out.println("Cost for node deletion/insertion:\t"+this.properties.getProperty("node"));
+			out.println("Cost for edge deletion/insertion:\t"+this.properties.getProperty("edge")+"\n");
+			out.println("Alpha weighting factor between node and edge costs:\t"+this.properties.getProperty("alpha")+"\n");
+			int numOfNodeAttr = Integer.parseInt(properties
+					.getProperty("numOfNodeAttr"));
+			int numOfEdgeAttr = Integer.parseInt(properties
+					.getProperty("numOfEdgeAttr"));
 
-					for (int k = 0; k < windowSizes.length; k++){
-						wrComp.println("-----------------");
-						wrComp.println("winsize: x"+windowSizes[k]);
-						for( int l = 0; l < thresholds.length; l++) {
-							double thresh = thresholds[l];
-							wrComp.println("threshold: "+thresh);
-							int nbTP = TP.get(i, j, k,l);
-							int nbFN = FN.get(i, j, k, l);
-							int nbFP = FP.get(i, j, k, l);
-							int nbTN = TN.get(i, j, k, l);
-//							int sum = nbTP + nbTN + nbFP + nbFN;
-//							wrComp.println("total: " + sum);
-							double precision = (double) nbTP / (nbTP + nbFP);
-							double recall = (double) nbTP / (nbTP + nbFN);
-							if (precision > bestPrecision.get(i,j,0)) {
-								bestPrecision.set(i,j,0,precision);
-								bestPrecision.set(i,j,1,(double) k);
-								bestPrecision.set(i,j,2,(double) l);
-								bestPrecision.set(i,j,3,recall);
-							}
-
-							if (recall > bestRecall.get(i,j,0)) {
-								bestRecall.set(i,j,0,recall);
-								bestRecall.set(i,j,1, (double) k);
-								bestRecall.set(i,j,2, (double) l);
-								bestRecall.set(i,j,3, precision);
-							}
-							wrComp.print("\tP: " + String.format("%.3f", precision) + "; R: " + String.format("%.3f\n", recall));
-							wrComp.print("\tTP: " + nbTP + "; ");
-							wrComp.print("FN: " + nbFN + "; ");
-							wrComp.print("FP: " + nbFP + "; ");
-							wrComp.print("TN: " + nbTN + "\n");
-						}
-					}
-					wrPrecRec.println(sourceIds[i]+" "+targetIds[j]);
-
-					String nextLine = "best precision: "+ String.format("%.3f", bestPrecision.get(i,j,0));
-					nextLine += ", recall: " + String.format("%.3f", bestPrecision.get(i,j,3));
-					nextLine += ", win: " + String.format("%.2f", windowSizes[bestPrecision.get(i,j,1).intValue()]);
-					nextLine += ", thresh: "+ String.format("%.2f", thresholds[bestPrecision.get(i,j,2).intValue()]);
-					wrPrecRec.println(nextLine);
-					nextLine = "best recall: "+ String.format("%.3f", bestRecall.get(i,j,0));
-					nextLine += ", precision: "+ String.format("%.3f", bestRecall.get(i,j,3));
-					nextLine += ", win: " + String.format("%.2f", windowSizes[bestRecall.get(i,j,1).intValue()]);
-					nextLine += ", thresh: "+ String.format("%.2f", thresholds[bestRecall.get(i,j,2).intValue()])+"\n";
-					wrPrecRec.println(nextLine);
+			for (int i = 0; i < numOfNodeAttr; i++) {
+				out.print("Node attribute "+i+":\t"+ properties.getProperty("nodeAttr" + i)+";\t");
+				out.print("Cost function:\t"+properties.getProperty("nodeCostType" + i)+";\t");
+				if (properties.getProperty("nodeCostType" + i).equals("discrete")){
+					out.print("mu = "+properties.getProperty("nodeCostMu" + i)+" nu = "+properties.getProperty("nodeCostNu" + i)+";\t");
 				}
+				out.println("Soft factor:\t"+properties.getProperty("nodeAttr" + i + "Importance"));
 			}
+			if (numOfNodeAttr==0){
+				out.println("No attributes for nodes defined");
+			}
+			out.println();
+			for (int i = 0; i < numOfEdgeAttr; i++) {
+				out.print("Edge Attribute "+i+":\t"+ properties.getProperty("edgeAttr" + i)+";\t");
+				out.print("Cost Function:\t"+properties.getProperty("edgeCostType" + i)+";\t");
+				out.println("Soft Factor:\t"+properties.getProperty("edgeAttr" + i + "Importance"));
+			}
+			if (numOfEdgeAttr==0){
+				out.println("No attributes for edges defined");
+			}
+			out.println();
 
+			out.close();
 
-			wrComp.close();
-			wrPrecRec.close();
-		} catch (Exception e) {
+		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
 

@@ -629,9 +629,6 @@ public class GraphMatchingSegFree {
 			}
 		}
 
-		String propName = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
-		this.resultPrinter.printResultGw(propName, source, target, windowSizes, thresholds, truePositives, falseNegatives,
-				falsePositives, trueNegatives);
 
 
 	}

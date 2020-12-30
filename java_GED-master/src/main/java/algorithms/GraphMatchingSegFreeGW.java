@@ -58,12 +58,9 @@ public class GraphMatchingSegFreeGW {
 	/**
 	 * the resulting distances, corresponding to the windows AL
 	 */
-	private ArrayList<Double> distanceList;
-	private ArrayList<Double> normDistanceList;
-
 	private ThreeDimAL<Double> minLineDistances;
-	private ThreeDimAL<Double> normMinLineDistances;
 
+	private FourDimAL<Integer> lineBestWindow;
 
 	/**
 	 * the source and target graph actually to be matched (temp ist for temporarily swappings)
@@ -415,6 +412,8 @@ public class GraphMatchingSegFreeGW {
 									if (IoA >= IoU_Ratio){
 										if (d < minLineDistances.get(i,j,m)) {
 											minLineDistances.set(i,j,m,d);
+											lineBestWindow.set(i,j,m,0,k);
+											lineBestWindow.set(i,j,m,1,l);
 										}
 										break; // no double intersection
 									}
@@ -431,6 +430,7 @@ public class GraphMatchingSegFreeGW {
 
 		System.out.println("Final number of matchings: "+candWindows.size());
 
+		long matchingTime = System.currentTimeMillis() - start;
 
 		ArrayList<SpottingResult> spottingResults = new ArrayList<>();
 
@@ -470,16 +470,44 @@ public class GraphMatchingSegFreeGW {
 
 		trecEval.exportSpottingResults(reducedSpottingResults);
 
+		for (int i = 0; i < source.size(); i++) {
+			BufferedImage charImg = sourceImages.get(i);
+			for (int j = 0; j < target.size(); j++) {
+				BufferedImage greyImg = targetImages.get(j);
+				int targetWidth = greyImg.getWidth();
+				int targetHeight = greyImg.getHeight();
+				BufferedImage img = new BufferedImage(targetWidth, targetHeight, BufferedImage.TYPE_INT_RGB);
+				Graphics g = (Graphics2D) img.getGraphics();
+				g.drawImage(greyImg, 0, 0, null);
+				GroundtruthPage targetPageGroundtruth = groundtruthPages.get(j);
+				for (int m = 0; m < targetPageGroundtruth.getLines().size(); m++) {
+					int cornerX = (lineBestWindow.get(i,j,m,0) % gridSizes.get(j,1)) * stepX;
+					int cornerY = (lineBestWindow.get(i,j,m,0) / gridSizes.get(j,1)) * stepY;
+
+					int windowWidth = (int) (windowSizes[lineBestWindow.get(i,j,m,1)] * charImg.getWidth());
+					int windowHeight = (int) (windowSizes[lineBestWindow.get(i,j,m,1)] * charImg.getHeight());
+					g.setColor(Color.BLUE);
+					g.drawRect(cornerX, cornerY, windowWidth, windowHeight);
+					g.drawImage(charImg, cornerX, cornerY, cornerX + windowWidth, cornerY + windowHeight,
+							0, 0, charImg.getWidth(), charImg.getHeight(), null);
+//					System.out.println(msg[n]+" "+minDists.get(n,0)+" "+windowNodeCount.get(i,j,minDists.get(n,1).intValue(),minDists.get(n,2).intValue()));
+				}
+
+
+				String imgFolder = charVisFolder.toString() + "/";
+				Files.createDirectories(Paths.get(imgFolder));
+				String propFile = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
+				String imgName = imgFolder+propFile+"_"+(int)costFunctionManager.getNodeCost()+"_"+(int)costFunctionManager.getEdgeCost()
+						+"_"+costFunctionManager.getAlpha()+"_"+costFunctionManager.getNodeAttrImportance()[0]+".png";
+				ImageIO.write(img, "png", new File(imgName));
+			}
+
+		}
 
 
 
-//		String propName = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
-//		this.resultPrinter.printResultGw(propName, source, target, windowSizes, thresholds, truePositives, falseNegatives,
-//				falsePositives, trueNegatives);
 
-		//TODO result printer:  node loading time
-		//TODO compare own normDist
-		//TODO really use FP TP TN FN?
+		this.resultPrinter.printResultGW(source, target, prop, initTime, matchingTime);
 
 
 	}
@@ -673,8 +701,6 @@ public class GraphMatchingSegFreeGW {
 		Path cxlTargetPath = Paths.get(properties.getProperty("targetFile"));
 		this.target = graphParser.parseCXL(cxlTargetPath, gxlTargetPath);
 
-		this.distanceList = new ArrayList<>();
-		this.normDistanceList = new ArrayList<>();
 
 //		// check if only one match is required
 		this.oneMatch = Boolean.parseBoolean(properties.getProperty("oneMatch"));
@@ -756,6 +782,8 @@ public class GraphMatchingSegFreeGW {
 				}
 			}
 		}
+
+		this.lineBestWindow = new FourDimAL<>();
 
 		this.hotmapVisFolder = Paths.get(properties.getProperty("editDistVis"));
 		this.charVisFolder = Paths.get(properties.getProperty("charVisFolder"));
