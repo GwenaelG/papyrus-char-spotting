@@ -313,6 +313,8 @@ public class ResultPrinter {
 			}
 			out.println("Total number of nodes: "+totalNodeCount);
 
+			out.println("Step sizes:\tx "+this.properties.getProperty("stepX")+"\ty "+this.properties.getProperty("stepY"));
+
 			out.println("Graph edit distance procedure:\t"+this.properties.getProperty("matching")+"\n");
 
 			out.println("Cost for node deletion/insertion:\t"+this.properties.getProperty("node"));
@@ -326,9 +328,6 @@ public class ResultPrinter {
 			for (int i = 0; i < numOfNodeAttr; i++) {
 				out.print("Node attribute "+i+":\t"+ properties.getProperty("nodeAttr" + i)+";\t");
 				out.print("Cost function:\t"+properties.getProperty("nodeCostType" + i)+";\t");
-				if (properties.getProperty("nodeCostType" + i).equals("discrete")){
-					out.print("mu = "+properties.getProperty("nodeCostMu" + i)+" nu = "+properties.getProperty("nodeCostNu" + i)+";\t");
-				}
 				out.println("Soft factor:\t"+properties.getProperty("nodeAttr" + i + "Importance"));
 			}
 			if (numOfNodeAttr==0){

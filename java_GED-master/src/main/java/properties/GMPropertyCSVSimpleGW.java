@@ -25,17 +25,17 @@ public class GMPropertyCSVSimpleGW {
 
     public static void main(String[] args) {
 
-        String parameterFile    = "test/papyrus/settings/ParametersL_cont.csv";
+        String parameterFile    = "test/papyrus/settings/ParametersS_cont.csv";
         String graphFile        = "test/papyrus/settings/Graphs_cont_gw.csv";
         String resultPath       = "test/papyrus/results/gw/cont/";
         String propertyPath     = "test/papyrus/properties/gw/cont/";
         String sourceImagesPath = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/chars/";
-        String targetImagesPath = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/patches/";
+        String targetImagesPath = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/pages/";
         String distVisFolder      = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/hotmap/";
         String charVisFolder    = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/char/gw/cont/";
-        String[] windowSizes    = new String[]{"0.5", "0.6", "0.7", "0.8", "0.9", "1", "1.2", "1.4", "1.6", "1.8", "2"};
+        String[] windowSizes    = new String[]{"1"};
         String[] thresholdValues = new String[]{"-2", "-1.8", "-1.6", "-1.4", "-1.2", "-1", "-0.8", "-0.6", "-0.4", "-0.2"};
-        String nodeRatio            = "10";
+        String nodeRatio            = "2";
         String iouRatio             = "0.9";
 
         readCSVFiles(parameterFile, graphFile, resultPath, propertyPath, sourceImagesPath, targetImagesPath, distVisFolder,
@@ -160,7 +160,7 @@ public class GMPropertyCSVSimpleGW {
                 GMPropertyFile.addValue(propertyValues, "editDistVis", distVisFolder, "");
                 GMPropertyFile.addValue(propertyValues, "charVisFolder", charVisFolder, "");
 
-                GMPropertyFile.addValue(propertyValues, "boundingBoxesFolder", boundingBoxes, "");
+                GMPropertyFile.addValue(propertyValues, "groundtruthPagesFolder", boundingBoxes, "");
 
 
                 GMPropertyFile.addValue(propertyValues, "matching", MATCHING, "HED");

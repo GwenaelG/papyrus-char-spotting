@@ -448,6 +448,8 @@ public class GraphMatchingSegFreeGW {
 
 				for (int m = 0; m < targetPageGroundtruth.getLines().size(); m++) {
 
+
+
 					String targetClass;
 					String targetID = targetPage.getGraphID()+"_l"+m;
 
@@ -459,6 +461,7 @@ public class GraphMatchingSegFreeGW {
 					}
 
 					SpottingResult spottingResult = new SpottingResult(sourceID, sourceClass, targetID, targetClass, minLineDistances.get(i,j,m));
+
 					spottingResults.add(spottingResult);
 
 				}
@@ -503,7 +506,6 @@ public class GraphMatchingSegFreeGW {
 			}
 
 		}
-
 
 
 

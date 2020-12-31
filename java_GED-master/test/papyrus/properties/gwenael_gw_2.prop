@@ -69,10 +69,8 @@ pNode=1
 pEdge=1
 
 # window sizes
-numOfWindowSizes=3
+numOfWindowSizes=1
 windowSize0=1
-windowSize1=1.1
-windowSize2=1.2
 
 # pages groundtruth folder
 groundtruthPagesFolder=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/groundtruth/gw_lines/
@@ -95,8 +93,8 @@ threshold7=-0.6
 threshold8=-0.4
 threshold9=-0.2
 
-stepX=10
-stepY=10
+stepX=20
+stepY=20
 
 nodeRatio=2
 

@@ -2,6 +2,7 @@
 package gwenael;
 
 import algorithms.GraphMatchingSegFree;
+import algorithms.GraphMatchingSegFreeGW;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,10 +13,11 @@ public class RunCompl {
 		File propDirectory = new File("test/papyrus/properties/gw/cont/core1");
 		File[] props = propDirectory.listFiles();
 		for (int i = 0; i < props.length; i++) {
+//		for (int i = 0; i < 1; i++) {
 			if(props[i].isFile()) {
 				try {
 					System.out.println("Property file: "+props[i].getPath());
-					new GraphMatchingSegFree(props[i].getPath());
+					new GraphMatchingSegFreeGW(props[i].getPath());
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

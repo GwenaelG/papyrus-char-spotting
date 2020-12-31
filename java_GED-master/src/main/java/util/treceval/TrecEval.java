@@ -49,7 +49,9 @@ public class TrecEval {
             HashMap<String,String> keywordNames = new HashMap<>();
             List<String> keywordOutput = new ArrayList<>();
 
+
             for(SpottingResult spottingResult : spottingResults){
+
 
                 String keywordID    = spottingResult.getKeywordID();
                 String keywordClass = spottingResult.getKeywordClass();
@@ -138,6 +140,7 @@ public class TrecEval {
 
         //original version
 //      String[] commandAndArgs = new String[]{ "/bin/sh", "-c", cmd };
+
         Runtime.getRuntime().exec(commandAndArgs);
     }
 }
