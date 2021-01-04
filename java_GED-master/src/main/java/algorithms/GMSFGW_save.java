@@ -44,7 +44,7 @@ import java.util.List;
  * modified Gwenael
  *
  */
-public class GMSFGW_save{
+public class GMSFGW_save {
 
 //	static { System.loadLibrary(Core.NATIVE_LIBRARY_NAME); }
 
@@ -335,7 +335,7 @@ public class GMSFGW_save{
 							windowsCount.set(i,j, windowsCount.get(i,j)+1);
 
 							if (counter % 1000 == 0) {
-								System.out.println("Matching " + counter + " of possibly " + numOfMatchings);
+								System.out.println("Matching " + counter + "of possibly " + numOfMatchings);
 							}
 
 							// log the current graphs on the console
@@ -535,14 +535,18 @@ public class GMSFGW_save{
 
 		}
 
+		for (int i = 0; i < source.size(); i++) {
+			for (int j = 0; j < target.size(); j++) {
 
+			}
+		}
 
 		SpottingPostProcessing spottingPostProcessing = new SpottingPostProcessing();
 		ArrayList<SpottingResult> reducedSpottingResults = spottingPostProcessing.postProcess(spottingResults);
 
 		trecEval.exportSpottingResults(reducedSpottingResults);
 
-//		String propName = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
+		String propName = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
 //		this.resultPrinter.printResultGw(propName, source, target, windowSizes, thresholds, truePositives, falseNegatives,
 //				falsePositives, trueNegatives);
 
@@ -808,7 +812,7 @@ public class GMSFGW_save{
 		//extract line groundtruth from files
 		this.groundtruthPages = new ArrayList<>();
 		String groundtruthFilesFolder = properties.getProperty("groundtruthPagesFolder");
-		for (int i = 0; i < target.size(); i ++) {
+		for (int i = 0; i < source.size(); i ++) {
 			String pageName = target.get(i).getGraphID();
 			Path groundtruthFilePath = Paths.get(groundtruthFilesFolder, pageName+".txt");
 			GroundtruthPage GTPage = new GroundtruthPage(pageName);
@@ -821,7 +825,6 @@ public class GMSFGW_save{
 		this.charVisFolder = Paths.get(properties.getProperty("charVisFolder"));
 
 		// open original binarized images as matrices
-		Imgcodecs imgcodecs = new Imgcodecs();
 		Path targetImagesPath = Paths.get(properties.getProperty("targetImagesPath"));
 		this.targetImages = new ArrayList<>();
 		for (int j = 0; j < target.size(); j++) {

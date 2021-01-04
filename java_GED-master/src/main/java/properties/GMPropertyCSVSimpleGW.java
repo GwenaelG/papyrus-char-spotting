@@ -27,8 +27,8 @@ public class GMPropertyCSVSimpleGW {
 
         String parameterFile    = "test/papyrus/settings/ParametersS_cont.csv";
         String graphFile        = "test/papyrus/settings/Graphs_cont_gw.csv";
-        String resultPath       = "test/papyrus/results/gw/cont/";
-        String propertyPath     = "test/papyrus/properties/gw/cont/";
+        String resultPath       = "test/papyrus/results/gw/cont/step2/";
+        String propertyPath     = "test/papyrus/properties/gw/cont/step2/";
         String sourceImagesPath = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/chars/";
         String targetImagesPath = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/pages/";
         String distVisFolder      = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/hotmap/";

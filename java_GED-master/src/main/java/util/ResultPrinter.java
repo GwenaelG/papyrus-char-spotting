@@ -264,7 +264,7 @@ public class ResultPrinter {
 		}
 	}
 
-	public void printResultGW(GraphSet source, GraphSet target, String prop, long initTime, long matchingTime) {
+	public void printInfos(GraphSet source, GraphSet target, String prop, long initTime, long matchingTime) {
 
 		// graph ids
 		int r = source.size();
