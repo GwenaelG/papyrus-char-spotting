@@ -25,17 +25,17 @@ public class GMPropertyCSVSimple {
 
     public static void main(String[] args) {
 
-        String parameterFile        = "test/papyrus/settings/ParametersL_kp.csv";
-        String graphFile            = "test/papyrus/settings/Graphs_kp.csv";
-        String resultPath           = "test/papyrus/results/recons_bold/core1_kp/";
-        String propertyPath         = "test/papyrus/properties/recons_bold/kp/";
+        String parameterFile        = "test/papyrus/settings/ParametersS_cont.csv";
+        String graphFile            = "test/papyrus/settings/Graphs_cont.csv";
+        String resultPath           = "test/papyrus/results/recons/cont/step2/";
+        String propertyPath         = "test/papyrus/properties/recons/cont/step2/";
         String sourceImagesPath     = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/chars/";
-        String targetImagesPath     = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/patches/";
+        String targetImagesPath     = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/better_pages/";
         String distVisFolder        = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/hotmap/";
-        String charVisFolder        = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/char/recons_bold/kp/";
-        String[] windowSizes        = new String[]{"0.5", "0.6", "0.7", "0.8", "0.9", "1", "1.2", "1.4", "1.6", "1.8", "2"};
+        String charVisFolder        = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/char/recons/cont/step2/";
+        String[] windowSizes        = new String[]{"1"};
         String[] thresholdValues    = new String[]{"-2", "-1.8", "-1.6", "-1.4", "-1.2", "-1", "-0.8", "-0.6", "-0.4", "-0.2"};
-        String nodeRatio            = "10";
+        String nodeRatio            = "2";
         String iouRatio             = "0.9";
 
         readCSVFiles(parameterFile, graphFile, resultPath, propertyPath, sourceImagesPath, targetImagesPath, distVisFolder,

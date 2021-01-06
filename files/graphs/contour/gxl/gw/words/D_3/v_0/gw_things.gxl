@@ -1,0 +1,3939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="gw_things">
+	<attr name="x_mean">
+		<float>114.99540229885058</float>
+	</attr>
+	<attr name="y_mean">
+		<float>51.16781609195402</float>
+	</attr>
+	<attr name="x_std">
+		<float>74.72687418852456</float>
+	</attr>
+	<attr name="y_std">
+		<float>23.972529749420843</float>
+	</attr>
+	<attr name="x_max">
+		<float>256</float>
+	</attr>
+	<attr name="y_max">
+		<float>95</float>
+	</attr>
+	<node id="gw_things_0">
+		<attr name="x">
+			<float>1.4453247091357015</float>
+		</attr>
+		<attr name="y">
+			<float>1.6615761592290146</float>
+		</attr>
+	</node>
+	<node id="gw_things_1">
+		<attr name="x">
+			<float>1.4051785096247804</float>
+		</attr>
+		<attr name="y">
+			<float>1.7032905719527764</float>
+		</attr>
+	</node>
+	<node id="gw_things_2">
+		<attr name="x">
+			<float>1.3784143766174999</float>
+		</attr>
+		<attr name="y">
+			<float>1.7867193974003002</float>
+		</attr>
+	</node>
+	<node id="gw_things_3">
+		<attr name="x">
+			<float>1.4051785096247804</float>
+		</attr>
+		<attr name="y">
+			<float>1.828433810124062</float>
+		</attr>
+	</node>
+	<node id="gw_things_4">
+		<attr name="x">
+			<float>1.4453247091357015</float>
+		</attr>
+		<attr name="y">
+			<float>1.828433810124062</float>
+		</attr>
+	</node>
+	<node id="gw_things_5">
+		<attr name="x">
+			<float>1.4854709086466225</float>
+		</attr>
+		<attr name="y">
+			<float>1.828433810124062</float>
+		</attr>
+	</node>
+	<node id="gw_things_6">
+		<attr name="x">
+			<float>1.5122350416539032</float>
+		</attr>
+		<attr name="y">
+			<float>1.7867193974003002</float>
+		</attr>
+	</node>
+	<node id="gw_things_7">
+		<attr name="x">
+			<float>1.4854709086466225</float>
+		</attr>
+		<attr name="y">
+			<float>1.7032905719527764</float>
+		</attr>
+	</node>
+	<node id="gw_things_8">
+		<attr name="x">
+			<float>-0.5218390668994276</float>
+		</attr>
+		<attr name="y">
+			<float>0.9107167302013015</float>
+		</attr>
+	</node>
+	<node id="gw_things_9">
+		<attr name="x">
+			<float>-0.5619852664103486</float>
+		</attr>
+		<attr name="y">
+			<float>0.9524311429250634</float>
+		</attr>
+	</node>
+	<node id="gw_things_10">
+		<attr name="x">
+			<float>-0.6021314659212696</float>
+		</attr>
+		<attr name="y">
+			<float>1.077574381096349</float>
+		</attr>
+	</node>
+	<node id="gw_things_11">
+		<attr name="x">
+			<float>-0.6422776654321906</float>
+		</attr>
+		<attr name="y">
+			<float>1.1192887938201108</float>
+		</attr>
+	</node>
+	<node id="gw_things_12">
+		<attr name="x">
+			<float>-0.6824238649431116</float>
+		</attr>
+		<attr name="y">
+			<float>1.2444320319913962</float>
+		</attr>
+	</node>
+	<node id="gw_things_13">
+		<attr name="x">
+			<float>-0.7225700644540326</float>
+		</attr>
+		<attr name="y">
+			<float>1.3695752701626818</float>
+		</attr>
+	</node>
+	<node id="gw_things_14">
+		<attr name="x">
+			<float>-0.7627162639649536</float>
+		</attr>
+		<attr name="y">
+			<float>1.4530040956102055</float>
+		</attr>
+	</node>
+	<node id="gw_things_15">
+		<attr name="x">
+			<float>-0.8028624634758746</float>
+		</attr>
+		<attr name="y">
+			<float>1.536432921057729</float>
+		</attr>
+	</node>
+	<node id="gw_things_16">
+		<attr name="x">
+			<float>-0.8296265964831553</float>
+		</attr>
+		<attr name="y">
+			<float>1.6198617465052527</float>
+		</attr>
+	</node>
+	<node id="gw_things_17">
+		<attr name="x">
+			<float>-0.8697727959940763</float>
+		</attr>
+		<attr name="y">
+			<float>1.7450049846765383</float>
+		</attr>
+	</node>
+	<node id="gw_things_18">
+		<attr name="x">
+			<float>-0.8831548624977166</float>
+		</attr>
+		<attr name="y">
+			<float>1.828433810124062</float>
+		</attr>
+	</node>
+	<node id="gw_things_19">
+		<attr name="x">
+			<float>-0.8430086629867957</float>
+		</attr>
+		<attr name="y">
+			<float>1.828433810124062</float>
+		</attr>
+	</node>
+	<node id="gw_things_20">
+		<attr name="x">
+			<float>-0.8028624634758746</float>
+		</attr>
+		<attr name="y">
+			<float>1.828433810124062</float>
+		</attr>
+	</node>
+	<node id="gw_things_21">
+		<attr name="x">
+			<float>-0.776098330468594</float>
+		</attr>
+		<attr name="y">
+			<float>1.7032905719527764</float>
+		</attr>
+	</node>
+	<node id="gw_things_22">
+		<attr name="x">
+			<float>-0.7493341974613132</float>
+		</attr>
+		<attr name="y">
+			<float>1.5781473337814909</float>
+		</attr>
+	</node>
+	<node id="gw_things_23">
+		<attr name="x">
+			<float>-0.7225700644540326</float>
+		</attr>
+		<attr name="y">
+			<float>1.4530040956102055</float>
+		</attr>
+	</node>
+	<node id="gw_things_24">
+		<attr name="x">
+			<float>-0.6824238649431116</float>
+		</attr>
+		<attr name="y">
+			<float>1.32786085743892</float>
+		</attr>
+	</node>
+	<node id="gw_things_25">
+		<attr name="x">
+			<float>-0.6422776654321906</float>
+		</attr>
+		<attr name="y">
+			<float>1.2444320319913962</float>
+		</attr>
+	</node>
+	<node id="gw_things_26">
+		<attr name="x">
+			<float>-0.6021314659212696</float>
+		</attr>
+		<attr name="y">
+			<float>1.1610032065438725</float>
+		</attr>
+	</node>
+	<node id="gw_things_27">
+		<attr name="x">
+			<float>-0.5619852664103486</float>
+		</attr>
+		<attr name="y">
+			<float>1.077574381096349</float>
+		</attr>
+	</node>
+	<node id="gw_things_28">
+		<attr name="x">
+			<float>-0.5218390668994276</float>
+		</attr>
+		<attr name="y">
+			<float>1.077574381096349</float>
+		</attr>
+	</node>
+	<node id="gw_things_29">
+		<attr name="x">
+			<float>-0.5084570003957872</float>
+		</attr>
+		<attr name="y">
+			<float>1.2027176192676343</float>
+		</attr>
+	</node>
+	<node id="gw_things_30">
+		<attr name="x">
+			<float>-0.5486031999067082</float>
+		</attr>
+		<attr name="y">
+			<float>1.32786085743892</float>
+		</attr>
+	</node>
+	<node id="gw_things_31">
+		<attr name="x">
+			<float>-0.5753673329139889</float>
+		</attr>
+		<attr name="y">
+			<float>1.4530040956102055</float>
+		</attr>
+	</node>
+	<node id="gw_things_32">
+		<attr name="x">
+			<float>-0.6155135324249099</float>
+		</attr>
+		<attr name="y">
+			<float>1.536432921057729</float>
+		</attr>
+	</node>
+	<node id="gw_things_33">
+		<attr name="x">
+			<float>-0.6422776654321906</float>
+		</attr>
+		<attr name="y">
+			<float>1.6615761592290146</float>
+		</attr>
+	</node>
+	<node id="gw_things_34">
+		<attr name="x">
+			<float>-0.6824238649431116</float>
+		</attr>
+		<attr name="y">
+			<float>1.7867193974003002</float>
+		</attr>
+	</node>
+	<node id="gw_things_35">
+		<attr name="x">
+			<float>-0.695805931446752</float>
+		</attr>
+		<attr name="y">
+			<float>1.828433810124062</float>
+		</attr>
+	</node>
+	<node id="gw_things_36">
+		<attr name="x">
+			<float>-0.6556597319358309</float>
+		</attr>
+		<attr name="y">
+			<float>1.828433810124062</float>
+		</attr>
+	</node>
+	<node id="gw_things_37">
+		<attr name="x">
+			<float>-0.6155135324249099</float>
+		</attr>
+		<attr name="y">
+			<float>1.828433810124062</float>
+		</attr>
+	</node>
+	<node id="gw_things_38">
+		<attr name="x">
+			<float>-0.5753673329139889</float>
+		</attr>
+		<attr name="y">
+			<float>1.7450049846765383</float>
+		</attr>
+	</node>
+	<node id="gw_things_39">
+		<attr name="x">
+			<float>-0.535221133403068</float>
+		</attr>
+		<attr name="y">
+			<float>1.6198617465052527</float>
+		</attr>
+	</node>
+	<node id="gw_things_40">
+		<attr name="x">
+			<float>-0.4950749338921469</float>
+		</attr>
+		<attr name="y">
+			<float>1.4947185083339674</float>
+		</attr>
+	</node>
+	<node id="gw_things_41">
+		<attr name="x">
+			<float>-0.45492873438122594</float>
+		</attr>
+		<attr name="y">
+			<float>1.3695752701626818</float>
+		</attr>
+	</node>
+	<node id="gw_things_42">
+		<attr name="x">
+			<float>-0.4415466678775856</float>
+		</attr>
+		<attr name="y">
+			<float>1.2444320319913962</float>
+		</attr>
+	</node>
+	<node id="gw_things_43">
+		<attr name="x">
+			<float>-0.42816460137394524</float>
+		</attr>
+		<attr name="y">
+			<float>1.1192887938201108</float>
+		</attr>
+	</node>
+	<node id="gw_things_44">
+		<attr name="x">
+			<float>-0.42816460137394524</float>
+		</attr>
+		<attr name="y">
+			<float>0.9941455556488252</float>
+		</attr>
+	</node>
+	<node id="gw_things_45">
+		<attr name="x">
+			<float>-0.46831080088486626</float>
+		</attr>
+		<attr name="y">
+			<float>0.9107167302013015</float>
+		</attr>
+	</node>
+	<node id="gw_things_46">
+		<attr name="x">
+			<float>-0.5084570003957872</float>
+		</attr>
+		<attr name="y">
+			<float>0.9107167302013015</float>
+		</attr>
+	</node>
+	<node id="gw_things_47">
+		<attr name="x">
+			<float>-1.498729921665172</float>
+		</attr>
+		<attr name="y">
+			<float>0.785573492030016</float>
+		</attr>
+	</node>
+	<node id="gw_things_48">
+		<attr name="x">
+			<float>-1.5121119881688123</float>
+		</attr>
+		<attr name="y">
+			<float>0.9107167302013015</float>
+		</attr>
+	</node>
+	<node id="gw_things_49">
+		<attr name="x">
+			<float>-1.5121119881688123</float>
+		</attr>
+		<attr name="y">
+			<float>1.035859968372587</float>
+		</attr>
+	</node>
+	<node id="gw_things_50">
+		<attr name="x">
+			<float>-1.5254940546724527</float>
+		</attr>
+		<attr name="y">
+			<float>1.1610032065438725</float>
+		</attr>
+	</node>
+	<node id="gw_things_51">
+		<attr name="x">
+			<float>-1.5254940546724527</float>
+		</attr>
+		<attr name="y">
+			<float>1.286146444715158</float>
+		</attr>
+	</node>
+	<node id="gw_things_52">
+		<attr name="x">
+			<float>-1.5254940546724527</float>
+		</attr>
+		<attr name="y">
+			<float>1.4112896828864436</float>
+		</attr>
+	</node>
+	<node id="gw_things_53">
+		<attr name="x">
+			<float>-1.5254940546724527</float>
+		</attr>
+		<attr name="y">
+			<float>1.536432921057729</float>
+		</attr>
+	</node>
+	<node id="gw_things_54">
+		<attr name="x">
+			<float>-1.5254940546724527</float>
+		</attr>
+		<attr name="y">
+			<float>1.6615761592290146</float>
+		</attr>
+	</node>
+	<node id="gw_things_55">
+		<attr name="x">
+			<float>-1.5254940546724527</float>
+		</attr>
+		<attr name="y">
+			<float>1.7867193974003002</float>
+		</attr>
+	</node>
+	<node id="gw_things_56">
+		<attr name="x">
+			<float>-1.498729921665172</float>
+		</attr>
+		<attr name="y">
+			<float>1.828433810124062</float>
+		</attr>
+	</node>
+	<node id="gw_things_57">
+		<attr name="x">
+			<float>-1.4719657886578914</float>
+		</attr>
+		<attr name="y">
+			<float>1.7867193974003002</float>
+		</attr>
+	</node>
+	<node id="gw_things_58">
+		<attr name="x">
+			<float>-1.4719657886578914</float>
+		</attr>
+		<attr name="y">
+			<float>1.6615761592290146</float>
+		</attr>
+	</node>
+	<node id="gw_things_59">
+		<attr name="x">
+			<float>-1.4719657886578914</float>
+		</attr>
+		<attr name="y">
+			<float>1.536432921057729</float>
+		</attr>
+	</node>
+	<node id="gw_things_60">
+		<attr name="x">
+			<float>-1.4719657886578914</float>
+		</attr>
+		<attr name="y">
+			<float>1.4112896828864436</float>
+		</attr>
+	</node>
+	<node id="gw_things_61">
+		<attr name="x">
+			<float>-1.458583722154251</float>
+		</attr>
+		<attr name="y">
+			<float>1.286146444715158</float>
+		</attr>
+	</node>
+	<node id="gw_things_62">
+		<attr name="x">
+			<float>-1.458583722154251</float>
+		</attr>
+		<attr name="y">
+			<float>1.1610032065438725</float>
+		</attr>
+	</node>
+	<node id="gw_things_63">
+		<attr name="x">
+			<float>-1.4719657886578914</float>
+		</attr>
+		<attr name="y">
+			<float>1.035859968372587</float>
+		</attr>
+	</node>
+	<node id="gw_things_64">
+		<attr name="x">
+			<float>-1.4853478551615316</float>
+		</attr>
+		<attr name="y">
+			<float>0.9107167302013015</float>
+		</attr>
+	</node>
+	<node id="gw_things_65">
+		<attr name="x">
+			<float>-1.4853478551615316</float>
+		</attr>
+		<attr name="y">
+			<float>0.785573492030016</float>
+		</attr>
+	</node>
+	<node id="gw_things_66">
+		<attr name="x">
+			<float>-1.498729921665172</float>
+		</attr>
+		<attr name="y">
+			<float>0.4518581902399213</float>
+		</attr>
+	</node>
+	<node id="gw_things_67">
+		<attr name="x">
+			<float>-1.1507961925705232</float>
+		</attr>
+		<attr name="y">
+			<float>-0.04871476244522073</float>
+		</attr>
+	</node>
+	<node id="gw_things_68">
+		<attr name="x">
+			<float>-1.1641782590741636</float>
+		</attr>
+		<attr name="y">
+			<float>-0.007000349721458894</float>
+		</attr>
+	</node>
+	<node id="gw_things_69">
+		<attr name="x">
+			<float>-1.1240320595632427</float>
+		</attr>
+		<attr name="y">
+			<float>-0.04871476244522073</float>
+		</attr>
+	</node>
+	<node id="gw_things_70">
+		<attr name="x">
+			<float>-1.097267926555962</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09042917516898256</float>
+		</attr>
+	</node>
+	<node id="gw_things_71">
+		<attr name="x">
+			<float>-1.1106499930596023</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9247174296442193</float>
+		</attr>
+	</node>
+	<node id="gw_things_72">
+		<attr name="x">
+			<float>-1.1507961925705232</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8830030169204575</float>
+		</attr>
+	</node>
+	<node id="gw_things_73">
+		<attr name="x">
+			<float>-1.1909423920814444</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7995741914729338</float>
+		</attr>
+	</node>
+	<node id="gw_things_74">
+		<attr name="x">
+			<float>-1.2310885915923653</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6744309533016483</float>
+		</attr>
+	</node>
+	<node id="gw_things_75">
+		<attr name="x">
+			<float>-1.2712347911032864</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6327165405778865</float>
+		</attr>
+	</node>
+	<node id="gw_things_76">
+		<attr name="x">
+			<float>-1.3113809906142073</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5492877151303628</float>
+		</attr>
+	</node>
+	<node id="gw_things_77">
+		<attr name="x">
+			<float>-1.3515271901251282</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4658588896828391</float>
+		</attr>
+	</node>
+	<node id="gw_things_78">
+		<attr name="x">
+			<float>-1.3916733896360494</float>
+		</attr>
+		<attr name="y">
+			<float>-0.38243006423531545</float>
+		</attr>
+	</node>
+	<node id="gw_things_79">
+		<attr name="x">
+			<float>-1.4318195891469703</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2990012387877918</float>
+		</attr>
+	</node>
+	<node id="gw_things_80">
+		<attr name="x">
+			<float>-1.4719657886578914</float>
+		</attr>
+		<attr name="y">
+			<float>-0.21557241334026808</float>
+		</attr>
+	</node>
+	<node id="gw_things_81">
+		<attr name="x">
+			<float>-1.5121119881688123</float>
+		</attr>
+		<attr name="y">
+			<float>-0.17385800061650625</float>
+		</attr>
+	</node>
+	<node id="gw_things_82">
+		<attr name="x">
+			<float>-1.538876121176093</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09042917516898256</float>
+		</attr>
+	</node>
+	<node id="gw_things_83">
+		<attr name="x">
+			<float>-1.5254940546724527</float>
+		</attr>
+		<attr name="y">
+			<float>0.034714063002302946</float>
+		</attr>
+	</node>
+	<node id="gw_things_84">
+		<attr name="x">
+			<float>-1.498729921665172</float>
+		</attr>
+		<attr name="y">
+			<float>0.15985730117358846</float>
+		</attr>
+	</node>
+	<node id="gw_things_85">
+		<attr name="x">
+			<float>-1.4853478551615316</float>
+		</attr>
+		<attr name="y">
+			<float>0.24328612662111213</float>
+		</attr>
+	</node>
+	<node id="gw_things_86">
+		<attr name="x">
+			<float>-1.4452016556506107</float>
+		</attr>
+		<attr name="y">
+			<float>0.24328612662111213</float>
+		</attr>
+	</node>
+	<node id="gw_things_87">
+		<attr name="x">
+			<float>-1.4050554561396897</float>
+		</attr>
+		<attr name="y">
+			<float>0.28500053934487396</float>
+		</attr>
+	</node>
+	<node id="gw_things_88">
+		<attr name="x">
+			<float>-1.3649092566287686</float>
+		</attr>
+		<attr name="y">
+			<float>0.28500053934487396</float>
+		</attr>
+	</node>
+	<node id="gw_things_89">
+		<attr name="x">
+			<float>-1.3247630571178477</float>
+		</attr>
+		<attr name="y">
+			<float>0.24328612662111213</float>
+		</attr>
+	</node>
+	<node id="gw_things_90">
+		<attr name="x">
+			<float>-1.2846168576069266</float>
+		</attr>
+		<attr name="y">
+			<float>0.15985730117358846</float>
+		</attr>
+	</node>
+	<node id="gw_things_91">
+		<attr name="x">
+			<float>-1.2444706580960057</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_92">
+		<attr name="x">
+			<float>-1.2310885915923653</float>
+		</attr>
+		<attr name="y">
+			<float>0.07642847572606479</float>
+		</attr>
+	</node>
+	<node id="gw_things_93">
+		<attr name="x">
+			<float>-1.2712347911032864</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_94">
+		<attr name="x">
+			<float>-1.3113809906142073</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_95">
+		<attr name="x">
+			<float>-1.3515271901251282</float>
+		</attr>
+		<attr name="y">
+			<float>0.07642847572606479</float>
+		</attr>
+	</node>
+	<node id="gw_things_96">
+		<attr name="x">
+			<float>-1.338145123621488</float>
+		</attr>
+		<attr name="y">
+			<float>-0.04871476244522073</float>
+		</attr>
+	</node>
+	<node id="gw_things_97">
+		<attr name="x">
+			<float>-1.3113809906142073</float>
+		</attr>
+		<attr name="y">
+			<float>-0.17385800061650625</float>
+		</attr>
+	</node>
+	<node id="gw_things_98">
+		<attr name="x">
+			<float>-1.2712347911032864</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2572868260640299</float>
+		</attr>
+	</node>
+	<node id="gw_things_99">
+		<attr name="x">
+			<float>-1.2310885915923653</float>
+		</attr>
+		<attr name="y">
+			<float>-0.38243006423531545</float>
+		</attr>
+	</node>
+	<node id="gw_things_100">
+		<attr name="x">
+			<float>-1.1909423920814444</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4658588896828391</float>
+		</attr>
+	</node>
+	<node id="gw_things_101">
+		<attr name="x">
+			<float>-1.1507961925705232</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5075733024066009</float>
+		</attr>
+	</node>
+	<node id="gw_things_102">
+		<attr name="x">
+			<float>-1.1106499930596023</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5492877151303628</float>
+		</attr>
+	</node>
+	<node id="gw_things_103">
+		<attr name="x">
+			<float>-1.1106499930596023</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6744309533016483</float>
+		</attr>
+	</node>
+	<node id="gw_things_104">
+		<attr name="x">
+			<float>-1.0838858600523216</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7995741914729338</float>
+		</attr>
+	</node>
+	<node id="gw_things_105">
+		<attr name="x">
+			<float>-1.0838858600523216</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9247174296442193</float>
+		</attr>
+	</node>
+	<node id="gw_things_106">
+		<attr name="x">
+			<float>-1.498729921665172</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4670047950531233</float>
+		</attr>
+	</node>
+	<node id="gw_things_107">
+		<attr name="x">
+			<float>-1.5121119881688123</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3418615568818377</float>
+		</attr>
+	</node>
+	<node id="gw_things_108">
+		<attr name="x">
+			<float>-1.5121119881688123</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2167183187105521</float>
+		</attr>
+	</node>
+	<node id="gw_things_109">
+		<attr name="x">
+			<float>-1.5121119881688123</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0915750805392668</float>
+		</attr>
+	</node>
+	<node id="gw_things_110">
+		<attr name="x">
+			<float>-1.4853478551615316</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0915750805392668</float>
+		</attr>
+	</node>
+	<node id="gw_things_111">
+		<attr name="x">
+			<float>-1.4853478551615316</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2167183187105521</float>
+		</attr>
+	</node>
+	<node id="gw_things_112">
+		<attr name="x">
+			<float>-1.4853478551615316</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3418615568818377</float>
+		</attr>
+	</node>
+	<node id="gw_things_113">
+		<attr name="x">
+			<float>-1.4853478551615316</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4670047950531233</float>
+		</attr>
+	</node>
+	<node id="gw_things_114">
+		<attr name="x">
+			<float>0.0669718592607471</float>
+		</attr>
+		<attr name="y">
+			<float>-1.508719207776885</float>
+		</attr>
+	</node>
+	<node id="gw_things_115">
+		<attr name="x">
+			<float>0.026825659749826092</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4252903823293614</float>
+		</attr>
+	</node>
+	<node id="gw_things_116">
+		<attr name="x">
+			<float>0.026825659749826092</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3001471441580759</float>
+		</attr>
+	</node>
+	<node id="gw_things_117">
+		<attr name="x">
+			<float>0.053589792757106756</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2167183187105521</float>
+		</attr>
+	</node>
+	<node id="gw_things_118">
+		<attr name="x">
+			<float>0.09373599226802776</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2167183187105521</float>
+		</attr>
+	</node>
+	<node id="gw_things_119">
+		<attr name="x">
+			<float>0.13388219177894875</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2167183187105521</float>
+		</attr>
+	</node>
+	<node id="gw_things_120">
+		<attr name="x">
+			<float>0.16064632478622942</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3418615568818377</float>
+		</attr>
+	</node>
+	<node id="gw_things_121">
+		<attr name="x">
+			<float>0.13388219177894875</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4670047950531233</float>
+		</attr>
+	</node>
+	<node id="gw_things_122">
+		<attr name="x">
+			<float>0.09373599226802776</float>
+		</attr>
+		<attr name="y">
+			<float>-1.508719207776885</float>
+		</attr>
+	</node>
+	<node id="gw_things_123">
+		<attr name="x">
+			<float>-0.22743360381934025</float>
+		</attr>
+		<attr name="y">
+			<float>-2.1344353986333124</float>
+		</attr>
+	</node>
+	<node id="gw_things_124">
+		<attr name="x">
+			<float>1.2312116450774562</float>
+		</attr>
+		<attr name="y">
+			<float>0.2015717138973503</float>
+		</attr>
+	</node>
+	<node id="gw_things_125">
+		<attr name="x">
+			<float>-0.26757980333026127</float>
+		</attr>
+		<attr name="y">
+			<float>-2.092720985909551</float>
+		</attr>
+	</node>
+	<node id="gw_things_126">
+		<attr name="x">
+			<float>1.271357844588377</float>
+		</attr>
+		<attr name="y">
+			<float>0.07642847572606479</float>
+		</attr>
+	</node>
+	<node id="gw_things_127">
+		<attr name="x">
+			<float>-0.30772600284118223</float>
+		</attr>
+		<attr name="y">
+			<float>-2.009292160462027</float>
+		</attr>
+	</node>
+	<node id="gw_things_128">
+		<attr name="x">
+			<float>1.2981219775956578</float>
+		</attr>
+		<attr name="y">
+			<float>-0.04871476244522073</float>
+		</attr>
+	</node>
+	<node id="gw_things_129">
+		<attr name="x">
+			<float>-0.34787220235210325</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9258633350145034</float>
+		</attr>
+	</node>
+	<node id="gw_things_130">
+		<attr name="x">
+			<float>1.3248861106029386</float>
+		</attr>
+		<attr name="y">
+			<float>-0.17385800061650625</float>
+		</attr>
+	</node>
+	<node id="gw_things_131">
+		<attr name="x">
+			<float>-0.3880184018630243</float>
+		</attr>
+		<attr name="y">
+			<float>-1.8424345095669798</float>
+		</attr>
+	</node>
+	<node id="gw_things_132">
+		<attr name="x">
+			<float>1.3115040440992982</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2990012387877918</float>
+		</attr>
+	</node>
+	<node id="gw_things_133">
+		<attr name="x">
+			<float>-0.42816460137394524</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7172912713956943</float>
+		</attr>
+	</node>
+	<node id="gw_things_134">
+		<attr name="x">
+			<float>1.2847399110920175</float>
+		</attr>
+		<attr name="y">
+			<float>-0.42414447695907725</float>
+		</attr>
+	</node>
+	<node id="gw_things_135">
+		<attr name="x">
+			<float>-0.46831080088486626</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6338624459481705</float>
+		</attr>
+	</node>
+	<node id="gw_things_136">
+		<attr name="x">
+			<float>1.2445937115810966</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4658588896828391</float>
+		</attr>
+	</node>
+	<node id="gw_things_137">
+		<attr name="x">
+			<float>-0.5084570003957872</float>
+		</attr>
+		<attr name="y">
+			<float>-1.5504336205006468</float>
+		</attr>
+	</node>
+	<node id="gw_things_138">
+		<attr name="x">
+			<float>1.2044475120701754</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4658588896828391</float>
+		</attr>
+	</node>
+	<node id="gw_things_139">
+		<attr name="x">
+			<float>-0.5486031999067082</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4670047950531233</float>
+		</attr>
+	</node>
+	<node id="gw_things_140">
+		<attr name="x">
+			<float>1.1643013125592545</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4658588896828391</float>
+		</attr>
+	</node>
+	<node id="gw_things_141">
+		<attr name="x">
+			<float>-0.5753673329139889</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3418615568818377</float>
+		</attr>
+	</node>
+	<node id="gw_things_142">
+		<attr name="x">
+			<float>1.1241551130483334</float>
+		</attr>
+		<attr name="y">
+			<float>-0.42414447695907725</float>
+		</attr>
+	</node>
+	<node id="gw_things_143">
+		<attr name="x">
+			<float>-0.6155135324249099</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2167183187105521</float>
+		</attr>
+	</node>
+	<node id="gw_things_144">
+		<attr name="x">
+			<float>1.0840089135374125</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3407156515115536</float>
+		</attr>
+	</node>
+	<node id="gw_things_145">
+		<attr name="x">
+			<float>-0.6556597319358309</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0915750805392668</float>
+		</attr>
+	</node>
+	<node id="gw_things_146">
+		<attr name="x">
+			<float>1.0438627140264916</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3407156515115536</float>
+		</attr>
+	</node>
+	<node id="gw_things_147">
+		<attr name="x">
+			<float>-0.6824238649431116</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9664318423679812</float>
+		</attr>
+	</node>
+	<node id="gw_things_148">
+		<attr name="x">
+			<float>1.0037165145155704</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2990012387877918</float>
+		</attr>
+	</node>
+	<node id="gw_things_149">
+		<attr name="x">
+			<float>-0.7225700644540326</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8412886041966956</float>
+		</attr>
+	</node>
+	<node id="gw_things_150">
+		<attr name="x">
+			<float>0.9635703150046495</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2572868260640299</float>
+		</attr>
+	</node>
+	<node id="gw_things_151">
+		<attr name="x">
+			<float>-0.7627162639649536</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7161453660254101</float>
+		</attr>
+	</node>
+	<node id="gw_things_152">
+		<attr name="x">
+			<float>0.9234241154937285</float>
+		</attr>
+		<attr name="y">
+			<float>-0.21557241334026808</float>
+		</attr>
+	</node>
+	<node id="gw_things_153">
+		<attr name="x">
+			<float>-0.8028624634758746</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6327165405778865</float>
+		</attr>
+	</node>
+	<node id="gw_things_154">
+		<attr name="x">
+			<float>0.8832779159828075</float>
+		</attr>
+		<attr name="y">
+			<float>-0.21557241334026808</float>
+		</attr>
+	</node>
+	<node id="gw_things_155">
+		<attr name="x">
+			<float>-0.8430086629867957</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5910021278541246</float>
+		</attr>
+	</node>
+	<node id="gw_things_156">
+		<attr name="x">
+			<float>0.8431317164718864</float>
+		</attr>
+		<attr name="y">
+			<float>-0.17385800061650625</float>
+		</attr>
+	</node>
+	<node id="gw_things_157">
+		<attr name="x">
+			<float>-0.8831548624977166</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5075733024066009</float>
+		</attr>
+	</node>
+	<node id="gw_things_158">
+		<attr name="x">
+			<float>0.8029855169609654</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1321435878927444</float>
+		</attr>
+	</node>
+	<node id="gw_things_159">
+		<attr name="x">
+			<float>-0.9233010620086376</float>
+		</attr>
+		<attr name="y">
+			<float>-0.42414447695907725</float>
+		</attr>
+	</node>
+	<node id="gw_things_160">
+		<attr name="x">
+			<float>0.7628393174500444</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1321435878927444</float>
+		</attr>
+	</node>
+	<node id="gw_things_161">
+		<attr name="x">
+			<float>-0.9634472615195586</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3407156515115536</float>
+		</attr>
+	</node>
+	<node id="gw_things_162">
+		<attr name="x">
+			<float>0.7226931179391235</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09042917516898256</float>
+		</attr>
+	</node>
+	<node id="gw_things_163">
+		<attr name="x">
+			<float>-0.9233010620086376</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2572868260640299</float>
+		</attr>
+	</node>
+	<node id="gw_things_164">
+		<attr name="x">
+			<float>0.6825469184282025</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09042917516898256</float>
+		</attr>
+	</node>
+	<node id="gw_things_165">
+		<attr name="x">
+			<float>-0.9500651950159182</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1321435878927444</float>
+		</attr>
+	</node>
+	<node id="gw_things_166">
+		<attr name="x">
+			<float>0.6424007189172815</float>
+		</attr>
+		<attr name="y">
+			<float>-0.04871476244522073</float>
+		</attr>
+	</node>
+	<node id="gw_things_167">
+		<attr name="x">
+			<float>-0.976829328023199</float>
+		</attr>
+		<attr name="y">
+			<float>-0.007000349721458894</float>
+		</attr>
+	</node>
+	<node id="gw_things_168">
+		<attr name="x">
+			<float>0.6156365859100008</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1321435878927444</float>
+		</attr>
+	</node>
+	<node id="gw_things_169">
+		<attr name="x">
+			<float>-1.0035934610304795</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_170">
+		<attr name="x">
+			<float>0.6156365859100008</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2572868260640299</float>
+		</attr>
+	</node>
+	<node id="gw_things_171">
+		<attr name="x">
+			<float>-0.976829328023199</float>
+		</attr>
+		<attr name="y">
+			<float>0.2015717138973503</float>
+		</attr>
+	</node>
+	<node id="gw_things_172">
+		<attr name="x">
+			<float>0.6156365859100008</float>
+		</attr>
+		<attr name="y">
+			<float>-0.38243006423531545</float>
+		</attr>
+	</node>
+	<node id="gw_things_173">
+		<attr name="x">
+			<float>-0.936683128512278</float>
+		</attr>
+		<attr name="y">
+			<float>0.2015717138973503</float>
+		</attr>
+	</node>
+	<node id="gw_things_174">
+		<attr name="x">
+			<float>0.5888724529027202</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4658588896828391</float>
+		</attr>
+	</node>
+	<node id="gw_things_175">
+		<attr name="x">
+			<float>-0.896536929001357</float>
+		</attr>
+		<attr name="y">
+			<float>0.15985730117358846</float>
+		</attr>
+	</node>
+	<node id="gw_things_176">
+		<attr name="x">
+			<float>0.5487262533917991</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4658588896828391</float>
+		</attr>
+	</node>
+	<node id="gw_things_177">
+		<attr name="x">
+			<float>-0.8563907294904359</float>
+		</attr>
+		<attr name="y">
+			<float>0.034714063002302946</float>
+		</attr>
+	</node>
+	<node id="gw_things_178">
+		<attr name="x">
+			<float>0.5085800538808781</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4658588896828391</float>
+		</attr>
+	</node>
+	<node id="gw_things_179">
+		<attr name="x">
+			<float>-0.8162445299795149</float>
+		</attr>
+		<attr name="y">
+			<float>-0.04871476244522073</float>
+		</attr>
+	</node>
+	<node id="gw_things_180">
+		<attr name="x">
+			<float>0.4684338543699571</float>
+		</attr>
+		<attr name="y">
+			<float>-0.42414447695907725</float>
+		</attr>
+	</node>
+	<node id="gw_things_181">
+		<attr name="x">
+			<float>-0.776098330468594</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1321435878927444</float>
+		</attr>
+	</node>
+	<node id="gw_things_182">
+		<attr name="x">
+			<float>0.42828765485903614</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3407156515115536</float>
+		</attr>
+	</node>
+	<node id="gw_things_183">
+		<attr name="x">
+			<float>-0.735952130957673</float>
+		</attr>
+		<attr name="y">
+			<float>-0.21557241334026808</float>
+		</attr>
+	</node>
+	<node id="gw_things_184">
+		<attr name="x">
+			<float>0.3881414553481151</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3407156515115536</float>
+		</attr>
+	</node>
+	<node id="gw_things_185">
+		<attr name="x">
+			<float>-0.695805931446752</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2572868260640299</float>
+		</attr>
+	</node>
+	<node id="gw_things_186">
+		<attr name="x">
+			<float>0.3479952558371941</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2990012387877918</float>
+		</attr>
+	</node>
+	<node id="gw_things_187">
+		<attr name="x">
+			<float>-0.6824238649431116</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1321435878927444</float>
+		</attr>
+	</node>
+	<node id="gw_things_188">
+		<attr name="x">
+			<float>0.30784905632627313</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3407156515115536</float>
+		</attr>
+	</node>
+	<node id="gw_things_189">
+		<attr name="x">
+			<float>-0.6824238649431116</float>
+		</attr>
+		<attr name="y">
+			<float>-0.007000349721458894</float>
+		</attr>
+	</node>
+	<node id="gw_things_190">
+		<attr name="x">
+			<float>0.28108492331899243</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4658588896828391</float>
+		</attr>
+	</node>
+	<node id="gw_things_191">
+		<attr name="x">
+			<float>-0.6422776654321906</float>
+		</attr>
+		<attr name="y">
+			<float>0.07642847572606479</float>
+		</attr>
+	</node>
+	<node id="gw_things_192">
+		<attr name="x">
+			<float>0.24093872380807144</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4658588896828391</float>
+		</attr>
+	</node>
+	<node id="gw_things_193">
+		<attr name="x">
+			<float>-0.6021314659212696</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_194">
+		<attr name="x">
+			<float>0.20079252429715044</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4658588896828391</float>
+		</attr>
+	</node>
+	<node id="gw_things_195">
+		<attr name="x">
+			<float>-0.5619852664103486</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_196">
+		<attr name="x">
+			<float>0.16064632478622942</float>
+		</attr>
+		<attr name="y">
+			<float>-0.42414447695907725</float>
+		</attr>
+	</node>
+	<node id="gw_things_197">
+		<attr name="x">
+			<float>-0.5218390668994276</float>
+		</attr>
+		<attr name="y">
+			<float>0.07642847572606479</float>
+		</attr>
+	</node>
+	<node id="gw_things_198">
+		<attr name="x">
+			<float>0.12050012527530843</float>
+		</attr>
+		<attr name="y">
+			<float>-0.38243006423531545</float>
+		</attr>
+	</node>
+	<node id="gw_things_199">
+		<attr name="x">
+			<float>-0.4816928673885066</float>
+		</attr>
+		<attr name="y">
+			<float>0.07642847572606479</float>
+		</attr>
+	</node>
+	<node id="gw_things_200">
+		<attr name="x">
+			<float>0.08035392576438742</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2990012387877918</float>
+		</attr>
+	</node>
+	<node id="gw_things_201">
+		<attr name="x">
+			<float>-0.4415466678775856</float>
+		</attr>
+		<attr name="y">
+			<float>0.034714063002302946</float>
+		</attr>
+	</node>
+	<node id="gw_things_202">
+		<attr name="x">
+			<float>0.04020772625346643</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2572868260640299</float>
+		</attr>
+	</node>
+	<node id="gw_things_203">
+		<attr name="x">
+			<float>-0.4014004683666646</float>
+		</attr>
+		<attr name="y">
+			<float>-0.04871476244522073</float>
+		</attr>
+	</node>
+	<node id="gw_things_204">
+		<attr name="x">
+			<float>6.15267425454234e-05</float>
+		</attr>
+		<attr name="y">
+			<float>-0.21557241334026808</float>
+		</attr>
+	</node>
+	<node id="gw_things_205">
+		<attr name="x">
+			<float>-0.3612542688557436</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09042917516898256</float>
+		</attr>
+	</node>
+	<node id="gw_things_206">
+		<attr name="x">
+			<float>-0.04008467276837558</float>
+		</attr>
+		<attr name="y">
+			<float>-0.17385800061650625</float>
+		</attr>
+	</node>
+	<node id="gw_things_207">
+		<attr name="x">
+			<float>-0.3211080693448226</float>
+		</attr>
+		<attr name="y">
+			<float>-0.007000349721458894</float>
+		</attr>
+	</node>
+	<node id="gw_things_208">
+		<attr name="x">
+			<float>-0.08023087227929658</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1321435878927444</float>
+		</attr>
+	</node>
+	<node id="gw_things_209">
+		<attr name="x">
+			<float>-0.2809618698339016</float>
+		</attr>
+		<attr name="y">
+			<float>0.07642847572606479</float>
+		</attr>
+	</node>
+	<node id="gw_things_210">
+		<attr name="x">
+			<float>-0.12037707179021759</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1321435878927444</float>
+		</attr>
+	</node>
+	<node id="gw_things_211">
+		<attr name="x">
+			<float>-0.2408156703229806</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_212">
+		<attr name="x">
+			<float>-0.16052327130113858</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09042917516898256</float>
+		</attr>
+	</node>
+	<node id="gw_things_213">
+		<attr name="x">
+			<float>-0.20066947081205957</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_214">
+		<attr name="x">
+			<float>-0.20066947081205957</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09042917516898256</float>
+		</attr>
+	</node>
+	<node id="gw_things_215">
+		<attr name="x">
+			<float>-0.16052327130113858</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_216">
+		<attr name="x">
+			<float>-0.21405153731569992</float>
+		</attr>
+		<attr name="y">
+			<float>-0.21557241334026808</float>
+		</attr>
+	</node>
+	<node id="gw_things_217">
+		<attr name="x">
+			<float>-0.12037707179021759</float>
+		</attr>
+		<attr name="y">
+			<float>0.034714063002302946</float>
+		</attr>
+	</node>
+	<node id="gw_things_218">
+		<attr name="x">
+			<float>-0.18728740430841925</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3407156515115536</float>
+		</attr>
+	</node>
+	<node id="gw_things_219">
+		<attr name="x">
+			<float>-0.08023087227929658</float>
+		</attr>
+		<attr name="y">
+			<float>-0.007000349721458894</float>
+		</attr>
+	</node>
+	<node id="gw_things_220">
+		<attr name="x">
+			<float>-0.17390533780477893</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4658588896828391</float>
+		</attr>
+	</node>
+	<node id="gw_things_221">
+		<attr name="x">
+			<float>-0.04008467276837558</float>
+		</attr>
+		<attr name="y">
+			<float>-0.04871476244522073</float>
+		</attr>
+	</node>
+	<node id="gw_things_222">
+		<attr name="x">
+			<float>-0.21405153731569992</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5075733024066009</float>
+		</attr>
+	</node>
+	<node id="gw_things_223">
+		<attr name="x">
+			<float>6.15267425454234e-05</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09042917516898256</float>
+		</attr>
+	</node>
+	<node id="gw_things_224">
+		<attr name="x">
+			<float>-0.25419773682662095</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4658588896828391</float>
+		</attr>
+	</node>
+	<node id="gw_things_225">
+		<attr name="x">
+			<float>0.04020772625346643</float>
+		</attr>
+		<attr name="y">
+			<float>-0.17385800061650625</float>
+		</attr>
+	</node>
+	<node id="gw_things_226">
+		<attr name="x">
+			<float>-0.2943439363375419</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3407156515115536</float>
+		</attr>
+	</node>
+	<node id="gw_things_227">
+		<attr name="x">
+			<float>0.08035392576438742</float>
+		</attr>
+		<attr name="y">
+			<float>-0.21557241334026808</float>
+		</attr>
+	</node>
+	<node id="gw_things_228">
+		<attr name="x">
+			<float>-0.33449013584846293</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2572868260640299</float>
+		</attr>
+	</node>
+	<node id="gw_things_229">
+		<attr name="x">
+			<float>0.12050012527530843</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2572868260640299</float>
+		</attr>
+	</node>
+	<node id="gw_things_230">
+		<attr name="x">
+			<float>-0.37463633535938395</float>
+		</attr>
+		<attr name="y">
+			<float>-0.17385800061650625</float>
+		</attr>
+	</node>
+	<node id="gw_things_231">
+		<attr name="x">
+			<float>0.16064632478622942</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2990012387877918</float>
+		</attr>
+	</node>
+	<node id="gw_things_232">
+		<attr name="x">
+			<float>-0.4147825348703049</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1321435878927444</float>
+		</attr>
+	</node>
+	<node id="gw_things_233">
+		<attr name="x">
+			<float>0.20079252429715044</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2572868260640299</float>
+		</attr>
+	</node>
+	<node id="gw_things_234">
+		<attr name="x">
+			<float>-0.45492873438122594</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09042917516898256</float>
+		</attr>
+	</node>
+	<node id="gw_things_235">
+		<attr name="x">
+			<float>0.1874104577935101</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1321435878927444</float>
+		</attr>
+	</node>
+	<node id="gw_things_236">
+		<attr name="x">
+			<float>-0.4950749338921469</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09042917516898256</float>
+		</attr>
+	</node>
+	<node id="gw_things_237">
+		<attr name="x">
+			<float>0.1472642582825891</float>
+		</attr>
+		<attr name="y">
+			<float>-0.04871476244522073</float>
+		</attr>
+	</node>
+	<node id="gw_things_238">
+		<attr name="x">
+			<float>-0.535221133403068</float>
+		</attr>
+		<attr name="y">
+			<float>-0.04871476244522073</float>
+		</attr>
+	</node>
+	<node id="gw_things_239">
+		<attr name="x">
+			<float>0.10711805877166809</float>
+		</attr>
+		<attr name="y">
+			<float>0.07642847572606479</float>
+		</attr>
+	</node>
+	<node id="gw_things_240">
+		<attr name="x">
+			<float>-0.5753673329139889</float>
+		</attr>
+		<attr name="y">
+			<float>-0.04871476244522073</float>
+		</attr>
+	</node>
+	<node id="gw_things_241">
+		<attr name="x">
+			<float>0.12050012527530843</float>
+		</attr>
+		<attr name="y">
+			<float>0.2015717138973503</float>
+		</attr>
+	</node>
+	<node id="gw_things_242">
+		<attr name="x">
+			<float>-0.5887493994176293</float>
+		</attr>
+		<attr name="y">
+			<float>-0.17385800061650625</float>
+		</attr>
+	</node>
+	<node id="gw_things_243">
+		<attr name="x">
+			<float>0.16064632478622942</float>
+		</attr>
+		<attr name="y">
+			<float>0.2015717138973503</float>
+		</attr>
+	</node>
+	<node id="gw_things_244">
+		<attr name="x">
+			<float>-0.5753673329139889</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2990012387877918</float>
+		</attr>
+	</node>
+	<node id="gw_things_245">
+		<attr name="x">
+			<float>0.20079252429715044</float>
+		</attr>
+		<attr name="y">
+			<float>0.15985730117358846</float>
+		</attr>
+	</node>
+	<node id="gw_things_246">
+		<attr name="x">
+			<float>-0.5887493994176293</float>
+		</attr>
+		<attr name="y">
+			<float>-0.42414447695907725</float>
+		</attr>
+	</node>
+	<node id="gw_things_247">
+		<attr name="x">
+			<float>0.24093872380807144</float>
+		</attr>
+		<attr name="y">
+			<float>0.07642847572606479</float>
+		</attr>
+	</node>
+	<node id="gw_things_248">
+		<attr name="x">
+			<float>-0.6288955989285503</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4658588896828391</float>
+		</attr>
+	</node>
+	<node id="gw_things_249">
+		<attr name="x">
+			<float>0.28108492331899243</float>
+		</attr>
+		<attr name="y">
+			<float>-0.007000349721458894</float>
+		</attr>
+	</node>
+	<node id="gw_things_250">
+		<attr name="x">
+			<float>-0.6690417984394713</float>
+		</attr>
+		<attr name="y">
+			<float>-0.42414447695907725</float>
+		</attr>
+	</node>
+	<node id="gw_things_251">
+		<attr name="x">
+			<float>0.32123112282991345</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09042917516898256</float>
+		</attr>
+	</node>
+	<node id="gw_things_252">
+		<attr name="x">
+			<float>-0.7091879979503922</float>
+		</attr>
+		<attr name="y">
+			<float>-0.38243006423531545</float>
+		</attr>
+	</node>
+	<node id="gw_things_253">
+		<attr name="x">
+			<float>0.3613773223408344</float>
+		</attr>
+		<attr name="y">
+			<float>-0.17385800061650625</float>
+		</attr>
+	</node>
+	<node id="gw_things_254">
+		<attr name="x">
+			<float>-0.735952130957673</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2990012387877918</float>
+		</attr>
+	</node>
+	<node id="gw_things_255">
+		<attr name="x">
+			<float>0.40152352185175544</float>
+		</attr>
+		<attr name="y">
+			<float>-0.21557241334026808</float>
+		</attr>
+	</node>
+	<node id="gw_things_256">
+		<attr name="x">
+			<float>-0.776098330468594</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2990012387877918</float>
+		</attr>
+	</node>
+	<node id="gw_things_257">
+		<attr name="x">
+			<float>0.44166972136267646</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2990012387877918</float>
+		</attr>
+	</node>
+	<node id="gw_things_258">
+		<attr name="x">
+			<float>-0.776098330468594</float>
+		</attr>
+		<attr name="y">
+			<float>-0.42414447695907725</float>
+		</attr>
+	</node>
+	<node id="gw_things_259">
+		<attr name="x">
+			<float>0.4818159208735974</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2990012387877918</float>
+		</attr>
+	</node>
+	<node id="gw_things_260">
+		<attr name="x">
+			<float>-0.735952130957673</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5075733024066009</float>
+		</attr>
+	</node>
+	<node id="gw_things_261">
+		<attr name="x">
+			<float>0.5219621203845185</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2572868260640299</float>
+		</attr>
+	</node>
+	<node id="gw_things_262">
+		<attr name="x">
+			<float>-0.695805931446752</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6327165405778865</float>
+		</attr>
+	</node>
+	<node id="gw_things_263">
+		<attr name="x">
+			<float>0.5085800538808781</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1321435878927444</float>
+		</attr>
+	</node>
+	<node id="gw_things_264">
+		<attr name="x">
+			<float>-0.6690417984394713</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7161453660254101</float>
+		</attr>
+	</node>
+	<node id="gw_things_265">
+		<attr name="x">
+			<float>0.5085800538808781</float>
+		</attr>
+		<attr name="y">
+			<float>-0.007000349721458894</float>
+		</attr>
+	</node>
+	<node id="gw_things_266">
+		<attr name="x">
+			<float>-0.6288955989285503</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7995741914729338</float>
+		</attr>
+	</node>
+	<node id="gw_things_267">
+		<attr name="x">
+			<float>0.5353441868881588</float>
+		</attr>
+		<attr name="y">
+			<float>0.07642847572606479</float>
+		</attr>
+	</node>
+	<node id="gw_things_268">
+		<attr name="x">
+			<float>-0.5887493994176293</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8830030169204575</float>
+		</attr>
+	</node>
+	<node id="gw_things_269">
+		<attr name="x">
+			<float>0.5754903863990798</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_270">
+		<attr name="x">
+			<float>-0.5486031999067082</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9664318423679812</float>
+		</attr>
+	</node>
+	<node id="gw_things_271">
+		<attr name="x">
+			<float>0.6156365859100008</float>
+		</attr>
+		<attr name="y">
+			<float>0.15985730117358846</float>
+		</attr>
+	</node>
+	<node id="gw_things_272">
+		<attr name="x">
+			<float>-0.5084570003957872</float>
+		</attr>
+		<attr name="y">
+			<float>-1.008146255091743</float>
+		</attr>
+	</node>
+	<node id="gw_things_273">
+		<attr name="x">
+			<float>0.6557827854209218</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_274">
+		<attr name="x">
+			<float>-0.46831080088486626</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0915750805392668</float>
+		</attr>
+	</node>
+	<node id="gw_things_275">
+		<attr name="x">
+			<float>0.6959289849318427</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_276">
+		<attr name="x">
+			<float>-0.42816460137394524</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1750039059867903</float>
+		</attr>
+	</node>
+	<node id="gw_things_277">
+		<attr name="x">
+			<float>0.7360751844427638</float>
+		</attr>
+		<attr name="y">
+			<float>0.07642847572606479</float>
+		</attr>
+	</node>
+	<node id="gw_things_278">
+		<attr name="x">
+			<float>-0.3880184018630243</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2167183187105521</float>
+		</attr>
+	</node>
+	<node id="gw_things_279">
+		<attr name="x">
+			<float>0.7762213839536848</float>
+		</attr>
+		<attr name="y">
+			<float>0.034714063002302946</float>
+		</attr>
+	</node>
+	<node id="gw_things_280">
+		<attr name="x">
+			<float>-0.34787220235210325</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3001471441580759</float>
+		</attr>
+	</node>
+	<node id="gw_things_281">
+		<attr name="x">
+			<float>0.8163675834646058</float>
+		</attr>
+		<attr name="y">
+			<float>-0.007000349721458894</float>
+		</attr>
+	</node>
+	<node id="gw_things_282">
+		<attr name="x">
+			<float>-0.30772600284118223</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3835759696055996</float>
+		</attr>
+	</node>
+	<node id="gw_things_283">
+		<attr name="x">
+			<float>0.8565137829755268</float>
+		</attr>
+		<attr name="y">
+			<float>-0.04871476244522073</float>
+		</attr>
+	</node>
+	<node id="gw_things_284">
+		<attr name="x">
+			<float>-0.26757980333026127</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4670047950531233</float>
+		</attr>
+	</node>
+	<node id="gw_things_285">
+		<attr name="x">
+			<float>0.8966599824864478</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1321435878927444</float>
+		</attr>
+	</node>
+	<node id="gw_things_286">
+		<attr name="x">
+			<float>-0.22743360381934025</float>
+		</attr>
+		<attr name="y">
+			<float>-1.5504336205006468</float>
+		</attr>
+	</node>
+	<node id="gw_things_287">
+		<attr name="x">
+			<float>0.9368061819973688</float>
+		</attr>
+		<attr name="y">
+			<float>-0.17385800061650625</float>
+		</attr>
+	</node>
+	<node id="gw_things_288">
+		<attr name="x">
+			<float>-0.18728740430841925</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6755768586719324</float>
+		</attr>
+	</node>
+	<node id="gw_things_289">
+		<attr name="x">
+			<float>0.9769523815082898</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1321435878927444</float>
+		</attr>
+	</node>
+	<node id="gw_things_290">
+		<attr name="x">
+			<float>-0.14714120479749826</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7590056841194561</float>
+		</attr>
+	</node>
+	<node id="gw_things_291">
+		<attr name="x">
+			<float>0.9769523815082898</float>
+		</attr>
+		<attr name="y">
+			<float>-0.007000349721458894</float>
+		</attr>
+	</node>
+	<node id="gw_things_292">
+		<attr name="x">
+			<float>-0.1337591382938579</float>
+		</attr>
+		<attr name="y">
+			<float>-1.8841489222907415</float>
+		</attr>
+	</node>
+	<node id="gw_things_293">
+		<attr name="x">
+			<float>1.0037165145155704</float>
+		</attr>
+		<attr name="y">
+			<float>0.07642847572606479</float>
+		</attr>
+	</node>
+	<node id="gw_things_294">
+		<attr name="x">
+			<float>-0.12037707179021759</float>
+		</attr>
+		<attr name="y">
+			<float>-2.009292160462027</float>
+		</attr>
+	</node>
+	<node id="gw_things_295">
+		<attr name="x">
+			<float>1.0438627140264916</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_296">
+		<attr name="x">
+			<float>-0.14714120479749826</float>
+		</attr>
+		<attr name="y">
+			<float>-2.092720985909551</float>
+		</attr>
+	</node>
+	<node id="gw_things_297">
+		<attr name="x">
+			<float>1.0840089135374125</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_298">
+		<attr name="x">
+			<float>-0.18728740430841925</float>
+		</attr>
+		<attr name="y">
+			<float>-2.1344353986333124</float>
+		</attr>
+	</node>
+	<node id="gw_things_299">
+		<attr name="x">
+			<float>1.1241551130483334</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_300">
+		<attr name="x">
+			<float>1.1643013125592545</float>
+		</attr>
+		<attr name="y">
+			<float>0.07642847572606479</float>
+		</attr>
+	</node>
+	<node id="gw_things_301">
+		<attr name="x">
+			<float>1.1643013125592545</float>
+		</attr>
+		<attr name="y">
+			<float>0.2015717138973503</float>
+		</attr>
+	</node>
+	<node id="gw_things_302">
+		<attr name="x">
+			<float>1.1375371795519738</float>
+		</attr>
+		<attr name="y">
+			<float>0.3267149520686358</float>
+		</attr>
+	</node>
+	<node id="gw_things_303">
+		<attr name="x">
+			<float>1.0973909800410528</float>
+		</attr>
+		<attr name="y">
+			<float>0.4518581902399213</float>
+		</attr>
+	</node>
+	<node id="gw_things_304">
+		<attr name="x">
+			<float>1.0572447805301317</float>
+		</attr>
+		<attr name="y">
+			<float>0.5770014284112068</float>
+		</attr>
+	</node>
+	<node id="gw_things_305">
+		<attr name="x">
+			<float>1.0170985810192108</float>
+		</attr>
+		<attr name="y">
+			<float>0.7021446665824923</float>
+		</attr>
+	</node>
+	<node id="gw_things_306">
+		<attr name="x">
+			<float>0.9769523815082898</float>
+		</attr>
+		<attr name="y">
+			<float>0.7438590793062542</float>
+		</attr>
+	</node>
+	<node id="gw_things_307">
+		<attr name="x">
+			<float>0.9368061819973688</float>
+		</attr>
+		<attr name="y">
+			<float>0.8272879047537779</float>
+		</attr>
+	</node>
+	<node id="gw_things_308">
+		<attr name="x">
+			<float>0.8966599824864478</float>
+		</attr>
+		<attr name="y">
+			<float>0.9107167302013015</float>
+		</attr>
+	</node>
+	<node id="gw_things_309">
+		<attr name="x">
+			<float>0.8565137829755268</float>
+		</attr>
+		<attr name="y">
+			<float>0.9941455556488252</float>
+		</attr>
+	</node>
+	<node id="gw_things_310">
+		<attr name="x">
+			<float>0.8163675834646058</float>
+		</attr>
+		<attr name="y">
+			<float>1.035859968372587</float>
+		</attr>
+	</node>
+	<node id="gw_things_311">
+		<attr name="x">
+			<float>0.7762213839536848</float>
+		</attr>
+		<attr name="y">
+			<float>1.077574381096349</float>
+		</attr>
+	</node>
+	<node id="gw_things_312">
+		<attr name="x">
+			<float>0.7360751844427638</float>
+		</attr>
+		<attr name="y">
+			<float>1.1192887938201108</float>
+		</attr>
+	</node>
+	<node id="gw_things_313">
+		<attr name="x">
+			<float>0.6959289849318427</float>
+		</attr>
+		<attr name="y">
+			<float>1.2027176192676343</float>
+		</attr>
+	</node>
+	<node id="gw_things_314">
+		<attr name="x">
+			<float>0.6557827854209218</float>
+		</attr>
+		<attr name="y">
+			<float>1.286146444715158</float>
+		</attr>
+	</node>
+	<node id="gw_things_315">
+		<attr name="x">
+			<float>0.6156365859100008</float>
+		</attr>
+		<attr name="y">
+			<float>1.3695752701626818</float>
+		</attr>
+	</node>
+	<node id="gw_things_316">
+		<attr name="x">
+			<float>0.5754903863990798</float>
+		</attr>
+		<attr name="y">
+			<float>1.4530040956102055</float>
+		</attr>
+	</node>
+	<node id="gw_things_317">
+		<attr name="x">
+			<float>0.5353441868881588</float>
+		</attr>
+		<attr name="y">
+			<float>1.536432921057729</float>
+		</attr>
+	</node>
+	<node id="gw_things_318">
+		<attr name="x">
+			<float>0.5353441868881588</float>
+		</attr>
+		<attr name="y">
+			<float>1.6615761592290146</float>
+		</attr>
+	</node>
+	<node id="gw_things_319">
+		<attr name="x">
+			<float>0.5487262533917991</float>
+		</attr>
+		<attr name="y">
+			<float>1.7867193974003002</float>
+		</attr>
+	</node>
+	<node id="gw_things_320">
+		<attr name="x">
+			<float>0.5888724529027202</float>
+		</attr>
+		<attr name="y">
+			<float>1.828433810124062</float>
+		</attr>
+	</node>
+	<node id="gw_things_321">
+		<attr name="x">
+			<float>0.6290186524136411</float>
+		</attr>
+		<attr name="y">
+			<float>1.828433810124062</float>
+		</attr>
+	</node>
+	<node id="gw_things_322">
+		<attr name="x">
+			<float>0.6691648519245621</float>
+		</attr>
+		<attr name="y">
+			<float>1.7867193974003002</float>
+		</attr>
+	</node>
+	<node id="gw_things_323">
+		<attr name="x">
+			<float>0.7093110514354831</float>
+		</attr>
+		<attr name="y">
+			<float>1.7450049846765383</float>
+		</attr>
+	</node>
+	<node id="gw_things_324">
+		<attr name="x">
+			<float>0.7494572509464041</float>
+		</attr>
+		<attr name="y">
+			<float>1.7032905719527764</float>
+		</attr>
+	</node>
+	<node id="gw_things_325">
+		<attr name="x">
+			<float>0.7896034504573252</float>
+		</attr>
+		<attr name="y">
+			<float>1.6198617465052527</float>
+		</attr>
+	</node>
+	<node id="gw_things_326">
+		<attr name="x">
+			<float>0.8297496499682462</float>
+		</attr>
+		<attr name="y">
+			<float>1.536432921057729</float>
+		</attr>
+	</node>
+	<node id="gw_things_327">
+		<attr name="x">
+			<float>0.8698958494791671</float>
+		</attr>
+		<attr name="y">
+			<float>1.4530040956102055</float>
+		</attr>
+	</node>
+	<node id="gw_things_328">
+		<attr name="x">
+			<float>0.9100420489900881</float>
+		</attr>
+		<attr name="y">
+			<float>1.3695752701626818</float>
+		</attr>
+	</node>
+	<node id="gw_things_329">
+		<attr name="x">
+			<float>0.9501882485010091</float>
+		</attr>
+		<attr name="y">
+			<float>1.286146444715158</float>
+		</attr>
+	</node>
+	<node id="gw_things_330">
+		<attr name="x">
+			<float>0.9903344480119302</float>
+		</attr>
+		<attr name="y">
+			<float>1.1610032065438725</float>
+		</attr>
+	</node>
+	<node id="gw_things_331">
+		<attr name="x">
+			<float>1.0304806475228512</float>
+		</attr>
+		<attr name="y">
+			<float>1.035859968372587</float>
+		</attr>
+	</node>
+	<node id="gw_things_332">
+		<attr name="x">
+			<float>1.0572447805301317</float>
+		</attr>
+		<attr name="y">
+			<float>0.9107167302013015</float>
+		</attr>
+	</node>
+	<node id="gw_things_333">
+		<attr name="x">
+			<float>1.0973909800410528</float>
+		</attr>
+		<attr name="y">
+			<float>0.785573492030016</float>
+		</attr>
+	</node>
+	<node id="gw_things_334">
+		<attr name="x">
+			<float>1.1375371795519738</float>
+		</attr>
+		<attr name="y">
+			<float>0.6604302538587306</float>
+		</attr>
+	</node>
+	<node id="gw_things_335">
+		<attr name="x">
+			<float>1.1776833790628949</float>
+		</attr>
+		<attr name="y">
+			<float>0.5770014284112068</float>
+		</attr>
+	</node>
+	<node id="gw_things_336">
+		<attr name="x">
+			<float>1.2178295785738158</float>
+		</attr>
+		<attr name="y">
+			<float>0.535287015687445</float>
+		</attr>
+	</node>
+	<node id="gw_things_337">
+		<attr name="x">
+			<float>1.2579757780847367</float>
+		</attr>
+		<attr name="y">
+			<float>0.49357260296368316</float>
+		</attr>
+	</node>
+	<node id="gw_things_338">
+		<attr name="x">
+			<float>1.2981219775956578</float>
+		</attr>
+		<attr name="y">
+			<float>0.4101437775161595</float>
+		</attr>
+	</node>
+	<node id="gw_things_339">
+		<attr name="x">
+			<float>1.3382681771065787</float>
+		</attr>
+		<attr name="y">
+			<float>0.3267149520686358</float>
+		</attr>
+	</node>
+	<node id="gw_things_340">
+		<attr name="x">
+			<float>1.3784143766174999</float>
+		</attr>
+		<attr name="y">
+			<float>0.28500053934487396</float>
+		</attr>
+	</node>
+	<node id="gw_things_341">
+		<attr name="x">
+			<float>1.4185605761284208</float>
+		</attr>
+		<attr name="y">
+			<float>0.24328612662111213</float>
+		</attr>
+	</node>
+	<node id="gw_things_342">
+		<attr name="x">
+			<float>1.458706775639342</float>
+		</attr>
+		<attr name="y">
+			<float>0.2015717138973503</float>
+		</attr>
+	</node>
+	<node id="gw_things_343">
+		<attr name="x">
+			<float>1.4988529751502628</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_344">
+		<attr name="x">
+			<float>1.5389991746611837</float>
+		</attr>
+		<attr name="y">
+			<float>0.034714063002302946</float>
+		</attr>
+	</node>
+	<node id="gw_things_345">
+		<attr name="x">
+			<float>1.5791453741721049</float>
+		</attr>
+		<attr name="y">
+			<float>-0.04871476244522073</float>
+		</attr>
+	</node>
+	<node id="gw_things_346">
+		<attr name="x">
+			<float>1.6192915736830258</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1321435878927444</float>
+		</attr>
+	</node>
+	<node id="gw_things_347">
+		<attr name="x">
+			<float>1.659437773193947</float>
+		</attr>
+		<attr name="y">
+			<float>-0.21557241334026808</float>
+		</attr>
+	</node>
+	<node id="gw_things_348">
+		<attr name="x">
+			<float>1.6995839727048678</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2572868260640299</float>
+		</attr>
+	</node>
+	<node id="gw_things_349">
+		<attr name="x">
+			<float>1.7397301722157887</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2990012387877918</float>
+		</attr>
+	</node>
+	<node id="gw_things_350">
+		<attr name="x">
+			<float>1.7664943052230693</float>
+		</attr>
+		<attr name="y">
+			<float>-0.21557241334026808</float>
+		</attr>
+	</node>
+	<node id="gw_things_351">
+		<attr name="x">
+			<float>1.7397301722157887</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09042917516898256</float>
+		</attr>
+	</node>
+	<node id="gw_things_352">
+		<attr name="x">
+			<float>1.6995839727048678</float>
+		</attr>
+		<attr name="y">
+			<float>-0.007000349721458894</float>
+		</attr>
+	</node>
+	<node id="gw_things_353">
+		<attr name="x">
+			<float>1.659437773193947</float>
+		</attr>
+		<attr name="y">
+			<float>0.07642847572606479</float>
+		</attr>
+	</node>
+	<node id="gw_things_354">
+		<attr name="x">
+			<float>1.6326736401866662</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_355">
+		<attr name="x">
+			<float>1.659437773193947</float>
+		</attr>
+		<attr name="y">
+			<float>0.2015717138973503</float>
+		</attr>
+	</node>
+	<node id="gw_things_356">
+		<attr name="x">
+			<float>1.6995839727048678</float>
+		</attr>
+		<attr name="y">
+			<float>0.24328612662111213</float>
+		</attr>
+	</node>
+	<node id="gw_things_357">
+		<attr name="x">
+			<float>1.7397301722157887</float>
+		</attr>
+		<attr name="y">
+			<float>0.2015717138973503</float>
+		</attr>
+	</node>
+	<node id="gw_things_358">
+		<attr name="x">
+			<float>1.7798763717267096</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_359">
+		<attr name="x">
+			<float>1.8200225712376306</float>
+		</attr>
+		<attr name="y">
+			<float>0.034714063002302946</float>
+		</attr>
+	</node>
+	<node id="gw_things_360">
+		<attr name="x">
+			<float>1.8601687707485517</float>
+		</attr>
+		<attr name="y">
+			<float>-0.04871476244522073</float>
+		</attr>
+	</node>
+	<node id="gw_things_361">
+		<attr name="x">
+			<float>1.873550837252192</float>
+		</attr>
+		<attr name="y">
+			<float>-0.17385800061650625</float>
+		</attr>
+	</node>
+	<node id="gw_things_362">
+		<attr name="x">
+			<float>1.873550837252192</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2990012387877918</float>
+		</attr>
+	</node>
+	<node id="gw_things_363">
+		<attr name="x">
+			<float>1.873550837252192</float>
+		</attr>
+		<attr name="y">
+			<float>-0.42414447695907725</float>
+		</attr>
+	</node>
+	<node id="gw_things_364">
+		<attr name="x">
+			<float>1.8869329037558322</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5492877151303628</float>
+		</attr>
+	</node>
+	<node id="gw_things_365">
+		<attr name="x">
+			<float>1.873550837252192</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6327165405778865</float>
+		</attr>
+	</node>
+	<node id="gw_things_366">
+		<attr name="x">
+			<float>1.833404637741271</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6327165405778865</float>
+		</attr>
+	</node>
+	<node id="gw_things_367">
+		<attr name="x">
+			<float>1.79325843823035</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5910021278541246</float>
+		</attr>
+	</node>
+	<node id="gw_things_368">
+		<attr name="x">
+			<float>1.753112238719429</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5075733024066009</float>
+		</attr>
+	</node>
+	<node id="gw_things_369">
+		<attr name="x">
+			<float>1.712966039208508</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4658588896828391</float>
+		</attr>
+	</node>
+	<node id="gw_things_370">
+		<attr name="x">
+			<float>1.672819839697587</float>
+		</attr>
+		<attr name="y">
+			<float>-0.38243006423531545</float>
+		</attr>
+	</node>
+	<node id="gw_things_371">
+		<attr name="x">
+			<float>1.6326736401866662</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2990012387877918</float>
+		</attr>
+	</node>
+	<node id="gw_things_372">
+		<attr name="x">
+			<float>1.5925274406757453</float>
+		</attr>
+		<attr name="y">
+			<float>-0.21557241334026808</float>
+		</attr>
+	</node>
+	<node id="gw_things_373">
+		<attr name="x">
+			<float>1.5523812411648241</float>
+		</attr>
+		<attr name="y">
+			<float>-0.17385800061650625</float>
+		</attr>
+	</node>
+	<node id="gw_things_374">
+		<attr name="x">
+			<float>1.5122350416539032</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09042917516898256</float>
+		</attr>
+	</node>
+	<node id="gw_things_375">
+		<attr name="x">
+			<float>1.472088842142982</float>
+		</attr>
+		<attr name="y">
+			<float>-0.04871476244522073</float>
+		</attr>
+	</node>
+	<node id="gw_things_376">
+		<attr name="x">
+			<float>1.4319426426320612</float>
+		</attr>
+		<attr name="y">
+			<float>0.034714063002302946</float>
+		</attr>
+	</node>
+	<node id="gw_things_377">
+		<attr name="x">
+			<float>1.3917964431211403</float>
+		</attr>
+		<attr name="y">
+			<float>0.11814288844982662</float>
+		</attr>
+	</node>
+	<node id="gw_things_378">
+		<attr name="x">
+			<float>1.3516502436102191</float>
+		</attr>
+		<attr name="y">
+			<float>0.2015717138973503</float>
+		</attr>
+	</node>
+	<node id="gw_things_379">
+		<attr name="x">
+			<float>1.3115040440992982</float>
+		</attr>
+		<attr name="y">
+			<float>0.24328612662111213</float>
+		</attr>
+	</node>
+	<node id="gw_things_380">
+		<attr name="x">
+			<float>1.271357844588377</float>
+		</attr>
+		<attr name="y">
+			<float>0.28500053934487396</float>
+		</attr>
+	</node>
+	<node id="gw_things_381">
+		<attr name="x">
+			<float>1.2312116450774562</float>
+		</attr>
+		<attr name="y">
+			<float>0.3267149520686358</float>
+		</attr>
+	</node>
+	<node id="gw_things_382">
+		<attr name="x">
+			<float>0.8832779159828075</float>
+		</attr>
+		<attr name="y">
+			<float>0.9941455556488252</float>
+		</attr>
+	</node>
+	<node id="gw_things_383">
+		<attr name="x">
+			<float>0.7360751844427638</float>
+		</attr>
+		<attr name="y">
+			<float>1.32786085743892</float>
+		</attr>
+	</node>
+	<node id="gw_things_384">
+		<attr name="x">
+			<float>0.9234241154937285</float>
+		</attr>
+		<attr name="y">
+			<float>0.9941455556488252</float>
+		</attr>
+	</node>
+	<node id="gw_things_385">
+		<attr name="x">
+			<float>0.7762213839536848</float>
+		</attr>
+		<attr name="y">
+			<float>1.2444320319913962</float>
+		</attr>
+	</node>
+	<node id="gw_things_386">
+		<attr name="x">
+			<float>0.9100420489900881</float>
+		</attr>
+		<attr name="y">
+			<float>1.1192887938201108</float>
+		</attr>
+	</node>
+	<node id="gw_things_387">
+		<attr name="x">
+			<float>0.8163675834646058</float>
+		</attr>
+		<attr name="y">
+			<float>1.1610032065438725</float>
+		</attr>
+	</node>
+	<node id="gw_things_388">
+		<attr name="x">
+			<float>0.8698958494791671</float>
+		</attr>
+		<attr name="y">
+			<float>1.2444320319913962</float>
+		</attr>
+	</node>
+	<node id="gw_things_389">
+		<attr name="x">
+			<float>0.8565137829755268</float>
+		</attr>
+		<attr name="y">
+			<float>1.077574381096349</float>
+		</attr>
+	</node>
+	<node id="gw_things_390">
+		<attr name="x">
+			<float>0.8431317164718864</float>
+		</attr>
+		<attr name="y">
+			<float>1.32786085743892</float>
+		</attr>
+	</node>
+	<node id="gw_things_391">
+		<attr name="x">
+			<float>0.8029855169609654</float>
+		</attr>
+		<attr name="y">
+			<float>1.4530040956102055</float>
+		</attr>
+	</node>
+	<node id="gw_things_392">
+		<attr name="x">
+			<float>0.7628393174500444</float>
+		</attr>
+		<attr name="y">
+			<float>1.4947185083339674</float>
+		</attr>
+	</node>
+	<node id="gw_things_393">
+		<attr name="x">
+			<float>0.7226931179391235</float>
+		</attr>
+		<attr name="y">
+			<float>1.536432921057729</float>
+		</attr>
+	</node>
+	<node id="gw_things_394">
+		<attr name="x">
+			<float>0.6825469184282025</float>
+		</attr>
+		<attr name="y">
+			<float>1.5781473337814909</float>
+		</attr>
+	</node>
+	<node id="gw_things_395">
+		<attr name="x">
+			<float>0.6557827854209218</float>
+		</attr>
+		<attr name="y">
+			<float>1.536432921057729</float>
+		</attr>
+	</node>
+	<node id="gw_things_396">
+		<attr name="x">
+			<float>0.6959289849318427</float>
+		</attr>
+		<attr name="y">
+			<float>1.4112896828864436</float>
+		</attr>
+	</node>
+	<node id="gw_things_397">
+		<attr name="x">
+			<float>1.1643013125592545</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2990012387877918</float>
+		</attr>
+	</node>
+	<node id="gw_things_398">
+		<attr name="x">
+			<float>1.2044475120701754</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3407156515115536</float>
+		</attr>
+	</node>
+	<node id="gw_things_399">
+		<attr name="x">
+			<float>1.2445937115810966</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2990012387877918</float>
+		</attr>
+	</node>
+	<node id="gw_things_400">
+		<attr name="x">
+			<float>1.2312116450774562</float>
+		</attr>
+		<attr name="y">
+			<float>-0.17385800061650625</float>
+		</attr>
+	</node>
+	<node id="gw_things_401">
+		<attr name="x">
+			<float>1.191065445566535</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1321435878927444</float>
+		</attr>
+	</node>
+	<node id="gw_things_402">
+		<attr name="x">
+			<float>1.1509192460556141</float>
+		</attr>
+		<attr name="y">
+			<float>-0.04871476244522073</float>
+		</attr>
+	</node>
+	<node id="gw_things_403">
+		<attr name="x">
+			<float>1.1107730465446932</float>
+		</attr>
+		<attr name="y">
+			<float>-0.007000349721458894</float>
+		</attr>
+	</node>
+	<node id="gw_things_404">
+		<attr name="x">
+			<float>1.070626847033772</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09042917516898256</float>
+		</attr>
+	</node>
+	<node id="gw_things_405">
+		<attr name="x">
+			<float>1.0973909800410528</float>
+		</attr>
+		<attr name="y">
+			<float>-0.21557241334026808</float>
+		</attr>
+	</node>
+	<node id="gw_things_406">
+		<attr name="x">
+			<float>1.1375371795519738</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2572868260640299</float>
+		</attr>
+	</node>
+	<node id="gw_things_407">
+		<attr name="x">
+			<float>-0.30772600284118223</float>
+		</attr>
+		<attr name="y">
+			<float>-1.800720096843218</float>
+		</attr>
+	</node>
+	<node id="gw_things_408">
+		<attr name="x">
+			<float>-0.46831080088486626</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3835759696055996</float>
+		</attr>
+	</node>
+	<node id="gw_things_409">
+		<attr name="x">
+			<float>-0.26757980333026127</float>
+		</attr>
+		<attr name="y">
+			<float>-1.8424345095669798</float>
+		</attr>
+	</node>
+	<node id="gw_things_410">
+		<attr name="x">
+			<float>-0.42816460137394524</float>
+		</attr>
+		<attr name="y">
+			<float>-1.508719207776885</float>
+		</attr>
+	</node>
+	<node id="gw_things_411">
+		<attr name="x">
+			<float>-0.26757980333026127</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7172912713956943</float>
+		</attr>
+	</node>
+	<node id="gw_things_412">
+		<attr name="x">
+			<float>-0.3880184018630243</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6338624459481705</float>
+		</attr>
+	</node>
+	<node id="gw_things_413">
+		<attr name="x">
+			<float>-0.30772600284118223</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6338624459481705</float>
+		</attr>
+	</node>
+	<node id="gw_things_414">
+		<attr name="x">
+			<float>-0.34787220235210325</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7590056841194561</float>
+		</attr>
+	</node>
+	<node id="gw_things_415">
+		<attr name="x">
+			<float>-0.34787220235210325</float>
+		</attr>
+		<attr name="y">
+			<float>-1.508719207776885</float>
+		</attr>
+	</node>
+	<node id="gw_things_416">
+		<attr name="x">
+			<float>-0.3880184018630243</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4252903823293614</float>
+		</attr>
+	</node>
+	<node id="gw_things_417">
+		<attr name="x">
+			<float>-0.42816460137394524</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3418615568818377</float>
+		</attr>
+	</node>
+	<node id="gw_things_418">
+		<attr name="x">
+			<float>-0.46831080088486626</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2167183187105521</float>
+		</attr>
+	</node>
+	<node id="gw_things_419">
+		<attr name="x">
+			<float>-0.5084570003957872</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1332894932630284</float>
+		</attr>
+	</node>
+	<node id="gw_things_420">
+		<attr name="x">
+			<float>-0.5486031999067082</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1332894932630284</float>
+		</attr>
+	</node>
+	<node id="gw_things_421">
+		<attr name="x">
+			<float>-0.5084570003957872</float>
+		</attr>
+		<attr name="y">
+			<float>-1.258432731434314</float>
+		</attr>
+	</node>
+	<node id="gw_things_422">
+		<attr name="x">
+			<float>-1.4853478551615316</float>
+		</attr>
+		<attr name="y">
+			<float>-2.1344353986333124</float>
+		</attr>
+	</node>
+	<node id="gw_things_423">
+		<attr name="x">
+			<float>-1.4050554561396897</float>
+		</attr>
+		<attr name="y">
+			<float>-2.1344353986333124</float>
+		</attr>
+	</node>
+	<node id="gw_things_424">
+		<attr name="x">
+			<float>-1.498729921665172</float>
+		</attr>
+		<attr name="y">
+			<float>-2.009292160462027</float>
+		</attr>
+	</node>
+	<node id="gw_things_425">
+		<attr name="x">
+			<float>-1.4452016556506107</float>
+		</attr>
+		<attr name="y">
+			<float>-2.1344353986333124</float>
+		</attr>
+	</node>
+	<node id="gw_things_426">
+		<attr name="x">
+			<float>-1.5121119881688123</float>
+		</attr>
+		<attr name="y">
+			<float>-1.8841489222907415</float>
+		</attr>
+	</node>
+	<node id="gw_things_427">
+		<attr name="x">
+			<float>-1.5254940546724527</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7590056841194561</float>
+		</attr>
+	</node>
+	<node id="gw_things_428">
+		<attr name="x">
+			<float>-1.4853478551615316</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7172912713956943</float>
+		</attr>
+	</node>
+	<node id="gw_things_429">
+		<attr name="x">
+			<float>-1.4719657886578914</float>
+		</attr>
+		<attr name="y">
+			<float>-1.8424345095669798</float>
+		</attr>
+	</node>
+	<node id="gw_things_430">
+		<attr name="x">
+			<float>-1.498729921665172</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9675777477382652</float>
+		</attr>
+	</node>
+	<node id="gw_things_431">
+		<attr name="x">
+			<float>-1.458583722154251</float>
+		</attr>
+		<attr name="y">
+			<float>-2.0510065731857887</float>
+		</attr>
+	</node>
+	<node id="gw_things_432">
+		<attr name="x">
+			<float>-1.41843752264333</float>
+		</attr>
+		<attr name="y">
+			<float>-2.0510065731857887</float>
+		</attr>
+	</node>
+	<node id="gw_things_433">
+		<attr name="x">
+			<float>-1.378291323132409</float>
+		</attr>
+		<attr name="y">
+			<float>-2.092720985909551</float>
+		</attr>
+	</node>
+	<node id="gw_things_434">
+		<attr name="x">
+			<float>-1.3649092566287686</float>
+		</attr>
+		<attr name="y">
+			<float>-2.1344353986333124</float>
+		</attr>
+	</node>
+	<edge from="gw_things_193" to="gw_things_195"/>
+	<edge from="gw_things_426" to="gw_things_427"/>
+	<edge from="gw_things_254" to="gw_things_256"/>
+	<edge from="gw_things_356" to="gw_things_357"/>
+	<edge from="gw_things_410" to="gw_things_412"/>
+	<edge from="gw_things_18" to="gw_things_19"/>
+	<edge from="gw_things_336" to="gw_things_337"/>
+	<edge from="gw_things_174" to="gw_things_176"/>
+	<edge from="gw_things_300" to="gw_things_301"/>
+	<edge from="gw_things_332" to="gw_things_333"/>
+	<edge from="gw_things_170" to="gw_things_172"/>
+	<edge from="gw_things_202" to="gw_things_204"/>
+	<edge from="gw_things_66" to="gw_things_66"/>
+	<edge from="gw_things_419" to="gw_things_420"/>
+	<edge from="gw_things_162" to="gw_things_164"/>
+	<edge from="gw_things_381" to="gw_things_124"/>
+	<edge from="gw_things_4" to="gw_things_5"/>
+	<edge from="gw_things_249" to="gw_things_251"/>
+	<edge from="gw_things_55" to="gw_things_56"/>
+	<edge from="gw_things_107" to="gw_things_108"/>
+	<edge from="gw_things_371" to="gw_things_372"/>
+	<edge from="gw_things_33" to="gw_things_34"/>
+	<edge from="gw_things_196" to="gw_things_198"/>
+	<edge from="gw_things_109" to="gw_things_110"/>
+	<edge from="gw_things_253" to="gw_things_255"/>
+	<edge from="gw_things_323" to="gw_things_324"/>
+	<edge from="gw_things_241" to="gw_things_243"/>
+	<edge from="gw_things_158" to="gw_things_160"/>
+	<edge from="gw_things_286" to="gw_things_288"/>
+	<edge from="gw_things_325" to="gw_things_326"/>
+	<edge from="gw_things_58" to="gw_things_59"/>
+	<edge from="gw_things_412" to="gw_things_414"/>
+	<edge from="gw_things_20" to="gw_things_21"/>
+	<edge from="gw_things_413" to="gw_things_415"/>
+	<edge from="gw_things_233" to="gw_things_235"/>
+	<edge from="gw_things_103" to="gw_things_104"/>
+	<edge from="gw_things_367" to="gw_things_368"/>
+	<edge from="gw_things_160" to="gw_things_162"/>
+	<edge from="gw_things_247" to="gw_things_249"/>
+	<edge from="gw_things_179" to="gw_things_181"/>
+	<edge from="gw_things_422" to="gw_things_425"/>
+	<edge from="gw_things_161" to="gw_things_163"/>
+	<edge from="gw_things_212" to="gw_things_214"/>
+	<edge from="gw_things_180" to="gw_things_182"/>
+	<edge from="gw_things_237" to="gw_things_239"/>
+	<edge from="gw_things_114" to="gw_things_122"/>
+	<edge from="gw_things_329" to="gw_things_330"/>
+	<edge from="gw_things_50" to="gw_things_51"/>
+	<edge from="gw_things_322" to="gw_things_323"/>
+	<edge from="gw_things_339" to="gw_things_340"/>
+	<edge from="gw_things_341" to="gw_things_342"/>
+	<edge from="gw_things_313" to="gw_things_314"/>
+	<edge from="gw_things_315" to="gw_things_316"/>
+	<edge from="gw_things_385" to="gw_things_387"/>
+	<edge from="gw_things_42" to="gw_things_43"/>
+	<edge from="gw_things_74" to="gw_things_75"/>
+	<edge from="gw_things_36" to="gw_things_37"/>
+	<edge from="gw_things_302" to="gw_things_303"/>
+	<edge from="gw_things_354" to="gw_things_355"/>
+	<edge from="gw_things_351" to="gw_things_352"/>
+	<edge from="gw_things_231" to="gw_things_233"/>
+	<edge from="gw_things_305" to="gw_things_306"/>
+	<edge from="gw_things_229" to="gw_things_231"/>
+	<edge from="gw_things_123" to="gw_things_298"/>
+	<edge from="gw_things_137" to="gw_things_139"/>
+	<edge from="gw_things_431" to="gw_things_432"/>
+	<edge from="gw_things_71" to="gw_things_105"/>
+	<edge from="gw_things_267" to="gw_things_269"/>
+	<edge from="gw_things_407" to="gw_things_409"/>
+	<edge from="gw_things_268" to="gw_things_270"/>
+	<edge from="gw_things_380" to="gw_things_381"/>
+	<edge from="gw_things_141" to="gw_things_143"/>
+	<edge from="gw_things_269" to="gw_things_271"/>
+	<edge from="gw_things_299" to="gw_things_300"/>
+	<edge from="gw_things_134" to="gw_things_136"/>
+	<edge from="gw_things_262" to="gw_things_264"/>
+	<edge from="gw_things_3" to="gw_things_4"/>
+	<edge from="gw_things_71" to="gw_things_72"/>
+	<edge from="gw_things_258" to="gw_things_260"/>
+	<edge from="gw_things_335" to="gw_things_336"/>
+	<edge from="gw_things_383" to="gw_things_385"/>
+	<edge from="gw_things_374" to="gw_things_375"/>
+	<edge from="gw_things_5" to="gw_things_6"/>
+	<edge from="gw_things_392" to="gw_things_393"/>
+	<edge from="gw_things_415" to="gw_things_416"/>
+	<edge from="gw_things_155" to="gw_things_157"/>
+	<edge from="gw_things_291" to="gw_things_293"/>
+	<edge from="gw_things_284" to="gw_things_286"/>
+	<edge from="gw_things_364" to="gw_things_365"/>
+	<edge from="gw_things_404" to="gw_things_405"/>
+	<edge from="gw_things_285" to="gw_things_287"/>
+	<edge from="gw_things_347" to="gw_things_348"/>
+	<edge from="gw_things_150" to="gw_things_152"/>
+	<edge from="gw_things_278" to="gw_things_280"/>
+	<edge from="gw_things_349" to="gw_things_350"/>
+	<edge from="gw_things_68" to="gw_things_69"/>
+	<edge from="gw_things_393" to="gw_things_394"/>
+	<edge from="gw_things_334" to="gw_things_335"/>
+	<edge from="gw_things_19" to="gw_things_20"/>
+	<edge from="gw_things_87" to="gw_things_88"/>
+	<edge from="gw_things_199" to="gw_things_201"/>
+	<edge from="gw_things_320" to="gw_things_321"/>
+	<edge from="gw_things_97" to="gw_things_98"/>
+	<edge from="gw_things_131" to="gw_things_133"/>
+	<edge from="gw_things_358" to="gw_things_359"/>
+	<edge from="gw_things_124" to="gw_things_126"/>
+	<edge from="gw_things_132" to="gw_things_134"/>
+	<edge from="gw_things_21" to="gw_things_22"/>
+	<edge from="gw_things_197" to="gw_things_199"/>
+	<edge from="gw_things_377" to="gw_things_378"/>
+	<edge from="gw_things_379" to="gw_things_380"/>
+	<edge from="gw_things_384" to="gw_things_386"/>
+	<edge from="gw_things_348" to="gw_things_349"/>
+	<edge from="gw_things_420" to="gw_things_421"/>
+	<edge from="gw_things_0" to="gw_things_7"/>
+	<edge from="gw_things_110" to="gw_things_111"/>
+	<edge from="gw_things_350" to="gw_things_351"/>
+	<edge from="gw_things_418" to="gw_things_419"/>
+	<edge from="gw_things_96" to="gw_things_97"/>
+	<edge from="gw_things_369" to="gw_things_370"/>
+	<edge from="gw_things_400" to="gw_things_401"/>
+	<edge from="gw_things_6" to="gw_things_7"/>
+	<edge from="gw_things_166" to="gw_things_168"/>
+	<edge from="gw_things_294" to="gw_things_296"/>
+	<edge from="gw_things_52" to="gw_things_53"/>
+	<edge from="gw_things_84" to="gw_things_85"/>
+	<edge from="gw_things_428" to="gw_things_429"/>
+	<edge from="gw_things_178" to="gw_things_180"/>
+	<edge from="gw_things_35" to="gw_things_36"/>
+	<edge from="gw_things_290" to="gw_things_292"/>
+	<edge from="gw_things_147" to="gw_things_149"/>
+	<edge from="gw_things_215" to="gw_things_217"/>
+	<edge from="gw_things_148" to="gw_things_150"/>
+	<edge from="gw_things_37" to="gw_things_38"/>
+	<edge from="gw_things_213" to="gw_things_215"/>
+	<edge from="gw_things_184" to="gw_things_186"/>
+	<edge from="gw_things_361" to="gw_things_362"/>
+	<edge from="gw_things_114" to="gw_things_115"/>
+	<edge from="gw_things_398" to="gw_things_399"/>
+	<edge from="gw_things_311" to="gw_things_312"/>
+	<edge from="gw_things_363" to="gw_things_364"/>
+	<edge from="gw_things_187" to="gw_things_189"/>
+	<edge from="gw_things_188" to="gw_things_190"/>
+	<edge from="gw_things_373" to="gw_things_374"/>
+	<edge from="gw_things_176" to="gw_things_178"/>
+	<edge from="gw_things_255" to="gw_things_257"/>
+	<edge from="gw_things_22" to="gw_things_23"/>
+	<edge from="gw_things_106" to="gw_things_107"/>
+	<edge from="gw_things_8" to="gw_things_9"/>
+	<edge from="gw_things_175" to="gw_things_177"/>
+	<edge from="gw_things_164" to="gw_things_166"/>
+	<edge from="gw_things_12" to="gw_things_13"/>
+	<edge from="gw_things_165" to="gw_things_167"/>
+	<edge from="gw_things_296" to="gw_things_298"/>
+	<edge from="gw_things_200" to="gw_things_202"/>
+	<edge from="gw_things_168" to="gw_things_170"/>
+	<edge from="gw_things_359" to="gw_things_360"/>
+	<edge from="gw_things_171" to="gw_things_173"/>
+	<edge from="gw_things_172" to="gw_things_174"/>
+	<edge from="gw_things_204" to="gw_things_206"/>
+	<edge from="gw_things_331" to="gw_things_332"/>
+	<edge from="gw_things_403" to="gw_things_404"/>
+	<edge from="gw_things_38" to="gw_things_39"/>
+	<edge from="gw_things_90" to="gw_things_91"/>
+	<edge from="gw_things_333" to="gw_things_334"/>
+	<edge from="gw_things_24" to="gw_things_25"/>
+	<edge from="gw_things_287" to="gw_things_289"/>
+	<edge from="gw_things_191" to="gw_things_193"/>
+	<edge from="gw_things_159" to="gw_things_161"/>
+	<edge from="gw_things_397" to="gw_things_406"/>
+	<edge from="gw_things_126" to="gw_things_128"/>
+	<edge from="gw_things_28" to="gw_things_29"/>
+	<edge from="gw_things_217" to="gw_things_219"/>
+	<edge from="gw_things_30" to="gw_things_31"/>
+	<edge from="gw_things_82" to="gw_things_83"/>
+	<edge from="gw_things_430" to="gw_things_431"/>
+	<edge from="gw_things_16" to="gw_things_17"/>
+	<edge from="gw_things_238" to="gw_things_240"/>
+	<edge from="gw_things_221" to="gw_things_223"/>
+	<edge from="gw_things_264" to="gw_things_266"/>
+	<edge from="gw_things_265" to="gw_things_267"/>
+	<edge from="gw_things_226" to="gw_things_228"/>
+	<edge from="gw_things_209" to="gw_things_211"/>
+	<edge from="gw_things_2" to="gw_things_3"/>
+	<edge from="gw_things_51" to="gw_things_52"/>
+	<edge from="gw_things_119" to="gw_things_120"/>
+	<edge from="gw_things_427" to="gw_things_428"/>
+	<edge from="gw_things_123" to="gw_things_125"/>
+	<edge from="gw_things_401" to="gw_things_402"/>
+	<edge from="gw_things_53" to="gw_things_54"/>
+	<edge from="gw_things_125" to="gw_things_127"/>
+	<edge from="gw_things_327" to="gw_things_328"/>
+	<edge from="gw_things_386" to="gw_things_388"/>
+	<edge from="gw_things_399" to="gw_things_400"/>
+	<edge from="gw_things_222" to="gw_things_224"/>
+	<edge from="gw_things_280" to="gw_things_282"/>
+	<edge from="gw_things_281" to="gw_things_283"/>
+	<edge from="gw_things_283" to="gw_things_285"/>
+	<edge from="gw_things_116" to="gw_things_117"/>
+	<edge from="gw_things_138" to="gw_things_140"/>
+	<edge from="gw_things_56" to="gw_things_57"/>
+	<edge from="gw_things_99" to="gw_things_100"/>
+	<edge from="gw_things_224" to="gw_things_226"/>
+	<edge from="gw_things_272" to="gw_things_274"/>
+	<edge from="gw_things_243" to="gw_things_245"/>
+	<edge from="gw_things_273" to="gw_things_275"/>
+	<edge from="gw_things_60" to="gw_things_61"/>
+	<edge from="gw_things_101" to="gw_things_102"/>
+	<edge from="gw_things_181" to="gw_things_183"/>
+	<edge from="gw_things_9" to="gw_things_10"/>
+	<edge from="gw_things_62" to="gw_things_63"/>
+	<edge from="gw_things_11" to="gw_things_12"/>
+	<edge from="gw_things_343" to="gw_things_344"/>
+	<edge from="gw_things_271" to="gw_things_273"/>
+	<edge from="gw_things_353" to="gw_things_354"/>
+	<edge from="gw_things_48" to="gw_things_49"/>
+	<edge from="gw_things_206" to="gw_things_208"/>
+	<edge from="gw_things_13" to="gw_things_14"/>
+	<edge from="gw_things_47" to="gw_things_65"/>
+	<edge from="gw_things_194" to="gw_things_196"/>
+	<edge from="gw_things_54" to="gw_things_55"/>
+	<edge from="gw_things_86" to="gw_things_87"/>
+	<edge from="gw_things_100" to="gw_things_101"/>
+	<edge from="gw_things_154" to="gw_things_156"/>
+	<edge from="gw_things_40" to="gw_things_41"/>
+	<edge from="gw_things_72" to="gw_things_73"/>
+	<edge from="gw_things_34" to="gw_things_35"/>
+	<edge from="gw_things_227" to="gw_things_229"/>
+	<edge from="gw_things_352" to="gw_things_353"/>
+	<edge from="gw_things_433" to="gw_things_434"/>
+	<edge from="gw_things_378" to="gw_things_379"/>
+	<edge from="gw_things_422" to="gw_things_424"/>
+	<edge from="gw_things_44" to="gw_things_45"/>
+	<edge from="gw_things_76" to="gw_things_77"/>
+	<edge from="gw_things_136" to="gw_things_138"/>
+	<edge from="gw_things_25" to="gw_things_26"/>
+	<edge from="gw_things_201" to="gw_things_203"/>
+	<edge from="gw_things_27" to="gw_things_28"/>
+	<edge from="gw_things_146" to="gw_things_148"/>
+	<edge from="gw_things_139" to="gw_things_141"/>
+	<edge from="gw_things_140" to="gw_things_142"/>
+	<edge from="gw_things_29" to="gw_things_30"/>
+	<edge from="gw_things_205" to="gw_things_207"/>
+	<edge from="gw_things_370" to="gw_things_371"/>
+	<edge from="gw_things_17" to="gw_things_18"/>
+	<edge from="gw_things_365" to="gw_things_366"/>
+	<edge from="gw_things_15" to="gw_things_16"/>
+	<edge from="gw_things_67" to="gw_things_68"/>
+	<edge from="gw_things_362" to="gw_things_363"/>
+	<edge from="gw_things_152" to="gw_things_154"/>
+	<edge from="gw_things_153" to="gw_things_155"/>
+	<edge from="gw_things_295" to="gw_things_297"/>
+	<edge from="gw_things_167" to="gw_things_169"/>
+	<edge from="gw_things_321" to="gw_things_322"/>
+	<edge from="gw_things_407" to="gw_things_414"/>
+	<edge from="gw_things_314" to="gw_things_315"/>
+	<edge from="gw_things_156" to="gw_things_158"/>
+	<edge from="gw_things_157" to="gw_things_159"/>
+	<edge from="gw_things_424" to="gw_things_426"/>
+	<edge from="gw_things_297" to="gw_things_299"/>
+	<edge from="gw_things_144" to="gw_things_146"/>
+	<edge from="gw_things_145" to="gw_things_147"/>
+	<edge from="gw_things_246" to="gw_things_248"/>
+	<edge from="gw_things_306" to="gw_things_307"/>
+	<edge from="gw_things_83" to="gw_things_84"/>
+	<edge from="gw_things_395" to="gw_things_396"/>
+	<edge from="gw_things_195" to="gw_things_197"/>
+	<edge from="gw_things_143" to="gw_things_145"/>
+	<edge from="gw_things_346" to="gw_things_347"/>
+	<edge from="gw_things_85" to="gw_things_86"/>
+	<edge from="gw_things_57" to="gw_things_58"/>
+	<edge from="gw_things_59" to="gw_things_60"/>
+	<edge from="gw_things_129" to="gw_things_131"/>
+	<edge from="gw_things_330" to="gw_things_331"/>
+	<edge from="gw_things_190" to="gw_things_192"/>
+	<edge from="gw_things_106" to="gw_things_113"/>
+	<edge from="gw_things_61" to="gw_things_62"/>
+	<edge from="gw_things_338" to="gw_things_339"/>
+	<edge from="gw_things_49" to="gw_things_50"/>
+	<edge from="gw_things_230" to="gw_things_232"/>
+	<edge from="gw_things_120" to="gw_things_121"/>
+	<edge from="gw_things_47" to="gw_things_48"/>
+	<edge from="gw_things_211" to="gw_things_213"/>
+	<edge from="gw_things_8" to="gw_things_46"/>
+	<edge from="gw_things_244" to="gw_things_246"/>
+	<edge from="gw_things_41" to="gw_things_42"/>
+	<edge from="gw_things_185" to="gw_things_187"/>
+	<edge from="gw_things_43" to="gw_things_44"/>
+	<edge from="gw_things_251" to="gw_things_253"/>
+	<edge from="gw_things_112" to="gw_things_113"/>
+	<edge from="gw_things_45" to="gw_things_46"/>
+	<edge from="gw_things_309" to="gw_things_310"/>
+	<edge from="gw_things_189" to="gw_things_191"/>
+	<edge from="gw_things_391" to="gw_things_392"/>
+	<edge from="gw_things_127" to="gw_things_129"/>
+	<edge from="gw_things_177" to="gw_things_179"/>
+	<edge from="gw_things_118" to="gw_things_119"/>
+	<edge from="gw_things_394" to="gw_things_395"/>
+	<edge from="gw_things_104" to="gw_things_105"/>
+	<edge from="gw_things_31" to="gw_things_32"/>
+	<edge from="gw_things_63" to="gw_things_64"/>
+	<edge from="gw_things_411" to="gw_things_413"/>
+	<edge from="gw_things_326" to="gw_things_327"/>
+	<edge from="gw_things_228" to="gw_things_230"/>
+	<edge from="gw_things_108" to="gw_things_109"/>
+	<edge from="gw_things_266" to="gw_things_268"/>
+	<edge from="gw_things_89" to="gw_things_90"/>
+	<edge from="gw_things_312" to="gw_things_313"/>
+	<edge from="gw_things_169" to="gw_things_171"/>
+	<edge from="gw_things_91" to="gw_things_92"/>
+	<edge from="gw_things_235" to="gw_things_237"/>
+	<edge from="gw_things_183" to="gw_things_185"/>
+	<edge from="gw_things_93" to="gw_things_94"/>
+	<edge from="gw_things_324" to="gw_things_325"/>
+	<edge from="gw_things_173" to="gw_things_175"/>
+	<edge from="gw_things_318" to="gw_things_319"/>
+	<edge from="gw_things_263" to="gw_things_265"/>
+	<edge from="gw_things_81" to="gw_things_82"/>
+	<edge from="gw_things_304" to="gw_things_305"/>
+	<edge from="gw_things_387" to="gw_things_389"/>
+	<edge from="gw_things_102" to="gw_things_103"/>
+	<edge from="gw_things_198" to="gw_things_200"/>
+	<edge from="gw_things_388" to="gw_things_390"/>
+	<edge from="gw_things_405" to="gw_things_406"/>
+	<edge from="gw_things_88" to="gw_things_89"/>
+	<edge from="gw_things_396" to="gw_things_383"/>
+	<edge from="gw_things_310" to="gw_things_311"/>
+	<edge from="gw_things_342" to="gw_things_343"/>
+	<edge from="gw_things_92" to="gw_things_93"/>
+	<edge from="gw_things_282" to="gw_things_284"/>
+	<edge from="gw_things_328" to="gw_things_329"/>
+	<edge from="gw_things_94" to="gw_things_95"/>
+	<edge from="gw_things_366" to="gw_things_367"/>
+	<edge from="gw_things_382" to="gw_things_389"/>
+	<edge from="gw_things_402" to="gw_things_403"/>
+	<edge from="gw_things_219" to="gw_things_221"/>
+	<edge from="gw_things_80" to="gw_things_81"/>
+	<edge from="gw_things_416" to="gw_things_417"/>
+	<edge from="gw_things_390" to="gw_things_391"/>
+	<edge from="gw_things_308" to="gw_things_309"/>
+	<edge from="gw_things_340" to="gw_things_341"/>
+	<edge from="gw_things_274" to="gw_things_276"/>
+	<edge from="gw_things_279" to="gw_things_281"/>
+	<edge from="gw_things_214" to="gw_things_216"/>
+	<edge from="gw_things_182" to="gw_things_184"/>
+	<edge from="gw_things_250" to="gw_things_252"/>
+	<edge from="gw_things_14" to="gw_things_15"/>
+	<edge from="gw_things_115" to="gw_things_116"/>
+	<edge from="gw_things_0" to="gw_things_1"/>
+	<edge from="gw_things_117" to="gw_things_118"/>
+	<edge from="gw_things_429" to="gw_things_430"/>
+	<edge from="gw_things_421" to="gw_things_408"/>
+	<edge from="gw_things_242" to="gw_things_244"/>
+	<edge from="gw_things_192" to="gw_things_194"/>
+	<edge from="gw_things_408" to="gw_things_410"/>
+	<edge from="gw_things_409" to="gw_things_411"/>
+	<edge from="gw_things_423" to="gw_things_425"/>
+	<edge from="gw_things_234" to="gw_things_236"/>
+	<edge from="gw_things_111" to="gw_things_112"/>
+	<edge from="gw_things_245" to="gw_things_247"/>
+	<edge from="gw_things_248" to="gw_things_250"/>
+	<edge from="gw_things_73" to="gw_things_74"/>
+	<edge from="gw_things_23" to="gw_things_24"/>
+	<edge from="gw_things_75" to="gw_things_76"/>
+	<edge from="gw_things_135" to="gw_things_137"/>
+	<edge from="gw_things_259" to="gw_things_261"/>
+	<edge from="gw_things_252" to="gw_things_254"/>
+	<edge from="gw_things_260" to="gw_things_262"/>
+	<edge from="gw_things_77" to="gw_things_78"/>
+	<edge from="gw_things_133" to="gw_things_135"/>
+	<edge from="gw_things_261" to="gw_things_263"/>
+	<edge from="gw_things_240" to="gw_things_242"/>
+	<edge from="gw_things_256" to="gw_things_258"/>
+	<edge from="gw_things_257" to="gw_things_259"/>
+	<edge from="gw_things_382" to="gw_things_384"/>
+	<edge from="gw_things_70" to="gw_things_70"/>
+	<edge from="gw_things_317" to="gw_things_318"/>
+	<edge from="gw_things_218" to="gw_things_220"/>
+	<edge from="gw_things_98" to="gw_things_99"/>
+	<edge from="gw_things_95" to="gw_things_96"/>
+	<edge from="gw_things_239" to="gw_things_241"/>
+	<edge from="gw_things_32" to="gw_things_33"/>
+	<edge from="gw_things_232" to="gw_things_234"/>
+	<edge from="gw_things_376" to="gw_things_377"/>
+	<edge from="gw_things_434" to="gw_things_423"/>
+	<edge from="gw_things_39" to="gw_things_40"/>
+	<edge from="gw_things_210" to="gw_things_212"/>
+	<edge from="gw_things_303" to="gw_things_304"/>
+	<edge from="gw_things_275" to="gw_things_277"/>
+	<edge from="gw_things_203" to="gw_things_205"/>
+	<edge from="gw_things_151" to="gw_things_153"/>
+	<edge from="gw_things_225" to="gw_things_227"/>
+	<edge from="gw_things_236" to="gw_things_238"/>
+	<edge from="gw_things_276" to="gw_things_278"/>
+	<edge from="gw_things_149" to="gw_things_151"/>
+	<edge from="gw_things_277" to="gw_things_279"/>
+	<edge from="gw_things_307" to="gw_things_308"/>
+	<edge from="gw_things_375" to="gw_things_376"/>
+	<edge from="gw_things_368" to="gw_things_369"/>
+	<edge from="gw_things_417" to="gw_things_418"/>
+	<edge from="gw_things_142" to="gw_things_144"/>
+	<edge from="gw_things_270" to="gw_things_272"/>
+	<edge from="gw_things_301" to="gw_things_302"/>
+	<edge from="gw_things_79" to="gw_things_80"/>
+	<edge from="gw_things_130" to="gw_things_132"/>
+	<edge from="gw_things_223" to="gw_things_225"/>
+	<edge from="gw_things_10" to="gw_things_11"/>
+	<edge from="gw_things_216" to="gw_things_218"/>
+	<edge from="gw_things_360" to="gw_things_361"/>
+	<edge from="gw_things_319" to="gw_things_320"/>
+	<edge from="gw_things_163" to="gw_things_165"/>
+	<edge from="gw_things_1" to="gw_things_2"/>
+	<edge from="gw_things_292" to="gw_things_294"/>
+	<edge from="gw_things_220" to="gw_things_222"/>
+	<edge from="gw_things_372" to="gw_things_373"/>
+	<edge from="gw_things_293" to="gw_things_295"/>
+	<edge from="gw_things_345" to="gw_things_346"/>
+	<edge from="gw_things_355" to="gw_things_356"/>
+	<edge from="gw_things_208" to="gw_things_210"/>
+	<edge from="gw_things_288" to="gw_things_290"/>
+	<edge from="gw_things_289" to="gw_things_291"/>
+	<edge from="gw_things_316" to="gw_things_317"/>
+	<edge from="gw_things_357" to="gw_things_358"/>
+	<edge from="gw_things_186" to="gw_things_188"/>
+	<edge from="gw_things_78" to="gw_things_79"/>
+	<edge from="gw_things_67" to="gw_things_69"/>
+	<edge from="gw_things_337" to="gw_things_338"/>
+	<edge from="gw_things_64" to="gw_things_65"/>
+	<edge from="gw_things_207" to="gw_things_209"/>
+	<edge from="gw_things_432" to="gw_things_433"/>
+	<edge from="gw_things_26" to="gw_things_27"/>
+	<edge from="gw_things_397" to="gw_things_398"/>
+	<edge from="gw_things_121" to="gw_things_122"/>
+	<edge from="gw_things_344" to="gw_things_345"/>
+	<edge from="gw_things_128" to="gw_things_130"/>
+</graph>
+</gxl>

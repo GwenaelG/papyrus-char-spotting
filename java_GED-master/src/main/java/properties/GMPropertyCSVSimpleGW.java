@@ -25,14 +25,14 @@ public class GMPropertyCSVSimpleGW {
 
     public static void main(String[] args) {
 
-        String parameterFile    = "test/papyrus/settings/ParametersS_cont.csv";
-        String graphFile        = "test/papyrus/settings/Graphs_cont_gw.csv";
-        String resultPath       = "test/papyrus/results/gw/cont/step2/";
-        String propertyPath     = "test/papyrus/properties/gw/cont/step2/";
-        String sourceImagesPath = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/chars/";
+        String parameterFile    = "test/papyrus/settings/ParametersS_cont3_test.csv";
+        String graphFile        = "test/papyrus/settings/Graphs_cont_gw_test.csv";
+        String resultPath       = "test/papyrus/results/gw/cont/test/";
+        String propertyPath     = "test/papyrus/properties/gw/cont/test/";
+        String sourceImagesPath = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/words/";
         String targetImagesPath = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/pages/";
         String distVisFolder      = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/hotmap/";
-        String charVisFolder    = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/char/gw/cont/";
+        String charVisFolder    = "C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/vis/char/gw/cont/test";
         String[] windowSizes    = new String[]{"1"};
         String[] thresholdValues = new String[]{"-2", "-1.8", "-1.6", "-1.4", "-1.2", "-1", "-0.8", "-0.6", "-0.4", "-0.2"};
         String nodeRatio            = "2";

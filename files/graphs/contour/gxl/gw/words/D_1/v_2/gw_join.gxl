@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="gw_join">
+	<attr name="x_mean">
+		<float>67.46969696969697</float>
+	</attr>
+	<attr name="y_mean">
+		<float>33.71212121212121</float>
+	</attr>
+	<attr name="x_std">
+		<float>48.873125693572014</float>
+	</attr>
+	<attr name="y_std">
+		<float>18.951904958633182</float>
+	</attr>
+	<attr name="x_max">
+		<float>160</float>
+	</attr>
+	<attr name="y_max">
+		<float>70</float>
+	</attr>
+	<node id="gw_join_0">
+		<attr name="x">
+			<float>1.8932757362493182</float>
+		</attr>
+		<attr name="y">
+			<float>1.8092048721603362</float>
+		</attr>
+	</node>
+	<node id="gw_join_1">
+		<attr name="x">
+			<float>1.8318923080886231</float>
+		</attr>
+		<attr name="y">
+			<float>1.9147351607706606</float>
+		</attr>
+	</node>
+	<node id="gw_join_2">
+		<attr name="x">
+			<float>-0.5211391047380226</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3541660443513163</float>
+		</attr>
+	</node>
+	<node id="gw_join_3">
+		<attr name="x">
+			<float>-0.6234448183391811</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3541660443513163</float>
+		</attr>
+	</node>
+	<node id="gw_join_4">
+		<attr name="x">
+			<float>-0.8280562455414981</float>
+		</attr>
+		<attr name="y">
+			<float>0.3845459759209553</float>
+		</attr>
+	</node>
+	<node id="gw_join_5">
+		<attr name="x">
+			<float>-1.1554345290652053</float>
+		</attr>
+		<attr name="y">
+			<float>0.9121974189725779</float>
+		</attr>
+	</node>
+	<node id="gw_join_6">
+		<attr name="x">
+			<float>-1.3600459562675224</float>
+		</attr>
+		<attr name="y">
+			<float>1.545379150634525</float>
+		</attr>
+	</node>
+	<node id="gw_join_7">
+		<attr name="x">
+			<float>-1.3805070989877541</float>
+		</attr>
+		<attr name="y">
+			<float>1.8619700164654984</float>
+		</attr>
+	</node>
+	<node id="gw_join_8">
+		<attr name="x">
+			<float>-1.257740242666364</float>
+		</attr>
+		<attr name="y">
+			<float>1.9147351607706606</float>
+		</attr>
+	</node>
+	<node id="gw_join_9">
+		<attr name="x">
+			<float>-1.0940511009045102</float>
+		</attr>
+		<attr name="y">
+			<float>1.7036745835500118</float>
+		</attr>
+	</node>
+	<node id="gw_join_10">
+		<attr name="x">
+			<float>-0.7462116746605714</float>
+		</attr>
+		<attr name="y">
+			<float>0.542841408836442</float>
+		</attr>
+	</node>
+	<node id="gw_join_11">
+		<attr name="x">
+			<float>-0.562061390178486</float>
+		</attr>
+		<attr name="y">
+			<float>0.17348539870030627</float>
+		</attr>
+	</node>
+	<node id="gw_join_12">
+		<attr name="x">
+			<float>-0.6029836756189494</float>
+		</attr>
+		<attr name="y">
+			<float>-0.03757517852034276</float>
+		</attr>
+	</node>
+	<node id="gw_join_13">
+		<attr name="x">
+			<float>-1.1963568145056689</float>
+		</attr>
+		<attr name="y">
+			<float>1.4398488620242005</float>
+		</attr>
+	</node>
+	<node id="gw_join_14">
+		<attr name="x">
+			<float>-1.175895671785437</float>
+		</attr>
+		<attr name="y">
+			<float>1.3870837177190383</float>
+		</attr>
+	</node>
+	<node id="gw_join_15">
+		<attr name="x">
+			<float>-1.1554345290652053</float>
+		</attr>
+		<attr name="y">
+			<float>1.3343185734138758</float>
+		</attr>
+	</node>
+	<node id="gw_join_16">
+		<attr name="x">
+			<float>-1.1349733863449736</float>
+		</attr>
+		<attr name="y">
+			<float>1.2815534291087136</float>
+		</attr>
+	</node>
+	<node id="gw_join_17">
+		<attr name="x">
+			<float>-1.032667672743815</float>
+		</attr>
+		<attr name="y">
+			<float>1.0177277075829023</float>
+		</attr>
+	</node>
+	<node id="gw_join_18">
+		<attr name="x">
+			<float>-1.0940511009045102</float>
+		</attr>
+		<attr name="y">
+			<float>1.2815534291087136</float>
+		</attr>
+	</node>
+	<node id="gw_join_19">
+		<attr name="x">
+			<float>-1.032667672743815</float>
+		</attr>
+		<attr name="y">
+			<float>1.0177277075829023</float>
+		</attr>
+	</node>
+	<node id="gw_join_20">
+		<attr name="x">
+			<float>-1.0122065300235834</float>
+		</attr>
+		<attr name="y">
+			<float>0.9649625632777401</float>
+		</attr>
+	</node>
+	<node id="gw_join_21">
+		<attr name="x">
+			<float>1.8932757362493182</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5652266215719653</float>
+		</attr>
+	</node>
+	<node id="gw_join_22">
+		<attr name="x">
+			<float>1.8114311653683914</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6179917658771276</float>
+		</attr>
+	</node>
+	<node id="gw_join_23">
+		<attr name="x">
+			<float>1.6477420236065379</float>
+		</attr>
+		<attr name="y">
+			<float>-0.19587061143582954</float>
+		</attr>
+	</node>
+	<node id="gw_join_24">
+		<attr name="x">
+			<float>1.443130596404221</float>
+		</attr>
+		<attr name="y">
+			<float>0.015189965784819494</float>
+		</attr>
+	</node>
+	<node id="gw_join_25">
+		<attr name="x">
+			<float>1.3408248828030624</float>
+		</attr>
+		<attr name="y">
+			<float>-0.30140090004615405</float>
+		</attr>
+	</node>
+	<node id="gw_join_26">
+		<attr name="x">
+			<float>1.0748300274400502</float>
+		</attr>
+		<attr name="y">
+			<float>-0.03757517852034276</float>
+		</attr>
+	</node>
+	<node id="gw_join_27">
+		<attr name="x">
+			<float>0.9929854565591234</float>
+		</attr>
+		<attr name="y">
+			<float>-0.30140090004615405</float>
+		</attr>
+	</node>
+	<node id="gw_join_28">
+		<attr name="x">
+			<float>0.8702186002377332</float>
+		</attr>
+		<attr name="y">
+			<float>-0.30140090004615405</float>
+		</attr>
+	</node>
+	<node id="gw_join_29">
+		<attr name="x">
+			<float>0.399612317672404</float>
+		</attr>
+		<attr name="y">
+			<float>0.2262505430054685</float>
+		</attr>
+	</node>
+	<node id="gw_join_30">
+		<attr name="x">
+			<float>0.31776774679147723</float>
+		</attr>
+		<attr name="y">
+			<float>0.12072025439514401</float>
+		</attr>
+	</node>
+	<node id="gw_join_31">
+		<attr name="x">
+			<float>0.4200734603926357</float>
+		</attr>
+		<attr name="y">
+			<float>-0.19587061143582954</float>
+		</attr>
+	</node>
+	<node id="gw_join_32">
+		<attr name="x">
+			<float>0.399612317672404</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3541660443513163</float>
+		</attr>
+	</node>
+	<node id="gw_join_33">
+		<attr name="x">
+			<float>0.09269517686892849</float>
+		</attr>
+		<attr name="y">
+			<float>-0.19587061143582954</float>
+		</attr>
+	</node>
+	<node id="gw_join_34">
+		<attr name="x">
+			<float>-0.21422196393454704</float>
+		</attr>
+		<attr name="y">
+			<float>-0.30140090004615405</float>
+		</attr>
+	</node>
+	<node id="gw_join_35">
+		<attr name="x">
+			<float>-0.45975567657732747</float>
+		</attr>
+		<attr name="y">
+			<float>0.3845459759209553</float>
+		</attr>
+	</node>
+	<node id="gw_join_36">
+		<attr name="x">
+			<float>-0.27560539209524215</float>
+		</attr>
+		<attr name="y">
+			<float>0.4900762645312798</float>
+		</attr>
+	</node>
+	<node id="gw_join_37">
+		<attr name="x">
+			<float>0.010850605988001678</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09034032282550501</float>
+		</attr>
+	</node>
+	<node id="gw_join_38">
+		<attr name="x">
+			<float>0.195000890470087</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09034032282550501</float>
+		</attr>
+	</node>
+	<node id="gw_join_39">
+		<attr name="x">
+			<float>0.195000890470087</float>
+		</attr>
+		<attr name="y">
+			<float>0.27901568731063076</float>
+		</attr>
+	</node>
+	<node id="gw_join_40">
+		<attr name="x">
+			<float>0.31776774679147723</float>
+		</attr>
+		<attr name="y">
+			<float>0.43731112022611757</float>
+		</attr>
+	</node>
+	<node id="gw_join_41">
+		<attr name="x">
+			<float>0.808835172077038</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09034032282550501</float>
+		</attr>
+	</node>
+	<node id="gw_join_42">
+		<attr name="x">
+			<float>0.8906797429579649</float>
+		</attr>
+		<attr name="y">
+			<float>-0.03757517852034276</float>
+		</attr>
+	</node>
+	<node id="gw_join_43">
+		<attr name="x">
+			<float>0.808835172077038</float>
+		</attr>
+		<attr name="y">
+			<float>0.43731112022611757</float>
+		</attr>
+	</node>
+	<node id="gw_join_44">
+		<attr name="x">
+			<float>0.9111408856781966</float>
+		</attr>
+		<attr name="y">
+			<float>0.43731112022611757</float>
+		</attr>
+	</node>
+	<node id="gw_join_45">
+		<attr name="x">
+			<float>1.156674598320977</float>
+		</attr>
+		<attr name="y">
+			<float>0.015189965784819494</float>
+		</attr>
+	</node>
+	<node id="gw_join_46">
+		<attr name="x">
+			<float>1.299902597362599</float>
+		</attr>
+		<attr name="y">
+			<float>0.2262505430054685</float>
+		</attr>
+	</node>
+	<node id="gw_join_47">
+		<attr name="x">
+			<float>1.4840528818446843</float>
+		</attr>
+		<attr name="y">
+			<float>0.2262505430054685</float>
+		</attr>
+	</node>
+	<node id="gw_join_48">
+		<attr name="x">
+			<float>1.8318923080886231</float>
+		</attr>
+		<attr name="y">
+			<float>-0.30140090004615405</float>
+		</attr>
+	</node>
+	<node id="gw_join_49">
+		<attr name="x">
+			<float>-0.27560539209524215</float>
+		</attr>
+		<attr name="y">
+			<float>0.12072025439514401</float>
+		</attr>
+	</node>
+	<node id="gw_join_50">
+		<attr name="x">
+			<float>0.7065294584758796</float>
+		</attr>
+		<attr name="y">
+			<float>-1.514999219064886</float>
+		</attr>
+	</node>
+	<node id="gw_join_51">
+		<attr name="x">
+			<float>0.6451460303151845</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6205295076752104</float>
+		</attr>
+	</node>
+	<node id="gw_join_52">
+		<attr name="x">
+			<float>0.542840316714026</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4094689304545613</float>
+		</attr>
+	</node>
+	<node id="gw_join_53">
+		<attr name="x">
+			<float>0.6656071730354162</float>
+		</attr>
+		<attr name="y">
+			<float>-1.303938641844237</float>
+		</attr>
+	</node>
+	<node id="gw_join_54">
+		<attr name="x">
+			<float>-0.48021681929755916</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6732946519803726</float>
+		</attr>
+	</node>
+	<node id="gw_join_55">
+		<attr name="x">
+			<float>-0.43929453385709577</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4622340747597238</float>
+		</attr>
+	</node>
+	<node id="gw_join_56">
+		<attr name="x">
+			<float>-0.31652767753570554</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4622340747597238</float>
+		</attr>
+	</node>
+	<node id="gw_join_57">
+		<attr name="x">
+			<float>-0.29606653481547385</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1984083532339125</float>
+		</attr>
+	</node>
+	<node id="gw_join_58">
+		<attr name="x">
+			<float>-0.23468310665477876</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2511734975390747</float>
+		</attr>
+	</node>
+	<node id="gw_join_59">
+		<attr name="x">
+			<float>-0.31652767753570554</float>
+		</attr>
+		<attr name="y">
+			<float>-1.726059796285535</float>
+		</attr>
+	</node>
+	<node id="gw_join_60">
+		<attr name="x">
+			<float>-1.0531288154640468</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7788249405906973</float>
+		</attr>
+	</node>
+	<node id="gw_join_61">
+		<attr name="x">
+			<float>-1.1145122436247419</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7788249405906973</float>
+		</attr>
+	</node>
+	<node id="gw_join_62">
+		<attr name="x">
+			<float>-1.1145122436247419</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9873477760132634</float>
+		</attr>
+	</node>
+	<node id="gw_join_63">
+		<attr name="x">
+			<float>-1.175895671785437</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8290523430977766</float>
+		</attr>
+	</node>
+	<node id="gw_join_64">
+		<attr name="x">
+			<float>-1.1145122436247419</float>
+		</attr>
+		<attr name="y">
+			<float>-0.512461477266803</float>
+		</attr>
+	</node>
+	<node id="gw_join_65">
+		<attr name="x">
+			<float>-1.0531288154640468</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6707569101822899</float>
+		</attr>
+	</node>
+	<edge from="gw_join_16" to="gw_join_16"/>
+	<edge from="gw_join_10" to="gw_join_11"/>
+	<edge from="gw_join_13" to="gw_join_13"/>
+	<edge from="gw_join_19" to="gw_join_19"/>
+	<edge from="gw_join_22" to="gw_join_23"/>
+	<edge from="gw_join_5" to="gw_join_6"/>
+	<edge from="gw_join_36" to="gw_join_37"/>
+	<edge from="gw_join_42" to="gw_join_43"/>
+	<edge from="gw_join_20" to="gw_join_20"/>
+	<edge from="gw_join_28" to="gw_join_29"/>
+	<edge from="gw_join_54" to="gw_join_55"/>
+	<edge from="gw_join_61" to="gw_join_62"/>
+	<edge from="gw_join_8" to="gw_join_9"/>
+	<edge from="gw_join_40" to="gw_join_41"/>
+	<edge from="gw_join_46" to="gw_join_47"/>
+	<edge from="gw_join_2" to="gw_join_12"/>
+	<edge from="gw_join_30" to="gw_join_31"/>
+	<edge from="gw_join_34" to="gw_join_35"/>
+	<edge from="gw_join_50" to="gw_join_53"/>
+	<edge from="gw_join_31" to="gw_join_32"/>
+	<edge from="gw_join_63" to="gw_join_64"/>
+	<edge from="gw_join_32" to="gw_join_33"/>
+	<edge from="gw_join_6" to="gw_join_7"/>
+	<edge from="gw_join_58" to="gw_join_59"/>
+	<edge from="gw_join_44" to="gw_join_45"/>
+	<edge from="gw_join_52" to="gw_join_53"/>
+	<edge from="gw_join_54" to="gw_join_59"/>
+	<edge from="gw_join_25" to="gw_join_26"/>
+	<edge from="gw_join_56" to="gw_join_57"/>
+	<edge from="gw_join_21" to="gw_join_48"/>
+	<edge from="gw_join_14" to="gw_join_14"/>
+	<edge from="gw_join_3" to="gw_join_4"/>
+	<edge from="gw_join_39" to="gw_join_40"/>
+	<edge from="gw_join_15" to="gw_join_15"/>
+	<edge from="gw_join_27" to="gw_join_28"/>
+	<edge from="gw_join_35" to="gw_join_36"/>
+	<edge from="gw_join_47" to="gw_join_48"/>
+	<edge from="gw_join_49" to="gw_join_49"/>
+	<edge from="gw_join_4" to="gw_join_5"/>
+	<edge from="gw_join_29" to="gw_join_30"/>
+	<edge from="gw_join_37" to="gw_join_38"/>
+	<edge from="gw_join_60" to="gw_join_61"/>
+	<edge from="gw_join_9" to="gw_join_10"/>
+	<edge from="gw_join_41" to="gw_join_42"/>
+	<edge from="gw_join_2" to="gw_join_3"/>
+	<edge from="gw_join_50" to="gw_join_51"/>
+	<edge from="gw_join_62" to="gw_join_63"/>
+	<edge from="gw_join_11" to="gw_join_12"/>
+	<edge from="gw_join_43" to="gw_join_44"/>
+	<edge from="gw_join_23" to="gw_join_24"/>
+	<edge from="gw_join_51" to="gw_join_52"/>
+	<edge from="gw_join_0" to="gw_join_1"/>
+	<edge from="gw_join_17" to="gw_join_18"/>
+	<edge from="gw_join_33" to="gw_join_34"/>
+	<edge from="gw_join_55" to="gw_join_56"/>
+	<edge from="gw_join_26" to="gw_join_27"/>
+	<edge from="gw_join_38" to="gw_join_39"/>
+	<edge from="gw_join_64" to="gw_join_65"/>
+	<edge from="gw_join_21" to="gw_join_22"/>
+	<edge from="gw_join_45" to="gw_join_46"/>
+	<edge from="gw_join_24" to="gw_join_25"/>
+	<edge from="gw_join_57" to="gw_join_58"/>
+	<edge from="gw_join_60" to="gw_join_65"/>
+	<edge from="gw_join_7" to="gw_join_8"/>
+</graph>
+</gxl>

@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="gw_Salt">
+	<attr name="x_mean">
+		<float>85.54237288135593</float>
+	</attr>
+	<attr name="y_mean">
+		<float>38.20338983050848</float>
+	</attr>
+	<attr name="x_std">
+		<float>47.94040157157646</float>
+	</attr>
+	<attr name="y_std">
+		<float>15.75531081945144</float>
+	</attr>
+	<attr name="x_max">
+		<float>175</float>
+	</attr>
+	<attr name="y_max">
+		<float>60</float>
+	</attr>
+	<node id="gw_Salt_0">
+		<attr name="x">
+			<float>-0.7413866324897196</float>
+		</attr>
+		<attr name="y">
+			<float>0.5583266664997345</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_1">
+		<attr name="x">
+			<float>-0.720527399625202</float>
+		</attr>
+		<attr name="y">
+			<float>1.3834452661245833</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_2">
+		<attr name="x">
+			<float>-0.9499789611348958</float>
+		</attr>
+		<attr name="y">
+			<float>1.1295626200861681</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_3">
+		<attr name="x">
+			<float>-0.7413866324897196</float>
+		</attr>
+		<attr name="y">
+			<float>1.0026212970669608</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_4">
+		<attr name="x">
+			<float>-0.5536535367090609</float>
+		</attr>
+		<attr name="y">
+			<float>0.431385343480527</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_5">
+		<attr name="x">
+			<float>-0.38677967379292</float>
+		</attr>
+		<attr name="y">
+			<float>0.8122093125381494</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_6">
+		<attr name="x">
+			<float>-0.5536535367090609</float>
+		</attr>
+		<attr name="y">
+			<float>1.0660919585765645</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_7">
+		<attr name="x">
+			<float>-1.4088820841542835</float>
+		</attr>
+		<attr name="y">
+			<float>0.431385343480527</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_8">
+		<attr name="x">
+			<float>-1.3880228512897659</float>
+		</attr>
+		<attr name="y">
+			<float>0.431385343480527</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_9">
+		<attr name="x">
+			<float>0.614463503703926</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2033212716155105</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_10">
+		<attr name="x">
+			<float>0.6979004351619964</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4572039176539255</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_11">
+		<attr name="x">
+			<float>0.5518858051103731</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6476159021827368</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_12">
+		<attr name="x">
+			<float>0.5101673393813378</float>
+		</attr>
+		<attr name="y">
+			<float>-0.26679193312511423</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_13">
+		<attr name="x">
+			<float>0.113841914955503</float>
+		</attr>
+		<attr name="y">
+			<float>1.2565039431053757</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_14">
+		<attr name="x">
+			<float>0.23899731214260875</float>
+		</attr>
+		<attr name="y">
+			<float>0.8122093125381494</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_15">
+		<attr name="x">
+			<float>0.3015750107361616</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2033212716155105</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_16">
+		<attr name="x">
+			<float>0.3641527093297145</float>
+		</attr>
+		<attr name="y">
+			<float>1.3834452661245833</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_17">
+		<attr name="x">
+			<float>0.4893081065168202</float>
+		</attr>
+		<attr name="y">
+			<float>0.177502697442112</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_18">
+		<attr name="x">
+			<float>0.09298268209098537</float>
+		</attr>
+		<attr name="y">
+			<float>0.5583266664997345</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_19">
+		<attr name="x">
+			<float>0.3641527093297145</float>
+		</attr>
+		<attr name="y">
+			<float>1.2565039431053757</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_20">
+		<attr name="x">
+			<float>1.2610997225039724</float>
+		</attr>
+		<attr name="y">
+			<float>-1.091910532749963</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_21">
+		<attr name="x">
+			<float>1.1985220239104195</float>
+		</attr>
+		<attr name="y">
+			<float>-0.012909287086699259</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_22">
+		<attr name="x">
+			<float>0.7396189008910317</float>
+		</attr>
+		<attr name="y">
+			<float>0.939150635557357</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_23">
+		<attr name="x">
+			<float>1.8660174755749834</float>
+		</attr>
+		<attr name="y">
+			<float>-0.330262594634718</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_24">
+		<attr name="x">
+			<float>1.0316481609942785</float>
+		</attr>
+		<attr name="y">
+			<float>1.0026212970669608</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_25">
+		<attr name="x">
+			<float>1.28195895536849</float>
+		</attr>
+		<attr name="y">
+			<float>-0.584145240673133</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_26">
+		<attr name="x">
+			<float>1.0316481609942785</float>
+		</attr>
+		<attr name="y">
+			<float>-0.39373325614432175</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_27">
+		<attr name="x">
+			<float>1.4488328182846308</float>
+		</attr>
+		<attr name="y">
+			<float>-0.07637994859630301</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_28">
+		<attr name="x">
+			<float>1.6991436126588424</float>
+		</attr>
+		<attr name="y">
+			<float>-0.07637994859630301</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_29">
+		<attr name="x">
+			<float>0.9899296952652432</float>
+		</attr>
+		<attr name="y">
+			<float>1.1295626200861681</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_30">
+		<attr name="x">
+			<float>1.6157066812007719</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2033212716155105</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_31">
+		<attr name="x">
+			<float>1.3653958868265603</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13985061010590677</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_32">
+		<attr name="x">
+			<float>0.9690704624007256</float>
+		</attr>
+		<attr name="y">
+			<float>0.5583266664997345</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_33">
+		<attr name="x">
+			<float>1.28195895536849</float>
+		</attr>
+		<attr name="y">
+			<float>-1.091910532749963</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_34">
+		<attr name="x">
+			<float>0.8230558323491022</float>
+		</attr>
+		<attr name="y">
+			<float>0.36791468197092325</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_35">
+		<attr name="x">
+			<float>1.2402404896394548</float>
+		</attr>
+		<attr name="y">
+			<float>0.8756799740477532</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_36">
+		<attr name="x">
+			<float>0.6979004351619964</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1553811942595666</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_37">
+		<attr name="x">
+			<float>0.7813373666200669</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1553811942595666</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_38">
+		<attr name="x">
+			<float>0.7396189008910317</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7110865636923405</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_39">
+		<attr name="x">
+			<float>-0.40763890665743757</float>
+		</attr>
+		<attr name="y">
+			<float>-2.4247944244516417</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_40">
+		<attr name="x">
+			<float>-1.7426298099865656</float>
+		</attr>
+		<attr name="y">
+			<float>1.0026212970669608</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_41">
+		<attr name="x">
+			<float>-0.6579497010316491</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9170291323748117</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_42">
+		<attr name="x">
+			<float>-1.5131782484768717</float>
+		</attr>
+		<attr name="y">
+			<float>1.3834452661245833</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_43">
+		<attr name="x">
+			<float>-0.6162312353026138</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7900878093556043</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_44">
+		<attr name="x">
+			<float>-1.26286745410266</float>
+		</attr>
+		<attr name="y">
+			<float>1.1295626200861681</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_45">
+		<attr name="x">
+			<float>-0.36592044092840237</float>
+		</attr>
+		<attr name="y">
+			<float>-2.107441116903623</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_46">
+		<attr name="x">
+			<float>-1.054275125457484</float>
+		</attr>
+		<attr name="y">
+			<float>0.431385343480527</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_47">
+		<attr name="x">
+			<float>-0.5327943038445433</float>
+		</attr>
+		<attr name="y">
+			<float>-1.345793178788378</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_48">
+		<attr name="x">
+			<float>-0.887401262541343</float>
+		</attr>
+		<attr name="y">
+			<float>-0.26679193312511423</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_49">
+		<attr name="x">
+			<float>-0.7831050982187548</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6476159021827368</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_50">
+		<attr name="x">
+			<float>-0.6370904681671314</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7745572252019443</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_51">
+		<attr name="x">
+			<float>-0.9082604954058605</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9649692097307555</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_52">
+		<attr name="x">
+			<float>-0.4284981395219552</float>
+		</attr>
+		<attr name="y">
+			<float>-1.345793178788378</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_53">
+		<attr name="x">
+			<float>-1.0959935911865193</float>
+		</attr>
+		<attr name="y">
+			<float>-0.39373325614432175</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_54">
+		<attr name="x">
+			<float>-0.2616242766058142</float>
+		</attr>
+		<attr name="y">
+			<float>-2.0439704553940192</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_55">
+		<attr name="x">
+			<float>-1.26286745410266</float>
+		</attr>
+		<attr name="y">
+			<float>0.36791468197092325</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_56">
+		<attr name="x">
+			<float>-1.4297413170188011</float>
+		</attr>
+		<attr name="y">
+			<float>1.0660919585765645</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_57">
+		<attr name="x">
+			<float>-1.5757559470704245</float>
+		</attr>
+		<attr name="y">
+			<float>0.7487386510285458</float>
+		</attr>
+	</node>
+	<node id="gw_Salt_58">
+		<attr name="x">
+			<float>-1.5340374813413893</float>
+		</attr>
+		<attr name="y">
+			<float>1.1295626200861681</float>
+		</attr>
+	</node>
+	<edge from="gw_Salt_14" to="gw_Salt_17"/>
+	<edge from="gw_Salt_1" to="gw_Salt_3"/>
+	<edge from="gw_Salt_49" to="gw_Salt_51"/>
+	<edge from="gw_Salt_58" to="gw_Salt_58"/>
+	<edge from="gw_Salt_36" to="gw_Salt_37"/>
+	<edge from="gw_Salt_2" to="gw_Salt_1"/>
+	<edge from="gw_Salt_30" to="gw_Salt_31"/>
+	<edge from="gw_Salt_29" to="gw_Salt_35"/>
+	<edge from="gw_Salt_0" to="gw_Salt_3"/>
+	<edge from="gw_Salt_39" to="gw_Salt_54"/>
+	<edge from="gw_Salt_38" to="gw_Salt_37"/>
+	<edge from="gw_Salt_39" to="gw_Salt_41"/>
+	<edge from="gw_Salt_47" to="gw_Salt_49"/>
+	<edge from="gw_Salt_20" to="gw_Salt_26"/>
+	<edge from="gw_Salt_23" to="gw_Salt_30"/>
+	<edge from="gw_Salt_36" to="gw_Salt_38"/>
+	<edge from="gw_Salt_46" to="gw_Salt_48"/>
+	<edge from="gw_Salt_21" to="gw_Salt_27"/>
+	<edge from="gw_Salt_28" to="gw_Salt_23"/>
+	<edge from="gw_Salt_42" to="gw_Salt_44"/>
+	<edge from="gw_Salt_13" to="gw_Salt_16"/>
+	<edge from="gw_Salt_19" to="gw_Salt_14"/>
+	<edge from="gw_Salt_56" to="gw_Salt_57"/>
+	<edge from="gw_Salt_40" to="gw_Salt_42"/>
+	<edge from="gw_Salt_34" to="gw_Salt_22"/>
+	<edge from="gw_Salt_41" to="gw_Salt_43"/>
+	<edge from="gw_Salt_48" to="gw_Salt_50"/>
+	<edge from="gw_Salt_15" to="gw_Salt_18"/>
+	<edge from="gw_Salt_31" to="gw_Salt_25"/>
+	<edge from="gw_Salt_27" to="gw_Salt_28"/>
+	<edge from="gw_Salt_51" to="gw_Salt_53"/>
+	<edge from="gw_Salt_35" to="gw_Salt_24"/>
+	<edge from="gw_Salt_43" to="gw_Salt_45"/>
+	<edge from="gw_Salt_18" to="gw_Salt_13"/>
+	<edge from="gw_Salt_32" to="gw_Salt_21"/>
+	<edge from="gw_Salt_52" to="gw_Salt_54"/>
+	<edge from="gw_Salt_44" to="gw_Salt_46"/>
+	<edge from="gw_Salt_4" to="gw_Salt_5"/>
+	<edge from="gw_Salt_50" to="gw_Salt_52"/>
+	<edge from="gw_Salt_45" to="gw_Salt_47"/>
+	<edge from="gw_Salt_53" to="gw_Salt_55"/>
+	<edge from="gw_Salt_22" to="gw_Salt_29"/>
+	<edge from="gw_Salt_16" to="gw_Salt_19"/>
+	<edge from="gw_Salt_57" to="gw_Salt_40"/>
+	<edge from="gw_Salt_11" to="gw_Salt_12"/>
+	<edge from="gw_Salt_55" to="gw_Salt_56"/>
+	<edge from="gw_Salt_6" to="gw_Salt_5"/>
+	<edge from="gw_Salt_4" to="gw_Salt_6"/>
+	<edge from="gw_Salt_10" to="gw_Salt_10"/>
+	<edge from="gw_Salt_20" to="gw_Salt_33"/>
+	<edge from="gw_Salt_9" to="gw_Salt_9"/>
+	<edge from="gw_Salt_26" to="gw_Salt_34"/>
+	<edge from="gw_Salt_25" to="gw_Salt_33"/>
+	<edge from="gw_Salt_17" to="gw_Salt_12"/>
+	<edge from="gw_Salt_11" to="gw_Salt_15"/>
+	<edge from="gw_Salt_24" to="gw_Salt_32"/>
+	<edge from="gw_Salt_7" to="gw_Salt_8"/>
+	<edge from="gw_Salt_0" to="gw_Salt_2"/>
+</graph>
+</gxl>

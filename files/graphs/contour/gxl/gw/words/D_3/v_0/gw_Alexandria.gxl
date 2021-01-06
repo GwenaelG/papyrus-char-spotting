@@ -1,0 +1,4389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="gw_Alexandria">
+	<attr name="x_mean">
+		<float>219.6041237113402</float>
+	</attr>
+	<attr name="y_mean">
+		<float>38.70721649484536</float>
+	</attr>
+	<attr name="x_std">
+		<float>132.44405153542652</float>
+	</attr>
+	<attr name="y_std">
+		<float>13.230114410073913</float>
+	</attr>
+	<attr name="x_max">
+		<float>466</float>
+	</attr>
+	<attr name="y_max">
+		<float>54</float>
+	</attr>
+	<node id="gw_Alexandria_0">
+		<attr name="x">
+			<float>-1.5976868818056333</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_1">
+		<attr name="x">
+			<float>-1.5448343760203689</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_2">
+		<attr name="x">
+			<float>-1.6203379557136037</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_3">
+		<attr name="x">
+			<float>-1.5599350919590158</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_4">
+		<attr name="x">
+			<float>-1.6429890296215743</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_5">
+		<attr name="x">
+			<float>-1.5825861658669864</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_6">
+		<attr name="x">
+			<float>-1.6580897455602213</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_7">
+		<attr name="x">
+			<float>-1.6505393875908978</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_8">
+		<attr name="x">
+			<float>-1.6278883136829274</float>
+		</attr>
+		<attr name="y">
+			<float>1.0047368520889741</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_9">
+		<attr name="x">
+			<float>-1.6052372397749568</float>
+		</attr>
+		<attr name="y">
+			<float>1.080321988317166</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_10">
+		<attr name="x">
+			<float>-1.5825861658669864</float>
+		</attr>
+		<attr name="y">
+			<float>1.1559071245453576</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_11">
+		<attr name="x">
+			<float>-1.5599350919590158</float>
+		</attr>
+		<attr name="y">
+			<float>1.1559071245453576</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_12">
+		<attr name="x">
+			<float>-1.5599350919590158</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_13">
+		<attr name="x">
+			<float>-1.5523847339896923</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_14">
+		<attr name="x">
+			<float>0.3125536844332122</float>
+		</attr>
+		<attr name="y">
+			<float>0.022130081122480817</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_15">
+		<attr name="x">
+			<float>0.37295654818780016</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_16">
+		<attr name="x">
+			<float>0.29745296849456515</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_17">
+		<attr name="x">
+			<float>0.39560762209577066</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_18">
+		<attr name="x">
+			<float>0.27480189458659465</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_19">
+		<attr name="x">
+			<float>0.4031579800650942</float>
+		</attr>
+		<attr name="y">
+			<float>0.09771521735067261</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_20">
+		<attr name="x">
+			<float>0.25215082067862415</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_21">
+		<attr name="x">
+			<float>0.3805069061571237</float>
+		</attr>
+		<attr name="y">
+			<float>0.09771521735067261</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_22">
+		<attr name="x">
+			<float>0.22949974677065368</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_23">
+		<attr name="x">
+			<float>0.3578558322491532</float>
+		</attr>
+		<attr name="y">
+			<float>0.09771521735067261</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_24">
+		<attr name="x">
+			<float>0.23705010473997717</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_25">
+		<attr name="x">
+			<float>0.3352047583411827</float>
+		</attr>
+		<attr name="y">
+			<float>0.022130081122480817</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_26">
+		<attr name="x">
+			<float>0.2597011786479477</float>
+		</attr>
+		<attr name="y">
+			<float>1.0047368520889741</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_27">
+		<attr name="x">
+			<float>0.28235225255591817</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_28">
+		<attr name="x">
+			<float>0.30500332646388867</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_29">
+		<attr name="x">
+			<float>0.32765440037185917</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_30">
+		<attr name="x">
+			<float>0.35030547427982967</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_31">
+		<attr name="x">
+			<float>0.27480189458659465</float>
+		</attr>
+		<attr name="y">
+			<float>0.022130081122480817</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_32">
+		<attr name="x">
+			<float>-1.2428200572474288</float>
+		</attr>
+		<attr name="y">
+			<float>0.022130081122480817</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_33">
+		<attr name="x">
+			<float>-1.2654711311553994</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_34">
+		<attr name="x">
+			<float>-1.2881222050633698</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_35">
+		<attr name="x">
+			<float>-1.3107732789713404</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_36">
+		<attr name="x">
+			<float>-1.3334243528793108</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_37">
+		<attr name="x">
+			<float>-1.3560754267872814</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_38">
+		<attr name="x">
+			<float>-1.3787265006952518</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_39">
+		<attr name="x">
+			<float>-1.4013775746032224</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_40">
+		<attr name="x">
+			<float>-1.4240286485111928</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_41">
+		<attr name="x">
+			<float>-1.4466797224191634</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_42">
+		<attr name="x">
+			<float>-1.4693307963271338</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_43">
+		<attr name="x">
+			<float>-1.4919818702351044</float>
+		</attr>
+		<attr name="y">
+			<float>1.0047368520889741</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_44">
+		<attr name="x">
+			<float>-1.4768811542964573</float>
+		</attr>
+		<attr name="y">
+			<float>1.1559071245453576</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_45">
+		<attr name="x">
+			<float>-1.454230080388487</float>
+		</attr>
+		<attr name="y">
+			<float>1.080321988317166</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_46">
+		<attr name="x">
+			<float>-1.4315790064805163</float>
+		</attr>
+		<attr name="y">
+			<float>1.0047368520889741</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_47">
+		<attr name="x">
+			<float>-1.408927932572546</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_48">
+		<attr name="x">
+			<float>-1.3862768586645753</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_49">
+		<attr name="x">
+			<float>-1.363625784756605</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_50">
+		<attr name="x">
+			<float>-1.3409747108486343</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_51">
+		<attr name="x">
+			<float>-1.318323636940664</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_52">
+		<attr name="x">
+			<float>-1.2956725630326933</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_53">
+		<attr name="x">
+			<float>-1.273021489124723</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_54">
+		<attr name="x">
+			<float>-1.2503704152167523</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_55">
+		<attr name="x">
+			<float>-1.227719341308782</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_56">
+		<attr name="x">
+			<float>-1.227719341308782</float>
+		</attr>
+		<attr name="y">
+			<float>0.022130081122480817</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_57">
+		<attr name="x">
+			<float>0.44090976991171166</float>
+		</attr>
+		<attr name="y">
+			<float>-0.053455055105710976</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_58">
+		<attr name="x">
+			<float>0.4258090539730647</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_59">
+		<attr name="x">
+			<float>0.4484601278810352</float>
+		</attr>
+		<attr name="y">
+			<float>0.324470626035248</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_60">
+		<attr name="x">
+			<float>0.4484601278810352</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_61">
+		<attr name="x">
+			<float>0.46356084381968216</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_62">
+		<attr name="x">
+			<float>0.48621191772765265</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_63">
+		<attr name="x">
+			<float>0.5088629916356232</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_64">
+		<attr name="x">
+			<float>0.5315140655435937</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_65">
+		<attr name="x">
+			<float>0.5541651394515642</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_66">
+		<attr name="x">
+			<float>0.5768162133595347</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_67">
+		<attr name="x">
+			<float>0.5994672872675052</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_68">
+		<attr name="x">
+			<float>0.5919169292981816</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_69">
+		<attr name="x">
+			<float>0.5692658553902111</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_70">
+		<attr name="x">
+			<float>0.5466147814822406</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_71">
+		<attr name="x">
+			<float>0.5239637075742701</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_72">
+		<attr name="x">
+			<float>0.5013126336662996</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_73">
+		<attr name="x">
+			<float>0.5013126336662996</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_74">
+		<attr name="x">
+			<float>0.48621191772765265</float>
+		</attr>
+		<attr name="y">
+			<float>-0.053455055105710976</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_75">
+		<attr name="x">
+			<float>0.46356084381968216</float>
+		</attr>
+		<attr name="y">
+			<float>-0.053455055105710976</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_76">
+		<attr name="x">
+			<float>1.535711675463619</float>
+		</attr>
+		<attr name="y">
+			<float>-0.12904019133390277</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_77">
+		<attr name="x">
+			<float>1.5130606015556487</float>
+		</attr>
+		<attr name="y">
+			<float>0.022130081122480817</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_78">
+		<attr name="x">
+			<float>1.490409527647678</float>
+		</attr>
+		<attr name="y">
+			<float>0.09771521735067261</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_79">
+		<attr name="x">
+			<float>1.4677584537397077</float>
+		</attr>
+		<attr name="y">
+			<float>0.324470626035248</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_80">
+		<attr name="x">
+			<float>1.4677584537397077</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_81">
+		<attr name="x">
+			<float>1.4828591696783546</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_82">
+		<attr name="x">
+			<float>1.5055102435863252</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_83">
+		<attr name="x">
+			<float>1.5281613174942956</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_84">
+		<attr name="x">
+			<float>1.5508123914022662</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_85">
+		<attr name="x">
+			<float>1.5734634653102366</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_86">
+		<attr name="x">
+			<float>1.5961145392182072</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_87">
+		<attr name="x">
+			<float>1.6187656131261776</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_88">
+		<attr name="x">
+			<float>1.6414166870341482</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_89">
+		<attr name="x">
+			<float>1.6640677609421186</float>
+		</attr>
+		<attr name="y">
+			<float>1.0047368520889741</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_90">
+		<attr name="x">
+			<float>1.6867188348500892</float>
+		</attr>
+		<attr name="y">
+			<float>1.0047368520889741</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_91">
+		<attr name="x">
+			<float>1.7093699087580596</float>
+		</attr>
+		<attr name="y">
+			<float>1.0047368520889741</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_92">
+		<attr name="x">
+			<float>1.7320209826660302</float>
+		</attr>
+		<attr name="y">
+			<float>1.0047368520889741</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_93">
+		<attr name="x">
+			<float>1.7546720565740006</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_94">
+		<attr name="x">
+			<float>1.7773231304819712</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_95">
+		<attr name="x">
+			<float>1.7999742043899416</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_96">
+		<attr name="x">
+			<float>1.8226252782979122</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_97">
+		<attr name="x">
+			<float>1.8452763522058826</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_98">
+		<attr name="x">
+			<float>1.8603770681445297</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_99">
+		<attr name="x">
+			<float>1.8603770681445297</float>
+		</attr>
+		<attr name="y">
+			<float>0.022130081122480817</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_100">
+		<attr name="x">
+			<float>1.8377259942365591</float>
+		</attr>
+		<attr name="y">
+			<float>0.09771521735067261</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_101">
+		<attr name="x">
+			<float>1.8226252782979122</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_102">
+		<attr name="x">
+			<float>1.7999742043899416</float>
+		</attr>
+		<attr name="y">
+			<float>0.324470626035248</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_103">
+		<attr name="x">
+			<float>1.7773231304819712</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_104">
+		<attr name="x">
+			<float>1.7546720565740006</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_105">
+		<attr name="x">
+			<float>1.7320209826660302</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_106">
+		<attr name="x">
+			<float>1.7093699087580596</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_107">
+		<attr name="x">
+			<float>1.6867188348500892</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_108">
+		<attr name="x">
+			<float>1.6640677609421186</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_109">
+		<attr name="x">
+			<float>1.6640677609421186</float>
+		</attr>
+		<attr name="y">
+			<float>0.324470626035248</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_110">
+		<attr name="x">
+			<float>1.6489670450034717</float>
+		</attr>
+		<attr name="y">
+			<float>0.09771521735067261</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_111">
+		<attr name="x">
+			<float>1.626315971095501</float>
+		</attr>
+		<attr name="y">
+			<float>-0.12904019133390277</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_112">
+		<attr name="x">
+			<float>1.6036648971875307</float>
+		</attr>
+		<attr name="y">
+			<float>-0.12904019133390277</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_113">
+		<attr name="x">
+			<float>1.58101382327956</float>
+		</attr>
+		<attr name="y">
+			<float>-0.12904019133390277</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_114">
+		<attr name="x">
+			<float>1.5583627493715897</float>
+		</attr>
+		<attr name="y">
+			<float>-0.12904019133390277</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_115">
+		<attr name="x">
+			<float>1.5583627493715897</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_116">
+		<attr name="x">
+			<float>1.58101382327956</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_117">
+		<attr name="x">
+			<float>1.6036648971875307</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_118">
+		<attr name="x">
+			<float>1.6036648971875307</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_119">
+		<attr name="x">
+			<float>1.58101382327956</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_120">
+		<attr name="x">
+			<float>1.5583627493715897</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_121">
+		<attr name="x">
+			<float>1.535711675463619</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_122">
+		<attr name="x">
+			<float>1.5206109595249722</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_123">
+		<attr name="x">
+			<float>1.5432620334329428</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_124">
+		<attr name="x">
+			<float>-0.049863498094315825</float>
+		</attr>
+		<attr name="y">
+			<float>-0.20462532756209456</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_125">
+		<attr name="x">
+			<float>-0.07251457200228632</float>
+		</attr>
+		<attr name="y">
+			<float>-0.12904019133390277</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_126">
+		<attr name="x">
+			<float>-0.09516564591025682</float>
+		</attr>
+		<attr name="y">
+			<float>-0.053455055105710976</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_127">
+		<attr name="x">
+			<float>-0.11781671981822733</float>
+		</attr>
+		<attr name="y">
+			<float>0.022130081122480817</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_128">
+		<attr name="x">
+			<float>-0.14046779372619783</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_129">
+		<attr name="x">
+			<float>-0.16311886763416833</float>
+		</attr>
+		<attr name="y">
+			<float>0.324470626035248</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_130">
+		<attr name="x">
+			<float>-0.17821958357281534</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_131">
+		<attr name="x">
+			<float>-0.17821958357281534</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_132">
+		<attr name="x">
+			<float>-0.16311886763416833</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_133">
+		<attr name="x">
+			<float>-0.14046779372619783</float>
+		</attr>
+		<attr name="y">
+			<float>1.0047368520889741</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_134">
+		<attr name="x">
+			<float>-0.11781671981822733</float>
+		</attr>
+		<attr name="y">
+			<float>1.0047368520889741</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_135">
+		<attr name="x">
+			<float>-0.09516564591025682</float>
+		</attr>
+		<attr name="y">
+			<float>1.0047368520889741</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_136">
+		<attr name="x">
+			<float>-0.07251457200228632</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_137">
+		<attr name="x">
+			<float>-0.049863498094315825</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_138">
+		<attr name="x">
+			<float>-0.027212424186345327</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_139">
+		<attr name="x">
+			<float>-0.004561350278374826</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_140">
+		<attr name="x">
+			<float>0.018089723629595673</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_141">
+		<attr name="x">
+			<float>0.040740797537566174</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_142">
+		<attr name="x">
+			<float>0.06339187144553668</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_143">
+		<attr name="x">
+			<float>0.08604294535350718</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_144">
+		<attr name="x">
+			<float>0.10869401926147768</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_145">
+		<attr name="x">
+			<float>0.13134509316944817</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_146">
+		<attr name="x">
+			<float>0.15399616707741867</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_147">
+		<attr name="x">
+			<float>0.17664724098538917</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_148">
+		<attr name="x">
+			<float>0.16154652504674216</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_149">
+		<attr name="x">
+			<float>0.13889545113877166</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_150">
+		<attr name="x">
+			<float>0.11624437723080118</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_151">
+		<attr name="x">
+			<float>0.09359330332283067</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_152">
+		<attr name="x">
+			<float>0.07094222941486017</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_153">
+		<attr name="x">
+			<float>0.04829115550688967</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_154">
+		<attr name="x">
+			<float>0.04829115550688967</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_155">
+		<attr name="x">
+			<float>0.040740797537566174</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_156">
+		<attr name="x">
+			<float>0.025640081598919173</float>
+		</attr>
+		<attr name="y">
+			<float>-0.053455055105710976</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_157">
+		<attr name="x">
+			<float>0.002989007690948674</float>
+		</attr>
+		<attr name="y">
+			<float>-0.20462532756209456</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_158">
+		<attr name="x">
+			<float>-0.019662066217021826</float>
+		</attr>
+		<attr name="y">
+			<float>-0.20462532756209456</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_159">
+		<attr name="x">
+			<float>-0.04231314012499233</float>
+		</attr>
+		<attr name="y">
+			<float>-0.20462532756209456</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_160">
+		<attr name="x">
+			<float>-0.049863498094315825</float>
+		</attr>
+		<attr name="y">
+			<float>0.09771521735067261</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_161">
+		<attr name="x">
+			<float>-0.05741385606363933</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_162">
+		<attr name="x">
+			<float>-0.027212424186345327</float>
+		</attr>
+		<attr name="y">
+			<float>0.022130081122480817</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_163">
+		<attr name="x">
+			<float>-0.004561350278374826</float>
+		</attr>
+		<attr name="y">
+			<float>0.022130081122480817</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_164">
+		<attr name="x">
+			<float>0.002989007690948674</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_165">
+		<attr name="x">
+			<float>-0.012111708247698326</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_166">
+		<attr name="x">
+			<float>-0.034762782155668824</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_167">
+		<attr name="x">
+			<float>-0.05741385606363933</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_168">
+		<attr name="x">
+			<float>-0.08006492997160983</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_169">
+		<attr name="x">
+			<float>-0.10271600387958033</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_170">
+		<attr name="x">
+			<float>-0.10271600387958033</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_171">
+		<attr name="x">
+			<float>-0.08006492997160983</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_172">
+		<attr name="x">
+			<float>-0.49533461828440234</float>
+		</attr>
+		<attr name="y">
+			<float>-0.28021046379028636</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_173">
+		<attr name="x">
+			<float>-0.37452889077522633</float>
+		</attr>
+		<attr name="y">
+			<float>-0.12904019133390277</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_174">
+		<attr name="x">
+			<float>-0.5179856921923728</float>
+		</attr>
+		<attr name="y">
+			<float>-0.20462532756209456</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_175">
+		<attr name="x">
+			<float>-0.39717996468319683</float>
+		</attr>
+		<attr name="y">
+			<float>-0.053455055105710976</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_176">
+		<attr name="x">
+			<float>-0.5406367661003433</float>
+		</attr>
+		<attr name="y">
+			<float>0.022130081122480817</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_177">
+		<attr name="x">
+			<float>-0.4198310385911673</float>
+		</attr>
+		<attr name="y">
+			<float>-0.053455055105710976</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_178">
+		<attr name="x">
+			<float>-0.5330864081310198</float>
+		</attr>
+		<attr name="y">
+			<float>0.09771521735067261</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_179">
+		<attr name="x">
+			<float>-0.4349317545298143</float>
+		</attr>
+		<attr name="y">
+			<float>-0.20462532756209456</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_180">
+		<attr name="x">
+			<float>-0.5104353342230493</float>
+		</attr>
+		<attr name="y">
+			<float>0.09771521735067261</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_181">
+		<attr name="x">
+			<float>-0.4575828284377848</float>
+		</attr>
+		<attr name="y">
+			<float>-0.28021046379028636</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_182">
+		<attr name="x">
+			<float>-0.4877842603150788</float>
+		</attr>
+		<attr name="y">
+			<float>-0.053455055105710976</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_183">
+		<attr name="x">
+			<float>-0.4802339023457553</float>
+		</attr>
+		<attr name="y">
+			<float>-0.28021046379028636</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_184">
+		<attr name="x">
+			<float>-0.4802339023457553</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_185">
+		<attr name="x">
+			<float>-0.49533461828440234</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_186">
+		<attr name="x">
+			<float>-0.5179856921923728</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_187">
+		<attr name="x">
+			<float>-0.5406367661003433</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_188">
+		<attr name="x">
+			<float>-0.5632878400083138</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_189">
+		<attr name="x">
+			<float>-0.5859389139162843</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_190">
+		<attr name="x">
+			<float>-0.5859389139162843</float>
+		</attr>
+		<attr name="y">
+			<float>1.0047368520889741</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_191">
+		<attr name="x">
+			<float>-0.5632878400083138</float>
+		</attr>
+		<attr name="y">
+			<float>1.080321988317166</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_192">
+		<attr name="x">
+			<float>-0.5406367661003433</float>
+		</attr>
+		<attr name="y">
+			<float>1.0047368520889741</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_193">
+		<attr name="x">
+			<float>-0.5179856921923728</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_194">
+		<attr name="x">
+			<float>-0.49533461828440234</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_195">
+		<attr name="x">
+			<float>-0.47268354437643184</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_196">
+		<attr name="x">
+			<float>-0.45003247046846134</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_197">
+		<attr name="x">
+			<float>-0.42738139656049084</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_198">
+		<attr name="x">
+			<float>-0.40473032265252035</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_199">
+		<attr name="x">
+			<float>-0.38207924874454985</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_200">
+		<attr name="x">
+			<float>-0.35942817483657935</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_201">
+		<attr name="x">
+			<float>-0.33677710092860885</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_202">
+		<attr name="x">
+			<float>-0.31412602702063835</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_203">
+		<attr name="x">
+			<float>-0.2914749531126678</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_204">
+		<attr name="x">
+			<float>-0.2688238792046973</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_205">
+		<attr name="x">
+			<float>-0.24617280529672683</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_206">
+		<attr name="x">
+			<float>-0.26127352123537384</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_207">
+		<attr name="x">
+			<float>-0.28392459514334434</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_208">
+		<attr name="x">
+			<float>-0.30657566905131484</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_209">
+		<attr name="x">
+			<float>-0.32922674295928533</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_210">
+		<attr name="x">
+			<float>-0.35187781686725583</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_211">
+		<attr name="x">
+			<float>-0.37452889077522633</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_212">
+		<attr name="x">
+			<float>-0.39717996468319683</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_213">
+		<attr name="x">
+			<float>-0.4122806806218438</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_214">
+		<attr name="x">
+			<float>-0.40473032265252035</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_215">
+		<attr name="x">
+			<float>-0.38207924874454985</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_216">
+		<attr name="x">
+			<float>-0.35942817483657935</float>
+		</attr>
+		<attr name="y">
+			<float>0.324470626035248</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_217">
+		<attr name="x">
+			<float>-0.33677710092860885</float>
+		</attr>
+		<attr name="y">
+			<float>0.324470626035248</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_218">
+		<attr name="x">
+			<float>-0.3216763849899618</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_219">
+		<attr name="x">
+			<float>-0.32922674295928533</float>
+		</attr>
+		<attr name="y">
+			<float>-0.053455055105710976</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_220">
+		<attr name="x">
+			<float>-0.35187781686725583</float>
+		</attr>
+		<attr name="y">
+			<float>-0.12904019133390277</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_221">
+		<attr name="x">
+			<float>-0.6840935675174898</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5069658724748617</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_222">
+		<attr name="x">
+			<float>-0.7067446414254603</float>
+		</attr>
+		<attr name="y">
+			<float>-0.35579560001847815</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_223">
+		<attr name="x">
+			<float>-0.7293957153334308</float>
+		</attr>
+		<attr name="y">
+			<float>-0.28021046379028636</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_224">
+		<attr name="x">
+			<float>-0.7520467892414013</float>
+		</attr>
+		<attr name="y">
+			<float>-0.20462532756209456</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_225">
+		<attr name="x">
+			<float>-0.7746978631493718</float>
+		</attr>
+		<attr name="y">
+			<float>0.022130081122480817</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_226">
+		<attr name="x">
+			<float>-0.7897985790880189</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_227">
+		<attr name="x">
+			<float>-0.7973489370573423</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_228">
+		<attr name="x">
+			<float>-0.8048992950266658</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_229">
+		<attr name="x">
+			<float>-0.7822482211186953</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_230">
+		<attr name="x">
+			<float>-0.7595971472107248</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_231">
+		<attr name="x">
+			<float>-0.7369460733027543</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_232">
+		<attr name="x">
+			<float>-0.7142949993947838</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_233">
+		<attr name="x">
+			<float>-0.6916439254868133</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_234">
+		<attr name="x">
+			<float>-0.6689928515788428</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_235">
+		<attr name="x">
+			<float>-0.6463417776708723</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_236">
+		<attr name="x">
+			<float>-0.6236907037629018</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_237">
+		<attr name="x">
+			<float>-0.6236907037629018</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_238">
+		<attr name="x">
+			<float>-0.6463417776708723</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_239">
+		<attr name="x">
+			<float>-0.6689928515788428</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_240">
+		<attr name="x">
+			<float>-0.6916439254868133</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_241">
+		<attr name="x">
+			<float>-0.7142949993947838</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_242">
+		<attr name="x">
+			<float>-0.7142949993947838</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_243">
+		<attr name="x">
+			<float>-0.6916439254868133</float>
+		</attr>
+		<attr name="y">
+			<float>0.324470626035248</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_244">
+		<attr name="x">
+			<float>-0.6689928515788428</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_245">
+		<attr name="x">
+			<float>-0.6463417776708723</float>
+		</attr>
+		<attr name="y">
+			<float>0.09771521735067261</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_246">
+		<attr name="x">
+			<float>-0.6312410617322254</float>
+		</attr>
+		<attr name="y">
+			<float>-0.12904019133390277</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_247">
+		<attr name="x">
+			<float>-0.6312410617322254</float>
+		</attr>
+		<attr name="y">
+			<float>-0.35579560001847815</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_248">
+		<attr name="x">
+			<float>-0.6538921356401959</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5069658724748617</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_249">
+		<attr name="x">
+			<float>-0.6765432095481664</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5069658724748617</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_250">
+		<attr name="x">
+			<float>-0.7218453573641074</float>
+		</attr>
+		<attr name="y">
+			<float>0.022130081122480817</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_251">
+		<attr name="x">
+			<float>-0.6991942834561369</float>
+		</attr>
+		<attr name="y">
+			<float>0.022130081122480817</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_252">
+		<attr name="x">
+			<float>-0.7218453573641074</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_253">
+		<attr name="x">
+			<float>-0.7293957153334308</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2628172347567796</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_254">
+		<attr name="x">
+			<float>-0.7218453573641074</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2628172347567796</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_255">
+		<attr name="x">
+			<float>-0.7520467892414013</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1116469623003962</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_256">
+		<attr name="x">
+			<float>-0.7369460733027543</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1116469623003962</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_257">
+		<attr name="x">
+			<float>1.0826901973042091</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7919131883541222</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_258">
+		<attr name="x">
+			<float>1.0600391233962387</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7163280521259303</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_259">
+		<attr name="x">
+			<float>1.0373880494882681</float>
+		</attr>
+		<attr name="y">
+			<float>-1.489572643441355</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_260">
+		<attr name="x">
+			<float>1.0147369755802977</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3384023709849715</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_261">
+		<attr name="x">
+			<float>0.9920859016723271</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1116469623003962</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_262">
+		<attr name="x">
+			<float>0.9694348277643566</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8848915536158207</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_263">
+		<attr name="x">
+			<float>0.9467837538563861</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6581361449312453</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_264">
+		<attr name="x">
+			<float>0.9241326799484156</float>
+		</attr>
+		<attr name="y">
+			<float>-0.43138073624666995</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_265">
+		<attr name="x">
+			<float>0.9014816060404451</float>
+		</attr>
+		<attr name="y">
+			<float>-0.20462532756209456</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_266">
+		<attr name="x">
+			<float>0.8788305321324746</float>
+		</attr>
+		<attr name="y">
+			<float>-0.053455055105710976</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_267">
+		<attr name="x">
+			<float>0.8561794582245041</float>
+		</attr>
+		<attr name="y">
+			<float>0.09771521735067261</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_268">
+		<attr name="x">
+			<float>0.8410787422858572</float>
+		</attr>
+		<attr name="y">
+			<float>0.324470626035248</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_269">
+		<attr name="x">
+			<float>0.8184276683778867</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_270">
+		<attr name="x">
+			<float>0.7957765944699162</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_271">
+		<attr name="x">
+			<float>0.7731255205619457</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_272">
+		<attr name="x">
+			<float>0.7504744466539752</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_273">
+		<attr name="x">
+			<float>0.7429240886846517</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_274">
+		<attr name="x">
+			<float>0.7504744466539752</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_275">
+		<attr name="x">
+			<float>0.7731255205619457</float>
+		</attr>
+		<attr name="y">
+			<float>0.09771521735067261</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_276">
+		<attr name="x">
+			<float>0.7957765944699162</float>
+		</attr>
+		<attr name="y">
+			<float>0.022130081122480817</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_277">
+		<attr name="x">
+			<float>0.8184276683778867</float>
+		</attr>
+		<attr name="y">
+			<float>-0.053455055105710976</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_278">
+		<attr name="x">
+			<float>0.8108773104085631</float>
+		</attr>
+		<attr name="y">
+			<float>-0.12904019133390277</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_279">
+		<attr name="x">
+			<float>0.7882262365005926</float>
+		</attr>
+		<attr name="y">
+			<float>-0.20462532756209456</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_280">
+		<attr name="x">
+			<float>0.7655751625926221</float>
+		</attr>
+		<attr name="y">
+			<float>-0.20462532756209456</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_281">
+		<attr name="x">
+			<float>0.7429240886846517</float>
+		</attr>
+		<attr name="y">
+			<float>-0.12904019133390277</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_282">
+		<attr name="x">
+			<float>0.7202730147766812</float>
+		</attr>
+		<attr name="y">
+			<float>-0.053455055105710976</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_283">
+		<attr name="x">
+			<float>0.6976219408687107</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_284">
+		<attr name="x">
+			<float>0.6825212249300637</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_285">
+		<attr name="x">
+			<float>0.6825212249300637</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_286">
+		<attr name="x">
+			<float>0.6900715828993872</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_287">
+		<attr name="x">
+			<float>0.7127226568073577</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_288">
+		<attr name="x">
+			<float>0.7353737307153282</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_289">
+		<attr name="x">
+			<float>0.7580248046232987</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_290">
+		<attr name="x">
+			<float>0.7806758785312692</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_291">
+		<attr name="x">
+			<float>0.8033269524392397</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_292">
+		<attr name="x">
+			<float>0.8259780263472102</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_293">
+		<attr name="x">
+			<float>0.8410787422858572</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_294">
+		<attr name="x">
+			<float>0.8637298161938277</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_295">
+		<attr name="x">
+			<float>0.8863808901017982</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_296">
+		<attr name="x">
+			<float>0.9090319640097687</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_297">
+		<attr name="x">
+			<float>0.9316830379177392</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_298">
+		<attr name="x">
+			<float>0.9543341118257097</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_299">
+		<attr name="x">
+			<float>0.9769851857336802</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_300">
+		<attr name="x">
+			<float>0.9996362596416507</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_301">
+		<attr name="x">
+			<float>1.0222873335496212</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_302">
+		<attr name="x">
+			<float>1.0449384074575916</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_303">
+		<attr name="x">
+			<float>1.0600391233962387</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_304">
+		<attr name="x">
+			<float>1.0826901973042091</float>
+		</attr>
+		<attr name="y">
+			<float>0.09771521735067261</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_305">
+		<attr name="x">
+			<float>1.0977909132428563</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_306">
+		<attr name="x">
+			<float>1.0902405552735326</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_307">
+		<attr name="x">
+			<float>1.0902405552735326</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_308">
+		<attr name="x">
+			<float>1.1053412712121797</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_309">
+		<attr name="x">
+			<float>1.1279923451201501</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_310">
+		<attr name="x">
+			<float>1.1506434190281207</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_311">
+		<attr name="x">
+			<float>1.1732944929360911</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_312">
+		<attr name="x">
+			<float>1.1959455668440617</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_313">
+		<attr name="x">
+			<float>1.2185966407520321</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_314">
+		<attr name="x">
+			<float>1.2412477146600027</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_315">
+		<attr name="x">
+			<float>1.263898788567973</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_316">
+		<attr name="x">
+			<float>1.2789995045066203</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_317">
+		<attr name="x">
+			<float>1.3016505784145906</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_318">
+		<attr name="x">
+			<float>1.3243016523225613</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_319">
+		<attr name="x">
+			<float>1.3469527262305316</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_320">
+		<attr name="x">
+			<float>1.3696038001385022</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_321">
+		<attr name="x">
+			<float>1.3696038001385022</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_322">
+		<attr name="x">
+			<float>1.3469527262305316</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_323">
+		<attr name="x">
+			<float>1.3243016523225613</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_324">
+		<attr name="x">
+			<float>1.3394023682612082</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_325">
+		<attr name="x">
+			<float>1.3620534421691788</float>
+		</attr>
+		<attr name="y">
+			<float>0.022130081122480817</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_326">
+		<attr name="x">
+			<float>1.3771541581078257</float>
+		</attr>
+		<attr name="y">
+			<float>-0.20462532756209456</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_327">
+		<attr name="x">
+			<float>1.3620534421691788</float>
+		</attr>
+		<attr name="y">
+			<float>-0.35579560001847815</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_328">
+		<attr name="x">
+			<float>1.3394023682612082</float>
+		</attr>
+		<attr name="y">
+			<float>-0.35579560001847815</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_329">
+		<attr name="x">
+			<float>1.3167512943532378</float>
+		</attr>
+		<attr name="y">
+			<float>-0.28021046379028636</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_330">
+		<attr name="x">
+			<float>1.2941002204452672</float>
+		</attr>
+		<attr name="y">
+			<float>-0.20462532756209456</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_331">
+		<attr name="x">
+			<float>1.2714491465372966</float>
+		</attr>
+		<attr name="y">
+			<float>-0.053455055105710976</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_332">
+		<attr name="x">
+			<float>1.2487980726293262</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_333">
+		<attr name="x">
+			<float>1.2261469987213556</float>
+		</attr>
+		<attr name="y">
+			<float>0.324470626035248</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_334">
+		<attr name="x">
+			<float>1.2034959248133852</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_335">
+		<attr name="x">
+			<float>1.1808448509054146</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_336">
+		<attr name="x">
+			<float>1.1581937769974442</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_337">
+		<attr name="x">
+			<float>1.1506434190281207</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_338">
+		<attr name="x">
+			<float>1.1581937769974442</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_339">
+		<attr name="x">
+			<float>1.1506434190281207</float>
+		</attr>
+		<attr name="y">
+			<float>-0.053455055105710976</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_340">
+		<attr name="x">
+			<float>1.1430930610587973</float>
+		</attr>
+		<attr name="y">
+			<float>-0.28021046379028636</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_341">
+		<attr name="x">
+			<float>1.1204419871508267</float>
+		</attr>
+		<attr name="y">
+			<float>-0.35579560001847815</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_342">
+		<attr name="x">
+			<float>1.0977909132428563</float>
+		</attr>
+		<attr name="y">
+			<float>-0.20462532756209456</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_343">
+		<attr name="x">
+			<float>1.0826901973042091</float>
+		</attr>
+		<attr name="y">
+			<float>0.022130081122480817</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_344">
+		<attr name="x">
+			<float>1.0600391233962387</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_345">
+		<attr name="x">
+			<float>1.0373880494882681</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_346">
+		<attr name="x">
+			<float>1.0147369755802977</float>
+		</attr>
+		<attr name="y">
+			<float>0.324470626035248</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_347">
+		<attr name="x">
+			<float>0.9920859016723271</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_348">
+		<attr name="x">
+			<float>0.9694348277643566</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_349">
+		<attr name="x">
+			<float>0.9467837538563861</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_350">
+		<attr name="x">
+			<float>0.9316830379177392</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_351">
+		<attr name="x">
+			<float>0.9392333958870627</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_352">
+		<attr name="x">
+			<float>0.9618844697950332</float>
+		</attr>
+		<attr name="y">
+			<float>-0.053455055105710976</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_353">
+		<attr name="x">
+			<float>0.9769851857336802</float>
+		</attr>
+		<attr name="y">
+			<float>-0.28021046379028636</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_354">
+		<attr name="x">
+			<float>0.9920859016723271</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5069658724748617</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_355">
+		<attr name="x">
+			<float>1.0147369755802977</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6581361449312453</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_356">
+		<attr name="x">
+			<float>1.0373880494882681</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8848915536158207</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_357">
+		<attr name="x">
+			<float>1.0600391233962387</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1116469623003962</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_358">
+		<attr name="x">
+			<float>1.0826901973042091</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3384023709849715</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_359">
+		<attr name="x">
+			<float>1.1053412712121797</float>
+		</attr>
+		<attr name="y">
+			<float>-1.5651577796695468</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_360">
+		<attr name="x">
+			<float>1.0902405552735326</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7919131883541222</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_361">
+		<attr name="x">
+			<float>1.4149059479544432</float>
+		</attr>
+		<attr name="y">
+			<float>-2.3965942781796565</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_362">
+		<attr name="x">
+			<float>1.399805232015796</float>
+		</attr>
+		<attr name="y">
+			<float>-2.169838869495081</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_363">
+		<attr name="x">
+			<float>1.4149059479544432</float>
+		</attr>
+		<attr name="y">
+			<float>-2.0186685970386975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_364">
+		<attr name="x">
+			<float>1.4375570218624136</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9430834608105059</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_365">
+		<attr name="x">
+			<float>1.4602080957703842</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9430834608105059</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_366">
+		<attr name="x">
+			<float>1.4677584537397077</float>
+		</attr>
+		<attr name="y">
+			<float>-2.169838869495081</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_367">
+		<attr name="x">
+			<float>1.4526577378010608</float>
+		</attr>
+		<attr name="y">
+			<float>-2.3965942781796565</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_368">
+		<attr name="x">
+			<float>1.4300066638930902</float>
+		</attr>
+		<attr name="y">
+			<float>-2.3965942781796565</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_369">
+		<attr name="x">
+			<float>-0.6387914197015488</float>
+		</attr>
+		<attr name="y">
+			<float>-2.9256902317769993</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_370">
+		<attr name="x">
+			<float>-0.6614424936095193</float>
+		</attr>
+		<attr name="y">
+			<float>-2.850105095548807</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_371">
+		<attr name="x">
+			<float>-0.6840935675174898</float>
+		</attr>
+		<attr name="y">
+			<float>-2.6989348230924235</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_372">
+		<attr name="x">
+			<float>-0.7067446414254603</float>
+		</attr>
+		<attr name="y">
+			<float>-2.472179414407848</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_373">
+		<attr name="x">
+			<float>-0.7293957153334308</float>
+		</attr>
+		<attr name="y">
+			<float>-2.321009141951465</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_374">
+		<attr name="x">
+			<float>-0.7520467892414013</float>
+		</attr>
+		<attr name="y">
+			<float>-2.0942537332668896</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_375">
+		<attr name="x">
+			<float>-0.7671475051800484</float>
+		</attr>
+		<attr name="y">
+			<float>-1.867498324582314</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_376">
+		<attr name="x">
+			<float>-0.7897985790880189</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7163280521259303</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_377">
+		<attr name="x">
+			<float>-0.8124496529959894</float>
+		</attr>
+		<attr name="y">
+			<float>-1.5651577796695468</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_378">
+		<attr name="x">
+			<float>-0.8351007269039599</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3384023709849715</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_379">
+		<attr name="x">
+			<float>-0.8577518008119304</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1116469623003962</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_380">
+		<attr name="x">
+			<float>-0.8804028747199009</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9604766898440125</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_381">
+		<attr name="x">
+			<float>-0.9030539486278714</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7337212811594371</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_382">
+		<attr name="x">
+			<float>-0.9181546645665183</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5069658724748617</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_383">
+		<attr name="x">
+			<float>-0.9408057384744888</float>
+		</attr>
+		<attr name="y">
+			<float>-0.28021046379028636</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_384">
+		<attr name="x">
+			<float>-0.9559064544131358</float>
+		</attr>
+		<attr name="y">
+			<float>-0.053455055105710976</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_385">
+		<attr name="x">
+			<float>-0.9785575283211063</float>
+		</attr>
+		<attr name="y">
+			<float>0.09771521735067261</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_386">
+		<attr name="x">
+			<float>-1.001208602229077</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_387">
+		<attr name="x">
+			<float>-1.0238596761370473</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_388">
+		<attr name="x">
+			<float>-1.046510750045018</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_389">
+		<attr name="x">
+			<float>-1.0691618239529883</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_390">
+		<attr name="x">
+			<float>-1.091812897860959</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_391">
+		<attr name="x">
+			<float>-1.1144639717689293</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_392">
+		<attr name="x">
+			<float>-1.1220143297382528</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_393">
+		<attr name="x">
+			<float>-1.1069136137996058</float>
+		</attr>
+		<attr name="y">
+			<float>0.2488854898070562</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_394">
+		<attr name="x">
+			<float>-1.091812897860959</float>
+		</attr>
+		<attr name="y">
+			<float>0.022130081122480817</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_395">
+		<attr name="x">
+			<float>-1.0691618239529883</float>
+		</attr>
+		<attr name="y">
+			<float>-0.12904019133390277</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_396">
+		<attr name="x">
+			<float>-1.0540611080143414</float>
+		</attr>
+		<attr name="y">
+			<float>-0.35579560001847815</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_397">
+		<attr name="x">
+			<float>-1.0389603920756942</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5825510087030535</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_398">
+		<attr name="x">
+			<float>-1.0163093181677239</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8093064173876289</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_399">
+		<attr name="x">
+			<float>-0.9936582442597534</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0360618260722043</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_400">
+		<attr name="x">
+			<float>-0.9710071703517829</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2628172347567796</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_401">
+		<attr name="x">
+			<float>-0.9483560964438124</float>
+		</attr>
+		<attr name="y">
+			<float>-1.489572643441355</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_402">
+		<attr name="x">
+			<float>-0.9257050225358419</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7163280521259303</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_403">
+		<attr name="x">
+			<float>-0.9030539486278714</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9430834608105059</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_404">
+		<attr name="x">
+			<float>-0.8804028747199009</float>
+		</attr>
+		<attr name="y">
+			<float>-2.169838869495081</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_405">
+		<attr name="x">
+			<float>-0.8577518008119304</float>
+		</attr>
+		<attr name="y">
+			<float>-2.321009141951465</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_406">
+		<attr name="x">
+			<float>-0.8502014428426068</float>
+		</attr>
+		<attr name="y">
+			<float>-2.5477645506360402</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_407">
+		<attr name="x">
+			<float>-0.8577518008119304</float>
+		</attr>
+		<attr name="y">
+			<float>-2.7745199593206156</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_408">
+		<attr name="x">
+			<float>-0.8804028747199009</float>
+		</attr>
+		<attr name="y">
+			<float>-2.7745199593206156</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_409">
+		<attr name="x">
+			<float>-0.9030539486278714</float>
+		</attr>
+		<attr name="y">
+			<float>-2.623349686864232</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_410">
+		<attr name="x">
+			<float>-0.9181546645665183</float>
+		</attr>
+		<attr name="y">
+			<float>-2.472179414407848</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_411">
+		<attr name="x">
+			<float>-0.9408057384744888</float>
+		</attr>
+		<attr name="y">
+			<float>-2.245424005723273</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_412">
+		<attr name="x">
+			<float>-0.9559064544131358</float>
+		</attr>
+		<attr name="y">
+			<float>-2.0186685970386975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_413">
+		<attr name="x">
+			<float>-0.9785575283211063</float>
+		</attr>
+		<attr name="y">
+			<float>-1.867498324582314</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_414">
+		<attr name="x">
+			<float>-1.001208602229077</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6407429158977387</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_415">
+		<attr name="x">
+			<float>-1.0238596761370473</float>
+		</attr>
+		<attr name="y">
+			<float>-1.489572643441355</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_416">
+		<attr name="x">
+			<float>-1.046510750045018</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3384023709849715</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_417">
+		<attr name="x">
+			<float>-1.0691618239529883</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1872320985285878</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_418">
+		<attr name="x">
+			<float>-1.091812897860959</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9604766898440125</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_419">
+		<attr name="x">
+			<float>-1.1144639717689293</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7337212811594371</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_420">
+		<attr name="x">
+			<float>-1.1371150456769</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5825510087030535</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_421">
+		<attr name="x">
+			<float>-1.1597661195848703</float>
+		</attr>
+		<attr name="y">
+			<float>-0.43138073624666995</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_422">
+		<attr name="x">
+			<float>-1.182417193492841</float>
+		</attr>
+		<attr name="y">
+			<float>-0.28021046379028636</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_423">
+		<attr name="x">
+			<float>-1.1748668355235172</float>
+		</attr>
+		<attr name="y">
+			<float>-0.20462532756209456</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_424">
+		<attr name="x">
+			<float>-1.1522157616155468</float>
+		</attr>
+		<attr name="y">
+			<float>-0.28021046379028636</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_425">
+		<attr name="x">
+			<float>-1.1446654036462234</float>
+		</attr>
+		<attr name="y">
+			<float>-0.12904019133390277</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_426">
+		<attr name="x">
+			<float>-1.1597661195848703</float>
+		</attr>
+		<attr name="y">
+			<float>0.09771521735067261</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_427">
+		<attr name="x">
+			<float>-1.1748668355235172</float>
+		</attr>
+		<attr name="y">
+			<float>0.324470626035248</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_428">
+		<attr name="x">
+			<float>-1.1899675514621644</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_429">
+		<attr name="x">
+			<float>-1.1975179094314878</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_430">
+		<attr name="x">
+			<float>-1.182417193492841</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_431">
+		<attr name="x">
+			<float>-1.1597661195848703</float>
+		</attr>
+		<attr name="y">
+			<float>1.0047368520889741</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_432">
+		<attr name="x">
+			<float>-1.1371150456769</float>
+		</attr>
+		<attr name="y">
+			<float>1.0047368520889741</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_433">
+		<attr name="x">
+			<float>-1.1144639717689293</float>
+		</attr>
+		<attr name="y">
+			<float>1.0047368520889741</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_434">
+		<attr name="x">
+			<float>-1.091812897860959</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_435">
+		<attr name="x">
+			<float>-1.0691618239529883</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_436">
+		<attr name="x">
+			<float>-1.046510750045018</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_437">
+		<attr name="x">
+			<float>-1.0238596761370473</float>
+		</attr>
+		<attr name="y">
+			<float>0.5512260347198233</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_438">
+		<attr name="x">
+			<float>-1.001208602229077</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_439">
+		<attr name="x">
+			<float>-0.9785575283211063</float>
+		</attr>
+		<attr name="y">
+			<float>0.47564089849163155</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_440">
+		<attr name="x">
+			<float>-0.9634568123824593</float>
+		</attr>
+		<attr name="y">
+			<float>0.7023963071762069</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_441">
+		<attr name="x">
+			<float>-0.9408057384744888</float>
+		</attr>
+		<attr name="y">
+			<float>0.8535665796325905</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_442">
+		<attr name="x">
+			<float>-0.9181546645665183</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_443">
+		<attr name="x">
+			<float>-0.8955035906585478</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_444">
+		<attr name="x">
+			<float>-0.8728525167505773</float>
+		</attr>
+		<attr name="y">
+			<float>0.9291517158607823</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_445">
+		<attr name="x">
+			<float>-0.8502014428426068</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_446">
+		<attr name="x">
+			<float>-0.8728525167505773</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_447">
+		<attr name="x">
+			<float>-0.8955035906585478</float>
+		</attr>
+		<attr name="y">
+			<float>0.7779814434043988</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_448">
+		<attr name="x">
+			<float>-0.9181546645665183</float>
+		</attr>
+		<attr name="y">
+			<float>0.6268111709480152</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_449">
+		<attr name="x">
+			<float>-0.9257050225358419</float>
+		</attr>
+		<attr name="y">
+			<float>0.40005576226343975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_450">
+		<attr name="x">
+			<float>-0.9181546645665183</float>
+		</attr>
+		<attr name="y">
+			<float>0.1733003535788644</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_451">
+		<attr name="x">
+			<float>-0.8955035906585478</float>
+		</attr>
+		<attr name="y">
+			<float>-0.053455055105710976</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_452">
+		<attr name="x">
+			<float>-0.8728525167505773</float>
+		</attr>
+		<attr name="y">
+			<float>-0.20462532756209456</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_453">
+		<attr name="x">
+			<float>-0.8577518008119304</float>
+		</attr>
+		<attr name="y">
+			<float>-0.43138073624666995</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_454">
+		<attr name="x">
+			<float>-0.8577518008119304</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6581361449312453</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_455">
+		<attr name="x">
+			<float>-0.8351007269039599</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8848915536158207</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_456">
+		<attr name="x">
+			<float>-0.8124496529959894</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1116469623003962</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_457">
+		<attr name="x">
+			<float>-0.7897985790880189</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3384023709849715</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_458">
+		<attr name="x">
+			<float>-0.7671475051800484</float>
+		</attr>
+		<attr name="y">
+			<float>-1.5651577796695468</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_459">
+		<attr name="x">
+			<float>-0.7444964312720779</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7163280521259303</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_460">
+		<attr name="x">
+			<float>-0.7293957153334308</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9430834608105059</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_461">
+		<attr name="x">
+			<float>-0.7067446414254603</float>
+		</attr>
+		<attr name="y">
+			<float>-2.0942537332668896</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_462">
+		<attr name="x">
+			<float>-0.6840935675174898</float>
+		</attr>
+		<attr name="y">
+			<float>-2.245424005723273</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_463">
+		<attr name="x">
+			<float>-0.6614424936095193</float>
+		</attr>
+		<attr name="y">
+			<float>-2.3965942781796565</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_464">
+		<attr name="x">
+			<float>-0.6387914197015488</float>
+		</attr>
+		<attr name="y">
+			<float>-2.321009141951465</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_465">
+		<attr name="x">
+			<float>-0.6538921356401959</float>
+		</attr>
+		<attr name="y">
+			<float>-2.0942537332668896</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_466">
+		<attr name="x">
+			<float>-0.6614424936095193</float>
+		</attr>
+		<attr name="y">
+			<float>-1.867498324582314</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_467">
+		<attr name="x">
+			<float>-0.6765432095481664</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6407429158977387</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_468">
+		<attr name="x">
+			<float>-0.6991942834561369</float>
+		</attr>
+		<attr name="y">
+			<float>-1.5651577796695468</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_469">
+		<attr name="x">
+			<float>-0.6916439254868133</float>
+		</attr>
+		<attr name="y">
+			<float>-1.489572643441355</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_470">
+		<attr name="x">
+			<float>-0.6689928515788428</float>
+		</attr>
+		<attr name="y">
+			<float>-1.5651577796695468</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_471">
+		<attr name="x">
+			<float>-0.6463417776708723</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7919131883541222</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_472">
+		<attr name="x">
+			<float>-0.6236907037629018</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9430834608105059</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_473">
+		<attr name="x">
+			<float>-0.6010396298549313</float>
+		</attr>
+		<attr name="y">
+			<float>-2.0186685970386975</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_474">
+		<attr name="x">
+			<float>-0.5783885559469608</float>
+		</attr>
+		<attr name="y">
+			<float>-2.245424005723273</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_475">
+		<attr name="x">
+			<float>-0.5708381979776374</float>
+		</attr>
+		<attr name="y">
+			<float>-2.472179414407848</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_476">
+		<attr name="x">
+			<float>-0.5783885559469608</float>
+		</attr>
+		<attr name="y">
+			<float>-2.6989348230924235</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_477">
+		<attr name="x">
+			<float>-0.5934892718856078</float>
+		</attr>
+		<attr name="y">
+			<float>-2.850105095548807</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_478">
+		<attr name="x">
+			<float>-0.6161403457935783</float>
+		</attr>
+		<attr name="y">
+			<float>-2.9256902317769993</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_479">
+		<attr name="x">
+			<float>-1.5825861658669864</float>
+		</attr>
+		<attr name="y">
+			<float>-2.9256902317769993</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_480">
+		<attr name="x">
+			<float>-1.5599350919590158</float>
+		</attr>
+		<attr name="y">
+			<float>-2.850105095548807</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_481">
+		<attr name="x">
+			<float>-1.5372840180510454</float>
+		</attr>
+		<attr name="y">
+			<float>-2.850105095548807</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_482">
+		<attr name="x">
+			<float>-1.5146329441430748</float>
+		</attr>
+		<attr name="y">
+			<float>-2.9256902317769993</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_483">
+		<attr name="x">
+			<float>-1.5372840180510454</float>
+		</attr>
+		<attr name="y">
+			<float>-2.9256902317769993</float>
+		</attr>
+	</node>
+	<node id="gw_Alexandria_484">
+		<attr name="x">
+			<float>-1.5599350919590158</float>
+		</attr>
+		<attr name="y">
+			<float>-2.9256902317769993</float>
+		</attr>
+	</node>
+	<edge from="gw_Alexandria_426" to="gw_Alexandria_427"/>
+	<edge from="gw_Alexandria_458" to="gw_Alexandria_459"/>
+	<edge from="gw_Alexandria_125" to="gw_Alexandria_126"/>
+	<edge from="gw_Alexandria_156" to="gw_Alexandria_157"/>
+	<edge from="gw_Alexandria_356" to="gw_Alexandria_357"/>
+	<edge from="gw_Alexandria_456" to="gw_Alexandria_457"/>
+	<edge from="gw_Alexandria_424" to="gw_Alexandria_425"/>
+	<edge from="gw_Alexandria_222" to="gw_Alexandria_223"/>
+	<edge from="gw_Alexandria_290" to="gw_Alexandria_291"/>
+	<edge from="gw_Alexandria_479" to="gw_Alexandria_480"/>
+	<edge from="gw_Alexandria_113" to="gw_Alexandria_114"/>
+	<edge from="gw_Alexandria_144" to="gw_Alexandria_145"/>
+	<edge from="gw_Alexandria_336" to="gw_Alexandria_337"/>
+	<edge from="gw_Alexandria_174" to="gw_Alexandria_176"/>
+	<edge from="gw_Alexandria_300" to="gw_Alexandria_301"/>
+	<edge from="gw_Alexandria_332" to="gw_Alexandria_333"/>
+	<edge from="gw_Alexandria_436" to="gw_Alexandria_437"/>
+	<edge from="gw_Alexandria_468" to="gw_Alexandria_469"/>
+	<edge from="gw_Alexandria_281" to="gw_Alexandria_282"/>
+	<edge from="gw_Alexandria_283" to="gw_Alexandria_284"/>
+	<edge from="gw_Alexandria_419" to="gw_Alexandria_420"/>
+	<edge from="gw_Alexandria_105" to="gw_Alexandria_106"/>
+	<edge from="gw_Alexandria_142" to="gw_Alexandria_143"/>
+	<edge from="gw_Alexandria_270" to="gw_Alexandria_271"/>
+	<edge from="gw_Alexandria_55" to="gw_Alexandria_56"/>
+	<edge from="gw_Alexandria_107" to="gw_Alexandria_108"/>
+	<edge from="gw_Alexandria_243" to="gw_Alexandria_244"/>
+	<edge from="gw_Alexandria_371" to="gw_Alexandria_372"/>
+	<edge from="gw_Alexandria_33" to="gw_Alexandria_34"/>
+	<edge from="gw_Alexandria_273" to="gw_Alexandria_274"/>
+	<edge from="gw_Alexandria_109" to="gw_Alexandria_110"/>
+	<edge from="gw_Alexandria_253" to="gw_Alexandria_255"/>
+	<edge from="gw_Alexandria_323" to="gw_Alexandria_324"/>
+	<edge from="gw_Alexandria_271" to="gw_Alexandria_272"/>
+	<edge from="gw_Alexandria_463" to="gw_Alexandria_464"/>
+	<edge from="gw_Alexandria_325" to="gw_Alexandria_326"/>
+	<edge from="gw_Alexandria_58" to="gw_Alexandria_59"/>
+	<edge from="gw_Alexandria_198" to="gw_Alexandria_199"/>
+	<edge from="gw_Alexandria_244" to="gw_Alexandria_245"/>
+	<edge from="gw_Alexandria_103" to="gw_Alexandria_104"/>
+	<edge from="gw_Alexandria_160" to="gw_Alexandria_162"/>
+	<edge from="gw_Alexandria_227" to="gw_Alexandria_228"/>
+	<edge from="gw_Alexandria_179" to="gw_Alexandria_181"/>
+	<edge from="gw_Alexandria_367" to="gw_Alexandria_368"/>
+	<edge from="gw_Alexandria_180" to="gw_Alexandria_182"/>
+	<edge from="gw_Alexandria_201" to="gw_Alexandria_202"/>
+	<edge from="gw_Alexandria_329" to="gw_Alexandria_330"/>
+	<edge from="gw_Alexandria_0" to="gw_Alexandria_5"/>
+	<edge from="gw_Alexandria_50" to="gw_Alexandria_51"/>
+	<edge from="gw_Alexandria_190" to="gw_Alexandria_191"/>
+	<edge from="gw_Alexandria_322" to="gw_Alexandria_323"/>
+	<edge from="gw_Alexandria_462" to="gw_Alexandria_463"/>
+	<edge from="gw_Alexandria_139" to="gw_Alexandria_140"/>
+	<edge from="gw_Alexandria_339" to="gw_Alexandria_340"/>
+	<edge from="gw_Alexandria_205" to="gw_Alexandria_206"/>
+	<edge from="gw_Alexandria_341" to="gw_Alexandria_342"/>
+	<edge from="gw_Alexandria_313" to="gw_Alexandria_314"/>
+	<edge from="gw_Alexandria_315" to="gw_Alexandria_316"/>
+	<edge from="gw_Alexandria_42" to="gw_Alexandria_43"/>
+	<edge from="gw_Alexandria_74" to="gw_Alexandria_75"/>
+	<edge from="gw_Alexandria_214" to="gw_Alexandria_215"/>
+	<edge from="gw_Alexandria_36" to="gw_Alexandria_37"/>
+	<edge from="gw_Alexandria_228" to="gw_Alexandria_229"/>
+	<edge from="gw_Alexandria_226" to="gw_Alexandria_227"/>
+	<edge from="gw_Alexandria_302" to="gw_Alexandria_303"/>
+	<edge from="gw_Alexandria_354" to="gw_Alexandria_355"/>
+	<edge from="gw_Alexandria_351" to="gw_Alexandria_352"/>
+	<edge from="gw_Alexandria_305" to="gw_Alexandria_306"/>
+	<edge from="gw_Alexandria_153" to="gw_Alexandria_154"/>
+	<edge from="gw_Alexandria_167" to="gw_Alexandria_168"/>
+	<edge from="gw_Alexandria_295" to="gw_Alexandria_296"/>
+	<edge from="gw_Alexandria_431" to="gw_Alexandria_432"/>
+	<edge from="gw_Alexandria_157" to="gw_Alexandria_158"/>
+	<edge from="gw_Alexandria_380" to="gw_Alexandria_381"/>
+	<edge from="gw_Alexandria_388" to="gw_Alexandria_389"/>
+	<edge from="gw_Alexandria_297" to="gw_Alexandria_298"/>
+	<edge from="gw_Alexandria_382" to="gw_Alexandria_383"/>
+	<edge from="gw_Alexandria_386" to="gw_Alexandria_387"/>
+	<edge from="gw_Alexandria_299" to="gw_Alexandria_300"/>
+	<edge from="gw_Alexandria_435" to="gw_Alexandria_436"/>
+	<edge from="gw_Alexandria_145" to="gw_Alexandria_146"/>
+	<edge from="gw_Alexandria_71" to="gw_Alexandria_72"/>
+	<edge from="gw_Alexandria_143" to="gw_Alexandria_144"/>
+	<edge from="gw_Alexandria_195" to="gw_Alexandria_196"/>
+	<edge from="gw_Alexandria_335" to="gw_Alexandria_336"/>
+	<edge from="gw_Alexandria_138" to="gw_Alexandria_139"/>
+	<edge from="gw_Alexandria_374" to="gw_Alexandria_375"/>
+	<edge from="gw_Alexandria_392" to="gw_Alexandria_393"/>
+	<edge from="gw_Alexandria_415" to="gw_Alexandria_416"/>
+	<edge from="gw_Alexandria_447" to="gw_Alexandria_448"/>
+	<edge from="gw_Alexandria_129" to="gw_Alexandria_130"/>
+	<edge from="gw_Alexandria_364" to="gw_Alexandria_365"/>
+	<edge from="gw_Alexandria_404" to="gw_Alexandria_405"/>
+	<edge from="gw_Alexandria_473" to="gw_Alexandria_474"/>
+	<edge from="gw_Alexandria_347" to="gw_Alexandria_348"/>
+	<edge from="gw_Alexandria_68" to="gw_Alexandria_69"/>
+	<edge from="gw_Alexandria_349" to="gw_Alexandria_350"/>
+	<edge from="gw_Alexandria_444" to="gw_Alexandria_445"/>
+	<edge from="gw_Alexandria_393" to="gw_Alexandria_394"/>
+	<edge from="gw_Alexandria_194" to="gw_Alexandria_195"/>
+	<edge from="gw_Alexandria_334" to="gw_Alexandria_335"/>
+	<edge from="gw_Alexandria_211" to="gw_Alexandria_212"/>
+	<edge from="gw_Alexandria_87" to="gw_Alexandria_88"/>
+	<edge from="gw_Alexandria_320" to="gw_Alexandria_321"/>
+	<edge from="gw_Alexandria_192" to="gw_Alexandria_193"/>
+	<edge from="gw_Alexandria_97" to="gw_Alexandria_98"/>
+	<edge from="gw_Alexandria_465" to="gw_Alexandria_466"/>
+	<edge from="gw_Alexandria_358" to="gw_Alexandria_359"/>
+	<edge from="gw_Alexandria_154" to="gw_Alexandria_155"/>
+	<edge from="gw_Alexandria_185" to="gw_Alexandria_186"/>
+	<edge from="gw_Alexandria_76" to="gw_Alexandria_114"/>
+	<edge from="gw_Alexandria_377" to="gw_Alexandria_378"/>
+	<edge from="gw_Alexandria_408" to="gw_Alexandria_409"/>
+	<edge from="gw_Alexandria_251" to="gw_Alexandria_252"/>
+	<edge from="gw_Alexandria_379" to="gw_Alexandria_380"/>
+	<edge from="gw_Alexandria_189" to="gw_Alexandria_190"/>
+	<edge from="gw_Alexandria_348" to="gw_Alexandria_349"/>
+	<edge from="gw_Alexandria_420" to="gw_Alexandria_421"/>
+	<edge from="gw_Alexandria_110" to="gw_Alexandria_111"/>
+	<edge from="gw_Alexandria_146" to="gw_Alexandria_147"/>
+	<edge from="gw_Alexandria_350" to="gw_Alexandria_351"/>
+	<edge from="gw_Alexandria_418" to="gw_Alexandria_419"/>
+	<edge from="gw_Alexandria_127" to="gw_Alexandria_128"/>
+	<edge from="gw_Alexandria_96" to="gw_Alexandria_97"/>
+	<edge from="gw_Alexandria_400" to="gw_Alexandria_401"/>
+	<edge from="gw_Alexandria_124" to="gw_Alexandria_159"/>
+	<edge from="gw_Alexandria_57" to="gw_Alexandria_75"/>
+	<edge from="gw_Alexandria_6" to="gw_Alexandria_7"/>
+	<edge from="gw_Alexandria_122" to="gw_Alexandria_123"/>
+	<edge from="gw_Alexandria_369" to="gw_Alexandria_370"/>
+	<edge from="gw_Alexandria_52" to="gw_Alexandria_53"/>
+	<edge from="gw_Alexandria_84" to="gw_Alexandria_85"/>
+	<edge from="gw_Alexandria_460" to="gw_Alexandria_461"/>
+	<edge from="gw_Alexandria_428" to="gw_Alexandria_429"/>
+	<edge from="gw_Alexandria_248" to="gw_Alexandria_249"/>
+	<edge from="gw_Alexandria_35" to="gw_Alexandria_36"/>
+	<edge from="gw_Alexandria_18" to="gw_Alexandria_20"/>
+	<edge from="gw_Alexandria_411" to="gw_Alexandria_412"/>
+	<edge from="gw_Alexandria_23" to="gw_Alexandria_25"/>
+	<edge from="gw_Alexandria_37" to="gw_Alexandria_38"/>
+	<edge from="gw_Alexandria_260" to="gw_Alexandria_261"/>
+	<edge from="gw_Alexandria_169" to="gw_Alexandria_170"/>
+	<edge from="gw_Alexandria_361" to="gw_Alexandria_362"/>
+	<edge from="gw_Alexandria_398" to="gw_Alexandria_399"/>
+	<edge from="gw_Alexandria_235" to="gw_Alexandria_236"/>
+	<edge from="gw_Alexandria_311" to="gw_Alexandria_312"/>
+	<edge from="gw_Alexandria_363" to="gw_Alexandria_364"/>
+	<edge from="gw_Alexandria_240" to="gw_Alexandria_241"/>
+	<edge from="gw_Alexandria_373" to="gw_Alexandria_374"/>
+	<edge from="gw_Alexandria_172" to="gw_Alexandria_183"/>
+	<edge from="gw_Alexandria_263" to="gw_Alexandria_264"/>
+	<edge from="gw_Alexandria_176" to="gw_Alexandria_178"/>
+	<edge from="gw_Alexandria_455" to="gw_Alexandria_456"/>
+	<edge from="gw_Alexandria_387" to="gw_Alexandria_388"/>
+	<edge from="gw_Alexandria_106" to="gw_Alexandria_107"/>
+	<edge from="gw_Alexandria_453" to="gw_Alexandria_454"/>
+	<edge from="gw_Alexandria_369" to="gw_Alexandria_478"/>
+	<edge from="gw_Alexandria_8" to="gw_Alexandria_9"/>
+	<edge from="gw_Alexandria_232" to="gw_Alexandria_233"/>
+	<edge from="gw_Alexandria_175" to="gw_Alexandria_177"/>
+	<edge from="gw_Alexandria_65" to="gw_Alexandria_66"/>
+	<edge from="gw_Alexandria_12" to="gw_Alexandria_13"/>
+	<edge from="gw_Alexandria_236" to="gw_Alexandria_237"/>
+	<edge from="gw_Alexandria_276" to="gw_Alexandria_277"/>
+	<edge from="gw_Alexandria_219" to="gw_Alexandria_220"/>
+	<edge from="gw_Alexandria_359" to="gw_Alexandria_360"/>
+	<edge from="gw_Alexandria_483" to="gw_Alexandria_484"/>
+	<edge from="gw_Alexandria_172" to="gw_Alexandria_174"/>
+	<edge from="gw_Alexandria_457" to="gw_Alexandria_458"/>
+	<edge from="gw_Alexandria_331" to="gw_Alexandria_332"/>
+	<edge from="gw_Alexandria_279" to="gw_Alexandria_280"/>
+	<edge from="gw_Alexandria_471" to="gw_Alexandria_472"/>
+	<edge from="gw_Alexandria_403" to="gw_Alexandria_404"/>
+	<edge from="gw_Alexandria_38" to="gw_Alexandria_39"/>
+	<edge from="gw_Alexandria_90" to="gw_Alexandria_91"/>
+	<edge from="gw_Alexandria_333" to="gw_Alexandria_334"/>
+	<edge from="gw_Alexandria_469" to="gw_Alexandria_470"/>
+	<edge from="gw_Alexandria_216" to="gw_Alexandria_217"/>
+	<edge from="gw_Alexandria_443" to="gw_Alexandria_444"/>
+	<edge from="gw_Alexandria_0" to="gw_Alexandria_2"/>
+	<edge from="gw_Alexandria_1" to="gw_Alexandria_3"/>
+	<edge from="gw_Alexandria_28" to="gw_Alexandria_29"/>
+	<edge from="gw_Alexandria_292" to="gw_Alexandria_293"/>
+	<edge from="gw_Alexandria_82" to="gw_Alexandria_83"/>
+	<edge from="gw_Alexandria_430" to="gw_Alexandria_431"/>
+	<edge from="gw_Alexandria_482" to="gw_Alexandria_483"/>
+	<edge from="gw_Alexandria_208" to="gw_Alexandria_209"/>
+	<edge from="gw_Alexandria_288" to="gw_Alexandria_289"/>
+	<edge from="gw_Alexandria_480" to="gw_Alexandria_481"/>
+	<edge from="gw_Alexandria_409" to="gw_Alexandria_410"/>
+	<edge from="gw_Alexandria_221" to="gw_Alexandria_249"/>
+	<edge from="gw_Alexandria_423" to="gw_Alexandria_424"/>
+	<edge from="gw_Alexandria_421" to="gw_Alexandria_422"/>
+	<edge from="gw_Alexandria_51" to="gw_Alexandria_52"/>
+	<edge from="gw_Alexandria_119" to="gw_Alexandria_120"/>
+	<edge from="gw_Alexandria_427" to="gw_Alexandria_428"/>
+	<edge from="gw_Alexandria_128" to="gw_Alexandria_129"/>
+	<edge from="gw_Alexandria_401" to="gw_Alexandria_402"/>
+	<edge from="gw_Alexandria_53" to="gw_Alexandria_54"/>
+	<edge from="gw_Alexandria_245" to="gw_Alexandria_246"/>
+	<edge from="gw_Alexandria_135" to="gw_Alexandria_136"/>
+	<edge from="gw_Alexandria_259" to="gw_Alexandria_260"/>
+	<edge from="gw_Alexandria_327" to="gw_Alexandria_328"/>
+	<edge from="gw_Alexandria_451" to="gw_Alexandria_452"/>
+	<edge from="gw_Alexandria_399" to="gw_Alexandria_400"/>
+	<edge from="gw_Alexandria_266" to="gw_Alexandria_267"/>
+	<edge from="gw_Alexandria_133" to="gw_Alexandria_134"/>
+	<edge from="gw_Alexandria_261" to="gw_Alexandria_262"/>
+	<edge from="gw_Alexandria_257" to="gw_Alexandria_360"/>
+	<edge from="gw_Alexandria_257" to="gw_Alexandria_258"/>
+	<edge from="gw_Alexandria_70" to="gw_Alexandria_71"/>
+	<edge from="gw_Alexandria_116" to="gw_Alexandria_117"/>
+	<edge from="gw_Alexandria_396" to="gw_Alexandria_397"/>
+	<edge from="gw_Alexandria_467" to="gw_Alexandria_468"/>
+	<edge from="gw_Alexandria_99" to="gw_Alexandria_100"/>
+	<edge from="gw_Alexandria_239" to="gw_Alexandria_240"/>
+	<edge from="gw_Alexandria_60" to="gw_Alexandria_61"/>
+	<edge from="gw_Alexandria_101" to="gw_Alexandria_102"/>
+	<edge from="gw_Alexandria_196" to="gw_Alexandria_197"/>
+	<edge from="gw_Alexandria_181" to="gw_Alexandria_183"/>
+	<edge from="gw_Alexandria_477" to="gw_Alexandria_478"/>
+	<edge from="gw_Alexandria_9" to="gw_Alexandria_10"/>
+	<edge from="gw_Alexandria_62" to="gw_Alexandria_63"/>
+	<edge from="gw_Alexandria_450" to="gw_Alexandria_451"/>
+	<edge from="gw_Alexandria_203" to="gw_Alexandria_204"/>
+	<edge from="gw_Alexandria_11" to="gw_Alexandria_12"/>
+	<edge from="gw_Alexandria_151" to="gw_Alexandria_152"/>
+	<edge from="gw_Alexandria_343" to="gw_Alexandria_344"/>
+	<edge from="gw_Alexandria_225" to="gw_Alexandria_226"/>
+	<edge from="gw_Alexandria_353" to="gw_Alexandria_354"/>
+	<edge from="gw_Alexandria_48" to="gw_Alexandria_49"/>
+	<edge from="gw_Alexandria_275" to="gw_Alexandria_276"/>
+	<edge from="gw_Alexandria_282" to="gw_Alexandria_283"/>
+	<edge from="gw_Alexandria_448" to="gw_Alexandria_449"/>
+	<edge from="gw_Alexandria_149" to="gw_Alexandria_150"/>
+	<edge from="gw_Alexandria_277" to="gw_Alexandria_278"/>
+	<edge from="gw_Alexandria_441" to="gw_Alexandria_442"/>
+	<edge from="gw_Alexandria_54" to="gw_Alexandria_55"/>
+	<edge from="gw_Alexandria_86" to="gw_Alexandria_87"/>
+	<edge from="gw_Alexandria_100" to="gw_Alexandria_101"/>
+	<edge from="gw_Alexandria_381" to="gw_Alexandria_382"/>
+	<edge from="gw_Alexandria_412" to="gw_Alexandria_413"/>
+	<edge from="gw_Alexandria_40" to="gw_Alexandria_41"/>
+	<edge from="gw_Alexandria_72" to="gw_Alexandria_73"/>
+	<edge from="gw_Alexandria_34" to="gw_Alexandria_35"/>
+	<edge from="gw_Alexandria_238" to="gw_Alexandria_239"/>
+	<edge from="gw_Alexandria_274" to="gw_Alexandria_275"/>
+	<edge from="gw_Alexandria_223" to="gw_Alexandria_224"/>
+	<edge from="gw_Alexandria_160" to="gw_Alexandria_161"/>
+	<edge from="gw_Alexandria_352" to="gw_Alexandria_353"/>
+	<edge from="gw_Alexandria_433" to="gw_Alexandria_434"/>
+	<edge from="gw_Alexandria_134" to="gw_Alexandria_135"/>
+	<edge from="gw_Alexandria_250" to="gw_Alexandria_251"/>
+	<edge from="gw_Alexandria_262" to="gw_Alexandria_263"/>
+	<edge from="gw_Alexandria_378" to="gw_Alexandria_379"/>
+	<edge from="gw_Alexandria_44" to="gw_Alexandria_45"/>
+	<edge from="gw_Alexandria_76" to="gw_Alexandria_77"/>
+	<edge from="gw_Alexandria_212" to="gw_Alexandria_213"/>
+	<edge from="gw_Alexandria_27" to="gw_Alexandria_28"/>
+	<edge from="gw_Alexandria_163" to="gw_Alexandria_164"/>
+	<edge from="gw_Alexandria_29" to="gw_Alexandria_30"/>
+	<edge from="gw_Alexandria_293" to="gw_Alexandria_294"/>
+	<edge from="gw_Alexandria_425" to="gw_Alexandria_426"/>
+	<edge from="gw_Alexandria_242" to="gw_Alexandria_243"/>
+	<edge from="gw_Alexandria_370" to="gw_Alexandria_371"/>
+	<edge from="gw_Alexandria_439" to="gw_Alexandria_440"/>
+	<edge from="gw_Alexandria_289" to="gw_Alexandria_290"/>
+	<edge from="gw_Alexandria_365" to="gw_Alexandria_366"/>
+	<edge from="gw_Alexandria_437" to="gw_Alexandria_438"/>
+	<edge from="gw_Alexandria_67" to="gw_Alexandria_68"/>
+	<edge from="gw_Alexandria_207" to="gw_Alexandria_208"/>
+	<edge from="gw_Alexandria_150" to="gw_Alexandria_151"/>
+	<edge from="gw_Alexandria_234" to="gw_Alexandria_235"/>
+	<edge from="gw_Alexandria_278" to="gw_Alexandria_279"/>
+	<edge from="gw_Alexandria_362" to="gw_Alexandria_363"/>
+	<edge from="gw_Alexandria_69" to="gw_Alexandria_70"/>
+	<edge from="gw_Alexandria_193" to="gw_Alexandria_194"/>
+	<edge from="gw_Alexandria_321" to="gw_Alexandria_322"/>
+	<edge from="gw_Alexandria_314" to="gw_Alexandria_315"/>
+	<edge from="gw_Alexandria_454" to="gw_Alexandria_455"/>
+	<edge from="gw_Alexandria_268" to="gw_Alexandria_269"/>
+	<edge from="gw_Alexandria_475" to="gw_Alexandria_476"/>
+	<edge from="gw_Alexandria_361" to="gw_Alexandria_368"/>
+	<edge from="gw_Alexandria_66" to="gw_Alexandria_67"/>
+	<edge from="gw_Alexandria_206" to="gw_Alexandria_207"/>
+	<edge from="gw_Alexandria_306" to="gw_Alexandria_307"/>
+	<edge from="gw_Alexandria_446" to="gw_Alexandria_447"/>
+	<edge from="gw_Alexandria_220" to="gw_Alexandria_173"/>
+	<edge from="gw_Alexandria_83" to="gw_Alexandria_84"/>
+	<edge from="gw_Alexandria_395" to="gw_Alexandria_396"/>
+	<edge from="gw_Alexandria_3" to="gw_Alexandria_5"/>
+	<edge from="gw_Alexandria_30" to="gw_Alexandria_15"/>
+	<edge from="gw_Alexandria_4" to="gw_Alexandria_6"/>
+	<edge from="gw_Alexandria_166" to="gw_Alexandria_167"/>
+	<edge from="gw_Alexandria_218" to="gw_Alexandria_219"/>
+	<edge from="gw_Alexandria_85" to="gw_Alexandria_86"/>
+	<edge from="gw_Alexandria_346" to="gw_Alexandria_347"/>
+	<edge from="gw_Alexandria_294" to="gw_Alexandria_295"/>
+	<edge from="gw_Alexandria_461" to="gw_Alexandria_462"/>
+	<edge from="gw_Alexandria_57" to="gw_Alexandria_58"/>
+	<edge from="gw_Alexandria_256" to="gw_Alexandria_254"/>
+	<edge from="gw_Alexandria_59" to="gw_Alexandria_60"/>
+	<edge from="gw_Alexandria_298" to="gw_Alexandria_299"/>
+	<edge from="gw_Alexandria_330" to="gw_Alexandria_331"/>
+	<edge from="gw_Alexandria_470" to="gw_Alexandria_471"/>
+	<edge from="gw_Alexandria_438" to="gw_Alexandria_439"/>
+	<edge from="gw_Alexandria_61" to="gw_Alexandria_62"/>
+	<edge from="gw_Alexandria_253" to="gw_Alexandria_254"/>
+	<edge from="gw_Alexandria_284" to="gw_Alexandria_285"/>
+	<edge from="gw_Alexandria_476" to="gw_Alexandria_477"/>
+	<edge from="gw_Alexandria_158" to="gw_Alexandria_159"/>
+	<edge from="gw_Alexandria_210" to="gw_Alexandria_211"/>
+	<edge from="gw_Alexandria_286" to="gw_Alexandria_287"/>
+	<edge from="gw_Alexandria_338" to="gw_Alexandria_339"/>
+	<edge from="gw_Alexandria_49" to="gw_Alexandria_50"/>
+	<edge from="gw_Alexandria_241" to="gw_Alexandria_242"/>
+	<edge from="gw_Alexandria_120" to="gw_Alexandria_121"/>
+	<edge from="gw_Alexandria_171" to="gw_Alexandria_161"/>
+	<edge from="gw_Alexandria_47" to="gw_Alexandria_48"/>
+	<edge from="gw_Alexandria_19" to="gw_Alexandria_21"/>
+	<edge from="gw_Alexandria_20" to="gw_Alexandria_22"/>
+	<edge from="gw_Alexandria_124" to="gw_Alexandria_125"/>
+	<edge from="gw_Alexandria_132" to="gw_Alexandria_133"/>
+	<edge from="gw_Alexandria_413" to="gw_Alexandria_414"/>
+	<edge from="gw_Alexandria_21" to="gw_Alexandria_23"/>
+	<edge from="gw_Alexandria_41" to="gw_Alexandria_42"/>
+	<edge from="gw_Alexandria_233" to="gw_Alexandria_234"/>
+	<edge from="gw_Alexandria_126" to="gw_Alexandria_127"/>
+	<edge from="gw_Alexandria_130" to="gw_Alexandria_131"/>
+	<edge from="gw_Alexandria_43" to="gw_Alexandria_44"/>
+	<edge from="gw_Alexandria_247" to="gw_Alexandria_248"/>
+	<edge from="gw_Alexandria_112" to="gw_Alexandria_113"/>
+	<edge from="gw_Alexandria_384" to="gw_Alexandria_385"/>
+	<edge from="gw_Alexandria_14" to="gw_Alexandria_16"/>
+	<edge from="gw_Alexandria_45" to="gw_Alexandria_46"/>
+	<edge from="gw_Alexandria_237" to="gw_Alexandria_238"/>
+	<edge from="gw_Alexandria_309" to="gw_Alexandria_310"/>
+	<edge from="gw_Alexandria_115" to="gw_Alexandria_123"/>
+	<edge from="gw_Alexandria_391" to="gw_Alexandria_392"/>
+	<edge from="gw_Alexandria_2" to="gw_Alexandria_4"/>
+	<edge from="gw_Alexandria_177" to="gw_Alexandria_179"/>
+	<edge from="gw_Alexandria_118" to="gw_Alexandria_119"/>
+	<edge from="gw_Alexandria_394" to="gw_Alexandria_395"/>
+	<edge from="gw_Alexandria_389" to="gw_Alexandria_390"/>
+	<edge from="gw_Alexandria_104" to="gw_Alexandria_105"/>
+	<edge from="gw_Alexandria_63" to="gw_Alexandria_64"/>
+	<edge from="gw_Alexandria_385" to="gw_Alexandria_386"/>
+	<edge from="gw_Alexandria_186" to="gw_Alexandria_187"/>
+	<edge from="gw_Alexandria_326" to="gw_Alexandria_327"/>
+	<edge from="gw_Alexandria_108" to="gw_Alexandria_109"/>
+	<edge from="gw_Alexandria_148" to="gw_Alexandria_149"/>
+	<edge from="gw_Alexandria_479" to="gw_Alexandria_484"/>
+	<edge from="gw_Alexandria_89" to="gw_Alexandria_90"/>
+	<edge from="gw_Alexandria_184" to="gw_Alexandria_185"/>
+	<edge from="gw_Alexandria_312" to="gw_Alexandria_313"/>
+	<edge from="gw_Alexandria_91" to="gw_Alexandria_92"/>
+	<edge from="gw_Alexandria_231" to="gw_Alexandria_232"/>
+	<edge from="gw_Alexandria_229" to="gw_Alexandria_230"/>
+	<edge from="gw_Alexandria_324" to="gw_Alexandria_325"/>
+	<edge from="gw_Alexandria_93" to="gw_Alexandria_94"/>
+	<edge from="gw_Alexandria_188" to="gw_Alexandria_189"/>
+	<edge from="gw_Alexandria_173" to="gw_Alexandria_175"/>
+	<edge from="gw_Alexandria_137" to="gw_Alexandria_138"/>
+	<edge from="gw_Alexandria_318" to="gw_Alexandria_319"/>
+	<edge from="gw_Alexandria_267" to="gw_Alexandria_268"/>
+	<edge from="gw_Alexandria_459" to="gw_Alexandria_460"/>
+	<edge from="gw_Alexandria_407" to="gw_Alexandria_408"/>
+	<edge from="gw_Alexandria_304" to="gw_Alexandria_305"/>
+	<edge from="gw_Alexandria_81" to="gw_Alexandria_82"/>
+	<edge from="gw_Alexandria_481" to="gw_Alexandria_482"/>
+	<edge from="gw_Alexandria_102" to="gw_Alexandria_103"/>
+	<edge from="gw_Alexandria_410" to="gw_Alexandria_411"/>
+	<edge from="gw_Alexandria_141" to="gw_Alexandria_142"/>
+	<edge from="gw_Alexandria_269" to="gw_Alexandria_270"/>
+	<edge from="gw_Alexandria_405" to="gw_Alexandria_406"/>
+	<edge from="gw_Alexandria_88" to="gw_Alexandria_89"/>
+	<edge from="gw_Alexandria_170" to="gw_Alexandria_171"/>
+	<edge from="gw_Alexandria_202" to="gw_Alexandria_203"/>
+	<edge from="gw_Alexandria_310" to="gw_Alexandria_311"/>
+	<edge from="gw_Alexandria_342" to="gw_Alexandria_343"/>
+	<edge from="gw_Alexandria_92" to="gw_Alexandria_93"/>
+	<edge from="gw_Alexandria_164" to="gw_Alexandria_165"/>
+	<edge from="gw_Alexandria_445" to="gw_Alexandria_446"/>
+	<edge from="gw_Alexandria_168" to="gw_Alexandria_169"/>
+	<edge from="gw_Alexandria_200" to="gw_Alexandria_201"/>
+	<edge from="gw_Alexandria_296" to="gw_Alexandria_297"/>
+	<edge from="gw_Alexandria_328" to="gw_Alexandria_329"/>
+	<edge from="gw_Alexandria_94" to="gw_Alexandria_95"/>
+	<edge from="gw_Alexandria_162" to="gw_Alexandria_163"/>
+	<edge from="gw_Alexandria_366" to="gw_Alexandria_367"/>
+	<edge from="gw_Alexandria_402" to="gw_Alexandria_403"/>
+	<edge from="gw_Alexandria_383" to="gw_Alexandria_384"/>
+	<edge from="gw_Alexandria_80" to="gw_Alexandria_81"/>
+	<edge from="gw_Alexandria_416" to="gw_Alexandria_417"/>
+	<edge from="gw_Alexandria_390" to="gw_Alexandria_391"/>
+	<edge from="gw_Alexandria_204" to="gw_Alexandria_205"/>
+	<edge from="gw_Alexandria_340" to="gw_Alexandria_341"/>
+	<edge from="gw_Alexandria_308" to="gw_Alexandria_309"/>
+	<edge from="gw_Alexandria_155" to="gw_Alexandria_156"/>
+	<edge from="gw_Alexandria_291" to="gw_Alexandria_292"/>
+	<edge from="gw_Alexandria_182" to="gw_Alexandria_184"/>
+	<edge from="gw_Alexandria_285" to="gw_Alexandria_286"/>
+	<edge from="gw_Alexandria_250" to="gw_Alexandria_252"/>
+	<edge from="gw_Alexandria_115" to="gw_Alexandria_116"/>
+	<edge from="gw_Alexandria_117" to="gw_Alexandria_118"/>
+	<edge from="gw_Alexandria_429" to="gw_Alexandria_430"/>
+	<edge from="gw_Alexandria_7" to="gw_Alexandria_8"/>
+	<edge from="gw_Alexandria_31" to="gw_Alexandria_31"/>
+	<edge from="gw_Alexandria_131" to="gw_Alexandria_132"/>
+	<edge from="gw_Alexandria_199" to="gw_Alexandria_200"/>
+	<edge from="gw_Alexandria_406" to="gw_Alexandria_407"/>
+	<edge from="gw_Alexandria_197" to="gw_Alexandria_198"/>
+	<edge from="gw_Alexandria_264" to="gw_Alexandria_265"/>
+	<edge from="gw_Alexandria_449" to="gw_Alexandria_450"/>
+	<edge from="gw_Alexandria_111" to="gw_Alexandria_112"/>
+	<edge from="gw_Alexandria_73" to="gw_Alexandria_74"/>
+	<edge from="gw_Alexandria_147" to="gw_Alexandria_148"/>
+	<edge from="gw_Alexandria_215" to="gw_Alexandria_216"/>
+	<edge from="gw_Alexandria_474" to="gw_Alexandria_475"/>
+	<edge from="gw_Alexandria_422" to="gw_Alexandria_423"/>
+	<edge from="gw_Alexandria_77" to="gw_Alexandria_78"/>
+	<edge from="gw_Alexandria_213" to="gw_Alexandria_214"/>
+	<edge from="gw_Alexandria_14" to="gw_Alexandria_25"/>
+	<edge from="gw_Alexandria_280" to="gw_Alexandria_281"/>
+	<edge from="gw_Alexandria_472" to="gw_Alexandria_473"/>
+	<edge from="gw_Alexandria_187" to="gw_Alexandria_188"/>
+	<edge from="gw_Alexandria_317" to="gw_Alexandria_318"/>
+	<edge from="gw_Alexandria_46" to="gw_Alexandria_47"/>
+	<edge from="gw_Alexandria_98" to="gw_Alexandria_99"/>
+	<edge from="gw_Alexandria_414" to="gw_Alexandria_415"/>
+	<edge from="gw_Alexandria_466" to="gw_Alexandria_467"/>
+	<edge from="gw_Alexandria_95" to="gw_Alexandria_96"/>
+	<edge from="gw_Alexandria_255" to="gw_Alexandria_256"/>
+	<edge from="gw_Alexandria_32" to="gw_Alexandria_33"/>
+	<edge from="gw_Alexandria_224" to="gw_Alexandria_225"/>
+	<edge from="gw_Alexandria_272" to="gw_Alexandria_273"/>
+	<edge from="gw_Alexandria_464" to="gw_Alexandria_465"/>
+	<edge from="gw_Alexandria_376" to="gw_Alexandria_377"/>
+	<edge from="gw_Alexandria_39" to="gw_Alexandria_40"/>
+	<edge from="gw_Alexandria_303" to="gw_Alexandria_304"/>
+	<edge from="gw_Alexandria_165" to="gw_Alexandria_166"/>
+	<edge from="gw_Alexandria_258" to="gw_Alexandria_259"/>
+	<edge from="gw_Alexandria_307" to="gw_Alexandria_308"/>
+	<edge from="gw_Alexandria_375" to="gw_Alexandria_376"/>
+	<edge from="gw_Alexandria_417" to="gw_Alexandria_418"/>
+	<edge from="gw_Alexandria_301" to="gw_Alexandria_302"/>
+	<edge from="gw_Alexandria_32" to="gw_Alexandria_56"/>
+	<edge from="gw_Alexandria_79" to="gw_Alexandria_80"/>
+	<edge from="gw_Alexandria_10" to="gw_Alexandria_11"/>
+	<edge from="gw_Alexandria_246" to="gw_Alexandria_247"/>
+	<edge from="gw_Alexandria_24" to="gw_Alexandria_26"/>
+	<edge from="gw_Alexandria_136" to="gw_Alexandria_137"/>
+	<edge from="gw_Alexandria_191" to="gw_Alexandria_192"/>
+	<edge from="gw_Alexandria_319" to="gw_Alexandria_320"/>
+	<edge from="gw_Alexandria_287" to="gw_Alexandria_288"/>
+	<edge from="gw_Alexandria_442" to="gw_Alexandria_443"/>
+	<edge from="gw_Alexandria_140" to="gw_Alexandria_141"/>
+	<edge from="gw_Alexandria_372" to="gw_Alexandria_373"/>
+	<edge from="gw_Alexandria_217" to="gw_Alexandria_218"/>
+	<edge from="gw_Alexandria_345" to="gw_Alexandria_346"/>
+	<edge from="gw_Alexandria_440" to="gw_Alexandria_441"/>
+	<edge from="gw_Alexandria_355" to="gw_Alexandria_356"/>
+	<edge from="gw_Alexandria_16" to="gw_Alexandria_18"/>
+	<edge from="gw_Alexandria_17" to="gw_Alexandria_19"/>
+	<edge from="gw_Alexandria_22" to="gw_Alexandria_24"/>
+	<edge from="gw_Alexandria_221" to="gw_Alexandria_222"/>
+	<edge from="gw_Alexandria_357" to="gw_Alexandria_358"/>
+	<edge from="gw_Alexandria_316" to="gw_Alexandria_317"/>
+	<edge from="gw_Alexandria_452" to="gw_Alexandria_453"/>
+	<edge from="gw_Alexandria_265" to="gw_Alexandria_266"/>
+	<edge from="gw_Alexandria_78" to="gw_Alexandria_79"/>
+	<edge from="gw_Alexandria_434" to="gw_Alexandria_435"/>
+	<edge from="gw_Alexandria_15" to="gw_Alexandria_17"/>
+	<edge from="gw_Alexandria_209" to="gw_Alexandria_210"/>
+	<edge from="gw_Alexandria_64" to="gw_Alexandria_65"/>
+	<edge from="gw_Alexandria_13" to="gw_Alexandria_1"/>
+	<edge from="gw_Alexandria_337" to="gw_Alexandria_338"/>
+	<edge from="gw_Alexandria_26" to="gw_Alexandria_27"/>
+	<edge from="gw_Alexandria_230" to="gw_Alexandria_231"/>
+	<edge from="gw_Alexandria_432" to="gw_Alexandria_433"/>
+	<edge from="gw_Alexandria_397" to="gw_Alexandria_398"/>
+	<edge from="gw_Alexandria_121" to="gw_Alexandria_122"/>
+	<edge from="gw_Alexandria_152" to="gw_Alexandria_153"/>
+	<edge from="gw_Alexandria_344" to="gw_Alexandria_345"/>
+	<edge from="gw_Alexandria_178" to="gw_Alexandria_180"/>
+</graph>
+</gxl>

@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="gw_waggons_min">
+	<attr name="x_mean">
+		<float>132.5340909090909</float>
+	</attr>
+	<attr name="y_mean">
+		<float>23.318181818181817</float>
+	</attr>
+	<attr name="x_std">
+		<float>74.03729847234193</float>
+	</attr>
+	<attr name="y_std">
+		<float>13.141317090612839</float>
+	</attr>
+	<attr name="x_max">
+		<float>271</float>
+	</attr>
+	<attr name="y_max">
+		<float>55</float>
+	</attr>
+	<node id="gw_waggons_min_0">
+		<attr name="x">
+			<float>1.0328025288425997</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1656504224469224</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_1">
+		<attr name="x">
+			<float>0.04681301401352254</float>
+		</attr>
+		<attr name="y">
+			<float>2.4108556215000148</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_2">
+		<attr name="x">
+			<float>0.8707220606515186</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8612669293450553</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_3">
+		<attr name="x">
+			<float>0.20889348220460371</float>
+		</attr>
+		<attr name="y">
+			<float>1.8781845085717477</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_4">
+		<attr name="x">
+			<float>0.7086415924604373</float>
+		</attr>
+		<attr name="y">
+			<float>-0.10030819659038787</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_5">
+		<attr name="x">
+			<float>0.3709739503956849</float>
+		</attr>
+		<attr name="y">
+			<float>1.0411299025416134</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_6">
+		<attr name="x">
+			<float>0.5600678299519463</float>
+		</attr>
+		<attr name="y">
+			<float>-0.10030819659038787</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_7">
+		<attr name="x">
+			<float>0.519547712904176</float>
+		</attr>
+		<attr name="y">
+			<float>0.35626704306241264</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_8">
+		<attr name="x">
+			<float>0.533054418586766</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9373628026205221</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_9">
+		<attr name="x">
+			<float>0.6816281810952571</float>
+		</attr>
+		<attr name="y">
+			<float>0.05188354996054564</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_10">
+		<attr name="x">
+			<float>0.3709739503956849</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7851710560695886</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_11">
+		<attr name="x">
+			<float>0.8437086492863384</float>
+		</attr>
+		<attr name="y">
+			<float>0.2801711697869459</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_12">
+		<attr name="x">
+			<float>0.3439605390305047</float>
+		</attr>
+		<attr name="y">
+			<float>0.05188354996054564</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_13">
+		<attr name="x">
+			<float>0.9922824117948295</float>
+		</attr>
+		<attr name="y">
+			<float>-0.25249994314132135</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_14">
+		<attr name="x">
+			<float>0.3439605390305047</float>
+		</attr>
+		<attr name="y">
+			<float>0.5084587896133461</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_15">
+		<attr name="x">
+			<float>1.1273494686207304</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7851710560695886</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_16">
+		<attr name="x">
+			<float>0.18188007083942354</float>
+		</attr>
+		<attr name="y">
+			<float>0.8889381559906799</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_17">
+		<attr name="x">
+			<float>0.019799602648342338</float>
+		</attr>
+		<attr name="y">
+			<float>1.5738010154698807</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_18">
+		<attr name="x">
+			<float>-0.10176074849496855</float>
+		</attr>
+		<attr name="y">
+			<float>2.334759748224548</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_19">
+		<attr name="x">
+			<float>0.20889348220460371</float>
+		</attr>
+		<attr name="y">
+			<float>1.11722577581708</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_20">
+		<attr name="x">
+			<float>0.019799602648342338</float>
+		</attr>
+		<attr name="y">
+			<float>1.8781845085717477</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_21">
+		<attr name="x">
+			<float>0.14135995379165323</float>
+		</attr>
+		<attr name="y">
+			<float>1.7259927620208142</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_22">
+		<attr name="x">
+			<float>0.18188007083942354</float>
+		</attr>
+		<attr name="y">
+			<float>1.193321649092547</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_23">
+		<attr name="x">
+			<float>0.39798736176086513</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4807875629677216</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_24">
+		<attr name="x">
+			<float>-0.6150155644333923</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1656504224469224</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_25">
+		<attr name="x">
+			<float>-0.3448814507815903</float>
+		</attr>
+		<attr name="y">
+			<float>1.3455133956434804</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_26">
+		<attr name="x">
+			<float>-0.35838815646418043</float>
+		</attr>
+		<attr name="y">
+			<float>-0.32859581641678814</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_27">
+		<attr name="x">
+			<float>-0.7770960326244735</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8612669293450553</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_28">
+		<attr name="x">
+			<float>-0.5069619189726715</float>
+		</attr>
+		<attr name="y">
+			<float>1.8781845085717477</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_29">
+		<attr name="x">
+			<float>-0.5204686246552617</float>
+		</attr>
+		<attr name="y">
+			<float>-0.024212323314921114</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_30">
+		<attr name="x">
+			<float>-0.8851496780851943</float>
+		</attr>
+		<attr name="y">
+			<float>-0.024212323314921114</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_31">
+		<attr name="x">
+			<float>-0.6690423871637527</float>
+		</attr>
+		<attr name="y">
+			<float>2.182568001673615</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_32">
+		<attr name="x">
+			<float>-0.5069619189726715</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7851710560695886</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_33">
+		<attr name="x">
+			<float>-0.723069209894113</float>
+		</attr>
+		<attr name="y">
+			<float>0.05188354996054564</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_34">
+		<attr name="x">
+			<float>-0.5609887417030319</float>
+		</attr>
+		<attr name="y">
+			<float>2.4108556215000148</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_35">
+		<attr name="x">
+			<float>-0.5609887417030319</float>
+		</attr>
+		<attr name="y">
+			<float>0.05188354996054564</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_36">
+		<attr name="x">
+			<float>-0.39890827351195074</float>
+		</attr>
+		<attr name="y">
+			<float>1.9542803818472143</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_37">
+		<attr name="x">
+			<float>-0.39890827351195074</float>
+		</attr>
+		<attr name="y">
+			<float>-0.10030819659038787</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_38">
+		<attr name="x">
+			<float>-0.23682780532086953</float>
+		</attr>
+		<attr name="y">
+			<float>1.3455133956434804</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_39">
+		<attr name="x">
+			<float>-0.23682780532086953</float>
+		</attr>
+		<attr name="y">
+			<float>-0.25249994314132135</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_40">
+		<attr name="x">
+			<float>-0.10176074849496855</float>
+		</attr>
+		<attr name="y">
+			<float>0.5845546628888129</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_41">
+		<attr name="x">
+			<float>-0.15578757122532894</float>
+		</attr>
+		<attr name="y">
+			<float>0.35626704306241264</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_42">
+		<attr name="x">
+			<float>0.060319719696112634</float>
+		</attr>
+		<attr name="y">
+			<float>0.05188354996054564</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_43">
+		<attr name="x">
+			<float>-0.3178680394164101</float>
+		</attr>
+		<attr name="y">
+			<float>0.7367464094397463</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_44">
+		<attr name="x">
+			<float>0.10083983674388293</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7851710560695886</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_45">
+		<attr name="x">
+			<float>-0.4529350962423111</float>
+		</attr>
+		<attr name="y">
+			<float>1.3455133956434804</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_46">
+		<attr name="x">
+			<float>-0.034227220082018055</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0895545491714556</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_47">
+		<attr name="x">
+			<float>-0.2908546280512299</float>
+		</attr>
+		<attr name="y">
+			<float>0.8128422827152132</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_48">
+		<attr name="x">
+			<float>-0.19630768827309925</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7090751827941218</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_49">
+		<attr name="x">
+			<float>-0.034227220082018055</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7851710560695886</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_50">
+		<attr name="x">
+			<float>-0.061240631447198254</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7851710560695886</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_51">
+		<attr name="x">
+			<float>-0.07474733712978836</float>
+		</attr>
+		<attr name="y">
+			<float>-0.25249994314132135</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_52">
+		<attr name="x">
+			<float>-0.6960557985289328</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7851710560695886</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_53">
+		<attr name="x">
+			<float>-0.7500826212592933</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5568834362431884</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_54">
+		<attr name="x">
+			<float>-0.6825490928463428</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4046916896922549</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_55">
+		<attr name="x">
+			<float>1.8567115754805958</float>
+		</attr>
+		<attr name="y">
+			<float>-1.241746295722389</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_56">
+		<attr name="x">
+			<float>1.3974835822725324</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4046916896922549</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_57">
+		<attr name="x">
+			<float>1.5055372277332533</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7851710560695886</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_58">
+		<attr name="x">
+			<float>1.7081378129721048</float>
+		</attr>
+		<attr name="y">
+			<float>0.2801711697869459</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_59">
+		<attr name="x">
+			<float>1.1813762913510908</float>
+		</attr>
+		<attr name="y">
+			<float>-0.10030819659038787</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_60">
+		<attr name="x">
+			<float>1.8296981641154155</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4046916896922549</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_61">
+		<attr name="x">
+			<float>1.7081378129721048</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4807875629677216</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_62">
+		<attr name="x">
+			<float>1.492030522050663</float>
+		</attr>
+		<attr name="y">
+			<float>0.20407529651147913</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_63">
+		<attr name="x">
+			<float>1.6541109902417444</float>
+		</attr>
+		<attr name="y">
+			<float>-0.024212323314921114</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_64">
+		<attr name="x">
+			<float>1.343456759542172</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9373628026205221</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_65">
+		<attr name="x">
+			<float>1.6406042845591542</float>
+		</attr>
+		<attr name="y">
+			<float>0.7367464094397463</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_66">
+		<attr name="x">
+			<float>1.8026847527502354</float>
+		</attr>
+		<attr name="y">
+			<float>0.4323629163378794</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_67">
+		<attr name="x">
+			<float>1.2354031140814512</float>
+		</attr>
+		<attr name="y">
+			<float>0.2801711697869459</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_68">
+		<attr name="x">
+			<float>1.8702182811631858</float>
+		</attr>
+		<attr name="y">
+			<float>-1.241746295722389</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_69">
+		<attr name="x">
+			<float>1.5460573447810235</float>
+		</attr>
+		<attr name="y">
+			<float>-0.024212323314921114</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_70">
+		<attr name="x">
+			<float>1.221896408398861</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7851710560695886</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_71">
+		<attr name="x">
+			<float>-1.5064581394843388</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7744174086506563</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_72">
+		<attr name="x">
+			<float>-0.8986563837677843</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0895545491714556</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_73">
+		<attr name="x">
+			<float>-1.4794447281191587</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7744174086506563</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_74">
+		<attr name="x">
+			<float>-1.6415251963102397</float>
+		</attr>
+		<attr name="y">
+			<float>0.05188354996054564</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_75">
+		<attr name="x">
+			<float>-1.3443776712932576</float>
+		</attr>
+		<attr name="y">
+			<float>-0.25249994314132135</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_76">
+		<attr name="x">
+			<float>-1.1687904974195864</float>
+		</attr>
+		<attr name="y">
+			<float>-0.32859581641678814</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_77">
+		<attr name="x">
+			<float>-1.65503190199283</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1764040698658546</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_78">
+		<attr name="x">
+			<float>-1.66853860767542</float>
+		</attr>
+		<attr name="y">
+			<float>-1.013458675895989</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_79">
+		<attr name="x">
+			<float>-1.0472301462762754</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4700339155487894</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_80">
+		<attr name="x">
+			<float>-1.1958039087847665</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6329793095186551</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_81">
+		<attr name="x">
+			<float>-1.4794447281191587</float>
+		</attr>
+		<attr name="y">
+			<float>-0.32859581641678814</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_82">
+		<attr name="x">
+			<float>-1.3308709656106676</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0895545491714556</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_83">
+		<attr name="x">
+			<float>-1.4929514338017487</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6329793095186551</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_84">
+		<attr name="x">
+			<float>-1.0202167349110953</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0895545491714556</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_85">
+		<attr name="x">
+			<float>-1.5604849622146992</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0895545491714556</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_86">
+		<attr name="x">
+			<float>-1.7900989588187308</float>
+		</attr>
+		<attr name="y">
+			<float>-0.10030819659038787</float>
+		</attr>
+	</node>
+	<node id="gw_waggons_min_87">
+		<attr name="x">
+			<float>-1.3308709656106676</float>
+		</attr>
+		<attr name="y">
+			<float>0.05188354996054564</float>
+		</attr>
+	</node>
+	<edge from="gw_waggons_min_78" to="gw_waggons_min_86"/>
+	<edge from="gw_waggons_min_51" to="gw_waggons_min_50"/>
+	<edge from="gw_waggons_min_38" to="gw_waggons_min_40"/>
+	<edge from="gw_waggons_min_46" to="gw_waggons_min_48"/>
+	<edge from="gw_waggons_min_52" to="gw_waggons_min_53"/>
+	<edge from="gw_waggons_min_24" to="gw_waggons_min_27"/>
+	<edge from="gw_waggons_min_86" to="gw_waggons_min_74"/>
+	<edge from="gw_waggons_min_34" to="gw_waggons_min_36"/>
+	<edge from="gw_waggons_min_28" to="gw_waggons_min_31"/>
+	<edge from="gw_waggons_min_80" to="gw_waggons_min_75"/>
+	<edge from="gw_waggons_min_71" to="gw_waggons_min_78"/>
+	<edge from="gw_waggons_min_58" to="gw_waggons_min_65"/>
+	<edge from="gw_waggons_min_63" to="gw_waggons_min_58"/>
+	<edge from="gw_waggons_min_69" to="gw_waggons_min_57"/>
+	<edge from="gw_waggons_min_61" to="gw_waggons_min_69"/>
+	<edge from="gw_waggons_min_17" to="gw_waggons_min_18"/>
+	<edge from="gw_waggons_min_49" to="gw_waggons_min_51"/>
+	<edge from="gw_waggons_min_77" to="gw_waggons_min_85"/>
+	<edge from="gw_waggons_min_39" to="gw_waggons_min_41"/>
+	<edge from="gw_waggons_min_65" to="gw_waggons_min_66"/>
+	<edge from="gw_waggons_min_76" to="gw_waggons_min_84"/>
+	<edge from="gw_waggons_min_26" to="gw_waggons_min_29"/>
+	<edge from="gw_waggons_min_40" to="gw_waggons_min_42"/>
+	<edge from="gw_waggons_min_41" to="gw_waggons_min_43"/>
+	<edge from="gw_waggons_min_75" to="gw_waggons_min_82"/>
+	<edge from="gw_waggons_min_43" to="gw_waggons_min_45"/>
+	<edge from="gw_waggons_min_67" to="gw_waggons_min_56"/>
+	<edge from="gw_waggons_min_56" to="gw_waggons_min_62"/>
+	<edge from="gw_waggons_min_44" to="gw_waggons_min_46"/>
+	<edge from="gw_waggons_min_52" to="gw_waggons_min_54"/>
+	<edge from="gw_waggons_min_45" to="gw_waggons_min_47"/>
+	<edge from="gw_waggons_min_31" to="gw_waggons_min_34"/>
+	<edge from="gw_waggons_min_71" to="gw_waggons_min_73"/>
+	<edge from="gw_waggons_min_3" to="gw_waggons_min_5"/>
+	<edge from="gw_waggons_min_4" to="gw_waggons_min_6"/>
+	<edge from="gw_waggons_min_5" to="gw_waggons_min_7"/>
+	<edge from="gw_waggons_min_64" to="gw_waggons_min_70"/>
+	<edge from="gw_waggons_min_0" to="gw_waggons_min_2"/>
+	<edge from="gw_waggons_min_1" to="gw_waggons_min_3"/>
+	<edge from="gw_waggons_min_66" to="gw_waggons_min_60"/>
+	<edge from="gw_waggons_min_85" to="gw_waggons_min_73"/>
+	<edge from="gw_waggons_min_57" to="gw_waggons_min_64"/>
+	<edge from="gw_waggons_min_82" to="gw_waggons_min_83"/>
+	<edge from="gw_waggons_min_19" to="gw_waggons_min_22"/>
+	<edge from="gw_waggons_min_84" to="gw_waggons_min_72"/>
+	<edge from="gw_waggons_min_18" to="gw_waggons_min_1"/>
+	<edge from="gw_waggons_min_16" to="gw_waggons_min_17"/>
+	<edge from="gw_waggons_min_49" to="gw_waggons_min_50"/>
+	<edge from="gw_waggons_min_21" to="gw_waggons_min_20"/>
+	<edge from="gw_waggons_min_30" to="gw_waggons_min_33"/>
+	<edge from="gw_waggons_min_0" to="gw_waggons_min_15"/>
+	<edge from="gw_waggons_min_8" to="gw_waggons_min_10"/>
+	<edge from="gw_waggons_min_42" to="gw_waggons_min_44"/>
+	<edge from="gw_waggons_min_9" to="gw_waggons_min_11"/>
+	<edge from="gw_waggons_min_54" to="gw_waggons_min_53"/>
+	<edge from="gw_waggons_min_11" to="gw_waggons_min_13"/>
+	<edge from="gw_waggons_min_19" to="gw_waggons_min_21"/>
+	<edge from="gw_waggons_min_12" to="gw_waggons_min_14"/>
+	<edge from="gw_waggons_min_20" to="gw_waggons_min_22"/>
+	<edge from="gw_waggons_min_13" to="gw_waggons_min_15"/>
+	<edge from="gw_waggons_min_55" to="gw_waggons_min_61"/>
+	<edge from="gw_waggons_min_83" to="gw_waggons_min_77"/>
+	<edge from="gw_waggons_min_60" to="gw_waggons_min_68"/>
+	<edge from="gw_waggons_min_6" to="gw_waggons_min_8"/>
+	<edge from="gw_waggons_min_14" to="gw_waggons_min_16"/>
+	<edge from="gw_waggons_min_29" to="gw_waggons_min_32"/>
+	<edge from="gw_waggons_min_27" to="gw_waggons_min_30"/>
+	<edge from="gw_waggons_min_79" to="gw_waggons_min_80"/>
+	<edge from="gw_waggons_min_2" to="gw_waggons_min_4"/>
+	<edge from="gw_waggons_min_74" to="gw_waggons_min_81"/>
+	<edge from="gw_waggons_min_70" to="gw_waggons_min_59"/>
+	<edge from="gw_waggons_min_87" to="gw_waggons_min_76"/>
+	<edge from="gw_waggons_min_35" to="gw_waggons_min_37"/>
+	<edge from="gw_waggons_min_36" to="gw_waggons_min_38"/>
+	<edge from="gw_waggons_min_37" to="gw_waggons_min_39"/>
+	<edge from="gw_waggons_min_10" to="gw_waggons_min_12"/>
+	<edge from="gw_waggons_min_81" to="gw_waggons_min_87"/>
+	<edge from="gw_waggons_min_72" to="gw_waggons_min_79"/>
+	<edge from="gw_waggons_min_33" to="gw_waggons_min_35"/>
+	<edge from="gw_waggons_min_62" to="gw_waggons_min_63"/>
+	<edge from="gw_waggons_min_59" to="gw_waggons_min_67"/>
+	<edge from="gw_waggons_min_25" to="gw_waggons_min_28"/>
+	<edge from="gw_waggons_min_7" to="gw_waggons_min_9"/>
+	<edge from="gw_waggons_min_55" to="gw_waggons_min_68"/>
+	<edge from="gw_waggons_min_47" to="gw_waggons_min_25"/>
+	<edge from="gw_waggons_min_23" to="gw_waggons_min_23"/>
+	<edge from="gw_waggons_min_48" to="gw_waggons_min_26"/>
+	<edge from="gw_waggons_min_24" to="gw_waggons_min_32"/>
+</graph>
+</gxl>

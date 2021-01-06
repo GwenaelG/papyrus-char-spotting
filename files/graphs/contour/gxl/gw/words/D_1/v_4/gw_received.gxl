@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="gw_received">
+	<attr name="x_mean">
+		<float>148.97014925373134</float>
+	</attr>
+	<attr name="y_mean">
+		<float>32.940298507462686</float>
+	</attr>
+	<attr name="x_std">
+		<float>103.73645858750062</float>
+	</attr>
+	<attr name="y_std">
+		<float>13.68175667019901</float>
+	</attr>
+	<attr name="x_max">
+		<float>329</float>
+	</attr>
+	<attr name="y_max">
+		<float>48</float>
+	</attr>
+	<node id="gw_received_0">
+		<attr name="x">
+			<float>1.523378115062335</float>
+		</attr>
+		<attr name="y">
+			<float>0.5159937910542175</float>
+		</attr>
+	</node>
+	<node id="gw_received_1">
+		<attr name="x">
+			<float>1.4655392406521481</float>
+		</attr>
+		<attr name="y">
+			<float>0.5890838206538636</float>
+		</attr>
+	</node>
+	<node id="gw_received_2">
+		<attr name="x">
+			<float>1.5812169894725219</float>
+		</attr>
+		<attr name="y">
+			<float>0.29672370225527944</float>
+		</attr>
+	</node>
+	<node id="gw_received_3">
+		<attr name="x">
+			<float>-1.3782054178487066</float>
+		</attr>
+		<attr name="y">
+			<float>0.29672370225527944</float>
+		</attr>
+	</node>
+	<node id="gw_received_4">
+		<attr name="x">
+			<float>-1.4360442922588934</float>
+		</attr>
+		<attr name="y">
+			<float>0.5890838206538636</float>
+		</attr>
+	</node>
+	<node id="gw_received_5">
+		<attr name="x">
+			<float>1.6583354886861044</float>
+		</attr>
+		<attr name="y">
+			<float>0.004363583856695362</float>
+		</attr>
+	</node>
+	<node id="gw_received_6">
+		<attr name="x">
+			<float>1.6197762390793131</float>
+		</attr>
+		<attr name="y">
+			<float>0.15054364305598741</float>
+		</attr>
+	</node>
+	<node id="gw_received_7">
+		<attr name="x">
+			<float>-0.8287361109519312</float>
+		</attr>
+		<attr name="y">
+			<float>0.8814439390524477</float>
+		</attr>
+	</node>
+	<node id="gw_received_8">
+		<attr name="x">
+			<float>-1.0022527341824918</float>
+		</attr>
+		<attr name="y">
+			<float>0.7352638798531556</float>
+		</attr>
+	</node>
+	<node id="gw_received_9">
+		<attr name="x">
+			<float>-0.896214797763816</float>
+		</attr>
+		<attr name="y">
+			<float>0.15054364305598741</float>
+		</attr>
+	</node>
+	<node id="gw_received_10">
+		<attr name="x">
+			<float>-0.9154944225672116</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2149065049422427</float>
+		</attr>
+	</node>
+	<node id="gw_received_11">
+		<attr name="x">
+			<float>-1.1082906706011677</float>
+		</attr>
+		<attr name="y">
+			<float>0.7352638798531556</float>
+		</attr>
+	</node>
+	<node id="gw_received_12">
+		<attr name="x">
+			<float>-1.0215323589858876</float>
+		</attr>
+		<attr name="y">
+			<float>1.1007140278513856</float>
+		</attr>
+	</node>
+	<node id="gw_received_13">
+		<attr name="x">
+			<float>-0.6841389249264641</float>
+		</attr>
+		<attr name="y">
+			<float>0.6621738502535096</float>
+		</attr>
+	</node>
+	<node id="gw_received_14">
+		<attr name="x">
+			<float>-0.5973806133111838</float>
+		</attr>
+		<attr name="y">
+			<float>1.1007140278513856</float>
+		</attr>
+	</node>
+	<node id="gw_received_15">
+		<attr name="x">
+			<float>-0.35638530326873846</float>
+		</attr>
+		<attr name="y">
+			<float>0.7352638798531556</float>
+		</attr>
+	</node>
+	<node id="gw_received_16">
+		<attr name="x">
+			<float>-0.20214830484157345</float>
+		</attr>
+		<attr name="y">
+			<float>1.1007140278513856</float>
+		</attr>
+	</node>
+	<node id="gw_received_17">
+		<attr name="x">
+			<float>-0.07683074361950189</float>
+		</attr>
+		<attr name="y">
+			<float>0.7352638798531556</float>
+		</attr>
+	</node>
+	<node id="gw_received_18">
+		<attr name="x">
+			<float>0.06776644240596529</float>
+		</attr>
+		<attr name="y">
+			<float>1.0276239982517397</float>
+		</attr>
+	</node>
+	<node id="gw_received_19">
+		<attr name="x">
+			<float>0.3087617524484106</float>
+		</attr>
+		<attr name="y">
+			<float>0.22363367265563344</float>
+		</attr>
+	</node>
+	<node id="gw_received_20">
+		<attr name="x">
+			<float>0.36660062685859746</float>
+		</attr>
+		<attr name="y">
+			<float>0.8814439390524477</float>
+		</attr>
+	</node>
+	<node id="gw_received_21">
+		<attr name="x">
+			<float>0.6943542485163231</float>
+		</attr>
+		<attr name="y">
+			<float>0.29672370225527944</float>
+		</attr>
+	</node>
+	<node id="gw_received_22">
+		<attr name="x">
+			<float>0.6172357493027406</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3610865641415347</float>
+		</attr>
+	</node>
+	<node id="gw_received_23">
+		<attr name="x">
+			<float>0.4244395012687843</float>
+		</attr>
+		<attr name="y">
+			<float>0.7352638798531556</float>
+		</attr>
+	</node>
+	<node id="gw_received_24">
+		<attr name="x">
+			<float>0.4244395012687843</float>
+		</attr>
+		<attr name="y">
+			<float>-0.14181647534259667</float>
+		</attr>
+	</node>
+	<node id="gw_received_25">
+		<attr name="x">
+			<float>0.34732100205520183</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2149065049422427</float>
+		</attr>
+	</node>
+	<node id="gw_received_26">
+		<attr name="x">
+			<float>0.04848681760256967</float>
+		</attr>
+		<attr name="y">
+			<float>0.8083539094528016</float>
+		</attr>
+	</node>
+	<node id="gw_received_27">
+		<attr name="x">
+			<float>0.08704606720936091</float>
+		</attr>
+		<attr name="y">
+			<float>0.004363583856695362</float>
+		</attr>
+	</node>
+	<node id="gw_received_28">
+		<attr name="x">
+			<float>0.029207192799174043</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06872644574295066</float>
+		</attr>
+	</node>
+	<node id="gw_received_29">
+		<attr name="x">
+			<float>-0.23106774204666689</float>
+		</attr>
+		<attr name="y">
+			<float>0.8814439390524477</float>
+		</attr>
+	</node>
+	<node id="gw_received_30">
+		<attr name="x">
+			<float>-0.22142792964496907</float>
+		</attr>
+		<attr name="y">
+			<float>0.15054364305598741</float>
+		</attr>
+	</node>
+	<node id="gw_received_31">
+		<attr name="x">
+			<float>-0.13466961802968877</float>
+		</attr>
+		<attr name="y">
+			<float>0.004363583856695362</float>
+		</attr>
+	</node>
+	<node id="gw_received_32">
+		<attr name="x">
+			<float>-0.19250849243987564</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3610865641415347</float>
+		</attr>
+	</node>
+	<node id="gw_received_33">
+		<attr name="x">
+			<float>-0.3660251156704363</float>
+		</attr>
+		<attr name="y">
+			<float>0.8083539094528016</float>
+		</attr>
+	</node>
+	<node id="gw_received_34">
+		<attr name="x">
+			<float>-0.5973806133111838</float>
+		</attr>
+		<attr name="y">
+			<float>0.6621738502535096</float>
+		</attr>
+	</node>
+	<node id="gw_received_35">
+		<attr name="x">
+			<float>-0.5395417389009969</float>
+		</attr>
+		<attr name="y">
+			<float>0.07745361345634139</float>
+		</attr>
+	</node>
+	<node id="gw_received_36">
+		<attr name="x">
+			<float>-0.4624232396874144</float>
+		</attr>
+		<attr name="y">
+			<float>0.22363367265563344</float>
+		</attr>
+	</node>
+	<node id="gw_received_37">
+		<attr name="x">
+			<float>-0.4913426768925078</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2149065049422427</float>
+		</attr>
+	</node>
+	<node id="gw_received_38">
+		<attr name="x">
+			<float>-0.6166602381145794</float>
+		</attr>
+		<attr name="y">
+			<float>-0.14181647534259667</float>
+		</attr>
+	</node>
+	<node id="gw_received_39">
+		<attr name="x">
+			<float>-1.204688794618146</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6534466825401188</float>
+		</attr>
+	</node>
+	<node id="gw_received_40">
+		<attr name="x">
+			<float>-1.2914471062334263</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3610865641415347</float>
+		</attr>
+	</node>
+	<node id="gw_received_41">
+		<attr name="x">
+			<float>-1.3203665434385197</float>
+		</attr>
+		<attr name="y">
+			<float>1.1007140278513856</float>
+		</attr>
+	</node>
+	<node id="gw_received_42">
+		<attr name="x">
+			<float>-1.2143286070198438</float>
+		</attr>
+		<attr name="y">
+			<float>1.1007140278513856</float>
+		</attr>
+	</node>
+	<node id="gw_received_43">
+		<attr name="x">
+			<float>-1.2625276690283327</float>
+		</attr>
+		<attr name="y">
+			<float>0.8083539094528016</float>
+		</attr>
+	</node>
+	<node id="gw_received_44">
+		<attr name="x">
+			<float>0.17380437882464123</float>
+		</attr>
+		<attr name="y">
+			<float>-2.2614273337323314</float>
+		</attr>
+	</node>
+	<node id="gw_received_45">
+		<attr name="x">
+			<float>0.2509228780382237</float>
+		</attr>
+		<attr name="y">
+			<float>-2.042157244933393</float>
+		</attr>
+	</node>
+	<node id="gw_received_46">
+		<attr name="x">
+			<float>1.7354539878996869</float>
+		</attr>
+		<attr name="y">
+			<float>-2.2614273337323314</float>
+		</attr>
+	</node>
+	<node id="gw_received_47">
+		<attr name="x">
+			<float>1.6390558638827086</float>
+		</attr>
+		<attr name="y">
+			<float>-2.2614273337323314</float>
+		</attr>
+	</node>
+	<node id="gw_received_48">
+		<attr name="x">
+			<float>1.3402216794300765</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2879965345418887</float>
+		</attr>
+	</node>
+	<node id="gw_received_49">
+		<attr name="x">
+			<float>1.205264305806307</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3610865641415347</float>
+		</attr>
+	</node>
+	<node id="gw_received_50">
+		<attr name="x">
+			<float>0.8389514345417902</float>
+		</attr>
+		<attr name="y">
+			<float>0.7352638798531556</float>
+		</attr>
+	</node>
+	<node id="gw_received_51">
+		<attr name="x">
+			<float>0.8100319973366968</float>
+		</attr>
+		<attr name="y">
+			<float>0.5159937910542175</float>
+		</attr>
+	</node>
+	<node id="gw_received_52">
+		<attr name="x">
+			<float>0.9449893709604662</float>
+		</attr>
+		<attr name="y">
+			<float>-0.14181647534259667</float>
+		</attr>
+	</node>
+	<node id="gw_received_53">
+		<attr name="x">
+			<float>0.8871504965502793</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4341765937411808</float>
+		</attr>
+	</node>
+	<node id="gw_received_54">
+		<attr name="x">
+			<float>0.7232736857214165</float>
+		</attr>
+		<attr name="y">
+			<float>0.3698137318549255</float>
+		</attr>
+	</node>
+	<node id="gw_received_55">
+		<attr name="x">
+			<float>0.8293116221400925</float>
+		</attr>
+		<attr name="y">
+			<float>0.9545339686520937</float>
+		</attr>
+	</node>
+	<node id="gw_received_56">
+		<attr name="x">
+			<float>1.0413874949774444</float>
+		</attr>
+		<attr name="y">
+			<float>0.5159937910542175</float>
+		</attr>
+	</node>
+	<node id="gw_received_57">
+		<attr name="x">
+			<float>1.4366198034470545</float>
+		</attr>
+		<attr name="y">
+			<float>0.7352638798531556</float>
+		</attr>
+	</node>
+	<node id="gw_received_58">
+		<attr name="x">
+			<float>1.359501304233472</float>
+		</attr>
+		<attr name="y">
+			<float>0.4429037614545715</float>
+		</attr>
+	</node>
+	<node id="gw_received_59">
+		<attr name="x">
+			<float>1.2920226174215874</float>
+		</attr>
+		<attr name="y">
+			<float>0.004363583856695362</float>
+		</attr>
+	</node>
+	<node id="gw_received_60">
+		<attr name="x">
+			<float>1.1667050561995158</float>
+		</attr>
+		<attr name="y">
+			<float>0.4429037614545715</float>
+		</attr>
+	</node>
+	<node id="gw_received_61">
+		<attr name="x">
+			<float>-1.2432480442249372</float>
+		</attr>
+		<attr name="y">
+			<float>-2.4076073929316233</float>
+		</attr>
+	</node>
+	<node id="gw_received_62">
+		<attr name="x">
+			<float>-1.349285980643613</float>
+		</attr>
+		<attr name="y">
+			<float>-2.2614273337323314</float>
+		</attr>
+	</node>
+	<node id="gw_received_63">
+		<attr name="x">
+			<float>-1.4360442922588934</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7265367121397649</float>
+		</attr>
+	</node>
+	<node id="gw_received_64">
+		<attr name="x">
+			<float>-1.3878452302504043</float>
+		</attr>
+		<attr name="y">
+			<float>-2.4076073929316233</float>
+		</attr>
+	</node>
+	<node id="gw_received_65">
+		<attr name="x">
+			<float>-1.4360442922588934</float>
+		</attr>
+		<attr name="y">
+			<float>-2.4076073929316233</float>
+		</attr>
+	</node>
+	<node id="gw_received_66">
+		<attr name="x">
+			<float>-1.4360442922588934</float>
+		</attr>
+		<attr name="y">
+			<float>-1.8959771857341012</float>
+		</attr>
+	</node>
+	<edge from="gw_received_10" to="gw_received_11"/>
+	<edge from="gw_received_22" to="gw_received_23"/>
+	<edge from="gw_received_42" to="gw_received_43"/>
+	<edge from="gw_received_54" to="gw_received_55"/>
+	<edge from="gw_received_5" to="gw_received_6"/>
+	<edge from="gw_received_7" to="gw_received_12"/>
+	<edge from="gw_received_28" to="gw_received_29"/>
+	<edge from="gw_received_36" to="gw_received_37"/>
+	<edge from="gw_received_61" to="gw_received_62"/>
+	<edge from="gw_received_8" to="gw_received_9"/>
+	<edge from="gw_received_15" to="gw_received_16"/>
+	<edge from="gw_received_40" to="gw_received_41"/>
+	<edge from="gw_received_18" to="gw_received_19"/>
+	<edge from="gw_received_30" to="gw_received_31"/>
+	<edge from="gw_received_34" to="gw_received_35"/>
+	<edge from="gw_received_46" to="gw_received_47"/>
+	<edge from="gw_received_59" to="gw_received_60"/>
+	<edge from="gw_received_31" to="gw_received_32"/>
+	<edge from="gw_received_16" to="gw_received_17"/>
+	<edge from="gw_received_32" to="gw_received_33"/>
+	<edge from="gw_received_49" to="gw_received_50"/>
+	<edge from="gw_received_65" to="gw_received_66"/>
+	<edge from="gw_received_20" to="gw_received_21"/>
+	<edge from="gw_received_44" to="gw_received_45"/>
+	<edge from="gw_received_52" to="gw_received_53"/>
+	<edge from="gw_received_25" to="gw_received_26"/>
+	<edge from="gw_received_56" to="gw_received_57"/>
+	<edge from="gw_received_2" to="gw_received_2"/>
+	<edge from="gw_received_3" to="gw_received_4"/>
+	<edge from="gw_received_35" to="gw_received_36"/>
+	<edge from="gw_received_27" to="gw_received_28"/>
+	<edge from="gw_received_39" to="gw_received_40"/>
+	<edge from="gw_received_47" to="gw_received_48"/>
+	<edge from="gw_received_29" to="gw_received_30"/>
+	<edge from="gw_received_37" to="gw_received_38"/>
+	<edge from="gw_received_9" to="gw_received_10"/>
+	<edge from="gw_received_41" to="gw_received_42"/>
+	<edge from="gw_received_46" to="gw_received_58"/>
+	<edge from="gw_received_14" to="gw_received_15"/>
+	<edge from="gw_received_50" to="gw_received_51"/>
+	<edge from="gw_received_62" to="gw_received_63"/>
+	<edge from="gw_received_39" to="gw_received_43"/>
+	<edge from="gw_received_23" to="gw_received_24"/>
+	<edge from="gw_received_11" to="gw_received_12"/>
+	<edge from="gw_received_19" to="gw_received_20"/>
+	<edge from="gw_received_51" to="gw_received_52"/>
+	<edge from="gw_received_0" to="gw_received_1"/>
+	<edge from="gw_received_33" to="gw_received_34"/>
+	<edge from="gw_received_17" to="gw_received_18"/>
+	<edge from="gw_received_55" to="gw_received_56"/>
+	<edge from="gw_received_26" to="gw_received_27"/>
+	<edge from="gw_received_48" to="gw_received_49"/>
+	<edge from="gw_received_64" to="gw_received_65"/>
+	<edge from="gw_received_21" to="gw_received_22"/>
+	<edge from="gw_received_13" to="gw_received_14"/>
+	<edge from="gw_received_53" to="gw_received_54"/>
+	<edge from="gw_received_61" to="gw_received_63"/>
+	<edge from="gw_received_13" to="gw_received_38"/>
+	<edge from="gw_received_24" to="gw_received_25"/>
+	<edge from="gw_received_57" to="gw_received_58"/>
+	<edge from="gw_received_7" to="gw_received_8"/>
+	<edge from="gw_received_64" to="gw_received_66"/>
+</graph>
+</gxl>

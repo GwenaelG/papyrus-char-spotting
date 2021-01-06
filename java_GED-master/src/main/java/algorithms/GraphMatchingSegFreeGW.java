@@ -499,7 +499,7 @@ public class GraphMatchingSegFreeGW {
 				String imgFolder = charVisFolder.toString() + "/";
 				Files.createDirectories(Paths.get(imgFolder));
 				String propFile = prop.split("[/\\\\]")[(prop.split("[/\\\\]").length)-1].split("\\.")[0];
-				String imgName = imgFolder+propFile+"_"+(int)costFunctionManager.getNodeCost()+"_"+(int)costFunctionManager.getEdgeCost()
+				String imgName = imgFolder+propFile+"_s"+i+"_t"+j+"_"+(int)costFunctionManager.getNodeCost()+"_"+(int)costFunctionManager.getEdgeCost()
 						+"_"+costFunctionManager.getAlpha()+"_"+costFunctionManager.getNodeAttrImportance()[0]+".png";
 				ImageIO.write(img, "png", new File(imgName));
 			}

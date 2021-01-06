@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="gw_day">
+	<attr name="x_mean">
+		<float>66.45454545454545</float>
+	</attr>
+	<attr name="y_mean">
+		<float>39.5</float>
+	</attr>
+	<attr name="x_std">
+		<float>31.883633978931563</float>
+	</attr>
+	<attr name="y_std">
+		<float>20.41779526874446</float>
+	</attr>
+	<attr name="x_max">
+		<float>127</float>
+	</attr>
+	<attr name="y_max">
+		<float>81</float>
+	</attr>
+	<node id="gw_day_0">
+		<attr name="x">
+			<float>0.017107665513127472</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8081185937473956</float>
+		</attr>
+	</node>
+	<node id="gw_day_1">
+		<attr name="x">
+			<float>0.1739279327167956</float>
+		</attr>
+		<attr name="y">
+			<float>1.346864322912326</float>
+		</attr>
+	</node>
+	<node id="gw_day_2">
+		<attr name="x">
+			<float>1.8989508719571448</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4652804024606217</float>
+		</attr>
+	</node>
+	<node id="gw_day_3">
+		<attr name="x">
+			<float>-0.359260975775676</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4652804024606217</float>
+		</attr>
+	</node>
+	<node id="gw_day_4">
+		<attr name="x">
+			<float>0.5502965740055991</float>
+		</attr>
+		<attr name="y">
+			<float>1.0530030160950912</float>
+		</attr>
+	</node>
+	<node id="gw_day_5">
+		<attr name="x">
+			<float>1.553946284109075</float>
+		</attr>
+		<attr name="y">
+			<float>-0.36732663352154343</float>
+		</attr>
+	</node>
+	<node id="gw_day_6">
+		<attr name="x">
+			<float>-0.13971260169054064</float>
+		</attr>
+		<attr name="y">
+			<float>-0.12244221117384782</float>
+		</attr>
+	</node>
+	<node id="gw_day_7">
+		<attr name="x">
+			<float>0.3307481999204637</float>
+		</attr>
+		<attr name="y">
+			<float>1.004026131625552</float>
+		</attr>
+	</node>
+	<node id="gw_day_8">
+		<attr name="x">
+			<float>1.3343979100239398</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6122110558692391</float>
+		</attr>
+	</node>
+	<node id="gw_day_9">
+		<attr name="x">
+			<float>0.23665603959826284</float>
+		</attr>
+		<attr name="y">
+			<float>-0.36732663352154343</float>
+		</attr>
+	</node>
+	<node id="gw_day_10">
+		<attr name="x">
+			<float>-0.04562044136833978</float>
+		</attr>
+		<attr name="y">
+			<float>1.346864322912326</float>
+		</attr>
+	</node>
+	<node id="gw_day_11">
+		<attr name="x">
+			<float>1.0207573756166035</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5632341713997</float>
+		</attr>
+	</node>
+	<node id="gw_day_12">
+		<attr name="x">
+			<float>0.6130246808870663</float>
+		</attr>
+		<attr name="y">
+			<float>-0.12244221117384782</float>
+		</attr>
+	</node>
+	<node id="gw_day_13">
+		<attr name="x">
+			<float>-0.359260975775676</float>
+		</attr>
+		<attr name="y">
+			<float>1.8366331676077172</float>
+		</attr>
+	</node>
+	<node id="gw_day_14">
+		<attr name="x">
+			<float>0.6443887343278</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3183497490520043</float>
+		</attr>
+	</node>
+	<node id="gw_day_15">
+		<attr name="x">
+			<float>0.9893933221758698</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3183497490520043</float>
+		</attr>
+	</node>
+	<node id="gw_day_16">
+		<attr name="x">
+			<float>-0.0769844948090734</float>
+		</attr>
+		<attr name="y">
+			<float>2.0325407054858737</float>
+		</attr>
+	</node>
+	<node id="gw_day_17">
+		<attr name="x">
+			<float>0.3307481999204637</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7591417092778565</float>
+		</attr>
+	</node>
+	<node id="gw_day_18">
+		<attr name="x">
+			<float>1.3343979100239398</float>
+		</attr>
+		<attr name="y">
+			<float>0.024488442234769564</float>
+		</attr>
+	</node>
+	<node id="gw_day_19">
+		<attr name="x">
+			<float>0.2680200930389965</float>
+		</attr>
+		<attr name="y">
+			<float>1.6897025141991</float>
+		</attr>
+	</node>
+	<node id="gw_day_20">
+		<attr name="x">
+			<float>1.052121429057337</float>
+		</attr>
+		<attr name="y">
+			<float>0.6122110558692391</float>
+		</attr>
+	</node>
+	<node id="gw_day_21">
+		<attr name="x">
+			<float>0.6443887343278</float>
+		</attr>
+		<attr name="y">
+			<float>1.3958412073818651</float>
+		</attr>
+	</node>
+	<node id="gw_day_22">
+		<attr name="x">
+			<float>0.7071168412092672</float>
+		</attr>
+		<attr name="y">
+			<float>1.1019799005646305</float>
+		</attr>
+	</node>
+	<node id="gw_day_23">
+		<attr name="x">
+			<float>0.9893933221758698</float>
+		</attr>
+		<attr name="y">
+			<float>0.955049247156013</float>
+		</attr>
+	</node>
+	<node id="gw_day_24">
+		<attr name="x">
+			<float>0.3307481999204637</float>
+		</attr>
+		<attr name="y">
+			<float>1.5427718607904826</float>
+		</attr>
+	</node>
+	<node id="gw_day_25">
+		<attr name="x">
+			<float>1.303033856583206</float>
+		</attr>
+		<attr name="y">
+			<float>0.4652804024606217</float>
+		</attr>
+	</node>
+	<node id="gw_day_26">
+		<attr name="x">
+			<float>-0.04562044136833978</float>
+		</attr>
+		<attr name="y">
+			<float>1.7876562831381781</float>
+		</attr>
+	</node>
+	<node id="gw_day_27">
+		<attr name="x">
+			<float>1.553946284109075</float>
+		</attr>
+		<attr name="y">
+			<float>-0.07346532670430869</float>
+		</attr>
+	</node>
+	<node id="gw_day_28">
+		<attr name="x">
+			<float>0.017107665513127472</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5632341713997</float>
+		</attr>
+	</node>
+	<node id="gw_day_29">
+		<attr name="x">
+			<float>-0.29653286889420877</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9345869365467956</float>
+		</attr>
+	</node>
+	<node id="gw_day_30">
+		<attr name="x">
+			<float>-1.3942747393198855</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5632341713997</float>
+		</attr>
+	</node>
+	<node id="gw_day_31">
+		<attr name="x">
+			<float>-1.4256387927606193</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9060723626864738</float>
+		</attr>
+	</node>
+	<node id="gw_day_32">
+		<attr name="x">
+			<float>-0.8924498842681476</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3183497490520043</float>
+		</attr>
+	</node>
+	<node id="gw_day_33">
+		<attr name="x">
+			<float>-1.7706433806086892</float>
+		</attr>
+		<attr name="y">
+			<float>-0.22039598011292608</float>
+		</attr>
+	</node>
+	<node id="gw_day_34">
+		<attr name="x">
+			<float>-0.23380476201274153</float>
+		</attr>
+		<attr name="y">
+			<float>-1.738679398668639</float>
+		</attr>
+	</node>
+	<node id="gw_day_35">
+		<attr name="x">
+			<float>-0.6729015101830123</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4937949763209435</float>
+		</attr>
+	</node>
+	<node id="gw_day_36">
+		<attr name="x">
+			<float>-1.1747263652347502</float>
+		</attr>
+		<attr name="y">
+			<float>-0.17141909564338695</float>
+		</attr>
+	</node>
+	<node id="gw_day_37">
+		<attr name="x">
+			<float>-0.7983577239459467</float>
+		</attr>
+		<attr name="y">
+			<float>-0.22039598011292608</float>
+		</attr>
+	</node>
+	<node id="gw_day_38">
+		<attr name="x">
+			<float>-1.8020074340494228</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8081185937473956</float>
+		</attr>
+	</node>
+	<node id="gw_day_39">
+		<attr name="x">
+			<float>-0.9551779911496149</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7101648248083173</float>
+		</attr>
+	</node>
+	<node id="gw_day_40">
+		<attr name="x">
+			<float>-0.610173403301545</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2489105539732477</float>
+		</attr>
+	</node>
+	<node id="gw_day_41">
+		<attr name="x">
+			<float>-1.7079152737272218</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6611879403387783</float>
+		</attr>
+	</node>
+	<node id="gw_day_42">
+		<attr name="x">
+			<float>-1.0492701514718157</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9060723626864738</float>
+		</attr>
+	</node>
+	<node id="gw_day_43">
+		<attr name="x">
+			<float>-2.0842839150160253</float>
+		</attr>
+		<attr name="y">
+			<float>-0.36732663352154343</float>
+		</attr>
+	</node>
+	<edge from="gw_day_4" to="gw_day_7"/>
+	<edge from="gw_day_6" to="gw_day_9"/>
+	<edge from="gw_day_14" to="gw_day_17"/>
+	<edge from="gw_day_38" to="gw_day_43"/>
+	<edge from="gw_day_36" to="gw_day_37"/>
+	<edge from="gw_day_24" to="gw_day_26"/>
+	<edge from="gw_day_25" to="gw_day_27"/>
+	<edge from="gw_day_41" to="gw_day_30"/>
+	<edge from="gw_day_33" to="gw_day_41"/>
+	<edge from="gw_day_11" to="gw_day_14"/>
+	<edge from="gw_day_29" to="gw_day_35"/>
+	<edge from="gw_day_0" to="gw_day_3"/>
+	<edge from="gw_day_2" to="gw_day_5"/>
+	<edge from="gw_day_27" to="gw_day_2"/>
+	<edge from="gw_day_5" to="gw_day_8"/>
+	<edge from="gw_day_13" to="gw_day_16"/>
+	<edge from="gw_day_0" to="gw_day_17"/>
+	<edge from="gw_day_43" to="gw_day_33"/>
+	<edge from="gw_day_29" to="gw_day_34"/>
+	<edge from="gw_day_3" to="gw_day_6"/>
+	<edge from="gw_day_15" to="gw_day_18"/>
+	<edge from="gw_day_7" to="gw_day_10"/>
+	<edge from="gw_day_39" to="gw_day_40"/>
+	<edge from="gw_day_18" to="gw_day_20"/>
+	<edge from="gw_day_19" to="gw_day_21"/>
+	<edge from="gw_day_23" to="gw_day_25"/>
+	<edge from="gw_day_22" to="gw_day_24"/>
+	<edge from="gw_day_20" to="gw_day_22"/>
+	<edge from="gw_day_40" to="gw_day_34"/>
+	<edge from="gw_day_8" to="gw_day_11"/>
+	<edge from="gw_day_10" to="gw_day_13"/>
+	<edge from="gw_day_21" to="gw_day_23"/>
+	<edge from="gw_day_1" to="gw_day_4"/>
+	<edge from="gw_day_32" to="gw_day_39"/>
+	<edge from="gw_day_16" to="gw_day_19"/>
+	<edge from="gw_day_42" to="gw_day_31"/>
+	<edge from="gw_day_12" to="gw_day_15"/>
+	<edge from="gw_day_31" to="gw_day_38"/>
+	<edge from="gw_day_26" to="gw_day_1"/>
+	<edge from="gw_day_35" to="gw_day_42"/>
+	<edge from="gw_day_28" to="gw_day_28"/>
+	<edge from="gw_day_37" to="gw_day_32"/>
+	<edge from="gw_day_30" to="gw_day_36"/>
+	<edge from="gw_day_9" to="gw_day_12"/>
+</graph>
+</gxl>

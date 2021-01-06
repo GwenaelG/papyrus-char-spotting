@@ -1,0 +1,1597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="gw_purchase">
+	<attr name="x_mean">
+		<float>168.45714285714286</float>
+	</attr>
+	<attr name="y_mean">
+		<float>45.23428571428571</float>
+	</attr>
+	<attr name="x_std">
+		<float>103.78443121810373</float>
+	</attr>
+	<attr name="y_std">
+		<float>19.81073219757618</float>
+	</attr>
+	<attr name="x_max">
+		<float>351</float>
+	</attr>
+	<attr name="y_max">
+		<float>96</float>
+	</attr>
+	<node id="gw_purchase_0">
+		<attr name="x">
+			<float>0.043772048365426766</float>
+		</attr>
+		<attr name="y">
+			<float>0.44247300898786385</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_1">
+		<attr name="x">
+			<float>0.13049025739127224</float>
+		</attr>
+		<attr name="y">
+			<float>0.2910399387671152</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_2">
+		<attr name="x">
+			<float>0.14976097050812676</float>
+		</attr>
+		<attr name="y">
+			<float>0.2910399387671152</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_3">
+		<attr name="x">
+			<float>0.47736309349465406</float>
+		</attr>
+		<attr name="y">
+			<float>0.03865148839920076</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_4">
+		<attr name="x">
+			<float>0.5448105894036449</float>
+		</attr>
+		<attr name="y">
+			<float>0.39199531891428097</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_5">
+		<attr name="x">
+			<float>0.46772773693622677</float>
+		</attr>
+		<attr name="y">
+			<float>0.3415176288406981</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_6">
+		<attr name="x">
+			<float>0.5159045197283632</float>
+		</attr>
+		<attr name="y">
+			<float>0.08912917847278365</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_7">
+		<attr name="x">
+			<float>0.5255398762867904</float>
+		</attr>
+		<attr name="y">
+			<float>0.5434283891350297</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_8">
+		<attr name="x">
+			<float>0.5833520156373541</float>
+		</attr>
+		<attr name="y">
+			<float>0.5434283891350297</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_9">
+		<attr name="x">
+			<float>0.6411641549879177</float>
+		</attr>
+		<attr name="y">
+			<float>0.39199531891428097</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_10">
+		<attr name="x">
+			<float>0.6026227287542086</float>
+		</attr>
+		<attr name="y">
+			<float>0.3415176288406981</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_11">
+		<attr name="x">
+			<float>-0.0718522303357005</float>
+		</attr>
+		<attr name="y">
+			<float>-0.062303891747965016</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_12">
+		<attr name="x">
+			<float>0.01486597869014495</float>
+		</attr>
+		<attr name="y">
+			<float>0.24056224869353232</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_13">
+		<attr name="x">
+			<float>-0.12966436968626413</float>
+		</attr>
+		<attr name="y">
+			<float>0.13960686854636653</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_14">
+		<attr name="x">
+			<float>0.043772048365426766</float>
+		</attr>
+		<attr name="y">
+			<float>0.08912917847278365</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_15">
+		<attr name="x">
+			<float>-0.15857043936154597</float>
+		</attr>
+		<attr name="y">
+			<float>0.39199531891428097</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_16">
+		<attr name="x">
+			<float>-0.004404734426709595</float>
+		</attr>
+		<attr name="y">
+			<float>-0.062303891747965016</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_17">
+		<attr name="x">
+			<float>-0.1103936565694096</float>
+		</attr>
+		<attr name="y">
+			<float>0.5939060792086125</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_18">
+		<attr name="x">
+			<float>-0.06221687377727323</float>
+		</attr>
+		<attr name="y">
+			<float>-0.062303891747965016</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_19">
+		<attr name="x">
+			<float>-0.08148758689412777</float>
+		</attr>
+		<attr name="y">
+			<float>0.44247300898786385</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_20">
+		<attr name="x">
+			<float>-0.04294616066041869</float>
+		</attr>
+		<attr name="y">
+			<float>0.13960686854636653</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_21">
+		<attr name="x">
+			<float>-0.3898189967638005</float>
+		</attr>
+		<attr name="y">
+			<float>-0.062303891747965016</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_22">
+		<attr name="x">
+			<float>-0.19711186559525504</float>
+		</attr>
+		<attr name="y">
+			<float>0.39199531891428097</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_23">
+		<attr name="x">
+			<float>-0.4187250664390823</float>
+		</attr>
+		<attr name="y">
+			<float>0.13960686854636653</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_24">
+		<attr name="x">
+			<float>-0.2549240049458187</float>
+		</attr>
+		<attr name="y">
+			<float>0.44247300898786385</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_25">
+		<attr name="x">
+			<float>-0.4187250664390823</float>
+		</attr>
+		<attr name="y">
+			<float>0.44247300898786385</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_26">
+		<attr name="x">
+			<float>-0.3127361442963823</float>
+		</attr>
+		<attr name="y">
+			<float>0.44247300898786385</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_27">
+		<attr name="x">
+			<float>-0.370548283646946</float>
+		</attr>
+		<attr name="y">
+			<float>0.6443837692821954</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_28">
+		<attr name="x">
+			<float>-0.3223715008548096</float>
+		</attr>
+		<attr name="y">
+			<float>0.24056224869353232</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_29">
+		<attr name="x">
+			<float>-0.3127361442963823</float>
+		</attr>
+		<attr name="y">
+			<float>0.6443837692821954</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_30">
+		<attr name="x">
+			<float>-0.3320068574132369</float>
+		</attr>
+		<attr name="y">
+			<float>-0.062303891747965016</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_31">
+		<attr name="x">
+			<float>-0.2549240049458187</float>
+		</attr>
+		<attr name="y">
+			<float>0.5434283891350297</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_32">
+		<attr name="x">
+			<float>1.498710888687945</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1127815818215479</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_33">
+		<attr name="x">
+			<float>1.5565230280385085</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1127815818215479</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_34">
+		<attr name="x">
+			<float>1.643241237064354</float>
+		</attr>
+		<attr name="y">
+			<float>0.5434283891350297</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_35">
+		<attr name="x">
+			<float>1.6239705239474995</float>
+		</attr>
+		<attr name="y">
+			<float>0.6443837692821954</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_36">
+		<attr name="x">
+			<float>1.4408987493373813</float>
+		</attr>
+		<attr name="y">
+			<float>0.13960686854636653</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_37">
+		<attr name="x">
+			<float>1.5854290977137904</float>
+		</attr>
+		<attr name="y">
+			<float>0.6443837692821954</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_38">
+		<attr name="x">
+			<float>1.681782663298063</float>
+		</attr>
+		<attr name="y">
+			<float>0.6443837692821954</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_39">
+		<attr name="x">
+			<float>1.4023573231036723</float>
+		</attr>
+		<attr name="y">
+			<float>0.44247300898786385</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_40">
+		<attr name="x">
+			<float>1.5276169583632269</float>
+		</attr>
+		<attr name="y">
+			<float>0.5939060792086125</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_41">
+		<attr name="x">
+			<float>1.7395948026486268</float>
+		</attr>
+		<attr name="y">
+			<float>0.5434283891350297</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_42">
+		<attr name="x">
+			<float>1.4505341058958086</float>
+		</attr>
+		<attr name="y">
+			<float>0.6443837692821954</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_43">
+		<attr name="x">
+			<float>1.5372523149216542</float>
+		</attr>
+		<attr name="y">
+			<float>0.3415176288406981</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_44">
+		<attr name="x">
+			<float>1.7588655157654813</float>
+		</attr>
+		<attr name="y">
+			<float>0.39199531891428097</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_45">
+		<attr name="x">
+			<float>1.5083462452463723</float>
+		</attr>
+		<attr name="y">
+			<float>0.7453391494293612</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_46">
+		<attr name="x">
+			<float>1.5854290977137904</float>
+		</attr>
+		<attr name="y">
+			<float>0.08912917847278365</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_47">
+		<attr name="x">
+			<float>1.7010533764149176</float>
+		</attr>
+		<attr name="y">
+			<float>0.44247300898786385</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_48">
+		<attr name="x">
+			<float>1.5661583845969358</float>
+		</attr>
+		<attr name="y">
+			<float>0.7453391494293612</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_49">
+		<attr name="x">
+			<float>1.2578269747272632</float>
+		</attr>
+		<attr name="y">
+			<float>-0.31469234211587943</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_50">
+		<attr name="x">
+			<float>1.2963684009609722</float>
+		</attr>
+		<attr name="y">
+			<float>0.2910399387671152</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_51">
+		<attr name="x">
+			<float>1.2096501919351268</float>
+		</attr>
+		<attr name="y">
+			<float>-0.062303891747965016</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_52">
+		<attr name="x">
+			<float>1.2963684009609722</float>
+		</attr>
+		<attr name="y">
+			<float>-0.011826201674382126</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_53">
+		<attr name="x">
+			<float>1.151838052584563</float>
+		</attr>
+		<attr name="y">
+			<float>0.1900845586199494</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_54">
+		<attr name="x">
+			<float>1.3060037575193995</float>
+		</attr>
+		<attr name="y">
+			<float>-0.31469234211587943</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_55">
+		<attr name="x">
+			<float>1.0940259132339996</float>
+		</attr>
+		<attr name="y">
+			<float>0.2910399387671152</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_56">
+		<attr name="x">
+			<float>1.0362137738834358</float>
+		</attr>
+		<attr name="y">
+			<float>0.39199531891428097</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_57">
+		<attr name="x">
+			<float>1.0169430607665813</float>
+		</attr>
+		<attr name="y">
+			<float>0.08912917847278365</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_58">
+		<attr name="x">
+			<float>0.9687662779744449</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1127815818215479</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_59">
+		<attr name="x">
+			<float>0.9109541386238813</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1127815818215479</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_60">
+		<attr name="x">
+			<float>0.8531419992733177</float>
+		</attr>
+		<attr name="y">
+			<float>-0.062303891747965016</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_61">
+		<attr name="x">
+			<float>0.7953298599227541</float>
+		</attr>
+		<attr name="y">
+			<float>0.08912917847278365</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_62">
+		<attr name="x">
+			<float>0.7664237902474722</float>
+		</attr>
+		<attr name="y">
+			<float>0.39199531891428097</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_63">
+		<attr name="x">
+			<float>0.8242359295980358</float>
+		</attr>
+		<attr name="y">
+			<float>0.5434283891350297</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_64">
+		<attr name="x">
+			<float>0.8820480689485996</float>
+		</attr>
+		<attr name="y">
+			<float>0.49295069906144673</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_65">
+		<attr name="x">
+			<float>0.9398602082991632</float>
+		</attr>
+		<attr name="y">
+			<float>0.39199531891428097</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_66">
+		<attr name="x">
+			<float>0.9976723476497268</float>
+		</attr>
+		<attr name="y">
+			<float>0.49295069906144673</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_67">
+		<attr name="x">
+			<float>1.0554844870002904</float>
+		</attr>
+		<attr name="y">
+			<float>0.49295069906144673</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_68">
+		<attr name="x">
+			<float>1.1132966263508541</float>
+		</attr>
+		<attr name="y">
+			<float>0.44247300898786385</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_69">
+		<attr name="x">
+			<float>1.1711087657014176</float>
+		</attr>
+		<attr name="y">
+			<float>0.24056224869353232</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_70">
+		<attr name="x">
+			<float>1.219285548493554</float>
+		</attr>
+		<attr name="y">
+			<float>0.2910399387671152</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_71">
+		<attr name="x">
+			<float>1.1711087657014176</float>
+		</attr>
+		<attr name="y">
+			<float>0.5939060792086125</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_72">
+		<attr name="x">
+			<float>1.2000148353766995</float>
+		</attr>
+		<attr name="y">
+			<float>0.6948614593557783</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_73">
+		<attr name="x">
+			<float>1.2578269747272632</float>
+		</attr>
+		<attr name="y">
+			<float>0.5939060792086125</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_74">
+		<attr name="x">
+			<float>0.8916834255070267</float>
+		</attr>
+		<attr name="y">
+			<float>0.13960686854636653</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_75">
+		<attr name="x">
+			<float>0.8916834255070267</float>
+		</attr>
+		<attr name="y">
+			<float>0.24056224869353232</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_76">
+		<attr name="x">
+			<float>-1.0932000255289913</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5670807924837938</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_77">
+		<attr name="x">
+			<float>-0.9197636074773005</float>
+		</attr>
+		<attr name="y">
+			<float>0.24056224869353232</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_78">
+		<attr name="x">
+			<float>-1.0932000255289913</float>
+		</attr>
+		<attr name="y">
+			<float>0.795816839502944</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_79">
+		<attr name="x">
+			<float>-1.151012164879555</float>
+		</attr>
+		<attr name="y">
+			<float>-0.31469234211587943</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_80">
+		<attr name="x">
+			<float>-0.9775757468278642</float>
+		</attr>
+		<attr name="y">
+			<float>0.5434283891350297</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_81">
+		<attr name="x">
+			<float>-1.0353878861784278</float>
+		</attr>
+		<attr name="y">
+			<float>0.6948614593557783</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_82">
+		<attr name="x">
+			<float>-1.1991889476716915</float>
+		</attr>
+		<attr name="y">
+			<float>-0.011826201674382126</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_83">
+		<attr name="x">
+			<float>-1.0353878861784278</float>
+		</attr>
+		<attr name="y">
+			<float>0.6948614593557783</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_84">
+		<attr name="x">
+			<float>-0.9775757468278642</float>
+		</attr>
+		<attr name="y">
+			<float>0.5939060792086125</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_85">
+		<attr name="x">
+			<float>-1.257001087022255</float>
+		</attr>
+		<attr name="y">
+			<float>0.1900845586199494</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_86">
+		<attr name="x">
+			<float>-1.073929312412137</float>
+		</attr>
+		<attr name="y">
+			<float>0.49295069906144673</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_87">
+		<attr name="x">
+			<float>-0.9197636074773005</float>
+		</attr>
+		<attr name="y">
+			<float>0.5939060792086125</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_88">
+		<attr name="x">
+			<float>-1.2762718001391096</float>
+		</attr>
+		<attr name="y">
+			<float>0.49295069906144673</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_89">
+		<attr name="x">
+			<float>-1.0546585992952824</float>
+		</attr>
+		<attr name="y">
+			<float>0.1900845586199494</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_90">
+		<attr name="x">
+			<float>-0.8619514681267368</float>
+		</attr>
+		<attr name="y">
+			<float>0.7453391494293612</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_91">
+		<attr name="x">
+			<float>-1.3148132263728187</float>
+		</attr>
+		<attr name="y">
+			<float>0.795816839502944</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_92">
+		<attr name="x">
+			<float>-1.1028353820874186</float>
+		</attr>
+		<attr name="y">
+			<float>0.03865148839920076</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_93">
+		<attr name="x">
+			<float>-0.8041393287761732</float>
+		</attr>
+		<attr name="y">
+			<float>0.6443837692821954</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_94">
+		<attr name="x">
+			<float>-1.3629900091649552</float>
+		</attr>
+		<attr name="y">
+			<float>1.0986829799444413</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_95">
+		<attr name="x">
+			<float>-1.1413768083211278</float>
+		</attr>
+		<attr name="y">
+			<float>-0.011826201674382126</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_96">
+		<attr name="x">
+			<float>-0.7463271894256096</float>
+		</attr>
+		<attr name="y">
+			<float>0.49295069906144673</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_97">
+		<attr name="x">
+			<float>-1.4208021485155187</float>
+		</attr>
+		<attr name="y">
+			<float>1.4015491203859387</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_98">
+		<attr name="x">
+			<float>-1.0835646689705642</float>
+		</attr>
+		<attr name="y">
+			<float>-0.26421465204229655</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_99">
+		<attr name="x">
+			<float>-0.688515050075046</float>
+		</attr>
+		<attr name="y">
+			<float>0.49295069906144673</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_100">
+		<attr name="x">
+			<float>-1.4689789313076551</float>
+		</attr>
+		<attr name="y">
+			<float>1.704415260827436</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_101">
+		<attr name="x">
+			<float>-1.045023242736855</float>
+		</attr>
+		<attr name="y">
+			<float>-0.516603102410211</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_102">
+		<attr name="x">
+			<float>-0.6307029107244824</float>
+		</attr>
+		<attr name="y">
+			<float>0.5939060792086125</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_103">
+		<attr name="x">
+			<float>-1.5267910706582186</float>
+		</attr>
+		<attr name="y">
+			<float>2.0072814012689335</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_104">
+		<attr name="x">
+			<float>-0.5728907713739186</float>
+		</attr>
+		<attr name="y">
+			<float>0.6443837692821954</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_105">
+		<attr name="x">
+			<float>-1.5846032100087823</float>
+		</attr>
+		<attr name="y">
+			<float>2.259669851636848</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_106">
+		<attr name="x">
+			<float>-0.515078632023355</float>
+		</attr>
+		<attr name="y">
+			<float>0.49295069906144673</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_107">
+		<attr name="x">
+			<float>-1.6135092796840642</float>
+		</attr>
+		<attr name="y">
+			<float>2.512058302004762</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_108">
+		<attr name="x">
+			<float>-0.5343493451402096</float>
+		</attr>
+		<attr name="y">
+			<float>0.3415176288406981</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_109">
+		<attr name="x">
+			<float>-1.5556971403335005</float>
+		</attr>
+		<attr name="y">
+			<float>2.5625359920783453</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_110">
+		<attr name="x">
+			<float>-0.5921614844907732</float>
+		</attr>
+		<attr name="y">
+			<float>0.44247300898786385</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_111">
+		<attr name="x">
+			<float>-1.497885000982937</float>
+		</attr>
+		<attr name="y">
+			<float>2.310147541710431</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_112">
+		<attr name="x">
+			<float>-0.6114321976076278</float>
+		</attr>
+		<attr name="y">
+			<float>0.24056224869353232</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_113">
+		<attr name="x">
+			<float>-1.4400728616323732</float>
+		</attr>
+		<attr name="y">
+			<float>2.0072814012689335</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_114">
+		<attr name="x">
+			<float>-0.6210675541660551</float>
+		</attr>
+		<attr name="y">
+			<float>-0.011826201674382126</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_115">
+		<attr name="x">
+			<float>-1.3918960788402368</float>
+		</attr>
+		<attr name="y">
+			<float>1.704415260827436</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_116">
+		<attr name="x">
+			<float>-0.6788796935166187</float>
+		</attr>
+		<attr name="y">
+			<float>0.08912917847278365</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_117">
+		<attr name="x">
+			<float>-1.3437192960481006</float>
+		</attr>
+		<attr name="y">
+			<float>1.4015491203859387</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_118">
+		<attr name="x">
+			<float>-0.7366918328671823</float>
+		</attr>
+		<attr name="y">
+			<float>0.3415176288406981</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_119">
+		<attr name="x">
+			<float>-1.3051778698143914</float>
+		</attr>
+		<attr name="y">
+			<float>1.0986829799444413</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_120">
+		<attr name="x">
+			<float>-0.7945039722177459</float>
+		</attr>
+		<attr name="y">
+			<float>0.49295069906144673</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_121">
+		<attr name="x">
+			<float>-1.2666364435806823</float>
+		</attr>
+		<attr name="y">
+			<float>0.795816839502944</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_122">
+		<attr name="x">
+			<float>-0.8426807550098824</float>
+		</attr>
+		<attr name="y">
+			<float>0.44247300898786385</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_123">
+		<attr name="x">
+			<float>-1.2088243042301188</float>
+		</attr>
+		<attr name="y">
+			<float>0.5434283891350297</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_124">
+		<attr name="x">
+			<float>-0.8234100418930278</float>
+		</attr>
+		<attr name="y">
+			<float>0.13960686854636653</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_125">
+		<attr name="x">
+			<float>-1.151012164879555</float>
+		</attr>
+		<attr name="y">
+			<float>0.39199531891428097</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_126">
+		<attr name="x">
+			<float>-0.8619514681267368</float>
+		</attr>
+		<attr name="y">
+			<float>0.03865148839920076</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_127">
+		<attr name="x">
+			<float>-1.151012164879555</float>
+		</attr>
+		<attr name="y">
+			<float>0.6948614593557783</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_128">
+		<attr name="x">
+			<float>-1.5171557140997913</float>
+		</attr>
+		<attr name="y">
+			<float>-1.37472383366112</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_129">
+		<attr name="x">
+			<float>-1.5171557140997913</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0718576932196227</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_130">
+		<attr name="x">
+			<float>-1.574967853450355</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2232907634403714</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_131">
+		<attr name="x">
+			<float>-1.507520357541364</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3242461435875372</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_132">
+		<attr name="x">
+			<float>-1.6231446362424915</float>
+		</attr>
+		<attr name="y">
+			<float>-0.970902313072457</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_133">
+		<attr name="x">
+			<float>-1.6231446362424915</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6680361726309597</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_134">
+		<attr name="x">
+			<float>-1.6135092796840642</float>
+		</attr>
+		<attr name="y">
+			<float>-0.46612541233662813</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_135">
+		<attr name="x">
+			<float>-1.5653324968919278</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7689915527781255</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_136">
+		<attr name="x">
+			<float>0.13049025739127224</float>
+		</attr>
+		<attr name="y">
+			<float>-2.232844564912029</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_137">
+		<attr name="x">
+			<float>0.8049652164811814</float>
+		</attr>
+		<attr name="y">
+			<float>-2.2833222549856123</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_138">
+		<attr name="x">
+			<float>0.6797055812216267</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2232907634403714</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_139">
+		<attr name="x">
+			<float>0.7471530771306176</float>
+		</attr>
+		<attr name="y">
+			<float>-2.1318891847648636</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_140">
+		<attr name="x">
+			<float>0.689340937780054</float>
+		</attr>
+		<attr name="y">
+			<float>-1.5261569038818688</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_141">
+		<attr name="x">
+			<float>0.689340937780054</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9299784244705318</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_142">
+		<attr name="x">
+			<float>0.7375177205721904</float>
+		</attr>
+		<attr name="y">
+			<float>-1.778545354249783</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_143">
+		<attr name="x">
+			<float>0.6411641549879177</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6271122840290346</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_144">
+		<attr name="x">
+			<float>0.7953298599227541</float>
+		</attr>
+		<attr name="y">
+			<float>-1.778545354249783</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_145">
+		<attr name="x">
+			<float>0.6218934418710631</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3242461435875372</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_146">
+		<attr name="x">
+			<float>0.8435066427148904</float>
+		</attr>
+		<attr name="y">
+			<float>-2.0309338046176975</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_147">
+		<attr name="x">
+			<float>0.5640813025204995</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1728130733667885</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_148">
+		<attr name="x">
+			<float>0.8146005730396086</float>
+		</attr>
+		<attr name="y">
+			<float>-2.2833222549856123</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_149">
+		<attr name="x">
+			<float>0.5062691631699359</float>
+		</attr>
+		<attr name="y">
+			<float>-0.970902313072457</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_150">
+		<attr name="x">
+			<float>0.4580923803777995</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7185138627045425</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_151">
+		<attr name="x">
+			<float>0.40028024102723586</float>
+		</attr>
+		<attr name="y">
+			<float>-0.46612541233662813</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_152">
+		<attr name="x">
+			<float>0.34246810167667224</float>
+		</attr>
+		<attr name="y">
+			<float>-0.21373696196871367</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_153">
+		<attr name="x">
+			<float>0.29429131888453586</float>
+		</attr>
+		<attr name="y">
+			<float>-0.011826201674382126</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_154">
+		<attr name="x">
+			<float>0.27502060576768134</float>
+		</attr>
+		<attr name="y">
+			<float>0.2910399387671152</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_155">
+		<attr name="x">
+			<float>0.25574989265082676</float>
+		</attr>
+		<attr name="y">
+			<float>0.5939060792086125</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_156">
+		<attr name="x">
+			<float>0.31356203200139043</float>
+		</attr>
+		<attr name="y">
+			<float>0.5939060792086125</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_157">
+		<attr name="x">
+			<float>0.37137417135195405</float>
+		</attr>
+		<attr name="y">
+			<float>0.39199531891428097</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_158">
+		<attr name="x">
+			<float>0.40991559758566315</float>
+		</attr>
+		<attr name="y">
+			<float>0.08912917847278365</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_159">
+		<attr name="x">
+			<float>0.44845702381937225</float>
+		</attr>
+		<attr name="y">
+			<float>-0.21373696196871367</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_160">
+		<attr name="x">
+			<float>0.4966338066115086</float>
+		</attr>
+		<attr name="y">
+			<float>-0.516603102410211</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_161">
+		<attr name="x">
+			<float>0.5544459459620722</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7689915527781255</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_162">
+		<attr name="x">
+			<float>0.6122580853126358</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0213800031460398</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_163">
+		<attr name="x">
+			<float>0.6218934418710631</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2232907634403714</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_164">
+		<attr name="x">
+			<float>0.6604348681047723</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4252015237347029</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_165">
+		<attr name="x">
+			<float>0.18830239674183585</float>
+		</attr>
+		<attr name="y">
+			<float>-2.2833222549856123</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_166">
+		<attr name="x">
+			<float>0.1690316836249813</float>
+		</attr>
+		<attr name="y">
+			<float>-2.0814114946912805</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_167">
+		<attr name="x">
+			<float>0.22684382297554495</float>
+		</attr>
+		<attr name="y">
+			<float>-2.1318891847648636</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_168">
+		<attr name="x">
+			<float>0.26538524920925405</float>
+		</attr>
+		<attr name="y">
+			<float>-2.2833222549856123</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_169">
+		<attr name="x">
+			<float>0.2075731098586904</float>
+		</attr>
+		<attr name="y">
+			<float>-2.2833222549856123</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_170">
+		<attr name="x">
+			<float>-1.0835646689705642</float>
+		</attr>
+		<attr name="y">
+			<float>-2.2833222549856123</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_171">
+		<attr name="x">
+			<float>-1.045023242736855</float>
+		</attr>
+		<attr name="y">
+			<float>-2.0814114946912805</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_172">
+		<attr name="x">
+			<float>-0.9968464599447187</float>
+		</attr>
+		<attr name="y">
+			<float>-2.182366874838446</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_173">
+		<attr name="x">
+			<float>-1.0161171730615732</float>
+		</attr>
+		<attr name="y">
+			<float>-2.2833222549856123</float>
+		</attr>
+	</node>
+	<node id="gw_purchase_174">
+		<attr name="x">
+			<float>-1.073929312412137</float>
+		</attr>
+		<attr name="y">
+			<float>-2.2833222549856123</float>
+		</attr>
+	</node>
+	<edge from="gw_purchase_170" to="gw_purchase_171"/>
+	<edge from="gw_purchase_156" to="gw_purchase_157"/>
+	<edge from="gw_purchase_26" to="gw_purchase_28"/>
+	<edge from="gw_purchase_72" to="gw_purchase_73"/>
+	<edge from="gw_purchase_168" to="gw_purchase_169"/>
+	<edge from="gw_purchase_162" to="gw_purchase_163"/>
+	<edge from="gw_purchase_83" to="gw_purchase_86"/>
+	<edge from="gw_purchase_103" to="gw_purchase_105"/>
+	<edge from="gw_purchase_111" to="gw_purchase_113"/>
+	<edge from="gw_purchase_160" to="gw_purchase_161"/>
+	<edge from="gw_purchase_94" to="gw_purchase_97"/>
+	<edge from="gw_purchase_134" to="gw_purchase_135"/>
+	<edge from="gw_purchase_172" to="gw_purchase_173"/>
+	<edge from="gw_purchase_104" to="gw_purchase_106"/>
+	<edge from="gw_purchase_45" to="gw_purchase_48"/>
+	<edge from="gw_purchase_31" to="gw_purchase_22"/>
+	<edge from="gw_purchase_155" to="gw_purchase_156"/>
+	<edge from="gw_purchase_146" to="gw_purchase_148"/>
+	<edge from="gw_purchase_163" to="gw_purchase_164"/>
+	<edge from="gw_purchase_23" to="gw_purchase_25"/>
+	<edge from="gw_purchase_139" to="gw_purchase_141"/>
+	<edge from="gw_purchase_147" to="gw_purchase_149"/>
+	<edge from="gw_purchase_36" to="gw_purchase_39"/>
+	<edge from="gw_purchase_116" to="gw_purchase_118"/>
+	<edge from="gw_purchase_108" to="gw_purchase_110"/>
+	<edge from="gw_purchase_140" to="gw_purchase_142"/>
+	<edge from="gw_purchase_122" to="gw_purchase_124"/>
+	<edge from="gw_purchase_95" to="gw_purchase_98"/>
+	<edge from="gw_purchase_55" to="gw_purchase_56"/>
+	<edge from="gw_purchase_164" to="gw_purchase_138"/>
+	<edge from="gw_purchase_173" to="gw_purchase_174"/>
+	<edge from="gw_purchase_128" to="gw_purchase_130"/>
+	<edge from="gw_purchase_39" to="gw_purchase_42"/>
+	<edge from="gw_purchase_67" to="gw_purchase_68"/>
+	<edge from="gw_purchase_114" to="gw_purchase_116"/>
+	<edge from="gw_purchase_7" to="gw_purchase_8"/>
+	<edge from="gw_purchase_49" to="gw_purchase_51"/>
+	<edge from="gw_purchase_150" to="gw_purchase_151"/>
+	<edge from="gw_purchase_69" to="gw_purchase_70"/>
+	<edge from="gw_purchase_8" to="gw_purchase_9"/>
+	<edge from="gw_purchase_43" to="gw_purchase_46"/>
+	<edge from="gw_purchase_128" to="gw_purchase_131"/>
+	<edge from="gw_purchase_65" to="gw_purchase_66"/>
+	<edge from="gw_purchase_58" to="gw_purchase_59"/>
+	<edge from="gw_purchase_47" to="gw_purchase_34"/>
+	<edge from="gw_purchase_106" to="gw_purchase_108"/>
+	<edge from="gw_purchase_76" to="gw_purchase_101"/>
+	<edge from="gw_purchase_3" to="gw_purchase_6"/>
+	<edge from="gw_purchase_79" to="gw_purchase_82"/>
+	<edge from="gw_purchase_144" to="gw_purchase_146"/>
+	<edge from="gw_purchase_126" to="gw_purchase_77"/>
+	<edge from="gw_purchase_51" to="gw_purchase_53"/>
+	<edge from="gw_purchase_119" to="gw_purchase_121"/>
+	<edge from="gw_purchase_38" to="gw_purchase_41"/>
+	<edge from="gw_purchase_145" to="gw_purchase_147"/>
+	<edge from="gw_purchase_10" to="gw_purchase_4"/>
+	<edge from="gw_purchase_52" to="gw_purchase_54"/>
+	<edge from="gw_purchase_118" to="gw_purchase_120"/>
+	<edge from="gw_purchase_137" to="gw_purchase_148"/>
+	<edge from="gw_purchase_53" to="gw_purchase_55"/>
+	<edge from="gw_purchase_21" to="gw_purchase_30"/>
+	<edge from="gw_purchase_66" to="gw_purchase_67"/>
+	<edge from="gw_purchase_34" to="gw_purchase_37"/>
+	<edge from="gw_purchase_37" to="gw_purchase_40"/>
+	<edge from="gw_purchase_3" to="gw_purchase_5"/>
+	<edge from="gw_purchase_143" to="gw_purchase_145"/>
+	<edge from="gw_purchase_166" to="gw_purchase_167"/>
+	<edge from="gw_purchase_4" to="gw_purchase_6"/>
+	<edge from="gw_purchase_48" to="gw_purchase_35"/>
+	<edge from="gw_purchase_5" to="gw_purchase_7"/>
+	<edge from="gw_purchase_93" to="gw_purchase_96"/>
+	<edge from="gw_purchase_57" to="gw_purchase_58"/>
+	<edge from="gw_purchase_46" to="gw_purchase_33"/>
+	<edge from="gw_purchase_136" to="gw_purchase_136"/>
+	<edge from="gw_purchase_170" to="gw_purchase_174"/>
+	<edge from="gw_purchase_99" to="gw_purchase_102"/>
+	<edge from="gw_purchase_32" to="gw_purchase_36"/>
+	<edge from="gw_purchase_73" to="gw_purchase_50"/>
+	<edge from="gw_purchase_91" to="gw_purchase_94"/>
+	<edge from="gw_purchase_59" to="gw_purchase_60"/>
+	<edge from="gw_purchase_50" to="gw_purchase_52"/>
+	<edge from="gw_purchase_41" to="gw_purchase_44"/>
+	<edge from="gw_purchase_129" to="gw_purchase_131"/>
+	<edge from="gw_purchase_74" to="gw_purchase_75"/>
+	<edge from="gw_purchase_61" to="gw_purchase_62"/>
+	<edge from="gw_purchase_127" to="gw_purchase_78"/>
+	<edge from="gw_purchase_158" to="gw_purchase_159"/>
+	<edge from="gw_purchase_87" to="gw_purchase_90"/>
+	<edge from="gw_purchase_32" to="gw_purchase_33"/>
+	<edge from="gw_purchase_20" to="gw_purchase_12"/>
+	<edge from="gw_purchase_102" to="gw_purchase_104"/>
+	<edge from="gw_purchase_110" to="gw_purchase_112"/>
+	<edge from="gw_purchase_88" to="gw_purchase_91"/>
+	<edge from="gw_purchase_153" to="gw_purchase_154"/>
+	<edge from="gw_purchase_137" to="gw_purchase_139"/>
+	<edge from="gw_purchase_167" to="gw_purchase_168"/>
+	<edge from="gw_purchase_11" to="gw_purchase_13"/>
+	<edge from="gw_purchase_165" to="gw_purchase_169"/>
+	<edge from="gw_purchase_92" to="gw_purchase_95"/>
+	<edge from="gw_purchase_100" to="gw_purchase_103"/>
+	<edge from="gw_purchase_12" to="gw_purchase_14"/>
+	<edge from="gw_purchase_132" to="gw_purchase_133"/>
+	<edge from="gw_purchase_157" to="gw_purchase_158"/>
+	<edge from="gw_purchase_40" to="gw_purchase_43"/>
+	<edge from="gw_purchase_13" to="gw_purchase_15"/>
+	<edge from="gw_purchase_21" to="gw_purchase_23"/>
+	<edge from="gw_purchase_141" to="gw_purchase_143"/>
+	<edge from="gw_purchase_165" to="gw_purchase_166"/>
+	<edge from="gw_purchase_121" to="gw_purchase_123"/>
+	<edge from="gw_purchase_96" to="gw_purchase_99"/>
+	<edge from="gw_purchase_80" to="gw_purchase_83"/>
+	<edge from="gw_purchase_171" to="gw_purchase_172"/>
+	<edge from="gw_purchase_89" to="gw_purchase_92"/>
+	<edge from="gw_purchase_123" to="gw_purchase_125"/>
+	<edge from="gw_purchase_161" to="gw_purchase_162"/>
+	<edge from="gw_purchase_44" to="gw_purchase_47"/>
+	<edge from="gw_purchase_84" to="gw_purchase_87"/>
+	<edge from="gw_purchase_76" to="gw_purchase_79"/>
+	<edge from="gw_purchase_14" to="gw_purchase_16"/>
+	<edge from="gw_purchase_142" to="gw_purchase_144"/>
+	<edge from="gw_purchase_125" to="gw_purchase_127"/>
+	<edge from="gw_purchase_35" to="gw_purchase_38"/>
+	<edge from="gw_purchase_71" to="gw_purchase_72"/>
+	<edge from="gw_purchase_130" to="gw_purchase_132"/>
+	<edge from="gw_purchase_85" to="gw_purchase_88"/>
+	<edge from="gw_purchase_78" to="gw_purchase_81"/>
+	<edge from="gw_purchase_113" to="gw_purchase_115"/>
+	<edge from="gw_purchase_133" to="gw_purchase_134"/>
+	<edge from="gw_purchase_24" to="gw_purchase_26"/>
+	<edge from="gw_purchase_97" to="gw_purchase_100"/>
+	<edge from="gw_purchase_81" to="gw_purchase_84"/>
+	<edge from="gw_purchase_25" to="gw_purchase_27"/>
+	<edge from="gw_purchase_49" to="gw_purchase_54"/>
+	<edge from="gw_purchase_63" to="gw_purchase_64"/>
+	<edge from="gw_purchase_159" to="gw_purchase_160"/>
+	<edge from="gw_purchase_27" to="gw_purchase_29"/>
+	<edge from="gw_purchase_1" to="gw_purchase_2"/>
+	<edge from="gw_purchase_70" to="gw_purchase_71"/>
+	<edge from="gw_purchase_28" to="gw_purchase_30"/>
+	<edge from="gw_purchase_90" to="gw_purchase_93"/>
+	<edge from="gw_purchase_29" to="gw_purchase_31"/>
+	<edge from="gw_purchase_138" to="gw_purchase_140"/>
+	<edge from="gw_purchase_77" to="gw_purchase_80"/>
+	<edge from="gw_purchase_56" to="gw_purchase_57"/>
+	<edge from="gw_purchase_105" to="gw_purchase_107"/>
+	<edge from="gw_purchase_11" to="gw_purchase_18"/>
+	<edge from="gw_purchase_16" to="gw_purchase_18"/>
+	<edge from="gw_purchase_107" to="gw_purchase_109"/>
+	<edge from="gw_purchase_115" to="gw_purchase_117"/>
+	<edge from="gw_purchase_0" to="gw_purchase_0"/>
+	<edge from="gw_purchase_17" to="gw_purchase_19"/>
+	<edge from="gw_purchase_22" to="gw_purchase_24"/>
+	<edge from="gw_purchase_135" to="gw_purchase_129"/>
+	<edge from="gw_purchase_68" to="gw_purchase_69"/>
+	<edge from="gw_purchase_60" to="gw_purchase_61"/>
+	<edge from="gw_purchase_42" to="gw_purchase_45"/>
+	<edge from="gw_purchase_109" to="gw_purchase_111"/>
+	<edge from="gw_purchase_117" to="gw_purchase_119"/>
+	<edge from="gw_purchase_120" to="gw_purchase_122"/>
+	<edge from="gw_purchase_9" to="gw_purchase_10"/>
+	<edge from="gw_purchase_62" to="gw_purchase_63"/>
+	<edge from="gw_purchase_82" to="gw_purchase_85"/>
+	<edge from="gw_purchase_98" to="gw_purchase_101"/>
+	<edge from="gw_purchase_19" to="gw_purchase_20"/>
+	<edge from="gw_purchase_151" to="gw_purchase_152"/>
+	<edge from="gw_purchase_15" to="gw_purchase_17"/>
+	<edge from="gw_purchase_64" to="gw_purchase_65"/>
+	<edge from="gw_purchase_86" to="gw_purchase_89"/>
+	<edge from="gw_purchase_154" to="gw_purchase_155"/>
+	<edge from="gw_purchase_124" to="gw_purchase_126"/>
+	<edge from="gw_purchase_149" to="gw_purchase_150"/>
+	<edge from="gw_purchase_152" to="gw_purchase_153"/>
+	<edge from="gw_purchase_112" to="gw_purchase_114"/>
+</graph>
+</gxl>

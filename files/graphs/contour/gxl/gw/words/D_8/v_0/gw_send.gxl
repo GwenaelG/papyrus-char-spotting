@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="gw_send">
+	<attr name="x_mean">
+		<float>115.2375</float>
+	</attr>
+	<attr name="y_mean">
+		<float>26.6</float>
+	</attr>
+	<attr name="x_std">
+		<float>65.29361449445115</float>
+	</attr>
+	<attr name="y_std">
+		<float>8.509700347250778</float>
+	</attr>
+	<attr name="x_max">
+		<float>225</float>
+	</attr>
+	<attr name="y_max">
+		<float>38</float>
+	</attr>
+	<node id="gw_send_0">
+		<attr name="x">
+			<float>-0.8306708155145748</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7755854766533886</float>
+		</attr>
+	</node>
+	<node id="gw_send_1">
+		<attr name="x">
+			<float>-0.9531942821956829</float>
+		</attr>
+		<attr name="y">
+			<float>1.222134690484127</float>
+		</attr>
+	</node>
+	<node id="gw_send_2">
+		<attr name="x">
+			<float>-0.9531942821956829</float>
+		</attr>
+		<attr name="y">
+			<float>-0.305533672621032</float>
+		</attr>
+	</node>
+	<node id="gw_send_3">
+		<attr name="x">
+			<float>-0.9225634155254059</float>
+		</attr>
+		<attr name="y">
+			<float>0.6345699354436813</float>
+		</attr>
+	</node>
+	<node id="gw_send_4">
+		<attr name="x">
+			<float>-1.0757177488767908</float>
+		</attr>
+		<attr name="y">
+			<float>0.399544033427503</float>
+		</attr>
+	</node>
+	<node id="gw_send_5">
+		<attr name="x">
+			<float>-0.8000399488442977</float>
+		</attr>
+		<attr name="y">
+			<float>0.16451813141132465</float>
+		</attr>
+	</node>
+	<node id="gw_send_6">
+		<attr name="x">
+			<float>-1.0757177488767908</float>
+		</attr>
+		<attr name="y">
+			<float>1.104621739476038</float>
+		</attr>
+	</node>
+	<node id="gw_send_7">
+		<attr name="x">
+			<float>-0.7540936488388823</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6580725256452995</float>
+		</attr>
+	</node>
+	<node id="gw_send_8">
+		<attr name="x">
+			<float>-1.2135566488930376</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3631502316938344</float>
+		</attr>
+	</node>
+	<node id="gw_send_9">
+		<attr name="x">
+			<float>-1.5658116156012232</float>
+		</attr>
+		<attr name="y">
+			<float>0.2820310824194138</float>
+		</attr>
+	</node>
+	<node id="gw_send_10">
+		<attr name="x">
+			<float>-1.6730196489471927</float>
+		</attr>
+		<attr name="y">
+			<float>1.222134690484127</float>
+		</attr>
+	</node>
+	<node id="gw_send_11">
+		<attr name="x">
+			<float>-1.228872082228176</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6580725256452995</float>
+		</attr>
+	</node>
+	<node id="gw_send_12">
+		<attr name="x">
+			<float>-1.3360801155741455</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7755854766533886</float>
+		</attr>
+	</node>
+	<node id="gw_send_13">
+		<attr name="x">
+			<float>-1.5351807489309461</float>
+		</attr>
+		<attr name="y">
+			<float>0.16451813141132465</float>
+		</attr>
+	</node>
+	<node id="gw_send_14">
+		<attr name="x">
+			<float>-1.5504961822660848</float>
+		</attr>
+		<attr name="y">
+			<float>1.104621739476038</float>
+		</attr>
+	</node>
+	<node id="gw_send_15">
+		<attr name="x">
+			<float>-1.136979482217345</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2456372806857452</float>
+		</attr>
+	</node>
+	<node id="gw_send_16">
+		<attr name="x">
+			<float>-1.4126572822498382</float>
+		</attr>
+		<attr name="y">
+			<float>0.0470051804032355</float>
+		</attr>
+	</node>
+	<node id="gw_send_17">
+		<attr name="x">
+			<float>-1.6577042156120543</float>
+		</attr>
+		<attr name="y">
+			<float>0.0470051804032355</float>
+		</attr>
+	</node>
+	<node id="gw_send_18">
+		<attr name="x">
+			<float>-1.4279727155849766</float>
+		</attr>
+		<attr name="y">
+			<float>0.9871087884679488</float>
+		</attr>
+	</node>
+	<node id="gw_send_19">
+		<attr name="x">
+			<float>-1.5198653155958077</float>
+		</attr>
+		<attr name="y">
+			<float>0.6345699354436813</float>
+		</attr>
+	</node>
+	<node id="gw_send_20">
+		<attr name="x">
+			<float>-1.7649122489580238</float>
+		</attr>
+		<attr name="y">
+			<float>0.6345699354436813</float>
+		</attr>
+	</node>
+	<node id="gw_send_21">
+		<attr name="x">
+			<float>-1.3207646822390071</float>
+		</attr>
+		<attr name="y">
+			<float>0.2820310824194138</float>
+		</attr>
+	</node>
+	<node id="gw_send_22">
+		<attr name="x">
+			<float>1.1450200847182928</float>
+		</attr>
+		<attr name="y">
+			<float>-3.125844496815172</float>
+		</attr>
+	</node>
+	<node id="gw_send_23">
+		<attr name="x">
+			<float>-0.7081473488334667</float>
+		</attr>
+		<attr name="y">
+			<float>0.399544033427503</float>
+		</attr>
+	</node>
+	<node id="gw_send_24">
+		<attr name="x">
+			<float>0.5783490513181679</float>
+		</attr>
+		<attr name="y">
+			<float>0.7520828864517705</float>
+		</attr>
+	</node>
+	<node id="gw_send_25">
+		<attr name="x">
+			<float>0.9306040180263536</float>
+		</attr>
+		<attr name="y">
+			<float>0.6345699354436813</float>
+		</attr>
+	</node>
+	<node id="gw_send_26">
+		<attr name="x">
+			<float>1.0224966180371846</float>
+		</attr>
+		<attr name="y">
+			<float>-2.303253839758548</float>
+		</attr>
+	</node>
+	<node id="gw_send_27">
+		<attr name="x">
+			<float>-0.8306708155145748</float>
+		</attr>
+		<attr name="y">
+			<float>0.8695958374598596</float>
+		</attr>
+	</node>
+	<node id="gw_send_28">
+		<attr name="x">
+			<float>0.7008725179992761</float>
+		</attr>
+		<attr name="y">
+			<float>0.8695958374598596</float>
+		</attr>
+	</node>
+	<node id="gw_send_29">
+		<attr name="x">
+			<float>0.8080805513452456</float>
+		</attr>
+		<attr name="y">
+			<float>0.7520828864517705</float>
+		</attr>
+	</node>
+	<node id="gw_send_30">
+		<attr name="x">
+			<float>0.8999731513560767</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4806631827019237</float>
+		</attr>
+	</node>
+	<node id="gw_send_31">
+		<attr name="x">
+			<float>-0.7694090821740208</float>
+		</attr>
+		<attr name="y">
+			<float>0.8695958374598596</float>
+		</attr>
+	</node>
+	<node id="gw_send_32">
+		<attr name="x">
+			<float>0.8233959846803841</float>
+		</attr>
+		<attr name="y">
+			<float>0.9871087884679488</float>
+		</attr>
+	</node>
+	<node id="gw_send_33">
+		<attr name="x">
+			<float>0.8693422846857997</float>
+		</attr>
+		<attr name="y">
+			<float>-0.18802072161294284</float>
+		</attr>
+	</node>
+	<node id="gw_send_34">
+		<attr name="x">
+			<float>0.7774496846749686</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7755854766533886</float>
+		</attr>
+	</node>
+	<node id="gw_send_35">
+		<attr name="x">
+			<float>-0.6468856154929127</float>
+		</attr>
+		<attr name="y">
+			<float>0.6345699354436813</float>
+		</attr>
+	</node>
+	<node id="gw_send_36">
+		<attr name="x">
+			<float>0.9459194513614921</float>
+		</attr>
+		<attr name="y">
+			<float>0.7520828864517705</float>
+		</attr>
+	</node>
+	<node id="gw_send_37">
+		<attr name="x">
+			<float>0.9918657513669077</float>
+		</attr>
+		<attr name="y">
+			<float>-1.010611378669567</float>
+		</attr>
+	</node>
+	<node id="gw_send_38">
+		<attr name="x">
+			<float>0.6549262179938605</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5405595746372103</float>
+		</attr>
+	</node>
+	<node id="gw_send_39">
+		<attr name="x">
+			<float>-0.5243621488118047</float>
+		</attr>
+		<attr name="y">
+			<float>0.16451813141132465</float>
+		</attr>
+	</node>
+	<node id="gw_send_40">
+		<attr name="x">
+			<float>1.0684429180426003</float>
+		</attr>
+		<attr name="y">
+			<float>0.6345699354436813</float>
+		</attr>
+	</node>
+	<node id="gw_send_41">
+		<attr name="x">
+			<float>1.1143892180480157</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7156890847181019</float>
+		</attr>
+	</node>
+	<node id="gw_send_42">
+		<attr name="x">
+			<float>0.5324027513127524</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6580725256452995</float>
+		</attr>
+	</node>
+	<node id="gw_send_43">
+		<attr name="x">
+			<float>-0.4631004154712506</float>
+		</attr>
+		<attr name="y">
+			<float>0.5170569844355921</float>
+		</attr>
+	</node>
+	<node id="gw_send_44">
+		<attr name="x">
+			<float>1.1909663847237082</float>
+		</attr>
+		<attr name="y">
+			<float>0.2820310824194138</float>
+		</attr>
+	</node>
+	<node id="gw_send_45">
+		<attr name="x">
+			<float>1.2369126847291239</float>
+		</attr>
+		<attr name="y">
+			<float>-2.420766790766637</float>
+		</attr>
+	</node>
+	<node id="gw_send_46">
+		<attr name="x">
+			<float>0.40987928463164436</float>
+		</attr>
+		<attr name="y">
+			<float>-0.305533672621032</float>
+		</attr>
+	</node>
+	<node id="gw_send_47">
+		<attr name="x">
+			<float>-0.5856238821523587</float>
+		</attr>
+		<attr name="y">
+			<float>1.104621739476038</float>
+		</attr>
+	</node>
+	<node id="gw_send_48">
+		<attr name="x">
+			<float>1.3134898514048163</float>
+		</attr>
+		<attr name="y">
+			<float>0.0470051804032355</float>
+		</attr>
+	</node>
+	<node id="gw_send_49">
+		<attr name="x">
+			<float>1.2215972513939852</float>
+		</attr>
+		<attr name="y">
+			<float>-3.125844496815172</float>
+		</attr>
+	</node>
+	<node id="gw_send_50">
+		<attr name="x">
+			<float>0.28735581795053633</float>
+		</attr>
+		<attr name="y">
+			<float>0.16451813141132465</float>
+		</attr>
+	</node>
+	<node id="gw_send_51">
+		<attr name="x">
+			<float>-0.4784158488063891</float>
+		</attr>
+		<attr name="y">
+			<float>1.3396476414922163</float>
+		</attr>
+	</node>
+	<node id="gw_send_52">
+		<attr name="x">
+			<float>1.4360133180859245</float>
+		</attr>
+		<attr name="y">
+			<float>-0.42304662362912115</float>
+		</attr>
+	</node>
+	<node id="gw_send_53">
+		<attr name="x">
+			<float>0.16483235126942825</float>
+		</attr>
+		<attr name="y">
+			<float>0.5170569844355921</float>
+		</attr>
+	</node>
+	<node id="gw_send_54">
+		<attr name="x">
+			<float>-0.35589238212528107</float>
+		</attr>
+		<attr name="y">
+			<float>0.8695958374598596</float>
+		</attr>
+	</node>
+	<node id="gw_send_55">
+		<attr name="x">
+			<float>1.5585367847670324</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7755854766533886</float>
+		</attr>
+	</node>
+	<node id="gw_send_56">
+		<attr name="x">
+			<float>0.042308884588320175</float>
+		</attr>
+		<attr name="y">
+			<float>0.7520828864517705</float>
+		</attr>
+	</node>
+	<node id="gw_send_57">
+		<attr name="x">
+			<float>-0.233368915444173</float>
+		</attr>
+		<attr name="y">
+			<float>0.5170569844355921</float>
+		</attr>
+	</node>
+	<node id="gw_send_58">
+		<attr name="x">
+			<float>1.6810602514481405</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3631502316938344</float>
+		</attr>
+	</node>
+	<node id="gw_send_59">
+		<attr name="x">
+			<float>-0.03426828208737237</float>
+		</attr>
+		<attr name="y">
+			<float>0.399544033427503</float>
+		</attr>
+	</node>
+	<node id="gw_send_60">
+		<attr name="x">
+			<float>-0.15679174876848043</float>
+		</attr>
+		<attr name="y">
+			<float>1.222134690484127</float>
+		</attr>
+	</node>
+	<node id="gw_send_61">
+		<attr name="x">
+			<float>1.6657448181130021</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7156890847181019</float>
+		</attr>
+	</node>
+	<node id="gw_send_62">
+		<attr name="x">
+			<float>-0.11084544876306492</float>
+		</attr>
+		<attr name="y">
+			<float>-0.07050777060485366</float>
+		</attr>
+	</node>
+	<node id="gw_send_63">
+		<attr name="x">
+			<float>-0.03426828208737237</float>
+		</attr>
+		<attr name="y">
+			<float>1.3396476414922163</float>
+		</attr>
+	</node>
+	<node id="gw_send_64">
+		<attr name="x">
+			<float>1.543221351431894</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3631502316938344</float>
+		</attr>
+	</node>
+	<node id="gw_send_65">
+		<attr name="x">
+			<float>-0.233368915444173</float>
+		</attr>
+		<attr name="y">
+			<float>0.0470051804032355</float>
+		</attr>
+	</node>
+	<node id="gw_send_66">
+		<attr name="x">
+			<float>0.0882551845937357</float>
+		</attr>
+		<attr name="y">
+			<float>1.104621739476038</float>
+		</attr>
+	</node>
+	<node id="gw_send_67">
+		<attr name="x">
+			<float>0.4558255846370599</float>
+		</attr>
+		<attr name="y">
+			<float>1.104621739476038</float>
+		</attr>
+	</node>
+	<node id="gw_send_68">
+		<attr name="x">
+			<float>1.4206978847507858</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8930984276614778</float>
+		</attr>
+	</node>
+	<node id="gw_send_69">
+		<attr name="x">
+			<float>1.0531274847074616</float>
+		</attr>
+		<attr name="y">
+			<float>0.2820310824194138</float>
+		</attr>
+	</node>
+	<node id="gw_send_70">
+		<attr name="x">
+			<float>-0.34057694879014255</float>
+		</attr>
+		<attr name="y">
+			<float>-0.305533672621032</float>
+		</attr>
+	</node>
+	<node id="gw_send_71">
+		<attr name="x">
+			<float>0.21077865127484377</float>
+		</attr>
+		<attr name="y">
+			<float>0.7520828864517705</float>
+		</attr>
+	</node>
+	<node id="gw_send_72">
+		<attr name="x">
+			<float>1.298174418069678</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5405595746372103</float>
+		</attr>
+	</node>
+	<node id="gw_send_73">
+		<attr name="x">
+			<float>-0.4631004154712506</float>
+		</attr>
+		<attr name="y">
+			<float>-0.305533672621032</float>
+		</attr>
+	</node>
+	<node id="gw_send_74">
+		<attr name="x">
+			<float>0.3333021179559518</float>
+		</attr>
+		<attr name="y">
+			<float>0.8695958374598596</float>
+		</attr>
+	</node>
+	<node id="gw_send_75">
+		<attr name="x">
+			<float>1.1756509513885698</float>
+		</attr>
+		<attr name="y">
+			<float>-0.18802072161294284</float>
+		</attr>
+	</node>
+	<node id="gw_send_76">
+		<attr name="x">
+			<float>-0.5856238821523587</float>
+		</attr>
+		<attr name="y">
+			<float>0.0470051804032355</float>
+		</attr>
+	</node>
+	<node id="gw_send_77">
+		<attr name="x">
+			<float>0.5477181846478909</float>
+		</attr>
+		<attr name="y">
+			<float>-0.07050777060485366</float>
+		</attr>
+	</node>
+	<node id="gw_send_78">
+		<attr name="x">
+			<float>0.5936644846533065</float>
+		</attr>
+		<attr name="y">
+			<float>0.2820310824194138</float>
+		</attr>
+	</node>
+	<node id="gw_send_79">
+		<attr name="x">
+			<float>0.47114101797219843</float>
+		</attr>
+		<attr name="y">
+			<float>0.6345699354436813</float>
+		</attr>
+	</node>
+	<edge from="gw_send_0" to="gw_send_7"/>
+	<edge from="gw_send_17" to="gw_send_20"/>
+	<edge from="gw_send_13" to="gw_send_17"/>
+	<edge from="gw_send_74" to="gw_send_67"/>
+	<edge from="gw_send_14" to="gw_send_18"/>
+	<edge from="gw_send_59" to="gw_send_62"/>
+	<edge from="gw_send_31" to="gw_send_35"/>
+	<edge from="gw_send_8" to="gw_send_15"/>
+	<edge from="gw_send_37" to="gw_send_41"/>
+	<edge from="gw_send_77" to="gw_send_79"/>
+	<edge from="gw_send_28" to="gw_send_32"/>
+	<edge from="gw_send_16" to="gw_send_19"/>
+	<edge from="gw_send_67" to="gw_send_24"/>
+	<edge from="gw_send_66" to="gw_send_71"/>
+	<edge from="gw_send_41" to="gw_send_45"/>
+	<edge from="gw_send_8" to="gw_send_12"/>
+	<edge from="gw_send_10" to="gw_send_14"/>
+	<edge from="gw_send_11" to="gw_send_15"/>
+	<edge from="gw_send_73" to="gw_send_76"/>
+	<edge from="gw_send_68" to="gw_send_72"/>
+	<edge from="gw_send_22" to="gw_send_26"/>
+	<edge from="gw_send_51" to="gw_send_54"/>
+	<edge from="gw_send_57" to="gw_send_60"/>
+	<edge from="gw_send_62" to="gw_send_65"/>
+	<edge from="gw_send_71" to="gw_send_74"/>
+	<edge from="gw_send_24" to="gw_send_28"/>
+	<edge from="gw_send_20" to="gw_send_10"/>
+	<edge from="gw_send_29" to="gw_send_33"/>
+	<edge from="gw_send_26" to="gw_send_30"/>
+	<edge from="gw_send_63" to="gw_send_66"/>
+	<edge from="gw_send_21" to="gw_send_11"/>
+	<edge from="gw_send_35" to="gw_send_39"/>
+	<edge from="gw_send_18" to="gw_send_21"/>
+	<edge from="gw_send_27" to="gw_send_31"/>
+	<edge from="gw_send_3" to="gw_send_5"/>
+	<edge from="gw_send_9" to="gw_send_13"/>
+	<edge from="gw_send_4" to="gw_send_6"/>
+	<edge from="gw_send_77" to="gw_send_78"/>
+	<edge from="gw_send_22" to="gw_send_49"/>
+	<edge from="gw_send_6" to="gw_send_1"/>
+	<edge from="gw_send_5" to="gw_send_7"/>
+	<edge from="gw_send_38" to="gw_send_42"/>
+	<edge from="gw_send_56" to="gw_send_59"/>
+	<edge from="gw_send_46" to="gw_send_50"/>
+	<edge from="gw_send_32" to="gw_send_36"/>
+	<edge from="gw_send_0" to="gw_send_2"/>
+	<edge from="gw_send_60" to="gw_send_63"/>
+	<edge from="gw_send_1" to="gw_send_3"/>
+	<edge from="gw_send_34" to="gw_send_38"/>
+	<edge from="gw_send_65" to="gw_send_70"/>
+	<edge from="gw_send_44" to="gw_send_48"/>
+	<edge from="gw_send_75" to="gw_send_69"/>
+	<edge from="gw_send_76" to="gw_send_23"/>
+	<edge from="gw_send_25" to="gw_send_29"/>
+	<edge from="gw_send_72" to="gw_send_75"/>
+	<edge from="gw_send_30" to="gw_send_34"/>
+	<edge from="gw_send_52" to="gw_send_55"/>
+	<edge from="gw_send_58" to="gw_send_61"/>
+	<edge from="gw_send_61" to="gw_send_64"/>
+	<edge from="gw_send_33" to="gw_send_37"/>
+	<edge from="gw_send_23" to="gw_send_27"/>
+	<edge from="gw_send_2" to="gw_send_4"/>
+	<edge from="gw_send_70" to="gw_send_73"/>
+	<edge from="gw_send_45" to="gw_send_49"/>
+	<edge from="gw_send_55" to="gw_send_58"/>
+	<edge from="gw_send_12" to="gw_send_16"/>
+	<edge from="gw_send_50" to="gw_send_53"/>
+	<edge from="gw_send_64" to="gw_send_68"/>
+	<edge from="gw_send_48" to="gw_send_52"/>
+	<edge from="gw_send_36" to="gw_send_40"/>
+	<edge from="gw_send_78" to="gw_send_79"/>
+	<edge from="gw_send_39" to="gw_send_43"/>
+	<edge from="gw_send_47" to="gw_send_51"/>
+	<edge from="gw_send_54" to="gw_send_57"/>
+	<edge from="gw_send_19" to="gw_send_9"/>
+	<edge from="gw_send_40" to="gw_send_44"/>
+	<edge from="gw_send_69" to="gw_send_25"/>
+	<edge from="gw_send_42" to="gw_send_46"/>
+	<edge from="gw_send_43" to="gw_send_47"/>
+	<edge from="gw_send_53" to="gw_send_56"/>
+</graph>
+</gxl>

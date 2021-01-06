@@ -1,0 +1,4640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="gw_opportunity">
+	<attr name="x_mean">
+		<float>210.14230019493178</float>
+	</attr>
+	<attr name="y_mean">
+		<float>32.85769980506823</float>
+	</attr>
+	<attr name="x_std">
+		<float>126.26514239251884</float>
+	</attr>
+	<attr name="y_std">
+		<float>14.014933005396434</float>
+	</attr>
+	<attr name="x_max">
+		<float>415</float>
+	</attr>
+	<attr name="y_max">
+		<float>71</float>
+	</attr>
+	<node id="gw_opportunity_0">
+		<attr name="x">
+			<float>1.0284524877133647</float>
+		</attr>
+		<attr name="y">
+			<float>2.6501946303011343</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_1">
+		<attr name="x">
+			<float>1.0046929611872397</float>
+		</attr>
+		<attr name="y">
+			<float>2.721547094106345</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_2">
+		<attr name="x">
+			<float>1.0284524877133647</float>
+		</attr>
+		<attr name="y">
+			<float>2.721547094106345</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_3">
+		<attr name="x">
+			<float>1.0522120142394897</float>
+		</attr>
+		<attr name="y">
+			<float>2.721547094106345</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_4">
+		<attr name="x">
+			<float>1.0759715407656147</float>
+		</attr>
+		<attr name="y">
+			<float>2.721547094106345</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_5">
+		<attr name="x">
+			<float>1.0522120142394897</float>
+		</attr>
+		<attr name="y">
+			<float>2.6501946303011343</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_6">
+		<attr name="x">
+			<float>0.24438811235124008</float>
+		</attr>
+		<attr name="y">
+			<float>2.578842166495924</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_7">
+		<attr name="x">
+			<float>1.4957231760604894</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9887810237646043</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_8">
+		<attr name="x">
+			<float>1.5036430182358644</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9887810237646043</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_9">
+		<attr name="x">
+			<float>-0.8881493187273843</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1314859513750255</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_10">
+		<attr name="x">
+			<float>-0.9119088452535092</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9887810237646043</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_11">
+		<attr name="x">
+			<float>-0.9277485296042592</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7747236323489726</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_12">
+		<attr name="x">
+			<float>-0.9515080561303842</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6320187047385515</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_13">
+		<attr name="x">
+			<float>-0.9752675826565093</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4179613133229198</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_14">
+		<attr name="x">
+			<float>-0.9990271091826343</float>
+		</attr>
+		<attr name="y">
+			<float>-0.27525638571249866</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_15">
+		<attr name="x">
+			<float>-1.0227866357087592</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_16">
+		<attr name="x">
+			<float>-1.0465461622348842</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_17">
+		<attr name="x">
+			<float>-1.0703056887610092</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_18">
+		<attr name="x">
+			<float>-1.0940652152871342</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_19">
+		<attr name="x">
+			<float>-1.1178247418132592</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_20">
+		<attr name="x">
+			<float>-1.1099048996378842</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_21">
+		<attr name="x">
+			<float>-1.1019850574625092</float>
+		</attr>
+		<attr name="y">
+			<float>-0.27525638571249866</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_22">
+		<attr name="x">
+			<float>-1.1019850574625092</float>
+		</attr>
+		<attr name="y">
+			<float>-0.48931377712813034</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_23">
+		<attr name="x">
+			<float>-1.1257445839886342</float>
+		</attr>
+		<attr name="y">
+			<float>-0.48931377712813034</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_24">
+		<attr name="x">
+			<float>-1.1495041105147592</float>
+		</attr>
+		<attr name="y">
+			<float>-0.48931377712813034</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_25">
+		<attr name="x">
+			<float>-1.1732636370408842</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4179613133229198</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_26">
+		<attr name="x">
+			<float>-1.1970231635670092</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_27">
+		<attr name="x">
+			<float>-1.2207826900931342</float>
+		</attr>
+		<attr name="y">
+			<float>-0.27525638571249866</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_28">
+		<attr name="x">
+			<float>-1.2207826900931342</float>
+		</attr>
+		<attr name="y">
+			<float>-0.48931377712813034</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_29">
+		<attr name="x">
+			<float>-1.1970231635670092</float>
+		</attr>
+		<attr name="y">
+			<float>-0.703371168543762</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_30">
+		<attr name="x">
+			<float>-1.1891033213916342</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9174285599593938</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_31">
+		<attr name="x">
+			<float>-1.2128628479177592</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9887810237646043</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_32">
+		<attr name="x">
+			<float>-1.236622374443884</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9174285599593938</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_33">
+		<attr name="x">
+			<float>-1.260381900970009</float>
+		</attr>
+		<attr name="y">
+			<float>-0.703371168543762</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_34">
+		<attr name="x">
+			<float>-1.284141427496134</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5606662409333409</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_35">
+		<attr name="x">
+			<float>-1.307900954022259</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4179613133229198</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_36">
+		<attr name="x">
+			<float>-1.331660480548384</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_37">
+		<attr name="x">
+			<float>-1.355420007074509</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_38">
+		<attr name="x">
+			<float>-1.379179533600634</float>
+		</attr>
+		<attr name="y">
+			<float>-0.48931377712813034</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_39">
+		<attr name="x">
+			<float>-1.402939060126759</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6320187047385515</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_40">
+		<attr name="x">
+			<float>-1.426698586652884</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7747236323489726</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_41">
+		<attr name="x">
+			<float>-1.450458113179009</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8460760961541832</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_42">
+		<attr name="x">
+			<float>-1.474217639705134</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7747236323489726</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_43">
+		<attr name="x">
+			<float>-1.4979771662312589</float>
+		</attr>
+		<attr name="y">
+			<float>-0.703371168543762</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_44">
+		<attr name="x">
+			<float>-1.5217366927573839</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6320187047385515</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_45">
+		<attr name="x">
+			<float>-1.5454962192835089</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5606662409333409</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_46">
+		<attr name="x">
+			<float>-1.569255745809634</float>
+		</attr>
+		<attr name="y">
+			<float>-0.48931377712813034</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_47">
+		<attr name="x">
+			<float>-1.593015272335759</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_48">
+		<attr name="x">
+			<float>-1.616774798861884</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_49">
+		<attr name="x">
+			<float>-1.640534325388009</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_50">
+		<attr name="x">
+			<float>-1.656374009738759</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_51">
+		<attr name="x">
+			<float>-1.664293851914134</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_52">
+		<attr name="x">
+			<float>-1.656374009738759</float>
+		</attr>
+		<attr name="y">
+			<float>0.5096207161448175</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_53">
+		<attr name="x">
+			<float>-1.632614483212634</float>
+		</attr>
+		<attr name="y">
+			<float>0.5809731799500281</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_54">
+		<attr name="x">
+			<float>-1.608854956686509</float>
+		</attr>
+		<attr name="y">
+			<float>0.6523256437552386</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_55">
+		<attr name="x">
+			<float>-1.585095430160384</float>
+		</attr>
+		<attr name="y">
+			<float>0.6523256437552386</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_56">
+		<attr name="x">
+			<float>-1.561335903634259</float>
+		</attr>
+		<attr name="y">
+			<float>0.5809731799500281</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_57">
+		<attr name="x">
+			<float>-1.5375763771081339</float>
+		</attr>
+		<attr name="y">
+			<float>0.5096207161448175</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_58">
+		<attr name="x">
+			<float>-1.5138168505820089</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_59">
+		<attr name="x">
+			<float>-1.4900573240558839</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_60">
+		<attr name="x">
+			<float>-1.466297797529759</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_61">
+		<attr name="x">
+			<float>-1.442538271003634</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_62">
+		<attr name="x">
+			<float>-1.418778744477509</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_63">
+		<attr name="x">
+			<float>-1.395019217951384</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_64">
+		<attr name="x">
+			<float>-1.371259691425259</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_65">
+		<attr name="x">
+			<float>-1.347500164899134</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_66">
+		<attr name="x">
+			<float>-1.323740638373009</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_67">
+		<attr name="x">
+			<float>-1.331660480548384</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_68">
+		<attr name="x">
+			<float>-1.355420007074509</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_69">
+		<attr name="x">
+			<float>-1.371259691425259</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_70">
+		<attr name="x">
+			<float>-1.395019217951384</float>
+		</attr>
+		<attr name="y">
+			<float>0.6523256437552386</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_71">
+		<attr name="x">
+			<float>-1.418778744477509</float>
+		</attr>
+		<attr name="y">
+			<float>0.8663830351708703</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_72">
+		<attr name="x">
+			<float>-1.434618428828259</float>
+		</attr>
+		<attr name="y">
+			<float>1.080440426586502</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_73">
+		<attr name="x">
+			<float>-1.458377955354384</float>
+		</attr>
+		<attr name="y">
+			<float>1.2944978180021338</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_74">
+		<attr name="x">
+			<float>-1.482137481880509</float>
+		</attr>
+		<attr name="y">
+			<float>1.5085552094177654</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_75">
+		<attr name="x">
+			<float>-1.5058970084066339</float>
+		</attr>
+		<attr name="y">
+			<float>1.722612600833397</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_76">
+		<attr name="x">
+			<float>-1.5296565349327589</float>
+		</attr>
+		<attr name="y">
+			<float>1.936669992249029</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_77">
+		<attr name="x">
+			<float>-1.553416061458884</float>
+		</attr>
+		<attr name="y">
+			<float>2.1507273836646603</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_78">
+		<attr name="x">
+			<float>-1.569255745809634</float>
+		</attr>
+		<attr name="y">
+			<float>2.364784775080292</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_79">
+		<attr name="x">
+			<float>-1.561335903634259</float>
+		</attr>
+		<attr name="y">
+			<float>2.578842166495924</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_80">
+		<attr name="x">
+			<float>-1.5375763771081339</float>
+		</attr>
+		<attr name="y">
+			<float>2.6501946303011343</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_81">
+		<attr name="x">
+			<float>-1.5138168505820089</float>
+		</attr>
+		<attr name="y">
+			<float>2.6501946303011343</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_82">
+		<attr name="x">
+			<float>-1.4900573240558839</float>
+		</attr>
+		<attr name="y">
+			<float>2.5074897026907133</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_83">
+		<attr name="x">
+			<float>-1.466297797529759</float>
+		</attr>
+		<attr name="y">
+			<float>2.293432311275082</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_84">
+		<attr name="x">
+			<float>-1.450458113179009</float>
+		</attr>
+		<attr name="y">
+			<float>2.07937491985945</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_85">
+		<attr name="x">
+			<float>-1.426698586652884</float>
+		</attr>
+		<attr name="y">
+			<float>1.8653175284438182</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_86">
+		<attr name="x">
+			<float>-1.410858902302134</float>
+		</attr>
+		<attr name="y">
+			<float>1.6512601370281865</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_87">
+		<attr name="x">
+			<float>-1.387099375776009</float>
+		</attr>
+		<attr name="y">
+			<float>1.437202745612555</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_88">
+		<attr name="x">
+			<float>-1.371259691425259</float>
+		</attr>
+		<attr name="y">
+			<float>1.2231453541969233</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_89">
+		<attr name="x">
+			<float>-1.355420007074509</float>
+		</attr>
+		<attr name="y">
+			<float>1.0090879627812914</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_90">
+		<attr name="x">
+			<float>-1.339580322723759</float>
+		</attr>
+		<attr name="y">
+			<float>0.7950305713656598</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_91">
+		<attr name="x">
+			<float>-1.315820796197634</float>
+		</attr>
+		<attr name="y">
+			<float>0.5809731799500281</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_92">
+		<attr name="x">
+			<float>-1.299981111846884</float>
+		</attr>
+		<attr name="y">
+			<float>0.3669157885343964</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_93">
+		<attr name="x">
+			<float>-1.276221585320759</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_94">
+		<attr name="x">
+			<float>-1.252462058794634</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_95">
+		<attr name="x">
+			<float>-1.228702532268509</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_96">
+		<attr name="x">
+			<float>-1.2049430057423842</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_97">
+		<attr name="x">
+			<float>-1.1811834792162592</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_98">
+		<attr name="x">
+			<float>-1.1574239526901342</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_99">
+		<attr name="x">
+			<float>-1.1653437948655092</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_100">
+		<attr name="x">
+			<float>-1.1653437948655092</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_101">
+		<attr name="x">
+			<float>-1.1415842683393842</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_102">
+		<attr name="x">
+			<float>-1.1178247418132592</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_103">
+		<attr name="x">
+			<float>-1.0940652152871342</float>
+		</attr>
+		<attr name="y">
+			<float>0.3669157885343964</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_104">
+		<attr name="x">
+			<float>-1.0703056887610092</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_105">
+		<attr name="x">
+			<float>-1.0465461622348842</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_106">
+		<attr name="x">
+			<float>-1.0465461622348842</float>
+		</attr>
+		<attr name="y">
+			<float>0.5096207161448175</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_107">
+		<attr name="x">
+			<float>-1.0623858465856342</float>
+		</attr>
+		<attr name="y">
+			<float>0.7236781075604493</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_108">
+		<attr name="x">
+			<float>-1.0861453731117592</float>
+		</attr>
+		<attr name="y">
+			<float>0.9377354989760809</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_109">
+		<attr name="x">
+			<float>-1.1019850574625092</float>
+		</attr>
+		<attr name="y">
+			<float>1.080440426586502</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_110">
+		<attr name="x">
+			<float>-1.1178247418132592</float>
+		</attr>
+		<attr name="y">
+			<float>1.2944978180021338</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_111">
+		<attr name="x">
+			<float>-1.1415842683393842</float>
+		</attr>
+		<attr name="y">
+			<float>1.5085552094177654</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_112">
+		<attr name="x">
+			<float>-1.1653437948655092</float>
+		</attr>
+		<attr name="y">
+			<float>1.579907673222976</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_113">
+		<attr name="x">
+			<float>-1.1891033213916342</float>
+		</attr>
+		<attr name="y">
+			<float>1.7939650646386076</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_114">
+		<attr name="x">
+			<float>-1.2128628479177592</float>
+		</attr>
+		<attr name="y">
+			<float>1.936669992249029</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_115">
+		<attr name="x">
+			<float>-1.236622374443884</float>
+		</attr>
+		<attr name="y">
+			<float>2.1507273836646603</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_116">
+		<attr name="x">
+			<float>-1.228702532268509</float>
+		</attr>
+		<attr name="y">
+			<float>2.364784775080292</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_117">
+		<attr name="x">
+			<float>-1.2049430057423842</float>
+		</attr>
+		<attr name="y">
+			<float>2.5074897026907133</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_118">
+		<attr name="x">
+			<float>-1.1811834792162592</float>
+		</attr>
+		<attr name="y">
+			<float>2.436137238885503</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_119">
+		<attr name="x">
+			<float>-1.1574239526901342</float>
+		</attr>
+		<attr name="y">
+			<float>2.293432311275082</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_120">
+		<attr name="x">
+			<float>-1.1336644261640092</float>
+		</attr>
+		<attr name="y">
+			<float>2.1507273836646603</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_121">
+		<attr name="x">
+			<float>-1.1178247418132592</float>
+		</attr>
+		<attr name="y">
+			<float>1.936669992249029</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_122">
+		<attr name="x">
+			<float>-1.0940652152871342</float>
+		</attr>
+		<attr name="y">
+			<float>1.722612600833397</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_123">
+		<attr name="x">
+			<float>-1.0782255309363842</float>
+		</attr>
+		<attr name="y">
+			<float>1.5085552094177654</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_124">
+		<attr name="x">
+			<float>-1.0623858465856342</float>
+		</attr>
+		<attr name="y">
+			<float>1.2944978180021338</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_125">
+		<attr name="x">
+			<float>-1.0465461622348842</float>
+		</attr>
+		<attr name="y">
+			<float>1.080440426586502</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_126">
+		<attr name="x">
+			<float>-1.0227866357087592</float>
+		</attr>
+		<attr name="y">
+			<float>0.8663830351708703</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_127">
+		<attr name="x">
+			<float>-1.0069469513580092</float>
+		</attr>
+		<attr name="y">
+			<float>0.6523256437552386</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_128">
+		<attr name="x">
+			<float>-0.9911072670072593</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_129">
+		<attr name="x">
+			<float>-0.9673477404811343</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_130">
+		<attr name="x">
+			<float>-0.9435882139550092</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_131">
+		<attr name="x">
+			<float>-0.9198286874288842</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_132">
+		<attr name="x">
+			<float>-0.8960691609027593</float>
+		</attr>
+		<attr name="y">
+			<float>-0.27525638571249866</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_133">
+		<attr name="x">
+			<float>-0.8723096343766343</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4179613133229198</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_134">
+		<attr name="x">
+			<float>-0.8564699500258843</float>
+		</attr>
+		<attr name="y">
+			<float>-0.27525638571249866</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_135">
+		<attr name="x">
+			<float>-0.8643897922012593</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_136">
+		<attr name="x">
+			<float>-0.8643897922012593</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_137">
+		<attr name="x">
+			<float>-0.8406302656751343</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_138">
+		<attr name="x">
+			<float>-0.8168707391490093</float>
+		</attr>
+		<attr name="y">
+			<float>0.3669157885343964</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_139">
+		<attr name="x">
+			<float>-0.7931112126228843</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_140">
+		<attr name="x">
+			<float>-0.7693516860967594</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_141">
+		<attr name="x">
+			<float>-0.7455921595706344</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_142">
+		<attr name="x">
+			<float>-0.7218326330445094</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_143">
+		<attr name="x">
+			<float>-0.6980731065183844</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_144">
+		<attr name="x">
+			<float>-0.6743135799922594</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_145">
+		<attr name="x">
+			<float>-0.6505540534661344</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_146">
+		<attr name="x">
+			<float>-0.6267945269400095</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_147">
+		<attr name="x">
+			<float>-0.6030350004138845</float>
+		</attr>
+		<attr name="y">
+			<float>-0.27525638571249866</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_148">
+		<attr name="x">
+			<float>-0.6267945269400095</float>
+		</attr>
+		<attr name="y">
+			<float>-0.27525638571249866</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_149">
+		<attr name="x">
+			<float>-0.6505540534661344</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_150">
+		<attr name="x">
+			<float>-0.6743135799922594</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_151">
+		<attr name="x">
+			<float>-0.6980731065183844</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_152">
+		<attr name="x">
+			<float>-0.7218326330445094</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_153">
+		<attr name="x">
+			<float>-0.7455921595706344</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_154">
+		<attr name="x">
+			<float>-0.7693516860967594</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_155">
+		<attr name="x">
+			<float>-0.7931112126228843</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_156">
+		<attr name="x">
+			<float>-0.8089508969736343</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_157">
+		<attr name="x">
+			<float>-0.8010310547982593</float>
+		</attr>
+		<attr name="y">
+			<float>-0.27525638571249866</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_158">
+		<attr name="x">
+			<float>-0.8010310547982593</float>
+		</attr>
+		<attr name="y">
+			<float>-0.48931377712813034</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_159">
+		<attr name="x">
+			<float>-0.8168707391490093</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6320187047385515</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_160">
+		<attr name="x">
+			<float>-0.8406302656751343</float>
+		</attr>
+		<attr name="y">
+			<float>-0.703371168543762</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_161">
+		<attr name="x">
+			<float>-0.8643897922012593</float>
+		</attr>
+		<attr name="y">
+			<float>-0.703371168543762</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_162">
+		<attr name="x">
+			<float>-0.8643897922012593</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9174285599593938</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_163">
+		<attr name="x">
+			<float>-0.8564699500258843</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1314859513750255</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_164">
+		<attr name="x">
+			<float>-0.8802294765520093</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1314859513750255</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_165">
+		<attr name="x">
+			<float>-1.4900573240558839</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4179613133229198</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_166">
+		<attr name="x">
+			<float>-1.5296565349327589</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_167">
+		<attr name="x">
+			<float>-1.466297797529759</float>
+		</attr>
+		<attr name="y">
+			<float>-0.48931377712813034</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_168">
+		<attr name="x">
+			<float>-1.5058970084066339</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_169">
+		<attr name="x">
+			<float>-1.458377955354384</float>
+		</attr>
+		<attr name="y">
+			<float>-0.27525638571249866</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_170">
+		<attr name="x">
+			<float>-1.474217639705134</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_171">
+		<attr name="x">
+			<float>-1.4979771662312589</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_172">
+		<attr name="x">
+			<float>-1.5217366927573839</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_173">
+		<attr name="x">
+			<float>-1.5454962192835089</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_174">
+		<attr name="x">
+			<float>-1.569255745809634</float>
+		</attr>
+		<attr name="y">
+			<float>0.3669157885343964</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_175">
+		<attr name="x">
+			<float>-1.593015272335759</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_176">
+		<attr name="x">
+			<float>-1.577175587985009</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_177">
+		<attr name="x">
+			<float>-1.553416061458884</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_178">
+		<attr name="x">
+			<float>0.2681476388773651</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4882482704010782</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_179">
+		<attr name="x">
+			<float>0.24438811235124008</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4168958065958677</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_180">
+		<attr name="x">
+			<float>0.2523079545266151</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3455433427906571</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_181">
+		<attr name="x">
+			<float>0.2760674810527401</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3455433427906571</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_182">
+		<attr name="x">
+			<float>0.29982700757886505</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3455433427906571</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_183">
+		<attr name="x">
+			<float>0.31566669192961505</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4882482704010782</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_184">
+		<attr name="x">
+			<float>0.29190716540349004</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4882482704010782</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_185">
+		<attr name="x">
+			<float>1.4402842808328644</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7736581256219206</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_186">
+		<attr name="x">
+			<float>1.4165247543067394</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6309531980114993</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_187">
+		<attr name="x">
+			<float>1.3927652277806144</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4882482704010782</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_188">
+		<attr name="x">
+			<float>1.3690057012544894</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3455433427906571</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_189">
+		<attr name="x">
+			<float>1.3452461747283644</float>
+		</attr>
+		<attr name="y">
+			<float>-1.202838415180236</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_190">
+		<attr name="x">
+			<float>1.3214866482022396</float>
+		</attr>
+		<attr name="y">
+			<float>-1.060133487569815</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_191">
+		<attr name="x">
+			<float>1.2977271216761146</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9174285599593938</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_192">
+		<attr name="x">
+			<float>1.2739675951499896</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7747236323489726</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_193">
+		<attr name="x">
+			<float>1.2502080686238646</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6320187047385515</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_194">
+		<attr name="x">
+			<float>1.2264485420977396</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4179613133229198</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_195">
+		<attr name="x">
+			<float>1.2026890155716146</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_196">
+		<attr name="x">
+			<float>1.1789294890454896</float>
+		</attr>
+		<attr name="y">
+			<float>-0.27525638571249866</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_197">
+		<attr name="x">
+			<float>1.1551699625193645</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_198">
+		<attr name="x">
+			<float>1.1314104359932395</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_199">
+		<attr name="x">
+			<float>1.1076509094671145</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_200">
+		<attr name="x">
+			<float>1.0838913829409897</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_201">
+		<attr name="x">
+			<float>1.0601318564148647</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_202">
+		<attr name="x">
+			<float>1.0363723298887397</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_203">
+		<attr name="x">
+			<float>1.0601318564148647</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_204">
+		<attr name="x">
+			<float>1.0759715407656147</float>
+		</attr>
+		<attr name="y">
+			<float>-0.27525638571249866</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_205">
+		<attr name="x">
+			<float>1.0759715407656147</float>
+		</attr>
+		<attr name="y">
+			<float>-0.48931377712813034</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_206">
+		<attr name="x">
+			<float>1.0522120142394897</float>
+		</attr>
+		<attr name="y">
+			<float>-0.48931377712813034</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_207">
+		<attr name="x">
+			<float>1.0284524877133647</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4179613133229198</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_208">
+		<attr name="x">
+			<float>1.0046929611872397</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_209">
+		<attr name="x">
+			<float>0.9809334346611147</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_210">
+		<attr name="x">
+			<float>0.9730135924857397</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_211">
+		<attr name="x">
+			<float>0.9650937503103647</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_212">
+		<attr name="x">
+			<float>0.9730135924857397</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_213">
+		<attr name="x">
+			<float>0.9967731190118647</float>
+		</attr>
+		<attr name="y">
+			<float>0.5096207161448175</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_214">
+		<attr name="x">
+			<float>1.0205326455379897</float>
+		</attr>
+		<attr name="y">
+			<float>0.5809731799500281</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_215">
+		<attr name="x">
+			<float>1.0442921720641147</float>
+		</attr>
+		<attr name="y">
+			<float>0.5096207161448175</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_216">
+		<attr name="x">
+			<float>1.0680516985902397</float>
+		</attr>
+		<attr name="y">
+			<float>0.5096207161448175</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_217">
+		<attr name="x">
+			<float>1.0918112251163645</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_218">
+		<attr name="x">
+			<float>1.1155707516424895</float>
+		</attr>
+		<attr name="y">
+			<float>0.3669157885343964</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_219">
+		<attr name="x">
+			<float>1.1393302781686145</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_220">
+		<attr name="x">
+			<float>1.1630898046947395</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_221">
+		<attr name="x">
+			<float>1.1868493312208646</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_222">
+		<attr name="x">
+			<float>1.2106088577469896</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_223">
+		<attr name="x">
+			<float>1.2343683842731146</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_224">
+		<attr name="x">
+			<float>1.2581279107992396</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_225">
+		<attr name="x">
+			<float>1.2422882264484896</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_226">
+		<attr name="x">
+			<float>1.2264485420977396</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_227">
+		<attr name="x">
+			<float>1.2422882264484896</float>
+		</attr>
+		<attr name="y">
+			<float>0.3669157885343964</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_228">
+		<attr name="x">
+			<float>1.2660477529746146</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_229">
+		<attr name="x">
+			<float>1.2898072795007396</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_230">
+		<attr name="x">
+			<float>1.3135668060268646</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_231">
+		<attr name="x">
+			<float>1.3373263325529896</float>
+		</attr>
+		<attr name="y">
+			<float>0.3669157885343964</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_232">
+		<attr name="x">
+			<float>1.3610858590791144</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_233">
+		<attr name="x">
+			<float>1.3848453856052394</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_234">
+		<attr name="x">
+			<float>1.4086049121313644</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_235">
+		<attr name="x">
+			<float>1.4323644386574894</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_236">
+		<attr name="x">
+			<float>1.4561239651836144</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_237">
+		<attr name="x">
+			<float>1.4719636495343644</float>
+		</attr>
+		<attr name="y">
+			<float>0.6523256437552386</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_238">
+		<attr name="x">
+			<float>1.4482041230082394</float>
+		</attr>
+		<attr name="y">
+			<float>0.8663830351708703</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_239">
+		<attr name="x">
+			<float>1.4244445964821144</float>
+		</attr>
+		<attr name="y">
+			<float>1.080440426586502</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_240">
+		<attr name="x">
+			<float>1.4006850699559894</float>
+		</attr>
+		<attr name="y">
+			<float>1.2944978180021338</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_241">
+		<attr name="x">
+			<float>1.3769255434298644</float>
+		</attr>
+		<attr name="y">
+			<float>1.437202745612555</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_242">
+		<attr name="x">
+			<float>1.3531660169037394</float>
+		</attr>
+		<attr name="y">
+			<float>1.579907673222976</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_243">
+		<attr name="x">
+			<float>1.3373263325529896</float>
+		</attr>
+		<attr name="y">
+			<float>1.7939650646386076</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_244">
+		<attr name="x">
+			<float>1.3135668060268646</float>
+		</attr>
+		<attr name="y">
+			<float>1.936669992249029</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_245">
+		<attr name="x">
+			<float>1.2898072795007396</float>
+		</attr>
+		<attr name="y">
+			<float>2.07937491985945</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_246">
+		<attr name="x">
+			<float>1.2660477529746146</float>
+		</attr>
+		<attr name="y">
+			<float>2.1507273836646603</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_247">
+		<attr name="x">
+			<float>1.2422882264484896</float>
+		</attr>
+		<attr name="y">
+			<float>2.293432311275082</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_248">
+		<attr name="x">
+			<float>1.2422882264484896</float>
+		</attr>
+		<attr name="y">
+			<float>2.5074897026907133</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_249">
+		<attr name="x">
+			<float>1.2660477529746146</float>
+		</attr>
+		<attr name="y">
+			<float>2.6501946303011343</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_250">
+		<attr name="x">
+			<float>1.2898072795007396</float>
+		</attr>
+		<attr name="y">
+			<float>2.6501946303011343</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_251">
+		<attr name="x">
+			<float>1.3135668060268646</float>
+		</attr>
+		<attr name="y">
+			<float>2.578842166495924</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_252">
+		<attr name="x">
+			<float>1.3373263325529896</float>
+		</attr>
+		<attr name="y">
+			<float>2.436137238885503</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_253">
+		<attr name="x">
+			<float>1.3531660169037394</float>
+		</attr>
+		<attr name="y">
+			<float>2.222079847469871</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_254">
+		<attr name="x">
+			<float>1.3769255434298644</float>
+		</attr>
+		<attr name="y">
+			<float>2.07937491985945</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_255">
+		<attr name="x">
+			<float>1.4006850699559894</float>
+		</attr>
+		<attr name="y">
+			<float>1.8653175284438182</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_256">
+		<attr name="x">
+			<float>1.4244445964821144</float>
+		</attr>
+		<attr name="y">
+			<float>1.6512601370281865</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_257">
+		<attr name="x">
+			<float>1.4482041230082394</float>
+		</attr>
+		<attr name="y">
+			<float>1.437202745612555</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_258">
+		<attr name="x">
+			<float>1.4719636495343644</float>
+		</attr>
+		<attr name="y">
+			<float>1.2231453541969233</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_259">
+		<attr name="x">
+			<float>1.4957231760604894</float>
+		</attr>
+		<attr name="y">
+			<float>1.0090879627812914</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_260">
+		<attr name="x">
+			<float>1.5194827025866144</float>
+		</attr>
+		<attr name="y">
+			<float>0.7950305713656598</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_261">
+		<attr name="x">
+			<float>1.5432422291127394</float>
+		</attr>
+		<attr name="y">
+			<float>0.5809731799500281</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_262">
+		<attr name="x">
+			<float>1.5670017556388645</float>
+		</attr>
+		<attr name="y">
+			<float>0.3669157885343964</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_263">
+		<attr name="x">
+			<float>1.5907612821649895</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_264">
+		<attr name="x">
+			<float>1.6145208086911143</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_265">
+		<attr name="x">
+			<float>1.6224406508664893</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_266">
+		<attr name="x">
+			<float>1.5986811243403645</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_267">
+		<attr name="x">
+			<float>1.5749215978142395</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_268">
+		<attr name="x">
+			<float>1.5511620712881145</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_269">
+		<attr name="x">
+			<float>1.5274025447619894</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_270">
+		<attr name="x">
+			<float>1.5036430182358644</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_271">
+		<attr name="x">
+			<float>1.4798834917097394</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_272">
+		<attr name="x">
+			<float>1.4878033338851144</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_273">
+		<attr name="x">
+			<float>1.4719636495343644</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_274">
+		<attr name="x">
+			<float>1.4482041230082394</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_275">
+		<attr name="x">
+			<float>1.4244445964821144</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_276">
+		<attr name="x">
+			<float>1.4006850699559894</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_277">
+		<attr name="x">
+			<float>1.3769255434298644</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_278">
+		<attr name="x">
+			<float>1.3531660169037394</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_279">
+		<attr name="x">
+			<float>1.3294064903776146</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_280">
+		<attr name="x">
+			<float>1.3056469638514896</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_281">
+		<attr name="x">
+			<float>1.2818874373253646</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_282">
+		<attr name="x">
+			<float>1.3056469638514896</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_283">
+		<attr name="x">
+			<float>1.3294064903776146</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_284">
+		<attr name="x">
+			<float>1.3531660169037394</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5606662409333409</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_285">
+		<attr name="x">
+			<float>1.3769255434298644</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7747236323489726</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_286">
+		<attr name="x">
+			<float>1.4006850699559894</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8460760961541832</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_287">
+		<attr name="x">
+			<float>1.4244445964821144</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9174285599593938</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_288">
+		<attr name="x">
+			<float>1.4402842808328644</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9887810237646043</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_289">
+		<attr name="x">
+			<float>1.4244445964821144</float>
+		</attr>
+		<attr name="y">
+			<float>-1.202838415180236</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_290">
+		<attr name="x">
+			<float>1.4482041230082394</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3455433427906571</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_291">
+		<attr name="x">
+			<float>1.4719636495343644</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4882482704010782</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_292">
+		<attr name="x">
+			<float>1.4719636495343644</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7023056618167098</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_293">
+		<attr name="x">
+			<float>1.4482041230082394</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7736581256219206</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_294">
+		<attr name="x">
+			<float>0.5374222728401149</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7736581256219206</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_295">
+		<attr name="x">
+			<float>0.5136627463139899</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7023056618167098</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_296">
+		<attr name="x">
+			<float>0.48990321978786494</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7023056618167098</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_297">
+		<attr name="x">
+			<float>0.46614369326174</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7023056618167098</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_298">
+		<attr name="x">
+			<float>0.442384166735615</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7023056618167098</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_299">
+		<attr name="x">
+			<float>0.41862464020949</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6309531980114993</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_300">
+		<attr name="x">
+			<float>0.394865113683365</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6309531980114993</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_301">
+		<attr name="x">
+			<float>0.37110558715724</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6309531980114993</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_302">
+		<attr name="x">
+			<float>0.34734606063111506</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4882482704010782</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_303">
+		<attr name="x">
+			<float>0.37110558715724</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4168958065958677</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_304">
+		<attr name="x">
+			<float>0.394865113683365</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4168958065958677</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_305">
+		<attr name="x">
+			<float>0.41862464020949</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4882482704010782</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_306">
+		<attr name="x">
+			<float>0.442384166735615</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4882482704010782</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_307">
+		<attr name="x">
+			<float>0.46614369326174</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4882482704010782</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_308">
+		<attr name="x">
+			<float>0.48990321978786494</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4882482704010782</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_309">
+		<attr name="x">
+			<float>0.5136627463139899</float>
+		</attr>
+		<attr name="y">
+			<float>-1.5596007342062888</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_310">
+		<attr name="x">
+			<float>0.5374222728401149</float>
+		</attr>
+		<attr name="y">
+			<float>-1.5596007342062888</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_311">
+		<attr name="x">
+			<float>0.5611817993662399</float>
+		</attr>
+		<attr name="y">
+			<float>-1.5596007342062888</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_312">
+		<attr name="x">
+			<float>0.5849413258923649</float>
+		</attr>
+		<attr name="y">
+			<float>-1.5596007342062888</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_313">
+		<attr name="x">
+			<float>0.6087008524184899</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6309531980114993</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_314">
+		<attr name="x">
+			<float>0.6324603789446149</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6309531980114993</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_315">
+		<attr name="x">
+			<float>0.6245405367692399</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7736581256219206</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_316">
+		<attr name="x">
+			<float>0.6007810102431149</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7736581256219206</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_317">
+		<attr name="x">
+			<float>0.5770214837169899</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7736581256219206</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_318">
+		<attr name="x">
+			<float>0.5532619571908649</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7736581256219206</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_319">
+		<attr name="x">
+			<float>1.1789294890454896</float>
+		</attr>
+		<attr name="y">
+			<float>-2.201772908453184</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_320">
+		<attr name="x">
+			<float>1.1551699625193645</float>
+		</attr>
+		<attr name="y">
+			<float>-2.1304204446479735</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_321">
+		<attr name="x">
+			<float>1.1472501203439895</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9163630532323417</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_322">
+		<attr name="x">
+			<float>1.1630898046947395</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7023056618167098</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_323">
+		<attr name="x">
+			<float>1.1868493312208646</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7023056618167098</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_324">
+		<attr name="x">
+			<float>1.2106088577469896</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7736581256219206</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_325">
+		<attr name="x">
+			<float>1.2185286999223646</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9877155170375522</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_326">
+		<attr name="x">
+			<float>1.2026890155716146</float>
+		</attr>
+		<attr name="y">
+			<float>-2.201772908453184</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_327">
+		<attr name="x">
+			<float>0.2206285858251151</float>
+		</attr>
+		<attr name="y">
+			<float>-2.2731253722583946</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_328">
+		<attr name="x">
+			<float>0.18102937494824012</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4882482704010782</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_329">
+		<attr name="x">
+			<float>0.19686905929899012</float>
+		</attr>
+		<attr name="y">
+			<float>-2.1304204446479735</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_330">
+		<attr name="x">
+			<float>0.2047889014743651</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7023056618167098</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_331">
+		<attr name="x">
+			<float>0.17310953277286512</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9877155170375522</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_332">
+		<attr name="x">
+			<float>0.2285484280004901</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9163630532323417</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_333">
+		<attr name="x">
+			<float>0.15726984842211514</float>
+		</attr>
+		<attr name="y">
+			<float>-1.7736581256219206</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_334">
+		<attr name="x">
+			<float>0.2523079545266151</float>
+		</attr>
+		<attr name="y">
+			<float>-2.0590679808427628</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_335">
+		<attr name="x">
+			<float>0.13351032189599016</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6309531980114993</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_336">
+		<attr name="x">
+			<float>0.2523079545266151</float>
+		</attr>
+		<attr name="y">
+			<float>-2.2731253722583946</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_337">
+		<attr name="x">
+			<float>0.10975079536986516</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4882482704010782</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_338">
+		<attr name="x">
+			<float>0.2285484280004901</float>
+		</attr>
+		<attr name="y">
+			<float>-2.2731253722583946</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_339">
+		<attr name="x">
+			<float>0.08599126884374017</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4168958065958677</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_340">
+		<attr name="x">
+			<float>0.06223174231761519</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3455433427906571</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_341">
+		<attr name="x">
+			<float>0.054311900142240195</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1314859513750255</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_342">
+		<attr name="x">
+			<float>0.030552373616115205</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9887810237646043</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_343">
+		<attr name="x">
+			<float>0.006792847089990218</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7747236323489726</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_344">
+		<attr name="x">
+			<float>-0.01696667943613477</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5606662409333409</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_345">
+		<attr name="x">
+			<float>-0.04072620596225976</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_346">
+		<attr name="x">
+			<float>-0.06448573248838474</float>
+		</attr>
+		<attr name="y">
+			<float>-0.27525638571249866</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_347">
+		<attr name="x">
+			<float>-0.08824525901450973</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_348">
+		<attr name="x">
+			<float>-0.11200478554063471</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_349">
+		<attr name="x">
+			<float>-0.1357643120667597</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_350">
+		<attr name="x">
+			<float>-0.1595238385928847</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_351">
+		<attr name="x">
+			<float>-0.18328336511900967</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_352">
+		<attr name="x">
+			<float>-0.20704289164513467</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_353">
+		<attr name="x">
+			<float>-0.23080241817125965</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_354">
+		<attr name="x">
+			<float>-0.25456194469738463</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_355">
+		<attr name="x">
+			<float>-0.24664210252200963</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_356">
+		<attr name="x">
+			<float>-0.23872226034663466</float>
+		</attr>
+		<attr name="y">
+			<float>-0.27525638571249866</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_357">
+		<attr name="x">
+			<float>-0.25456194469738463</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4179613133229198</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_358">
+		<attr name="x">
+			<float>-0.27832147122350964</float>
+		</attr>
+		<attr name="y">
+			<float>-0.48931377712813034</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_359">
+		<attr name="x">
+			<float>-0.3020809977496346</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4179613133229198</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_360">
+		<attr name="x">
+			<float>-0.3258405242757596</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4179613133229198</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_361">
+		<attr name="x">
+			<float>-0.3496000508018846</float>
+		</attr>
+		<attr name="y">
+			<float>-0.48931377712813034</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_362">
+		<attr name="x">
+			<float>-0.37335957732800956</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5606662409333409</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_363">
+		<attr name="x">
+			<float>-0.39711910385413457</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6320187047385515</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_364">
+		<attr name="x">
+			<float>-0.4208786303802596</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6320187047385515</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_365">
+		<attr name="x">
+			<float>-0.44463815690638453</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6320187047385515</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_366">
+		<attr name="x">
+			<float>-0.46839768343250954</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5606662409333409</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_367">
+		<attr name="x">
+			<float>-0.4921572099586345</float>
+		</attr>
+		<attr name="y">
+			<float>-0.48931377712813034</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_368">
+		<attr name="x">
+			<float>-0.5159167364847596</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4179613133229198</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_369">
+		<attr name="x">
+			<float>-0.5396762630108844</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_370">
+		<attr name="x">
+			<float>-0.5634357895370095</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_371">
+		<attr name="x">
+			<float>-0.5871953160631345</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_372">
+		<attr name="x">
+			<float>-0.5951151582385095</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_373">
+		<attr name="x">
+			<float>-0.5792754738877595</float>
+		</attr>
+		<attr name="y">
+			<float>0.3669157885343964</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_374">
+		<attr name="x">
+			<float>-0.5555159473616345</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_375">
+		<attr name="x">
+			<float>-0.5317564208355094</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_376">
+		<attr name="x">
+			<float>-0.5079968943093846</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_377">
+		<attr name="x">
+			<float>-0.48423736778325954</float>
+		</attr>
+		<attr name="y">
+			<float>0.3669157885343964</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_378">
+		<attr name="x">
+			<float>-0.46047784125713453</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_379">
+		<attr name="x">
+			<float>-0.4367183147310095</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_380">
+		<attr name="x">
+			<float>-0.4129587882048846</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_381">
+		<attr name="x">
+			<float>-0.38919926167875957</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_382">
+		<attr name="x">
+			<float>-0.36543973515263456</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_383">
+		<attr name="x">
+			<float>-0.3416802086265096</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_384">
+		<attr name="x">
+			<float>-0.3179206821003846</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_385">
+		<attr name="x">
+			<float>-0.3179206821003846</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_386">
+		<attr name="x">
+			<float>-0.3179206821003846</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_387">
+		<attr name="x">
+			<float>-0.3020809977496346</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_388">
+		<attr name="x">
+			<float>-0.27832147122350964</float>
+		</attr>
+		<attr name="y">
+			<float>0.5096207161448175</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_389">
+		<attr name="x">
+			<float>-0.25456194469738463</float>
+		</attr>
+		<attr name="y">
+			<float>0.5096207161448175</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_390">
+		<attr name="x">
+			<float>-0.23080241817125965</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_391">
+		<attr name="x">
+			<float>-0.20704289164513467</float>
+		</attr>
+		<attr name="y">
+			<float>0.3669157885343964</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_392">
+		<attr name="x">
+			<float>-0.18328336511900967</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_393">
+		<attr name="x">
+			<float>-0.1595238385928847</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_394">
+		<attr name="x">
+			<float>-0.1357643120667597</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_395">
+		<attr name="x">
+			<float>-0.11200478554063471</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_396">
+		<attr name="x">
+			<float>-0.08824525901450973</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_397">
+		<attr name="x">
+			<float>-0.06448573248838474</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_398">
+		<attr name="x">
+			<float>-0.048646048137634755</float>
+		</attr>
+		<attr name="y">
+			<float>0.3669157885343964</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_399">
+		<attr name="x">
+			<float>-0.024886521611509765</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_400">
+		<attr name="x">
+			<float>-0.001126995085384778</float>
+		</attr>
+		<attr name="y">
+			<float>0.5096207161448175</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_401">
+		<attr name="x">
+			<float>0.02263253144074021</float>
+		</attr>
+		<attr name="y">
+			<float>0.5096207161448175</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_402">
+		<attr name="x">
+			<float>0.0463920579668652</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_403">
+		<attr name="x">
+			<float>0.07015158449299018</float>
+		</attr>
+		<attr name="y">
+			<float>0.3669157885343964</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_404">
+		<attr name="x">
+			<float>0.09391111101911517</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_405">
+		<attr name="x">
+			<float>0.11767063754524015</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_406">
+		<attr name="x">
+			<float>0.14143016407136513</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_407">
+		<attr name="x">
+			<float>0.16518969059749014</float>
+		</attr>
+		<attr name="y">
+			<float>0.5096207161448175</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_408">
+		<attr name="x">
+			<float>0.18894921712361512</float>
+		</attr>
+		<attr name="y">
+			<float>0.5096207161448175</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_409">
+		<attr name="x">
+			<float>0.2127087436497401</float>
+		</attr>
+		<attr name="y">
+			<float>0.5096207161448175</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_410">
+		<attr name="x">
+			<float>0.23646827017586508</float>
+		</attr>
+		<attr name="y">
+			<float>0.5096207161448175</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_411">
+		<attr name="x">
+			<float>0.2602277967019901</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_412">
+		<attr name="x">
+			<float>0.28398732322811504</float>
+		</attr>
+		<attr name="y">
+			<float>0.3669157885343964</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_413">
+		<attr name="x">
+			<float>0.30774684975424005</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_414">
+		<attr name="x">
+			<float>0.33150637628036506</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_415">
+		<attr name="x">
+			<float>0.35526590280649</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_416">
+		<attr name="x">
+			<float>0.379025429332615</float>
+		</attr>
+		<attr name="y">
+			<float>0.5096207161448175</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_417">
+		<attr name="x">
+			<float>0.40278495585874</float>
+		</attr>
+		<attr name="y">
+			<float>0.5096207161448175</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_418">
+		<attr name="x">
+			<float>0.426544482384865</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_419">
+		<attr name="x">
+			<float>0.45030400891099</float>
+		</attr>
+		<attr name="y">
+			<float>0.3669157885343964</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_420">
+		<attr name="x">
+			<float>0.474063535437115</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_421">
+		<attr name="x">
+			<float>0.49782306196323994</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_422">
+		<attr name="x">
+			<float>0.5215825884893649</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_423">
+		<attr name="x">
+			<float>0.5453421150154899</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_424">
+		<attr name="x">
+			<float>0.5691016415416149</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_425">
+		<attr name="x">
+			<float>0.5532619571908649</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_426">
+		<attr name="x">
+			<float>0.5374222728401149</float>
+		</attr>
+		<attr name="y">
+			<float>0.5096207161448175</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_427">
+		<attr name="x">
+			<float>0.5532619571908649</float>
+		</attr>
+		<attr name="y">
+			<float>0.6523256437552386</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_428">
+		<attr name="x">
+			<float>0.5770214837169899</float>
+		</attr>
+		<attr name="y">
+			<float>0.5809731799500281</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_429">
+		<attr name="x">
+			<float>0.6007810102431149</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_430">
+		<attr name="x">
+			<float>0.6245405367692399</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_431">
+		<attr name="x">
+			<float>0.6483000632953648</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_432">
+		<attr name="x">
+			<float>0.6720595898214898</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_433">
+		<attr name="x">
+			<float>0.6958191163476148</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_434">
+		<attr name="x">
+			<float>0.7195786428737398</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_435">
+		<attr name="x">
+			<float>0.7354183272244899</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_436">
+		<attr name="x">
+			<float>0.7354183272244899</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_437">
+		<attr name="x">
+			<float>0.7591778537506149</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_438">
+		<attr name="x">
+			<float>0.7829373802767398</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_439">
+		<attr name="x">
+			<float>0.8066969068028648</float>
+		</attr>
+		<attr name="y">
+			<float>0.438268252339607</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_440">
+		<attr name="x">
+			<float>0.8304564333289898</float>
+		</attr>
+		<attr name="y">
+			<float>0.3669157885343964</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_441">
+		<attr name="x">
+			<float>0.8542159598551148</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_442">
+		<attr name="x">
+			<float>0.8779754863812398</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_443">
+		<attr name="x">
+			<float>0.9017350129073647</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_444">
+		<attr name="x">
+			<float>0.9254945394334897</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_445">
+		<attr name="x">
+			<float>0.9492540659596147</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_446">
+		<attr name="x">
+			<float>0.9334143816088647</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_447">
+		<attr name="x">
+			<float>0.9096548550827397</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_448">
+		<attr name="x">
+			<float>0.8858953285566148</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_449">
+		<attr name="x">
+			<float>0.8621358020304898</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_450">
+		<attr name="x">
+			<float>0.8383762755043648</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_451">
+		<attr name="x">
+			<float>0.8146167489782398</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_452">
+		<attr name="x">
+			<float>0.8146167489782398</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_453">
+		<attr name="x">
+			<float>0.7908572224521148</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_454">
+		<attr name="x">
+			<float>0.7670976959259898</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_455">
+		<attr name="x">
+			<float>0.7433381693998649</float>
+		</attr>
+		<attr name="y">
+			<float>-0.27525638571249866</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_456">
+		<attr name="x">
+			<float>0.7195786428737398</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_457">
+		<attr name="x">
+			<float>0.6958191163476148</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_458">
+		<attr name="x">
+			<float>0.6720595898214898</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_459">
+		<attr name="x">
+			<float>0.6483000632953648</float>
+		</attr>
+		<attr name="y">
+			<float>-0.27525638571249866</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_460">
+		<attr name="x">
+			<float>0.6245405367692399</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_461">
+		<attr name="x">
+			<float>0.6007810102431149</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_462">
+		<attr name="x">
+			<float>0.5770214837169899</float>
+		</attr>
+		<attr name="y">
+			<float>-0.27525638571249866</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_463">
+		<attr name="x">
+			<float>0.5532619571908649</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_464">
+		<attr name="x">
+			<float>0.5295024306647399</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_465">
+		<attr name="x">
+			<float>0.505742904138615</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_466">
+		<attr name="x">
+			<float>0.48198337761248994</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_467">
+		<attr name="x">
+			<float>0.458223851086365</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_468">
+		<attr name="x">
+			<float>0.43446432456024</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_469">
+		<attr name="x">
+			<float>0.410704798034115</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_470">
+		<attr name="x">
+			<float>0.426544482384865</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_471">
+		<attr name="x">
+			<float>0.43446432456024</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_472">
+		<attr name="x">
+			<float>0.410704798034115</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4179613133229198</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_473">
+		<attr name="x">
+			<float>0.38694527150799</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_474">
+		<attr name="x">
+			<float>0.363185744981865</float>
+		</attr>
+		<attr name="y">
+			<float>-0.27525638571249866</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_475">
+		<attr name="x">
+			<float>0.33942621845574006</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_476">
+		<attr name="x">
+			<float>0.31566669192961505</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_477">
+		<attr name="x">
+			<float>0.29190716540349004</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_478">
+		<attr name="x">
+			<float>0.2681476388773651</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_479">
+		<attr name="x">
+			<float>0.24438811235124008</float>
+		</attr>
+		<attr name="y">
+			<float>0.22421086092397527</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_480">
+		<attr name="x">
+			<float>0.2206285858251151</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_481">
+		<attr name="x">
+			<float>0.19686905929899012</float>
+		</attr>
+		<attr name="y">
+			<float>0.29556332472918584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_482">
+		<attr name="x">
+			<float>0.2047889014743651</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_483">
+		<attr name="x">
+			<float>0.2285484280004901</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_484">
+		<attr name="x">
+			<float>0.2523079545266151</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_485">
+		<attr name="x">
+			<float>0.2523079545266151</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4179613133229198</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_486">
+		<attr name="x">
+			<float>0.2285484280004901</float>
+		</attr>
+		<attr name="y">
+			<float>-0.48931377712813034</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_487">
+		<attr name="x">
+			<float>0.2047889014743651</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4179613133229198</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_488">
+		<attr name="x">
+			<float>0.18102937494824012</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_489">
+		<attr name="x">
+			<float>0.15726984842211514</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_490">
+		<attr name="x">
+			<float>0.13351032189599016</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13255145810207755</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_491">
+		<attr name="x">
+			<float>0.10975079536986516</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_492">
+		<attr name="x">
+			<float>0.08599126884374017</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_493">
+		<attr name="x">
+			<float>0.06223174231761519</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_494">
+		<attr name="x">
+			<float>0.038472215791490204</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_495">
+		<attr name="x">
+			<float>0.014712689265365213</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_496">
+		<attr name="x">
+			<float>0.02263253144074021</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_497">
+		<attr name="x">
+			<float>0.038472215791490204</float>
+		</attr>
+		<attr name="y">
+			<float>-0.27525638571249866</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_498">
+		<attr name="x">
+			<float>0.06223174231761519</float>
+		</attr>
+		<attr name="y">
+			<float>-0.48931377712813034</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_499">
+		<attr name="x">
+			<float>0.08599126884374017</float>
+		</attr>
+		<attr name="y">
+			<float>-0.703371168543762</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_500">
+		<attr name="x">
+			<float>0.10183095319449016</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9174285599593938</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_501">
+		<attr name="x">
+			<float>0.12559047972061516</float>
+		</attr>
+		<attr name="y">
+			<float>-1.060133487569815</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_502">
+		<attr name="x">
+			<float>0.14935000624674014</float>
+		</attr>
+		<attr name="y">
+			<float>-1.202838415180236</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_503">
+		<attr name="x">
+			<float>0.17310953277286512</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3455433427906571</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_504">
+		<attr name="x">
+			<float>-0.46839768343250954</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_505">
+		<attr name="x">
+			<float>-0.44463815690638453</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4179613133229198</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_506">
+		<attr name="x">
+			<float>-0.44463815690638453</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_507">
+		<attr name="x">
+			<float>-0.46839768343250954</float>
+		</attr>
+		<attr name="y">
+			<float>-0.06119899429686698</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_508">
+		<attr name="x">
+			<float>-0.4921572099586345</float>
+		</attr>
+		<attr name="y">
+			<float>0.08150593331355414</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_509">
+		<attr name="x">
+			<float>-0.5159167364847596</float>
+		</attr>
+		<attr name="y">
+			<float>0.1528583971187647</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_510">
+		<attr name="x">
+			<float>-0.5238365786601344</float>
+		</attr>
+		<attr name="y">
+			<float>0.010153469508343584</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_511">
+		<attr name="x">
+			<float>-0.5000770521340095</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2039039219072881</float>
+		</attr>
+	</node>
+	<node id="gw_opportunity_512">
+		<attr name="x">
+			<float>-0.47631752560788454</float>
+		</attr>
+		<attr name="y">
+			<float>-0.34660884951770926</float>
+		</attr>
+	</node>
+	<edge from="gw_opportunity_426" to="gw_opportunity_427"/>
+	<edge from="gw_opportunity_458" to="gw_opportunity_459"/>
+	<edge from="gw_opportunity_125" to="gw_opportunity_126"/>
+	<edge from="gw_opportunity_156" to="gw_opportunity_157"/>
+	<edge from="gw_opportunity_356" to="gw_opportunity_357"/>
+	<edge from="gw_opportunity_424" to="gw_opportunity_425"/>
+	<edge from="gw_opportunity_456" to="gw_opportunity_457"/>
+	<edge from="gw_opportunity_18" to="gw_opportunity_19"/>
+	<edge from="gw_opportunity_290" to="gw_opportunity_291"/>
+	<edge from="gw_opportunity_222" to="gw_opportunity_223"/>
+	<edge from="gw_opportunity_494" to="gw_opportunity_495"/>
+	<edge from="gw_opportunity_479" to="gw_opportunity_480"/>
+	<edge from="gw_opportunity_144" to="gw_opportunity_145"/>
+	<edge from="gw_opportunity_113" to="gw_opportunity_114"/>
+	<edge from="gw_opportunity_300" to="gw_opportunity_301"/>
+	<edge from="gw_opportunity_468" to="gw_opportunity_469"/>
+	<edge from="gw_opportunity_436" to="gw_opportunity_437"/>
+	<edge from="gw_opportunity_281" to="gw_opportunity_282"/>
+	<edge from="gw_opportunity_283" to="gw_opportunity_284"/>
+	<edge from="gw_opportunity_419" to="gw_opportunity_420"/>
+	<edge from="gw_opportunity_4" to="gw_opportunity_5"/>
+	<edge from="gw_opportunity_105" to="gw_opportunity_106"/>
+	<edge from="gw_opportunity_142" to="gw_opportunity_143"/>
+	<edge from="gw_opportunity_270" to="gw_opportunity_271"/>
+	<edge from="gw_opportunity_107" to="gw_opportunity_108"/>
+	<edge from="gw_opportunity_55" to="gw_opportunity_56"/>
+	<edge from="gw_opportunity_243" to="gw_opportunity_244"/>
+	<edge from="gw_opportunity_371" to="gw_opportunity_372"/>
+	<edge from="gw_opportunity_33" to="gw_opportunity_34"/>
+	<edge from="gw_opportunity_273" to="gw_opportunity_274"/>
+	<edge from="gw_opportunity_109" to="gw_opportunity_110"/>
+	<edge from="gw_opportunity_181" to="gw_opportunity_182"/>
+	<edge from="gw_opportunity_271" to="gw_opportunity_272"/>
+	<edge from="gw_opportunity_323" to="gw_opportunity_324"/>
+	<edge from="gw_opportunity_463" to="gw_opportunity_464"/>
+	<edge from="gw_opportunity_325" to="gw_opportunity_326"/>
+	<edge from="gw_opportunity_58" to="gw_opportunity_59"/>
+	<edge from="gw_opportunity_198" to="gw_opportunity_199"/>
+	<edge from="gw_opportunity_20" to="gw_opportunity_21"/>
+	<edge from="gw_opportunity_244" to="gw_opportunity_245"/>
+	<edge from="gw_opportunity_103" to="gw_opportunity_104"/>
+	<edge from="gw_opportunity_227" to="gw_opportunity_228"/>
+	<edge from="gw_opportunity_367" to="gw_opportunity_368"/>
+	<edge from="gw_opportunity_201" to="gw_opportunity_202"/>
+	<edge from="gw_opportunity_0" to="gw_opportunity_5"/>
+	<edge from="gw_opportunity_50" to="gw_opportunity_51"/>
+	<edge from="gw_opportunity_190" to="gw_opportunity_191"/>
+	<edge from="gw_opportunity_322" to="gw_opportunity_323"/>
+	<edge from="gw_opportunity_462" to="gw_opportunity_463"/>
+	<edge from="gw_opportunity_139" to="gw_opportunity_140"/>
+	<edge from="gw_opportunity_339" to="gw_opportunity_340"/>
+	<edge from="gw_opportunity_334" to="gw_opportunity_336"/>
+	<edge from="gw_opportunity_205" to="gw_opportunity_206"/>
+	<edge from="gw_opportunity_341" to="gw_opportunity_342"/>
+	<edge from="gw_opportunity_313" to="gw_opportunity_314"/>
+	<edge from="gw_opportunity_505" to="gw_opportunity_506"/>
+	<edge from="gw_opportunity_315" to="gw_opportunity_316"/>
+	<edge from="gw_opportunity_74" to="gw_opportunity_75"/>
+	<edge from="gw_opportunity_42" to="gw_opportunity_43"/>
+	<edge from="gw_opportunity_182" to="gw_opportunity_183"/>
+	<edge from="gw_opportunity_214" to="gw_opportunity_215"/>
+	<edge from="gw_opportunity_36" to="gw_opportunity_37"/>
+	<edge from="gw_opportunity_228" to="gw_opportunity_229"/>
+	<edge from="gw_opportunity_174" to="gw_opportunity_175"/>
+	<edge from="gw_opportunity_226" to="gw_opportunity_227"/>
+	<edge from="gw_opportunity_302" to="gw_opportunity_303"/>
+	<edge from="gw_opportunity_354" to="gw_opportunity_355"/>
+	<edge from="gw_opportunity_351" to="gw_opportunity_352"/>
+	<edge from="gw_opportunity_511" to="gw_opportunity_512"/>
+	<edge from="gw_opportunity_305" to="gw_opportunity_306"/>
+	<edge from="gw_opportunity_497" to="gw_opportunity_498"/>
+	<edge from="gw_opportunity_153" to="gw_opportunity_154"/>
+	<edge from="gw_opportunity_295" to="gw_opportunity_296"/>
+	<edge from="gw_opportunity_431" to="gw_opportunity_432"/>
+	<edge from="gw_opportunity_157" to="gw_opportunity_158"/>
+	<edge from="gw_opportunity_380" to="gw_opportunity_381"/>
+	<edge from="gw_opportunity_388" to="gw_opportunity_389"/>
+	<edge from="gw_opportunity_297" to="gw_opportunity_298"/>
+	<edge from="gw_opportunity_489" to="gw_opportunity_490"/>
+	<edge from="gw_opportunity_382" to="gw_opportunity_383"/>
+	<edge from="gw_opportunity_386" to="gw_opportunity_387"/>
+	<edge from="gw_opportunity_299" to="gw_opportunity_300"/>
+	<edge from="gw_opportunity_435" to="gw_opportunity_436"/>
+	<edge from="gw_opportunity_145" to="gw_opportunity_146"/>
+	<edge from="gw_opportunity_143" to="gw_opportunity_144"/>
+	<edge from="gw_opportunity_3" to="gw_opportunity_4"/>
+	<edge from="gw_opportunity_71" to="gw_opportunity_72"/>
+	<edge from="gw_opportunity_195" to="gw_opportunity_196"/>
+	<edge from="gw_opportunity_138" to="gw_opportunity_139"/>
+	<edge from="gw_opportunity_374" to="gw_opportunity_375"/>
+	<edge from="gw_opportunity_294" to="gw_opportunity_318"/>
+	<edge from="gw_opportunity_392" to="gw_opportunity_393"/>
+	<edge from="gw_opportunity_415" to="gw_opportunity_416"/>
+	<edge from="gw_opportunity_447" to="gw_opportunity_448"/>
+	<edge from="gw_opportunity_129" to="gw_opportunity_130"/>
+	<edge from="gw_opportunity_364" to="gw_opportunity_365"/>
+	<edge from="gw_opportunity_404" to="gw_opportunity_405"/>
+	<edge from="gw_opportunity_473" to="gw_opportunity_474"/>
+	<edge from="gw_opportunity_487" to="gw_opportunity_488"/>
+	<edge from="gw_opportunity_347" to="gw_opportunity_348"/>
+	<edge from="gw_opportunity_68" to="gw_opportunity_69"/>
+	<edge from="gw_opportunity_349" to="gw_opportunity_350"/>
+	<edge from="gw_opportunity_485" to="gw_opportunity_486"/>
+	<edge from="gw_opportunity_444" to="gw_opportunity_445"/>
+	<edge from="gw_opportunity_393" to="gw_opportunity_394"/>
+	<edge from="gw_opportunity_194" to="gw_opportunity_195"/>
+	<edge from="gw_opportunity_211" to="gw_opportunity_212"/>
+	<edge from="gw_opportunity_19" to="gw_opportunity_20"/>
+	<edge from="gw_opportunity_87" to="gw_opportunity_88"/>
+	<edge from="gw_opportunity_192" to="gw_opportunity_193"/>
+	<edge from="gw_opportunity_97" to="gw_opportunity_98"/>
+	<edge from="gw_opportunity_320" to="gw_opportunity_321"/>
+	<edge from="gw_opportunity_465" to="gw_opportunity_466"/>
+	<edge from="gw_opportunity_154" to="gw_opportunity_155"/>
+	<edge from="gw_opportunity_358" to="gw_opportunity_359"/>
+	<edge from="gw_opportunity_21" to="gw_opportunity_22"/>
+	<edge from="gw_opportunity_185" to="gw_opportunity_186"/>
+	<edge from="gw_opportunity_377" to="gw_opportunity_378"/>
+	<edge from="gw_opportunity_408" to="gw_opportunity_409"/>
+	<edge from="gw_opportunity_251" to="gw_opportunity_252"/>
+	<edge from="gw_opportunity_379" to="gw_opportunity_380"/>
+	<edge from="gw_opportunity_189" to="gw_opportunity_190"/>
+	<edge from="gw_opportunity_420" to="gw_opportunity_421"/>
+	<edge from="gw_opportunity_348" to="gw_opportunity_349"/>
+	<edge from="gw_opportunity_110" to="gw_opportunity_111"/>
+	<edge from="gw_opportunity_146" to="gw_opportunity_147"/>
+	<edge from="gw_opportunity_418" to="gw_opportunity_419"/>
+	<edge from="gw_opportunity_350" to="gw_opportunity_351"/>
+	<edge from="gw_opportunity_127" to="gw_opportunity_128"/>
+	<edge from="gw_opportunity_96" to="gw_opportunity_97"/>
+	<edge from="gw_opportunity_400" to="gw_opportunity_401"/>
+	<edge from="gw_opportunity_369" to="gw_opportunity_370"/>
+	<edge from="gw_opportunity_122" to="gw_opportunity_123"/>
+	<edge from="gw_opportunity_166" to="gw_opportunity_168"/>
+	<edge from="gw_opportunity_52" to="gw_opportunity_53"/>
+	<edge from="gw_opportunity_84" to="gw_opportunity_85"/>
+	<edge from="gw_opportunity_460" to="gw_opportunity_461"/>
+	<edge from="gw_opportunity_428" to="gw_opportunity_429"/>
+	<edge from="gw_opportunity_248" to="gw_opportunity_249"/>
+	<edge from="gw_opportunity_35" to="gw_opportunity_36"/>
+	<edge from="gw_opportunity_411" to="gw_opportunity_412"/>
+	<edge from="gw_opportunity_37" to="gw_opportunity_38"/>
+	<edge from="gw_opportunity_252" to="gw_opportunity_253"/>
+	<edge from="gw_opportunity_260" to="gw_opportunity_261"/>
+	<edge from="gw_opportunity_169" to="gw_opportunity_170"/>
+	<edge from="gw_opportunity_361" to="gw_opportunity_362"/>
+	<edge from="gw_opportunity_114" to="gw_opportunity_115"/>
+	<edge from="gw_opportunity_398" to="gw_opportunity_399"/>
+	<edge from="gw_opportunity_311" to="gw_opportunity_312"/>
+	<edge from="gw_opportunity_183" to="gw_opportunity_184"/>
+	<edge from="gw_opportunity_235" to="gw_opportunity_236"/>
+	<edge from="gw_opportunity_499" to="gw_opportunity_500"/>
+	<edge from="gw_opportunity_256" to="gw_opportunity_257"/>
+	<edge from="gw_opportunity_240" to="gw_opportunity_241"/>
+	<edge from="gw_opportunity_363" to="gw_opportunity_364"/>
+	<edge from="gw_opportunity_173" to="gw_opportunity_174"/>
+	<edge from="gw_opportunity_373" to="gw_opportunity_374"/>
+	<edge from="gw_opportunity_263" to="gw_opportunity_264"/>
+	<edge from="gw_opportunity_387" to="gw_opportunity_388"/>
+	<edge from="gw_opportunity_455" to="gw_opportunity_456"/>
+	<edge from="gw_opportunity_22" to="gw_opportunity_23"/>
+	<edge from="gw_opportunity_106" to="gw_opportunity_107"/>
+	<edge from="gw_opportunity_453" to="gw_opportunity_454"/>
+	<edge from="gw_opportunity_232" to="gw_opportunity_233"/>
+	<edge from="gw_opportunity_65" to="gw_opportunity_66"/>
+	<edge from="gw_opportunity_12" to="gw_opportunity_13"/>
+	<edge from="gw_opportunity_276" to="gw_opportunity_277"/>
+	<edge from="gw_opportunity_236" to="gw_opportunity_237"/>
+	<edge from="gw_opportunity_165" to="gw_opportunity_167"/>
+	<edge from="gw_opportunity_500" to="gw_opportunity_501"/>
+	<edge from="gw_opportunity_328" to="gw_opportunity_330"/>
+	<edge from="gw_opportunity_219" to="gw_opportunity_220"/>
+	<edge from="gw_opportunity_483" to="gw_opportunity_484"/>
+	<edge from="gw_opportunity_359" to="gw_opportunity_360"/>
+	<edge from="gw_opportunity_457" to="gw_opportunity_458"/>
+	<edge from="gw_opportunity_279" to="gw_opportunity_280"/>
+	<edge from="gw_opportunity_471" to="gw_opportunity_472"/>
+	<edge from="gw_opportunity_403" to="gw_opportunity_404"/>
+	<edge from="gw_opportunity_38" to="gw_opportunity_39"/>
+	<edge from="gw_opportunity_90" to="gw_opportunity_91"/>
+	<edge from="gw_opportunity_469" to="gw_opportunity_470"/>
+	<edge from="gw_opportunity_24" to="gw_opportunity_25"/>
+	<edge from="gw_opportunity_216" to="gw_opportunity_217"/>
+	<edge from="gw_opportunity_443" to="gw_opportunity_444"/>
+	<edge from="gw_opportunity_28" to="gw_opportunity_29"/>
+	<edge from="gw_opportunity_292" to="gw_opportunity_293"/>
+	<edge from="gw_opportunity_220" to="gw_opportunity_221"/>
+	<edge from="gw_opportunity_484" to="gw_opportunity_485"/>
+	<edge from="gw_opportunity_30" to="gw_opportunity_31"/>
+	<edge from="gw_opportunity_82" to="gw_opportunity_83"/>
+	<edge from="gw_opportunity_482" to="gw_opportunity_483"/>
+	<edge from="gw_opportunity_430" to="gw_opportunity_431"/>
+	<edge from="gw_opportunity_16" to="gw_opportunity_17"/>
+	<edge from="gw_opportunity_208" to="gw_opportunity_209"/>
+	<edge from="gw_opportunity_288" to="gw_opportunity_289"/>
+	<edge from="gw_opportunity_480" to="gw_opportunity_481"/>
+	<edge from="gw_opportunity_409" to="gw_opportunity_410"/>
+	<edge from="gw_opportunity_423" to="gw_opportunity_424"/>
+	<edge from="gw_opportunity_337" to="gw_opportunity_339"/>
+	<edge from="gw_opportunity_421" to="gw_opportunity_422"/>
+	<edge from="gw_opportunity_2" to="gw_opportunity_3"/>
+	<edge from="gw_opportunity_510" to="gw_opportunity_511"/>
+	<edge from="gw_opportunity_51" to="gw_opportunity_52"/>
+	<edge from="gw_opportunity_119" to="gw_opportunity_120"/>
+	<edge from="gw_opportunity_427" to="gw_opportunity_428"/>
+	<edge from="gw_opportunity_128" to="gw_opportunity_129"/>
+	<edge from="gw_opportunity_401" to="gw_opportunity_402"/>
+	<edge from="gw_opportunity_53" to="gw_opportunity_54"/>
+	<edge from="gw_opportunity_245" to="gw_opportunity_246"/>
+	<edge from="gw_opportunity_135" to="gw_opportunity_136"/>
+	<edge from="gw_opportunity_259" to="gw_opportunity_260"/>
+	<edge from="gw_opportunity_399" to="gw_opportunity_400"/>
+	<edge from="gw_opportunity_451" to="gw_opportunity_452"/>
+	<edge from="gw_opportunity_266" to="gw_opportunity_267"/>
+	<edge from="gw_opportunity_502" to="gw_opportunity_503"/>
+	<edge from="gw_opportunity_133" to="gw_opportunity_134"/>
+	<edge from="gw_opportunity_261" to="gw_opportunity_262"/>
+	<edge from="gw_opportunity_257" to="gw_opportunity_258"/>
+	<edge from="gw_opportunity_70" to="gw_opportunity_71"/>
+	<edge from="gw_opportunity_116" to="gw_opportunity_117"/>
+	<edge from="gw_opportunity_396" to="gw_opportunity_397"/>
+	<edge from="gw_opportunity_56" to="gw_opportunity_57"/>
+	<edge from="gw_opportunity_99" to="gw_opportunity_100"/>
+	<edge from="gw_opportunity_239" to="gw_opportunity_240"/>
+	<edge from="gw_opportunity_60" to="gw_opportunity_61"/>
+	<edge from="gw_opportunity_101" to="gw_opportunity_102"/>
+	<edge from="gw_opportunity_196" to="gw_opportunity_197"/>
+	<edge from="gw_opportunity_477" to="gw_opportunity_478"/>
+	<edge from="gw_opportunity_9" to="gw_opportunity_10"/>
+	<edge from="gw_opportunity_62" to="gw_opportunity_63"/>
+	<edge from="gw_opportunity_450" to="gw_opportunity_451"/>
+	<edge from="gw_opportunity_203" to="gw_opportunity_204"/>
+	<edge from="gw_opportunity_275" to="gw_opportunity_276"/>
+	<edge from="gw_opportunity_11" to="gw_opportunity_12"/>
+	<edge from="gw_opportunity_151" to="gw_opportunity_152"/>
+	<edge from="gw_opportunity_225" to="gw_opportunity_226"/>
+	<edge from="gw_opportunity_48" to="gw_opportunity_49"/>
+	<edge from="gw_opportunity_467" to="gw_opportunity_468"/>
+	<edge from="gw_opportunity_353" to="gw_opportunity_354"/>
+	<edge from="gw_opportunity_282" to="gw_opportunity_283"/>
+	<edge from="gw_opportunity_486" to="gw_opportunity_487"/>
+	<edge from="gw_opportunity_448" to="gw_opportunity_449"/>
+	<edge from="gw_opportunity_149" to="gw_opportunity_150"/>
+	<edge from="gw_opportunity_13" to="gw_opportunity_14"/>
+	<edge from="gw_opportunity_277" to="gw_opportunity_278"/>
+	<edge from="gw_opportunity_441" to="gw_opportunity_442"/>
+	<edge from="gw_opportunity_507" to="gw_opportunity_508"/>
+	<edge from="gw_opportunity_54" to="gw_opportunity_55"/>
+	<edge from="gw_opportunity_86" to="gw_opportunity_87"/>
+	<edge from="gw_opportunity_100" to="gw_opportunity_101"/>
+	<edge from="gw_opportunity_412" to="gw_opportunity_413"/>
+	<edge from="gw_opportunity_381" to="gw_opportunity_382"/>
+	<edge from="gw_opportunity_72" to="gw_opportunity_73"/>
+	<edge from="gw_opportunity_40" to="gw_opportunity_41"/>
+	<edge from="gw_opportunity_34" to="gw_opportunity_35"/>
+	<edge from="gw_opportunity_238" to="gw_opportunity_239"/>
+	<edge from="gw_opportunity_274" to="gw_opportunity_275"/>
+	<edge from="gw_opportunity_478" to="gw_opportunity_479"/>
+	<edge from="gw_opportunity_223" to="gw_opportunity_224"/>
+	<edge from="gw_opportunity_160" to="gw_opportunity_161"/>
+	<edge from="gw_opportunity_352" to="gw_opportunity_353"/>
+	<edge from="gw_opportunity_433" to="gw_opportunity_434"/>
+	<edge from="gw_opportunity_262" to="gw_opportunity_263"/>
+	<edge from="gw_opportunity_134" to="gw_opportunity_135"/>
+	<edge from="gw_opportunity_250" to="gw_opportunity_251"/>
+	<edge from="gw_opportunity_378" to="gw_opportunity_379"/>
+	<edge from="gw_opportunity_76" to="gw_opportunity_77"/>
+	<edge from="gw_opportunity_44" to="gw_opportunity_45"/>
+	<edge from="gw_opportunity_180" to="gw_opportunity_181"/>
+	<edge from="gw_opportunity_212" to="gw_opportunity_213"/>
+	<edge from="gw_opportunity_25" to="gw_opportunity_26"/>
+	<edge from="gw_opportunity_329" to="gw_opportunity_331"/>
+	<edge from="gw_opportunity_163" to="gw_opportunity_164"/>
+	<edge from="gw_opportunity_27" to="gw_opportunity_28"/>
+	<edge from="gw_opportunity_29" to="gw_opportunity_30"/>
+	<edge from="gw_opportunity_508" to="gw_opportunity_509"/>
+	<edge from="gw_opportunity_425" to="gw_opportunity_426"/>
+	<edge from="gw_opportunity_242" to="gw_opportunity_243"/>
+	<edge from="gw_opportunity_370" to="gw_opportunity_371"/>
+	<edge from="gw_opportunity_439" to="gw_opportunity_440"/>
+	<edge from="gw_opportunity_491" to="gw_opportunity_492"/>
+	<edge from="gw_opportunity_17" to="gw_opportunity_18"/>
+	<edge from="gw_opportunity_289" to="gw_opportunity_290"/>
+	<edge from="gw_opportunity_437" to="gw_opportunity_438"/>
+	<edge from="gw_opportunity_365" to="gw_opportunity_366"/>
+	<edge from="gw_opportunity_15" to="gw_opportunity_16"/>
+	<edge from="gw_opportunity_67" to="gw_opportunity_68"/>
+	<edge from="gw_opportunity_207" to="gw_opportunity_208"/>
+	<edge from="gw_opportunity_150" to="gw_opportunity_151"/>
+	<edge from="gw_opportunity_234" to="gw_opportunity_235"/>
+	<edge from="gw_opportunity_278" to="gw_opportunity_279"/>
+	<edge from="gw_opportunity_362" to="gw_opportunity_363"/>
+	<edge from="gw_opportunity_69" to="gw_opportunity_70"/>
+	<edge from="gw_opportunity_167" to="gw_opportunity_169"/>
+	<edge from="gw_opportunity_193" to="gw_opportunity_194"/>
+	<edge from="gw_opportunity_321" to="gw_opportunity_322"/>
+	<edge from="gw_opportunity_314" to="gw_opportunity_315"/>
+	<edge from="gw_opportunity_454" to="gw_opportunity_455"/>
+	<edge from="gw_opportunity_268" to="gw_opportunity_269"/>
+	<edge from="gw_opportunity_492" to="gw_opportunity_493"/>
+	<edge from="gw_opportunity_503" to="gw_opportunity_328"/>
+	<edge from="gw_opportunity_475" to="gw_opportunity_476"/>
+	<edge from="gw_opportunity_336" to="gw_opportunity_338"/>
+	<edge from="gw_opportunity_332" to="gw_opportunity_334"/>
+	<edge from="gw_opportunity_66" to="gw_opportunity_67"/>
+	<edge from="gw_opportunity_206" to="gw_opportunity_207"/>
+	<edge from="gw_opportunity_306" to="gw_opportunity_307"/>
+	<edge from="gw_opportunity_446" to="gw_opportunity_447"/>
+	<edge from="gw_opportunity_83" to="gw_opportunity_84"/>
+	<edge from="gw_opportunity_395" to="gw_opportunity_396"/>
+	<edge from="gw_opportunity_335" to="gw_opportunity_337"/>
+	<edge from="gw_opportunity_218" to="gw_opportunity_219"/>
+	<edge from="gw_opportunity_294" to="gw_opportunity_295"/>
+	<edge from="gw_opportunity_346" to="gw_opportunity_347"/>
+	<edge from="gw_opportunity_85" to="gw_opportunity_86"/>
+	<edge from="gw_opportunity_461" to="gw_opportunity_462"/>
+	<edge from="gw_opportunity_57" to="gw_opportunity_58"/>
+	<edge from="gw_opportunity_249" to="gw_opportunity_250"/>
+	<edge from="gw_opportunity_59" to="gw_opportunity_60"/>
+	<edge from="gw_opportunity_298" to="gw_opportunity_299"/>
+	<edge from="gw_opportunity_438" to="gw_opportunity_439"/>
+	<edge from="gw_opportunity_470" to="gw_opportunity_471"/>
+	<edge from="gw_opportunity_61" to="gw_opportunity_62"/>
+	<edge from="gw_opportunity_284" to="gw_opportunity_285"/>
+	<edge from="gw_opportunity_253" to="gw_opportunity_254"/>
+	<edge from="gw_opportunity_476" to="gw_opportunity_477"/>
+	<edge from="gw_opportunity_158" to="gw_opportunity_159"/>
+	<edge from="gw_opportunity_210" to="gw_opportunity_211"/>
+	<edge from="gw_opportunity_286" to="gw_opportunity_287"/>
+	<edge from="gw_opportunity_49" to="gw_opportunity_50"/>
+	<edge from="gw_opportunity_241" to="gw_opportunity_242"/>
+	<edge from="gw_opportunity_120" to="gw_opportunity_121"/>
+	<edge from="gw_opportunity_47" to="gw_opportunity_48"/>
+	<edge from="gw_opportunity_124" to="gw_opportunity_125"/>
+	<edge from="gw_opportunity_132" to="gw_opportunity_133"/>
+	<edge from="gw_opportunity_413" to="gw_opportunity_414"/>
+	<edge from="gw_opportunity_41" to="gw_opportunity_42"/>
+	<edge from="gw_opportunity_233" to="gw_opportunity_234"/>
+	<edge from="gw_opportunity_126" to="gw_opportunity_127"/>
+	<edge from="gw_opportunity_130" to="gw_opportunity_131"/>
+	<edge from="gw_opportunity_43" to="gw_opportunity_44"/>
+	<edge from="gw_opportunity_179" to="gw_opportunity_180"/>
+	<edge from="gw_opportunity_247" to="gw_opportunity_248"/>
+	<edge from="gw_opportunity_161" to="gw_opportunity_162"/>
+	<edge from="gw_opportunity_112" to="gw_opportunity_113"/>
+	<edge from="gw_opportunity_384" to="gw_opportunity_385"/>
+	<edge from="gw_opportunity_45" to="gw_opportunity_46"/>
+	<edge from="gw_opportunity_237" to="gw_opportunity_238"/>
+	<edge from="gw_opportunity_309" to="gw_opportunity_310"/>
+	<edge from="gw_opportunity_501" to="gw_opportunity_502"/>
+	<edge from="gw_opportunity_391" to="gw_opportunity_392"/>
+	<edge from="gw_opportunity_118" to="gw_opportunity_119"/>
+	<edge from="gw_opportunity_394" to="gw_opportunity_395"/>
+	<edge from="gw_opportunity_6" to="gw_opportunity_6"/>
+	<edge from="gw_opportunity_389" to="gw_opportunity_390"/>
+	<edge from="gw_opportunity_178" to="gw_opportunity_184"/>
+	<edge from="gw_opportunity_104" to="gw_opportunity_105"/>
+	<edge from="gw_opportunity_63" to="gw_opportunity_64"/>
+	<edge from="gw_opportunity_31" to="gw_opportunity_32"/>
+	<edge from="gw_opportunity_385" to="gw_opportunity_386"/>
+	<edge from="gw_opportunity_186" to="gw_opportunity_187"/>
+	<edge from="gw_opportunity_108" to="gw_opportunity_109"/>
+	<edge from="gw_opportunity_148" to="gw_opportunity_149"/>
+	<edge from="gw_opportunity_89" to="gw_opportunity_90"/>
+	<edge from="gw_opportunity_312" to="gw_opportunity_313"/>
+	<edge from="gw_opportunity_91" to="gw_opportunity_92"/>
+	<edge from="gw_opportunity_231" to="gw_opportunity_232"/>
+	<edge from="gw_opportunity_93" to="gw_opportunity_94"/>
+	<edge from="gw_opportunity_185" to="gw_opportunity_293"/>
+	<edge from="gw_opportunity_229" to="gw_opportunity_230"/>
+	<edge from="gw_opportunity_188" to="gw_opportunity_189"/>
+	<edge from="gw_opportunity_324" to="gw_opportunity_325"/>
+	<edge from="gw_opportunity_137" to="gw_opportunity_138"/>
+	<edge from="gw_opportunity_178" to="gw_opportunity_179"/>
+	<edge from="gw_opportunity_267" to="gw_opportunity_268"/>
+	<edge from="gw_opportunity_407" to="gw_opportunity_408"/>
+	<edge from="gw_opportunity_459" to="gw_opportunity_460"/>
+	<edge from="gw_opportunity_176" to="gw_opportunity_177"/>
+	<edge from="gw_opportunity_304" to="gw_opportunity_305"/>
+	<edge from="gw_opportunity_81" to="gw_opportunity_82"/>
+	<edge from="gw_opportunity_481" to="gw_opportunity_482"/>
+	<edge from="gw_opportunity_102" to="gw_opportunity_103"/>
+	<edge from="gw_opportunity_410" to="gw_opportunity_411"/>
+	<edge from="gw_opportunity_141" to="gw_opportunity_142"/>
+	<edge from="gw_opportunity_269" to="gw_opportunity_270"/>
+	<edge from="gw_opportunity_405" to="gw_opportunity_406"/>
+	<edge from="gw_opportunity_343" to="gw_opportunity_344"/>
+	<edge from="gw_opportunity_88" to="gw_opportunity_89"/>
+	<edge from="gw_opportunity_170" to="gw_opportunity_171"/>
+	<edge from="gw_opportunity_202" to="gw_opportunity_203"/>
+	<edge from="gw_opportunity_310" to="gw_opportunity_311"/>
+	<edge from="gw_opportunity_342" to="gw_opportunity_343"/>
+	<edge from="gw_opportunity_92" to="gw_opportunity_93"/>
+	<edge from="gw_opportunity_445" to="gw_opportunity_446"/>
+	<edge from="gw_opportunity_200" to="gw_opportunity_201"/>
+	<edge from="gw_opportunity_296" to="gw_opportunity_297"/>
+	<edge from="gw_opportunity_94" to="gw_opportunity_95"/>
+	<edge from="gw_opportunity_162" to="gw_opportunity_163"/>
+	<edge from="gw_opportunity_366" to="gw_opportunity_367"/>
+	<edge from="gw_opportunity_402" to="gw_opportunity_403"/>
+	<edge from="gw_opportunity_383" to="gw_opportunity_384"/>
+	<edge from="gw_opportunity_80" to="gw_opportunity_81"/>
+	<edge from="gw_opportunity_416" to="gw_opportunity_417"/>
+	<edge from="gw_opportunity_390" to="gw_opportunity_391"/>
+	<edge from="gw_opportunity_506" to="gw_opportunity_507"/>
+	<edge from="gw_opportunity_172" to="gw_opportunity_173"/>
+	<edge from="gw_opportunity_204" to="gw_opportunity_205"/>
+	<edge from="gw_opportunity_308" to="gw_opportunity_309"/>
+	<edge from="gw_opportunity_340" to="gw_opportunity_341"/>
+	<edge from="gw_opportunity_504" to="gw_opportunity_505"/>
+	<edge from="gw_opportunity_155" to="gw_opportunity_156"/>
+	<edge from="gw_opportunity_291" to="gw_opportunity_292"/>
+	<edge from="gw_opportunity_331" to="gw_opportunity_333"/>
+	<edge from="gw_opportunity_285" to="gw_opportunity_286"/>
+	<edge from="gw_opportunity_333" to="gw_opportunity_335"/>
+	<edge from="gw_opportunity_14" to="gw_opportunity_15"/>
+	<edge from="gw_opportunity_498" to="gw_opportunity_499"/>
+	<edge from="gw_opportunity_115" to="gw_opportunity_116"/>
+	<edge from="gw_opportunity_0" to="gw_opportunity_1"/>
+	<edge from="gw_opportunity_496" to="gw_opportunity_497"/>
+	<edge from="gw_opportunity_319" to="gw_opportunity_326"/>
+	<edge from="gw_opportunity_177" to="gw_opportunity_166"/>
+	<edge from="gw_opportunity_117" to="gw_opportunity_118"/>
+	<edge from="gw_opportunity_429" to="gw_opportunity_430"/>
+	<edge from="gw_opportunity_7" to="gw_opportunity_8"/>
+	<edge from="gw_opportunity_131" to="gw_opportunity_132"/>
+	<edge from="gw_opportunity_199" to="gw_opportunity_200"/>
+	<edge from="gw_opportunity_490" to="gw_opportunity_491"/>
+	<edge from="gw_opportunity_406" to="gw_opportunity_407"/>
+	<edge from="gw_opportunity_197" to="gw_opportunity_198"/>
+	<edge from="gw_opportunity_264" to="gw_opportunity_265"/>
+	<edge from="gw_opportunity_488" to="gw_opportunity_489"/>
+	<edge from="gw_opportunity_449" to="gw_opportunity_450"/>
+	<edge from="gw_opportunity_111" to="gw_opportunity_112"/>
+	<edge from="gw_opportunity_73" to="gw_opportunity_74"/>
+	<edge from="gw_opportunity_75" to="gw_opportunity_76"/>
+	<edge from="gw_opportunity_147" to="gw_opportunity_148"/>
+	<edge from="gw_opportunity_23" to="gw_opportunity_24"/>
+	<edge from="gw_opportunity_215" to="gw_opportunity_216"/>
+	<edge from="gw_opportunity_327" to="gw_opportunity_329"/>
+	<edge from="gw_opportunity_474" to="gw_opportunity_475"/>
+	<edge from="gw_opportunity_422" to="gw_opportunity_423"/>
+	<edge from="gw_opportunity_77" to="gw_opportunity_78"/>
+	<edge from="gw_opportunity_213" to="gw_opportunity_214"/>
+	<edge from="gw_opportunity_280" to="gw_opportunity_281"/>
+	<edge from="gw_opportunity_472" to="gw_opportunity_473"/>
+	<edge from="gw_opportunity_187" to="gw_opportunity_188"/>
+	<edge from="gw_opportunity_317" to="gw_opportunity_318"/>
+	<edge from="gw_opportunity_509" to="gw_opportunity_510"/>
+	<edge from="gw_opportunity_98" to="gw_opportunity_99"/>
+	<edge from="gw_opportunity_46" to="gw_opportunity_47"/>
+	<edge from="gw_opportunity_466" to="gw_opportunity_467"/>
+	<edge from="gw_opportunity_414" to="gw_opportunity_415"/>
+	<edge from="gw_opportunity_95" to="gw_opportunity_96"/>
+	<edge from="gw_opportunity_255" to="gw_opportunity_256"/>
+	<edge from="gw_opportunity_32" to="gw_opportunity_33"/>
+	<edge from="gw_opportunity_272" to="gw_opportunity_273"/>
+	<edge from="gw_opportunity_224" to="gw_opportunity_225"/>
+	<edge from="gw_opportunity_464" to="gw_opportunity_465"/>
+	<edge from="gw_opportunity_330" to="gw_opportunity_332"/>
+	<edge from="gw_opportunity_376" to="gw_opportunity_377"/>
+	<edge from="gw_opportunity_39" to="gw_opportunity_40"/>
+	<edge from="gw_opportunity_175" to="gw_opportunity_176"/>
+	<edge from="gw_opportunity_303" to="gw_opportunity_304"/>
+	<edge from="gw_opportunity_254" to="gw_opportunity_255"/>
+	<edge from="gw_opportunity_258" to="gw_opportunity_259"/>
+	<edge from="gw_opportunity_171" to="gw_opportunity_172"/>
+	<edge from="gw_opportunity_307" to="gw_opportunity_308"/>
+	<edge from="gw_opportunity_375" to="gw_opportunity_376"/>
+	<edge from="gw_opportunity_417" to="gw_opportunity_418"/>
+	<edge from="gw_opportunity_368" to="gw_opportunity_369"/>
+	<edge from="gw_opportunity_301" to="gw_opportunity_302"/>
+	<edge from="gw_opportunity_493" to="gw_opportunity_494"/>
+	<edge from="gw_opportunity_504" to="gw_opportunity_512"/>
+	<edge from="gw_opportunity_79" to="gw_opportunity_80"/>
+	<edge from="gw_opportunity_10" to="gw_opportunity_11"/>
+	<edge from="gw_opportunity_246" to="gw_opportunity_247"/>
+	<edge from="gw_opportunity_136" to="gw_opportunity_137"/>
+	<edge from="gw_opportunity_360" to="gw_opportunity_361"/>
+	<edge from="gw_opportunity_159" to="gw_opportunity_160"/>
+	<edge from="gw_opportunity_191" to="gw_opportunity_192"/>
+	<edge from="gw_opportunity_287" to="gw_opportunity_288"/>
+	<edge from="gw_opportunity_319" to="gw_opportunity_320"/>
+	<edge from="gw_opportunity_1" to="gw_opportunity_2"/>
+	<edge from="gw_opportunity_442" to="gw_opportunity_443"/>
+	<edge from="gw_opportunity_140" to="gw_opportunity_141"/>
+	<edge from="gw_opportunity_372" to="gw_opportunity_373"/>
+	<edge from="gw_opportunity_217" to="gw_opportunity_218"/>
+	<edge from="gw_opportunity_345" to="gw_opportunity_346"/>
+	<edge from="gw_opportunity_440" to="gw_opportunity_441"/>
+	<edge from="gw_opportunity_9" to="gw_opportunity_164"/>
+	<edge from="gw_opportunity_355" to="gw_opportunity_356"/>
+	<edge from="gw_opportunity_495" to="gw_opportunity_496"/>
+	<edge from="gw_opportunity_316" to="gw_opportunity_317"/>
+	<edge from="gw_opportunity_221" to="gw_opportunity_222"/>
+	<edge from="gw_opportunity_452" to="gw_opportunity_453"/>
+	<edge from="gw_opportunity_357" to="gw_opportunity_358"/>
+	<edge from="gw_opportunity_327" to="gw_opportunity_338"/>
+	<edge from="gw_opportunity_265" to="gw_opportunity_266"/>
+	<edge from="gw_opportunity_78" to="gw_opportunity_79"/>
+	<edge from="gw_opportunity_434" to="gw_opportunity_435"/>
+	<edge from="gw_opportunity_165" to="gw_opportunity_168"/>
+	<edge from="gw_opportunity_209" to="gw_opportunity_210"/>
+	<edge from="gw_opportunity_64" to="gw_opportunity_65"/>
+	<edge from="gw_opportunity_432" to="gw_opportunity_433"/>
+	<edge from="gw_opportunity_26" to="gw_opportunity_27"/>
+	<edge from="gw_opportunity_230" to="gw_opportunity_231"/>
+	<edge from="gw_opportunity_397" to="gw_opportunity_398"/>
+	<edge from="gw_opportunity_152" to="gw_opportunity_153"/>
+	<edge from="gw_opportunity_121" to="gw_opportunity_122"/>
+	<edge from="gw_opportunity_344" to="gw_opportunity_345"/>
+	<edge from="gw_opportunity_123" to="gw_opportunity_124"/>
+</graph>
+</gxl>

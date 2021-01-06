@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="gw_Doctor">
+	<attr name="x_mean">
+		<float>105.05479452054794</float>
+	</attr>
+	<attr name="y_mean">
+		<float>33.054794520547944</float>
+	</attr>
+	<attr name="x_std">
+		<float>62.45105270419297</float>
+	</attr>
+	<attr name="y_std">
+		<float>12.900982665088012</float>
+	</attr>
+	<attr name="x_max">
+		<float>226</float>
+	</attr>
+	<attr name="y_max">
+		<float>47</float>
+	</attr>
+	<node id="gw_Doctor_0">
+		<attr name="x">
+			<float>1.1039878832150265</float>
+		</attr>
+		<attr name="y">
+			<float>0.9259143888145489</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_1">
+		<attr name="x">
+			<float>1.2481007461739522</float>
+		</attr>
+		<attr name="y">
+			<float>1.0809413392353333</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_2">
+		<attr name="x">
+			<float>1.5043013914342642</float>
+		</attr>
+		<attr name="y">
+			<float>0.383320062341803</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_3">
+		<attr name="x">
+			<float>1.5363264720918033</float>
+		</attr>
+		<attr name="y">
+			<float>1.0034278640249412</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_4">
+		<attr name="x">
+			<float>1.7284769560370374</float>
+		</attr>
+		<attr name="y">
+			<float>1.0809413392353333</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_5">
+		<attr name="x">
+			<float>1.936639980311041</float>
+		</attr>
+		<attr name="y">
+			<float>0.46083353755219525</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_6">
+		<attr name="x">
+			<float>1.6644267947219593</float>
+		</attr>
+		<attr name="y">
+			<float>0.7708874383937643</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_7">
+		<attr name="x">
+			<float>1.6163891737356508</float>
+		</attr>
+		<attr name="y">
+			<float>0.0732661615002339</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_8">
+		<attr name="x">
+			<float>1.3121509074890303</float>
+		</attr>
+		<attr name="y">
+			<float>-0.00424731371015836</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_9">
+		<attr name="x">
+			<float>1.3121509074890303</float>
+		</attr>
+		<attr name="y">
+			<float>0.383320062341803</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_10">
+		<attr name="x">
+			<float>1.3281634478177997</float>
+		</attr>
+		<attr name="y">
+			<float>0.6158604879729798</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_11">
+		<attr name="x">
+			<float>1.2641132865027216</float>
+		</attr>
+		<attr name="y">
+			<float>0.8484009136041566</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_12">
+		<attr name="x">
+			<float>1.2320882058451827</float>
+		</attr>
+		<attr name="y">
+			<float>0.6933739631833721</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_13">
+		<attr name="x">
+			<float>0.12722292316008654</float>
+		</attr>
+		<attr name="y">
+			<float>0.5383470127625876</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_14">
+		<attr name="x">
+			<float>0.14323546348885605</float>
+		</attr>
+		<attr name="y">
+			<float>0.8484009136041566</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_15">
+		<attr name="x">
+			<float>0.28734832644778163</float>
+		</attr>
+		<attr name="y">
+			<float>1.0809413392353333</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_16">
+		<attr name="x">
+			<float>0.5755740523656327</float>
+		</attr>
+		<attr name="y">
+			<float>0.6933739631833721</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_17">
+		<attr name="x">
+			<float>0.3033608667765511</float>
+		</attr>
+		<attr name="y">
+			<float>0.7708874383937643</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_18">
+		<attr name="x">
+			<float>0.2713357861190121</float>
+		</attr>
+		<attr name="y">
+			<float>0.6158604879729798</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_19">
+		<attr name="x">
+			<float>0.31937340710532064</float>
+		</attr>
+		<attr name="y">
+			<float>0.383320062341803</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_20">
+		<attr name="x">
+			<float>0.4474737297354767</float>
+		</attr>
+		<attr name="y">
+			<float>0.30580658713141073</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_21">
+		<attr name="x">
+			<float>0.38342356842039865</float>
+		</attr>
+		<attr name="y">
+			<float>-0.08176078892055062</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_22">
+		<attr name="x">
+			<float>0.2553232457902426</float>
+		</attr>
+		<attr name="y">
+			<float>-0.00424731371015836</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_23">
+		<attr name="x">
+			<float>-0.0008773994700695372</float>
+		</attr>
+		<attr name="y">
+			<float>0.30580658713141073</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_24">
+		<attr name="x">
+			<float>-0.12897772210022562</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1592742641309429</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_25">
+		<attr name="x">
+			<float>-0.20904042374407317</float>
+		</attr>
+		<attr name="y">
+			<float>-0.1592742641309429</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_26">
+		<attr name="x">
+			<float>-0.4172034480180768</float>
+		</attr>
+		<attr name="y">
+			<float>0.6933739631833721</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_27">
+		<attr name="x">
+			<float>-0.36916582703176826</float>
+		</attr>
+		<attr name="y">
+			<float>1.0034278640249412</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_28">
+		<attr name="x">
+			<float>-0.2730905850591512</float>
+		</attr>
+		<attr name="y">
+			<float>1.0809413392353333</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_29">
+		<attr name="x">
+			<float>-0.032902480127608554</float>
+		</attr>
+		<attr name="y">
+			<float>0.6158604879729798</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_30">
+		<attr name="x">
+			<float>-0.2891031253879207</float>
+		</attr>
+		<attr name="y">
+			<float>0.6158604879729798</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_31">
+		<attr name="x">
+			<float>-0.19302788341530364</float>
+		</attr>
+		<attr name="y">
+			<float>0.46083353755219525</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_32">
+		<attr name="x">
+			<float>-0.20904042374407317</float>
+		</attr>
+		<attr name="y">
+			<float>0.6933739631833721</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_33">
+		<attr name="x">
+			<float>1.2801258268314912</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7018685906036888</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_34">
+		<attr name="x">
+			<float>1.2000631251876437</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0894359666556501</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_35">
+		<attr name="x">
+			<float>1.1360129638725656</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2444629170764347</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_36">
+		<attr name="x">
+			<float>0.9438624799273315</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7018685906036888</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_37">
+		<attr name="x">
+			<float>0.7517119959820974</float>
+		</attr>
+		<attr name="y">
+			<float>0.22829311192101845</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_38">
+		<attr name="x">
+			<float>0.7196869153245584</float>
+		</attr>
+		<attr name="y">
+			<float>1.0034278640249412</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_39">
+		<attr name="x">
+			<float>1.0079126412424095</float>
+		</attr>
+		<attr name="y">
+			<float>1.0034278640249412</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_40">
+		<attr name="x">
+			<float>0.863799778283484</float>
+		</attr>
+		<attr name="y">
+			<float>0.8484009136041566</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_41">
+		<attr name="x">
+			<float>0.8477872379547144</float>
+		</attr>
+		<attr name="y">
+			<float>0.6158604879729798</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_42">
+		<attr name="x">
+			<float>1.1680380445301046</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6243551153932965</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_43">
+		<attr name="x">
+			<float>-0.49726614966192434</float>
+		</attr>
+		<attr name="y">
+			<float>-2.252138094811534</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_44">
+		<attr name="x">
+			<float>-0.5773288513057718</float>
+		</attr>
+		<attr name="y">
+			<float>-2.5621919956531034</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_45">
+		<attr name="x">
+			<float>-0.8815671175523926</float>
+		</attr>
+		<attr name="y">
+			<float>-2.407165045232319</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_46">
+		<attr name="x">
+			<float>-0.9776423595250096</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9420841939699651</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_47">
+		<attr name="x">
+			<float>-0.9776423595250096</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8568955410244733</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_48">
+		<attr name="x">
+			<float>-1.1537803031414742</float>
+		</attr>
+		<attr name="y">
+			<float>0.0732661615002339</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_49">
+		<attr name="x">
+			<float>-0.9296047385387011</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5468416401829043</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_50">
+		<attr name="x">
+			<float>-0.833529496566084</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5468416401829043</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_51">
+		<attr name="x">
+			<float>-0.8655545772236231</float>
+		</attr>
+		<attr name="y">
+			<float>-0.779382065814081</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_52">
+		<attr name="x">
+			<float>-0.6573915529496194</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9420841939699651</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_53">
+		<attr name="x">
+			<float>-0.5453037706482329</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9420841939699651</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_54">
+		<attr name="x">
+			<float>-0.5453037706482329</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0119224914452578</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_55">
+		<attr name="x">
+			<float>-0.7534667949222364</float>
+		</attr>
+		<attr name="y">
+			<float>0.15077963671062616</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_56">
+		<attr name="x">
+			<float>-1.0256799805113181</float>
+		</attr>
+		<attr name="y">
+			<float>0.6158604879729798</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_57">
+		<attr name="x">
+			<float>-1.1537803031414742</float>
+		</attr>
+		<attr name="y">
+			<float>0.6158604879729798</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_58">
+		<attr name="x">
+			<float>-1.2018179241277827</float>
+		</attr>
+		<attr name="y">
+			<float>0.22829311192101845</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_59">
+		<attr name="x">
+			<float>-1.458018569388095</float>
+		</attr>
+		<attr name="y">
+			<float>0.15077963671062616</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_60">
+		<attr name="x">
+			<float>-1.6661815936620985</float>
+		</attr>
+		<attr name="y">
+			<float>0.5383470127625876</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_61">
+		<attr name="x">
+			<float>-1.682194133990868</float>
+		</attr>
+		<attr name="y">
+			<float>0.9259143888145489</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_62">
+		<attr name="x">
+			<float>-1.0096674401825485</float>
+		</attr>
+		<attr name="y">
+			<float>0.9259143888145489</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_63">
+		<attr name="x">
+			<float>-0.6253664722920804</float>
+		</attr>
+		<attr name="y">
+			<float>0.15077963671062616</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_64">
+		<attr name="x">
+			<float>-0.49726614966192434</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7018685906036888</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_65">
+		<attr name="x">
+			<float>-1.5380812710319425</float>
+		</attr>
+		<attr name="y">
+			<float>0.6933739631833721</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_66">
+		<attr name="x">
+			<float>-1.5060561903744034</float>
+		</attr>
+		<attr name="y">
+			<float>0.46083353755219525</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_67">
+		<attr name="x">
+			<float>-1.4259934887305559</float>
+		</attr>
+		<attr name="y">
+			<float>0.5383470127625876</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_68">
+		<attr name="x">
+			<float>-1.4740311097168644</float>
+		</attr>
+		<attr name="y">
+			<float>0.7708874383937643</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_69">
+		<attr name="x">
+			<float>-0.705429173935928</float>
+		</attr>
+		<attr name="y">
+			<float>-2.3296515700219262</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_70">
+		<attr name="x">
+			<float>-0.705429173935928</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9420841939699651</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_71">
+		<attr name="x">
+			<float>-0.9296047385387011</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1669494418660424</float>
+		</attr>
+	</node>
+	<node id="gw_Doctor_72">
+		<attr name="x">
+			<float>-0.897579657881162</float>
+		</attr>
+		<attr name="y">
+			<float>-1.8645707187595728</float>
+		</attr>
+	</node>
+	<edge from="gw_Doctor_13" to="gw_Doctor_22"/>
+	<edge from="gw_Doctor_10" to="gw_Doctor_11"/>
+	<edge from="gw_Doctor_30" to="gw_Doctor_32"/>
+	<edge from="gw_Doctor_54" to="gw_Doctor_55"/>
+	<edge from="gw_Doctor_5" to="gw_Doctor_6"/>
+	<edge from="gw_Doctor_28" to="gw_Doctor_29"/>
+	<edge from="gw_Doctor_36" to="gw_Doctor_37"/>
+	<edge from="gw_Doctor_61" to="gw_Doctor_62"/>
+	<edge from="gw_Doctor_69" to="gw_Doctor_70"/>
+	<edge from="gw_Doctor_34" to="gw_Doctor_42"/>
+	<edge from="gw_Doctor_15" to="gw_Doctor_16"/>
+	<edge from="gw_Doctor_40" to="gw_Doctor_41"/>
+	<edge from="gw_Doctor_18" to="gw_Doctor_19"/>
+	<edge from="gw_Doctor_30" to="gw_Doctor_31"/>
+	<edge from="gw_Doctor_34" to="gw_Doctor_35"/>
+	<edge from="gw_Doctor_59" to="gw_Doctor_60"/>
+	<edge from="gw_Doctor_46" to="gw_Doctor_47"/>
+	<edge from="gw_Doctor_31" to="gw_Doctor_32"/>
+	<edge from="gw_Doctor_63" to="gw_Doctor_64"/>
+	<edge from="gw_Doctor_69" to="gw_Doctor_72"/>
+	<edge from="gw_Doctor_1" to="gw_Doctor_2"/>
+	<edge from="gw_Doctor_16" to="gw_Doctor_17"/>
+	<edge from="gw_Doctor_49" to="gw_Doctor_50"/>
+	<edge from="gw_Doctor_65" to="gw_Doctor_66"/>
+	<edge from="gw_Doctor_6" to="gw_Doctor_7"/>
+	<edge from="gw_Doctor_58" to="gw_Doctor_59"/>
+	<edge from="gw_Doctor_70" to="gw_Doctor_71"/>
+	<edge from="gw_Doctor_20" to="gw_Doctor_21"/>
+	<edge from="gw_Doctor_44" to="gw_Doctor_45"/>
+	<edge from="gw_Doctor_52" to="gw_Doctor_53"/>
+	<edge from="gw_Doctor_25" to="gw_Doctor_26"/>
+	<edge from="gw_Doctor_43" to="gw_Doctor_64"/>
+	<edge from="gw_Doctor_56" to="gw_Doctor_57"/>
+	<edge from="gw_Doctor_27" to="gw_Doctor_28"/>
+	<edge from="gw_Doctor_35" to="gw_Doctor_36"/>
+	<edge from="gw_Doctor_39" to="gw_Doctor_40"/>
+	<edge from="gw_Doctor_47" to="gw_Doctor_48"/>
+	<edge from="gw_Doctor_4" to="gw_Doctor_5"/>
+	<edge from="gw_Doctor_37" to="gw_Doctor_38"/>
+	<edge from="gw_Doctor_60" to="gw_Doctor_61"/>
+	<edge from="gw_Doctor_23" to="gw_Doctor_29"/>
+	<edge from="gw_Doctor_65" to="gw_Doctor_68"/>
+	<edge from="gw_Doctor_55" to="gw_Doctor_56"/>
+	<edge from="gw_Doctor_9" to="gw_Doctor_10"/>
+	<edge from="gw_Doctor_41" to="gw_Doctor_42"/>
+	<edge from="gw_Doctor_67" to="gw_Doctor_68"/>
+	<edge from="gw_Doctor_2" to="gw_Doctor_3"/>
+	<edge from="gw_Doctor_14" to="gw_Doctor_15"/>
+	<edge from="gw_Doctor_62" to="gw_Doctor_63"/>
+	<edge from="gw_Doctor_50" to="gw_Doctor_51"/>
+	<edge from="gw_Doctor_66" to="gw_Doctor_67"/>
+	<edge from="gw_Doctor_0" to="gw_Doctor_8"/>
+	<edge from="gw_Doctor_11" to="gw_Doctor_12"/>
+	<edge from="gw_Doctor_19" to="gw_Doctor_20"/>
+	<edge from="gw_Doctor_23" to="gw_Doctor_24"/>
+	<edge from="gw_Doctor_51" to="gw_Doctor_52"/>
+	<edge from="gw_Doctor_0" to="gw_Doctor_1"/>
+	<edge from="gw_Doctor_17" to="gw_Doctor_18"/>
+	<edge from="gw_Doctor_7" to="gw_Doctor_8"/>
+	<edge from="gw_Doctor_48" to="gw_Doctor_49"/>
+	<edge from="gw_Doctor_26" to="gw_Doctor_27"/>
+	<edge from="gw_Doctor_38" to="gw_Doctor_39"/>
+	<edge from="gw_Doctor_13" to="gw_Doctor_14"/>
+	<edge from="gw_Doctor_21" to="gw_Doctor_22"/>
+	<edge from="gw_Doctor_53" to="gw_Doctor_54"/>
+	<edge from="gw_Doctor_45" to="gw_Doctor_46"/>
+	<edge from="gw_Doctor_24" to="gw_Doctor_25"/>
+	<edge from="gw_Doctor_57" to="gw_Doctor_58"/>
+	<edge from="gw_Doctor_43" to="gw_Doctor_44"/>
+	<edge from="gw_Doctor_71" to="gw_Doctor_72"/>
+	<edge from="gw_Doctor_3" to="gw_Doctor_4"/>
+	<edge from="gw_Doctor_33" to="gw_Doctor_33"/>
+	<edge from="gw_Doctor_9" to="gw_Doctor_12"/>
+</graph>
+</gxl>

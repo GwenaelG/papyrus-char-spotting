@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="gw_pay">
+	<attr name="x_mean">
+		<float>89.45283018867924</float>
+	</attr>
+	<attr name="y_mean">
+		<float>25.12264150943396</float>
+	</attr>
+	<attr name="x_std">
+		<float>45.00233370792946</float>
+	</attr>
+	<attr name="y_std">
+		<float>15.246838725966622</float>
+	</attr>
+	<attr name="x_max">
+		<float>177</float>
+	</attr>
+	<attr name="y_max">
+		<float>59</float>
+	</attr>
+	<node id="gw_pay_0">
+		<attr name="x">
+			<float>1.945391774113591</float>
+		</attr>
+		<attr name="y">
+			<float>-0.13921846669886578</float>
+		</attr>
+	</node>
+	<node id="gw_pay_1">
+		<attr name="x">
+			<float>0.2343693969244607</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2542036977715603</float>
+		</attr>
+	</node>
+	<node id="gw_pay_2">
+		<attr name="x">
+			<float>0.4121379555934613</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0574415981704965</float>
+		</attr>
+	</node>
+	<node id="gw_pay_3">
+		<attr name="x">
+			<float>0.7232329332642122</float>
+		</attr>
+		<attr name="y">
+			<float>1.3037035970422681</float>
+		</attr>
+	</node>
+	<node id="gw_pay_4">
+		<attr name="x">
+			<float>0.5010222349279616</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2703931997662416</float>
+		</attr>
+	</node>
+	<node id="gw_pay_5">
+		<attr name="x">
+			<float>0.10104297792271028</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1230289647041845</float>
+		</attr>
+	</node>
+	<node id="gw_pay_6">
+		<attr name="x">
+			<float>0.3010326064253359</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2542036977715603</float>
+		</attr>
+	</node>
+	<node id="gw_pay_7">
+		<attr name="x">
+			<float>0.8565593522659627</float>
+		</attr>
+		<attr name="y">
+			<float>0.9757667643738286</float>
+		</attr>
+	</node>
+	<node id="gw_pay_8">
+		<attr name="x">
+			<float>0.634348653929712</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4015679328336174</float>
+		</attr>
+	</node>
+	<node id="gw_pay_9">
+		<attr name="x">
+			<float>-0.03228344107904016</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8606794985694327</float>
+		</attr>
+	</node>
+	<node id="gw_pay_10">
+		<attr name="x">
+			<float>0.9898857712677132</float>
+		</attr>
+		<attr name="y">
+			<float>0.647829931705389</float>
+		</attr>
+	</node>
+	<node id="gw_pay_11">
+		<attr name="x">
+			<float>0.7676750729314624</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4671552993673053</float>
+		</attr>
+	</node>
+	<node id="gw_pay_12">
+		<attr name="x">
+			<float>-0.1656098600807906</float>
+		</attr>
+		<attr name="y">
+			<float>-0.663917398968369</float>
+		</attr>
+	</node>
+	<node id="gw_pay_13">
+		<attr name="x">
+			<float>1.1232121902694636</float>
+		</attr>
+		<attr name="y">
+			<float>0.3854804655706375</float>
+		</attr>
+	</node>
+	<node id="gw_pay_14">
+		<attr name="x">
+			<float>0.9010014919332129</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7295047655020569</float>
+		</attr>
+	</node>
+	<node id="gw_pay_15">
+		<attr name="x">
+			<float>-0.298936279082541</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4671552993673053</float>
+		</attr>
+	</node>
+	<node id="gw_pay_16">
+		<attr name="x">
+			<float>1.2120964696039638</float>
+		</attr>
+		<attr name="y">
+			<float>-0.008043733631489974</float>
+		</attr>
+	</node>
+	<node id="gw_pay_17">
+		<attr name="x">
+			<float>0.967664701434088</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5327426659009932</float>
+		</attr>
+	</node>
+	<node id="gw_pay_18">
+		<attr name="x">
+			<float>-0.43226269808429146</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3359805662999295</float>
+		</attr>
+	</node>
+	<node id="gw_pay_19">
+		<attr name="x">
+			<float>1.3454228886057142</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2048058332325537</float>
+		</attr>
+	</node>
+	<node id="gw_pay_20">
+		<attr name="x">
+			<float>1.0565489807685884</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2703931997662416</float>
+		</attr>
+	</node>
+	<node id="gw_pay_21">
+		<attr name="x">
+			<float>-0.5655891170860419</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2703931997662416</float>
+		</attr>
+	</node>
+	<node id="gw_pay_22">
+		<attr name="x">
+			<float>1.4787493076074647</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4671552993673053</float>
+		</attr>
+	</node>
+	<node id="gw_pay_23">
+		<attr name="x">
+			<float>1.1232121902694636</float>
+		</attr>
+		<attr name="y">
+			<float>-0.008043733631489974</float>
+		</attr>
+	</node>
+	<node id="gw_pay_24">
+		<attr name="x">
+			<float>-0.6766944662541672</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4015679328336174</float>
+		</attr>
+	</node>
+	<node id="gw_pay_25">
+		<attr name="x">
+			<float>1.6120757266092152</float>
+		</attr>
+		<attr name="y">
+			<float>-0.663917398968369</float>
+		</attr>
+	</node>
+	<node id="gw_pay_26">
+		<attr name="x">
+			<float>0.9898857712677132</float>
+		</attr>
+		<attr name="y">
+			<float>0.25430573250326166</float>
+		</attr>
+	</node>
+	<node id="gw_pay_27">
+		<attr name="x">
+			<float>-0.6322523265869171</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7950921320357448</float>
+		</attr>
+	</node>
+	<node id="gw_pay_28">
+		<attr name="x">
+			<float>1.7454021456109656</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9262668651031206</float>
+		</attr>
+	</node>
+	<node id="gw_pay_29">
+		<attr name="x">
+			<float>0.8565593522659627</float>
+		</attr>
+		<attr name="y">
+			<float>0.4510678321043254</float>
+		</attr>
+	</node>
+	<node id="gw_pay_30">
+		<attr name="x">
+			<float>-0.6989155360877923</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0574415981704965</float>
+		</attr>
+	</node>
+	<node id="gw_pay_31">
+		<attr name="x">
+			<float>1.7009600059437153</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1886163312378724</float>
+		</attr>
+	</node>
+	<node id="gw_pay_32">
+		<attr name="x">
+			<float>0.7232329332642122</float>
+		</attr>
+		<attr name="y">
+			<float>0.7790046647727649</float>
+		</attr>
+	</node>
+	<node id="gw_pay_33">
+		<attr name="x">
+			<float>-0.7655787455886675</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7950921320357448</float>
+		</attr>
+	</node>
+	<node id="gw_pay_34">
+		<attr name="x">
+			<float>1.5676335869419649</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0574415981704965</float>
+		</attr>
+	</node>
+	<node id="gw_pay_35">
+		<attr name="x">
+			<float>0.5899065142624619</float>
+		</attr>
+		<attr name="y">
+			<float>0.8445920313064528</float>
+		</attr>
+	</node>
+	<node id="gw_pay_36">
+		<attr name="x">
+			<float>-0.8322419550895427</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4015679328336174</float>
+		</attr>
+	</node>
+	<node id="gw_pay_37">
+		<attr name="x">
+			<float>1.4343071679402146</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7295047655020569</float>
+		</attr>
+	</node>
+	<node id="gw_pay_38">
+		<attr name="x">
+			<float>0.4565800952607114</float>
+		</attr>
+		<attr name="y">
+			<float>0.9757667643738286</float>
+		</attr>
+	</node>
+	<node id="gw_pay_39">
+		<attr name="x">
+			<float>-0.7877998154222926</float>
+		</attr>
+		<attr name="y">
+			<float>-0.07363110016517788</float>
+		</attr>
+	</node>
+	<node id="gw_pay_40">
+		<attr name="x">
+			<float>1.3009807489384642</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5327426659009932</float>
+		</attr>
+	</node>
+	<node id="gw_pay_41">
+		<attr name="x">
+			<float>0.323253676258961</float>
+		</attr>
+		<attr name="y">
+			<float>1.1725288639748923</float>
+		</attr>
+	</node>
+	<node id="gw_pay_42">
+		<attr name="x">
+			<float>-0.6544733964205421</float>
+		</attr>
+		<attr name="y">
+			<float>-0.008043733631489974</float>
+		</attr>
+	</node>
+	<node id="gw_pay_43">
+		<attr name="x">
+			<float>1.1676543299367137</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4671552993673053</float>
+		</attr>
+	</node>
+	<node id="gw_pay_44">
+		<attr name="x">
+			<float>0.18992725725721055</float>
+		</attr>
+		<attr name="y">
+			<float>1.434878330109644</float>
+		</attr>
+	</node>
+	<node id="gw_pay_45">
+		<attr name="x">
+			<float>-0.5211469774187917</float>
+		</attr>
+		<attr name="y">
+			<float>-0.07363110016517788</float>
+		</attr>
+	</node>
+	<node id="gw_pay_46">
+		<attr name="x">
+			<float>1.1232121902694636</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7295047655020569</float>
+		</attr>
+	</node>
+	<node id="gw_pay_47">
+		<attr name="x">
+			<float>0.056600838255460126</float>
+		</attr>
+		<attr name="y">
+			<float>1.6972277962443956</float>
+		</attr>
+	</node>
+	<node id="gw_pay_48">
+		<attr name="x">
+			<float>-0.3878205584170413</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2703931997662416</float>
+		</attr>
+	</node>
+	<node id="gw_pay_49">
+		<attr name="x">
+			<float>1.1009911204358385</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0574415981704965</float>
+		</attr>
+	</node>
+	<node id="gw_pay_50">
+		<attr name="x">
+			<float>-0.05450451091266523</float>
+		</attr>
+		<attr name="y">
+			<float>2.0251646289128353</float>
+		</attr>
+	</node>
+	<node id="gw_pay_51">
+		<attr name="x">
+			<float>-0.25449413941529087</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4015679328336174</float>
+		</attr>
+	</node>
+	<node id="gw_pay_52">
+		<attr name="x">
+			<float>0.967664701434088</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9262668651031206</float>
+		</attr>
+	</node>
+	<node id="gw_pay_53">
+		<attr name="x">
+			<float>0.056600838255460126</float>
+		</attr>
+		<attr name="y">
+			<float>2.221926728513899</float>
+		</attr>
+	</node>
+	<node id="gw_pay_54">
+		<attr name="x">
+			<float>-0.1656098600807906</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2048058332325537</float>
+		</attr>
+	</node>
+	<node id="gw_pay_55">
+		<attr name="x">
+			<float>0.8343382824323377</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7295047655020569</float>
+		</attr>
+	</node>
+	<node id="gw_pay_56">
+		<attr name="x">
+			<float>0.18992725725721055</float>
+		</attr>
+		<attr name="y">
+			<float>2.156339361980211</float>
+		</attr>
+	</node>
+	<node id="gw_pay_57">
+		<attr name="x">
+			<float>-0.03228344107904016</float>
+		</attr>
+		<attr name="y">
+			<float>-0.07363110016517788</float>
+		</attr>
+	</node>
+	<node id="gw_pay_58">
+		<attr name="x">
+			<float>0.7010118634305872</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5983300324346811</float>
+		</attr>
+	</node>
+	<node id="gw_pay_59">
+		<attr name="x">
+			<float>0.323253676258961</float>
+		</attr>
+		<attr name="y">
+			<float>1.9595772623791472</float>
+		</attr>
+	</node>
+	<node id="gw_pay_60">
+		<attr name="x">
+			<float>0.10104297792271028</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2048058332325537</float>
+		</attr>
+	</node>
+	<node id="gw_pay_61">
+		<attr name="x">
+			<float>0.5676854444288367</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4671552993673053</float>
+		</attr>
+	</node>
+	<node id="gw_pay_62">
+		<attr name="x">
+			<float>0.4565800952607114</float>
+		</attr>
+		<attr name="y">
+			<float>1.7628151627780835</float>
+		</attr>
+	</node>
+	<node id="gw_pay_63">
+		<attr name="x">
+			<float>0.2343693969244607</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4015679328336174</float>
+		</attr>
+	</node>
+	<node id="gw_pay_64">
+		<attr name="x">
+			<float>0.5010222349279616</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7295047655020569</float>
+		</attr>
+	</node>
+	<node id="gw_pay_65">
+		<attr name="x">
+			<float>0.5899065142624619</float>
+		</attr>
+		<attr name="y">
+			<float>1.5660530631770198</float>
+		</attr>
+	</node>
+	<node id="gw_pay_66">
+		<attr name="x">
+			<float>0.36769581592621114</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3359805662999295</float>
+		</attr>
+	</node>
+	<node id="gw_pay_67">
+		<attr name="x">
+			<float>0.5899065142624619</float>
+		</attr>
+		<attr name="y">
+			<float>0.9757667643738286</float>
+		</attr>
+	</node>
+	<node id="gw_pay_68">
+		<attr name="x">
+			<float>0.4343590254270863</float>
+		</attr>
+		<attr name="y">
+			<float>1.3037035970422681</float>
+		</attr>
+	</node>
+	<node id="gw_pay_69">
+		<attr name="x">
+			<float>0.5899065142624619</float>
+		</attr>
+		<attr name="y">
+			<float>1.1725288639748923</float>
+		</attr>
+	</node>
+	<node id="gw_pay_70">
+		<attr name="x">
+			<float>0.5676854444288367</float>
+		</attr>
+		<attr name="y">
+			<float>1.0413541309075165</float>
+		</attr>
+	</node>
+	<node id="gw_pay_71">
+		<attr name="x">
+			<float>0.4565800952607114</float>
+		</attr>
+		<attr name="y">
+			<float>1.434878330109644</float>
+		</attr>
+	</node>
+	<node id="gw_pay_72">
+		<attr name="x">
+			<float>0.323253676258961</float>
+		</attr>
+		<attr name="y">
+			<float>1.6972277962443956</float>
+		</attr>
+	</node>
+	<node id="gw_pay_73">
+		<attr name="x">
+			<float>0.18992725725721055</float>
+		</attr>
+		<attr name="y">
+			<float>1.7628151627780835</float>
+		</attr>
+	</node>
+	<node id="gw_pay_74">
+		<attr name="x">
+			<float>0.3010326064253359</float>
+		</attr>
+		<attr name="y">
+			<float>1.434878330109644</float>
+		</attr>
+	</node>
+	<node id="gw_pay_75">
+		<attr name="x">
+			<float>0.21214832709083561</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9918542316368085</float>
+		</attr>
+	</node>
+	<node id="gw_pay_76">
+		<attr name="x">
+			<float>0.3010326064253359</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8606794985694327</float>
+		</attr>
+	</node>
+	<node id="gw_pay_77">
+		<attr name="x">
+			<float>0.2343693969244607</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4671552993673053</float>
+		</attr>
+	</node>
+	<node id="gw_pay_78">
+		<attr name="x">
+			<float>0.10104297792271028</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4015679328336174</float>
+		</attr>
+	</node>
+	<node id="gw_pay_79">
+		<attr name="x">
+			<float>0.056600838255460126</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5983300324346811</float>
+		</attr>
+	</node>
+	<node id="gw_pay_80">
+		<attr name="x">
+			<float>0.18992725725721055</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9262668651031206</float>
+		</attr>
+	</node>
+	<node id="gw_pay_81">
+		<attr name="x">
+			<float>-1.8766322372699211</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2542036977715603</float>
+		</attr>
+	</node>
+	<node id="gw_pay_82">
+		<attr name="x">
+			<float>-1.7877479579354207</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1886163312378724</float>
+		</attr>
+	</node>
+	<node id="gw_pay_83">
+		<attr name="x">
+			<float>-1.898853307103546</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9262668651031206</float>
+		</attr>
+	</node>
+	<node id="gw_pay_84">
+		<attr name="x">
+			<float>-1.9877375864380464</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9918542316368085</float>
+		</attr>
+	</node>
+	<node id="gw_pay_85">
+		<attr name="x">
+			<float>-0.8989051645904179</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6477278969736877</float>
+		</attr>
+	</node>
+	<node id="gw_pay_86">
+		<attr name="x">
+			<float>-1.0322315835921683</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3197910643052482</float>
+		</attr>
+	</node>
+	<node id="gw_pay_87">
+		<attr name="x">
+			<float>-1.1433369327602938</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9918542316368085</float>
+		</attr>
+	</node>
+	<node id="gw_pay_88">
+		<attr name="x">
+			<float>-1.232221212094794</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5983300324346811</float>
+		</attr>
+	</node>
+	<node id="gw_pay_89">
+		<attr name="x">
+			<float>-1.3655476310965444</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2048058332325537</float>
+		</attr>
+	</node>
+	<node id="gw_pay_90">
+		<attr name="x">
+			<float>-1.4988740500982949</float>
+		</attr>
+		<attr name="y">
+			<float>0.18871836596957375</float>
+		</attr>
+	</node>
+	<node id="gw_pay_91">
+		<attr name="x">
+			<float>-1.6099793992664202</float>
+		</attr>
+		<attr name="y">
+			<float>0.5822425651717011</float>
+		</attr>
+	</node>
+	<node id="gw_pay_92">
+		<attr name="x">
+			<float>-1.7433058182681707</float>
+		</attr>
+		<attr name="y">
+			<float>0.9757667643738286</float>
+		</attr>
+	</node>
+	<node id="gw_pay_93">
+		<attr name="x">
+			<float>-1.8766322372699211</float>
+		</attr>
+		<attr name="y">
+			<float>1.369290963575956</float>
+		</attr>
+	</node>
+	<node id="gw_pay_94">
+		<attr name="x">
+			<float>-1.9877375864380464</float>
+		</attr>
+		<attr name="y">
+			<float>1.7628151627780835</float>
+		</attr>
+	</node>
+	<node id="gw_pay_95">
+		<attr name="x">
+			<float>-1.8766322372699211</float>
+		</attr>
+		<attr name="y">
+			<float>1.9595772623791472</float>
+		</attr>
+	</node>
+	<node id="gw_pay_96">
+		<attr name="x">
+			<float>-1.7433058182681707</float>
+		</attr>
+		<attr name="y">
+			<float>1.6972277962443956</float>
+		</attr>
+	</node>
+	<node id="gw_pay_97">
+		<attr name="x">
+			<float>-1.6322004691000453</float>
+		</attr>
+		<attr name="y">
+			<float>1.3037035970422681</float>
+		</attr>
+	</node>
+	<node id="gw_pay_98">
+		<attr name="x">
+			<float>-1.4988740500982949</float>
+		</attr>
+		<attr name="y">
+			<float>0.9101793978401407</float>
+		</attr>
+	</node>
+	<node id="gw_pay_99">
+		<attr name="x">
+			<float>-1.3655476310965444</float>
+		</attr>
+		<attr name="y">
+			<float>0.5166551986380132</float>
+		</attr>
+	</node>
+	<node id="gw_pay_100">
+		<attr name="x">
+			<float>-1.2544422819284191</float>
+		</attr>
+		<attr name="y">
+			<float>0.12313099943588585</float>
+		</attr>
+	</node>
+	<node id="gw_pay_101">
+		<attr name="x">
+			<float>-1.1433369327602938</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2703931997662416</float>
+		</attr>
+	</node>
+	<node id="gw_pay_102">
+		<attr name="x">
+			<float>-1.0100105137585433</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5983300324346811</float>
+		</attr>
+	</node>
+	<node id="gw_pay_103">
+		<attr name="x">
+			<float>-0.8766840947567929</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8606794985694327</float>
+		</attr>
+	</node>
+	<node id="gw_pay_104">
+		<attr name="x">
+			<float>-0.921126234424043</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1230289647041845</float>
+		</attr>
+	</node>
+	<node id="gw_pay_105">
+		<attr name="x">
+			<float>-0.8322419550895427</float>
+		</attr>
+		<attr name="y">
+			<float>-1.516553163906312</float>
+		</attr>
+	</node>
+	<edge from="gw_pay_14" to="gw_pay_17"/>
+	<edge from="gw_pay_86" to="gw_pay_87"/>
+	<edge from="gw_pay_100" to="gw_pay_101"/>
+	<edge from="gw_pay_92" to="gw_pay_93"/>
+	<edge from="gw_pay_33" to="gw_pay_36"/>
+	<edge from="gw_pay_17" to="gw_pay_20"/>
+	<edge from="gw_pay_72" to="gw_pay_73"/>
+	<edge from="gw_pay_1" to="gw_pay_6"/>
+	<edge from="gw_pay_94" to="gw_pay_95"/>
+	<edge from="gw_pay_23" to="gw_pay_26"/>
+	<edge from="gw_pay_3" to="gw_pay_7"/>
+	<edge from="gw_pay_96" to="gw_pay_97"/>
+	<edge from="gw_pay_76" to="gw_pay_77"/>
+	<edge from="gw_pay_24" to="gw_pay_27"/>
+	<edge from="gw_pay_45" to="gw_pay_48"/>
+	<edge from="gw_pay_59" to="gw_pay_62"/>
+	<edge from="gw_pay_36" to="gw_pay_39"/>
+	<edge from="gw_pay_28" to="gw_pay_31"/>
+	<edge from="gw_pay_2" to="gw_pay_6"/>
+	<edge from="gw_pay_74" to="gw_pay_68"/>
+	<edge from="gw_pay_10" to="gw_pay_13"/>
+	<edge from="gw_pay_32" to="gw_pay_35"/>
+	<edge from="gw_pay_16" to="gw_pay_19"/>
+	<edge from="gw_pay_22" to="gw_pay_25"/>
+	<edge from="gw_pay_68" to="gw_pay_70"/>
+	<edge from="gw_pay_47" to="gw_pay_50"/>
+	<edge from="gw_pay_39" to="gw_pay_42"/>
+	<edge from="gw_pay_21" to="gw_pay_24"/>
+	<edge from="gw_pay_51" to="gw_pay_54"/>
+	<edge from="gw_pay_43" to="gw_pay_46"/>
+	<edge from="gw_pay_57" to="gw_pay_60"/>
+	<edge from="gw_pay_62" to="gw_pay_65"/>
+	<edge from="gw_pay_26" to="gw_pay_29"/>
+	<edge from="gw_pay_13" to="gw_pay_16"/>
+	<edge from="gw_pay_1" to="gw_pay_5"/>
+	<edge from="gw_pay_85" to="gw_pay_105"/>
+	<edge from="gw_pay_103" to="gw_pay_104"/>
+	<edge from="gw_pay_46" to="gw_pay_49"/>
+	<edge from="gw_pay_38" to="gw_pay_41"/>
+	<edge from="gw_pay_49" to="gw_pay_52"/>
+	<edge from="gw_pay_73" to="gw_pay_74"/>
+	<edge from="gw_pay_63" to="gw_pay_66"/>
+	<edge from="gw_pay_31" to="gw_pay_34"/>
+	<edge from="gw_pay_34" to="gw_pay_37"/>
+	<edge from="gw_pay_18" to="gw_pay_21"/>
+	<edge from="gw_pay_75" to="gw_pay_76"/>
+	<edge from="gw_pay_37" to="gw_pay_40"/>
+	<edge from="gw_pay_90" to="gw_pay_91"/>
+	<edge from="gw_pay_77" to="gw_pay_78"/>
+	<edge from="gw_pay_85" to="gw_pay_86"/>
+	<edge from="gw_pay_56" to="gw_pay_59"/>
+	<edge from="gw_pay_41" to="gw_pay_44"/>
+	<edge from="gw_pay_60" to="gw_pay_63"/>
+	<edge from="gw_pay_4" to="gw_pay_8"/>
+	<edge from="gw_pay_98" to="gw_pay_99"/>
+	<edge from="gw_pay_11" to="gw_pay_14"/>
+	<edge from="gw_pay_19" to="gw_pay_22"/>
+	<edge from="gw_pay_48" to="gw_pay_51"/>
+	<edge from="gw_pay_95" to="gw_pay_96"/>
+	<edge from="gw_pay_30" to="gw_pay_33"/>
+	<edge from="gw_pay_64" to="gw_pay_2"/>
+	<edge from="gw_pay_65" to="gw_pay_3"/>
+	<edge from="gw_pay_40" to="gw_pay_43"/>
+	<edge from="gw_pay_44" to="gw_pay_47"/>
+	<edge from="gw_pay_52" to="gw_pay_55"/>
+	<edge from="gw_pay_58" to="gw_pay_61"/>
+	<edge from="gw_pay_29" to="gw_pay_32"/>
+	<edge from="gw_pay_61" to="gw_pay_64"/>
+	<edge from="gw_pay_27" to="gw_pay_30"/>
+	<edge from="gw_pay_35" to="gw_pay_38"/>
+	<edge from="gw_pay_79" to="gw_pay_80"/>
+	<edge from="gw_pay_71" to="gw_pay_72"/>
+	<edge from="gw_pay_9" to="gw_pay_12"/>
+	<edge from="gw_pay_75" to="gw_pay_80"/>
+	<edge from="gw_pay_5" to="gw_pay_9"/>
+	<edge from="gw_pay_81" to="gw_pay_84"/>
+	<edge from="gw_pay_104" to="gw_pay_105"/>
+	<edge from="gw_pay_55" to="gw_pay_58"/>
+	<edge from="gw_pay_50" to="gw_pay_53"/>
+	<edge from="gw_pay_83" to="gw_pay_82"/>
+	<edge from="gw_pay_89" to="gw_pay_90"/>
+	<edge from="gw_pay_15" to="gw_pay_18"/>
+	<edge from="gw_pay_7" to="gw_pay_10"/>
+	<edge from="gw_pay_67" to="gw_pay_70"/>
+	<edge from="gw_pay_91" to="gw_pay_92"/>
+	<edge from="gw_pay_66" to="gw_pay_4"/>
+	<edge from="gw_pay_99" to="gw_pay_100"/>
+	<edge from="gw_pay_0" to="gw_pay_0"/>
+	<edge from="gw_pay_101" to="gw_pay_102"/>
+	<edge from="gw_pay_93" to="gw_pay_94"/>
+	<edge from="gw_pay_42" to="gw_pay_45"/>
+	<edge from="gw_pay_8" to="gw_pay_11"/>
+	<edge from="gw_pay_78" to="gw_pay_79"/>
+	<edge from="gw_pay_84" to="gw_pay_83"/>
+	<edge from="gw_pay_87" to="gw_pay_88"/>
+	<edge from="gw_pay_25" to="gw_pay_28"/>
+	<edge from="gw_pay_67" to="gw_pay_69"/>
+	<edge from="gw_pay_81" to="gw_pay_82"/>
+	<edge from="gw_pay_97" to="gw_pay_98"/>
+	<edge from="gw_pay_54" to="gw_pay_57"/>
+	<edge from="gw_pay_12" to="gw_pay_15"/>
+	<edge from="gw_pay_20" to="gw_pay_23"/>
+	<edge from="gw_pay_102" to="gw_pay_103"/>
+	<edge from="gw_pay_69" to="gw_pay_71"/>
+	<edge from="gw_pay_88" to="gw_pay_89"/>
+	<edge from="gw_pay_53" to="gw_pay_56"/>
+</graph>
+</gxl>

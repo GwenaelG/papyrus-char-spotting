@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="gw_Officers">
+	<attr name="x_mean">
+		<float>100.52702702702703</float>
+	</attr>
+	<attr name="y_mean">
+		<float>30.2972972972973</float>
+	</attr>
+	<attr name="x_std">
+		<float>63.13760668292644</float>
+	</attr>
+	<attr name="y_std">
+		<float>13.1166592336675</float>
+	</attr>
+	<attr name="x_max">
+		<float>222</float>
+	</attr>
+	<attr name="y_max">
+		<float>62</float>
+	</attr>
+	<node id="gw_Officers_0">
+		<attr name="x">
+			<float>1.686363778527025</float>
+		</attr>
+		<attr name="y">
+			<float>0.28229007377112464</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_1">
+		<attr name="x">
+			<float>0.07084482938094235</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4038602515265727</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_2">
+		<attr name="x">
+			<float>0.2450674611515983</float>
+		</attr>
+		<attr name="y">
+			<float>0.4347679238372796</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_3">
+		<attr name="x">
+			<float>-0.087539381319654</float>
+		</attr>
+		<attr name="y">
+			<float>0.28229007377112464</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_4">
+		<attr name="x">
+			<float>0.05500640831088271</float>
+		</attr>
+		<attr name="y">
+			<float>0.4347679238372796</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_5">
+		<attr name="x">
+			<float>0.05500640831088271</float>
+		</attr>
+		<attr name="y">
+			<float>0.7397236239695895</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_6">
+		<attr name="x">
+			<float>0.13419851366118088</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3276213264934952</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_7">
+		<attr name="x">
+			<float>1.8764248313677405</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4800991765596501</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_8">
+		<attr name="x">
+			<float>1.8289095681575616</float>
+		</attr>
+		<attr name="y">
+			<float>0.968440399068822</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_9">
+		<attr name="x">
+			<float>1.7972327260174423</float>
+		</attr>
+		<attr name="y">
+			<float>0.35852899880420214</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_10">
+		<attr name="x">
+			<float>1.9239400945779195</float>
+		</attr>
+		<attr name="y">
+			<float>0.1298122237049697</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_11">
+		<attr name="x">
+			<float>1.686363778527025</float>
+		</attr>
+		<attr name="y">
+			<float>1.0446793241018995</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_12">
+		<attr name="x">
+			<float>1.0528269357246396</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5563381015927276</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_13">
+		<attr name="x">
+			<float>1.2904032517755342</float>
+		</attr>
+		<attr name="y">
+			<float>0.20605114873804717</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_14">
+		<attr name="x">
+			<float>0.8786043039539836</float>
+		</attr>
+		<attr name="y">
+			<float>0.05357329867189221</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_15">
+		<attr name="x">
+			<float>1.4487874624761303</float>
+		</attr>
+		<attr name="y">
+			<float>0.6634846989365121</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_16">
+		<attr name="x">
+			<float>0.7043816721833277</float>
+		</attr>
+		<attr name="y">
+			<float>0.5110068488703571</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_17">
+		<attr name="x">
+			<float>1.638848515316846</float>
+		</attr>
+		<attr name="y">
+			<float>0.35852899880420214</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_18">
+		<attr name="x">
+			<float>0.5459974614827313</float>
+		</attr>
+		<attr name="y">
+			<float>0.20605114873804717</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_19">
+		<attr name="x">
+			<float>1.4804643046162498</float>
+		</attr>
+		<attr name="y">
+			<float>0.35852899880420214</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_20">
+		<attr name="x">
+			<float>0.7360585143234469</float>
+		</attr>
+		<attr name="y">
+			<float>0.05357329867189221</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_21">
+		<attr name="x">
+			<float>1.417110620336011</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3276213264934952</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_22">
+		<attr name="x">
+			<float>0.5935127246929103</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3276213264934952</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_23">
+		<attr name="x">
+			<float>1.2270495674952955</float>
+		</attr>
+		<attr name="y">
+			<float>0.20605114873804717</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_24">
+		<attr name="x">
+			<float>0.4192900929222543</float>
+		</attr>
+		<attr name="y">
+			<float>0.1298122237049697</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_25">
+		<attr name="x">
+			<float>1.0369885146545799</float>
+		</attr>
+		<attr name="y">
+			<float>0.4347679238372796</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_26">
+		<attr name="x">
+			<float>0.5301590404126717</float>
+		</attr>
+		<attr name="y">
+			<float>0.7397236239695895</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_27">
+		<attr name="x">
+			<float>1.1478574621449973</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2513824014604177</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_28">
+		<attr name="x">
+			<float>0.7202200932533873</float>
+		</attr>
+		<attr name="y">
+			<float>0.5872457739034346</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_29">
+		<attr name="x">
+			<float>0.9102811460941029</float>
+		</attr>
+		<attr name="y">
+			<float>0.5872457739034346</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_30">
+		<attr name="x">
+			<float>1.1003421989348185</float>
+		</attr>
+		<attr name="y">
+			<float>0.5872457739034346</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_31">
+		<attr name="x">
+			<float>-1.1170367508735302</float>
+		</attr>
+		<attr name="y">
+			<float>-1.09001057682427</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_32">
+		<attr name="x">
+			<float>-1.1487135930136494</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09890455139426274</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_33">
+		<attr name="x">
+			<float>-1.5605125408351999</float>
+		</attr>
+		<attr name="y">
+			<float>0.7397236239695895</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_34">
+		<attr name="x">
+			<float>-1.085359908733411</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0137716517911926</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_35">
+		<attr name="x">
+			<float>-1.386289909064544</float>
+		</attr>
+		<attr name="y">
+			<float>0.05357329867189221</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_36">
+		<attr name="x">
+			<float>-1.3070978037142458</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7088159516588826</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_37">
+		<attr name="x">
+			<float>-1.1487135930136494</float>
+		</attr>
+		<attr name="y">
+			<float>0.05357329867189221</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_38">
+		<attr name="x">
+			<float>-0.9586525401729338</float>
+		</attr>
+		<attr name="y">
+			<float>-0.4038602515265727</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_39">
+		<attr name="x">
+			<float>-1.3704514879944842</float>
+		</attr>
+		<attr name="y">
+			<float>0.7397236239695895</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_40">
+		<attr name="x">
+			<float>-1.1962288562238284</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7850548766919601</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_41">
+		<attr name="x">
+			<float>-1.4971588565549614</float>
+		</attr>
+		<attr name="y">
+			<float>-0.02266562636118527</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_42">
+		<attr name="x">
+			<float>-1.3546130669244247</float>
+		</attr>
+		<attr name="y">
+			<float>0.5110068488703571</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_43">
+		<attr name="x">
+			<float>-0.40430780272084665</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6236830520558123</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_44">
+		<attr name="x">
+			<float>-0.9428141191028742</float>
+		</attr>
+		<attr name="y">
+			<float>0.815962549002667</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_45">
+		<attr name="x">
+			<float>-0.8794604348226356</float>
+		</attr>
+		<attr name="y">
+			<float>0.05357329867189221</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_46">
+		<attr name="x">
+			<float>-0.45182306593102556</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4712052019896573</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_47">
+		<attr name="x">
+			<float>-1.2754209615741265</float>
+		</attr>
+		<attr name="y">
+			<float>2.416979974697294</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_48">
+		<attr name="x">
+			<float>-0.5943688555615623</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3187273519235023</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_49">
+		<attr name="x">
+			<float>-0.7844299084022779</float>
+		</attr>
+		<attr name="y">
+			<float>0.1298122237049697</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_50">
+		<attr name="x">
+			<float>-0.6260456977016815</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7088159516588826</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_51">
+		<attr name="x">
+			<float>-1.0695214876633512</float>
+		</attr>
+		<attr name="y">
+			<float>0.968440399068822</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_52">
+		<attr name="x">
+			<float>-0.38846938165078704</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2424884268904248</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_53">
+		<attr name="x">
+			<float>-1.1011983298034704</float>
+		</attr>
+		<attr name="y">
+			<float>1.7308296493995967</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_54">
+		<attr name="x">
+			<float>-0.7844299084022779</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6325770266258051</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_55">
+		<attr name="x">
+			<float>-1.2595825405040668</float>
+		</attr>
+		<attr name="y">
+			<float>1.8070685744326742</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_56">
+		<attr name="x">
+			<float>0.08668325045100198</float>
+		</attr>
+		<attr name="y">
+			<float>-2.1573555272873546</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_57">
+		<attr name="x">
+			<float>-0.6418841187717411</float>
+		</attr>
+		<attr name="y">
+			<float>1.4258739492672867</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_58">
+		<attr name="x">
+			<float>-0.45182306593102556</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3276213264934952</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_59">
+		<attr name="x">
+			<float>-0.32511569737054846</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2513824014604177</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_60">
+		<attr name="x">
+			<float>-0.9269756980328145</float>
+		</attr>
+		<attr name="y">
+			<float>2.112024274564984</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_61">
+		<attr name="x">
+			<float>0.03916798724082307</float>
+		</attr>
+		<attr name="y">
+			<float>-1.1662495018573473</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_62">
+		<attr name="x">
+			<float>-0.07170096024959435</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4712052019896573</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_63">
+		<attr name="x">
+			<float>-0.49933832914120446</float>
+		</attr>
+		<attr name="y">
+			<float>0.815962549002667</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_64">
+		<attr name="x">
+			<float>-0.32511569737054846</float>
+		</attr>
+		<attr name="y">
+			<float>0.20605114873804717</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_65">
+		<attr name="x">
+			<float>-0.5943688555615623</float>
+		</attr>
+		<attr name="y">
+			<float>0.4347679238372796</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_66">
+		<attr name="x">
+			<float>-0.19840832881007142</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0137716517911926</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_67">
+		<attr name="x">
+			<float>-0.008347275969355826</float>
+		</attr>
+		<attr name="y">
+			<float>-1.6236830520558123</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_68">
+		<attr name="x">
+			<float>-0.7527530662621585</float>
+		</attr>
+		<attr name="y">
+			<float>2.264502124631139</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_69">
+		<attr name="x">
+			<float>0.18171377687135978</float>
+		</attr>
+		<attr name="y">
+			<float>-1.8523998271550448</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_70">
+		<attr name="x">
+			<float>-0.26176201309030994</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0137716517911926</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_71">
+		<attr name="x">
+			<float>-0.7527530662621585</float>
+		</attr>
+		<attr name="y">
+			<float>1.1971571741680544</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_72">
+		<attr name="x">
+			<float>0.4984821982725524</float>
+		</attr>
+		<attr name="y">
+			<float>-2.3098333773535096</float>
+		</attr>
+	</node>
+	<node id="gw_Officers_73">
+		<attr name="x">
+			<float>0.5459974614827313</float>
+		</attr>
+		<attr name="y">
+			<float>-1.8523998271550448</float>
+		</attr>
+	</node>
+	<edge from="gw_Officers_43" to="gw_Officers_48"/>
+	<edge from="gw_Officers_1" to="gw_Officers_3"/>
+	<edge from="gw_Officers_41" to="gw_Officers_33"/>
+	<edge from="gw_Officers_12" to="gw_Officers_27"/>
+	<edge from="gw_Officers_54" to="gw_Officers_45"/>
+	<edge from="gw_Officers_28" to="gw_Officers_29"/>
+	<edge from="gw_Officers_40" to="gw_Officers_32"/>
+	<edge from="gw_Officers_56" to="gw_Officers_69"/>
+	<edge from="gw_Officers_24" to="gw_Officers_26"/>
+	<edge from="gw_Officers_26" to="gw_Officers_28"/>
+	<edge from="gw_Officers_72" to="gw_Officers_73"/>
+	<edge from="gw_Officers_25" to="gw_Officers_27"/>
+	<edge from="gw_Officers_1" to="gw_Officers_6"/>
+	<edge from="gw_Officers_32" to="gw_Officers_37"/>
+	<edge from="gw_Officers_67" to="gw_Officers_61"/>
+	<edge from="gw_Officers_46" to="gw_Officers_52"/>
+	<edge from="gw_Officers_42" to="gw_Officers_35"/>
+	<edge from="gw_Officers_63" to="gw_Officers_64"/>
+	<edge from="gw_Officers_30" to="gw_Officers_13"/>
+	<edge from="gw_Officers_49" to="gw_Officers_50"/>
+	<edge from="gw_Officers_64" to="gw_Officers_59"/>
+	<edge from="gw_Officers_31" to="gw_Officers_36"/>
+	<edge from="gw_Officers_50" to="gw_Officers_46"/>
+	<edge from="gw_Officers_47" to="gw_Officers_53"/>
+	<edge from="gw_Officers_8" to="gw_Officers_10"/>
+	<edge from="gw_Officers_35" to="gw_Officers_40"/>
+	<edge from="gw_Officers_9" to="gw_Officers_11"/>
+	<edge from="gw_Officers_44" to="gw_Officers_49"/>
+	<edge from="gw_Officers_55" to="gw_Officers_47"/>
+	<edge from="gw_Officers_7" to="gw_Officers_10"/>
+	<edge from="gw_Officers_33" to="gw_Officers_39"/>
+	<edge from="gw_Officers_53" to="gw_Officers_44"/>
+	<edge from="gw_Officers_18" to="gw_Officers_20"/>
+	<edge from="gw_Officers_16" to="gw_Officers_18"/>
+	<edge from="gw_Officers_19" to="gw_Officers_21"/>
+	<edge from="gw_Officers_23" to="gw_Officers_25"/>
+	<edge from="gw_Officers_62" to="gw_Officers_70"/>
+	<edge from="gw_Officers_56" to="gw_Officers_62"/>
+	<edge from="gw_Officers_0" to="gw_Officers_0"/>
+	<edge from="gw_Officers_17" to="gw_Officers_19"/>
+	<edge from="gw_Officers_12" to="gw_Officers_14"/>
+	<edge from="gw_Officers_20" to="gw_Officers_22"/>
+	<edge from="gw_Officers_22" to="gw_Officers_24"/>
+	<edge from="gw_Officers_29" to="gw_Officers_30"/>
+	<edge from="gw_Officers_37" to="gw_Officers_38"/>
+	<edge from="gw_Officers_58" to="gw_Officers_65"/>
+	<edge from="gw_Officers_21" to="gw_Officers_23"/>
+	<edge from="gw_Officers_13" to="gw_Officers_15"/>
+	<edge from="gw_Officers_57" to="gw_Officers_63"/>
+	<edge from="gw_Officers_38" to="gw_Officers_34"/>
+	<edge from="gw_Officers_66" to="gw_Officers_67"/>
+	<edge from="gw_Officers_31" to="gw_Officers_34"/>
+	<edge from="gw_Officers_45" to="gw_Officers_51"/>
+	<edge from="gw_Officers_71" to="gw_Officers_60"/>
+	<edge from="gw_Officers_61" to="gw_Officers_69"/>
+	<edge from="gw_Officers_7" to="gw_Officers_9"/>
+	<edge from="gw_Officers_15" to="gw_Officers_17"/>
+	<edge from="gw_Officers_3" to="gw_Officers_5"/>
+	<edge from="gw_Officers_60" to="gw_Officers_68"/>
+	<edge from="gw_Officers_36" to="gw_Officers_41"/>
+	<edge from="gw_Officers_4" to="gw_Officers_6"/>
+	<edge from="gw_Officers_14" to="gw_Officers_16"/>
+	<edge from="gw_Officers_11" to="gw_Officers_8"/>
+	<edge from="gw_Officers_48" to="gw_Officers_54"/>
+	<edge from="gw_Officers_43" to="gw_Officers_52"/>
+	<edge from="gw_Officers_68" to="gw_Officers_57"/>
+	<edge from="gw_Officers_39" to="gw_Officers_42"/>
+	<edge from="gw_Officers_65" to="gw_Officers_71"/>
+	<edge from="gw_Officers_51" to="gw_Officers_55"/>
+	<edge from="gw_Officers_59" to="gw_Officers_66"/>
+	<edge from="gw_Officers_70" to="gw_Officers_58"/>
+	<edge from="gw_Officers_5" to="gw_Officers_2"/>
+	<edge from="gw_Officers_2" to="gw_Officers_4"/>
+</graph>
+</gxl>

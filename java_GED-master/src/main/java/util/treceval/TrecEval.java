@@ -49,9 +49,7 @@ public class TrecEval {
             HashMap<String,String> keywordNames = new HashMap<>();
             List<String> keywordOutput = new ArrayList<>();
 
-
             for(SpottingResult spottingResult : spottingResults){
-
 
                 String keywordID    = spottingResult.getKeywordID();
                 String keywordClass = spottingResult.getKeywordClass();
@@ -126,7 +124,7 @@ public class TrecEval {
             this.executeCommand(trecGlobal);
 
         } catch (Exception ex){
-            System.out.println(ex.getLocalizedMessage());
+            ex.printStackTrace();
         }
     }
 

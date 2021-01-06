@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="gw_repair">
+	<attr name="x_mean">
+		<float>97.09722222222223</float>
+	</attr>
+	<attr name="y_mean">
+		<float>28.27777777777778</float>
+	</attr>
+	<attr name="x_std">
+		<float>59.404489103242724</float>
+	</attr>
+	<attr name="y_std">
+		<float>10.040504389474751</float>
+	</attr>
+	<attr name="x_max">
+		<float>200</float>
+	</attr>
+	<attr name="y_max">
+		<float>56</float>
+	</attr>
+	<node id="gw_repair_0">
+		<attr name="x">
+			<float>-0.7423213781972428</float>
+		</attr>
+		<attr name="y">
+			<float>0.17152746071478148</float>
+		</attr>
+	</node>
+	<node id="gw_repair_1">
+		<attr name="x">
+			<float>-0.7086538889183757</float>
+		</attr>
+		<attr name="y">
+			<float>0.17152746071478148</float>
+		</attr>
+	</node>
+	<node id="gw_repair_2">
+		<attr name="x">
+			<float>0.25086955552933576</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7248418501173028</float>
+		</attr>
+	</node>
+	<node id="gw_repair_3">
+		<attr name="x">
+			<float>1.6312366159628855</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5256486699323952</float>
+		</attr>
+	</node>
+	<node id="gw_repair_4">
+		<attr name="x">
+			<float>0.11619959841386748</float>
+		</attr>
+		<attr name="y">
+			<float>-0.32645548974748756</float>
+		</attr>
+	</node>
+	<node id="gw_repair_5">
+		<attr name="x">
+			<float>1.4965666588474174</float>
+		</attr>
+		<attr name="y">
+			<float>-0.42605207983994137</float>
+		</attr>
+	</node>
+	<node id="gw_repair_6">
+		<attr name="x">
+			<float>0.04886461985613335</float>
+		</attr>
+		<attr name="y">
+			<float>0.3707206408996891</float>
+		</attr>
+	</node>
+	<node id="gw_repair_7">
+		<attr name="x">
+			<float>1.361896701731949</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5256486699323952</float>
+		</attr>
+	</node>
+	<node id="gw_repair_8">
+		<attr name="x">
+			<float>0.1835345769716016</float>
+		</attr>
+		<attr name="y">
+			<float>0.6695104111770506</float>
+		</attr>
+	</node>
+	<node id="gw_repair_9">
+		<attr name="x">
+			<float>1.2272267446164806</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5256486699323952</float>
+		</attr>
+	</node>
+	<node id="gw_repair_10">
+		<attr name="x">
+			<float>0.3182045340870699</float>
+		</attr>
+		<attr name="y">
+			<float>0.4703172309921429</float>
+		</attr>
+	</node>
+	<node id="gw_repair_11">
+		<attr name="x">
+			<float>1.0925567875010125</float>
+		</attr>
+		<attr name="y">
+			<float>-0.22685889965503375</float>
+		</attr>
+	</node>
+	<node id="gw_repair_12">
+		<attr name="x">
+			<float>0.45287449120253814</float>
+		</attr>
+		<attr name="y">
+			<float>0.6695104111770506</float>
+		</attr>
+	</node>
+	<node id="gw_repair_13">
+		<attr name="x">
+			<float>0.9578868303855442</float>
+		</attr>
+		<attr name="y">
+			<float>0.17152746071478148</float>
+		</attr>
+	</node>
+	<node id="gw_repair_14">
+		<attr name="x">
+			<float>0.5875444483180065</float>
+		</attr>
+		<attr name="y">
+			<float>0.5699138210845968</float>
+		</attr>
+	</node>
+	<node id="gw_repair_15">
+		<attr name="x">
+			<float>0.9410530857461107</float>
+		</attr>
+		<attr name="y">
+			<float>-0.32645548974748756</float>
+		</attr>
+	</node>
+	<node id="gw_repair_16">
+		<attr name="x">
+			<float>0.7222144054334747</float>
+		</attr>
+		<attr name="y">
+			<float>0.2711240508072353</float>
+		</attr>
+	</node>
+	<node id="gw_repair_17">
+		<attr name="x">
+			<float>0.8400506179095094</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5256486699323952</float>
+		</attr>
+	</node>
+	<node id="gw_repair_18">
+		<attr name="x">
+			<float>0.856884362548943</float>
+		</attr>
+		<attr name="y">
+			<float>0.6695104111770506</float>
+		</attr>
+	</node>
+	<node id="gw_repair_19">
+		<attr name="x">
+			<float>0.7053806607940412</float>
+		</attr>
+		<attr name="y">
+			<float>-0.12726230956257994</float>
+		</attr>
+	</node>
+	<node id="gw_repair_20">
+		<attr name="x">
+			<float>0.9915543196644112</float>
+		</attr>
+		<attr name="y">
+			<float>0.5699138210845968</float>
+		</attr>
+	</node>
+	<node id="gw_repair_21">
+		<attr name="x">
+			<float>0.5707107036785729</float>
+		</attr>
+		<attr name="y">
+			<float>0.2711240508072353</float>
+		</attr>
+	</node>
+	<node id="gw_repair_22">
+		<attr name="x">
+			<float>1.1262242767798796</float>
+		</attr>
+		<attr name="y">
+			<float>0.17152746071478148</float>
+		</attr>
+	</node>
+	<node id="gw_repair_23">
+		<attr name="x">
+			<float>0.48654198048140523</float>
+		</attr>
+		<attr name="y">
+			<float>-0.027665719470126138</float>
+		</attr>
+	</node>
+	<node id="gw_repair_24">
+		<attr name="x">
+			<float>1.1935592553376138</float>
+		</attr>
+		<attr name="y">
+			<float>0.7691070012695044</float>
+		</attr>
+	</node>
+	<node id="gw_repair_25">
+		<attr name="x">
+			<float>0.43604074656310465</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5256486699323952</float>
+		</attr>
+	</node>
+	<node id="gw_repair_26">
+		<attr name="x">
+			<float>1.328229212453082</float>
+		</attr>
+		<attr name="y">
+			<float>0.2711240508072353</float>
+		</attr>
+	</node>
+	<node id="gw_repair_27">
+		<attr name="x">
+			<float>0.30137078944763634</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7248418501173028</float>
+		</attr>
+	</node>
+	<node id="gw_repair_28">
+		<attr name="x">
+			<float>1.4628991695685503</float>
+		</attr>
+		<attr name="y">
+			<float>0.07193087062232767</float>
+		</attr>
+	</node>
+	<node id="gw_repair_29">
+		<attr name="x">
+			<float>1.5975691266840184</float>
+		</attr>
+		<attr name="y">
+			<float>0.17152746071478148</float>
+		</attr>
+	</node>
+	<node id="gw_repair_30">
+		<attr name="x">
+			<float>1.7322390837994868</float>
+		</attr>
+		<attr name="y">
+			<float>-0.22685889965503375</float>
+		</attr>
+	</node>
+	<node id="gw_repair_31">
+		<attr name="x">
+			<float>-1.415671163774584</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9240350303022105</float>
+		</attr>
+	</node>
+	<node id="gw_repair_32">
+		<attr name="x">
+			<float>-1.3988374191351505</float>
+		</attr>
+		<attr name="y">
+			<float>0.7691070012695044</float>
+		</attr>
+	</node>
+	<node id="gw_repair_33">
+		<attr name="x">
+			<float>-0.876991335312711</float>
+		</attr>
+		<attr name="y">
+			<float>0.4703172309921429</float>
+		</attr>
+	</node>
+	<node id="gw_repair_34">
+		<attr name="x">
+			<float>-1.028495037067613</float>
+		</attr>
+		<attr name="y">
+			<float>-0.42605207983994137</float>
+		</attr>
+	</node>
+	<node id="gw_repair_35">
+		<attr name="x">
+			<float>-1.3820036744957171</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9240350303022105</float>
+		</attr>
+	</node>
+	<node id="gw_repair_36">
+		<attr name="x">
+			<float>-1.5503411208900524</float>
+		</attr>
+		<attr name="y">
+			<float>-0.22685889965503375</float>
+		</attr>
+	</node>
+	<node id="gw_repair_37">
+		<attr name="x">
+			<float>-1.2641674620196823</float>
+		</attr>
+		<attr name="y">
+			<float>0.7691070012695044</float>
+		</attr>
+	</node>
+	<node id="gw_repair_38">
+		<attr name="x">
+			<float>-0.9948275477887457</float>
+		</attr>
+		<attr name="y">
+			<float>0.2711240508072353</float>
+		</attr>
+	</node>
+	<node id="gw_repair_39">
+		<attr name="x">
+			<float>-1.1463312495436475</float>
+		</attr>
+		<attr name="y">
+			<float>0.17152746071478148</float>
+		</attr>
+	</node>
+	<node id="gw_repair_40">
+		<attr name="x">
+			<float>-1.6176760994477866</float>
+		</attr>
+		<attr name="y">
+			<float>0.4703172309921429</float>
+		</attr>
+	</node>
+	<node id="gw_repair_41">
+		<attr name="x">
+			<float>-1.129497504904214</float>
+		</attr>
+		<attr name="y">
+			<float>0.5699138210845968</float>
+		</attr>
+	</node>
+	<node id="gw_repair_42">
+		<attr name="x">
+			<float>-0.8601575906732775</float>
+		</attr>
+		<attr name="y">
+			<float>-0.22685889965503375</float>
+		</attr>
+	</node>
+	<node id="gw_repair_43">
+		<attr name="x">
+			<float>-1.2810012066591159</float>
+		</attr>
+		<attr name="y">
+			<float>0.3707206408996891</float>
+		</attr>
+	</node>
+	<node id="gw_repair_44">
+		<attr name="x">
+			<float>-1.4830061423323182</float>
+		</attr>
+		<attr name="y">
+			<float>0.17152746071478148</float>
+		</attr>
+	</node>
+	<node id="gw_repair_45">
+		<attr name="x">
+			<float>-0.9948275477887457</float>
+		</attr>
+		<attr name="y">
+			<float>0.7691070012695044</float>
+		</attr>
+	</node>
+	<node id="gw_repair_46">
+		<attr name="x">
+			<float>-0.8938250799521446</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7248418501173028</float>
+		</attr>
+	</node>
+	<node id="gw_repair_47">
+		<attr name="x">
+			<float>-1.2810012066591159</float>
+		</attr>
+		<attr name="y">
+			<float>-0.42605207983994137</float>
+		</attr>
+	</node>
+	<node id="gw_repair_48">
+		<attr name="x">
+			<float>-0.3214777622114044</float>
+		</attr>
+		<attr name="y">
+			<float>-1.4220179807644795</float>
+		</attr>
+	</node>
+	<node id="gw_repair_49">
+		<attr name="x">
+			<float>-0.2204752943748032</float>
+		</attr>
+		<attr name="y">
+			<float>-0.027665719470126138</float>
+		</attr>
+	</node>
+	<node id="gw_repair_50">
+		<attr name="x">
+			<float>-0.43931397468743916</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8244384402097567</float>
+		</attr>
+	</node>
+	<node id="gw_repair_51">
+		<attr name="x">
+			<float>-0.2709765282931038</float>
+		</attr>
+		<attr name="y">
+			<float>-0.625245260024849</float>
+		</attr>
+	</node>
+	<node id="gw_repair_52">
+		<attr name="x">
+			<float>-0.5739839318029074</float>
+		</attr>
+		<attr name="y">
+			<float>-0.42605207983994137</float>
+		</attr>
+	</node>
+	<node id="gw_repair_53">
+		<attr name="x">
+			<float>-0.25414278365367027</float>
+		</attr>
+		<attr name="y">
+			<float>-1.123228210487118</float>
+		</attr>
+	</node>
+	<node id="gw_repair_54">
+		<attr name="x">
+			<float>-0.6749863996395086</float>
+		</attr>
+		<attr name="y">
+			<float>0.3707206408996891</float>
+		</attr>
+	</node>
+	<node id="gw_repair_55">
+		<attr name="x">
+			<float>-0.7928226121155434</float>
+		</attr>
+		<attr name="y">
+			<float>1.1674933616393195</float>
+		</attr>
+	</node>
+	<node id="gw_repair_56">
+		<attr name="x">
+			<float>-0.9274925692310116</float>
+		</attr>
+		<attr name="y">
+			<float>1.7650729021940423</float>
+		</attr>
+	</node>
+	<node id="gw_repair_57">
+		<attr name="x">
+			<float>-1.06216252634648</float>
+		</attr>
+		<attr name="y">
+			<float>2.3626524427487654</float>
+		</attr>
+	</node>
+	<node id="gw_repair_58">
+		<attr name="x">
+			<float>-0.9611600585098787</float>
+		</attr>
+		<attr name="y">
+			<float>2.7610388031185806</float>
+		</attr>
+	</node>
+	<node id="gw_repair_59">
+		<attr name="x">
+			<float>-0.8264901013944104</float>
+		</attr>
+		<attr name="y">
+			<float>2.2630558526563114</float>
+		</attr>
+	</node>
+	<node id="gw_repair_60">
+		<attr name="x">
+			<float>-0.6918201442789421</float>
+		</attr>
+		<attr name="y">
+			<float>1.466283131916681</float>
+		</attr>
+	</node>
+	<node id="gw_repair_61">
+		<attr name="x">
+			<float>-0.5571501871634739</float>
+		</attr>
+		<attr name="y">
+			<float>0.6695104111770506</float>
+		</attr>
+	</node>
+	<node id="gw_repair_62">
+		<attr name="x">
+			<float>-0.43931397468743916</float>
+		</attr>
+		<attr name="y">
+			<float>-0.12726230956257994</float>
+		</attr>
+	</node>
+	<node id="gw_repair_63">
+		<attr name="x">
+			<float>-0.37197899612970503</float>
+		</attr>
+		<attr name="y">
+			<float>0.2711240508072353</float>
+		</attr>
+	</node>
+	<node id="gw_repair_64">
+		<attr name="x">
+			<float>-0.23730903901423672</float>
+		</attr>
+		<attr name="y">
+			<float>0.7691070012695044</float>
+		</attr>
+	</node>
+	<node id="gw_repair_65">
+		<attr name="x">
+			<float>-0.10263908189876846</float>
+		</attr>
+		<attr name="y">
+			<float>0.5699138210845968</float>
+		</attr>
+	</node>
+	<node id="gw_repair_66">
+		<attr name="x">
+			<float>-0.13630657117763553</float>
+		</attr>
+		<attr name="y">
+			<float>0.3707206408996891</float>
+		</attr>
+	</node>
+	<node id="gw_repair_67">
+		<attr name="x">
+			<float>1.6985715945206197</float>
+		</attr>
+		<attr name="y">
+			<float>-2.019597521319202</float>
+		</attr>
+	</node>
+	<node id="gw_repair_68">
+		<attr name="x">
+			<float>1.7322390837994868</float>
+		</attr>
+		<attr name="y">
+			<float>-1.9200009312267485</float>
+		</attr>
+	</node>
+	<node id="gw_repair_69">
+		<attr name="x">
+			<float>1.1262242767798796</float>
+		</attr>
+		<attr name="y">
+			<float>-2.8163702420588326</float>
+		</attr>
+	</node>
+	<node id="gw_repair_70">
+		<attr name="x">
+			<float>1.1935592553376138</float>
+		</attr>
+		<attr name="y">
+			<float>-2.3183872915965638</float>
+		</attr>
+	</node>
+	<node id="gw_repair_71">
+		<attr name="x">
+			<float>1.1430580214193131</float>
+		</attr>
+		<attr name="y">
+			<float>-2.8163702420588326</float>
+		</attr>
+	</node>
+	<edge from="gw_repair_49" to="gw_repair_51"/>
+	<edge from="gw_repair_54" to="gw_repair_55"/>
+	<edge from="gw_repair_30" to="gw_repair_3"/>
+	<edge from="gw_repair_28" to="gw_repair_29"/>
+	<edge from="gw_repair_47" to="gw_repair_35"/>
+	<edge from="gw_repair_61" to="gw_repair_62"/>
+	<edge from="gw_repair_69" to="gw_repair_70"/>
+	<edge from="gw_repair_26" to="gw_repair_28"/>
+	<edge from="gw_repair_24" to="gw_repair_26"/>
+	<edge from="gw_repair_25" to="gw_repair_27"/>
+	<edge from="gw_repair_32" to="gw_repair_37"/>
+	<edge from="gw_repair_46" to="gw_repair_34"/>
+	<edge from="gw_repair_63" to="gw_repair_64"/>
+	<edge from="gw_repair_34" to="gw_repair_39"/>
+	<edge from="gw_repair_65" to="gw_repair_66"/>
+	<edge from="gw_repair_58" to="gw_repair_59"/>
+	<edge from="gw_repair_70" to="gw_repair_71"/>
+	<edge from="gw_repair_31" to="gw_repair_36"/>
+	<edge from="gw_repair_64" to="gw_repair_65"/>
+	<edge from="gw_repair_10" to="gw_repair_12"/>
+	<edge from="gw_repair_8" to="gw_repair_10"/>
+	<edge from="gw_repair_56" to="gw_repair_57"/>
+	<edge from="gw_repair_9" to="gw_repair_11"/>
+	<edge from="gw_repair_48" to="gw_repair_50"/>
+	<edge from="gw_repair_31" to="gw_repair_35"/>
+	<edge from="gw_repair_2" to="gw_repair_27"/>
+	<edge from="gw_repair_16" to="gw_repair_18"/>
+	<edge from="gw_repair_18" to="gw_repair_20"/>
+	<edge from="gw_repair_23" to="gw_repair_25"/>
+	<edge from="gw_repair_11" to="gw_repair_13"/>
+	<edge from="gw_repair_19" to="gw_repair_21"/>
+	<edge from="gw_repair_37" to="gw_repair_41"/>
+	<edge from="gw_repair_17" to="gw_repair_19"/>
+	<edge from="gw_repair_51" to="gw_repair_53"/>
+	<edge from="gw_repair_22" to="gw_repair_24"/>
+	<edge from="gw_repair_12" to="gw_repair_14"/>
+	<edge from="gw_repair_20" to="gw_repair_22"/>
+	<edge from="gw_repair_29" to="gw_repair_30"/>
+	<edge from="gw_repair_36" to="gw_repair_40"/>
+	<edge from="gw_repair_52" to="gw_repair_54"/>
+	<edge from="gw_repair_13" to="gw_repair_15"/>
+	<edge from="gw_repair_21" to="gw_repair_23"/>
+	<edge from="gw_repair_60" to="gw_repair_61"/>
+	<edge from="gw_repair_50" to="gw_repair_52"/>
+	<edge from="gw_repair_67" to="gw_repair_68"/>
+	<edge from="gw_repair_33" to="gw_repair_38"/>
+	<edge from="gw_repair_48" to="gw_repair_53"/>
+	<edge from="gw_repair_62" to="gw_repair_63"/>
+	<edge from="gw_repair_39" to="gw_repair_43"/>
+	<edge from="gw_repair_55" to="gw_repair_56"/>
+	<edge from="gw_repair_7" to="gw_repair_9"/>
+	<edge from="gw_repair_0" to="gw_repair_1"/>
+	<edge from="gw_repair_3" to="gw_repair_5"/>
+	<edge from="gw_repair_15" to="gw_repair_17"/>
+	<edge from="gw_repair_45" to="gw_repair_33"/>
+	<edge from="gw_repair_41" to="gw_repair_45"/>
+	<edge from="gw_repair_6" to="gw_repair_8"/>
+	<edge from="gw_repair_4" to="gw_repair_6"/>
+	<edge from="gw_repair_14" to="gw_repair_16"/>
+	<edge from="gw_repair_44" to="gw_repair_32"/>
+	<edge from="gw_repair_40" to="gw_repair_44"/>
+	<edge from="gw_repair_5" to="gw_repair_7"/>
+	<edge from="gw_repair_38" to="gw_repair_42"/>
+	<edge from="gw_repair_69" to="gw_repair_71"/>
+	<edge from="gw_repair_57" to="gw_repair_58"/>
+	<edge from="gw_repair_42" to="gw_repair_46"/>
+	<edge from="gw_repair_43" to="gw_repair_47"/>
+	<edge from="gw_repair_59" to="gw_repair_60"/>
+	<edge from="gw_repair_2" to="gw_repair_4"/>
+	<edge from="gw_repair_66" to="gw_repair_49"/>
+</graph>
+</gxl>

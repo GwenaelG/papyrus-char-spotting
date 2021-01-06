@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="gw_carry">
+	<attr name="x_mean">
+		<float>88.46153846153847</float>
+	</attr>
+	<attr name="y_mean">
+		<float>18.415384615384614</float>
+	</attr>
+	<attr name="x_std">
+		<float>49.298487080258035</float>
+	</attr>
+	<attr name="y_std">
+		<float>14.545305674332294</float>
+	</attr>
+	<attr name="x_max">
+		<float>175</float>
+	</attr>
+	<attr name="y_max">
+		<float>62</float>
+	</attr>
+	<node id="gw_carry_0">
+		<attr name="x">
+			<float>1.7553979171323604</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7160650211541694</float>
+		</attr>
+	</node>
+	<node id="gw_carry_1">
+		<attr name="x">
+			<float>1.653974926364713</float>
+		</attr>
+		<attr name="y">
+			<float>-0.784815724810035</float>
+		</attr>
+	</node>
+	<node id="gw_carry_2">
+		<attr name="x">
+			<float>1.3699905522153</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09730868825137891</float>
+		</attr>
+	</node>
+	<node id="gw_carry_3">
+		<attr name="x">
+			<float>1.2482829632941228</float>
+		</attr>
+		<attr name="y">
+			<float>-0.16605939190724453</float>
+		</attr>
+	</node>
+	<node id="gw_carry_4">
+		<attr name="x">
+			<float>1.3091367577547115</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6473143174983038</float>
+		</attr>
+	</node>
+	<node id="gw_carry_5">
+		<attr name="x">
+			<float>1.167144570680005</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5785636138424382</float>
+		</attr>
+	</node>
+	<node id="gw_carry_6">
+		<attr name="x">
+			<float>1.1062907762194165</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3035607992189757</float>
+		</attr>
+	</node>
+	<node id="gw_carry_7">
+		<attr name="x">
+			<float>1.1265753743729459</float>
+		</attr>
+		<attr name="y">
+			<float>-0.028557984595513303</float>
+		</attr>
+	</node>
+	<node id="gw_carry_8">
+		<attr name="x">
+			<float>1.2482829632941228</float>
+		</attr>
+		<attr name="y">
+			<float>0.1776941263720835</float>
+		</attr>
+	</node>
+	<node id="gw_carry_9">
+		<attr name="x">
+			<float>1.207713766987064</float>
+		</attr>
+		<attr name="y">
+			<float>0.5214476446514116</float>
+		</attr>
+	</node>
+	<node id="gw_carry_10">
+		<attr name="x">
+			<float>0.4368990371529429</float>
+		</attr>
+		<attr name="y">
+			<float>2.652719457983246</float>
+		</attr>
+	</node>
+	<node id="gw_carry_11">
+		<attr name="x">
+			<float>0.315191448231766</float>
+		</attr>
+		<attr name="y">
+			<float>2.7902208652949767</float>
+		</attr>
+	</node>
+	<node id="gw_carry_12">
+		<attr name="x">
+			<float>0.29490685007823647</float>
+		</attr>
+		<attr name="y">
+			<float>2.58396875432738</float>
+		</attr>
+	</node>
+	<node id="gw_carry_13">
+		<attr name="x">
+			<float>0.8223064020700034</float>
+		</attr>
+		<attr name="y">
+			<float>1.2089546812100675</float>
+		</attr>
+	</node>
+	<node id="gw_carry_14">
+		<attr name="x">
+			<float>0.35576064453882494</float>
+		</attr>
+		<attr name="y">
+			<float>2.033963125080455</float>
+		</attr>
+	</node>
+	<node id="gw_carry_15">
+		<attr name="x">
+			<float>0.13263006485000045</float>
+		</attr>
+		<attr name="y">
+			<float>2.927722272606708</float>
+		</attr>
+	</node>
+	<node id="gw_carry_16">
+		<attr name="x">
+			<float>0.37604524269235445</float>
+		</attr>
+		<attr name="y">
+			<float>2.9964729762625737</float>
+		</attr>
+	</node>
+	<node id="gw_carry_17">
+		<attr name="x">
+			<float>0.8628755983770624</float>
+		</attr>
+		<attr name="y">
+			<float>2.033963125080455</float>
+		</attr>
+	</node>
+	<node id="gw_carry_18">
+		<attr name="x">
+			<float>1.5322673374435358</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09730868825137891</float>
+		</attr>
+	</node>
+	<node id="gw_carry_19">
+		<attr name="x">
+			<float>1.694544122671772</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3035607992189757</float>
+		</attr>
+	</node>
+	<node id="gw_carry_20">
+		<attr name="x">
+			<float>-1.0844458243617694</float>
+		</attr>
+		<attr name="y">
+			<float>-0.16605939190724453</float>
+		</attr>
+	</node>
+	<node id="gw_carry_21">
+		<attr name="x">
+			<float>-1.0033074317476516</float>
+		</attr>
+		<attr name="y">
+			<float>0.24644483002794912</float>
+		</attr>
+	</node>
+	<node id="gw_carry_22">
+		<attr name="x">
+			<float>-0.8410306465194155</float>
+		</attr>
+		<attr name="y">
+			<float>0.24644483002794912</float>
+		</attr>
+	</node>
+	<node id="gw_carry_23">
+		<attr name="x">
+			<float>-0.6381846649841205</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09730868825137891</float>
+		</attr>
+	</node>
+	<node id="gw_carry_24">
+		<attr name="x">
+			<float>-0.33391569268117804</float>
+		</attr>
+		<attr name="y">
+			<float>0.0401927190603523</float>
+		</attr>
+	</node>
+	<node id="gw_carry_25">
+		<attr name="x">
+			<float>-0.13106971114588303</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3723115028748413</float>
+		</attr>
+	</node>
+	<node id="gw_carry_26">
+		<attr name="x">
+			<float>-0.415054085295296</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09730868825137891</float>
+		</attr>
+	</node>
+	<node id="gw_carry_27">
+		<attr name="x">
+			<float>-0.415054085295296</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6473143174983038</float>
+		</attr>
+	</node>
+	<node id="gw_carry_28">
+		<attr name="x">
+			<float>-0.6381846649841205</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9223171321217662</float>
+		</attr>
+	</node>
+	<node id="gw_carry_29">
+		<attr name="x">
+			<float>-0.65846926313765</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7160650211541694</float>
+		</attr>
+	</node>
+	<node id="gw_carry_30">
+		<attr name="x">
+			<float>-0.577330870523532</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5098129101865726</float>
+		</attr>
+	</node>
+	<node id="gw_carry_31">
+		<attr name="x">
+			<float>-0.699038459444709</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09730868825137891</float>
+		</attr>
+	</node>
+	<node id="gw_carry_32">
+		<attr name="x">
+			<float>-0.901884440980004</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09730868825137891</float>
+		</attr>
+	</node>
+	<node id="gw_carry_33">
+		<attr name="x">
+			<float>-0.739607655751768</float>
+		</attr>
+		<attr name="y">
+			<float>-0.784815724810035</float>
+		</attr>
+	</node>
+	<node id="gw_carry_34">
+		<attr name="x">
+			<float>-0.9627382354405924</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5785636138424382</float>
+		</attr>
+	</node>
+	<node id="gw_carry_35">
+		<attr name="x">
+			<float>-1.267007207743535</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7160650211541694</float>
+		</attr>
+	</node>
+	<node id="gw_carry_36">
+		<attr name="x">
+			<float>-1.3278610022041235</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9223171321217662</float>
+		</attr>
+	</node>
+	<node id="gw_carry_37">
+		<attr name="x">
+			<float>-1.6118453763535365</float>
+		</attr>
+		<attr name="y">
+			<float>-0.784815724810035</float>
+		</attr>
+	</node>
+	<node id="gw_carry_38">
+		<attr name="x">
+			<float>-1.7741221615817724</float>
+		</attr>
+		<attr name="y">
+			<float>-0.44106220653070694</float>
+		</attr>
+	</node>
+	<node id="gw_carry_39">
+		<attr name="x">
+			<float>-1.794406759735302</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09730868825137891</float>
+		</attr>
+	</node>
+	<node id="gw_carry_40">
+		<attr name="x">
+			<float>-1.6321299745070659</float>
+		</attr>
+		<attr name="y">
+			<float>0.24644483002794912</float>
+		</attr>
+	</node>
+	<node id="gw_carry_41">
+		<attr name="x">
+			<float>-1.2467226095900055</float>
+		</attr>
+		<attr name="y">
+			<float>0.0401927190603523</float>
+		</attr>
+	</node>
+	<node id="gw_carry_42">
+		<attr name="x">
+			<float>-1.510422385585889</float>
+		</attr>
+		<attr name="y">
+			<float>0.0401927190603523</float>
+		</attr>
+	</node>
+	<node id="gw_carry_43">
+		<attr name="x">
+			<float>-1.6118453763535365</float>
+		</attr>
+		<attr name="y">
+			<float>-0.16605939190724453</float>
+		</attr>
+	</node>
+	<node id="gw_carry_44">
+		<attr name="x">
+			<float>-1.4495685911253005</float>
+		</attr>
+		<attr name="y">
+			<float>-0.784815724810035</float>
+		</attr>
+	</node>
+	<node id="gw_carry_45">
+		<attr name="x">
+			<float>-1.3278610022041235</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3723115028748413</float>
+		</attr>
+	</node>
+	<node id="gw_carry_46">
+		<attr name="x">
+			<float>-1.267007207743535</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3723115028748413</float>
+		</attr>
+	</node>
+	<node id="gw_carry_47">
+		<attr name="x">
+			<float>-0.07021591668529453</float>
+		</attr>
+		<attr name="y">
+			<float>0.1776941263720835</float>
+		</attr>
+	</node>
+	<node id="gw_carry_48">
+		<attr name="x">
+			<float>0.25433765377117745</float>
+		</attr>
+		<attr name="y">
+			<float>0.1776941263720835</float>
+		</attr>
+	</node>
+	<node id="gw_carry_49">
+		<attr name="x">
+			<float>0.5180374297670609</float>
+		</attr>
+		<attr name="y">
+			<float>-0.3035607992189757</float>
+		</attr>
+	</node>
+	<node id="gw_carry_50">
+		<attr name="x">
+			<float>0.5586066260741199</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5785636138424382</float>
+		</attr>
+	</node>
+	<node id="gw_carry_51">
+		<attr name="x">
+			<float>0.33547604638529543</float>
+		</attr>
+		<attr name="y">
+			<float>-0.028557984595513303</float>
+		</attr>
+	</node>
+	<node id="gw_carry_52">
+		<attr name="x">
+			<float>0.19348385931058895</float>
+		</attr>
+		<attr name="y">
+			<float>0.0401927190603523</float>
+		</attr>
+	</node>
+	<node id="gw_carry_53">
+		<attr name="x">
+			<float>0.15291466300352996</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9910678357776318</float>
+		</attr>
+	</node>
+	<node id="gw_carry_54">
+		<attr name="x">
+			<float>0.031207074082352966</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0598185394334974</float>
+		</attr>
+	</node>
+	<node id="gw_carry_55">
+		<attr name="x">
+			<float>-0.04993131853176503</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7160650211541694</float>
+		</attr>
+	</node>
+	<node id="gw_carry_56">
+		<attr name="x">
+			<float>0.031207074082352966</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5098129101865726</float>
+		</attr>
+	</node>
+	<node id="gw_carry_57">
+		<attr name="x">
+			<float>0.7208834113023559</float>
+		</attr>
+		<attr name="y">
+			<float>-1.2660706504010941</float>
+		</attr>
+	</node>
+	<node id="gw_carry_58">
+		<attr name="x">
+			<float>0.639745018688238</float>
+		</attr>
+		<attr name="y">
+			<float>-1.128569243089363</float>
+		</attr>
+	</node>
+	<node id="gw_carry_59">
+		<attr name="x">
+			<float>0.680314214995297</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5098129101865726</float>
+		</attr>
+	</node>
+	<node id="gw_carry_60">
+		<attr name="x">
+			<float>0.5788912242276495</float>
+		</attr>
+		<attr name="y">
+			<float>0.0401927190603523</float>
+		</attr>
+	</node>
+	<node id="gw_carry_61">
+		<attr name="x">
+			<float>0.8020218039164739</float>
+		</attr>
+		<attr name="y">
+			<float>0.24644483002794912</float>
+		</attr>
+	</node>
+	<node id="gw_carry_62">
+		<attr name="x">
+			<float>0.9034447946841214</float>
+		</attr>
+		<attr name="y">
+			<float>0.0401927190603523</float>
+		</attr>
+	</node>
+	<node id="gw_carry_63">
+		<attr name="x">
+			<float>0.7614526076094149</float>
+		</attr>
+		<attr name="y">
+			<float>-0.09730868825137891</float>
+		</attr>
+	</node>
+	<node id="gw_carry_64">
+		<attr name="x">
+			<float>0.8020218039164739</float>
+		</attr>
+		<attr name="y">
+			<float>-0.8535664284659006</float>
+		</attr>
+	</node>
+	<edge from="gw_carry_10" to="gw_carry_11"/>
+	<edge from="gw_carry_22" to="gw_carry_23"/>
+	<edge from="gw_carry_42" to="gw_carry_43"/>
+	<edge from="gw_carry_54" to="gw_carry_55"/>
+	<edge from="gw_carry_5" to="gw_carry_6"/>
+	<edge from="gw_carry_20" to="gw_carry_34"/>
+	<edge from="gw_carry_28" to="gw_carry_29"/>
+	<edge from="gw_carry_36" to="gw_carry_37"/>
+	<edge from="gw_carry_61" to="gw_carry_62"/>
+	<edge from="gw_carry_8" to="gw_carry_9"/>
+	<edge from="gw_carry_15" to="gw_carry_16"/>
+	<edge from="gw_carry_40" to="gw_carry_41"/>
+	<edge from="gw_carry_57" to="gw_carry_64"/>
+	<edge from="gw_carry_18" to="gw_carry_19"/>
+	<edge from="gw_carry_30" to="gw_carry_31"/>
+	<edge from="gw_carry_59" to="gw_carry_60"/>
+	<edge from="gw_carry_31" to="gw_carry_32"/>
+	<edge from="gw_carry_63" to="gw_carry_64"/>
+	<edge from="gw_carry_1" to="gw_carry_2"/>
+	<edge from="gw_carry_16" to="gw_carry_17"/>
+	<edge from="gw_carry_32" to="gw_carry_33"/>
+	<edge from="gw_carry_49" to="gw_carry_50"/>
+	<edge from="gw_carry_6" to="gw_carry_7"/>
+	<edge from="gw_carry_47" to="gw_carry_56"/>
+	<edge from="gw_carry_58" to="gw_carry_59"/>
+	<edge from="gw_carry_51" to="gw_carry_52"/>
+	<edge from="gw_carry_12" to="gw_carry_13"/>
+	<edge from="gw_carry_20" to="gw_carry_21"/>
+	<edge from="gw_carry_44" to="gw_carry_45"/>
+	<edge from="gw_carry_52" to="gw_carry_53"/>
+	<edge from="gw_carry_25" to="gw_carry_26"/>
+	<edge from="gw_carry_27" to="gw_carry_28"/>
+	<edge from="gw_carry_35" to="gw_carry_36"/>
+	<edge from="gw_carry_39" to="gw_carry_40"/>
+	<edge from="gw_carry_47" to="gw_carry_48"/>
+	<edge from="gw_carry_4" to="gw_carry_5"/>
+	<edge from="gw_carry_29" to="gw_carry_30"/>
+	<edge from="gw_carry_37" to="gw_carry_38"/>
+	<edge from="gw_carry_60" to="gw_carry_61"/>
+	<edge from="gw_carry_55" to="gw_carry_56"/>
+	<edge from="gw_carry_9" to="gw_carry_10"/>
+	<edge from="gw_carry_41" to="gw_carry_42"/>
+	<edge from="gw_carry_2" to="gw_carry_3"/>
+	<edge from="gw_carry_14" to="gw_carry_15"/>
+	<edge from="gw_carry_50" to="gw_carry_51"/>
+	<edge from="gw_carry_62" to="gw_carry_63"/>
+	<edge from="gw_carry_11" to="gw_carry_12"/>
+	<edge from="gw_carry_23" to="gw_carry_24"/>
+	<edge from="gw_carry_43" to="gw_carry_44"/>
+	<edge from="gw_carry_35" to="gw_carry_46"/>
+	<edge from="gw_carry_0" to="gw_carry_1"/>
+	<edge from="gw_carry_17" to="gw_carry_18"/>
+	<edge from="gw_carry_7" to="gw_carry_8"/>
+	<edge from="gw_carry_33" to="gw_carry_34"/>
+	<edge from="gw_carry_26" to="gw_carry_27"/>
+	<edge from="gw_carry_38" to="gw_carry_39"/>
+	<edge from="gw_carry_48" to="gw_carry_49"/>
+	<edge from="gw_carry_13" to="gw_carry_14"/>
+	<edge from="gw_carry_21" to="gw_carry_22"/>
+	<edge from="gw_carry_0" to="gw_carry_19"/>
+	<edge from="gw_carry_45" to="gw_carry_46"/>
+	<edge from="gw_carry_53" to="gw_carry_54"/>
+	<edge from="gw_carry_24" to="gw_carry_25"/>
+	<edge from="gw_carry_57" to="gw_carry_58"/>
+	<edge from="gw_carry_3" to="gw_carry_4"/>
+</graph>
+</gxl>

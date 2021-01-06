@@ -504,6 +504,7 @@ public class GraphMatchingSegFree {
 
 			boolean inBB = false;
 			for (int m = 0; m < boundingBoxesGT.get(j).size(); m++) {
+//				System.out.println("bb "+m);
 				//TODO if (good char)
 				int[] coords = boundingBoxesGT.get(j,m).getCoords();
 				int bbX1 = coords[0];
@@ -579,9 +580,7 @@ public class GraphMatchingSegFree {
 
 		SpottingPostProcessing spottingPostProcessing = new SpottingPostProcessing();
 		ArrayList<SpottingResult> reducedSpottingResults = spottingPostProcessing.postProcess(spottingResults);
-
 		trecEval.exportSpottingResults(reducedSpottingResults);
-
 		this.resultPrinter.printInfos(this.source, this.target, prop, initTime, matchingTime);
 
 	}
@@ -859,7 +858,7 @@ public class GraphMatchingSegFree {
 					Integer boundingBoxY2 = Integer.valueOf(boundingBox.getElementsByTagName("y2").item(0).getTextContent());
 					int[] coords = new int[] {boundingBoxX1, boundingBoxY1, boundingBoxX2, boundingBoxY2};
 					BoundingBox tempBB = new BoundingBox(boundingBoxId, boundingBoxChar, coords);
-					boundingBoxesGT.set(n,n,tempBB);
+					boundingBoxesGT.set(j,n,tempBB);
 				}
 			}
 		}

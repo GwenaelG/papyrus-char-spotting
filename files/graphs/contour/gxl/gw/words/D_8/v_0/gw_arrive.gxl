@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gxl SYSTEM "http://www.gupro.de/GXL/gxl-1.0.dtd">
+<gxl>
+<graph edgeids="false" edgemode="undirected" id="gw_arrive">
+	<attr name="x_mean">
+		<float>105.47945205479452</float>
+	</attr>
+	<attr name="y_mean">
+		<float>32.32876712328767</float>
+	</attr>
+	<attr name="x_std">
+		<float>62.9875198747635</float>
+	</attr>
+	<attr name="y_std">
+		<float>7.934759311367301</float>
+	</attr>
+	<attr name="x_max">
+		<float>214</float>
+	</attr>
+	<attr name="y_max">
+		<float>43</float>
+	</attr>
+	<node id="gw_arrive_0">
+		<attr name="x">
+			<float>0.2622828772755757</float>
+		</attr>
+		<attr name="y">
+			<float>-1.3017114594126027</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_1">
+		<attr name="x">
+			<float>-1.4840948213337715</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5455448556689421</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_2">
+		<attr name="x">
+			<float>0.008264302932397898</float>
+		</attr>
+		<attr name="y">
+			<float>0.46267728265593877</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_3">
+		<attr name="x">
+			<float>1.5323757489914647</float>
+		</attr>
+		<attr name="y">
+			<float>0.08459398078410844</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_4">
+		<attr name="x">
+			<float>0.30991135996492153</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7976003902501624</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_5">
+		<attr name="x">
+			<float>0.1352735901039868</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5455448556689421</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_6">
+		<attr name="x">
+			<float>-1.6111041085053603</float>
+		</attr>
+		<attr name="y">
+			<float>0.08459398078410844</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_7">
+		<attr name="x">
+			<float>0.1352735901039868</float>
+		</attr>
+		<attr name="y">
+			<float>0.714732817237159</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_8">
+		<attr name="x">
+			<float>1.4053664618198758</float>
+		</attr>
+		<attr name="y">
+			<float>0.46267728265593877</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_9">
+		<attr name="x">
+			<float>0.008264302932397898</float>
+		</attr>
+		<attr name="y">
+			<float>0.21062174807471856</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_10">
+		<attr name="x">
+			<float>-1.6587325911947062</float>
+		</attr>
+		<attr name="y">
+			<float>1.0928161191089893</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_11">
+		<attr name="x">
+			<float>0.2622828772755757</float>
+		</attr>
+		<attr name="y">
+			<float>0.9667883518183792</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_12">
+		<attr name="x">
+			<float>1.2783571746482867</float>
+		</attr>
+		<attr name="y">
+			<float>0.46267728265593877</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_13">
+		<attr name="x">
+			<float>-0.118744984239191</float>
+		</attr>
+		<attr name="y">
+			<float>0.46267728265593877</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_14">
+		<attr name="x">
+			<float>-1.5317233040231173</float>
+		</attr>
+		<attr name="y">
+			<float>1.3448716536902094</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_15">
+		<attr name="x">
+			<float>0.3892921644471646</float>
+		</attr>
+		<attr name="y">
+			<float>0.5887050499465489</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_16">
+		<attr name="x">
+			<float>1.3736141400269786</float>
+		</attr>
+		<attr name="y">
+			<float>-0.041433786506501674</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_17">
+		<attr name="x">
+			<float>-0.22987811051433127</float>
+		</attr>
+		<attr name="y">
+			<float>0.21062174807471856</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_18">
+		<attr name="x">
+			<float>-1.4047140168515284</float>
+		</attr>
+		<attr name="y">
+			<float>0.9667883518183792</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_19">
+		<attr name="x">
+			<float>0.5163014516187534</float>
+		</attr>
+		<attr name="y">
+			<float>0.21062174807471856</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_20">
+		<attr name="x">
+			<float>1.3736141400269786</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9236281575407724</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_21">
+		<attr name="x">
+			<float>-0.2933827541001257</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7976003902501624</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_22">
+		<attr name="x">
+			<float>-1.2777047296799395</float>
+		</attr>
+		<attr name="y">
+			<float>0.714732817237159</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_23">
+		<attr name="x">
+			<float>0.6274345778938938</float>
+		</attr>
+		<attr name="y">
+			<float>0.08459398078410844</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_24">
+		<attr name="x">
+			<float>1.2466048528553895</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9236281575407724</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_25">
+		<attr name="x">
+			<float>-0.4203920412717146</float>
+		</attr>
+		<attr name="y">
+			<float>-0.9236281575407724</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_26">
+		<attr name="x">
+			<float>-1.1506954425083507</float>
+		</attr>
+		<attr name="y">
+			<float>0.9667883518183792</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_27">
+		<attr name="x">
+			<float>0.7068153823761368</float>
+		</attr>
+		<attr name="y">
+			<float>0.8407605845277691</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_28">
+		<attr name="x">
+			<float>1.1195955656838006</float>
+		</attr>
+		<attr name="y">
+			<float>-0.041433786506501674</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_29">
+		<attr name="x">
+			<float>-0.5474013284433035</float>
+		</attr>
+		<attr name="y">
+			<float>-0.16746155379711178</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_30">
+		<attr name="x">
+			<float>-1.0236861553367618</float>
+		</attr>
+		<attr name="y">
+			<float>0.714732817237159</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_31">
+		<attr name="x">
+			<float>0.8338246695477257</float>
+		</attr>
+		<attr name="y">
+			<float>0.5887050499465489</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_32">
+		<attr name="x">
+			<float>1.0084624394086603</float>
+		</attr>
+		<attr name="y">
+			<float>-0.419517088378332</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_33">
+		<attr name="x">
+			<float>-0.6744106156148924</float>
+		</attr>
+		<attr name="y">
+			<float>0.46267728265593877</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_34">
+		<attr name="x">
+			<float>-0.8966768681651729</float>
+		</attr>
+		<attr name="y">
+			<float>0.714732817237159</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_35">
+		<attr name="x">
+			<float>0.9608339567193146</float>
+		</attr>
+		<attr name="y">
+			<float>0.21062174807471856</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_36">
+		<attr name="x">
+			<float>0.9290816349264174</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0496559248313826</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_37">
+		<attr name="x">
+			<float>-0.769667580993584</float>
+		</attr>
+		<attr name="y">
+			<float>0.33664951536532867</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_38">
+		<attr name="x">
+			<float>-0.7855437418900326</float>
+		</attr>
+		<attr name="y">
+			<float>1.0928161191089893</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_39">
+		<attr name="x">
+			<float>1.0878432438909034</float>
+		</attr>
+		<attr name="y">
+			<float>0.33664951536532867</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_40">
+		<attr name="x">
+			<float>0.8338246695477257</float>
+		</attr>
+		<attr name="y">
+			<float>-0.041433786506501674</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_41">
+		<attr name="x">
+			<float>-0.8014199027864812</float>
+		</attr>
+		<attr name="y">
+			<float>-0.5455448556689421</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_42">
+		<attr name="x">
+			<float>-0.6585344547184437</float>
+		</attr>
+		<attr name="y">
+			<float>1.0928161191089893</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_43">
+		<attr name="x">
+			<float>1.2148525310624922</float>
+		</attr>
+		<attr name="y">
+			<float>0.714732817237159</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_44">
+		<attr name="x">
+			<float>0.7544438650654827</float>
+		</attr>
+		<attr name="y">
+			<float>-0.16746155379711178</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_45">
+		<attr name="x">
+			<float>-0.9284291899580701</float>
+		</attr>
+		<attr name="y">
+			<float>-0.16746155379711178</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_46">
+		<attr name="x">
+			<float>-0.5315251675468549</float>
+		</attr>
+		<attr name="y">
+			<float>0.46267728265593877</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_47">
+		<attr name="x">
+			<float>1.3418618182340813</float>
+		</attr>
+		<attr name="y">
+			<float>0.9667883518183792</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_48">
+		<attr name="x">
+			<float>0.7226915432725854</float>
+		</attr>
+		<attr name="y">
+			<float>-1.0496559248313826</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_49">
+		<attr name="x">
+			<float>-1.055438477129659</float>
+		</attr>
+		<attr name="y">
+			<float>0.46267728265593877</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_50">
+		<attr name="x">
+			<float>-0.404515880375266</float>
+		</attr>
+		<attr name="y">
+			<float>-0.16746155379711178</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_51">
+		<attr name="x">
+			<float>-0.118744984239191</float>
+		</attr>
+		<attr name="y">
+			<float>0.8407605845277691</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_52">
+		<attr name="x">
+			<float>1.4688711054056702</float>
+		</attr>
+		<attr name="y">
+			<float>0.714732817237159</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_53">
+		<attr name="x">
+			<float>1.6593850361630536</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2934893210877219</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_54">
+		<attr name="x">
+			<float>0.5956822561009966</float>
+		</attr>
+		<attr name="y">
+			<float>-0.6715726229595522</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_55">
+		<attr name="x">
+			<float>-1.1665716034047993</float>
+		</attr>
+		<attr name="y">
+			<float>0.21062174807471856</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_56">
+		<attr name="x">
+			<float>-0.35688739768592015</float>
+		</attr>
+		<attr name="y">
+			<float>0.46267728265593877</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_57">
+		<attr name="x">
+			<float>1.595880392577259</float>
+		</attr>
+		<attr name="y">
+			<float>0.46267728265593877</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_58">
+		<attr name="x">
+			<float>0.46867296892940763</float>
+		</attr>
+		<attr name="y">
+			<float>-0.041433786506501674</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_59">
+		<attr name="x">
+			<float>0.23053055548267845</float>
+		</attr>
+		<attr name="y">
+			<float>0.21062174807471856</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_60">
+		<attr name="x">
+			<float>-1.2300762469905937</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7976003902501624</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_61">
+		<attr name="x">
+			<float>-0.24575427141077988</float>
+		</attr>
+		<attr name="y">
+			<float>0.9667883518183792</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_62">
+		<attr name="x">
+			<float>1.722889679748848</float>
+		</attr>
+		<attr name="y">
+			<float>-0.041433786506501674</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_63">
+		<attr name="x">
+			<float>0.34166368175781875</float>
+		</attr>
+		<attr name="y">
+			<float>0.46267728265593877</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_64">
+		<attr name="x">
+			<float>-1.3570855341621826</float>
+		</attr>
+		<attr name="y">
+			<float>-0.7976003902501624</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_65">
+		<attr name="x">
+			<float>-1.3888378559550798</float>
+		</attr>
+		<attr name="y">
+			<float>-0.2934893210877219</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_66">
+		<attr name="x">
+			<float>-1.4364663386444256</float>
+		</attr>
+		<attr name="y">
+			<float>-0.041433786506501674</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_67">
+		<attr name="x">
+			<float>-1.2935808905763881</float>
+		</attr>
+		<attr name="y">
+			<float>-0.041433786506501674</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_68">
+		<attr name="x">
+			<float>-1.4047140168515284</float>
+		</attr>
+		<attr name="y">
+			<float>0.714732817237159</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_69">
+		<attr name="x">
+			<float>-1.5317233040231173</float>
+		</attr>
+		<attr name="y">
+			<float>0.8407605845277691</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_70">
+		<attr name="x">
+			<float>0.4051683253436132</float>
+		</attr>
+		<attr name="y">
+			<float>-4.0743223398060255</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_71">
+		<attr name="x">
+			<float>0.4210444862400618</float>
+		</attr>
+		<attr name="y">
+			<float>-3.4441835033529746</float>
+		</attr>
+	</node>
+	<node id="gw_arrive_72">
+		<attr name="x">
+			<float>0.5004252907223048</float>
+		</attr>
+		<attr name="y">
+			<float>-3.822266805224805</float>
+		</attr>
+	</node>
+	<edge from="gw_arrive_5" to="gw_arrive_9"/>
+	<edge from="gw_arrive_18" to="gw_arrive_22"/>
+	<edge from="gw_arrive_52" to="gw_arrive_57"/>
+	<edge from="gw_arrive_34" to="gw_arrive_38"/>
+	<edge from="gw_arrive_65" to="gw_arrive_67"/>
+	<edge from="gw_arrive_50" to="gw_arrive_56"/>
+	<edge from="gw_arrive_22" to="gw_arrive_26"/>
+	<edge from="gw_arrive_54" to="gw_arrive_58"/>
+	<edge from="gw_arrive_53" to="gw_arrive_3"/>
+	<edge from="gw_arrive_19" to="gw_arrive_23"/>
+	<edge from="gw_arrive_45" to="gw_arrive_49"/>
+	<edge from="gw_arrive_13" to="gw_arrive_17"/>
+	<edge from="gw_arrive_1" to="gw_arrive_6"/>
+	<edge from="gw_arrive_12" to="gw_arrive_16"/>
+	<edge from="gw_arrive_44" to="gw_arrive_48"/>
+	<edge from="gw_arrive_7" to="gw_arrive_11"/>
+	<edge from="gw_arrive_15" to="gw_arrive_19"/>
+	<edge from="gw_arrive_64" to="gw_arrive_1"/>
+	<edge from="gw_arrive_65" to="gw_arrive_66"/>
+	<edge from="gw_arrive_56" to="gw_arrive_61"/>
+	<edge from="gw_arrive_70" to="gw_arrive_71"/>
+	<edge from="gw_arrive_62" to="gw_arrive_53"/>
+	<edge from="gw_arrive_14" to="gw_arrive_18"/>
+	<edge from="gw_arrive_6" to="gw_arrive_10"/>
+	<edge from="gw_arrive_43" to="gw_arrive_47"/>
+	<edge from="gw_arrive_58" to="gw_arrive_63"/>
+	<edge from="gw_arrive_63" to="gw_arrive_59"/>
+	<edge from="gw_arrive_0" to="gw_arrive_4"/>
+	<edge from="gw_arrive_31" to="gw_arrive_35"/>
+	<edge from="gw_arrive_23" to="gw_arrive_27"/>
+	<edge from="gw_arrive_32" to="gw_arrive_36"/>
+	<edge from="gw_arrive_71" to="gw_arrive_72"/>
+	<edge from="gw_arrive_37" to="gw_arrive_41"/>
+	<edge from="gw_arrive_25" to="gw_arrive_29"/>
+	<edge from="gw_arrive_36" to="gw_arrive_40"/>
+	<edge from="gw_arrive_47" to="gw_arrive_52"/>
+	<edge from="gw_arrive_24" to="gw_arrive_28"/>
+	<edge from="gw_arrive_61" to="gw_arrive_51"/>
+	<edge from="gw_arrive_30" to="gw_arrive_34"/>
+	<edge from="gw_arrive_68" to="gw_arrive_69"/>
+	<edge from="gw_arrive_67" to="gw_arrive_68"/>
+	<edge from="gw_arrive_29" to="gw_arrive_33"/>
+	<edge from="gw_arrive_26" to="gw_arrive_30"/>
+	<edge from="gw_arrive_0" to="gw_arrive_5"/>
+	<edge from="gw_arrive_28" to="gw_arrive_32"/>
+	<edge from="gw_arrive_60" to="gw_arrive_64"/>
+	<edge from="gw_arrive_39" to="gw_arrive_43"/>
+	<edge from="gw_arrive_35" to="gw_arrive_39"/>
+	<edge from="gw_arrive_27" to="gw_arrive_31"/>
+	<edge from="gw_arrive_16" to="gw_arrive_20"/>
+	<edge from="gw_arrive_2" to="gw_arrive_7"/>
+	<edge from="gw_arrive_41" to="gw_arrive_45"/>
+	<edge from="gw_arrive_9" to="gw_arrive_13"/>
+	<edge from="gw_arrive_21" to="gw_arrive_25"/>
+	<edge from="gw_arrive_57" to="gw_arrive_62"/>
+	<edge from="gw_arrive_70" to="gw_arrive_72"/>
+	<edge from="gw_arrive_40" to="gw_arrive_44"/>
+	<edge from="gw_arrive_8" to="gw_arrive_12"/>
+	<edge from="gw_arrive_55" to="gw_arrive_60"/>
+	<edge from="gw_arrive_20" to="gw_arrive_24"/>
+	<edge from="gw_arrive_38" to="gw_arrive_42"/>
+	<edge from="gw_arrive_46" to="gw_arrive_50"/>
+	<edge from="gw_arrive_3" to="gw_arrive_8"/>
+	<edge from="gw_arrive_17" to="gw_arrive_21"/>
+	<edge from="gw_arrive_51" to="gw_arrive_2"/>
+	<edge from="gw_arrive_10" to="gw_arrive_14"/>
+	<edge from="gw_arrive_42" to="gw_arrive_46"/>
+	<edge from="gw_arrive_33" to="gw_arrive_37"/>
+	<edge from="gw_arrive_48" to="gw_arrive_54"/>
+	<edge from="gw_arrive_49" to="gw_arrive_55"/>
+	<edge from="gw_arrive_59" to="gw_arrive_4"/>
+	<edge from="gw_arrive_11" to="gw_arrive_15"/>
+	<edge from="gw_arrive_69" to="gw_arrive_66"/>
+</graph>
+</gxl>
