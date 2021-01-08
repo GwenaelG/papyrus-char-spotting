@@ -9,7 +9,7 @@ from keypoint_graph_creation import keypoint_start
 from contour_graph_creation import contour_start
 
 
-location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/words/'
+location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/small_pages/'
 
 def contour():
     print('Contour Graphs')

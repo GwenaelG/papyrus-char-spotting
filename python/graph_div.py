@@ -21,13 +21,11 @@ def dummy_graphs(sizes):
         '\t<attr name="y_std">\n\t\t<float>0</float>\n\t</attr>\n',
         '\t<attr name="x_max">\n\t\t<float>0</float>\n\t</attr>\n',
         '\t<attr name="y_max">\n\t\t<float>0</float>\n\t</attr>\n']
-   
     footer_lines = [
         '</graph>\n',
         '</gxl>']
-    
     for s in sizes:
-        filename = location+"dummy_"+str(s)+".gxl"
+        filename = location+"dummy"+str(s)+".gxl"
         file = open(filename, 'w')
         file.writelines(header_lines)
         for i in range(s):
@@ -40,8 +38,18 @@ def dummy_graphs(sizes):
              edge_string = f'\t<edge from="node_0" to="node_{i}"/>\n'
              file.write(edge_string)
         file.writelines(footer_lines)
-        file.close
-
+        file.close()
+    location_cxl = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/java_GED-master/test/papyrus/cxl/'
+    header_lines = ['<?xml version="1.0" encoding="UTF-8"?>\n','<GraphCollection>\n','<graphs>\n']
+    footer_lines = ['</graphs>\n','</GraphCollection>']
+    for s in sizes:
+        filename = location_cxl+"dummy"+str(s)+".cxl"
+        file = open(filename, 'w')
+        file.writelines(header_lines)
+        file.write(f'<print class="page" file="dummy{s}.gxl"/>\n')
+        file.writelines(footer_lines)
+        file.close()
+            
     
 
 def find_best_result(loc):
@@ -64,24 +72,14 @@ def find_best_result(loc):
         print("\n")
         return best, maxMAP
         
-loc2 = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/java_GED-master/test/papyrus/results/gw/cont/the_step3/'
+# loc2 = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/java_GED-master/test/papyrus/results/gw/cont/the_step3/'
 # loc3 = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/java_GED-master/test/papyrus/results/gw/cont/step3/'
-best2, val2 = find_best_result(loc2)              
+# best2, val2 = find_best_result(loc2)              
 # best3, val3 = find_best_result(loc3)
 # double = [x for x in best2 if x in best3]
 # print(double)
 
-# dummy_graphs([10,100,1000,10000, 50000])
-
-# l = 'C:/Users/Gwenael/Desktop/'
-# file = l+"gt.txt"
-# with open(file, 'r') as rd:
-#     lines = rd.readlines()
-#     with open(l+'cxl.txt','w') as wr:
-#         for line in lines:
-#             ls = line.split(" ")
-#             s = f'<print class="{ls[1][:-1]}" file="{ls[0]}.gxl"/>\n'
-#             wr.write(s)
+dummy_graphs([10,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000])
 
 
 
