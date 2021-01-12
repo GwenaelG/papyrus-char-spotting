@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class RunCompl3 {
 	public static void main(String[] args) throws IOException {
-		File propDirectory = new File("test/papyrus/properties/recons_bold/kp/core1");
+		File propDirectory = new File("test/papyrus/properties/test_02_3versions/core1");
 		File[] props = propDirectory.listFiles();
 		for (int i = 0; i < props.length; i++) {
 			if(props[i].isFile()) {

@@ -194,7 +194,7 @@ def create_gxl(coords, E, name, D, v=None):
     None.
 
     """
-    location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/gw/small_pages/D_'+str(D)+'/'
+    location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/pages/D_'+str(D)+'/'
     if v is not None: 
         location = location + 'v_'+str(v)+'/'
     # location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/test/'
@@ -278,7 +278,7 @@ def contour_graph(img, D, name, v=0):
         Ec[i] = Ec_i
     coords, E = flatten(contours, Vc, Ec)
     display_img_graph(img, contours, coords, E, name, D, v, 's')
-    create_gxl(coords, E, name, D, v)    
+    create_gxl(coords, E, name, D, v) # !change location in fct itself
     
 
 def contour_start(location, D, slc = None, v=0):

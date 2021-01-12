@@ -1,14 +1,14 @@
 # cxl files
 targetFile=test/papyrus/cxl/target_gw_270_half.cxl
-sourceFile=test/papyrus/cxl/source_gw.cxl
+sourceFile=test/papyrus/cxl/source_gw_the.cxl
 
 # graphs folder
 sourcePath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/gw/chars/D_1/v_4/
-targetPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/gw/pages/D_1/v_4/
+targetPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/gw/small_pages/D_1/v_4/
 
 # original images
 sourceImagesPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/chars/
-targetImagesPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/pages/
+targetImagesPath=C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/small_pages/
 
 # results folder
 result=test/papyrus/results/curr/
@@ -29,10 +29,10 @@ matching=HED
 numOfNodeAttr=2
 nodeAttr0=x
 nodeCostType0=
-nodeAttr0Importance=0.1
+nodeAttr0Importance=0.5
 nodeAttr1=y
 nodeCostType1=
-nodeAttr1Importance=0.9
+nodeAttr1Importance=0.5
 multiplyNodeCosts=0
 
 # all edge attributes
@@ -40,11 +40,11 @@ numOfEdgeAttr=0
 multiplyEdgeCosts=0
 
 # node/edge cost balance
-alpha=0.1
+alpha=0.5
 
 # costs
 node=8
-edge=1
+edge=8
 
 # print options
 outputGraphs=0
@@ -93,8 +93,8 @@ threshold7=-0.6
 threshold8=-0.4
 threshold9=-0.2
 
-stepX=20
-stepY=20
+stepX=2
+stepY=2
 
 nodeRatio=2
 

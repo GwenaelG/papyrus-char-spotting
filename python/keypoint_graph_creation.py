@@ -580,7 +580,7 @@ def keypoint_graph(img, D, name):
     # show img
     # display_img_graph(img, V, E, skel_coord, name)
     # create gxl file
-    create_gxl(V[0], E, skel_coord, name, D)
+    create_gxl(V[0], E, skel_coord, name, D) # !change location in fct itself
     
 
 def keypoint_start(location, D, slc = None):

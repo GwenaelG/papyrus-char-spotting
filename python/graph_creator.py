@@ -9,13 +9,13 @@ from keypoint_graph_creation import keypoint_start
 from contour_graph_creation import contour_start
 
 
-location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/gw/small_pages/'
+location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/pages/'
 
 def contour():
     print('Contour Graphs')
     D_list = [2,3,4,5,6,8,10,12]
     D = 1
-    v_list = [2, 0.5, 1, 3, 4]
+    v_list = [0.5, 1, 2, 3, 4]
     for vi in v_list:
         start = time.time()
         print(f'start: D = {D}, v = {vi}')
@@ -32,7 +32,7 @@ def contour():
     
 def keypoint():
     print('Keypoint Graphs')
-    D_list = [5,6,2,3,4,8,10,12]
+    D_list = [2,3,4,5,6,8,10,12]
     for Di in D_list:
         start = time.time()
         print(f'start: D = {Di}')

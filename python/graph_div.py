@@ -8,6 +8,21 @@ Created on Tue Jun  9 11:26:42 2020
 import glob
 
 
+def sort_occurences(file):
+    with open(file, 'r') as rd:
+        lines = rd.readlines()
+        dic = {}
+        for i,l in enumerate(lines):
+            dic.update({l.split(' ')[1] : int(l.split(' ')[2].strip('\n'))})
+        sorted_dic = {}
+        sorted_keys = sorted(dic, key=dic.get, reverse = True)
+        for k in sorted_keys:
+            sorted_dic[k] = dic[k]
+        wr_file = file[:-4]+"_sorted.txt"
+        with open(wr_file, 'w') as wr:
+            for k,v in sorted_dic.items():
+                wr.write(k+" "+str(v)+"\n")
+
 def dummy_graphs(sizes):
     location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/dummy/'
     header_lines = [
@@ -63,24 +78,24 @@ def find_best_result(loc):
                 lines = rd.readlines()
                 MAP = float(''.join(lines[6].replace(chr(0),chr(32)).split(' '))[-7:])
                 maps.append(MAP)
-        print(maps)
+
         maxMAP = max(maps)
-        best = [i for i,m in enumerate(maps) if m == maxMAP]
-        print(loc.split('/')[-2])
+        best = [fileset[i].split('\\')[-2] for i,m in enumerate(maps) if m == maxMAP]
         print(best)
         print(maxMAP)
         print("\n")
         return best, maxMAP
         
-# loc2 = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/java_GED-master/test/papyrus/results/gw/cont/the_step3/'
+loc2 = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/java_GED-master/test/papyrus/results/gw/cont/the_step3/'
 # loc3 = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/java_GED-master/test/papyrus/results/gw/cont/step3/'
-# best2, val2 = find_best_result(loc2)              
+best2, val2 = find_best_result(loc2)              
 # best3, val3 = find_best_result(loc3)
 # double = [x for x in best2 if x in best3]
 # print(double)
 
-dummy_graphs([10,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000])
+#dummy_graphs([10,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000])
 
+# sort_occurences('C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/groundtruth/occurences_half_test.txt')
 
 
 
