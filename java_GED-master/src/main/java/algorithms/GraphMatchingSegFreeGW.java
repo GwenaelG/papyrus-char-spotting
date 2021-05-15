@@ -64,7 +64,7 @@ public class GraphMatchingSegFreeGW {
 	private TwoDimAL<Map<Integer, Double>> normDistanceList;
 
 	/**
-	 * the source and target graph actually to be matched (temp ist for temporarily swappings)
+	 * the source graph, target graph and target page actually to be matched (temp ist for temporarily swappings)
 	 */
 	private Graph sourceGraph, targetGraph, targetPage, temp;
 
@@ -157,16 +157,25 @@ public class GraphMatchingSegFreeGW {
 	 */
 	private ResultPrinter resultPrinter;
 
-	// Ground truth and trecEval
+	/**
+	 * Ground truth and trecEval
+	 */
 	private TreeMap<String, String> wordList;
 	private TrecEval trecEval;
 
-	// size of windows relative to source char
-	private double[] windowSizes;
+	/**
+	 * size of windows relative to source char
+	 */
+	 private double[] windowSizes;
 
-	//
+	/**
+	 * stores accepted windows' window size & grid position
+	 */
 	private FourDimAL<Integer> candWindows;
 
+	/**
+	 * count of accepted windows
+	 */
 	private	TwoDimAL<Integer> windowsCount;
 
 	//
@@ -286,6 +295,7 @@ public class GraphMatchingSegFreeGW {
 
 				targetPage = this.target.get(j);
 
+				//get values
 				double targetWidth = targetImages.get(j).getWidth();
 				double targetHeight = targetImages.get(j).getHeight();
 				double xMean = targetPage.getDouble("x_mean");
@@ -293,6 +303,7 @@ public class GraphMatchingSegFreeGW {
 				double xStDev = targetPage.getDouble("x_std");
 				double yStDev = targetPage.getDouble("y_std");
 
+				// compute and store grid sizes
 				int numOfStepsX = (int) Math.ceil(targetWidth / stepX);
 				int numOfStepsY = (int) Math.ceil(targetHeight / stepY);
 				int numOfGridPoints = numOfStepsX * numOfStepsY;
@@ -311,6 +322,7 @@ public class GraphMatchingSegFreeGW {
 
 				// create windows, starting with top-left corner
 				for (int k = 0; k < numOfGridPoints; k++){
+					// calculate corner position
 					int gridRow = k / numOfStepsX;
 					int gridColumn = k % numOfStepsX;
 
@@ -319,6 +331,7 @@ public class GraphMatchingSegFreeGW {
 
 					double[] windowCornerCoords = {(columnCoord - xMean) / xStDev, (rowCoord - yMean) / yStDev};
 
+					// windows extraction
 					ArrayList<Graph> targetWindows = targetPage.extractWindowsCornerCoords(windowCornerCoords, windowMaxSides);
 
 					for (int l = 0; l < windowSizes.length; l++) {
@@ -329,9 +342,11 @@ public class GraphMatchingSegFreeGW {
 
 						int targetNodeCount = targetGraph.size();
 
+						// check node count, close enough to source graph?
 						windowNodeCount.set(i,j,k,l,targetNodeCount);
 						double matchingNodeRatio = (double) sourceNodeCount / (double) targetNodeCount;
 						if ((matchingNodeRatio > (1 / nodeRatio)) && (matchingNodeRatio < nodeRatio)) {
+							// store accepted windows indices
 							int winNum = windowsCount.get(i,j);
 							candWindows.set(i,j,winNum,0,k);
 							candWindows.set(i,j,winNum,1,l);
@@ -374,20 +389,20 @@ public class GraphMatchingSegFreeGW {
 
 							// whether distances or similarities are computed
 							if (this.simKernel < 1) {
-								this.distanceList.get(i,j).put(counter, d);
+								this.distanceList.get(i,j).put(winNum, d);
 							} else {
 								switch (this.simKernel) {
 									case 1:
-										this.distanceList.get(i,j).put(counter, -Math.pow(d, 2.0));
+										this.distanceList.get(i,j).put(winNum, -Math.pow(d, 2.0));
 										break;
 									case 2:
-										this.distanceList.get(i,j).put(counter, -d);
+										this.distanceList.get(i,j).put(winNum, -d);
 										break;
 									case 3:
-										this.distanceList.get(i,j).put(counter, Math.tanh(-d));
+										this.distanceList.get(i,j).put(winNum, Math.tanh(-d));
 										break;
 									case 4:
-										this.distanceList.get(i,j).put(counter, Math.exp(-d));
+										this.distanceList.get(i,j).put(winNum, Math.exp(-d));
 										break;
 								}
 							}
@@ -406,6 +421,8 @@ public class GraphMatchingSegFreeGW {
 		System.out.println("Final number of matchings: "+counter);
 
 		long matchingTime = System.currentTimeMillis() - start;
+
+		// computing means and standard deviation for source-target pairs
 
 		for (int i = 0; i < source.size(); i++) {
 			for (int j = 0; j < target.size(); j++) {
@@ -443,6 +460,7 @@ public class GraphMatchingSegFreeGW {
 			}
 		}
 
+		// store spotting results
 		ArrayList<SpottingResult> spottingResults = new ArrayList<>();
 
 		for (int i = 0; i < source.size(); i++) {
@@ -458,7 +476,6 @@ public class GraphMatchingSegFreeGW {
 
 
 				GroundtruthPage targetPageGroundtruth = groundtruthPages.get(j);
-
 				for (int n = 0; n < candWindows.get(i).get(j).size(); n++) {
 					ArrayList<Integer> windowRefs = candWindows.get(i).get(j).get(n);
 					int k = windowRefs.get(0);
@@ -483,6 +500,7 @@ public class GraphMatchingSegFreeGW {
 
 					Rectangle sourceRect = new Rectangle(nodeX, nodeY, windowWidth, windowHeight);
 
+					// check every line of GT
 					for (int m = 0; m < targetPageGroundtruth.getLines().size(); m++) {
 						GroundtruthLine groundtruthLine = targetPageGroundtruth.getLines().get(m);
 						//replace line Polygon with bounding box Rectangle for easy area computation
@@ -513,6 +531,7 @@ public class GraphMatchingSegFreeGW {
 
 		trecEval.exportSpottingResults(reducedSpottingResults);
 
+		// images creation
 		for (int i = 0; i < source.size(); i++) {
 			BufferedImage charImg = sourceImages.get(i);
 			for (int j = 0; j < target.size(); j++) {
@@ -874,6 +893,7 @@ public class GraphMatchingSegFreeGW {
 		this.targetImages = new ArrayList<>();
 		for (int j = 0; j < target.size(); j++) {
 			String imagePath = targetImagesPath + "\\" + target.get(j).getFileName().substring(0, target.get(j).getFileName().length() - 4) + "_r.png";
+			System.out.println(imagePath);
 			BufferedImage oldImg = ImageIO.read(new File(imagePath));
 			targetImages.add(oldImg);
 		}

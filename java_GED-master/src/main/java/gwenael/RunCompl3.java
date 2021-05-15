@@ -2,6 +2,7 @@
 package gwenael;
 
 import algorithms.GMSF_save;
+import algorithms.GraphMatchingSegFree;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,7 +16,7 @@ public class RunCompl3 {
 			if(props[i].isFile()) {
 				try {
 					System.out.println("Property file: "+props[i].getPath());
-					new GMSF_save(props[i].getPath());
+					new GraphMatchingSegFree(props[i].getPath());
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

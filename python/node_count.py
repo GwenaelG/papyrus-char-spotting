@@ -8,6 +8,36 @@ Created on Tue Jun  9 11:26:42 2020
 import glob
 
 
+def node_count(loc):
+    print(loc)
+    n = 0
+    total = 0
+    fileset = glob.glob(loc + '*.gxl')
+    for f in fileset:
+        with open(f, 'r') as rd:
+            print(f)
+            data = rd.read()
+            nodes = data.count("<node")
+            print(nodes)
+            total += nodes
+            n += 1
+    mean = total / n
+    
+    
+# loc1 = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/keypoint/gxl/D_'
+# loc2 = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/contour/gxl/D_'
+# loc3 = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/contour/gxl/D_1/v_'
+# for d in [2,3,4,5,6,8,10,12]:
+#     node_count(loc1+str(d)+'/')
+# for d in [2,3,4,5,6,8,10,12]:
+#     node_count(loc2+str(d)+'/')
+# for v in [0.5, 1, 2, 3, 4]:
+#     node_count(loc3+str(v)+'/')
+
+locMS = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/test_cont/v_0/'
+node_count(locMS)
+
+
 def node_count_pers():
     with open('C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/test/node_count_pers.txt','w') as wr:
         # for method in ['keypoint','contour']:
@@ -82,5 +112,5 @@ def edge_count_MS():
             
 # node_count_pers()
 # node_count_MS()
-edge_count_pers()
+# edge_count_pers()
 # edge_count_MS()

@@ -194,7 +194,7 @@ def create_gxl(coords, E, name, D, v=None):
     None.
 
     """
-    location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/pages/D_'+str(D)+'/'
+    location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/graphs/contour/gxl/test_cont/'
     if v is not None: 
         location = location + 'v_'+str(v)+'/'
     # location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/papyrus/test/'

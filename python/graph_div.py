@@ -6,6 +6,7 @@ Created on Tue Jun  9 11:26:42 2020
 """
 
 import glob
+import numpy as np
 
 
 def sort_occurences(file):
@@ -85,19 +86,33 @@ def find_best_result(loc):
         print(maxMAP)
         print("\n")
         return best, maxMAP
-        
-loc2 = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/java_GED-master/test/papyrus/results/gw/cont/the_step3/'
-# loc3 = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/java_GED-master/test/papyrus/results/gw/cont/step3/'
-best2, val2 = find_best_result(loc2)              
-# best3, val3 = find_best_result(loc3)
-# double = [x for x in best2 if x in best3]
-# print(double)
+    
+def csv_recall_precision(folder):
+    loc_csv = 'C:/Users/Gwenael/Desktop/MT/latex/data/recall_precision/'
+    num = folder.split('/')[-2]
+    recall = np.arange(0,11)
+    with open(folder+num+'.res','r') as rd:
+        name = '_'.join(rd.readlines()[9].split('/')[-1].split('.')[0].split('_')[1:])
+        with open(loc_csv+num+'_'+name+'.csv', 'w') as wr:
+            wr.write('recall, precision\n')
+            with open(folder+"trec_global", 'r') as rd:
+                lines = rd.readlines()
+                for i,n in enumerate(range(14,35,2)):
+                   l = ''.join(lines[n].replace(chr(0),chr(32)).split(' '))
+                   wr.write(str(recall[i]/10)+', '+l[-7:])
+               
+                
+                
+                
+                
+                
+                
+# loc2 = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/java_GED-master/test/papyrus/results/gw/cont/the_step3/'
+# best2, val2 = find_best_result(loc2)              
 
-#dummy_graphs([10,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000])
-
-# sort_occurences('C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/groundtruth/occurences_half_test.txt')
-
-
+folder = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/java_GED-master/test/papyrus/results/test_02_3versions/'
+for i in range(1,4):
+    csv_recall_precision(folder+str(i)+'/')
 
 
 

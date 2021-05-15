@@ -5,11 +5,12 @@ Created on Mon Jun  8 12:11:25 2020
 @author: Gwenael
 """
 import time 
+import glob
 from keypoint_graph_creation import keypoint_start
 from contour_graph_creation import contour_start
 
 
-location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/pages/'
+location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/original_bin/test_kp/'
 
 def contour():
     print('Contour Graphs')
@@ -40,6 +41,18 @@ def keypoint():
         end = time.time()
         print(f'\t end: time =  {(end-start):.5} s')
     
+    
+def test():
+    print('Contour Graphs')
+    Di = 8
+    for s in range(1,8):
+        start = time.time()
+        print(f'start: D = {Di}')
+        contour_start(location+str(s)+'/', Di)
+        end = time.time()
+        print(f'\t end: time =  {(end-start):.5} s')
 
-contour()
-#keypoint()
+
+test()
+# contour()
+# keypoint()

@@ -387,20 +387,20 @@ public class GraphMatchingSegFree {
 
 							// whether distances or similarities are computed
 							if (this.simKernel < 1) {
-								this.distanceList.get(i,j).put(counter, d);
+								this.distanceList.get(i,j).put(winNum, d);
 							} else {
 								switch (this.simKernel) {
 									case 1:
-										this.distanceList.get(i,j).put(counter, -Math.pow(d, 2.0));
+										this.distanceList.get(i,j).put(winNum, -Math.pow(d, 2.0));
 										break;
 									case 2:
-										this.distanceList.get(i,j).put(counter, -d);
+										this.distanceList.get(i,j).put(winNum, -d);
 										break;
 									case 3:
-										this.distanceList.get(i,j).put(counter, Math.tanh(-d));
+										this.distanceList.get(i,j).put(winNum, Math.tanh(-d));
 										break;
 									case 4:
-										this.distanceList.get(i,j).put(counter, Math.exp(-d));
+										this.distanceList.get(i,j).put(winNum, Math.exp(-d));
 										break;
 								}
 							}
@@ -605,7 +605,6 @@ public class GraphMatchingSegFree {
 						if (!overlap) {
 							newZone = true;
 							bestMatches.add(nextBestKey);
-							System.out.println(nextBestMatch);
 						}
 					}
 				}
@@ -616,7 +615,6 @@ public class GraphMatchingSegFree {
 					int cornerY = (winRef.get(0) / numOfStepsX) * stepY;
 					int winWidth = (int) windowSizes[winRef.get(1)] * charImg.getWidth();
 					int winHeight = (int) windowSizes[winRef.get(1)] * charImg.getHeight();
-					System.out.println(cornerX+" "+cornerY);
 					g2.drawRect(cornerX, cornerY, winWidth, winHeight);
 					g2.drawImage(charImg, cornerX, cornerY, cornerX + winWidth, cornerY + winHeight,
 							0, 0, charImg.getWidth(), charImg.getHeight(), null);
