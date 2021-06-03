@@ -118,7 +118,6 @@ def flatten(contours, Vc, Ec):
             E.add((i1, i2))
     return coords, E
 
-
 def display_img_graph(img, contours, coords, E, name, D, v=0, mode='n'):
     """
     can display the graph on top of the image in a subplot and the contours in
@@ -173,8 +172,44 @@ def display_img_graph(img, contours, coords, E, name, D, v=0, mode='n'):
         else:
             plt.imsave(location+name+'_D_'+str(D)+'.png', img_rgb)
         plt.imsave(location+name+'_DP_b.png', img_cont, cmap='gray')
-    
-    
+  
+def better_disp(img, contours, coords, E, name, D, v=0, mode='d', f=2):
+    img = cv.resize(img, (0,0), fx=f, fy=f, interpolation=cv.INTER_NEAREST)
+    img_blank = np.full((img.shape[0],img.shape[1]), 0, dtype='uint8')
+    for i in range(len(contours)):
+        contours[i] = contours[i]*f
+    img_cont = cv.drawContours(img_blank, contours, -1, 255, 1)
+    img_rgb = cv.cvtColor(img, cv.COLOR_GRAY2RGB)
+    black = np.where(img == 0)
+    for n in range(len(black[0])):
+        img_rgb[black[0][n],black[1][n],:] = (200, 200, 200)
+    for edge in E:
+        n1 = edge[0]
+        x1 = coords[n1][0]*f
+        y1 = coords[n1][1]*f
+        n2 = edge[1]
+        x2 = coords[n2][0]*f
+        y2 = coords[n2][1]*f
+        cv.line(img_rgb, (x1, y1), (x2, y2), (150, 150, 150), 1)
+    for node in coords:
+        x = node[1]*f
+        y = node[0]*f
+        img_rgb[max(x-2,0):x+2,max(y-2,0):y+2] =(0,0,0)
+    if mode == 'd':
+        plt.subplot(2,1,1),plt.imshow(img_cont, cmap='gray')     
+        plt.subplot(2,1,2), plt.imshow(img_rgb)
+        plt.tight_layout()
+        plt.show()
+    if mode == 's':
+        location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/good_graph_images/cont/'
+        if not os.path.exists(location):
+            os.makedirs(location)
+        if v != 0:
+            plt.imsave(location+name+'_DP_'+str(v)+'.png', img_rgb)
+        else:
+            plt.imsave(location+name+'_D_'+str(D)+'.png', img_rgb)
+        
+        
 def create_gxl(coords, E, name, D, v=None):
     """
     create a .gxl file containing the name, infos, standard deviations, 
@@ -277,7 +312,8 @@ def contour_graph(img, D, name, v=0):
         Vc[i] = Vc_i
         Ec[i] = Ec_i
     coords, E = flatten(contours, Vc, Ec)
-    display_img_graph(img, contours, coords, E, name, D, v, 's')
+    #display_img_graph(img, contours, coords, E, name, D, v, 's')
+    better_disp(img, contours, coords, E, name, D, v, 's',6)
     create_gxl(coords, E, name, D, v) # !change location in fct itself
     
 

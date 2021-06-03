@@ -7,7 +7,8 @@ Created on Tue Jun  9 11:26:42 2020
 
 import glob
 import numpy as np
-
+import cv2 as cv
+import matplotlib.pyplot as plt
 
 def sort_occurences(file):
     with open(file, 'r') as rd:
@@ -102,20 +103,15 @@ def csv_recall_precision(folder):
                    wr.write(str(recall[i]/10)+', '+l[-7:])
                
                 
+def upscale(loc, f):
+    fileset = glob.glob(loc+'*.png')
+    for file in fileset:
+        img = cv.imread(file, 0)
+        name = file.split(sep = "\\")[-1][:-4]
+        img = cv.imread(file,0)
+        img = cv.resize(img, (0,0), fx=f, fy=f, interpolation=cv.INTER_NEAREST)
+        plt.imsave(loc+name+'_up.png',img, cmap='gray')
                 
-                
-                
-                
-                
-# loc2 = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/java_GED-master/test/papyrus/results/gw/cont/the_step3/'
-# best2, val2 = find_best_result(loc2)              
-
-folder = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/java_GED-master/test/papyrus/results/test_02_3versions/'
-for i in range(1,4):
-    csv_recall_precision(folder+str(i)+'/')
-
-
-
-
-
-
+    
+loc = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/good_graph_images/bin/'
+upscale(loc,6)

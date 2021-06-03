@@ -906,6 +906,9 @@ public class GraphMatchingSegFreeGW {
 			sourceImages.add(oldImg);
 		}
 
+
+		// TODO clean thresh
+
 		int numOfThresholdVal = Integer.parseInt(properties.getProperty("numOfThresholdVal"));
 		thresholds = new double[numOfThresholdVal];
 		for (int i = 0; i < numOfThresholdVal; i++) {

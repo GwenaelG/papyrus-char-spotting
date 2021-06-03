@@ -435,11 +435,41 @@ def display_img_graph(img, V, E, coord, name):
     # plt.subplot(2,1,2)
     # plt.imshow(img_rgb)
     location = 'C:/Users/Gwenael/Desktop/MT/graphs-gwenael/GW/keypoint/images/'
+    if not os.path.exists(location):
+        os.makedirs(location)
     plt.imsave(location+name+'_a.png', img_rgb)
     plt.imsave(location+name+'_b.png', img_skel)
     # plt.tight_layout()
     # plt.show()
-
+    
+def better_disp(img, V, E, coord, name, D, f):
+    img = img = cv.resize(img, (0,0), fx=f, fy=f, interpolation=cv.INTER_NEAREST)
+    # plot with word image and graph
+    img_rgb = cv.cvtColor(img, cv.COLOR_GRAY2RGB)
+    black = np.where(img == 0)
+    for n in range(len(black[0])):
+        img_rgb[black[0][n],black[1][n],:] = (200, 200, 200)
+    for edge in E:
+        # inverted x and y!
+        # 1st index (rows) corresponds to y-coord
+        # 2nd index (columns) corresponds to x-coord
+        n1 = edge[0]
+        x1 = coord[n1][1]*f
+        y1 = coord[n1][0]*f
+        n2 = edge[1]
+        x2 = coord[n2][1]*f
+        y2 = coord[n2][0]*f
+        cv.line(img_rgb, (x1, y1), (x2, y2), (150, 150, 150), 1)   
+    for node in V[0]:
+        pos = coord[node]
+        x = pos[0]*f
+        y = pos[1]*f
+        img_rgb[max(x-2,0):x+2,max(y-2,0):y+2] = (0,0,0)
+    location = 'C:/Users/Gwenael/Desktop/MT/papyrus-char-spotting/files/good_graph_images/kp/'
+    if not os.path.exists(location):
+        os.makedirs(location)
+    plt.imsave(location+name+'_D_'+str(D)+'.png', img_rgb)
+    # plt.imshow(img_rgb, cmap='gray')
 
 def create_gxl(V, E, coord, name, D):
     """
@@ -579,8 +609,9 @@ def keypoint_graph(img, D, name):
     E = fill_edges(V[0], neigh_img)
     # show img
     # display_img_graph(img, V, E, skel_coord, name)
+    better_disp(img, V, E, skel_coord, name, D, 6)
     # create gxl file
-    create_gxl(V[0], E, skel_coord, name, D) # !change location in fct itself
+    # create_gxl(V[0], E, skel_coord, name, D) # !change location in fct itself
     
 
 def keypoint_start(location, D, slc = None):

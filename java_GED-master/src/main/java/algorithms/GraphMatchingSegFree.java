@@ -576,6 +576,7 @@ public class GraphMatchingSegFree {
 				SortedSet<Map.Entry<Integer, Double>> sortedEntries = entriesSortedByValues(distanceList.get(i,j));
 				Iterator<Map.Entry<Integer, Double>> it = sortedEntries.iterator();
 				ArrayList<Integer> bestMatches = new ArrayList<>();
+				ArrayList<Double> bestDistances = new ArrayList<>();
 				boolean newZone;
 				for (int m = 0; m < numBestMatches; m++) {
 					newZone = false;
@@ -583,6 +584,7 @@ public class GraphMatchingSegFree {
 					while (!newZone) {
 						Map.Entry<Integer, Double> nextBestMatch = it.next();
 						int nextBestKey = nextBestMatch.getKey();
+						double nextBestDist = nextBestMatch.getValue();
 						ArrayList<Integer> winRefNext = candWindows.get(i).get(j).get(nextBestKey);
 						int cornerXNext = (winRefNext.get(0) % numOfStepsX) * stepX;
 						int cornerYNext = (winRefNext.get(0) / numOfStepsX) * stepY;
@@ -605,6 +607,7 @@ public class GraphMatchingSegFree {
 						if (!overlap) {
 							newZone = true;
 							bestMatches.add(nextBestKey);
+							bestDistances.add(nextBestDist);
 						}
 					}
 				}
@@ -618,6 +621,7 @@ public class GraphMatchingSegFree {
 					g2.drawRect(cornerX, cornerY, winWidth, winHeight);
 					g2.drawImage(charImg, cornerX, cornerY, cornerX + winWidth, cornerY + winHeight,
 							0, 0, charImg.getWidth(), charImg.getHeight(), null);
+					g2.drawString(Integer.toString(m), cornerX + winWidth, cornerY + winHeight);
 				}
 
 				String imgFolder2 = charVisFolder.toString() + "/best/";
